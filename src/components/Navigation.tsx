@@ -44,24 +44,14 @@ export default function Navigation() {
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
           isScrolled
             ? 'bg-white/95 backdrop-blur-md shadow-soft'
-            : 'bg-transparent'
+            : 'bg-white/50'
         }`}
       >
         <div className="w-full container-padding">
           <div className="flex items-center justify-between h-16 md:h-20 lg:h-24">
             {/* Logo */}
             <Link to="/" className="flex items-center gap-2 md:gap-3">
-              <div className="w-10 h-10 md:w-12 md:h-12 lg:w-14 lg:h-14 rounded-lg bg-neli-600 flex items-center justify-center">
-                <span className="text-white font-bold text-lg md:text-xl lg:text-2xl font-serif">N</span>
-              </div>
-              <div className="flex flex-col">
-                <span className={`font-serif text-lg md:text-xl lg:text-2xl leading-tight transition-colors duration-300 ${isScrolled ? 'text-foreground' : 'text-white'}`}>
-                  Neli
-                </span>
-                <span className={`text-[10px] md:text-xs tracking-[0.15em] md:tracking-[0.2em] transition-colors duration-300 ${isScrolled ? 'text-foreground/60' : 'text-white/70'}`}>
-                  MÜHENDİSLİK
-                </span>
-              </div>
+            <img src="/site-logo.png" alt="Neli Mühendislik" className="w-14 h-14 md:w-16 md:h-16 lg:w-18 lg:h-18" />
             </Link>
 
             {/* Desktop Navigation */}
@@ -74,8 +64,8 @@ export default function Navigation() {
                     isActive(link.href)
                       ? 'text-neli-600'
                       : isScrolled 
-                        ? 'text-foreground/70 hover:text-foreground'
-                        : 'text-white/80 hover:text-white'
+                        ? 'text-foreground/50 hover:text-neli-500'
+                        : 'text-foreground/70 hover:text-neli-500'
                   }`}
                 >
                   {link.name}
@@ -96,7 +86,7 @@ export default function Navigation() {
                 className="flex items-center gap-2 px-4 xl:px-5 py-2 md:py-2.5 bg-neli-600 hover:bg-neli-700 text-white font-medium text-sm rounded-full transition-colors duration-300"
               >
                 <Phone className="w-4 h-4" />
-                <span>444 22 78</span>
+                <span>0554 704 90 74</span>
               </a>
             </div>
 

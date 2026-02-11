@@ -45,13 +45,9 @@ export default function Footer() {
             {/* Brand */}
             <div className="lg:col-span-2">
               <Link to="/" className="flex items-center gap-2 md:gap-3 mb-4 md:mb-6">
-                <div className="w-12 h-12 md:w-14 md:h-14 rounded-lg bg-neli-600 flex items-center justify-center">
-                  <span className="text-white font-bold text-xl md:text-2xl font-serif">N</span>
-                </div>
-                <div className="flex flex-col">
-                  <span className="text-foreground font-serif text-xl md:text-2xl">Neli</span>
-                  <span className="text-foreground/60 text-[10px] md:text-xs tracking-[0.15em] md:tracking-[0.2em]">MÜHENDİSLİK</span>
-                </div>
+                
+                <img src="/site-logo.png" alt="Neli Mühendislik" className="w-14 h-14 md:w-16 md:h-16 lg:w-18 lg:h-18" />
+              
               </Link>
               <p className="text-foreground/60 text-sm leading-relaxed max-w-sm mb-4 md:mb-6">
                 Özel hissettiren tasarımlara giden yolda hep biz varız. 

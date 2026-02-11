@@ -1,9 +1,9 @@
 import { useState, useEffect, useRef, useCallback } from 'react';
 import { motion, AnimatePresence, useMotionValue, useTransform, useSpring } from 'framer-motion';
 
-const HERO_BG = '/images/hero3.png';
-const HERO_PLAN = '/images/hero2.png';
-const HERO_MAKET = '/images/hero1.png';
+const HERO_BG = '/images/hero3.webp';
+const HERO_PLAN = '/images/hero2.webp';
+const HERO_MAKET = '/images/hero1.webp';
 
 // Original LayerSlider canvas dimensions
 const DESKTOP_W = 1410;
