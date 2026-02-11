@@ -367,7 +367,7 @@ export default function HeroSection() {
                   whiteSpace: 'nowrap',
                 }}
               >
-                Özel hissettiren tasarımlara giden yolda
+                Özel hİssettİren tasarımlara gİden yolda
               </motion.p>
             </div>
 
@@ -397,7 +397,7 @@ export default function HeroSection() {
                   whiteSpace: 'nowrap',
                 }}
               >
-                hep biz varız
+                hep bİz varız
               </motion.p>
             </div>
           </motion.div>
