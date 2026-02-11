@@ -17,19 +17,20 @@ type Bezier = [number, number, number, number];
 const EASE_OUT_BACK: Bezier = [0.34, 1.56, 0.64, 1];
 const EASE_IN_OUT_BACK: Bezier = [0.68, -0.6, 0.32, 1.6];
 
-// Text positions from original LayerSlider (pixel coords in canvas space)
+// Text positions and sizes for desktop (canvas space: 1410x850)
 const DESKTOP_TEXT = {
-  neli: { top: 348, left: 320 },
-  muhendislik: { top: 385, left: 541 },
-  tagline1: { top: 475, left: 328 },
-  tagline2: { top: 472, left: 888 },
+  neli: { top: 348, left: 300, fontSize: 127 },
+  muhendislik: { top: 385, left: 541, fontSize: 89 },
+  tagline1: { top: 485, left: 328, fontSize: 23 },
+  tagline2: { top: 482, left: 908, fontSize: 23 },
 };
 
+// Text positions and sizes for mobile (canvas space: 850x1410)
 const MOBILE_TEXT = {
-  neli: { top: 348, left: 70 },
-  muhendislik: { top: 385, left: 290 },
-  tagline1: { top: 475, left: 75 },
-  tagline2: { top: 472, left: 630 },
+  neli: { top: 520, left: 80, fontSize: 95 },
+  muhendislik: { top: 580, left: 80, fontSize: 65 },
+  tagline1: { top: 660, left: 80, fontSize: 20 },
+  tagline2: { top: 695, left: 80, fontSize: 20},
 };
 
 export default function HeroSection() {
@@ -209,124 +210,198 @@ export default function HeroSection() {
         />
 
         {/* === LAYER 4: Text elements === */}
-        <motion.div
-          style={{ x: textPX, y: textPY, zIndex: 40 }}
-          className="absolute inset-0 pointer-events-none"
-        >
-          {/* "Neli" */}
+        {isMobile ? (
+          /* ===== MOBILE/TABLET: Centered layout ===== */
           <div
-            style={{
-              position: 'absolute',
-              top: textPos.neli.top,
-              left: textPos.neli.left,
-              perspective: 1200,
-            }}
+            className="absolute inset-0 flex flex-col items-center justify-center pointer-events-none"
+            style={{ zIndex: 40 }}
           >
-            <motion.h1
-              initial={{ rotateX: 90, opacity: 0 }}
-              animate={ready ? { rotateX: 0, opacity: 1 } : {}}
-              transition={{ duration: 1.5, delay: 0.9, ease: EASE_IN_OUT_BACK }}
-              style={{
-                fontFamily: 'Arial, sans-serif',
-                fontSize: 127,
-                fontWeight: 'normal',
-                color: 'rgba(255, 255, 255, 0.6)',
-                transformOrigin: '50% 0%',
-                lineHeight: 1,
-                margin: 0,
-                whiteSpace: 'nowrap',
-              }}
+            {/* "NeliMühendislik" on same line */}
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              animate={ready ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 1, delay: 0.9 }}
+              className="flex items-baseline"
             >
-              Neli
-            </motion.h1>
-          </div>
+              <span
+                style={{
+                  fontFamily: 'Montserrat, sans-serif',
+                  fontSize: textPos.neli.fontSize,
+                  fontWeight: 'normal',
+                  color: 'rgba(255, 255, 255, 0.6)',
+                  lineHeight: 1,
+                }}
+              >
+                Neli
+              </span>
+              <span
+                style={{
+                  fontFamily: 'Montserrat, sans-serif',
+                  fontSize: textPos.muhendislik.fontSize,
+                  fontWeight: 'bold',
+                  color: 'rgba(255, 255, 255, 0.6)',
+                  lineHeight: 1,
+                }}
+              >
+                Mühendislik
+              </span>
+            </motion.div>
 
-          {/* "Mühendislik" */}
-          <div
-            style={{
-              position: 'absolute',
-              top: textPos.muhendislik.top,
-              left: textPos.muhendislik.left,
-              perspective: 1200,
-            }}
+            {/* Tagline row */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={ready ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 1, delay: 1.5 }}
+              className="flex items-center gap-2 mt-3"
+              style={{ flexWrap: 'wrap', justifyContent: 'center' }}
+            >
+              <span
+                style={{
+                  fontFamily: 'Montserrat, sans-serif',
+                  fontSize: textPos.tagline1.fontSize,
+                  textTransform: 'uppercase',
+                  color: '#ffffff',
+                  whiteSpace: 'nowrap',
+                }}
+              >
+                Özel hİssettİren tasarımlara gİden yolda
+              </span>
+              <span
+                style={{
+                  fontFamily: 'Montserrat, sans-serif',
+                  fontSize: textPos.tagline2.fontSize,
+                  textTransform: 'uppercase',
+                  color: 'rgba(0, 0, 0, 0.6)',
+                  backgroundColor: '#ffffff',
+                  padding: '2px 4px 1px 4px',
+                  whiteSpace: 'nowrap',
+                }}
+              >
+                hep bİz varız
+              </span>
+            </motion.div>
+          </div>
+        ) : (
+          /* ===== DESKTOP: Absolute positioned layout ===== */
+          <motion.div
+            style={{ x: textPX, y: textPY, zIndex: 40 }}
+            className="absolute inset-0 pointer-events-none"
           >
-            <motion.h1
-              initial={{ rotateY: 90, opacity: 0 }}
-              animate={ready ? { rotateY: 0, opacity: 1 } : {}}
-              transition={{ duration: 1.5, delay: 1.3, ease: EASE_IN_OUT_BACK }}
+            {/* "Neli" */}
+            <div
               style={{
-                fontFamily: 'Arial, sans-serif',
-                fontSize: 89,
-                fontWeight: 'bold',
-                color: 'rgba(255, 255, 255, 0.6)',
-                transformOrigin: '0% 50%',
-                lineHeight: 1,
-                margin: 0,
-                whiteSpace: 'nowrap',
+                position: 'absolute',
+                top: textPos.neli.top,
+                left: textPos.neli.left,
+                perspective: 1200,
               }}
             >
-              Mühendislik
-            </motion.h1>
-          </div>
+              <motion.h1
+                initial={{ rotateX: 90, opacity: 0 }}
+                animate={ready ? { rotateX: 0, opacity: 1 } : {}}
+                transition={{ duration: 1.5, delay: 0.9, ease: EASE_IN_OUT_BACK }}
+                style={{
+                  fontFamily: 'Montserrat, sans-serif',
+                  fontSize: textPos.neli.fontSize,
+                  fontWeight: 'normal',
+                  color: 'rgba(255, 255, 255, 0.6)',
+                  transformOrigin: '50% 0%',
+                  lineHeight: 1,
+                  margin: 0,
+                  whiteSpace: 'nowrap',
+                }}
+              >
+                Neli
+              </motion.h1>
+            </div>
 
-          {/* Tagline 1 */}
-          <div
-            style={{
-              position: 'absolute',
-              top: textPos.tagline1.top,
-              left: textPos.tagline1.left,
-              perspective: 1200,
-            }}
-          >
-            <motion.p
-              initial={{ rotateX: -90, opacity: 0 }}
-              animate={ready ? { rotateX: 0, opacity: 1 } : {}}
-              transition={{ duration: 1.5, delay: 2.2, ease: EASE_IN_OUT_BACK }}
+            {/* "Mühendislik" */}
+            <div
               style={{
-                fontFamily: 'Arial, sans-serif',
-                fontSize: 23,
-                textTransform: 'uppercase',
-                color: '#ffffff',
-                transformOrigin: '0% 0%',
-                lineHeight: 1,
-                margin: 0,
-                whiteSpace: 'nowrap',
+                position: 'absolute',
+                top: textPos.muhendislik.top,
+                left: textPos.muhendislik.left,
+                perspective: 1200,
               }}
             >
-              Özel hissettiren tasarımlara giden yolda
-            </motion.p>
-          </div>
+              <motion.h1
+                initial={{ rotateY: 90, opacity: 0 }}
+                animate={ready ? { rotateY: 0, opacity: 1 } : {}}
+                transition={{ duration: 1.5, delay: 1.3, ease: EASE_IN_OUT_BACK }}
+                style={{
+                  fontFamily: 'Montserrat, sans-serif',
+                  fontSize: textPos.muhendislik.fontSize,
+                  fontWeight: 'bold',
+                  color: 'rgba(255, 255, 255, 0.6)',
+                  transformOrigin: '0% 50%',
+                  lineHeight: 1,
+                  margin: 0,
+                  whiteSpace: 'nowrap',
+                }}
+              >
+                Mühendislik
+              </motion.h1>
+            </div>
 
-          {/* Tagline 2 — highlighted */}
-          <div
-            style={{
-              position: 'absolute',
-              top: textPos.tagline2.top,
-              left: textPos.tagline2.left,
-              perspective: 1200,
-            }}
-          >
-            <motion.p
-              initial={{ rotateX: -90, opacity: 0 }}
-              animate={ready ? { rotateX: 0, opacity: 1 } : {}}
-              transition={{ duration: 1.5, delay: 2.8, ease: EASE_IN_OUT_BACK }}
+            {/* Tagline 1 */}
+            <div
               style={{
-                fontFamily: 'Arial, sans-serif',
-                fontSize: 23,
-                textTransform: 'uppercase',
-                color: 'rgba(0, 0, 0, 0.6)',
-                backgroundColor: '#ffffff',
-                padding: '3px 3px 1px 3px',
-                transformOrigin: '0% 0%',
-                lineHeight: 1,
-                margin: 0,
-                whiteSpace: 'nowrap',
+                position: 'absolute',
+                top: textPos.tagline1.top,
+                left: textPos.tagline1.left,
+                perspective: 1200,
               }}
             >
-              hep biz varız
-            </motion.p>
-          </div>
-        </motion.div>
+              <motion.p
+                initial={{ rotateX: -90, opacity: 0 }}
+                animate={ready ? { rotateX: 0, opacity: 1 } : {}}
+                transition={{ duration: 1.5, delay: 2.2, ease: EASE_IN_OUT_BACK }}
+                style={{
+                  fontFamily: 'Montserrat, sans-serif',
+                  fontSize: textPos.tagline1.fontSize,
+                  textTransform: 'uppercase',
+                  color: '#ffffff',
+                  transformOrigin: '0% 0%',
+                  lineHeight: 1,
+                  margin: 0,
+                  whiteSpace: 'nowrap',
+                }}
+              >
+                Özel hissettiren tasarımlara giden yolda
+              </motion.p>
+            </div>
+
+            {/* Tagline 2 — highlighted */}
+            <div
+              style={{
+                position: 'absolute',
+                top: textPos.tagline2.top,
+                left: textPos.tagline2.left,
+                perspective: 1200,
+              }}
+            >
+              <motion.p
+                initial={{ rotateX: -90, opacity: 0 }}
+                animate={ready ? { rotateX: 0, opacity: 1 } : {}}
+                transition={{ duration: 1.5, delay: 2.8, ease: EASE_IN_OUT_BACK }}
+                style={{
+                  fontFamily: 'Montserrat, sans-serif',
+                  fontSize: textPos.tagline2.fontSize,
+                  textTransform: 'uppercase',
+                  color: 'rgba(0, 0, 0, 0.6)',
+                  backgroundColor: '#ffffff',
+                  padding: '3px 3px 1px 3px',
+                  transformOrigin: '0% 0%',
+                  lineHeight: 1,
+                  margin: 0,
+                  whiteSpace: 'nowrap',
+                }}
+              >
+                hep biz varız
+              </motion.p>
+            </div>
+          </motion.div>
+        )}
       </div>
     </div>
   );
