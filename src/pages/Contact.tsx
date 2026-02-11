@@ -278,9 +278,9 @@ export default function Contact() {
       </section>
 
       {/* Map Section */}
-      <section className="h-64 md:h-80 lg:h-96 bg-cream-100">
+      <section className="relative h-64 md:h-80 lg:h-96 bg-cream-100">
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3125.017062859!2d27.0856!3d38.4563!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14bbd8c0b1c0c0c0%3A0x0!2zS2FyxZ_EsXlha2EsIMSwem1pcg!5e0!3m2!1str!2str!4v1600000000000!5m2!1str!2str"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1562.7!2d27.1057313!3d38.4680346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14bbd9dd2adbb0b9%3A0x6988352d26352bc!2zRGVkZWJhxZ_EsSwgNjEzMS4gU2suIE5vOjM5L0EsIDM1NTYwIEthcsWfxLF5YWthL8Swem1pcg!5e0!3m2!1str!2str!4v1707000000000!5m2!1str!2str"
           width="100%"
           height="100%"
           style={{ border: 0 }}
@@ -288,7 +288,23 @@ export default function Contact() {
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
           title="Neli Mühendislik Konum"
+          className="grayscale-[30%] contrast-[1.1]"
         />
+        {/* Custom Pin Overlay */}
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-full pointer-events-none z-10">
+          <div className="relative">
+            {/* Pin Shadow */}
+            <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-4 h-1 bg-black/20 rounded-full blur-sm" />
+            {/* Pin Body */}
+            <div className="relative flex flex-col items-center">
+              <div className="w-10 h-10 md:w-12 md:h-12 bg-neli-600 rounded-full flex items-center justify-center shadow-lg border-3 border-white">
+                <MapPin className="w-5 h-5 md:w-6 md:h-6 text-white" />
+              </div>
+              {/* Pin Pointer */}
+              <div className="w-0 h-0 border-l-[8px] border-l-transparent border-r-[8px] border-r-transparent border-t-[12px] border-t-neli-600 -mt-1" />
+            </div>
+          </div>
+        </div>
       </section>
     </main>
   );
