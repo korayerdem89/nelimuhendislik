@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
-import { motion } from 'framer-motion';
-import { MapPin, Phone, Mail, Instagram, Linkedin, Facebook } from 'lucide-react';
+import { MapPin, Phone, Mail } from 'lucide-react';
+import SocialLinks from './SocialLinks';
 
 const footerLinks = [
   {
@@ -27,12 +27,6 @@ const footerLinks = [
       { name: 'Danışmanlık', href: '/iletisim' },
     ],
   },
-];
-
-const socialLinks = [
-  { icon: Instagram, href: 'https://instagram.com/neli_muhendislik', label: 'Instagram' },
-  { icon: Linkedin, href: 'https://linkedin.com/company/neli-mühendislik', label: 'LinkedIn' },
-  { icon: Facebook, href: 'https://facebook.com/profile.php?id=100087358753242', label: 'Facebook' },
 ];
 
 export default function Footer() {
@@ -103,22 +97,7 @@ export default function Footer() {
             </p>
             
             {/* Social Links */}
-            <div className="flex items-center gap-2 md:gap-3">
-              {socialLinks.map((social) => (
-                <motion.a
-                  key={social.label}
-                  href={social.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  whileHover={{ scale: 1.1 }}
-                  whileTap={{ scale: 0.95 }}
-                  className="w-9 h-9 md:w-10 md:h-10 rounded-full bg-white hover:bg-neli-600 flex items-center justify-center transition-all duration-300 group shadow-soft"
-                  aria-label={social.label}
-                >
-                  <social.icon className="w-3.5 h-3.5 md:w-4 md:h-4 text-foreground/60 group-hover:text-white transition-colors duration-300" />
-                </motion.a>
-              ))}
-            </div>
+            <SocialLinks variant="footer" />
           </div>
         </div>
       </div>

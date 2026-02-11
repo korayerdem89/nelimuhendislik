@@ -1,10 +1,11 @@
 import { useRef, useState } from 'react';
 import { motion, useInView } from 'framer-motion';
-import { MapPin, Phone, Mail, Clock, Send, Instagram, Linkedin, Facebook } from 'lucide-react';
+import { MapPin, Phone, Mail, Clock, Send } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { toast } from 'sonner';
+import SocialLinks from '@/components/SocialLinks';
 
 const contactInfo = [
   {
@@ -31,12 +32,6 @@ const contactInfo = [
     content: 'Pazartesi - Cuma: 09:00 - 18:00\nCumartesi: 10:00 - 14:00',
     href: null,
   },
-];
-
-const socialLinks = [
-  { icon: Instagram, href: 'https://instagram.com/neli_muhendislik', label: 'Instagram' },
-  { icon: Linkedin, href: 'https://linkedin.com/company/neli-mühendislik', label: 'LinkedIn' },
-  { icon: Facebook, href: 'https://facebook.com/profile.php?id=100087358753242', label: 'Facebook' },
 ];
 
 export default function Contact() {
@@ -254,22 +249,7 @@ export default function Contact() {
                   className="pt-2 md:pt-4"
                 >
                   <p className="text-foreground/60 text-sm mb-3 md:mb-4">Bizi Takip Edin</p>
-                  <div className="flex gap-2 md:gap-3">
-                    {socialLinks.map((social) => (
-                      <motion.a
-                        key={social.label}
-                        href={social.href}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        whileHover={{ scale: 1.1 }}
-                        whileTap={{ scale: 0.95 }}
-                        className="w-10 h-10 md:w-11 md:h-11 rounded-lg bg-cream-100 hover:bg-neli-600 flex items-center justify-center transition-all duration-300 group"
-                        aria-label={social.label}
-                      >
-                        <social.icon className="w-4 h-4 md:w-5 md:h-5 text-foreground/60 group-hover:text-white transition-colors duration-300" />
-                      </motion.a>
-                    ))}
-                  </div>
+                  <SocialLinks variant="default" />
                 </motion.div>
               </motion.div>
             </div>

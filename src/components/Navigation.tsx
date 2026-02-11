@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X, Phone } from 'lucide-react';
+import SocialLinks from './SocialLinks';
 
 const navLinks = [
   { name: 'Anasayfa', href: '/' },
@@ -79,8 +80,9 @@ export default function Navigation() {
               ))}
             </div>
 
-            {/* CTA Button */}
-            <div className="hidden lg:flex items-center gap-4">
+            {/* CTA Button & Social Links */}
+            <div className="hidden lg:flex items-center gap-3">
+              <SocialLinks variant="navbar" showAnimation={false} />
               <a
                 href="tel:+905547049074"
                 className="flex items-center gap-2 px-4 xl:px-5 py-2 md:py-2.5 bg-neli-600 hover:bg-neli-700 text-white font-medium text-sm rounded-full transition-colors duration-300"
@@ -157,6 +159,16 @@ export default function Navigation() {
                 <Phone className="w-4 h-4" />
                 <span>+90 554 704 90 74</span>
               </motion.a>
+              
+              {/* Mobile Social Links */}
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 0.6 }}
+                className="mt-4 flex justify-center"
+              >
+                <SocialLinks variant="default" />
+              </motion.div>
             </motion.div>
           </motion.div>
         )}
