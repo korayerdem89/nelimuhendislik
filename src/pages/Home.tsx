@@ -260,20 +260,41 @@ export default function Home() {
                     initial={{ opacity: 0, y: 30 }}
                     animate={isMilestonesInView ? { opacity: 1, y: 0 } : {}}
                     transition={{ duration: 0.5, delay: 0.2 + index * 0.15 }}
-                    className="relative flex flex-col md:flex-row md:items-start gap-4 md:gap-0"
+                    className="relative md:grid md:grid-cols-[1fr_60px_1fr] md:items-start"
                   >
-                    {/* Content */}
-                    <div className={`flex-1 md:pr-16 ${index % 2 === 0 ? 'md:text-right' : 'md:order-3 md:text-left md:pr-0 md:pl-16'}`}>
-                      <span className="text-neli-600 font-serif text-xl md:text-2xl font-bold">{milestone.year}</span>
-                      <h3 className="text-lg md:text-xl font-serif font-medium text-foreground mt-1 md:mt-2 mb-1 md:mb-2">{milestone.title}</h3>
-                      <p className="text-foreground/60 text-sm leading-relaxed">{milestone.description}</p>
+                    {/* Left Column */}
+                    <div className={`hidden md:block ${index % 2 === 0 ? 'text-right pr-4' : ''}`}>
+                      {index % 2 === 0 && (
+                        <>
+                          <span className="text-neli-600 font-serif text-xl md:text-2xl font-bold">{milestone.year}</span>
+                          <h3 className="text-lg md:text-xl font-serif font-medium text-foreground mt-1 md:mt-2 mb-1 md:mb-2">{milestone.title}</h3>
+                          <p className="text-foreground/60 text-sm leading-relaxed">{milestone.description}</p>
+                        </>
+                      )}
                     </div>
 
-                    {/* Dot - Hidden on mobile */}
-                    <div className="hidden md:block absolute left-1/2 w-6 md:w-8 h-6 md:h-8 rounded-full bg-white border-3 md:border-4 border-neli-600 -translate-x-1/2 flex-shrink-0 z-10" />
+                    {/* Center Dot */}
+                    <div className="hidden md:flex justify-center">
+                      <div className="w-8 h-8 rounded-full bg-white border-4 border-neli-600 flex-shrink-0" />
+                    </div>
 
-                    {/* Spacer for alternating layout */}
-                    <div className="hidden md:block flex-1 md:order-2" />
+                    {/* Right Column */}
+                    <div className={`hidden md:block ${index % 2 !== 0 ? 'text-left pl-4' : ''}`}>
+                      {index % 2 !== 0 && (
+                        <>
+                          <span className="text-neli-600 font-serif text-xl md:text-2xl font-bold">{milestone.year}</span>
+                          <h3 className="text-lg md:text-xl font-serif font-medium text-foreground mt-1 md:mt-2 mb-1 md:mb-2">{milestone.title}</h3>
+                          <p className="text-foreground/60 text-sm leading-relaxed">{milestone.description}</p>
+                        </>
+                      )}
+                    </div>
+
+                    {/* Mobile Layout */}
+                    <div className="md:hidden">
+                      <span className="text-neli-600 font-serif text-xl font-bold">{milestone.year}</span>
+                      <h3 className="text-lg font-serif font-medium text-foreground mt-1 mb-1">{milestone.title}</h3>
+                      <p className="text-foreground/60 text-sm leading-relaxed">{milestone.description}</p>
+                    </div>
                   </motion.div>
                 ))}
               </div>
