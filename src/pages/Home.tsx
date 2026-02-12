@@ -1,65 +1,71 @@
-import { useRef } from 'react';
-import { Link } from 'react-router-dom';
-import { motion, useInView } from 'framer-motion';
-import { ArrowRight, Building2, HardHat, Award, Users } from 'lucide-react';
-import HeroSection from '../components/HeroSection';
-import TimelineMilestones from '@/components/sections/TimelineMilestones';
-import PrimaryCtaSection from '@/components/sections/PrimaryCtaSection';
+import { useRef } from "react";
+import { Link } from "react-router-dom";
+import { motion, useInView } from "framer-motion";
+import { ArrowRight, Building2, HardHat, Award, Users } from "lucide-react";
+import HeroSection from "../components/HeroSection";
+import TimelineMilestones from "@/components/sections/TimelineMilestones";
+import PrimaryCtaSection from "@/components/sections/PrimaryCtaSection";
+import ProjectsMapSection from "@/components/sections/ProjectsMapSection";
 
 const stats = [
-  { icon: Building2, value: '15+', label: 'Tamamlanan Proje' },
-  { icon: HardHat, value: '4+', label: 'Yıllık Deneyim' },
-  { icon: Award, value: '100%', label: 'Müşteri Memnuniyeti' },
-  { icon: Users, value: '500+', label: 'Mutlu Aile' },
+  { icon: Building2, value: "15+", label: "Tamamlanan Proje" },
+  { icon: HardHat, value: "4+", label: "Yıllık Deneyim" },
+  { icon: Award, value: "100%", label: "Müşteri Memnuniyeti" },
+  { icon: Users, value: "500+", label: "Mutlu Aile" },
 ];
 
 const featuredProjects = [
   {
     id: 1,
-    name: 'Valorya 5',
-    location: 'İzmir',
-    type: 'Villa',
-    image: 'https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=800&q=80',
-    status: 'Satışta',
+    name: "Valorya 5",
+    location: "İzmir",
+    type: "Villa",
+    image:
+      "https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=800&q=80",
+    status: "Satışta",
   },
   {
     id: 2,
-    name: 'Valorya 4',
-    location: 'İzmir',
-    type: 'Villa',
-    image: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80',
-    status: 'Satışta',
+    name: "Valorya 4",
+    location: "İzmir",
+    type: "Villa",
+    image:
+      "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80",
+    status: "Satışta",
   },
   {
     id: 3,
-    name: 'Serenità Park',
-    location: 'Karşıyaka, İzmir',
-    type: 'Toplu Konut',
-    image: 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=800&q=80',
-    status: 'Tamamlandı',
+    name: "Serenità Park",
+    location: "Karşıyaka, İzmir",
+    type: "Toplu Konut",
+    image:
+      "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=800&q=80",
+    status: "Tamamlandı",
   },
 ];
 
 const milestones = [
   {
-    year: '2021',
-    title: 'Neli Mühendislik Kuruldu',
-    description: 'İzmir\'de "Ayrıcalıklı hissetmek herkesin hakkı" prensibiyle yola çıktık.',
+    year: "2021",
+    title: "Neli Mühendislik Kuruldu",
+    description:
+      'İzmir\'de "Ayrıcalıklı hissetmek herkesin hakkı" prensibiyle yola çıktık.',
   },
   {
-    year: '2022',
-    title: 'İlk Projelerimiz',
-    description: 'Valorya 1 ve Valorya 2 projelerimizin temellerini attık.',
+    year: "2022",
+    title: "İlk Projelerimiz",
+    description: "Valorya 1 ve Valorya 2 projelerimizin temellerini attık.",
   },
   {
-    year: '2023',
-    title: 'Büyüme ve Gelişme',
-    description: 'Serenità Park ve Valorya 3 projelerimizi tamamladık.',
+    year: "2023",
+    title: "Büyüme ve Gelişme",
+    description: "Serenità Park ve Valorya 3 projelerimizi tamamladık.",
   },
   {
-    year: '2024',
-    title: 'Yeni Hedefler',
-    description: 'Valorya 4 ve Valorya 5 projelerimizle büyümeye devam ediyoruz.',
+    year: "2024",
+    title: "Yeni Hedefler",
+    description:
+      "Valorya 4 ve Valorya 5 projelerimizle büyümeye devam ediyoruz.",
   },
 ];
 
@@ -67,9 +73,12 @@ export default function Home() {
   const heroRef = useRef<HTMLDivElement>(null);
   const aboutRef = useRef<HTMLDivElement>(null);
   const projectsRef = useRef<HTMLDivElement>(null);
-  
-  const isAboutInView = useInView(aboutRef, { once: true, margin: '-100px' });
-  const isProjectsInView = useInView(projectsRef, { once: true, margin: '-100px' });
+
+  const isAboutInView = useInView(aboutRef, { once: true, margin: "-100px" });
+  const isProjectsInView = useInView(projectsRef, {
+    once: true,
+    margin: "-100px",
+  });
 
   return (
     <main className="min-h-screen">
@@ -91,9 +100,13 @@ export default function Home() {
                 >
                   <div className="flex items-center justify-center md:justify-start gap-2 md:gap-3 mb-1">
                     <stat.icon className="w-4 h-4 md:w-5 md:h-5 text-neli-600" />
-                    <span className="text-xl md:text-2xl lg:text-3xl font-serif font-bold text-foreground">{stat.value}</span>
+                    <span className="text-xl md:text-2xl lg:text-3xl font-serif font-bold text-foreground">
+                      {stat.value}
+                    </span>
                   </div>
-                  <p className="text-foreground/60 text-xs md:text-sm">{stat.label}</p>
+                  <p className="text-foreground/60 text-xs md:text-sm">
+                    {stat.label}
+                  </p>
                 </motion.div>
               ))}
             </div>
@@ -139,14 +152,18 @@ export default function Home() {
                   <span className="text-neli-600"> Hep Biz Varız</span>
                 </h2>
                 <p className="text-foreground/60 leading-relaxed mb-6 text-sm md:text-base">
-                  2021 yılında İzmir tabanlı olarak kurulan şirketimiz, 
-                  <span className="text-foreground font-medium"> &quot;Ayrıcalıklı hissetmek herkesin hakkı&quot; </span> 
+                  2021 yılında İzmir tabanlı olarak kurulan şirketimiz,
+                  <span className="text-foreground font-medium">
+                    {" "}
+                    &quot;Ayrıcalıklı hissetmek herkesin hakkı&quot;{" "}
+                  </span>
                   prensibiyle yola çıkmıştır.
                 </p>
                 <p className="text-foreground/60 leading-relaxed mb-8 text-sm md:text-base">
-                  Müşteri talep ve ihtiyaçlarını, detaylara verdiğimiz özen ile kaliteden taviz vermeyen, 
-                  konforlu ve estetik tasarımlarla karşılıyoruz. İtibarlı çözüm ortaklarımız, 
-                  uzman tedarikçilerimiz ve nitelikli işgücümüzle teknoloji, bilim ve 
+                  Müşteri talep ve ihtiyaçlarını, detaylara verdiğimiz özen ile
+                  kaliteden taviz vermeyen, konforlu ve estetik tasarımlarla
+                  karşılıyoruz. İtibarlı çözüm ortaklarımız, uzman
+                  tedarikçilerimiz ve nitelikli işgücümüzle teknoloji, bilim ve
                   yaratıcılığımızı buluşturuyoruz.
                 </p>
                 <Link
@@ -209,17 +226,23 @@ export default function Home() {
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
                       <div className="absolute top-3 md:top-4 left-3 md:left-4">
-                        <span className={`px-2 md:px-3 py-1 rounded-full text-xs font-medium ${
-                          project.status === 'Satışta'
-                            ? 'bg-neli-600 text-white'
-                            : 'bg-white/90 text-foreground'
-                        }`}>
+                        <span
+                          className={`px-2 md:px-3 py-1 rounded-full text-xs font-medium ${
+                            project.status === "Satışta"
+                              ? "bg-neli-600 text-white"
+                              : "bg-white/90 text-foreground"
+                          }`}
+                        >
                           {project.status}
                         </span>
                       </div>
                       <div className="absolute bottom-3 md:bottom-4 left-3 md:left-4 right-3 md:right-4">
-                        <h3 className="text-lg md:text-xl font-serif font-medium text-white mb-1">{project.name}</h3>
-                        <p className="text-white/70 text-sm">{project.location}</p>
+                        <h3 className="text-lg md:text-xl font-serif font-medium text-white mb-1">
+                          {project.name}
+                        </h3>
+                        <p className="text-white/70 text-sm">
+                          {project.location}
+                        </p>
                       </div>
                     </div>
                   </Link>
@@ -230,6 +253,29 @@ export default function Home() {
         </div>
       </section>
 
+      <section ref={projectsRef} className="section-padding bg-cream-100">
+        <div className="container-padding">
+          <div className="max-w-7xl mx-auto">
+            {/* Section Header */}
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              animate={isProjectsInView ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.6 }}
+              className="flex flex-col md:flex-row md:items-end md:justify-between gap-4 md:gap-6 mb-8 md:mb-12"
+            >
+              <div>
+                <span className="text-neli-600 text-sm font-medium tracking-wider uppercase mb-2 md:mb-4 block">
+                  Nelİ
+                </span>
+                <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-medium text-foreground">
+                  Faaliyet Haritası
+                </h2>
+              </div>
+            </motion.div>
+            <ProjectsMapSection title="Faaliyet Haritası" />
+          </div>
+        </div>
+      </section>
       <TimelineMilestones
         eyebrow="Hikayemizin Devamı"
         title="Kilometre Taşları"
