@@ -6,6 +6,8 @@ import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { toast } from 'sonner';
 import SocialLinks from '@/components/SocialLinks';
+import PageHero from '@/components/sections/PageHero';
+import ContactMapSection from '@/components/sections/ContactMapSection';
 
 const contactInfo = [
   {
@@ -34,10 +36,11 @@ const contactInfo = [
   },
 ];
 
+const contactMapEmbedUrl =
+  'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1562.7!2d27.1057313!3d38.4680346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14bbd9dd2adbb0b9%3A0x6988352d26352bc!2zRGVkZWJhxZ_EsSwgNjEzMS4gU2suIE5vOjM5L0EsIDM1NTYwIEthcsWfxLF5YWthL8Swem1pcg!5e0!3m2!1str!2str!4v1707000000000!5m2!1str!2str';
+
 export default function Contact() {
-  const headerRef = useRef<HTMLDivElement>(null);
   const formRef = useRef<HTMLDivElement>(null);
-  const isHeaderInView = useInView(headerRef, { once: true });
   const isFormInView = useInView(formRef, { once: true, margin: '-100px' });
 
   const [formData, setFormData] = useState({
@@ -65,33 +68,15 @@ export default function Contact() {
 
   return (
     <main className="min-h-screen pt-20 md:pt-24 lg:pt-28">
-      {/* Hero */}
-      <section ref={headerRef} className="relative py-12 md:py-16 lg:py-24 bg-cream-100">
-        <div className="container-padding">
-          <div className="max-w-7xl mx-auto">
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              animate={isHeaderInView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.6 }}
-            >
-              {/* Breadcrumb */}
-              <div className="flex items-center gap-2 text-sm text-foreground/50 mb-4 md:mb-6">
-                <span>Anasayfa</span>
-                <span>/</span>
-                <span className="text-neli-600">İletişim</span>
-              </div>
-              
-              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-medium text-foreground mb-3 md:mb-4">
-                Bize <span className="text-neli-600">Ulaşın</span>
-              </h1>
-              <p className="text-foreground/60 max-w-2xl text-sm md:text-base">
-                Projeleriniz için bizimle iletişime geçin. Size özel çözümler 
-                sunmak için bekliyoruz.
-              </p>
-            </motion.div>
-          </div>
-        </div>
-      </section>
+      <PageHero
+        currentPage="İletişim"
+        title={
+          <>
+            Bize <span className="text-neli-600">Ulaşın</span>
+          </>
+        }
+        description="Projeleriniz için bizimle iletişime geçin. Size özel çözümler sunmak için bekliyoruz."
+      />
 
       {/* Contact Content */}
       <section ref={formRef} className="section-padding bg-white">
@@ -257,35 +242,10 @@ export default function Contact() {
         </div>
       </section>
 
-      {/* Map Section */}
-      <section className="relative h-64 md:h-80 lg:h-96 bg-cream-100">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1562.7!2d27.1057313!3d38.4680346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14bbd9dd2adbb0b9%3A0x6988352d26352bc!2zRGVkZWJhxZ_EsSwgNjEzMS4gU2suIE5vOjM5L0EsIDM1NTYwIEthcsWfxLF5YWthL8Swem1pcg!5e0!3m2!1str!2str!4v1707000000000!5m2!1str!2str"
-          width="100%"
-          height="100%"
-          style={{ border: 0 }}
-          allowFullScreen
-          loading="lazy"
-          referrerPolicy="no-referrer-when-downgrade"
-          title="Neli Mühendislik Konum"
-          className="grayscale-[30%] contrast-[1.1]"
-        />
-        {/* Custom Pin Overlay */}
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-full pointer-events-none z-10">
-          <div className="relative">
-            {/* Pin Shadow */}
-            <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-4 h-1 bg-black/20 rounded-full blur-sm" />
-            {/* Pin Body */}
-            <div className="relative flex flex-col items-center">
-              <div className="w-10 h-10 md:w-12 md:h-12 bg-neli-600 rounded-full flex items-center justify-center shadow-lg border-3 border-white">
-                <MapPin className="w-5 h-5 md:w-6 md:h-6 text-white" />
-              </div>
-              {/* Pin Pointer */}
-              <div className="w-0 h-0 border-l-[8px] border-l-transparent border-r-[8px] border-r-transparent border-t-[12px] border-t-neli-600 -mt-1" />
-            </div>
-          </div>
-        </div>
-      </section>
+      <ContactMapSection
+        mapSrc={contactMapEmbedUrl}
+        title="Neli Mühendislik Konum"
+      />
     </main>
   );
 }

@@ -1,7 +1,8 @@
 import { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
-import { MapPin, Calendar, CheckCircle2, Building, Clock, Users, ArrowRight } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { MapPin, Calendar, CheckCircle2, Building, Clock, Users } from 'lucide-react';
+import PageHero from '@/components/sections/PageHero';
+import PrimaryCtaSection from '@/components/sections/PrimaryCtaSection';
 
 const restorations = [
   {
@@ -88,45 +89,24 @@ const stats = [
 ];
 
 export default function Restoration() {
-  const headerRef = useRef<HTMLDivElement>(null);
   const servicesRef = useRef<HTMLDivElement>(null);
   const projectsRef = useRef<HTMLDivElement>(null);
   
-  const isHeaderInView = useInView(headerRef, { once: true });
   const isServicesInView = useInView(servicesRef, { once: true, margin: '-100px' });
   const isProjectsInView = useInView(projectsRef, { once: true, margin: '-100px' });
 
   return (
     <main className="min-h-screen pt-20 md:pt-24 lg:pt-28">
-      {/* Hero */}
-      <section ref={headerRef} className="relative py-12 md:py-16 lg:py-24 bg-cream-100">
-        <div className="container-padding">
-          <div className="max-w-7xl mx-auto">
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              animate={isHeaderInView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.6 }}
-            >
-              {/* Breadcrumb */}
-              <div className="flex items-center gap-2 text-sm text-foreground/50 mb-4 md:mb-6">
-                <span>Anasayfa</span>
-                <span>/</span>
-                <span className="text-neli-600">Restorasyon</span>
-              </div>
-              
-              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-medium text-foreground mb-3 md:mb-4">
-                Binalara Yeni Bir
-                <span className="text-neli-600"> Yaşam Veriyoruz</span>
-              </h1>
-              <p className="text-foreground/60 max-w-2xl text-sm md:text-base">
-                Mevcut yapıların değerini koruyarak, modern standartlara uygun 
-                restorasyon hizmetleri sunuyoruz. Tarihi dokuyu korurken, 
-                çağdaş konforu sağlıyoruz.
-              </p>
-            </motion.div>
-          </div>
-        </div>
-      </section>
+      <PageHero
+        currentPage="Restorasyon"
+        title={
+          <>
+            Binalara Yeni Bir
+            <span className="text-neli-600"> Yaşam Veriyoruz</span>
+          </>
+        }
+        description="Mevcut yapıların değerini koruyarak, modern standartlara uygun restorasyon hizmetleri sunuyoruz. Tarihi dokuyu korurken, çağdaş konforu sağlıyoruz."
+      />
 
       {/* Stats */}
       <section className="py-8 md:py-12 bg-white border-b border-cream-300">
@@ -137,7 +117,8 @@ export default function Restoration() {
                 <motion.div
                   key={stat.label}
                   initial={{ opacity: 0, y: 20 }}
-                  animate={isHeaderInView ? { opacity: 1, y: 0 } : {}}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
                   transition={{ duration: 0.5, delay: 0.3 + index * 0.1 }}
                   className="text-center"
                 >
@@ -251,35 +232,11 @@ export default function Restoration() {
         </div>
       </section>
 
-      {/* CTA */}
-      <section className="py-16 md:py-20 lg:py-28 bg-foreground">
-        <div className="container-padding">
-          <div className="max-w-4xl mx-auto text-center">
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6 }}
-              viewport={{ once: true }}
-            >
-              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-medium text-white mb-4 md:mb-6">
-                Binanızı Yenilemek İçin
-                <span className="block text-neli-500 mt-1 md:mt-2">Bize Ulaşın</span>
-              </h2>
-              <p className="text-white/60 text-base md:text-lg mb-6 md:mb-8 max-w-2xl mx-auto px-4 md:px-0">
-                Restorasyon projeleriniz için ücretsiz keşif ve fiyat teklifi alın. 
-                Uzman ekibimiz size en uygun çözümleri sunacaktır.
-              </p>
-              <Link
-                to="/iletisim"
-                className="inline-flex items-center gap-2 px-6 md:px-8 py-3 md:py-4 bg-neli-600 hover:bg-neli-700 text-white font-semibold rounded-full transition-colors duration-300"
-              >
-                <span>İletişime Geçin</span>
-                <ArrowRight className="w-4 h-4" />
-              </Link>
-            </motion.div>
-          </div>
-        </div>
-      </section>
+      <PrimaryCtaSection
+        title="Binanızı Yenilemek İçin"
+        highlightText="Bize Ulaşın"
+        description="Restorasyon projeleriniz için ücretsiz keşif ve fiyat teklifi alın. Uzman ekibimiz size en uygun çözümleri sunacaktır."
+      />
     </main>
   );
 }

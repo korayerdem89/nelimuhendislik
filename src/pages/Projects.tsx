@@ -1,6 +1,7 @@
-import { useState, useRef } from 'react';
-import { motion, useInView } from 'framer-motion';
+import { useState } from 'react';
+import { motion } from 'framer-motion';
 import { MapPin, Calendar, Home, ChevronDown } from 'lucide-react';
+import PageHero from '@/components/sections/PageHero';
 
 const projects = [
   {
@@ -99,9 +100,6 @@ export default function Projects() {
   });
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
   
-  const headerRef = useRef<HTMLDivElement>(null);
-  const isHeaderInView = useInView(headerRef, { once: true });
-
   const filteredProjects = projects.filter((project) => {
     if (activeFilters.status !== 'Tümü' && project.status !== activeFilters.status) return false;
     if (activeFilters.type !== 'Tümü' && project.type !== activeFilters.type) return false;
@@ -111,34 +109,16 @@ export default function Projects() {
 
   return (
     <main className="min-h-screen pt-20 md:pt-24 lg:pt-28">
-      {/* Hero */}
-      <section ref={headerRef} className="relative py-12 md:py-16 lg:py-24 bg-cream-100">
-        <div className="container-padding">
-          <div className="max-w-7xl mx-auto">
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              animate={isHeaderInView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.6 }}
-            >
-              {/* Breadcrumb */}
-              <div className="flex items-center gap-2 text-sm text-foreground/50 mb-4 md:mb-6">
-                <span>Anasayfa</span>
-                <span>/</span>
-                <span className="text-neli-600">Projeler</span>
-              </div>
-              
-              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-medium text-foreground mb-3 md:mb-4">
-                Satışı Devam Eden & Tamamlanan
-                <span className="text-neli-600"> Konut Projelerimiz</span>
-              </h1>
-              <p className="text-foreground/60 max-w-2xl text-sm md:text-base">
-                Her projemizde kalite, konfor ve estetiği bir araya getirerek 
-                ayrıcalıklı yaşam alanları oluşturuyoruz.
-              </p>
-            </motion.div>
-          </div>
-        </div>
-      </section>
+      <PageHero
+        currentPage="Projeler"
+        title={
+          <>
+            Satışı Devam Eden & Tamamlanan
+            <span className="text-neli-600"> Konut Projelerimiz</span>
+          </>
+        }
+        description="Her projemizde kalite, konfor ve estetiği bir araya getirerek ayrıcalıklı yaşam alanları oluşturuyoruz."
+      />
 
       {/* Filters */}
       <section className="sticky top-16 md:top-20 lg:top-24 z-30 bg-white border-b border-cream-300 py-3 md:py-4">

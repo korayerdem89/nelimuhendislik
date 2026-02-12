@@ -93,7 +93,7 @@ export default function Footer() {
         <div className="container-padding py-4 md:py-6">
           <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-3 md:gap-4">
             <p className="text-foreground/50 text-xs md:text-sm text-center sm:text-left">
-              © 2024 Neli Mühendislik. Tüm hakları saklıdır.
+              © 2026 Neli Mühendislik. Tüm hakları saklıdır.
             </p>
             
             {/* Social Links */}

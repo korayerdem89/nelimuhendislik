@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import { motion, useInView } from 'framer-motion';
 import { ArrowRight, Building2, HardHat, Award, Users } from 'lucide-react';
 import HeroSection from '../components/HeroSection';
+import TimelineMilestones from '@/components/sections/TimelineMilestones';
+import PrimaryCtaSection from '@/components/sections/PrimaryCtaSection';
 
 const stats = [
   { icon: Building2, value: '15+', label: 'Tamamlanan Proje' },
@@ -65,11 +67,9 @@ export default function Home() {
   const heroRef = useRef<HTMLDivElement>(null);
   const aboutRef = useRef<HTMLDivElement>(null);
   const projectsRef = useRef<HTMLDivElement>(null);
-  const milestonesRef = useRef<HTMLDivElement>(null);
   
   const isAboutInView = useInView(aboutRef, { once: true, margin: '-100px' });
   const isProjectsInView = useInView(projectsRef, { once: true, margin: '-100px' });
-  const isMilestonesInView = useInView(milestonesRef, { once: true, margin: '-100px' });
 
   return (
     <main className="min-h-screen">
@@ -230,108 +230,17 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Milestones */}
-      <section ref={milestonesRef} className="section-padding bg-white">
-        <div className="container-padding">
-          <div className="max-w-7xl mx-auto">
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              animate={isMilestonesInView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.6 }}
-              className="text-center mb-10 md:mb-16"
-            >
-              <span className="text-neli-600 text-sm font-medium tracking-wider uppercase mb-2 md:mb-4 block">
-                Hikayemizin Devamı
-              </span>
-              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-medium text-foreground">
-                Kilometre Taşları
-              </h2>
-            </motion.div>
+      <TimelineMilestones
+        eyebrow="Hikayemizin Devamı"
+        title="Kilometre Taşları"
+        milestones={milestones}
+      />
 
-            <div className="relative">
-              {/* Timeline Line - Hidden on mobile */}
-              <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-px bg-cream-300 -translate-x-1/2" />
-
-              {/* Timeline Items */}
-              <div className="space-y-8 md:space-y-12">
-                {milestones.map((milestone, index) => (
-                  <motion.div
-                    key={milestone.year}
-                    initial={{ opacity: 0, y: 30 }}
-                    animate={isMilestonesInView ? { opacity: 1, y: 0 } : {}}
-                    transition={{ duration: 0.5, delay: 0.2 + index * 0.15 }}
-                    className="relative md:grid md:grid-cols-[1fr_60px_1fr] md:items-start"
-                  >
-                    {/* Left Column */}
-                    <div className={`hidden md:block ${index % 2 === 0 ? 'text-right pr-4' : ''}`}>
-                      {index % 2 === 0 && (
-                        <>
-                          <span className="text-neli-600 font-serif text-xl md:text-2xl font-bold">{milestone.year}</span>
-                          <h3 className="text-lg md:text-xl font-serif font-medium text-foreground mt-1 md:mt-2 mb-1 md:mb-2">{milestone.title}</h3>
-                          <p className="text-foreground/60 text-sm leading-relaxed">{milestone.description}</p>
-                        </>
-                      )}
-                    </div>
-
-                    {/* Center Dot */}
-                    <div className="hidden md:flex justify-center">
-                      <div className="w-8 h-8 rounded-full bg-white border-4 border-neli-600 flex-shrink-0" />
-                    </div>
-
-                    {/* Right Column */}
-                    <div className={`hidden md:block ${index % 2 !== 0 ? 'text-left pl-4' : ''}`}>
-                      {index % 2 !== 0 && (
-                        <>
-                          <span className="text-neli-600 font-serif text-xl md:text-2xl font-bold">{milestone.year}</span>
-                          <h3 className="text-lg md:text-xl font-serif font-medium text-foreground mt-1 md:mt-2 mb-1 md:mb-2">{milestone.title}</h3>
-                          <p className="text-foreground/60 text-sm leading-relaxed">{milestone.description}</p>
-                        </>
-                      )}
-                    </div>
-
-                    {/* Mobile Layout */}
-                    <div className="md:hidden">
-                      <span className="text-neli-600 font-serif text-xl font-bold">{milestone.year}</span>
-                      <h3 className="text-lg font-serif font-medium text-foreground mt-1 mb-1">{milestone.title}</h3>
-                      <p className="text-foreground/60 text-sm leading-relaxed">{milestone.description}</p>
-                    </div>
-                  </motion.div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* CTA Section */}
-      <section className="py-16 md:py-20 lg:py-28 bg-foreground">
-        <div className="container-padding">
-          <div className="max-w-4xl mx-auto text-center">
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6 }}
-              viewport={{ once: true }}
-            >
-              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-medium text-white mb-4 md:mb-6">
-                Hayalinizdeki Yaşam İçin
-                <span className="block text-neli-500 mt-1 md:mt-2">Bize Ulaşın</span>
-              </h2>
-              <p className="text-white/60 text-base md:text-lg mb-6 md:mb-8 max-w-2xl mx-auto px-4 md:px-0">
-                Size özel ayrıcalıklar ve öncelikli fırsatlar için formu doldurun, 
-                en kısa sürede size dönüş yapalım.
-              </p>
-              <Link
-                to="/iletisim"
-                className="inline-flex items-center gap-2 px-6 md:px-8 py-3 md:py-4 bg-neli-600 hover:bg-neli-700 text-white font-semibold rounded-full transition-colors duration-300"
-              >
-                <span>İletişime Geçin</span>
-                <ArrowRight className="w-4 h-4" />
-              </Link>
-            </motion.div>
-          </div>
-        </div>
-      </section>
+      <PrimaryCtaSection
+        title="Hayalinizdeki Yaşam İçin"
+        highlightText="Bize Ulaşın"
+        description="Size özel ayrıcalıklar ve öncelikli fırsatlar için formu doldurun, en kısa sürede size dönüş yapalım."
+      />
     </main>
   );
 }
