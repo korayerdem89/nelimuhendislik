@@ -36,7 +36,7 @@ const PROJECTS: ProjectPin[] = [
     name: "Valorya 3",
     coordinates: [38.517611, 27.04],
     neighborhood: "Balatcik Mahallesi",
-    district: "Cigli",
+    district: "Çiğli",
     image: "/site-logo.png",
     href: "/projeler",
   },
@@ -45,7 +45,7 @@ const PROJECTS: ProjectPin[] = [
     name: "Valorya 1",
     coordinates: [38.508889, 27.039833],
     neighborhood: "Balatcik Mahallesi",
-    district: "Cigli",
+    district: "Çiğli",
     image: "/site-logo.png",
     href: "/projeler",
   },
@@ -53,8 +53,8 @@ const PROJECTS: ProjectPin[] = [
     id: 4,
     name: "Valorya 2",
     coordinates: [38.4992059, 27.0572575],
-    neighborhood: "Kucukcigli Mahallesi",
-    district: "Cigli",
+    neighborhood: "KucukÇiğli Mahallesi",
+    district: "Çiğli",
     image: "/site-logo.png",
     href: "/projeler",
   },
@@ -71,8 +71,8 @@ const PROJECTS: ProjectPin[] = [
     id: 6,
     name: "Valorya 5",
     coordinates: [38.508107, 27.049398],
-    neighborhood: "Kucukcigli Mahallesi",
-    district: "Cigli",
+    neighborhood: "KucukÇiğli Mahallesi",
+    district: "Çiğli",
     image: "/site-logo.png",
     href: "/projeler",
   },
@@ -80,8 +80,8 @@ const PROJECTS: ProjectPin[] = [
     id: 7,
     name: "Valorya 6",
     coordinates: [38.498116, 27.057128],
-    neighborhood: "Kucukcigli Mahallesi",
-    district: "Cigli",
+    neighborhood: "KucukÇiğli Mahallesi",
+    district: "Çiğli",
     image: "/site-logo.png",
     href: "/projeler",
   },
@@ -89,8 +89,8 @@ const PROJECTS: ProjectPin[] = [
     id: 8,
     name: "Valorya 7",
     coordinates: [38.497562, 27.057069],
-    neighborhood: "Kucukcigli Mahallesi",
-    district: "Cigli",
+    neighborhood: "KucukÇiğli Mahallesi",
+    district: "Çiğli",
     image: "/site-logo.png",
     href: "/projeler",
   },
@@ -105,30 +105,43 @@ function createPinIcon(color: string) {
     className: "project-map-pin",
     html: `
     <div style="
-      width: 18px;
-      height: 18px;
+      width: 19px;
+      height: 19px;
       border-radius: 9999px;
-      background: ${color};
-      border: 2px solid #FFFFFF;
+      background: radial-gradient(circle at 30% 28%, #ffffff 0%, ${color} 42%, ${color} 100%);
+      border: 1.5px solid rgba(255, 255, 255, 0.95);
+      box-sizing: border-box;
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
       position: relative;
-      transform: translate(-9px, -18px);
+      transform: translate(-9.5px, -19px);
     ">
       <span style="
         position: absolute;
         left: 50%;
-        bottom: -8px;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 5px;
+        height: 5px;
+        border-radius: 9999px;
+        background: rgba(255, 255, 255, 0.95);
+        box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.35);
+      "></span>
+      <span style="
+        position: absolute;
+        left: 50%;
+        bottom: -7px;
         transform: translateX(-50%);
         width: 0;
         height: 0;
-        border-left: 5px solid transparent;
-        border-right: 5px solid transparent;
-        border-top: 8px solid ${color};
+        border-left: 4.5px solid transparent;
+        border-right: 4.5px solid transparent;
+        border-top: 7px solid ${color};
+        filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.2));
       "></span>
     </div>
   `,
-    iconSize: [18, 26],
-    iconAnchor: [9, 26],
+    iconSize: [19, 27],
+    iconAnchor: [9.5, 27],
     popupAnchor: [0, -22],
   });
 }
@@ -243,20 +256,20 @@ export default function ProjectsMapSection({
               markerRefs.current[project.id] = ref;
             }}
           >
-            <Popup closeButton minWidth={220}>
-              <div className="w-[220px]">
+            <Popup closeButton minWidth={132}>
+              <div className="w-[132px]">
                 <img
                   src={project.image}
                   alt={project.name}
-                  className="mb-3 aspect-[1/1] w-full rounded-md object-cover"
+                  className="mb-2 aspect-[1/1] w-full rounded object-cover"
                   loading="lazy"
                 />
-                <h3 className="mb-2 text-sm font-semibold text-foreground">
+                <h3 className="mb-1 text-[10px] font-semibold leading-tight text-foreground">
                   {project.name}
                 </h3>
                 <Link
                   to={project.href}
-                  className="inline-flex items-center justify-center rounded-md  px-3 py-2 text-xs font-medium bg-neli-600 transition-colors hover:bg-neli-700"
+                  className="inline-flex items-center justify-center rounded px-2 py-1 text-[10px] font-medium bg-neli-600 transition-colors hover:bg-neli-700"
                 >
                   <span className="text-white"> Projeyi Incele</span>
                 </Link>
