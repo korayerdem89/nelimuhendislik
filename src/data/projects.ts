@@ -1,4 +1,4 @@
-export type ProjectStatus = "Satista" | "Tamamlandi";
+export type ProjectStatus = "İnşaat" | "Satışta" | "Tamamlandı";
 
 export interface ProjectUnitType {
   type: string;
@@ -34,27 +34,27 @@ export interface Project {
 }
 
 export const projectStatusLabels: Record<ProjectStatus, string> = {
-  Satista: "Satışta",
-  Tamamlandi: "Tamamlandı",
+  Satışta: "Satışta",
+  Tamamlandı: "Tamamlandı",
+  İnşaat: "İnşaat",
 };
 
 export const projects: Project[] = [
   {
     id: 1,
-    slug: "valorya-5",
-    name: "Valorya 5",
-    location: "Izmir",
+    slug: "valorya-1",
+    name: "Valorya 1",
+    location: "İzmir",
     year: "2024",
-    type: "Villa",
+    type: "Apartman",
     description:
-      "Modern mimari ile geleneksel dokunun harmanlandigi luks villa projesi.",
-    image:
-      "https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=800&q=80",
-    status: "Satista",
+      "Kusursuz yalıtımlı, deprem güvenliği yüksek, modern apartman dairesi.",
+    image: "/projects/valorya1/cover.webp",
+    status: "Satışta",
     details: {
-      neighborhood: "Kucukcigli Mahallesi",
-      district: "Cigli",
-      city: "Izmir",
+      neighborhood: "Küçükçiğli Mahallesi",
+      district: "Çiğli",
+      city: "İzmir",
       locationImage: "/site-logo.png",
       highlights: [
         "Ferah cephe tasarimi ve gun isigi odakli planlama",
@@ -65,30 +65,34 @@ export const projects: Project[] = [
       unitTypes: [
         { type: "2+1", count: 18, grossArea: "118 m2", netArea: "92 m2" },
         { type: "3+1", count: 16, grossArea: "146 m2", netArea: "116 m2" },
-        { type: "4+1 Dubleks", count: 8, grossArea: "188 m2", netArea: "154 m2" },
+        {
+          type: "4+1 Dubleks",
+          count: 8,
+          grossArea: "188 m2",
+          netArea: "154 m2",
+        },
       ],
       totalUnits: 42,
       totalBlocks: 3,
       landscapeRatio: "%48",
-      parking: "Kapali otopark",
+      parking: "Kapalı otopark",
     },
   },
   {
     id: 2,
-    slug: "valorya-4",
-    name: "Valorya 4",
-    location: "Izmir",
+    slug: "valorya-2",
+    name: "Valorya 2",
+    location: "İzmir",
     year: "2024",
-    type: "Villa",
+    type: "Apartman",
     description:
       "Doga ile ic ice, konforlu yasam alanlari sunan ozel villa projesi.",
-    image:
-      "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80",
-    status: "Satista",
+    image: "/projects/valorya2/cover.webp",
+    status: "Satışta",
     details: {
-      neighborhood: "Yamanlar Mahallesi",
-      district: "Karsiyaka",
-      city: "Izmir",
+      neighborhood: "Küçükçiğli Mahallesi",
+      district: "Çiğli",
+      city: "İzmir",
       locationImage: "/site-logo.png",
       highlights: [
         "Dusuk katli ve butik yerlesim plani",
@@ -111,17 +115,16 @@ export const projects: Project[] = [
     id: 3,
     slug: "valorya-3",
     name: "Valorya 3",
-    location: "Izmir",
+    location: "İzmir",
     year: "2023",
-    type: "Villa",
+    type: "Apartman",
     description: "Premium kalite standartlarinda tasarlanmis villa kompleksi.",
-    image:
-      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80",
-    status: "Tamamlandi",
+    image: "/projects/valorya3/cover.webp",
+    status: "Satışta",
     details: {
       neighborhood: "Balatcik Mahallesi",
       district: "Cigli",
-      city: "Izmir",
+      city: "İzmir",
       locationImage: "/site-logo.png",
       highlights: [
         "Genis balkon ve teras odakli daire tasarimi",
@@ -141,19 +144,19 @@ export const projects: Project[] = [
   },
   {
     id: 4,
-    slug: "serenita-park",
-    name: "Serenita Park",
-    location: "Karsiyaka, Izmir",
+    slug: "valorya-4",
+    name: "Valorya 4",
+    location: "Karşıyaka, İzmir",
     year: "2023",
-    type: "Toplu Konut",
-    description: "Yesil alanlari ve sosyal donatilariyla modern yasam kompleksi.",
-    image:
-      "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=800&q=80",
-    status: "Tamamlandi",
+    type: "Apartman",
+    description:
+      "Yesil alanlari ve sosyal donatilariyla modern yasam kompleksi.",
+    image: "/projects/valorya4/cover.webp",
+    status: "Satışta",
     details: {
-      neighborhood: "Dedebasi Mahallesi",
-      district: "Karsiyaka",
-      city: "Izmir",
+      neighborhood: "Postacılar Mahallesi",
+      district: "Karşıyaka",
+      city: "İzmir",
       locationImage: "/site-logo.png",
       highlights: [
         "Cocuk oyun ve dinlenme alanlariyla guclu sosyal yasam",
@@ -174,19 +177,18 @@ export const projects: Project[] = [
   },
   {
     id: 5,
-    slug: "valorya-2",
-    name: "Valorya 2",
-    location: "Kucukcekmece, Izmir",
+    slug: "valorya-5",
+    name: "Valorya 5",
+    location: "Çiğli, İzmir",
     year: "2022",
-    type: "Villa",
+    type: "Apartman",
     description: "Aile yasamina uygun, genis bahceli villa projesi.",
-    image:
-      "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80",
-    status: "Tamamlandi",
+    image: "/projects/valorya5/cover.webp",
+    status: "Satışta",
     details: {
-      neighborhood: "Kucukcigli Mahallesi",
-      district: "Cigli",
-      city: "Izmir",
+      neighborhood: "Balatçık Mahallesi",
+      district: "Çiğli",
+      city: "İzmir",
       locationImage: "/site-logo.png",
       highlights: [
         "Genis bahce ve acik hava yasam kurgusu",
@@ -206,19 +208,18 @@ export const projects: Project[] = [
   },
   {
     id: 6,
-    slug: "valorya-1",
-    name: "Valorya 1",
-    location: "Balatcik, Izmir",
+    slug: "valorya-6",
+    name: "Valorya 6",
+    location: "Çiğli, İzmir",
     year: "2022",
-    type: "Villa",
+    type: "Apartman",
     description: "Neli Muhendislik'in ilk villa projesi, zamansiz tasarim.",
-    image:
-      "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800&q=80",
-    status: "Tamamlandi",
+    image: "/projects/valorya6/cover.webp",
+    status: "Satışta",
     details: {
-      neighborhood: "Balatcik Mahallesi",
-      district: "Cigli",
-      city: "Izmir",
+      neighborhood: "Küçükçiğli Mahallesi",
+      district: "Çiğli",
+      city: "İzmir",
       locationImage: "/site-logo.png",
       highlights: [
         "Sadelik ve fonksiyonelligi birlestiren cephe dili",
@@ -238,20 +239,19 @@ export const projects: Project[] = [
   },
   {
     id: 7,
-    slug: "serenita-prestige",
-    name: "Serenita Prestige",
-    location: "Bornova, Izmir",
+    slug: "valorya-7",
+    name: "Valorya 7",
+    location: "Çiğli, İzmir",
     year: "2023",
     type: "Apartman",
     description:
       "Prestijli konumda, yuksek kaliteli malzemelerle insa edilmis apartman.",
-    image:
-      "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&q=80",
-    status: "Tamamlandi",
+    image: "/projects/valorya7/cover.webp",
+    status: "Satışta",
     details: {
-      neighborhood: "Kazimdirik Mahallesi",
-      district: "Bornova",
-      city: "Izmir",
+      neighborhood: "Küçükçiğli Mahallesi",
+      district: "Çiğli",
+      city: "İzmir",
       locationImage: "/site-logo.png",
       highlights: [
         "Merkezi konumda ulasim avantajli yasam",
@@ -274,17 +274,47 @@ export const projects: Project[] = [
     id: 8,
     slug: "serenita-garden",
     name: "Serenita Garden",
-    location: "Cigli, Izmir",
+    location: "Narlıdere, İzmir",
     year: "2022",
-    type: "Toplu Konut",
+    type: "İnşaat",
     description: "Bahce konseptli, aile dostu toplu konut projesi.",
-    image:
-      "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=800&q=80",
-    status: "Tamamlandi",
+    image: "/projects/serenitagarden/cover.webp",
+    status: "Satışta",
     details: {
-      neighborhood: "Aydinlikevler Mahallesi",
-      district: "Cigli",
-      city: "Izmir",
+      neighborhood: "Sahilevleri Mahallesi",
+      district: "Narlıdere",
+      city: "İzmir",
+      locationImage: "/site-logo.png",
+      highlights: [
+        "Ortak bahce ve yuruyus akslariyla guclu site yasami",
+        "Aile odakli plan tipleri ve fonksiyonel depolama",
+        "Sosyal alanlara yakin konum avantaji",
+        "Yonetilebilir isletme giderleri icin verimli altyapi",
+      ],
+      unitTypes: [
+        { type: "2+1", count: 30, grossArea: "110 m2", netArea: "85 m2" },
+        { type: "3+1", count: 24, grossArea: "144 m2", netArea: "114 m2" },
+      ],
+      totalUnits: 54,
+      totalBlocks: 3,
+      landscapeRatio: "%46",
+      parking: "Acik + kapali otopark",
+    },
+  },
+  {
+    id: 9,
+    slug: "serenita-prestige",
+    name: "Serenita Prestige",
+    location: "Narlıdere, İzmir",
+    year: "2022",
+    type: "Villa",
+    description: "Bahce konseptli, aile dostu toplu konut projesi.",
+    image: "/projects/serenitaprestige/cover.webp",
+    status: "İnşaat",
+    details: {
+      neighborhood: "Sahilevleri Mahallesi",
+      district: "Narlıdere",
+      city: "İzmir",
       locationImage: "/site-logo.png",
       highlights: [
         "Ortak bahce ve yuruyus akslariyla guclu site yasami",

@@ -17,12 +17,17 @@ export default function Projects() {
     () => ({
       status: [
         "Tümü",
-        ...new Set(projects.map((project) => projectStatusLabels[project.status])),
+        ...new Set(
+          projects.map((project) => projectStatusLabels[project.status]),
+        ),
       ],
       type: ["Tümü", ...new Set(projects.map((project) => project.type))],
-      location: ["Tümü", ...new Set(projects.map((project) => project.details.district))],
+      location: [
+        "Tümü",
+        ...new Set(projects.map((project) => project.details.district)),
+      ],
     }),
-    []
+    [],
   );
 
   const filteredProjects = projects.filter((project) => {
@@ -143,7 +148,9 @@ export default function Projects() {
               <div className="relative">
                 <button
                   onClick={() =>
-                    setOpenDropdown(openDropdown === "location" ? null : "location")
+                    setOpenDropdown(
+                      openDropdown === "location" ? null : "location",
+                    )
                   }
                   className="flex items-center gap-1.5 md:gap-2 px-3 md:px-4 py-2 bg-cream-100 hover:bg-cream-200 rounded-lg text-xs md:text-sm font-medium transition-colors duration-300"
                 >
@@ -194,7 +201,7 @@ export default function Projects() {
                   className="group"
                 >
                   <Link to={`/projeler/${project.slug}`} className="block">
-                    <div className="relative aspect-[3/4] rounded-xl overflow-hidden mb-3 md:mb-4">
+                    <div className="relative aspect-[1/1] rounded-xl overflow-hidden mb-3 md:mb-4">
                       <img
                         src={project.image}
                         alt={project.name}
@@ -206,7 +213,7 @@ export default function Projects() {
                       <div className="absolute top-3 md:top-4 left-3 md:left-4">
                         <span
                           className={`px-2 md:px-3 py-1 rounded-full text-xs font-medium ${
-                            project.status === "Satista"
+                            project.status === "Satışta"
                               ? "bg-neli-600 text-white"
                               : "bg-white/90 text-foreground"
                           }`}
