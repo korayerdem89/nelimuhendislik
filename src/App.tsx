@@ -4,6 +4,7 @@ import Navigation from './components/Navigation';
 import Footer from './components/Footer';
 import Home from './pages/Home';
 import Projects from './pages/Projects';
+import ProjectDetail from './pages/ProjectDetail';
 import Restoration from './pages/Restoration';
 import Corporate from './pages/Corporate';
 import Contact from './pages/Contact';
@@ -16,6 +17,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/projeler" element={<Projects />} />
+          <Route path="/projeler/:slug" element={<ProjectDetail />} />
           <Route path="/restorasyon" element={<Restoration />} />
           <Route path="/kurumsal" element={<Corporate />} />
           <Route path="/iletisim" element={<Contact />} />
