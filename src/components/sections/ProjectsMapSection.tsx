@@ -1,9 +1,10 @@
 import "leaflet/dist/leaflet.css";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
+import type { MutableRefObject } from "react";
 import { Link } from "react-router-dom";
 import { MapContainer, Marker, Popup, TileLayer, useMap } from "react-leaflet";
 import { divIcon } from "leaflet";
-import type { LatLngExpression } from "leaflet";
+import type { LatLngExpression, Marker as LeafletMarker } from "leaflet";
 
 interface ProjectsMapSectionProps {
   title: string;
@@ -99,14 +100,15 @@ const mapCenter: LatLngExpression = [38.501, 27.048];
 const defaultZoom = 12;
 const focusZoom = 16;
 
-const smallPinIcon = divIcon({
-  className: "project-map-pin",
-  html: `
+function createPinIcon(color: string) {
+  return divIcon({
+    className: "project-map-pin",
+    html: `
     <div style="
       width: 18px;
       height: 18px;
       border-radius: 9999px;
-      background: #a51422;
+      background: ${color};
       border: 2px solid #FFFFFF;
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
       position: relative;
@@ -121,20 +123,25 @@ const smallPinIcon = divIcon({
         height: 0;
         border-left: 5px solid transparent;
         border-right: 5px solid transparent;
-        border-top: 8px solid #a51422;
+        border-top: 8px solid ${color};
       "></span>
     </div>
   `,
-  iconSize: [18, 26],
-  iconAnchor: [9, 26],
-  popupAnchor: [0, -22],
-});
+    iconSize: [18, 26],
+    iconAnchor: [9, 26],
+    popupAnchor: [0, -22],
+  });
+}
+
+const defaultPinIcon = createPinIcon("#a51422");
+const activePinIcon = createPinIcon("#16a34a");
 
 interface FlyToProjectProps {
   selectedProject: ProjectPin | null;
+  markerRefs: MutableRefObject<Record<number, LeafletMarker | null>>;
 }
 
-function FlyToProject({ selectedProject }: FlyToProjectProps) {
+function FlyToProject({ selectedProject, markerRefs }: FlyToProjectProps) {
   const map = useMap();
 
   useEffect(() => {
@@ -146,7 +153,12 @@ function FlyToProject({ selectedProject }: FlyToProjectProps) {
       duration: 0.8,
       animate: true,
     });
-  }, [map, selectedProject]);
+
+    map.once("moveend", () => {
+      const targetMarker = markerRefs.current[selectedProject.id];
+      targetMarker?.openPopup();
+    });
+  }, [map, markerRefs, selectedProject]);
 
   return null;
 }
@@ -158,6 +170,7 @@ export default function ProjectsMapSection({
   const [selectedProjectId, setSelectedProjectId] = useState<number | null>(
     null,
   );
+  const markerRefs = useRef<Record<number, LeafletMarker | null>>({});
   const selectedProject =
     PROJECTS.find((project) => project.id === selectedProjectId) ?? null;
 
@@ -209,7 +222,10 @@ export default function ProjectsMapSection({
         className="h-full w-full"
         aria-label={title}
       >
-        <FlyToProject selectedProject={selectedProject} />
+        <FlyToProject
+          selectedProject={selectedProject}
+          markerRefs={markerRefs}
+        />
         <TileLayer
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>'
           url="https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png"
@@ -220,7 +236,12 @@ export default function ProjectsMapSection({
           <Marker
             key={project.id}
             position={project.coordinates}
-            icon={smallPinIcon}
+            icon={
+              project.id === selectedProjectId ? activePinIcon : defaultPinIcon
+            }
+            ref={(ref) => {
+              markerRefs.current[project.id] = ref;
+            }}
           >
             <Popup closeButton minWidth={220}>
               <div className="w-[220px]">
