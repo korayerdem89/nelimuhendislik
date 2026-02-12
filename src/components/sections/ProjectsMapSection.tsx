@@ -227,7 +227,7 @@ export default function ProjectsMapSection({
                 <img
                   src={project.image}
                   alt={project.name}
-                  className="mb-3 h-28 w-full rounded-md object-cover"
+                  className="mb-3 aspect-[1/1] w-full rounded-md object-cover"
                   loading="lazy"
                 />
                 <h3 className="mb-2 text-sm font-semibold text-foreground">
@@ -235,9 +235,9 @@ export default function ProjectsMapSection({
                 </h3>
                 <Link
                   to={project.href}
-                  className="inline-flex items-center justify-center rounded-md bg-neli-600 px-3 py-2 text-xs font-medium text-white transition-colors hover:bg-neli-700"
+                  className="inline-flex items-center justify-center rounded-md  px-3 py-2 text-xs font-medium bg-neli-600 transition-colors hover:bg-neli-700"
                 >
-                  Projeyi Incele
+                  <span className="text-white"> Projeyi Incele</span>
                 </Link>
               </div>
             </Popup>
