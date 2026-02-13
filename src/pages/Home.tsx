@@ -77,7 +77,7 @@ export default function Home() {
   const isAboutInView = useInView(aboutRef, { once: true, margin: "-100px" });
   const isProjectsInView = useInView(projectsRef, {
     once: true,
-    margin: "-100px",
+    margin: "120px",
   });
 
   return (
