@@ -6,42 +6,13 @@ import HeroSection from "../components/HeroSection";
 import TimelineMilestones from "@/components/sections/TimelineMilestones";
 import PrimaryCtaSection from "@/components/sections/PrimaryCtaSection";
 import ProjectsMapSection from "@/components/sections/ProjectsMapSection";
+import { projects } from "@/data/projects";
 
 const stats = [
   { icon: Building2, value: "15+", label: "Tamamlanan Proje" },
   { icon: HardHat, value: "4+", label: "Yıllık Deneyim" },
   { icon: Award, value: "100%", label: "Müşteri Memnuniyeti" },
   { icon: Users, value: "500+", label: "Mutlu Aile" },
-];
-
-const featuredProjects = [
-  {
-    id: 1,
-    name: "Valorya 5",
-    location: "İzmir",
-    type: "Villa",
-    image:
-      "https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=800&q=80",
-    status: "Satışta",
-  },
-  {
-    id: 2,
-    name: "Valorya 4",
-    location: "İzmir",
-    type: "Villa",
-    image:
-      "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80",
-    status: "Satışta",
-  },
-  {
-    id: 3,
-    name: "Serenità Park",
-    location: "Karşıyaka, İzmir",
-    type: "Toplu Konut",
-    image:
-      "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=800&q=80",
-    status: "Tamamlandı",
-  },
 ];
 
 const milestones = [
@@ -126,9 +97,9 @@ export default function Home() {
                 transition={{ duration: 0.6 }}
                 className="relative order-2 lg:order-1"
               >
-                <div className="relative aspect-[4/3] rounded-2xl overflow-hidden">
+                <div className="relative aspect-[3/4] rounded-2xl overflow-hidden">
                   <img
-                    src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80"
+                    src="/office.webp"
                     alt="Neli Mühendislik"
                     className="w-full h-full object-cover"
                   />
@@ -192,7 +163,7 @@ export default function Home() {
             >
               <div>
                 <span className="text-neli-600 text-sm font-medium tracking-wider uppercase mb-2 md:mb-4 block">
-                  Satışı Devam Eden
+                  Tüm Projeler
                 </span>
                 <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-medium text-foreground">
                   Projelerimiz
@@ -209,42 +180,28 @@ export default function Home() {
 
             {/* Projects Grid */}
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
-              {featuredProjects.map((project, index) => (
+              {projects.slice(0, 3).map((project, index) => (
                 <motion.div
                   key={project.id}
                   initial={{ opacity: 0, y: 30 }}
                   animate={isProjectsInView ? { opacity: 1, y: 0 } : {}}
                   transition={{ duration: 0.5, delay: 0.2 + index * 0.1 }}
-                  className="group"
+                  className="group rounded-xl border border-cream-300 bg-white p-3"
                 >
-                  <Link to="/projeler">
-                    <div className="relative aspect-[4/3] rounded-xl overflow-hidden mb-3 md:mb-4">
+                  <Link to={`/projeler/${project.slug}`} className="block">
+                    <div className="relative aspect-[1/1] rounded-xl overflow-hidden mb-3 md:mb-4">
                       <img
                         src={project.image}
                         alt={project.name}
                         className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                       />
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
-                      <div className="absolute top-3 md:top-4 left-3 md:left-4">
-                        <span
-                          className={`px-2 md:px-3 py-1 rounded-full text-xs font-medium ${
-                            project.status === "Satışta"
-                              ? "bg-neli-600 text-white"
-                              : "bg-white/90 text-foreground"
-                          }`}
-                        >
-                          {project.status}
-                        </span>
-                      </div>
-                      <div className="absolute bottom-3 md:bottom-4 left-3 md:left-4 right-3 md:right-4">
-                        <h3 className="text-lg md:text-xl font-serif font-medium text-white mb-1">
-                          {project.name}
-                        </h3>
-                        <p className="text-white/70 text-sm">
-                          {project.location}
-                        </p>
-                      </div>
                     </div>
+                    <h3 className="text-lg md:text-xl font-serif font-medium text-foreground mb-1">
+                      {project.name}
+                    </h3>
+                    <p className="text-sm text-foreground/70">
+                      {project.details.city}, {project.details.district}
+                    </p>
                   </Link>
                 </motion.div>
               ))}

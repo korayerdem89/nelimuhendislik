@@ -123,7 +123,7 @@ export const projects: Project[] = [
     status: "Satışta",
     details: {
       neighborhood: "Balatcik Mahallesi",
-      district: "Cigli",
+      district: "Çiğli",
       city: "İzmir",
       locationImage: "/site-logo.png",
       highlights: [
