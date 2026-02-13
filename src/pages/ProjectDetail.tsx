@@ -1,7 +1,10 @@
+import { useEffect, useState } from "react";
 import { Link, Navigate, useParams } from "react-router-dom";
 import { motion } from "framer-motion";
 import {
   ArrowLeft,
+  ChevronLeft,
+  ChevronRight,
   MapPin,
   Calendar,
   Home,
@@ -9,6 +12,7 @@ import {
   Car,
   Trees,
   CheckCircle2,
+  X,
 } from "lucide-react";
 import PageHero from "@/components/sections/PageHero";
 import { getProjectBySlug, projectStatusLabels } from "@/data/projects";
@@ -16,6 +20,119 @@ import { getProjectBySlug, projectStatusLabels } from "@/data/projects";
 export default function ProjectDetail() {
   const { slug } = useParams<{ slug: string }>();
   const project = slug ? getProjectBySlug(slug) : undefined;
+  const [galleryImages, setGalleryImages] = useState<string[]>([]);
+  const [activeImageIndex, setActiveImageIndex] = useState(0);
+  const [lightboxImageIndex, setLightboxImageIndex] = useState<number | null>(
+    null,
+  );
+
+  const projectImage = project?.image ?? "";
+  const imageBasePath = projectImage.includes("/")
+    ? projectImage.slice(0, projectImage.lastIndexOf("/"))
+    : "";
+
+  useEffect(() => {
+    let mounted = true;
+
+    const preloadImage = (src: string) =>
+      new Promise<string | null>((resolve) => {
+        const img = new Image();
+        img.onload = () => resolve(src);
+        img.onerror = () => resolve(null);
+        img.src = src;
+      });
+
+    const resolveGallery = async () => {
+      if (!projectImage) {
+        setGalleryImages([]);
+        setActiveImageIndex(0);
+        setLightboxImageIndex(null);
+        return;
+      }
+
+      const numberedImages: string[] = [];
+      const maxGalleryImageCount = 30;
+
+      for (
+        let imageNumber = 1;
+        imageNumber <= maxGalleryImageCount;
+        imageNumber += 1
+      ) {
+        const candidateSrc = `${imageBasePath}/${imageNumber}.webp`;
+        const loadedImage = await preloadImage(candidateSrc);
+
+        // Numbered gallery is expected to be continuous: 1.webp, 2.webp, ...
+        // Stop scanning at the first missing file.
+        if (!loadedImage) {
+          break;
+        }
+
+        numberedImages.push(loadedImage);
+      }
+
+      if (!mounted) {
+        return;
+      }
+
+      setGalleryImages([projectImage, ...numberedImages]);
+      setActiveImageIndex(0);
+      setLightboxImageIndex(null);
+    };
+
+    resolveGallery();
+
+    return () => {
+      mounted = false;
+    };
+  }, [imageBasePath, projectImage]);
+
+  useEffect(() => {
+    if (lightboxImageIndex === null) {
+      return;
+    }
+
+    const onKeyDown = (event: KeyboardEvent) => {
+      if (event.key === "Escape") {
+        setLightboxImageIndex(null);
+      } else if (event.key === "ArrowRight") {
+        setLightboxImageIndex((prev) =>
+          prev === null ? null : (prev + 1) % galleryImages.length,
+        );
+      } else if (event.key === "ArrowLeft") {
+        setLightboxImageIndex((prev) =>
+          prev === null
+            ? null
+            : (prev - 1 + galleryImages.length) % galleryImages.length,
+        );
+      }
+    };
+
+    document.body.style.overflow = "hidden";
+    window.addEventListener("keydown", onKeyDown);
+
+    return () => {
+      document.body.style.overflow = "";
+      window.removeEventListener("keydown", onKeyDown);
+    };
+  }, [galleryImages.length, lightboxImageIndex]);
+
+  const showPrevImage = () => {
+    if (galleryImages.length <= 1) {
+      return;
+    }
+
+    setActiveImageIndex(
+      (prev) => (prev - 1 + galleryImages.length) % galleryImages.length,
+    );
+  };
+
+  const showNextImage = () => {
+    if (galleryImages.length <= 1) {
+      return;
+    }
+
+    setActiveImageIndex((prev) => (prev + 1) % galleryImages.length);
+  };
 
   if (!project) {
     return <Navigate to="/projeler" replace />;
@@ -52,25 +169,104 @@ export default function ProjectDetail() {
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5 }}
-                className="rounded-2xl overflow-hidden shadow-soft"
+                className="rounded-2xl bg-white p-3 md:p-4 shadow-soft"
               >
-                <div className="relative aspect-[4/3]">
-                  <img
-                    src={project.image}
-                    alt={project.name}
-                    className="w-full h-full object-cover"
-                  />
-                  <div className="absolute top-4 left-4">
-                    <span
-                      className={`px-3 py-1 rounded-full text-xs font-medium ${
-                        project.status === "Satista"
-                          ? "bg-neli-600 text-white"
-                          : "bg-white/90 text-foreground"
-                      }`}
+                <div className="space-y-3">
+                  <div className="relative">
+                    <button
+                      type="button"
+                      className="relative block w-full aspect-[1/1] rounded-xl overflow-hidden group"
+                      onClick={() => setLightboxImageIndex(activeImageIndex)}
+                      aria-label="Gorseli buyut"
                     >
-                      {projectStatusLabels[project.status]}
-                    </span>
+                      <img
+                        src={galleryImages[activeImageIndex] ?? project.image}
+                        alt={`${project.name} gorsel ${activeImageIndex + 1}`}
+                        className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                      />
+                      <div className="absolute top-4 left-4">
+                        <span
+                          className={`px-3 py-1 rounded-full text-xs font-medium ${
+                            project.status === "Satışta"
+                              ? "bg-neli-600 text-white"
+                              : "bg-white/90 text-foreground"
+                          }`}
+                        >
+                          {projectStatusLabels[project.status]}
+                        </span>
+                      </div>
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+                    </button>
+
+                    {galleryImages.length > 1 && (
+                      <>
+                        <button
+                          type="button"
+                          onClick={(event) => {
+                            event.stopPropagation();
+                            showPrevImage();
+                          }}
+                          className="absolute left-3 top-1/2 -translate-y-1/2 inline-flex h-10 w-10 items-center justify-center rounded-full bg-black/35 text-white hover:bg-black/50 transition-colors"
+                          aria-label="Onceki gorsel"
+                        >
+                          <ChevronLeft className="w-5 h-5" />
+                        </button>
+                        <button
+                          type="button"
+                          onClick={(event) => {
+                            event.stopPropagation();
+                            showNextImage();
+                          }}
+                          className="absolute right-3 top-1/2 -translate-y-1/2 inline-flex h-10 w-10 items-center justify-center rounded-full bg-black/35 text-white hover:bg-black/50 transition-colors"
+                          aria-label="Sonraki gorsel"
+                        >
+                          <ChevronRight className="w-5 h-5" />
+                        </button>
+                      </>
+                    )}
                   </div>
+
+                  {galleryImages.length > 1 && (
+                    <div className="flex gap-2 overflow-x-auto pb-1">
+                      {galleryImages.map((imageSrc, index) => (
+                        <button
+                          type="button"
+                          key={imageSrc}
+                          onClick={() => setActiveImageIndex(index)}
+                          className={`relative flex-none w-16 h-16 rounded-lg overflow-hidden border-2 transition-colors ${
+                            activeImageIndex === index
+                              ? "border-neli-600"
+                              : "border-transparent"
+                          }`}
+                          aria-label={`${index + 1}. gorseli sec`}
+                        >
+                          <img
+                            src={imageSrc}
+                            alt={`${project.name} kucuk gorsel ${index + 1}`}
+                            className="w-full h-full object-cover"
+                          />
+                        </button>
+                      ))}
+                    </div>
+                  )}
+
+                  {galleryImages.length > 1 && (
+                    <div className="flex justify-center gap-1.5">
+                      {galleryImages.map((imageSrc, index) => (
+                        <button
+                          type="button"
+                          key={`${imageSrc}-dot`}
+                          onClick={() => setActiveImageIndex(index)}
+                          className={`h-2.5 rounded-full transition-all ${
+                            activeImageIndex === index
+                              ? "w-6 bg-neli-600"
+                              : "w-2.5 bg-cream-300 hover:bg-cream-400"
+                          }`}
+                          aria-label={`${index + 1}. gorsele git`}
+                        />
+                      ))}
+                    </div>
+                  )}
                 </div>
               </motion.div>
 
@@ -89,21 +285,27 @@ export default function ProjectDetail() {
                     </p>
                   </div>
                   <div className="p-4 rounded-xl bg-cream-100">
-                    <p className="text-xs text-foreground/60 mb-1">Teslim Yili</p>
+                    <p className="text-xs text-foreground/60 mb-1">
+                      Teslim Yili
+                    </p>
                     <p className="text-sm font-medium text-foreground flex items-center gap-1.5">
                       <Calendar className="w-4 h-4 text-neli-600" />
                       {project.year}
                     </p>
                   </div>
                   <div className="p-4 rounded-xl bg-cream-100">
-                    <p className="text-xs text-foreground/60 mb-1">Proje Tipi</p>
+                    <p className="text-xs text-foreground/60 mb-1">
+                      Proje Tipi
+                    </p>
                     <p className="text-sm font-medium text-foreground flex items-center gap-1.5">
                       <Home className="w-4 h-4 text-neli-600" />
                       {project.type}
                     </p>
                   </div>
                   <div className="p-4 rounded-xl bg-cream-100">
-                    <p className="text-xs text-foreground/60 mb-1">Toplam Daire</p>
+                    <p className="text-xs text-foreground/60 mb-1">
+                      Toplam Daire
+                    </p>
                     <p className="text-sm font-medium text-foreground flex items-center gap-1.5">
                       <Building2 className="w-4 h-4 text-neli-600" />
                       {project.details.totalUnits}
@@ -121,7 +323,9 @@ export default function ProjectDetail() {
                   <div className="grid sm:grid-cols-3 gap-3 text-sm">
                     <div className="rounded-lg bg-cream-100 p-3">
                       <p className="text-foreground/60 mb-1">Blok Sayısı</p>
-                      <p className="font-medium text-foreground">{project.details.totalBlocks}</p>
+                      <p className="font-medium text-foreground">
+                        {project.details.totalBlocks}
+                      </p>
                     </div>
                     <div className="rounded-lg bg-cream-100 p-3">
                       <p className="text-foreground/60 mb-1">Peyzaj Alanı</p>
@@ -131,7 +335,9 @@ export default function ProjectDetail() {
                     </div>
                     <div className="rounded-lg bg-cream-100 p-3">
                       <p className="text-foreground/60 mb-1">Otopark</p>
-                      <p className="font-medium text-foreground">{project.details.parking}</p>
+                      <p className="font-medium text-foreground">
+                        {project.details.parking}
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -140,6 +346,72 @@ export default function ProjectDetail() {
           </div>
         </div>
       </section>
+
+      {lightboxImageIndex !== null && galleryImages[lightboxImageIndex] && (
+        <div
+          className="fixed inset-0 z-50 bg-black/90 p-4 md:p-8 flex items-center justify-center"
+          onClick={() => setLightboxImageIndex(null)}
+        >
+          <button
+            type="button"
+            className="absolute top-4 right-4 md:top-6 md:right-6 inline-flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-white hover:bg-white/20 transition-colors"
+            onClick={() => setLightboxImageIndex(null)}
+            aria-label="Buyuk goruntuyu kapat"
+          >
+            <X className="w-5 h-5" />
+          </button>
+
+          {galleryImages.length > 1 && (
+            <button
+              type="button"
+              className="absolute left-3 md:left-6 inline-flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-white hover:bg-white/20 transition-colors"
+              onClick={(event) => {
+                event.stopPropagation();
+                setLightboxImageIndex((prev) =>
+                  prev === null
+                    ? null
+                    : (prev - 1 + galleryImages.length) % galleryImages.length,
+                );
+              }}
+              aria-label="Onceki gorsel"
+            >
+              <ChevronLeft className="w-5 h-5" />
+            </button>
+          )}
+
+          <div
+            className="w-full max-w-4xl"
+            onClick={(event) => event.stopPropagation()}
+          >
+            <div className="aspect-[1/1] w-full overflow-hidden rounded-xl border border-white/20">
+              <img
+                src={galleryImages[lightboxImageIndex]}
+                alt={`${project.name} buyuk gorsel ${lightboxImageIndex + 1}`}
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <p className="mt-3 text-center text-sm text-white/80">
+              {lightboxImageIndex + 1} / {galleryImages.length}
+            </p>
+          </div>
+
+          {galleryImages.length > 1 && (
+            <button
+              type="button"
+              className="absolute right-3 md:right-6 inline-flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-white hover:bg-white/20 transition-colors"
+              onClick={(event) => {
+                event.stopPropagation();
+                setLightboxImageIndex((prev) =>
+                  prev === null ? null : (prev + 1) % galleryImages.length,
+                );
+              }}
+              aria-label="Sonraki gorsel"
+            >
+              <ChevronRight className="w-5 h-5" />
+            </button>
+          )}
+        </div>
+      )}
 
       <section className="section-padding bg-cream-100">
         <div className="container-padding">
@@ -162,9 +434,12 @@ export default function ProjectDetail() {
                 />
               </div>
               <div className="mt-4 rounded-lg bg-cream-100 p-4 text-sm text-foreground/70">
-                <p className="font-medium text-foreground mb-1">Adres Bilgisi</p>
+                <p className="font-medium text-foreground mb-1">
+                  Adres Bilgisi
+                </p>
                 <p>
-                  {project.details.neighborhood}, {project.details.district}, {project.details.city}
+                  {project.details.neighborhood}, {project.details.district},{" "}
+                  {project.details.city}
                 </p>
               </div>
             </motion.div>
@@ -186,7 +461,9 @@ export default function ProjectDetail() {
                     className="flex items-start gap-2.5 rounded-lg border border-cream-300 p-3"
                   >
                     <CheckCircle2 className="w-5 h-5 text-neli-600 mt-0.5 flex-shrink-0" />
-                    <span className="text-sm text-foreground/80">{highlight}</span>
+                    <span className="text-sm text-foreground/80">
+                      {highlight}
+                    </span>
                   </li>
                 ))}
               </ul>
@@ -209,7 +486,8 @@ export default function ProjectDetail() {
                 Daire Tipleri
               </h3>
               <p className="text-sm md:text-base text-foreground/60">
-                Projede yer alan daire tipleri ve adet dağılımı aşağıdaki gibidir.
+                Projede yer alan daire tipleri ve adet dağılımı aşağıdaki
+                gibidir.
               </p>
             </motion.div>
 
@@ -225,11 +503,16 @@ export default function ProjectDetail() {
                 </thead>
                 <tbody>
                   {project.details.unitTypes.map((unitType) => (
-                    <tr key={unitType.type} className="border-t border-cream-300">
+                    <tr
+                      key={unitType.type}
+                      className="border-t border-cream-300"
+                    >
                       <td className="px-4 py-3 text-sm font-medium text-foreground">
                         {unitType.type}
                       </td>
-                      <td className="px-4 py-3 text-sm text-foreground/80">{unitType.count}</td>
+                      <td className="px-4 py-3 text-sm text-foreground/80">
+                        {unitType.count}
+                      </td>
                       <td className="px-4 py-3 text-sm text-foreground/80">
                         {unitType.grossArea}
                       </td>
@@ -257,7 +540,9 @@ export default function ProjectDetail() {
                 </p>
               </div>
               <div className="rounded-xl bg-cream-100 p-4">
-                <p className="text-xs text-foreground/60 mb-1">Otopark Çözümü</p>
+                <p className="text-xs text-foreground/60 mb-1">
+                  Otopark Çözümü
+                </p>
                 <p className="text-lg font-serif font-medium text-foreground flex items-center gap-2">
                   <Car className="w-4 h-4 text-neli-600" />
                   {project.details.parking}
@@ -268,7 +553,8 @@ export default function ProjectDetail() {
             <div className="mt-8 rounded-xl bg-neli-600/5 border border-neli-600/20 p-4 md:p-5 flex flex-col md:flex-row md:items-center md:justify-between gap-3">
               <div>
                 <p className="text-sm md:text-base font-medium text-foreground">
-                  Proje hakkında detaylı bilgi ve güncel durum almak için bize ulaşın.
+                  Proje hakkında detaylı bilgi ve güncel durum almak için bize
+                  ulaşın.
                 </p>
               </div>
               <Link
