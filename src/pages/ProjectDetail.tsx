@@ -23,6 +23,8 @@ import {
   projectStatusLabels,
   type ProjectPhase,
 } from "@/data/projects";
+import SEO from "@/components/SEO";
+import OptimizedImage from "@/components/OptimizedImage";
 
 interface ProjectTimelineProps {
   phases: ProjectPhase[];
@@ -329,6 +331,13 @@ export default function ProjectDetail() {
 
   return (
     <main className="min-h-screen pt-20 md:pt-24 lg:pt-28">
+      <SEO
+        title={`${project.name} - ${project.details.district}, ${project.details.city}`}
+        description={`${project.name} projesi - ${project.description} ${project.details.district}, ${project.details.city} konumunda.`}
+        keywords={`${project.name}, ${project.details.district} konut, ${project.details.city} daire, neli mühendislik, ${project.type}`}
+        url={`https://nelimuhendislik.com/projeler/${project.slug}`}
+        image={`https://nelimuhendislik.com${project.image}`}
+      />
       <PageHero
         currentPage="Projeler"
         title={

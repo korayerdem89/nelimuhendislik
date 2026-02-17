@@ -7,6 +7,8 @@ import TimelineMilestones from "@/components/sections/TimelineMilestones";
 import PrimaryCtaSection from "@/components/sections/PrimaryCtaSection";
 import ProjectsMapSection from "@/components/sections/ProjectsMapSection";
 import { projects } from "@/data/projects";
+import SEO from "@/components/SEO";
+import OptimizedImage from "@/components/OptimizedImage";
 
 const stats = [
   { icon: Building2, value: "15+", label: "Tamamlanan Proje" },
@@ -58,6 +60,12 @@ export default function Home() {
 
   return (
     <main className="min-h-screen">
+      <SEO
+        title="Ana Sayfa"
+        description="Neli Mühendislik, İzmir'de modern ve kaliteli konut projeleri sunan güvenilir bir inşaat firmasıdır. Valorya ve Serenita projeleriyle hayalinizdeki eve kavuşun."
+        url="https://nelimuhendislik.com"
+      />
+      
       {/* Hero Section */}
       <HeroSection />
 
@@ -102,13 +110,12 @@ export default function Home() {
                 transition={{ duration: 0.6 }}
                 className="relative order-2 lg:order-1"
               >
-                <div className="relative aspect-[3/4] rounded-2xl overflow-hidden">
-                  <img
-                    src="/office.webp"
-                    alt="Neli Mühendislik"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
+                <OptimizedImage
+                  src="/office.webp"
+                  alt="Neli Mühendislik"
+                  className="rounded-2xl"
+                  aspectRatio="3/4"
+                />
                 <div className="absolute -bottom-4 md:-bottom-6 -right-4 md:-right-6 w-24 md:w-48 h-24 md:h-48 bg-neli-600/10 rounded-2xl -z-10" />
                 <div className="absolute -top-4 md:-top-6 -left-4 md:-left-6 w-16 md:w-32 h-16 md:h-32 border-2 border-neli-600/20 rounded-2xl -z-10" />
               </motion.div>
@@ -195,10 +202,11 @@ export default function Home() {
                 >
                   <Link to={`/projeler/${project.slug}`} className="block">
                     <div className="relative aspect-[1/1] rounded-xl overflow-hidden mb-3 md:mb-4">
-                      <img
+                      <OptimizedImage
                         src={project.image}
                         alt={project.name}
-                        className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                        className="w-full h-full transition-transform duration-700 group-hover:scale-110"
+                        priority={index === 0}
                       />
                     </div>
                     <h3 className="text-lg md:text-xl font-serif font-medium text-foreground mb-1">

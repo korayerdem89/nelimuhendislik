@@ -3,6 +3,8 @@ import { motion, useInView } from 'framer-motion';
 import { MapPin, Calendar, CheckCircle2, Building, Clock, Users } from 'lucide-react';
 import PageHero from '@/components/sections/PageHero';
 import PrimaryCtaSection from '@/components/sections/PrimaryCtaSection';
+import SEO from '@/components/SEO';
+import OptimizedImage from '@/components/OptimizedImage';
 
 const restorations = [
   {
@@ -97,6 +99,12 @@ export default function Restoration() {
 
   return (
     <main className="min-h-screen pt-20 md:pt-24 lg:pt-28">
+      <SEO
+        title="Restorasyon"
+        description="Neli Mühendislik restorasyon hizmetleri. İzmir'de dış cephe yenileme, tesisat yenileme ve bina güçlendirme hizmetleri sunuyoruz."
+        keywords="restorasyon izmir, dış cephe yenileme, bina restorasyonu, tesisat yenileme, bina güçlendirme, mantolama"
+        url="https://nelimuhendislik.com/restorasyon"
+      />
       <PageHero
         currentPage="Restorasyon"
         title={
@@ -203,12 +211,12 @@ export default function Restoration() {
                   className="group"
                 >
                   <div className="relative aspect-[4/3] rounded-xl overflow-hidden mb-3 md:mb-4">
-                    <img
+                    <OptimizedImage
                       src={project.image}
                       alt={project.name}
-                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                      className="w-full h-full transition-transform duration-700 group-hover:scale-110"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent pointer-events-none" />
                     
                     <div className="absolute bottom-0 left-0 right-0 p-3 md:p-5">
                       <h3 className="text-base md:text-lg lg:text-xl font-serif font-medium text-white mb-1">{project.name}</h3>

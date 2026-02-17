@@ -1,14 +1,28 @@
-import { useEffect } from 'react';
+import { useEffect, lazy, Suspense } from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import { Toaster } from 'sonner';
 import Navigation from './components/Navigation';
 import Footer from './components/Footer';
-import Home from './pages/Home';
-import Projects from './pages/Projects';
-import ProjectDetail from './pages/ProjectDetail';
-import Restoration from './pages/Restoration';
-import Corporate from './pages/Corporate';
-import Contact from './pages/Contact';
+
+// Lazy load pages for better initial load performance
+const Home = lazy(() => import('./pages/Home'));
+const Projects = lazy(() => import('./pages/Projects'));
+const ProjectDetail = lazy(() => import('./pages/ProjectDetail'));
+const Restoration = lazy(() => import('./pages/Restoration'));
+const Corporate = lazy(() => import('./pages/Corporate'));
+const Contact = lazy(() => import('./pages/Contact'));
+
+// Loading fallback component
+function PageLoader() {
+  return (
+    <div className="min-h-screen flex items-center justify-center bg-cream-50">
+      <div className="flex flex-col items-center gap-4">
+        <div className="w-10 h-10 border-2 border-neli-600/20 border-t-neli-600 rounded-full animate-spin" />
+        <p className="text-sm text-foreground/60">Yükleniyor...</p>
+      </div>
+    </div>
+  );
+}
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -26,14 +40,16 @@ function App() {
       <div className="min-h-screen bg-white">
         <ScrollToTop />
         <Navigation />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/projeler" element={<Projects />} />
-          <Route path="/projeler/:slug" element={<ProjectDetail />} />
-          <Route path="/restorasyon" element={<Restoration />} />
-          <Route path="/kurumsal" element={<Corporate />} />
-          <Route path="/iletisim" element={<Contact />} />
-        </Routes>
+        <Suspense fallback={<PageLoader />}>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/projeler" element={<Projects />} />
+            <Route path="/projeler/:slug" element={<ProjectDetail />} />
+            <Route path="/restorasyon" element={<Restoration />} />
+            <Route path="/kurumsal" element={<Corporate />} />
+            <Route path="/iletisim" element={<Contact />} />
+          </Routes>
+        </Suspense>
         <Footer />
         <Toaster 
           position="bottom-right"

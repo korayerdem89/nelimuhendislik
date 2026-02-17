@@ -8,6 +8,7 @@ import { toast } from 'sonner';
 import SocialLinks from '@/components/SocialLinks';
 import PageHero from '@/components/sections/PageHero';
 import ContactMapSection from '@/components/sections/ContactMapSection';
+import SEO from '@/components/SEO';
 
 const contactInfo = [
   {
@@ -72,6 +73,12 @@ export default function Contact() {
 
   return (
     <main className="min-h-screen pt-20 md:pt-24 lg:pt-28">
+      <SEO
+        title="İletişim"
+        description="Neli Mühendislik ile iletişime geçin. İzmir Karşıyaka'daki ofisimizi ziyaret edin veya bize ulaşın. Telefon: +90 554 704 90 74"
+        keywords="neli mühendislik iletişim, izmir inşaat iletişim, konut projesi danışma, karşıyaka ofis"
+        url="https://nelimuhendislik.com/iletisim"
+      />
       <PageHero
         currentPage="İletişim"
         title={

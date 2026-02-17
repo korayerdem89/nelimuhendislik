@@ -4,6 +4,8 @@ import { motion } from "framer-motion";
 import { MapPin, Calendar, Home, ChevronDown } from "lucide-react";
 import PageHero from "@/components/sections/PageHero";
 import { projects, projectStatusLabels } from "@/data/projects";
+import SEO from "@/components/SEO";
+import OptimizedImage from "@/components/OptimizedImage";
 
 export default function Projects() {
   const [activeFilters, setActiveFilters] = useState({
@@ -54,6 +56,12 @@ export default function Projects() {
 
   return (
     <main className="min-h-screen pt-20 md:pt-24 lg:pt-28">
+      <SEO
+        title="Projeler"
+        description="Neli Mühendislik'in İzmir'deki satışı devam eden ve tamamlanan konut projeleri. Valorya ve Serenita serisi projelerimizi keşfedin."
+        keywords="neli mühendislik projeler, izmir konut projeleri, valorya, serenita, çiğli projeler, satılık daire izmir"
+        url="https://nelimuhendislik.com/projeler"
+      />
       <PageHero
         currentPage="Projeler"
         title={
@@ -202,12 +210,13 @@ export default function Projects() {
                 >
                   <Link to={`/projeler/${project.slug}`} className="block">
                     <div className="relative aspect-[1/1] rounded-xl overflow-hidden mb-3 md:mb-4">
-                      <img
+                      <OptimizedImage
                         src={project.image}
                         alt={project.name}
-                        className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                        className="w-full h-full transition-transform duration-700 group-hover:scale-110"
+                        priority={index < 4}
                       />
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent pointer-events-none" />
 
                       {/* Status Badge */}
                       <div className="absolute top-3 md:top-4 left-3 md:left-4">

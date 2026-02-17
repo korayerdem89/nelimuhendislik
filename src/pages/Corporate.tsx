@@ -11,6 +11,8 @@ import {
 } from "lucide-react";
 import PageHero from "@/components/sections/PageHero";
 import TimelineMilestones from "@/components/sections/TimelineMilestones";
+import SEO from "@/components/SEO";
+import OptimizedImage from "@/components/OptimizedImage";
 
 const values = [
   {
@@ -94,6 +96,12 @@ export default function Corporate() {
 
   return (
     <main className="min-h-screen pt-20 md:pt-24 lg:pt-28">
+      <SEO
+        title="Kurumsal"
+        description="Neli Mühendislik hakkında. 2021 yılında kurulan şirketimiz, kalite, estetik ve konforu en üst düzeyde buluşturarak İzmir'de ayrıcalıklı yaşam alanları oluşturuyor."
+        keywords="neli mühendislik hakkında, kurumsal, izmir inşaat firması, konut projesi, misyon vizyon"
+        url="https://nelimuhendislik.com/kurumsal"
+      />
       <PageHero
         currentPage="Kurumsal"
         title={
@@ -117,13 +125,13 @@ export default function Corporate() {
                 transition={{ duration: 0.6 }}
                 className="relative order-2 lg:order-1"
               >
-                <div className="relative aspect-[5/3] rounded-2xl overflow-hidden">
-                  <img
-                    src="/images/kurumsal.webp"
-                    alt="Neli Mühendislik"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
+                <OptimizedImage
+                  src="/images/kurumsal.webp"
+                  alt="Neli Mühendislik"
+                  className="rounded-2xl"
+                  aspectRatio="5/3"
+                  priority
+                />
                 <div className="absolute -bottom-4 md:-bottom-6 -right-4 md:-right-6 w-24 md:w-48 h-24 md:h-48 bg-neli-600/10 rounded-2xl -z-10" />
                 <div className="absolute -top-4 md:-top-6 -left-4 md:-left-6 w-16 md:w-32 h-16 md:h-32 border-2 border-neli-600/20 rounded-2xl -z-10" />
               </motion.div>

@@ -152,6 +152,9 @@ export default function HeroSection() {
             alt=""
             className="w-full h-full object-cover"
             draggable={false}
+            loading="eager"
+            decoding="async"
+            fetchPriority="high"
           />
         </motion.div>
 
@@ -164,6 +167,8 @@ export default function HeroSection() {
             src={HERO_PLAN}
             alt=""
             draggable={false}
+            loading="eager"
+            decoding="async"
             initial={{ x: -600, opacity: 0 }}
             animate={ready ? { x: 0, opacity: 1 } : {}}
             transition={{ duration: 0.8, delay: 0.5, ease: 'easeOut' }}
@@ -185,6 +190,8 @@ export default function HeroSection() {
             src={HERO_MAKET}
             alt=""
             draggable={false}
+            loading="eager"
+            decoding="async"
             initial={{ x: 600, opacity: 0 }}
             animate={ready ? { x: 0, opacity: 1 } : {}}
             transition={{ duration: 0.8, delay: 0.5, ease: EASE_OUT_BACK }}
