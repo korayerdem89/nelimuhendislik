@@ -1,5 +1,14 @@
 export type ProjectStatus = "İnşaat" | "Satışta" | "Tamamlandı";
 
+export type PhaseStatus = "completed" | "active" | "pending";
+
+export interface ProjectPhase {
+  id: string;
+  name: string;
+  status: PhaseStatus;
+  completedDate?: string;
+}
+
 export interface ProjectUnitType {
   type: string;
   count: number;
@@ -31,7 +40,20 @@ export interface Project {
   image: string;
   status: ProjectStatus;
   details: ProjectDetails;
+  phases: ProjectPhase[];
 }
+
+// Default construction phases for all projects
+export const defaultPhases: Omit<ProjectPhase, "status" | "completedDate">[] = [
+  { id: "design", name: "Proje Tasarımı" },
+  { id: "permit", name: "Ruhsat" },
+  { id: "foundation", name: "Temel" },
+  { id: "structure", name: "Kaba İnşaat" },
+  { id: "finishing", name: "İnce İşler" },
+  { id: "mep", name: "Mekanik & Elektrik" },
+  { id: "landscape", name: "Peyzaj" },
+  { id: "handover", name: "Teslim" },
+];
 
 export const projectStatusLabels: Record<ProjectStatus, string> = {
   Satışta: "Satışta",
@@ -78,6 +100,51 @@ export const projects: Project[] = [
       landscapeRatio: "12%",
       parking: "Mevcut Değil",
     },
+    phases: [
+      {
+        id: "design",
+        name: "Proje Tasarımı",
+        status: "completed",
+        completedDate: "Ocak 2025",
+      },
+      {
+        id: "permit",
+        name: "Ruhsat",
+        status: "completed",
+        completedDate: "Şubat 2025",
+      },
+      {
+        id: "foundation",
+        name: "Temel",
+        status: "completed",
+        completedDate: "Mart 2025",
+      },
+      {
+        id: "structure",
+        name: "Kaba İnşaat",
+        status: "completed",
+        completedDate: "Nisan 2024",
+      },
+      {
+        id: "finishing",
+        name: "İnce İşler",
+        status: "completed",
+        completedDate: "Mayıs 2024",
+      },
+      {
+        id: "mep",
+        name: "Mekanik & Elektrik",
+        status: "completed",
+        completedDate: "Haziran 2024",
+      },
+      {
+        id: "landscape",
+        name: "Peyzaj",
+        status: "completed",
+        completedDate: "Temmuz 2025",
+      },
+      { id: "handover", name: "Teslim", status: "completed" },
+    ],
   },
   {
     id: 2,
@@ -113,6 +180,56 @@ export const projects: Project[] = [
       landscapeRatio: "%12",
       parking: "Kapalı Otopark",
     },
+    phases: [
+      {
+        id: "design",
+        name: "Proje Tasarımı",
+        status: "completed",
+        completedDate: "Aralık 2024",
+      },
+      {
+        id: "permit",
+        name: "Ruhsat",
+        status: "completed",
+        completedDate: "Ocak 2025",
+      },
+      {
+        id: "foundation",
+        name: "Temel",
+        status: "completed",
+        completedDate: "Mayıs 2025",
+      },
+      {
+        id: "structure",
+        name: "Kaba İnşaat",
+        status: "completed",
+        completedDate: "Haziran 2025",
+      },
+      {
+        id: "finishing",
+        name: "İnce İşler",
+        status: "completed",
+        completedDate: "Eylül 2025",
+      },
+      {
+        id: "mep",
+        name: "Mekanik & Elektrik",
+        status: "completed",
+        completedDate: "Kasım 2025",
+      },
+      {
+        id: "landscape",
+        name: "Peyzaj",
+        status: "active",
+        completedDate: "Şubat 2026",
+      },
+      {
+        id: "handover",
+        name: "Teslim",
+        status: "pending",
+        completedDate: "",
+      },
+    ],
   },
   {
     id: 3,
@@ -147,6 +264,56 @@ export const projects: Project[] = [
       landscapeRatio: "%14",
       parking: "Kapalı otopark",
     },
+    phases: [
+      {
+        id: "design",
+        name: "Proje Tasarımı",
+        status: "completed",
+        completedDate: "Nisan 2025",
+      },
+      {
+        id: "permit",
+        name: "Ruhsat",
+        status: "completed",
+        completedDate: "Mayıs 2025",
+      },
+      {
+        id: "foundation",
+        name: "Temel",
+        status: "completed",
+        completedDate: "Haziran 2025",
+      },
+      {
+        id: "structure",
+        name: "Kaba İnşaat",
+        status: "completed",
+        completedDate: "Ağustos 2025",
+      },
+      {
+        id: "finishing",
+        name: "İnce İşler",
+        status: "completed",
+        completedDate: "Aralık 2025",
+      },
+      {
+        id: "mep",
+        name: "Mekanik & Elektrik",
+        status: "completed",
+        completedDate: "Ocak 2026",
+      },
+      {
+        id: "landscape",
+        name: "Peyzaj",
+        status: "pending",
+        completedDate: "",
+      },
+      {
+        id: "handover",
+        name: "Teslim",
+        status: "pending",
+        completedDate: "",
+      },
+    ],
   },
   {
     id: 4,
@@ -181,6 +348,56 @@ export const projects: Project[] = [
       landscapeRatio: "%40",
       parking: "Kapali otopark + misafir park alani",
     },
+    phases: [
+      {
+        id: "design",
+        name: "Proje Tasarımı",
+        status: "completed",
+        completedDate: "Ocak 2026",
+      },
+      {
+        id: "permit",
+        name: "Ruhsat",
+        status: "completed",
+        completedDate: "Şubat 2026",
+      },
+      {
+        id: "foundation",
+        name: "Temel",
+        status: "pending",
+        completedDate: "",
+      },
+      {
+        id: "structure",
+        name: "Kaba İnşaat",
+        status: "pending",
+        completedDate: "",
+      },
+      {
+        id: "finishing",
+        name: "İnce İşler",
+        status: "pending",
+        completedDate: "",
+      },
+      {
+        id: "mep",
+        name: "Mekanik & Elektrik",
+        status: "pending",
+        completedDate: "",
+      },
+      {
+        id: "landscape",
+        name: "Peyzaj",
+        status: "pending",
+        completedDate: "",
+      },
+      {
+        id: "handover",
+        name: "Teslim",
+        status: "pending",
+        completedDate: "",
+      },
+    ],
   },
   {
     id: 5,
@@ -209,9 +426,59 @@ export const projects: Project[] = [
       ],
       totalUnits: 16,
       totalBlocks: 1,
-      landscapeRatio: "%55",
+      landscapeRatio: "%15",
       parking: "Her villa icin ozel park alani",
     },
+    phases: [
+      {
+        id: "design",
+        name: "Proje Tasarımı",
+        status: "completed",
+        completedDate: "Ocak 2026",
+      },
+      {
+        id: "permit",
+        name: "Ruhsat",
+        status: "pending",
+        completedDate: "",
+      },
+      {
+        id: "foundation",
+        name: "Temel",
+        status: "pending",
+        completedDate: "",
+      },
+      {
+        id: "structure",
+        name: "Kaba İnşaat",
+        status: "pending",
+        completedDate: "",
+      },
+      {
+        id: "finishing",
+        name: "İnce İşler",
+        status: "pending",
+        completedDate: "",
+      },
+      {
+        id: "mep",
+        name: "Mekanik & Elektrik",
+        status: "pending",
+        completedDate: "",
+      },
+      {
+        id: "landscape",
+        name: "Peyzaj",
+        status: "pending",
+        completedDate: "",
+      },
+      {
+        id: "handover",
+        name: "Teslim",
+        status: "pending",
+        completedDate: "",
+      },
+    ],
   },
   {
     id: 6,
@@ -240,9 +507,59 @@ export const projects: Project[] = [
       ],
       totalUnits: 20,
       totalBlocks: 2,
-      landscapeRatio: "%36",
+      landscapeRatio: "%16",
       parking: "Acik otopark",
     },
+    phases: [
+      {
+        id: "design",
+        name: "Proje Tasarımı",
+        status: "completed",
+        completedDate: "Şubat 2021",
+      },
+      {
+        id: "permit",
+        name: "Ruhsat",
+        status: "completed",
+        completedDate: "Mayıs 2021",
+      },
+      {
+        id: "foundation",
+        name: "Temel",
+        status: "completed",
+        completedDate: "Temmuz 2021",
+      },
+      {
+        id: "structure",
+        name: "Kaba İnşaat",
+        status: "completed",
+        completedDate: "Aralık 2021",
+      },
+      {
+        id: "finishing",
+        name: "İnce İşler",
+        status: "completed",
+        completedDate: "Nisan 2022",
+      },
+      {
+        id: "mep",
+        name: "Mekanik & Elektrik",
+        status: "completed",
+        completedDate: "Haziran 2022",
+      },
+      {
+        id: "landscape",
+        name: "Peyzaj",
+        status: "completed",
+        completedDate: "Ağustos 2022",
+      },
+      {
+        id: "handover",
+        name: "Teslim",
+        status: "completed",
+        completedDate: "Eylül 2022",
+      },
+    ],
   },
   {
     id: 7,
@@ -276,6 +593,56 @@ export const projects: Project[] = [
       landscapeRatio: "%28",
       parking: "Kapali otopark",
     },
+    phases: [
+      {
+        id: "design",
+        name: "Proje Tasarımı",
+        status: "completed",
+        completedDate: "Mart 2022",
+      },
+      {
+        id: "permit",
+        name: "Ruhsat",
+        status: "completed",
+        completedDate: "Haziran 2022",
+      },
+      {
+        id: "foundation",
+        name: "Temel",
+        status: "completed",
+        completedDate: "Ağustos 2022",
+      },
+      {
+        id: "structure",
+        name: "Kaba İnşaat",
+        status: "completed",
+        completedDate: "Şubat 2023",
+      },
+      {
+        id: "finishing",
+        name: "İnce İşler",
+        status: "completed",
+        completedDate: "Haziran 2023",
+      },
+      {
+        id: "mep",
+        name: "Mekanik & Elektrik",
+        status: "completed",
+        completedDate: "Ağustos 2023",
+      },
+      {
+        id: "landscape",
+        name: "Peyzaj",
+        status: "completed",
+        completedDate: "Ekim 2023",
+      },
+      {
+        id: "handover",
+        name: "Teslim",
+        status: "completed",
+        completedDate: "Kasım 2023",
+      },
+    ],
   },
   {
     id: 8,
@@ -304,9 +671,59 @@ export const projects: Project[] = [
       ],
       totalUnits: 54,
       totalBlocks: 3,
-      landscapeRatio: "%46",
+      landscapeRatio: "%16",
       parking: "Acik + kapali otopark",
     },
+    phases: [
+      {
+        id: "design",
+        name: "Proje Tasarımı",
+        status: "completed",
+        completedDate: "Ocak 2021",
+      },
+      {
+        id: "permit",
+        name: "Ruhsat",
+        status: "completed",
+        completedDate: "Nisan 2021",
+      },
+      {
+        id: "foundation",
+        name: "Temel",
+        status: "completed",
+        completedDate: "Haziran 2021",
+      },
+      {
+        id: "structure",
+        name: "Kaba İnşaat",
+        status: "completed",
+        completedDate: "Kasım 2021",
+      },
+      {
+        id: "finishing",
+        name: "İnce İşler",
+        status: "completed",
+        completedDate: "Mart 2022",
+      },
+      {
+        id: "mep",
+        name: "Mekanik & Elektrik",
+        status: "completed",
+        completedDate: "Mayıs 2022",
+      },
+      {
+        id: "landscape",
+        name: "Peyzaj",
+        status: "completed",
+        completedDate: "Temmuz 2022",
+      },
+      {
+        id: "handover",
+        name: "Teslim",
+        status: "completed",
+        completedDate: "Ağustos 2022",
+      },
+    ],
   },
   {
     id: 9,
@@ -338,6 +755,31 @@ export const projects: Project[] = [
       landscapeRatio: "%46",
       parking: "Acik + kapali otopark",
     },
+    phases: [
+      {
+        id: "design",
+        name: "Proje Tasarımı",
+        status: "completed",
+        completedDate: "Mart 2025",
+      },
+      {
+        id: "permit",
+        name: "Ruhsat",
+        status: "completed",
+        completedDate: "Haziran 2025",
+      },
+      {
+        id: "foundation",
+        name: "Temel",
+        status: "completed",
+        completedDate: "Eylül 2025",
+      },
+      { id: "structure", name: "Kaba İnşaat", status: "active" },
+      { id: "finishing", name: "İnce İşler", status: "pending" },
+      { id: "mep", name: "Mekanik & Elektrik", status: "pending" },
+      { id: "landscape", name: "Peyzaj", status: "pending" },
+      { id: "handover", name: "Teslim", status: "pending" },
+    ],
   },
   {
     id: 10,
@@ -366,9 +808,29 @@ export const projects: Project[] = [
       ],
       totalUnits: 56,
       totalBlocks: 3,
-      landscapeRatio: "%46",
+      landscapeRatio: "%16",
       parking: "Acik + kapali otopark",
     },
+    phases: [
+      {
+        id: "design",
+        name: "Proje Tasarımı",
+        status: "completed",
+        completedDate: "Ocak 2025",
+      },
+      {
+        id: "permit",
+        name: "Ruhsat",
+        status: "completed",
+        completedDate: "Nisan 2025",
+      },
+      { id: "foundation", name: "Temel", status: "active" },
+      { id: "structure", name: "Kaba İnşaat", status: "pending" },
+      { id: "finishing", name: "İnce İşler", status: "pending" },
+      { id: "mep", name: "Mekanik & Elektrik", status: "pending" },
+      { id: "landscape", name: "Peyzaj", status: "pending" },
+      { id: "handover", name: "Teslim", status: "pending" },
+    ],
   },
 ];
 

@@ -13,9 +13,198 @@ import {
   Trees,
   CheckCircle2,
   X,
+  Check,
+  Clock,
+  Circle,
 } from "lucide-react";
 import PageHero from "@/components/sections/PageHero";
-import { getProjectBySlug, projectStatusLabels } from "@/data/projects";
+import {
+  getProjectBySlug,
+  projectStatusLabels,
+  type ProjectPhase,
+} from "@/data/projects";
+
+interface ProjectTimelineProps {
+  phases: ProjectPhase[];
+}
+
+function ProjectTimeline({ phases }: ProjectTimelineProps) {
+  const activeIndex = phases.findIndex((phase) => phase.status === "active");
+  const completedCount = phases.filter(
+    (phase) => phase.status === "completed",
+  ).length;
+  const progressPercentage =
+    activeIndex >= 0
+      ? ((activeIndex + 0.5) / phases.length) * 100
+      : (completedCount / phases.length) * 100;
+
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.5 }}
+      className="rounded-2xl bg-white p-5 md:p-6 shadow-soft"
+    >
+      <h3 className="text-xl md:text-2xl font-serif font-medium text-foreground mb-6">
+        İnşaat Aşamaları
+      </h3>
+
+      {/* Desktop Timeline */}
+      <div className="hidden md:block">
+        <div className="relative">
+          {/* Progress Line Background */}
+          <div className="absolute top-5 left-0 right-0 h-1 bg-cream-200 rounded-full" />
+
+          {/* Progress Line Active */}
+          <div
+            className="absolute top-5 left-0 h-1 bg-gradient-to-r from-neli-600 to-neli-500 rounded-full transition-all duration-700"
+            style={{ width: `${progressPercentage}%` }}
+          />
+
+          {/* Phase Nodes */}
+          <div className="relative flex justify-between">
+            {phases.map((phase) => (
+              <div
+                key={phase.id}
+                className="flex flex-col items-center"
+                style={{ width: `${100 / phases.length}%` }}
+              >
+                {/* Node */}
+                <div
+                  className={`relative z-10 flex items-center justify-center w-10 h-10 rounded-full border-2 transition-all duration-300 ${
+                    phase.status === "completed"
+                      ? "bg-neli-600 border-neli-600 text-white"
+                      : phase.status === "active"
+                        ? "bg-white border-neli-600 text-neli-600"
+                        : "bg-cream-100 border-cream-300 text-foreground/40"
+                  }`}
+                >
+                  {phase.status === "completed" ? (
+                    <Check className="w-5 h-5" />
+                  ) : phase.status === "active" ? (
+                    <div className="relative">
+                      <Clock className="w-5 h-5" />
+                      <span className="absolute -top-1 -right-1 w-2.5 h-2.5 bg-neli-600 rounded-full animate-pulse" />
+                    </div>
+                  ) : (
+                    <Circle className="w-4 h-4" />
+                  )}
+                </div>
+
+                {/* Label */}
+                <div className="mt-3 text-center px-1">
+                  <p
+                    className={`text-xs font-medium leading-tight ${
+                      phase.status === "completed"
+                        ? "text-neli-700"
+                        : phase.status === "active"
+                          ? "text-neli-600"
+                          : "text-foreground/50"
+                    }`}
+                  >
+                    {phase.name}
+                  </p>
+                  {phase.completedDate && (
+                    <p className="text-[10px] text-foreground/40 mt-0.5">
+                      {phase.completedDate}
+                    </p>
+                  )}
+                  {phase.status === "active" && (
+                    <span className="inline-block mt-1 px-2 py-0.5 text-[10px] font-medium bg-neli-100 text-neli-700 rounded-full">
+                      Devam Ediyor
+                    </span>
+                  )}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      {/* Mobile Timeline */}
+      <div className="md:hidden space-y-0">
+        {phases.map((phase, index) => (
+          <div key={phase.id} className="relative flex items-start gap-3">
+            {/* Vertical Line */}
+            {index < phases.length - 1 && (
+              <div
+                className={`absolute left-[15px] top-8 w-0.5 h-[calc(100%-8px)] ${
+                  phase.status === "completed" ? "bg-neli-600" : "bg-cream-200"
+                }`}
+              />
+            )}
+
+            {/* Node */}
+            <div
+              className={`relative z-10 flex-shrink-0 flex items-center justify-center w-8 h-8 rounded-full border-2 ${
+                phase.status === "completed"
+                  ? "bg-neli-600 border-neli-600 text-white"
+                  : phase.status === "active"
+                    ? "bg-white border-neli-600 text-neli-600"
+                    : "bg-cream-100 border-cream-300 text-foreground/40"
+              }`}
+            >
+              {phase.status === "completed" ? (
+                <Check className="w-4 h-4" />
+              ) : phase.status === "active" ? (
+                <div className="relative">
+                  <Clock className="w-4 h-4" />
+                  <span className="absolute -top-0.5 -right-0.5 w-2 h-2 bg-neli-600 rounded-full animate-pulse" />
+                </div>
+              ) : (
+                <Circle className="w-3 h-3" />
+              )}
+            </div>
+
+            {/* Content */}
+            <div className="flex-1 pb-4">
+              <p
+                className={`text-sm font-medium ${
+                  phase.status === "completed"
+                    ? "text-neli-700"
+                    : phase.status === "active"
+                      ? "text-neli-600"
+                      : "text-foreground/50"
+                }`}
+              >
+                {phase.name}
+              </p>
+              <div className="flex items-center gap-2 mt-0.5">
+                {phase.completedDate && (
+                  <p className="text-xs text-foreground/40">
+                    {phase.completedDate}
+                  </p>
+                )}
+                {phase.status === "active" && (
+                  <span className="px-2 py-0.5 text-[10px] font-medium bg-neli-100 text-neli-700 rounded-full">
+                    Devam Ediyor
+                  </span>
+                )}
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      {/* Progress Summary */}
+      <div className="mt-6 pt-4 border-t border-cream-200">
+        <div className="flex items-center justify-between text-sm">
+          <span className="text-foreground/60">İlerleme Durumu</span>
+          <span className="font-medium text-neli-700">
+            {completedCount} / {phases.length} Aşama Tamamlandı
+          </span>
+        </div>
+        <div className="mt-2 h-2 bg-cream-200 rounded-full overflow-hidden">
+          <div
+            className="h-full bg-gradient-to-r from-neli-600 to-neli-500 rounded-full transition-all duration-700"
+            style={{ width: `${(completedCount / phases.length) * 100}%` }}
+          />
+        </div>
+      </div>
+    </motion.div>
+  );
+}
 
 export default function ProjectDetail() {
   const { slug } = useParams<{ slug: string }>();
@@ -413,7 +602,18 @@ export default function ProjectDetail() {
         </div>
       )}
 
-      <section className="section-padding bg-cream-100">
+      {/* Project Timeline Section */}
+      {project.phases && project.phases.length > 0 && (
+        <section className="section-padding bg-cream-100">
+          <div className="container-padding">
+            <div className="max-w-7xl mx-auto">
+              <ProjectTimeline phases={project.phases} />
+            </div>
+          </div>
+        </section>
+      )}
+
+      <section className="section-padding bg-white">
         <div className="container-padding">
           <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-6 md:gap-8">
             <motion.div
@@ -421,7 +621,7 @@ export default function ProjectDetail() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
-              className="rounded-2xl bg-white p-5 md:p-6 shadow-soft"
+              className="rounded-2xl bg-cream-100 p-5 md:p-6 shadow-soft"
             >
               <h3 className="text-xl md:text-2xl font-serif font-medium text-foreground mb-4">
                 Konum Görseli
@@ -433,7 +633,7 @@ export default function ProjectDetail() {
                   className="w-full h-full object-cover"
                 />
               </div>
-              <div className="mt-4 rounded-lg bg-cream-100 p-4 text-sm text-foreground/70">
+              <div className="mt-4 rounded-lg bg-white p-4 text-sm text-foreground/70">
                 <p className="font-medium text-foreground mb-1">
                   Adres Bilgisi
                 </p>
@@ -449,7 +649,7 @@ export default function ProjectDetail() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.1 }}
-              className="rounded-2xl bg-white p-5 md:p-6 shadow-soft"
+              className="rounded-2xl bg-cream-100 p-5 md:p-6 shadow-soft"
             >
               <h3 className="text-xl md:text-2xl font-serif font-medium text-foreground mb-4">
                 Öne Çıkan Özellikler
@@ -458,7 +658,7 @@ export default function ProjectDetail() {
                 {project.details.highlights.map((highlight) => (
                   <li
                     key={highlight}
-                    className="flex items-start gap-2.5 rounded-lg border border-cream-300 p-3"
+                    className="flex items-start gap-2.5 rounded-lg border border-cream-300 bg-white p-3"
                   >
                     <CheckCircle2 className="w-5 h-5 text-neli-600 mt-0.5 flex-shrink-0" />
                     <span className="text-sm text-foreground/80">
