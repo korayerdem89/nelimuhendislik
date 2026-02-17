@@ -10,9 +10,9 @@ import { projects } from "@/data/projects";
 
 const stats = [
   { icon: Building2, value: "15+", label: "Tamamlanan Proje" },
-  { icon: HardHat, value: "4+", label: "Yıllık Deneyim" },
+  { icon: HardHat, value: "5+", label: "Yıllık Deneyim" },
   { icon: Award, value: "100%", label: "Müşteri Memnuniyeti" },
-  { icon: Users, value: "500+", label: "Mutlu Aile" },
+  { icon: Users, value: "100+", label: "Mutlu Aile" },
 ];
 
 const milestones = [
@@ -23,17 +23,22 @@ const milestones = [
       'İzmir\'de "Ayrıcalıklı hissetmek herkesin hakkı" prensibiyle yola çıktık.',
   },
   {
-    year: "2022",
+    year: "2024",
     title: "İlk Projelerimiz",
     description: "Valorya 1 ve Valorya 2 projelerimizin temellerini attık.",
   },
   {
-    year: "2023",
+    year: "2025",
     title: "Büyüme ve Gelişme",
-    description: "Serenità Park ve Valorya 3 projelerimizi tamamladık.",
+    description: "Valorya 3 projemizin temellerini attık.",
   },
   {
-    year: "2024",
+    year: "2025",
+    title: "Büyüme ve Gelişme",
+    description: "Valorya 1 projemizi tamamladık.",
+  },
+  {
+    year: "2026",
     title: "Yeni Hedefler",
     description:
       "Valorya 4 ve Valorya 5 projelerimizle büyümeye devam ediyoruz.",
