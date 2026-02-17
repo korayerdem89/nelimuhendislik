@@ -242,7 +242,7 @@ export const projects: Project[] = [
     image: "/projects/valorya3/cover.webp",
     status: "Satışta",
     details: {
-      neighborhood: "Balatcik Mahallesi",
+      neighborhood: "Balatçık Mahallesi",
       district: "Çiğli",
       city: "İzmir",
       locationImage: "/projects/valorya3/map.webp",
