@@ -94,6 +94,15 @@ const PROJECTS: ProjectPin[] = [
     image: "/projects/valorya7/cover.webp",
     href: "/projeler",
   },
+  {
+    id: 9,
+    name: "Serenita Garden",
+    coordinates: [38.4098992, 27.0130255],
+    neighborhood: "KucukÇiğli Mahallesi",
+    district: "Çiğli",
+    image: "/projects/serenitagarden/cover.webp",
+    href: "/projeler",
+  },
 ];
 
 const mapCenter: LatLngExpression = [38.501, 27.048];
@@ -106,30 +115,37 @@ function createPinIcon(color: string) {
     html: `
     <div style="
       width: 19px;
-      height: 19px;
-      border-radius: 9999px;
-      background: radial-gradient(circle at 30% 28%, #ffffff 0%, ${color} 42%, ${color} 100%);
-      border: 1.5px solid rgba(255, 255, 255, 0.95);
-      box-sizing: border-box;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+      height: 26px;
       position: relative;
-      transform: translate(-9.5px, -19px);
     ">
-      <span style="
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-        width: 5px;
-        height: 5px;
+      <div style="
+        width: 19px;
+        height: 19px;
         border-radius: 9999px;
-        background: rgba(255, 255, 255, 0.95);
-        box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.35);
-      "></span>
+        background: radial-gradient(circle at 30% 28%, #ffffff 0%, ${color} 42%, ${color} 100%);
+        border: 1.5px solid rgba(255, 255, 255, 0.95);
+        box-sizing: border-box;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+        position: absolute;
+        top: 0;
+        left: 0;
+      ">
+        <span style="
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          width: 5px;
+          height: 5px;
+          border-radius: 9999px;
+          background: rgba(255, 255, 255, 0.95);
+          box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.35);
+        "></span>
+      </div>
       <span style="
         position: absolute;
         left: 50%;
-        bottom: -7px;
+        bottom: 0;
         transform: translateX(-50%);
         width: 0;
         height: 0;
@@ -140,9 +156,9 @@ function createPinIcon(color: string) {
       "></span>
     </div>
   `,
-    iconSize: [19, 27],
-    iconAnchor: [9.5, 27],
-    popupAnchor: [0, -22],
+    iconSize: [19, 26],
+    iconAnchor: [9.5, 26],
+    popupAnchor: [0, -26],
   });
 }
 
