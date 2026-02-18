@@ -9,6 +9,7 @@ const navLinks = [
   { name: "Projeler", href: "/projeler" },
   { name: "Restorasyon", href: "/restorasyon" },
   { name: "Kurumsal", href: "/kurumsal" },
+  { name: "Finans", href: "/finans" },
   { name: "Kariyer", href: "/kariyer" },
   { name: "İletişim", href: "/iletisim" },
 ];
