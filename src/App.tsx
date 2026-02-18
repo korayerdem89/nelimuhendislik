@@ -11,6 +11,7 @@ const ProjectDetail = lazy(() => import('./pages/ProjectDetail'));
 const Restoration = lazy(() => import('./pages/Restoration'));
 const Corporate = lazy(() => import('./pages/Corporate'));
 const Contact = lazy(() => import('./pages/Contact'));
+const Career = lazy(() => import('./pages/Career'));
 
 // Loading fallback component
 function PageLoader() {
@@ -47,6 +48,7 @@ function App() {
             <Route path="/projeler/:slug" element={<ProjectDetail />} />
             <Route path="/restorasyon" element={<Restoration />} />
             <Route path="/kurumsal" element={<Corporate />} />
+            <Route path="/kariyer" element={<Career />} />
             <Route path="/iletisim" element={<Contact />} />
           </Routes>
         </Suspense>
