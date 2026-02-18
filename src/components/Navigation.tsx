@@ -40,12 +40,10 @@ export default function Navigation() {
         animate={{ y: 0 }}
         transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-          isScrolled
-            ? "bg-white/95 backdrop-blur-md shadow-soft"
-            : "bg-white/50"
+          isScrolled ? "bg-white/95 backdrop-blur-md shadow-soft" : "bg-white"
         }`}
       >
-        <div className="w-full container-padding">
+        <div className="mx-auto w-full max-w-[1920px] container-padding">
           <div className="flex items-center justify-between h-16 md:h-20 lg:h-24">
             {/* Logo */}
             <Link

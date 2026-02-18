@@ -163,7 +163,7 @@ export default function Career() {
   };
 
   return (
-    <main className="min-h-screen pt-20 md:pt-24 lg:pt-28">
+    <main className="min-h-screen pt-20">
       <SEO
         title="Kariyer"
         description="Neli Mühendislik kariyer sayfası. Açık pozisyonlara başvurun, ekibimize katılın."

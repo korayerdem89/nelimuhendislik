@@ -1,101 +1,122 @@
-import { useRef } from 'react';
-import { motion, useInView } from 'framer-motion';
-import { MapPin, Calendar, CheckCircle2, Building, Clock, Users } from 'lucide-react';
-import PageHero from '@/components/sections/PageHero';
-import PrimaryCtaSection from '@/components/sections/PrimaryCtaSection';
-import SEO from '@/components/SEO';
-import OptimizedImage from '@/components/OptimizedImage';
+import { useRef } from "react";
+import { motion, useInView } from "framer-motion";
+import {
+  MapPin,
+  Calendar,
+  CheckCircle2,
+  Building,
+  Clock,
+  Users,
+} from "lucide-react";
+import PageHero from "@/components/sections/PageHero";
+import PrimaryCtaSection from "@/components/sections/PrimaryCtaSection";
+import SEO from "@/components/SEO";
+import OptimizedImage from "@/components/OptimizedImage";
 
 const restorations = [
   {
     id: 1,
-    name: 'Yiğit Apartmanı',
-    location: 'Alsancak, İzmir',
-    year: '2024',
-    scope: 'Dış Cephe, Ortak Alanlar',
-    image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&q=80',
+    name: "Yiğit Apartmanı",
+    location: "Alsancak, İzmir",
+    year: "2024",
+    scope: "Dış Cephe, Ortak Alanlar",
+    image:
+      "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&q=80",
   },
   {
     id: 2,
-    name: 'Kardelen Apartmanı',
-    location: 'Konak, İzmir',
-    year: '2023',
-    scope: 'Tam Restorasyon',
-    image: 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=800&q=80',
+    name: "Kardelen Apartmanı",
+    location: "Konak, İzmir",
+    year: "2023",
+    scope: "Tam Restorasyon",
+    image:
+      "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=800&q=80",
   },
   {
     id: 3,
-    name: 'Hatay Apartmanı',
-    location: 'Karşıyaka, İzmir',
-    year: '2023',
-    scope: 'Dış Cephe Yenileme',
-    image: 'https://images.unsplash.com/photo-1577495508048-b635879837f1?w=800&q=80',
+    name: "Hatay Apartmanı",
+    location: "Karşıyaka, İzmir",
+    year: "2023",
+    scope: "Dış Cephe Yenileme",
+    image:
+      "https://images.unsplash.com/photo-1577495508048-b635879837f1?w=800&q=80",
   },
   {
     id: 4,
-    name: 'Başarı Bin Yıl Sitesi',
-    location: 'Bornova, İzmir',
-    year: '2022',
-    scope: 'Site Geneli Restorasyon',
-    image: 'https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=800&q=80',
+    name: "Başarı Bin Yıl Sitesi",
+    location: "Bornova, İzmir",
+    year: "2022",
+    scope: "Site Geneli Restorasyon",
+    image:
+      "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=800&q=80",
   },
   {
     id: 5,
-    name: 'Damlagül Apartmanı',
-    location: 'Çiğli, İzmir',
-    year: '2022',
-    scope: 'Dış Cephe ve Tesisat',
-    image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80',
+    name: "Damlagül Apartmanı",
+    location: "Çiğli, İzmir",
+    year: "2022",
+    scope: "Dış Cephe ve Tesisat",
+    image:
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80",
   },
   {
     id: 6,
-    name: 'Ege Apartman',
-    location: 'Gaziemir, İzmir',
-    year: '2021',
-    scope: 'Tam Restorasyon',
-    image: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80',
+    name: "Ege Apartman",
+    location: "Gaziemir, İzmir",
+    year: "2021",
+    scope: "Tam Restorasyon",
+    image:
+      "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80",
   },
 ];
 
 const services = [
   {
-    title: 'Dış Cephe Yenileme',
-    description: 'Binalarınızın dış görünümünü modern ve estetik bir hale getiriyoruz.',
+    title: "Dış Cephe Yenileme",
+    description:
+      "Binalarınızın dış görünümünü modern ve estetik bir hale getiriyoruz.",
   },
   {
-    title: 'Bina Güçlendirme',
-    description: 'Deprem dayanıklılığı artırma ve yapısal güçlendirme hizmetleri.',
+    title: "Bina Güçlendirme",
+    description:
+      "Deprem dayanıklılığı artırma ve yapısal güçlendirme hizmetleri.",
   },
   {
-    title: 'Ortak Alan Düzenleme',
-    description: 'Apartman ve site içi ortak kullanım alanlarının yenilenmesi.',
+    title: "Ortak Alan Düzenleme",
+    description: "Apartman ve site içi ortak kullanım alanlarının yenilenmesi.",
   },
   {
-    title: 'Çatı ve Tesisat',
-    description: 'Çatı yenileme ve tesisat modernizasyonu çalışmaları.',
+    title: "Çatı ve Tesisat",
+    description: "Çatı yenileme ve tesisat modernizasyonu çalışmaları.",
   },
   {
-    title: 'Asansör Modernizasyonu',
-    description: 'Mevcut asansör sistemlerinin güncellenmesi ve yenilenmesi.',
+    title: "Asansör Modernizasyonu",
+    description: "Mevcut asansör sistemlerinin güncellenmesi ve yenilenmesi.",
   },
   {
-    title: 'Enerji Verimliliği',
-    description: 'Isı yalıtımı ve enerji verimliliği iyileştirmeleri.',
+    title: "Enerji Verimliliği",
+    description: "Isı yalıtımı ve enerji verimliliği iyileştirmeleri.",
   },
 ];
 
 const stats = [
-  { icon: Building, value: '10+', label: 'Restorasyon Projesi' },
-  { icon: Clock, value: '%95', label: 'Zamanında Teslim' },
-  { icon: Users, value: '500+', label: 'Mutlu Daire Sakini' },
+  { icon: Building, value: "10+", label: "Restorasyon Projesi" },
+  { icon: Clock, value: "%95", label: "Zamanında Teslim" },
+  { icon: Users, value: "500+", label: "Mutlu Daire Sakini" },
 ];
 
 export default function Restoration() {
   const servicesRef = useRef<HTMLDivElement>(null);
   const projectsRef = useRef<HTMLDivElement>(null);
-  
-  const isServicesInView = useInView(servicesRef, { once: true, margin: '-100px' });
-  const isProjectsInView = useInView(projectsRef, { once: true, margin: '-100px' });
+
+  const isServicesInView = useInView(servicesRef, {
+    once: true,
+    margin: "-100px",
+  });
+  const isProjectsInView = useInView(projectsRef, {
+    once: true,
+    margin: "-100px",
+  });
 
   return (
     <main className="min-h-screen pt-20 md:pt-24 lg:pt-28">
@@ -132,9 +153,13 @@ export default function Restoration() {
                 >
                   <div className="flex items-center justify-center gap-1.5 md:gap-2 mb-1 md:mb-2">
                     <stat.icon className="w-4 h-4 md:w-5 md:h-5 text-neli-600" />
-                    <span className="text-xl md:text-2xl lg:text-4xl font-serif font-bold text-foreground">{stat.value}</span>
+                    <span className="text-xl md:text-2xl lg:text-4xl font-serif font-bold text-foreground">
+                      {stat.value}
+                    </span>
                   </div>
-                  <p className="text-foreground/60 text-xs md:text-sm">{stat.label}</p>
+                  <p className="text-foreground/60 text-xs md:text-sm">
+                    {stat.label}
+                  </p>
                 </motion.div>
               ))}
             </div>
@@ -172,8 +197,12 @@ export default function Restoration() {
                   <div className="w-10 h-10 md:w-12 md:h-12 rounded-lg bg-neli-600/10 flex items-center justify-center mb-3 md:mb-4 group-hover:bg-neli-600 group-hover:scale-110 transition-all duration-300">
                     <CheckCircle2 className="w-5 h-5 md:w-6 md:h-6 text-neli-600 group-hover:text-white transition-colors duration-300" />
                   </div>
-                  <h3 className="text-base md:text-lg font-serif font-medium text-foreground mb-1 md:mb-2">{service.title}</h3>
-                  <p className="text-foreground/60 text-sm">{service.description}</p>
+                  <h3 className="text-base md:text-lg font-serif font-medium text-foreground mb-1 md:mb-2">
+                    {service.title}
+                  </h3>
+                  <p className="text-foreground/60 text-sm">
+                    {service.description}
+                  </p>
                 </motion.div>
               ))}
             </div>
@@ -217,10 +246,14 @@ export default function Restoration() {
                       className="w-full h-full transition-transform duration-700 group-hover:scale-110"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent pointer-events-none" />
-                    
+
                     <div className="absolute bottom-0 left-0 right-0 p-3 md:p-5">
-                      <h3 className="text-base md:text-lg lg:text-xl font-serif font-medium text-white mb-1">{project.name}</h3>
-                      <p className="text-white/70 text-xs md:text-sm mb-1 md:mb-2">{project.scope}</p>
+                      <h3 className="text-base md:text-lg lg:text-xl font-serif font-medium text-white mb-1">
+                        {project.name}
+                      </h3>
+                      <p className="text-white/70 text-xs md:text-sm mb-1 md:mb-2">
+                        {project.scope}
+                      </p>
                       <div className="flex items-center gap-2 md:gap-3 text-[10px] md:text-xs text-white/60">
                         <span className="flex items-center gap-1">
                           <MapPin className="w-2.5 h-2.5 md:w-3 md:h-3" />
