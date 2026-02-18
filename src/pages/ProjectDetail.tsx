@@ -24,7 +24,6 @@ import {
   type ProjectPhase,
 } from "@/data/projects";
 import SEO from "@/components/SEO";
-import OptimizedImage from "@/components/OptimizedImage";
 
 interface ProjectTimelineProps {
   phases: ProjectPhase[];

@@ -26,7 +26,7 @@ export interface ProjectDetails {
   totalUnits: number;
   totalBlocks: number;
   landscapeRatio: string;
-  parking: string;
+  parking: string | "-";
 }
 
 export interface Project {
@@ -98,7 +98,7 @@ export const projects: Project[] = [
       totalUnits: 6,
       totalBlocks: 1,
       landscapeRatio: "12%",
-      parking: "Mevcut Değil",
+      parking: "-",
     },
     phases: [
       {
