@@ -33,13 +33,14 @@ const PROJECTS: ProjectPin[] = [
   },
   {
     id: 2,
-    name: "Valorya 3",
-    coordinates: [38.517611, 27.04],
-    neighborhood: "Balatçık Mahallesi",
+    name: "Serenita Garden",
+    coordinates: [38.4098992, 27.0130255],
+    neighborhood: "KucukÇiğli Mahallesi",
     district: "Çiğli",
-    image: "/projects/valorya3/cover.webp",
+    image: "/projects/serenitagarden/cover.webp",
     href: "/projeler",
   },
+
   {
     id: 3,
     name: "Valorya 1",
@@ -60,6 +61,15 @@ const PROJECTS: ProjectPin[] = [
   },
   {
     id: 5,
+    name: "Valorya 3",
+    coordinates: [38.517611, 27.04],
+    neighborhood: "Balatçık Mahallesi",
+    district: "Çiğli",
+    image: "/projects/valorya3/cover.webp",
+    href: "/projeler",
+  },
+  {
+    id: 6,
     name: "Valorya 4",
     coordinates: [38.4820951, 27.1157441],
     neighborhood: "Postacılar Mahallesi",
@@ -68,7 +78,7 @@ const PROJECTS: ProjectPin[] = [
     href: "/projeler",
   },
   {
-    id: 6,
+    id: 7,
     name: "Valorya 5",
     coordinates: [38.508107, 27.049398],
     neighborhood: "KucukÇiğli Mahallesi",
@@ -77,7 +87,7 @@ const PROJECTS: ProjectPin[] = [
     href: "/projeler",
   },
   {
-    id: 7,
+    id: 8,
     name: "Valorya 6",
     coordinates: [38.498116, 27.057128],
     neighborhood: "KucukÇiğli Mahallesi",
@@ -86,21 +96,12 @@ const PROJECTS: ProjectPin[] = [
     href: "/projeler",
   },
   {
-    id: 8,
+    id: 9,
     name: "Valorya 7",
     coordinates: [38.497562, 27.057069],
     neighborhood: "KucukÇiğli Mahallesi",
     district: "Çiğli",
     image: "/projects/valorya7/cover.webp",
-    href: "/projeler",
-  },
-  {
-    id: 9,
-    name: "Serenita Garden",
-    coordinates: [38.4098992, 27.0130255],
-    neighborhood: "KucukÇiğli Mahallesi",
-    district: "Çiğli",
-    image: "/projects/serenitagarden/cover.webp",
     href: "/projeler",
   },
 ];
