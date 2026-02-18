@@ -28,7 +28,7 @@ const PROJECTS: ProjectPin[] = [
     coordinates: [38.491056, 26.948444],
     neighborhood: "Sasalı",
     district: "Çiğli",
-    image: "/site-logo.webp",
+    image: "/projects/serenitaprestige/cover.webp",
     href: "/projeler",
   },
   {
@@ -37,7 +37,7 @@ const PROJECTS: ProjectPin[] = [
     coordinates: [38.517611, 27.04],
     neighborhood: "Balatçık Mahallesi",
     district: "Çiğli",
-    image: "/site-logo.webp",
+    image: "/projects/valorya3/cover.webp",
     href: "/projeler",
   },
   {
@@ -46,7 +46,7 @@ const PROJECTS: ProjectPin[] = [
     coordinates: [38.508889, 27.039833],
     neighborhood: "Balatçık Mahallesi",
     district: "Çiğli",
-    image: "/site-logo.webp",
+    image: "/projects/valorya1/cover.webp",
     href: "/projeler",
   },
   {
@@ -55,7 +55,7 @@ const PROJECTS: ProjectPin[] = [
     coordinates: [38.4992059, 27.0572575],
     neighborhood: "KucukÇiğli Mahallesi",
     district: "Çiğli",
-    image: "/site-logo.webp",
+    image: "/projects/valorya2/cover.webp",
     href: "/projeler",
   },
   {
@@ -64,7 +64,7 @@ const PROJECTS: ProjectPin[] = [
     coordinates: [38.4820951, 27.1157441],
     neighborhood: "Postacılar Mahallesi",
     district: "Karsiyaka",
-    image: "/site-logo.webp",
+    image: "/projects/valorya4/cover.webp",
     href: "/projeler",
   },
   {
@@ -73,7 +73,7 @@ const PROJECTS: ProjectPin[] = [
     coordinates: [38.508107, 27.049398],
     neighborhood: "KucukÇiğli Mahallesi",
     district: "Çiğli",
-    image: "/site-logo.webp",
+    image: "/projects/valorya5/cover.webp",
     href: "/projeler",
   },
   {
@@ -82,7 +82,7 @@ const PROJECTS: ProjectPin[] = [
     coordinates: [38.498116, 27.057128],
     neighborhood: "KucukÇiğli Mahallesi",
     district: "Çiğli",
-    image: "/site-logo.webp",
+    image: "/projects/valorya6/cover.webp",
     href: "/projeler",
   },
   {
@@ -91,7 +91,7 @@ const PROJECTS: ProjectPin[] = [
     coordinates: [38.497562, 27.057069],
     neighborhood: "KucukÇiğli Mahallesi",
     district: "Çiğli",
-    image: "/site-logo.webp",
+    image: "/projects/valorya7/cover.webp",
     href: "/projeler",
   },
 ];
@@ -257,7 +257,7 @@ export default function ProjectsMapSection({
             }}
           >
             <Popup closeButton minWidth={132}>
-              <div className="w-[132px]">
+              <div className="w-[132px] pt-2">
                 <img
                   src={project.image}
                   alt={project.name}
