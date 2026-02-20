@@ -85,3 +85,22 @@
   background: rgba(165, 20, 34, 0.2);
   color: inherit;
 }
+
+/* Sonner toast - yeşil tonlar (açık yeşil değil) */
+.sonner-neli[data-sonner-toaster] {
+  --success-bg: #ffffff;
+  --success-border: #a7f3d0;
+  --success-text: #047857;
+}
+.sonner-neli [data-sonner-toast][data-type="success"] {
+  background: var(--success-bg);
+  border-color: var(--success-border);
+  color: var(--success-text);
+}
+.sonner-neli [data-sonner-toast][data-type="success"] [data-title],
+.sonner-neli [data-sonner-toast][data-type="success"] [data-description] {
+  color: #047857;
+}
+.sonner-neli [data-sonner-toast][data-type="success"] [data-icon] {
+  color: #047857;
+}

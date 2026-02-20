@@ -113,7 +113,6 @@ export default function Career() {
       access_key: WEB3FORMS_ACCESS_KEY,
       subject: `Kariyer Basvurusu - ${formData.position.trim()}`,
       from_name: "Neli Muhendislik Kariyer Formu",
-      ccemail: "info@neli.tr",
       replyto: formData.email.trim(),
       botcheck: "",
       full_name: formData.fullName.trim(),

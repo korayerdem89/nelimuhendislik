@@ -63,11 +63,13 @@ function App() {
           <Footer />
           <Toaster
             position="bottom-right"
+            theme="light"
+            richColors
+            className="sonner-neli"
             toastOptions={{
               style: {
-                background: "#1a1a1a",
-                border: "1px solid #333",
-                color: "white",
+                background: "#ffffff",
+                border: "1px solid #ebe5dc",
               },
             }}
           />
