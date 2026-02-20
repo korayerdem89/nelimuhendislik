@@ -9,7 +9,7 @@ const navLinks = [
   { name: "Projeler", href: "/projeler" },
   { name: "Restorasyon", href: "/restorasyon" },
   { name: "Kurumsal", href: "/kurumsal" },
-  { name: "Finans", href: "/finans" },
+  { name: "Finans", href: "/finans", highlight: true },
   { name: "Kariyer", href: "/kariyer" },
   { name: "İletişim", href: "/iletisim" },
 ];
@@ -61,27 +61,43 @@ export default function Navigation() {
 
             {/* Desktop Navigation */}
             <div className="hidden lg:flex items-center gap-6 xl:gap-8">
-              {navLinks.map((link) => (
-                <Link
-                  key={link.name}
-                  to={link.href}
-                  className={`relative text-sm font-medium transition-colors duration-300 py-2 ${
-                    isActive(link.href)
-                      ? "text-neli-600"
-                      : isScrolled
-                        ? "text-foreground/50 hover:text-neli-500"
-                        : "text-foreground/70 hover:text-neli-500"
-                  }`}
-                >
-                  {link.name}
-                  {isActive(link.href) && (
-                    <motion.span
-                      layoutId="activeNav"
-                      className="absolute -bottom-1 left-0 right-0 h-0.5 bg-neli-600"
-                    />
-                  )}
-                </Link>
-              ))}
+              {navLinks.map((link) =>
+                link.highlight ? (
+                  <Link
+                    key={link.name}
+                    to={link.href}
+                    className="relative text-sm font-semibold py-2 bg-gradient-to-r from-blue-600 to-blue-500 bg-clip-text text-transparent hover:opacity-90 transition-opacity duration-300"
+                  >
+                    {link.name}
+                    {isActive(link.href) && (
+                      <motion.span
+                        layoutId="activeNav"
+                        className="absolute -bottom-1 left-0 right-0 h-0.5 bg-gradient-to-r from-blue-600 to-blue-500"
+                      />
+                    )}
+                  </Link>
+                ) : (
+                  <Link
+                    key={link.name}
+                    to={link.href}
+                    className={`relative text-sm font-medium transition-colors duration-300 py-2 ${
+                      isActive(link.href)
+                        ? "text-neli-600"
+                        : isScrolled
+                          ? "text-foreground/50 hover:text-neli-500"
+                          : "text-foreground/70 hover:text-neli-500"
+                    }`}
+                  >
+                    {link.name}
+                    {isActive(link.href) && (
+                      <motion.span
+                        layoutId="activeNav"
+                        className="absolute -bottom-1 left-0 right-0 h-0.5 bg-neli-600"
+                      />
+                    )}
+                  </Link>
+                ),
+              )}
             </div>
 
             {/* CTA Button & Social Links */}
@@ -144,9 +160,11 @@ export default function Navigation() {
                       to={link.href}
                       onClick={() => setIsMobileMenuOpen(false)}
                       className={`block px-4 py-3 rounded-lg transition-all duration-300 ${
-                        isActive(link.href)
-                          ? "bg-neli-600/10 text-neli-600 font-medium"
-                          : "text-foreground/70 hover:bg-cream-100 hover:text-foreground"
+                        link.highlight
+                          ? "bg-gradient-to-r from-blue-600 to-blue-500 bg-clip-text text-transparent font-semibold hover:opacity-90"
+                          : isActive(link.href)
+                            ? "bg-neli-600/10 text-neli-600 font-medium"
+                            : "text-foreground/70 hover:bg-cream-100 hover:text-foreground"
                       }`}
                     >
                       {link.name}
