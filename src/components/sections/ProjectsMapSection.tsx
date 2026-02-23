@@ -195,7 +195,7 @@ function FlyToProject({ selectedProject, markerRefs }: FlyToProjectProps) {
 
 export default function ProjectsMapSection({
   title,
-  heightClassName = "h-80 md:h-[460px] lg:h-[520px]",
+  heightClassName = "md:h-[460px] lg:h-[520px]",
 }: ProjectsMapSectionProps) {
   const [selectedProjectId, setSelectedProjectId] = useState<number | null>(
     null,
@@ -208,7 +208,7 @@ export default function ProjectsMapSection({
     <section
       className={`relative ${heightClassName} bg-cream-100 rounded-2xl overflow-hidden`}
     >
-      <div className="absolute right-3 top-3 z-[600] w-[min(340px,calc(100%-24px))] rounded-xl border border-white/70 bg-white/90 p-3 shadow-xl backdrop-blur-md">
+      <div className="z-[600] m-3 rounded-xl border border-white/70 bg-white/90 p-3 shadow-xl backdrop-blur-md md:absolute md:right-3 md:top-3 md:m-0 md:w-[min(340px,calc(100%-24px))]">
         <p className="mb-2 text-[11px] font-semibold uppercase tracking-[0.14em] text-foreground/50">
           Proje Rehberi
         </p>
@@ -245,56 +245,58 @@ export default function ProjectsMapSection({
         </div>
       </div>
 
-      <MapContainer
-        center={mapCenter}
-        zoom={defaultZoom}
-        scrollWheelZoom={false}
-        className="h-full w-full"
-        aria-label={title}
-      >
-        <FlyToProject
-          selectedProject={selectedProject}
-          markerRefs={markerRefs}
-        />
-        <TileLayer
-          attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>'
-          url="https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png"
-          subdomains={["a", "b", "c", "d"]}
-        />
+      <div className="h-72 sm:h-80 md:h-full">
+        <MapContainer
+          center={mapCenter}
+          zoom={defaultZoom}
+          scrollWheelZoom={false}
+          className="h-full w-full"
+          aria-label={title}
+        >
+          <FlyToProject
+            selectedProject={selectedProject}
+            markerRefs={markerRefs}
+          />
+          <TileLayer
+            attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>'
+            url="https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png"
+            subdomains={["a", "b", "c", "d"]}
+          />
 
-        {PROJECTS.map((project) => (
-          <Marker
-            key={project.id}
-            position={project.coordinates}
-            icon={
-              project.id === selectedProjectId ? activePinIcon : defaultPinIcon
-            }
-            ref={(ref) => {
-              markerRefs.current[project.id] = ref;
-            }}
-          >
-            <Popup closeButton minWidth={132}>
-              <div className="w-[132px] pt-2">
-                <img
-                  src={project.image}
-                  alt={project.name}
-                  className="mb-2 aspect-[1/1] w-full rounded object-cover"
-                  loading="lazy"
-                />
-                <h3 className="mb-1 text-[10px] font-semibold leading-tight text-foreground">
-                  {project.name}
-                </h3>
-                <Link
-                  to={project.href}
-                  className="inline-flex items-center justify-center rounded px-2 py-1 text-[10px] font-medium bg-neli-600 transition-colors hover:bg-neli-700"
-                >
-                  <span className="text-white"> Projeyi Incele</span>
-                </Link>
-              </div>
-            </Popup>
-          </Marker>
-        ))}
-      </MapContainer>
+          {PROJECTS.map((project) => (
+            <Marker
+              key={project.id}
+              position={project.coordinates}
+              icon={
+                project.id === selectedProjectId ? activePinIcon : defaultPinIcon
+              }
+              ref={(ref) => {
+                markerRefs.current[project.id] = ref;
+              }}
+            >
+              <Popup closeButton minWidth={132}>
+                <div className="w-[132px] pt-2">
+                  <img
+                    src={project.image}
+                    alt={project.name}
+                    className="mb-2 aspect-[1/1] w-full rounded object-cover"
+                    loading="lazy"
+                  />
+                  <h3 className="mb-1 text-[10px] font-semibold leading-tight text-foreground">
+                    {project.name}
+                  </h3>
+                  <Link
+                    to={project.href}
+                    className="inline-flex items-center justify-center rounded px-2 py-1 text-[10px] font-medium bg-neli-600 transition-colors hover:bg-neli-700"
+                  >
+                    <span className="text-white"> Projeyi Incele</span>
+                  </Link>
+                </div>
+              </Popup>
+            </Marker>
+          ))}
+        </MapContainer>
+      </div>
     </section>
   );
 }
