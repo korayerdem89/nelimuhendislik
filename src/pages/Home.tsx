@@ -51,11 +51,18 @@ export default function Home() {
   const heroRef = useRef<HTMLDivElement>(null);
   const aboutRef = useRef<HTMLDivElement>(null);
   const projectsRef = useRef<HTMLDivElement>(null);
+  const mapRef = useRef<HTMLDivElement>(null);
 
   const isAboutInView = useInView(aboutRef, { once: true, margin: "-100px" });
   const isProjectsInView = useInView(projectsRef, {
     once: true,
-    margin: "120px",
+    amount: "some",
+    margin: "0px 0px -300px 0px",
+  });
+  const isMapInView = useInView(mapRef, {
+    once: true,
+    amount: "some",
+    margin: "0px 0px -300px 0px",
   });
 
   return (
@@ -65,7 +72,7 @@ export default function Home() {
         description="Neli Mühendislik, İzmir'de modern ve kaliteli konut projeleri sunan güvenilir bir inşaat firmasıdır. Valorya ve Serenita projeleriyle hayalinizdeki eve kavuşun."
         url="https://nelimuhendislik.com"
       />
-      
+
       {/* Hero Section */}
       <HeroSection />
 
@@ -111,10 +118,10 @@ export default function Home() {
                 className="relative order-2 lg:order-1"
               >
                 <OptimizedImage
-                  src="/office.webp"
+                  src="/office2.webp"
                   alt="Neli Mühendislik"
                   className="rounded-2xl"
-                  aspectRatio="3/4"
+                  aspectRatio="4/3"
                 />
                 <div className="absolute -bottom-4 md:-bottom-6 -right-4 md:-right-6 w-24 md:w-48 h-24 md:h-48 bg-neli-600/10 rounded-2xl -z-10" />
                 <div className="absolute -top-4 md:-top-6 -left-4 md:-left-6 w-16 md:w-32 h-16 md:h-32 border-2 border-neli-600/20 rounded-2xl -z-10" />
@@ -223,13 +230,13 @@ export default function Home() {
         </div>
       </section>
 
-      <section ref={projectsRef} className="section-padding bg-cream-100">
+      <section ref={mapRef} className="section-padding bg-cream-100">
         <div className="container-padding">
           <div className="max-w-7xl mx-auto">
             {/* Section Header */}
             <motion.div
               initial={{ opacity: 0, y: 30 }}
-              animate={isProjectsInView ? { opacity: 1, y: 0 } : {}}
+              animate={isMapInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.6 }}
               className="flex flex-col md:flex-row md:items-end md:justify-between gap-4 md:gap-6 mb-8 md:mb-12"
             >
