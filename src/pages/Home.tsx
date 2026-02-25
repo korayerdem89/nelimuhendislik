@@ -19,31 +19,38 @@ const stats = [
 
 const milestones = [
   {
-    year: "2021",
-    title: "Neli Mühendislik Kuruldu",
+    year: "1989",
+    title: "İran'da Tara Enginneering Adıyla Kurulduk",
     description:
-      'İzmir\'de "Ayrıcalıklı hissetmek herkesin hakkı" prensibiyle yola çıktık.',
+      'İran\'da "Ayrıcalıklı hissetmek herkesin hakkı" prensibiyle yola çıktık.',
+  },
+  {
+    year: "2021",
+    title: "Neli Mühendislik Adıyla İzmir'de Faaliyetlere Başladık",
+    description:
+      "Onlarca restorasyon projesiyle kusursuz hizmet sunmaya başladık.",
+  },
+  {
+    year: "2023",
+    title: "İlk İnşaat Projemiz",
+    description: "Valorya 1 projesi ile inşaat projelerine başladık.",
   },
   {
     year: "2024",
-    title: "İlk Projelerimiz",
-    description: "Valorya 1 ve Valorya 2 projelerimizin temellerini attık.",
+    title: "Yeni projelerle büyümeye devam ediyoruz",
+    description: "Valorya 2 projemizin temellerini attık.",
   },
   {
     year: "2025",
-    title: "Büyüme ve Gelişme",
-    description: "Valorya 3 projemizin temellerini attık.",
-  },
-  {
-    year: "2025",
-    title: "Büyüme ve Gelişme",
-    description: "Valorya 1 projemizi tamamladık.",
+    title: "İlk projemiz tamamlandı",
+    description:
+      "Valorya 1 projemizi tamamladık. Valorya 3 projemizin temellerini attık.",
   },
   {
     year: "2026",
     title: "Yeni Hedefler",
     description:
-      "Valorya 4 ve Valorya 5 projelerimizle büyümeye devam ediyoruz.",
+      "Valorya 4, Valorya 5, Valorya 6 ve Valorya 7 projelerimizle büyümeye devam ediyoruz.",
   },
 ];
 

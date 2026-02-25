@@ -86,15 +86,7 @@ export const projects: Project[] = [
         "1. kalite malzemelerle inşa edilmiş yapı",
         "3 katlı, toplam 6 daire içeren apartman projesi",
       ],
-      unitTypes: [
-        { type: "1+1", count: 6, grossArea: "50", netArea: "43 m2" },
-        {
-          type: "1+1 Daire",
-          count: 6,
-          grossArea: "50 m2",
-          netArea: "43 m2",
-        },
-      ],
+      unitTypes: [{ type: "1+1", count: 6, grossArea: "50", netArea: "43 m2" }],
       totalUnits: 6,
       totalBlocks: 1,
       landscapeRatio: "12%",
@@ -421,8 +413,7 @@ export const projects: Project[] = [
         "Fonksiyonel mutfak ve yasam hacmi organizasyonu",
       ],
       unitTypes: [
-        { type: "3+1", count: 10, grossArea: "160 m2", netArea: "128 m2" },
-        { type: "4+1", count: 6, grossArea: "196 m2", netArea: "158 m2" },
+        { type: "5+2", count: 3, grossArea: "350 m2", netArea: "300 m2" },
       ],
       totalUnits: 16,
       totalBlocks: 1,
