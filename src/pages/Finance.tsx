@@ -59,8 +59,8 @@ const PARTICIPATION_BANKS = [
 ];
 
 const NELI_FINANCE_OPTIONS: NeliFinanceOption[] = [
-  { downPaymentPercent: 30, installmentMonths: 24, interestRate: 0 },
-  { downPaymentPercent: 50, installmentMonths: 24, interestRate: 0 },
+  { downPaymentPercent: 30, installmentMonths: 24, interestRate: 2.79 },
+  { downPaymentPercent: 50, installmentMonths: 24, interestRate: 1.99 },
   { downPaymentPercent: 70, installmentMonths: 24, interestRate: 0 },
 ];
 
@@ -602,8 +602,11 @@ export default function Finance() {
                     const downPayment =
                       (neliPropertyPrice * option.downPaymentPercent) / 100;
                     const remaining = neliPropertyPrice - downPayment;
-                    const monthlyInstallment =
-                      remaining / option.installmentMonths;
+                    const monthlyInstallment = calculateLoan(
+                      remaining,
+                      option.interestRate,
+                      option.installmentMonths,
+                    ).monthlyPayment;
 
                     return (
                       <motion.tr
@@ -643,7 +646,11 @@ export default function Finance() {
                         <td className="py-5 px-4">
                           <span className="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-green-100 text-green-700 text-sm font-medium">
                             %{option.interestRate}
-                            <span className="text-xs">(Faizsiz)</span>
+                            <span className="text-xs">
+                              {option.interestRate === 0
+                                ? "(Faizsiz)"
+                                : "(Aylık)"}
+                            </span>
                           </span>
                         </td>
                       </motion.tr>
