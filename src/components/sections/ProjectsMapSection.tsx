@@ -34,8 +34,8 @@ const PROJECTS: ProjectPin[] = [
   {
     id: 2,
     name: "Serenita Garden",
-    coordinates: [38.4098992, 27.0130255],
-    neighborhood: "KucukÇiğli Mahallesi",
+    coordinates: [38.4057116, 26.9981004],
+    neighborhood: "Kucukçiğli Mahallesi",
     district: "Çiğli",
     image: "/projects/serenitagarden/cover.webp",
     href: "/projeler",
@@ -71,7 +71,7 @@ const PROJECTS: ProjectPin[] = [
   {
     id: 6,
     name: "Valorya 4",
-    coordinates: [38.4820951, 27.1157441],
+    coordinates: [38.482399, 27.118534],
     neighborhood: "Postacılar Mahallesi",
     district: "Karsiyaka",
     image: "/projects/valorya4/cover.webp",
@@ -268,7 +268,9 @@ export default function ProjectsMapSection({
               key={project.id}
               position={project.coordinates}
               icon={
-                project.id === selectedProjectId ? activePinIcon : defaultPinIcon
+                project.id === selectedProjectId
+                  ? activePinIcon
+                  : defaultPinIcon
               }
               ref={(ref) => {
                 markerRefs.current[project.id] = ref;
