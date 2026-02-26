@@ -20,7 +20,7 @@ const stats = [
 const milestones = [
   {
     year: "1989",
-    title: "İran'da Tara Enginneering Adıyla Kurulduk",
+    title: "İran'da Tara Engineering Adıyla Kurulduk",
     description:
       'İran\'da "Ayrıcalıklı hissetmek herkesin hakkı" prensibiyle yola çıktık.',
   },
@@ -31,26 +31,24 @@ const milestones = [
       "Onlarca restorasyon projesiyle kusursuz hizmet sunmaya başladık.",
   },
   {
-    year: "2023",
+    year: "2022",
     title: "İlk İnşaat Projemiz",
-    description: "Valorya 1 projesi ile inşaat projelerine başladık.",
+    description: "Valorya 1 projesi için çalışmalar başladı.",
+  },
+  {
+    year: "2023",
+    title: "Serenita Projelerine Başladık",
+    description: "Serenita Prestige ve Serenita Garden projelerine başladık.",
   },
   {
     year: "2024",
-    title: "Yeni projelerle büyümeye devam ediyoruz",
-    description: "Valorya 2 projemizin temellerini attık.",
+    title: "Yeni Projelerle Büyümeye Devam Ediyoruz",
+    description: "Valorya 2 - 3 - 4 projelerinin temellerini attık.",
   },
   {
     year: "2025",
-    title: "İlk projemiz tamamlandı",
-    description:
-      "Valorya 1 projemizi tamamladık. Valorya 3 projemizin temellerini attık.",
-  },
-  {
-    year: "2026",
-    title: "Yeni Hedefler",
-    description:
-      "Valorya 4, Valorya 5, Valorya 6 ve Valorya 7 projelerimizle büyümeye devam ediyoruz.",
+    title: "Ardı Ardına Temelleri Atılan Projeler",
+    description: "Valorya 5 - 6 - 7 ve Serenita Park projelerine başladık.",
   },
 ];
 

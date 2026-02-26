@@ -53,26 +53,36 @@ const values = [
 
 const milestones = [
   {
-    year: "2021",
-    title: "Neli Mühendislik Kuruldu",
+    year: "1989",
+    title: "İran'da Tara Engineering Adıyla Kurulduk",
     description:
-      'İzmir\'de "Ayrıcalıklı hissetmek herkesin hakkı" prensibiyle yola çıktık.',
+      'İran\'da "Ayrıcalıklı hissetmek herkesin hakkı" prensibiyle yola çıktık.',
+  },
+  {
+    year: "2021",
+    title: "Neli Mühendislik Adıyla İzmir'de Faaliyetlere Başladık",
+    description:
+      "Onlarca restorasyon projesiyle kusursuz hizmet sunmaya başladık.",
   },
   {
     year: "2022",
-    title: "İlk Projelerimiz",
-    description: "Valorya 1 ve Valorya 2 projelerimizin temellerini attık.",
+    title: "İlk İnşaat Projemiz",
+    description: "Valorya 1 projesi için çalışmalar başladı.",
   },
   {
     year: "2023",
-    title: "Büyüme ve Gelişme",
-    description: "Serenità Park ve Valorya 3 projelerimizi tamamladık.",
+    title: "Serenita Projelerine Başladık",
+    description: "Serenita Prestige ve Serenita Garden projelerine başladık.",
   },
   {
     year: "2024",
-    title: "Yeni Hedefler",
-    description:
-      "Valorya 4 ve Valorya 5 projelerimizle büyümeye devam ediyoruz.",
+    title: "Yeni Projelerle Büyümeye Devam Ediyoruz",
+    description: "Valorya 2 - 3 - 4 projelerinin temellerini attık.",
+  },
+  {
+    year: "2025",
+    title: "Ardı Ardına Temelleri Atılan Projeler",
+    description: "Valorya 5 - 6 - 7 ve Serenita Park projelerine başladık.",
   },
 ];
 
