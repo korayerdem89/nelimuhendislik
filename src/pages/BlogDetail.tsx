@@ -40,91 +40,98 @@ export default function BlogDetail() {
         type="article"
       />
 
-      {/* Article Header */}
+      {/* Article Header + Cover Image */}
       <section className="relative py-12 md:py-16 lg:py-20 bg-cream-100">
         <div className="container-padding">
-          <div className="max-w-4xl mx-auto">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6 }}
-            >
-              {/* Breadcrumb */}
-              <div className="flex items-center gap-2 text-sm text-foreground/50 mb-6">
-                <Link to="/" className="hover:text-neli-600 transition-colors">
-                  Anasayfa
-                </Link>
-                <span>/</span>
-                <Link
-                  to="/blog"
-                  className="hover:text-neli-600 transition-colors"
-                >
-                  Blog
-                </Link>
-                <span>/</span>
-                <span className="text-neli-600">{post.category}</span>
-              </div>
-
-              {/* Category */}
-              <Link
-                to={`/blog?category=${post.category}`}
-                className="inline-block px-4 py-1.5 bg-neli-600 text-white text-sm font-medium rounded-full mb-4"
+          <div className="max-w-7xl mx-auto">
+            <div className="grid lg:grid-cols-2 gap-8 md:gap-12 lg:gap-16 items-center">
+              {/* Cover Image */}
+              <motion.div
+                initial={{ opacity: 0, x: -30 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.6 }}
+                className="order-2 lg:order-1"
               >
-                {post.category}
-              </Link>
+                <div className="relative aspect-[1/1] rounded-2xl overflow-hidden">
+                  <OptimizedImage
+                    src={post.coverImage}
+                    alt={post.title}
+                    className="w-full h-full"
+                    aspectRatio="1/1"
+                    priority
+                  />
+                </div>
+              </motion.div>
 
-              {/* Title */}
-              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-medium text-foreground leading-tight mb-6">
-                {post.title}
-              </h1>
+              {/* Text Content */}
+              <motion.div
+                initial={{ opacity: 0, x: 30 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.6, delay: 0.15 }}
+                className="order-1 lg:order-2"
+              >
+                {/* Breadcrumb */}
+                <div className="flex items-center gap-2 text-sm text-foreground/50 mb-6">
+                  <Link
+                    to="/"
+                    className="hover:text-neli-600 transition-colors"
+                  >
+                    Anasayfa
+                  </Link>
+                  <span>/</span>
+                  <Link
+                    to="/blog"
+                    className="hover:text-neli-600 transition-colors"
+                  >
+                    Blog
+                  </Link>
+                  <span>/</span>
+                  <span className="text-neli-600">{post.category}</span>
+                </div>
 
-              {/* Excerpt */}
-              <p className="text-lg md:text-xl text-foreground/70 leading-relaxed mb-6">
-                {post.excerpt}
-              </p>
+                {/* Category */}
+                <Link
+                  to={`/blog?category=${post.category}`}
+                  className="inline-block px-4 py-1.5 bg-neli-600 text-white text-sm font-medium rounded-full mb-4"
+                >
+                  {post.category}
+                </Link>
 
-              {/* Meta */}
-              <div className="flex flex-wrap items-center gap-4 md:gap-6 text-sm text-foreground/60">
-                <div className="flex items-center gap-2">
-                  <div className="w-10 h-10 rounded-full bg-cream-200 overflow-hidden">
-                    <img
-                      src={post.author.avatar}
-                      alt={post.author.name}
-                      className="w-full h-full object-contain"
-                    />
+                {/* Title */}
+                <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-medium text-foreground leading-tight mb-6">
+                  {post.title}
+                </h1>
+
+                {/* Excerpt */}
+                <p className="text-base md:text-lg text-foreground/70 leading-relaxed mb-6">
+                  {post.excerpt}
+                </p>
+
+                {/* Meta */}
+                <div className="flex flex-wrap items-center gap-4 md:gap-6 text-sm text-foreground/60">
+                  <div className="flex items-center gap-2">
+                    <div className="w-10 h-10 rounded-full bg-cream-200 overflow-hidden">
+                      <img
+                        src={post.author.avatar}
+                        alt={post.author.name}
+                        className="w-full h-full object-contain"
+                      />
+                    </div>
+                    <div>
+                      <p className="font-medium text-foreground">
+                        {post.author.name}
+                      </p>
+                    </div>
                   </div>
-                  <div>
-                    <p className="font-medium text-foreground">
-                      {post.author.name}
-                    </p>
+                  <div className="flex items-center gap-2">
+                    <Calendar className="w-4 h-4 text-neli-600" />
+                    <span>{formatDate(post.publishedAt)}</span>
                   </div>
                 </div>
-                <div className="flex items-center gap-2">
-                  <Calendar className="w-4 h-4 text-neli-600" />
-                  <span>{formatDate(post.publishedAt)}</span>
-                </div>
-              </div>
-            </motion.div>
+              </motion.div>
+            </div>
           </div>
         </div>
-      </section>
-
-      {/* Cover Image */}
-      <section className="bg-white">
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.8 }}
-          className="max-w-6xl mx-auto"
-        >
-          <OptimizedImage
-            src={post.coverImage}
-            alt={post.title}
-            className="w-full aspect-[16/9] md:aspect-[21/9]"
-            aspectRatio="21/9"
-            priority
-          />
-        </motion.div>
       </section>
 
       {/* Article Content */}
@@ -240,11 +247,12 @@ export default function BlogDetail() {
                     className="group"
                   >
                     <Link to={`/blog/${relatedPost.slug}`} className="block">
-                      <div className="relative aspect-[4/3] rounded-xl overflow-hidden mb-4">
+                      <div className="relative aspect-[1/1] rounded-xl overflow-hidden mb-4">
                         <OptimizedImage
                           src={relatedPost.coverImage}
                           alt={relatedPost.title}
                           className="w-full h-full transition-transform duration-700 group-hover:scale-105"
+                          aspectRatio="1/1"
                         />
                       </div>
 

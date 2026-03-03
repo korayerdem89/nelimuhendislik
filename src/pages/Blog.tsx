@@ -73,12 +73,12 @@ export default function Blog() {
                     to={`/blog/${featuredPosts[0].slug}`}
                     className="group block h-full"
                   >
-                    <div className="relative h-full min-h-[300px] md:min-h-[400px] lg:min-h-full rounded-2xl overflow-hidden">
+                    <div className="relative aspect-[1/1] rounded-2xl overflow-hidden">
                       <OptimizedImage
                         src={featuredPosts[0].coverImage}
                         alt={featuredPosts[0].title}
                         className="absolute inset-0 w-full h-full transition-transform duration-700 group-hover:scale-105"
-                        aspectRatio="auto"
+                        aspectRatio="1/1"
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
 
@@ -226,11 +226,12 @@ export default function Blog() {
                   className="group"
                 >
                   <Link to={`/blog/${post.slug}`} className="block">
-                    <div className="relative aspect-[4/3] rounded-xl overflow-hidden mb-4">
+                    <div className="relative aspect-[1/1] rounded-xl overflow-hidden mb-4">
                       <OptimizedImage
                         src={post.coverImage}
                         alt={post.title}
                         className="w-full h-full transition-transform duration-700 group-hover:scale-105"
+                        aspectRatio="1/1"
                       />
                       <div className="absolute top-3 left-3">
                         <span className="px-3 py-1 bg-white/90 backdrop-blur-sm text-foreground text-xs font-medium rounded-full">

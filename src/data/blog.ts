@@ -64,7 +64,7 @@ export const blogPosts: BlogPost[] = [
       <p><strong>Web Sitesi:</strong> www.neli.tr</p>
       <p>Projelerimiz hakkında daha fazla teknik detay almak için web sitemiz üzerinden bizimle iletişime geçebilir veya ofisimizi ziyaret edebilirsiniz.</p>
     `,
-    coverImage: "/images/blog/konut-satin-alma.webp",
+    coverImage: "/blog/konut-projeleri.webp",
     category: "İnşaat",
     tags: ["konut", "izmir", "yatırım", "satın alma"],
     author: {
