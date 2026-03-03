@@ -45,7 +45,7 @@ export default function Blog() {
 
       {/* Featured Posts */}
       {featuredPosts.length > 0 && (
-        <section className="section-padding bg-cream-100">
+        <section className=" bg-cream-100">
           <div className="container-padding">
             <div className="max-w-7xl mx-auto">
               <motion.div
@@ -94,7 +94,9 @@ export default function Blog() {
                         </p>
                         <div className="flex items-center gap-2 text-white/70 text-sm">
                           <Calendar className="w-4 h-4" />
-                          <span>{formatDate(featuredPosts[0].publishedAt)}</span>
+                          <span>
+                            {formatDate(featuredPosts[0].publishedAt)}
+                          </span>
                         </div>
                       </div>
                     </div>
