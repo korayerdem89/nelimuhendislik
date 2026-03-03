@@ -71,7 +71,7 @@ export const blogPosts: BlogPost[] = [
       name: "Neli Mühendislik",
       avatar: "/site-logo.webp",
     },
-    publishedAt: "2025-02-15",
+    publishedAt: "2026-02-15",
     featured: true,
     meta: {
       title:
@@ -84,12 +84,12 @@ export const blogPosts: BlogPost[] = [
   },
   {
     id: "2",
-    slug: "modern-mimari-trendleri-2025",
-    title: "Modern Mimari Trendleri 2025",
+    slug: "modern-mimari-trendleri-2026",
+    title: "Modern Mimari Trendleri 2026",
     excerpt:
-      "2025 yılında öne çıkan mimari tasarım trendleri ve sürdürülebilir yapılaşma yaklaşımları.",
+      "2026 yılında öne çıkan mimari tasarım trendleri ve sürdürülebilir yapılaşma yaklaşımları.",
     content: `
-      <p>Mimari dünyası her geçen gün yeniliklerle şekilleniyor. 2025 yılında hangi trendler öne çıkıyor?</p>
+      <p>Mimari dünyası her geçen gün yeniliklerle şekilleniyor. 2026 yılında hangi trendler öne çıkıyor?</p>
       
       <h2>Sürdürülebilir Malzemeler</h2>
       <p>Çevre dostu malzemeler ve yenilenebilir kaynakların kullanımı artıyor. Geri dönüştürülmüş malzemeler ve yerel kaynaklar öncelikli hale geliyor.</p>
@@ -102,18 +102,18 @@ export const blogPosts: BlogPost[] = [
     `,
     coverImage: "/images/blog/mimari-trendler.webp",
     category: "Mimari",
-    tags: ["mimari", "trendler", "sürdürülebilirlik", "2025"],
+    tags: ["mimari", "trendler", "sürdürülebilirlik", "2026"],
     author: {
       name: "Neli Mühendislik",
       avatar: "/site-logo.webp",
     },
-    publishedAt: "2025-01-28",
+    publishedAt: "2026-01-28",
     featured: false,
     meta: {
-      title: "Modern Mimari Trendleri 2025 | Neli Mühendislik",
+      title: "Modern Mimari Trendleri 2026 | Neli Mühendislik",
       description:
-        "2025 yılında öne çıkan mimari tasarım trendleri. Sürdürülebilir malzemeler, akıllı ev sistemleri ve yeşil alanlar.",
-      keywords: "mimari trendleri 2025, modern tasarım, sürdürülebilir mimari",
+        "2026 yılında öne çıkan mimari tasarım trendleri. Sürdürülebilir malzemeler, akıllı ev sistemleri ve yeşil alanlar.",
+      keywords: "mimari trendleri 2026, modern tasarım, sürdürülebilir mimari",
     },
   },
   {
@@ -141,7 +141,7 @@ export const blogPosts: BlogPost[] = [
       name: "Neli Mühendislik",
       avatar: "/site-logo.webp",
     },
-    publishedAt: "2025-01-10",
+    publishedAt: "2026-01-10",
     featured: true,
     meta: {
       title: "Valorya Projeleri ile Yeni Bir Yaşam | Neli Mühendislik",
@@ -176,7 +176,7 @@ export const blogPosts: BlogPost[] = [
       name: "Neli Mühendislik",
       avatar: "/site-logo.webp",
     },
-    publishedAt: "2024-12-20",
+    publishedAt: "2026-03-01",
     featured: false,
     meta: {
       title:
@@ -212,7 +212,7 @@ export const blogPosts: BlogPost[] = [
       name: "Neli Mühendislik",
       avatar: "/site-logo.webp",
     },
-    publishedAt: "2024-12-05",
+    publishedAt: "2026-03-01",
     featured: false,
     meta: {
       title: "Evinizi Değerlendirecek Dekorasyon Önerileri | Neli Mühendislik",
@@ -247,7 +247,7 @@ export const blogPosts: BlogPost[] = [
       name: "Neli Mühendislik",
       avatar: "/site-logo.webp",
     },
-    publishedAt: "2024-11-15",
+    publishedAt: "2026-03-01",
     featured: true,
     meta: {
       title: "Serenita Prestige: Ayrıcalıklı Yaşamın Adresi | Neli Mühendislik",
