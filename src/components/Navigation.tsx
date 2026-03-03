@@ -7,7 +7,7 @@ import SocialLinks from "./SocialLinks";
 const navLinks = [
   { name: "Anasayfa", href: "/" },
   { name: "Projeler", href: "/projeler" },
-  { name: "Restorasyon", href: "/restorasyon" },
+  // { name: "Restorasyon", href: "/restorasyon" },
   { name: "Kurumsal", href: "/kurumsal" },
   { name: "Finans", href: "/finans", highlight: true },
   { name: "Kariyer", href: "/kariyer" },
