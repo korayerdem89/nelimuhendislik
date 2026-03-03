@@ -12,6 +12,7 @@ const navLinks = [
   { name: "Finans", href: "/finans", highlight: true },
   { name: "Kariyer", href: "/kariyer" },
   { name: "İletişim", href: "/iletisim" },
+  { name: "Blog", href: "/blog" },
 ];
 
 export default function Navigation() {

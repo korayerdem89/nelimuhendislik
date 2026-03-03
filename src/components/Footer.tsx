@@ -20,11 +20,11 @@ const footerLinks = [
     ],
   },
   {
-    title: "Hizmetler",
+    title: "Keşfet",
     links: [
-      { name: "İnşaat", href: "/projeler" },
-      { name: "Restorasyon", href: "/restorasyon" },
-      { name: "Danışmanlık", href: "/iletisim" },
+      { name: "Blog", href: "/blog" },
+      { name: "Kariyer", href: "/kariyer" },
+      { name: "İletişim", href: "/iletisim" },
     ],
   },
 ];

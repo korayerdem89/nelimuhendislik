@@ -13,6 +13,8 @@ import Footer from "./components/Footer";
 const Home = lazy(() => import("./pages/Home"));
 const Projects = lazy(() => import("./pages/Projects"));
 const ProjectDetail = lazy(() => import("./pages/ProjectDetail"));
+const Blog = lazy(() => import("./pages/Blog"));
+const BlogDetail = lazy(() => import("./pages/BlogDetail"));
 // const Restoration = lazy(() => import("./pages/Restoration"));
 const Corporate = lazy(() => import("./pages/Corporate"));
 const Contact = lazy(() => import("./pages/Contact"));
@@ -53,6 +55,8 @@ function App() {
               <Route path="/" element={<Home />} />
               <Route path="/projeler" element={<Projects />} />
               <Route path="/projeler/:slug" element={<ProjectDetail />} />
+              <Route path="/blog" element={<Blog />} />
+              <Route path="/blog/:slug" element={<BlogDetail />} />
               {/* <Route path="/restorasyon" element={<Restoration />} /> */}
               <Route path="/kurumsal" element={<Corporate />} />
               <Route path="/kariyer" element={<Career />} />

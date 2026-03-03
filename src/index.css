@@ -86,6 +86,98 @@
   color: inherit;
 }
 
+/* Blog Article Content */
+.blog-content h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: hsl(220 20% 15%);
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  line-height: 1.3;
+}
+
+.blog-content h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: hsl(220 20% 15%);
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.4;
+}
+
+.blog-content p {
+  color: hsl(220 10% 35%);
+  font-size: 1.0625rem;
+  line-height: 1.8;
+  margin-bottom: 1.25rem;
+}
+
+.blog-content strong {
+  color: hsl(220 20% 15%);
+  font-weight: 600;
+}
+
+.blog-content a {
+  color: #a51422;
+  text-decoration: none;
+  font-weight: 500;
+  transition: opacity 0.2s;
+}
+
+.blog-content a:hover {
+  text-decoration: underline;
+}
+
+.blog-content ul,
+.blog-content ol {
+  margin: 1rem 0 1.5rem 1.5rem;
+  color: hsl(220 10% 35%);
+  font-size: 1.0625rem;
+  line-height: 1.8;
+}
+
+.blog-content li {
+  margin-bottom: 0.5rem;
+}
+
+.blog-content ul li {
+  list-style-type: disc;
+}
+
+.blog-content ol li {
+  list-style-type: decimal;
+}
+
+.blog-content blockquote {
+  border-left: 4px solid #a51422;
+  padding: 1rem 1.5rem;
+  margin: 1.5rem 0;
+  background: #faf8f5;
+  border-radius: 0 0.5rem 0.5rem 0;
+  color: hsl(220 10% 35%);
+  font-style: italic;
+}
+
+.blog-content h2:first-child,
+.blog-content h3:first-child {
+  margin-top: 0;
+}
+
+.blog-content p:last-child {
+  margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+  .blog-content h2 {
+    font-size: 2rem;
+  }
+  .blog-content h3 {
+    font-size: 1.375rem;
+  }
+}
+
 /* Sonner toast - yeşil tonlar (açık yeşil değil) */
 .sonner-neli[data-sonner-toaster] {
   --success-bg: #ffffff;
