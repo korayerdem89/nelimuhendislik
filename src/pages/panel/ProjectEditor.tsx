@@ -49,6 +49,62 @@ function slugify(text: string): string {
 
 const STATUS_OPTIONS = ["İnşaat", "Satışta", "Tamamlandı"];
 
+const MONTHS = [
+  "Ocak", "Şubat", "Mart", "Nisan", "Mayıs", "Haziran",
+  "Temmuz", "Ağustos", "Eylül", "Ekim", "Kasım", "Aralık",
+];
+
+function parseMonthYear(value: string): { month: string; year: string } {
+  if (!value) return { month: "", year: "" };
+  const parts = value.trim().split(" ");
+  if (parts.length === 2) return { month: parts[0], year: parts[1] };
+  return { month: "", year: value };
+}
+
+function MonthYearPicker({
+  value,
+  onChange,
+}: {
+  value: string;
+  onChange: (v: string) => void;
+}) {
+  const { month, year } = parseMonthYear(value);
+
+  const handleChange = (newMonth: string, newYear: string) => {
+    if (newMonth && newYear) {
+      onChange(`${newMonth} ${newYear}`);
+    } else if (newMonth || newYear) {
+      onChange(newMonth ? `${newMonth} ${newYear}` : newYear);
+    } else {
+      onChange("");
+    }
+  };
+
+  return (
+    <div className="flex gap-1">
+      <select
+        value={month}
+        onChange={(e) => handleChange(e.target.value, year)}
+        className="rounded-md border border-gray-300 px-2 py-1.5 text-sm w-28 focus:outline-none focus:ring-2 focus:ring-gray-900"
+      >
+        <option value="">Ay</option>
+        {MONTHS.map((m) => (
+          <option key={m} value={m}>{m}</option>
+        ))}
+      </select>
+      <input
+        type="number"
+        placeholder="Yıl"
+        value={year}
+        min={2000}
+        max={2100}
+        onChange={(e) => handleChange(month, e.target.value)}
+        className="rounded-md border border-gray-300 px-2 py-1.5 text-sm w-20 focus:outline-none focus:ring-2 focus:ring-gray-900"
+      />
+    </div>
+  );
+}
+
 export default function ProjectEditor() {
   const { id } = useParams();
   const navigate = useNavigate();
@@ -301,7 +357,10 @@ export default function ProjectEditor() {
                     <option value="active">Devam Ediyor</option>
                     <option value="completed">Tamamlandı</option>
                   </select>
-                  <Input className="w-32" placeholder="Tarih" value={phase.completedDate || ""} onChange={(e) => { const p = [...phases]; p[i] = { ...p[i], completedDate: e.target.value }; setPhases(p); }} />
+                  <MonthYearPicker
+                    value={phase.completedDate || ""}
+                    onChange={(v) => { const p = [...phases]; p[i] = { ...p[i], completedDate: v }; setPhases(p); }}
+                  />
                 </div>
               ))}
             </div>
