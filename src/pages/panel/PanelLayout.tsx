@@ -8,6 +8,7 @@ import {
   Settings,
   Image,
   Clock,
+  BookOpen,
   LogOut,
   Menu,
   X,
@@ -23,6 +24,7 @@ const navItems = [
   { href: "/panel/medya", icon: Image, label: "Medya" },
   { href: "/panel/etkinlik", icon: Clock, label: "Etkinlik Logu" },
   { href: "/panel/ayarlar", icon: Settings, label: "Ayarlar" },
+  { href: "/panel/rehber", icon: BookOpen, label: "Rehber" },
 ];
 
 export default function PanelLayout() {

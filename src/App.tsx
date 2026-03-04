@@ -32,6 +32,7 @@ const MapPins = lazy(() => import("./pages/panel/MapPins"));
 const MediaLibrary = lazy(() => import("./pages/panel/MediaLibrary"));
 const ActivityLog = lazy(() => import("./pages/panel/ActivityLog"));
 const Settings = lazy(() => import("./pages/panel/Settings"));
+const Guide = lazy(() => import("./pages/panel/Guide"));
 
 function PageLoader() {
   return (
@@ -109,6 +110,7 @@ function App() {
                   <Route path="medya" element={<MediaLibrary />} />
                   <Route path="etkinlik" element={<ActivityLog />} />
                   <Route path="ayarlar" element={<Settings />} />
+                  <Route path="rehber" element={<Guide />} />
                 </Route>
               </Routes>
             </Suspense>
