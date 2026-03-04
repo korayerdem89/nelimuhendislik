@@ -7,6 +7,7 @@ export interface BlogPost {
   excerpt: string;
   content: string;
   coverImage: string;
+  coverImageAlt: string;
   category: string;
   tags: string[];
   authorName: string;

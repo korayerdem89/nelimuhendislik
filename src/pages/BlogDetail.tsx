@@ -79,7 +79,7 @@ export default function BlogDetail() {
                 <div className="relative aspect-[1/1] rounded-2xl overflow-hidden">
                   <OptimizedImage
                     src={post.coverImage}
-                    alt={post.title}
+                    alt={post.coverImageAlt || post.title}
                     className="w-full h-full"
                     aspectRatio="1/1"
                     priority
@@ -212,7 +212,7 @@ export default function BlogDetail() {
                   <motion.article key={relatedPost.id} initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: index * 0.1 }} viewport={{ once: true }} className="group">
                     <Link to={`/blog/${relatedPost.slug}`} className="block">
                       <div className="relative aspect-[1/1] rounded-xl overflow-hidden mb-4">
-                        <OptimizedImage src={relatedPost.coverImage} alt={relatedPost.title} className="w-full h-full transition-transform duration-700 group-hover:scale-105" aspectRatio="1/1" />
+                        <OptimizedImage src={relatedPost.coverImage} alt={relatedPost.coverImageAlt || relatedPost.title} className="w-full h-full transition-transform duration-700 group-hover:scale-105" aspectRatio="1/1" />
                       </div>
                       <div className="flex items-center gap-2 text-foreground/50 text-xs mb-2">
                         <Calendar className="w-3 h-3" />

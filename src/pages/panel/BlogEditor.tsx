@@ -15,6 +15,7 @@ interface BlogPost {
   excerpt: string;
   content: string;
   coverImage: string;
+  coverImageAlt: string;
   category: string;
   tags: string;
   authorName: string;
@@ -53,6 +54,7 @@ export default function BlogEditor() {
     excerpt: "",
     content: "",
     coverImage: "",
+    coverImageAlt: "",
     category: "",
     tags: "",
     featured: false,
@@ -82,6 +84,7 @@ export default function BlogEditor() {
           excerpt: post.excerpt,
           content: post.content,
           coverImage: post.coverImage,
+          coverImageAlt: post.coverImageAlt || "",
           category: post.category,
           tags: Array.isArray(tags) ? tags.join(", ") : "",
           featured: post.featured,
@@ -325,6 +328,8 @@ export default function BlogEditor() {
               <ImageUploader
                 value={form.coverImage}
                 onChange={(path) => updateField("coverImage", path)}
+                altValue={form.coverImageAlt}
+                onAltChange={(alt) => updateField("coverImageAlt", alt)}
                 aspect="1/1"
                 label="Kapak Görseli (1:1)"
               />

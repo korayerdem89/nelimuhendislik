@@ -16,6 +16,7 @@ export const blogPosts = sqliteTable("blog_posts", {
   excerpt: text("excerpt").notNull().default(""),
   content: text("content").notNull().default(""),
   coverImage: text("cover_image").notNull().default(""),
+  coverImageAlt: text("cover_image_alt").notNull().default(""),
   category: text("category").notNull().default(""),
   tags: text("tags").notNull().default("[]"),
   authorName: text("author_name").notNull().default("Neli Mühendislik"),
@@ -100,6 +101,7 @@ export const media = sqliteTable("media", {
   size: integer("size").notNull(),
   path: text("path").notNull(),
   thumbnailPath: text("thumbnail_path"),
+  altText: text("alt_text").notNull().default(""),
   width: integer("width"),
   height: integer("height"),
   createdAt: text("created_at")

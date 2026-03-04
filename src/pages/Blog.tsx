@@ -95,7 +95,7 @@ export default function Blog() {
                     <div className="relative aspect-[1/1] rounded-2xl overflow-hidden">
                       <OptimizedImage
                         src={featuredPosts[0].coverImage}
-                        alt={featuredPosts[0].title}
+                        alt={featuredPosts[0].coverImageAlt || featuredPosts[0].title}
                         className="absolute inset-0 w-full h-full transition-transform duration-700 group-hover:scale-105"
                         aspectRatio="1/1"
                       />
@@ -134,7 +134,7 @@ export default function Blog() {
                       <div className="relative w-32 md:w-48 flex-shrink-0 rounded-xl overflow-hidden">
                         <OptimizedImage
                           src={post.coverImage}
-                          alt={post.title}
+                          alt={post.coverImageAlt || post.title}
                           className="w-full h-full transition-transform duration-500 group-hover:scale-105"
                           aspectRatio="1/1"
                         />
@@ -240,7 +240,7 @@ export default function Blog() {
                     <div className="relative aspect-[1/1] rounded-xl overflow-hidden mb-4">
                       <OptimizedImage
                         src={post.coverImage}
-                        alt={post.title}
+                        alt={post.coverImageAlt || post.title}
                         className="w-full h-full transition-transform duration-700 group-hover:scale-105"
                         aspectRatio="1/1"
                       />

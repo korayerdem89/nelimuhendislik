@@ -1,8 +1,9 @@
-import { useState, useEffect, useRef } from "react";
-import { Upload, Trash2, Copy, Check } from "lucide-react";
+import { useState, useEffect, useRef, useCallback } from "react";
+import { Upload, Trash2, Copy, Check, Type, Info } from "lucide-react";
 import { api, API_URL } from "@/lib/api";
 import { Button } from "@/components/ui/button";
 import { toast } from "sonner";
+import { showOptimizedToast } from "@/components/panel/OptimizedToast";
 
 interface MediaItem {
   id: number;
@@ -12,9 +13,15 @@ interface MediaItem {
   size: number;
   path: string;
   thumbnailPath: string | null;
+  altText: string;
   width: number | null;
   height: number | null;
   createdAt: string;
+}
+
+interface MediaUploadResult extends MediaItem {
+  originalSize: number;
+  originalFormat: string;
 }
 
 function formatBytes(bytes: number): string {
@@ -28,6 +35,8 @@ export default function MediaLibrary() {
   const [loading, setLoading] = useState(true);
   const [uploading, setUploading] = useState(false);
   const [copiedId, setCopiedId] = useState<number | null>(null);
+  const [editingAltId, setEditingAltId] = useState<number | null>(null);
+  const [altDraft, setAltDraft] = useState("");
   const inputRef = useRef<HTMLInputElement>(null);
 
   const fetchMedia = () => {
@@ -41,17 +50,35 @@ export default function MediaLibrary() {
 
   const handleUpload = async (files: FileList) => {
     setUploading(true);
+    let failCount = 0;
+
     for (const file of Array.from(files)) {
       const formData = new FormData();
       formData.append("file", file);
       try {
-        await api.upload("/api/admin/media/upload", formData);
+        const result = await api.upload<MediaUploadResult>(
+          "/api/admin/media/upload",
+          formData,
+        );
+        showOptimizedToast({
+          originalName: result.originalName,
+          originalSize: result.originalSize,
+          optimizedSize: result.size,
+          originalFormat: result.originalFormat,
+          width: result.width,
+          height: result.height,
+        });
       } catch {
+        failCount++;
         toast.error(`${file.name} yüklenemedi`);
       }
     }
+
+    if (failCount > 0 && failCount < files.length) {
+      toast.warning(`${failCount} görsel yüklenemedi.`);
+    }
+
     setUploading(false);
-    toast.success("Görseller yüklendi");
     fetchMedia();
   };
 
@@ -75,6 +102,24 @@ export default function MediaLibrary() {
       handleUpload(e.dataTransfer.files);
     }
   };
+
+  const startEditAlt = useCallback((item: MediaItem) => {
+    setEditingAltId(item.id);
+    setAltDraft(item.altText || "");
+  }, []);
+
+  const saveAlt = useCallback(async (id: number) => {
+    try {
+      await api.put(`/api/admin/media/${id}`, { altText: altDraft });
+      setItems((prev) =>
+        prev.map((item) => item.id === id ? { ...item, altText: altDraft } : item),
+      );
+      toast.success("Görsel açıklaması kaydedildi.");
+    } catch {
+      toast.error("Açıklama kaydedilemedi.");
+    }
+    setEditingAltId(null);
+  }, [altDraft]);
 
   if (loading) {
     return (
@@ -125,7 +170,7 @@ export default function MediaLibrary() {
             <div className="aspect-square overflow-hidden bg-gray-50">
               <img
                 src={`${API_URL}${item.thumbnailPath || item.path}`}
-                alt={item.originalName}
+                alt={item.altText || item.originalName}
                 className="w-full h-full object-cover"
               />
             </div>
@@ -137,6 +182,72 @@ export default function MediaLibrary() {
                 {formatBytes(item.size)}
                 {item.width && item.height && ` · ${item.width}x${item.height}`}
               </p>
+
+              {editingAltId === item.id ? (
+                <div className="mt-2 space-y-1.5">
+                  <textarea
+                    value={altDraft}
+                    onChange={(e) => setAltDraft(e.target.value)}
+                    placeholder='Örn: "İzmir Çiğli Valorya 3 projesinin dış cephe görseli"'
+                    rows={2}
+                    autoFocus
+                    className="w-full rounded-md border border-gray-300 px-2 py-1.5 text-xs focus:outline-none focus:ring-2 focus:ring-gray-900 resize-none placeholder:italic placeholder:text-gray-400"
+                    onKeyDown={(e) => {
+                      if (e.key === "Enter" && !e.shiftKey) {
+                        e.preventDefault();
+                        saveAlt(item.id);
+                      }
+                      if (e.key === "Escape") setEditingAltId(null);
+                    }}
+                  />
+                  <div className="flex items-start gap-1.5 text-[10px] text-gray-400 leading-snug">
+                    <Info className="w-3 h-3 mt-px flex-shrink-0" />
+                    <span>
+                      Arama motorları görseli "göremez", bu metni okur. İyi bir açıklama Google Görseller sıralamanızı yükseltir.
+                    </span>
+                  </div>
+                  <div className="flex items-center gap-1">
+                    <Button
+                      type="button"
+                      size="sm"
+                      className="h-6 text-[10px] px-2"
+                      onClick={() => saveAlt(item.id)}
+                    >
+                      Kaydet
+                    </Button>
+                    <Button
+                      type="button"
+                      variant="ghost"
+                      size="sm"
+                      className="h-6 text-[10px] px-2"
+                      onClick={() => setEditingAltId(null)}
+                    >
+                      İptal
+                    </Button>
+                  </div>
+                </div>
+              ) : (
+                <div className="mt-1.5">
+                  {item.altText ? (
+                    <p
+                      className="text-[10px] text-emerald-600 truncate cursor-pointer hover:text-emerald-700"
+                      title={`SEO Açıklaması: ${item.altText}`}
+                      onClick={() => startEditAlt(item)}
+                    >
+                      {item.altText}
+                    </p>
+                  ) : (
+                    <button
+                      onClick={() => startEditAlt(item)}
+                      className="flex items-center gap-1 text-[10px] text-amber-600 hover:text-amber-700 transition-colors"
+                    >
+                      <Type className="w-3 h-3" />
+                      SEO açıklaması ekle
+                    </button>
+                  )}
+                </div>
+              )}
+
               <div className="flex items-center gap-1 mt-1.5">
                 <button
                   onClick={() => copyPath(item)}
