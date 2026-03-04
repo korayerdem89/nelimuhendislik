@@ -9,6 +9,7 @@ import projectRoutes from "./routes/projects.js";
 import mapPinRoutes from "./routes/map-pins.js";
 import settingsRoutes from "./routes/settings.js";
 import mediaRoutes from "./routes/media.js";
+import activityRoutes from "./routes/activity.js";
 import publicRoutes from "./routes/public.js";
 
 const app = new Hono();
@@ -29,6 +30,7 @@ app.route("/api/admin/projects", projectRoutes);
 app.route("/api/admin/map-pins", mapPinRoutes);
 app.route("/api/admin/settings", settingsRoutes);
 app.route("/api/admin/media", mediaRoutes);
+app.route("/api/admin/activity", activityRoutes);
 
 app.get("/api/health", (c) => c.json({ status: "ok" }));
 

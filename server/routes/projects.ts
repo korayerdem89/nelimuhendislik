@@ -1,7 +1,8 @@
 import { Hono } from "hono";
-import { eq, desc } from "drizzle-orm";
+import { eq, desc, inArray } from "drizzle-orm";
 import { db } from "../db/index.js";
 import { projects } from "../db/schema.js";
+import { logActivity } from "../lib/log-activity.js";
 
 const projectRoutes = new Hono();
 
@@ -44,6 +45,7 @@ projectRoutes.post("/", async (c) => {
     })
     .returning()
     .get();
+  logActivity("create", "project", result.name, "admin", result.id);
   return c.json(
     { ...result, details: JSON.parse(result.detailsJson), phases: JSON.parse(result.phasesJson) },
     201,
@@ -76,6 +78,7 @@ projectRoutes.put("/:id", async (c) => {
     .returning()
     .get();
   if (!result) return c.json({ error: "Not found" }, 404);
+  logActivity("update", "project", result.name, "admin", result.id);
   return c.json({
     ...result,
     details: JSON.parse(result.detailsJson),
@@ -85,8 +88,30 @@ projectRoutes.put("/:id", async (c) => {
 
 projectRoutes.delete("/:id", (c) => {
   const id = Number(c.req.param("id"));
+  const p = db.select().from(projects).where(eq(projects.id, id)).get();
   db.delete(projects).where(eq(projects.id, id)).run();
+  if (p) logActivity("delete", "project", p.name, "admin", id);
   return c.json({ success: true });
+});
+
+projectRoutes.post("/bulk-delete", async (c) => {
+  const { ids } = (await c.req.json()) as { ids: number[] };
+  if (!ids?.length) return c.json({ error: "No ids provided" }, 400);
+  const items = db.select().from(projects).where(inArray(projects.id, ids)).all();
+  db.delete(projects).where(inArray(projects.id, ids)).run();
+  logActivity("bulk_delete", "project", `${items.length} proje silindi`, "admin", undefined, JSON.stringify(ids));
+  return c.json({ success: true, count: items.length });
+});
+
+projectRoutes.post("/bulk-status", async (c) => {
+  const { ids, status } = (await c.req.json()) as { ids: number[]; status: string };
+  if (!ids?.length || !status) return c.json({ error: "ids and status required" }, 400);
+  db.update(projects)
+    .set({ status, updatedAt: new Date().toISOString() })
+    .where(inArray(projects.id, ids))
+    .run();
+  logActivity("bulk_update", "project", `${ids.length} proje → ${status}`, "admin", undefined, JSON.stringify({ ids, status }));
+  return c.json({ success: true, count: ids.length });
 });
 
 export default projectRoutes;

@@ -2,6 +2,7 @@ import { Hono } from "hono";
 import { eq } from "drizzle-orm";
 import { db } from "../db/index.js";
 import { mapPins } from "../db/schema.js";
+import { logActivity } from "../lib/log-activity.js";
 
 const mapPinRoutes = new Hono();
 
@@ -26,6 +27,7 @@ mapPinRoutes.post("/", async (c) => {
     })
     .returning()
     .get();
+  logActivity("create", "map_pin", result.name, "admin", result.id);
   return c.json(result, 201);
 });
 
@@ -50,12 +52,15 @@ mapPinRoutes.put("/:id", async (c) => {
     .returning()
     .get();
   if (!result) return c.json({ error: "Not found" }, 404);
+  logActivity("update", "map_pin", result.name, "admin", result.id);
   return c.json(result);
 });
 
 mapPinRoutes.delete("/:id", (c) => {
   const id = Number(c.req.param("id"));
+  const pin = db.select().from(mapPins).where(eq(mapPins.id, id)).get();
   db.delete(mapPins).where(eq(mapPins.id, id)).run();
+  if (pin) logActivity("delete", "map_pin", pin.name, "admin", id);
   return c.json({ success: true });
 });
 

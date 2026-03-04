@@ -2,6 +2,7 @@ import { Hono } from "hono";
 import { eq } from "drizzle-orm";
 import { db } from "../db/index.js";
 import { siteSettings } from "../db/schema.js";
+import { logActivity } from "../lib/log-activity.js";
 
 const settingsRoutes = new Hono();
 
@@ -39,6 +40,7 @@ settingsRoutes.put("/", async (c) => {
   for (const row of rows) {
     settings[row.key] = row.value;
   }
+  logActivity("settings_update", "settings", `${Object.keys(body).length} ayar güncellendi`, "admin");
   return c.json(settings);
 });
 

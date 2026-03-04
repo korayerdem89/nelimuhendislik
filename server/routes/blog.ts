@@ -1,7 +1,8 @@
 import { Hono } from "hono";
-import { eq, desc } from "drizzle-orm";
+import { eq, desc, inArray } from "drizzle-orm";
 import { db } from "../db/index.js";
 import { blogPosts } from "../db/schema.js";
+import { logActivity } from "../lib/log-activity.js";
 
 const blog = new Hono();
 
@@ -44,6 +45,7 @@ blog.post("/", async (c) => {
     })
     .returning()
     .get();
+  logActivity("create", "blog", result.title, "admin", result.id);
   return c.json(result, 201);
 });
 
@@ -80,13 +82,37 @@ blog.put("/:id", async (c) => {
     .returning()
     .get();
   if (!result) return c.json({ error: "Not found" }, 404);
+  logActivity("update", "blog", result.title, "admin", result.id);
   return c.json(result);
 });
 
 blog.delete("/:id", (c) => {
   const id = Number(c.req.param("id"));
+  const post = db.select().from(blogPosts).where(eq(blogPosts.id, id)).get();
   db.delete(blogPosts).where(eq(blogPosts.id, id)).run();
+  if (post) logActivity("delete", "blog", post.title, "admin", id);
   return c.json({ success: true });
+});
+
+blog.post("/bulk-delete", async (c) => {
+  const { ids } = (await c.req.json()) as { ids: number[] };
+  if (!ids?.length) return c.json({ error: "No ids provided" }, 400);
+  const posts = db.select().from(blogPosts).where(inArray(blogPosts.id, ids)).all();
+  db.delete(blogPosts).where(inArray(blogPosts.id, ids)).run();
+  logActivity("bulk_delete", "blog", `${posts.length} blog yazısı silindi`, "admin", undefined, JSON.stringify(ids));
+  return c.json({ success: true, count: posts.length });
+});
+
+blog.post("/bulk-status", async (c) => {
+  const { ids, status } = (await c.req.json()) as { ids: number[]; status: string };
+  if (!ids?.length || !status) return c.json({ error: "ids and status required" }, 400);
+  db.update(blogPosts)
+    .set({ status, updatedAt: new Date().toISOString() })
+    .where(inArray(blogPosts.id, ids))
+    .run();
+  const label = status === "published" ? "yayında" : "taslak";
+  logActivity("bulk_update", "blog", `${ids.length} yazı → ${label}`, "admin", undefined, JSON.stringify({ ids, status }));
+  return c.json({ success: true, count: ids.length });
 });
 
 export default blog;

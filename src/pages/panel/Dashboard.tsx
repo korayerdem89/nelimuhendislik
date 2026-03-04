@@ -1,6 +1,19 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { FileText, Building2, MapPin, Image, ArrowRight } from "lucide-react";
+import {
+  FileText,
+  Building2,
+  MapPin,
+  Image,
+  ArrowRight,
+  Plus,
+  Pencil,
+  Trash2,
+  Upload,
+  Layers,
+  Settings,
+  Clock,
+} from "lucide-react";
 import { api } from "@/lib/api";
 
 interface Stats {
@@ -10,6 +23,63 @@ interface Stats {
   mediaCount: number;
 }
 
+interface Activity {
+  id: number;
+  action: string;
+  entityType: string;
+  entityTitle: string;
+  createdAt: string;
+}
+
+const actionIcons: Record<string, typeof Plus> = {
+  create: Plus,
+  update: Pencil,
+  delete: Trash2,
+  bulk_delete: Layers,
+  bulk_update: Layers,
+  upload: Upload,
+  settings_update: Settings,
+};
+
+const actionColors: Record<string, string> = {
+  create: "text-green-600",
+  update: "text-blue-600",
+  delete: "text-red-500",
+  bulk_delete: "text-red-500",
+  bulk_update: "text-amber-600",
+  upload: "text-purple-600",
+  settings_update: "text-gray-500",
+};
+
+const actionLabels: Record<string, string> = {
+  create: "oluşturuldu",
+  update: "güncellendi",
+  delete: "silindi",
+  bulk_delete: "toplu silme",
+  bulk_update: "toplu güncelleme",
+  upload: "yüklendi",
+  settings_update: "güncellendi",
+};
+
+const entityLabels: Record<string, string> = {
+  blog: "Blog",
+  project: "Proje",
+  map_pin: "Pin",
+  media: "Medya",
+  settings: "Ayarlar",
+};
+
+function timeAgo(dateStr: string): string {
+  const diff = Date.now() - new Date(dateStr).getTime();
+  const minutes = Math.floor(diff / 60000);
+  if (minutes < 1) return "Az önce";
+  if (minutes < 60) return `${minutes} dk`;
+  const hours = Math.floor(minutes / 60);
+  if (hours < 24) return `${hours} sa`;
+  const days = Math.floor(hours / 24);
+  return `${days} gün`;
+}
+
 export default function Dashboard() {
   const [stats, setStats] = useState<Stats>({
     blogCount: 0,
@@ -17,6 +87,7 @@ export default function Dashboard() {
     pinCount: 0,
     mediaCount: 0,
   });
+  const [recentActivity, setRecentActivity] = useState<Activity[]>([]);
 
   useEffect(() => {
     Promise.all([
@@ -24,13 +95,15 @@ export default function Dashboard() {
       api.get<unknown[]>("/api/admin/projects"),
       api.get<unknown[]>("/api/admin/map-pins"),
       api.get<unknown[]>("/api/admin/media"),
-    ]).then(([blog, projects, pins, media]) => {
+      api.get<Activity[]>("/api/admin/activity?limit=8"),
+    ]).then(([blog, projects, pins, media, activity]) => {
       setStats({
         blogCount: blog.length,
         projectCount: projects.length,
         pinCount: pins.length,
         mediaCount: media.length,
       });
+      setRecentActivity(activity);
     });
   }, []);
 
@@ -117,12 +190,55 @@ export default function Dashboard() {
               to="/panel/ayarlar"
               className="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-50 transition-colors"
             >
-              <div className="w-4 h-4 text-gray-500">⚙</div>
+              <Settings className="w-4 h-4 text-gray-500" />
               <span className="text-sm text-gray-700">
                 Site Ayarlarını Düzenle
               </span>
             </Link>
           </div>
+        </div>
+
+        <div className="bg-white rounded-xl border border-gray-200 p-6">
+          <div className="flex items-center justify-between mb-4">
+            <h2 className="font-semibold text-gray-900">Son Etkinlikler</h2>
+            <Link
+              to="/panel/etkinlik"
+              className="text-xs text-gray-500 hover:text-gray-700 transition-colors"
+            >
+              Tümünü Gör
+            </Link>
+          </div>
+          {recentActivity.length === 0 ? (
+            <p className="text-sm text-gray-400 py-4 text-center">
+              Henüz etkinlik yok.
+            </p>
+          ) : (
+            <div className="space-y-3">
+              {recentActivity.map((a) => {
+                const ActionIcon = actionIcons[a.action] || Clock;
+                const color = actionColors[a.action] || "text-gray-400";
+                return (
+                  <div key={a.id} className="flex items-center gap-3">
+                    <ActionIcon className={`w-3.5 h-3.5 flex-shrink-0 ${color}`} />
+                    <div className="flex-1 min-w-0">
+                      <span className="text-sm text-gray-700 truncate block">
+                        <span className="text-gray-500">
+                          {entityLabels[a.entityType] || a.entityType}
+                        </span>{" "}
+                        {actionLabels[a.action] || a.action}
+                        {a.entityTitle && a.action !== "settings_update" ? (
+                          <span className="font-medium"> — {a.entityTitle}</span>
+                        ) : null}
+                      </span>
+                    </div>
+                    <span className="text-xs text-gray-400 flex-shrink-0">
+                      {timeAgo(a.createdAt)}
+                    </span>
+                  </div>
+                );
+              })}
+            </div>
+          )}
         </div>
       </div>
     </div>

@@ -2,8 +2,9 @@ import { Hono } from "hono";
 import { eq, desc } from "drizzle-orm";
 import { db } from "../db/index.js";
 import { media } from "../db/schema.js";
+import { logActivity } from "../lib/log-activity.js";
 import sharp from "sharp";
-import { writeFile, mkdir, unlink } from "fs/promises";
+import { mkdir, unlink } from "fs/promises";
 import { resolve, extname } from "path";
 import { existsSync } from "fs";
 
@@ -79,6 +80,7 @@ mediaRoutes.post("/upload", async (c) => {
     .returning()
     .get();
 
+  logActivity("upload", "media", result.originalName, "admin", result.id);
   return c.json(result, 201);
 });
 
@@ -94,6 +96,7 @@ mediaRoutes.delete("/:id", async (c) => {
       if (existsSync(thumbPath)) await unlink(thumbPath);
     }
     db.delete(media).where(eq(media.id, id)).run();
+    logActivity("delete", "media", item.originalName, "admin", id);
   }
 
   return c.json({ success: true });

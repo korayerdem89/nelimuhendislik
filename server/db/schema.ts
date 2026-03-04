@@ -1,4 +1,4 @@
-import { sqliteTable, text, integer, real } from "drizzle-orm/sqlite-core";
+import { sqliteTable, text, integer, real, index } from "drizzle-orm/sqlite-core";
 
 export const adminUsers = sqliteTable("admin_users", {
   id: integer("id").primaryKey({ autoIncrement: true }),
@@ -76,6 +76,21 @@ export const siteSettings = sqliteTable("site_settings", {
     .notNull()
     .$defaultFn(() => new Date().toISOString()),
 });
+
+export const activityLog = sqliteTable("activity_log", {
+  id: integer("id").primaryKey({ autoIncrement: true }),
+  action: text("action").notNull(),
+  entityType: text("entity_type").notNull(),
+  entityId: integer("entity_id"),
+  entityTitle: text("entity_title").notNull().default(""),
+  username: text("username").notNull().default("admin"),
+  details: text("details"),
+  createdAt: text("created_at")
+    .notNull()
+    .$defaultFn(() => new Date().toISOString()),
+}, (table) => [
+  index("idx_activity_created").on(table.createdAt),
+]);
 
 export const media = sqliteTable("media", {
   id: integer("id").primaryKey({ autoIncrement: true }),

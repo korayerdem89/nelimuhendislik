@@ -7,6 +7,7 @@ import {
   MapPin,
   Settings,
   Image,
+  Clock,
   LogOut,
   Menu,
   X,
@@ -20,6 +21,7 @@ const navItems = [
   { href: "/panel/projeler", icon: Building2, label: "Projeler" },
   { href: "/panel/harita", icon: MapPin, label: "Harita Pinleri" },
   { href: "/panel/medya", icon: Image, label: "Medya" },
+  { href: "/panel/etkinlik", icon: Clock, label: "Etkinlik Logu" },
   { href: "/panel/ayarlar", icon: Settings, label: "Ayarlar" },
 ];
 
