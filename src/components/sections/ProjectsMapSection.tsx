@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import { MapContainer, Marker, Popup, TileLayer, useMap } from "react-leaflet";
 import { divIcon } from "leaflet";
 import type { LatLngExpression, Marker as LeafletMarker } from "leaflet";
+import { api } from "@/lib/api";
 
 interface ProjectsMapSectionProps {
   title: string;
@@ -14,97 +15,13 @@ interface ProjectsMapSectionProps {
 type ProjectPin = {
   id: number;
   name: string;
-  coordinates: [number, number];
+  lat: number;
+  lng: number;
   neighborhood: string;
   district: string;
   image: string;
   href: string;
 };
-
-const PROJECTS: ProjectPin[] = [
-  {
-    id: 1,
-    name: "Serenita Prestige",
-    coordinates: [38.491056, 26.948444],
-    neighborhood: "Sasalı",
-    district: "Çiğli",
-    image: "/projects/serenitaprestige/cover.webp",
-    href: "/projeler",
-  },
-  {
-    id: 2,
-    name: "Serenita Garden",
-    coordinates: [38.4057116, 26.9981004],
-    neighborhood: "Kucukçiğli Mahallesi",
-    district: "Çiğli",
-    image: "/projects/serenitagarden/cover.webp",
-    href: "/projeler",
-  },
-
-  {
-    id: 3,
-    name: "Valorya 1",
-    coordinates: [38.508889, 27.039833],
-    neighborhood: "Balatçık Mahallesi",
-    district: "Çiğli",
-    image: "/projects/valorya1/cover.webp",
-    href: "/projeler",
-  },
-  {
-    id: 4,
-    name: "Valorya 2",
-    coordinates: [38.4992059, 27.0572575],
-    neighborhood: "KucukÇiğli Mahallesi",
-    district: "Çiğli",
-    image: "/projects/valorya2/cover.webp",
-    href: "/projeler",
-  },
-  {
-    id: 5,
-    name: "Valorya 3",
-    coordinates: [38.517611, 27.04],
-    neighborhood: "Balatçık Mahallesi",
-    district: "Çiğli",
-    image: "/projects/valorya3/cover.webp",
-    href: "/projeler",
-  },
-  {
-    id: 6,
-    name: "Valorya 4",
-    coordinates: [38.482399, 27.118534],
-    neighborhood: "Postacılar Mahallesi",
-    district: "Karsiyaka",
-    image: "/projects/valorya4/cover.webp",
-    href: "/projeler",
-  },
-  {
-    id: 7,
-    name: "Valorya 5",
-    coordinates: [38.508107, 27.049398],
-    neighborhood: "KucukÇiğli Mahallesi",
-    district: "Çiğli",
-    image: "/projects/valorya5/cover.webp",
-    href: "/projeler",
-  },
-  {
-    id: 8,
-    name: "Valorya 6",
-    coordinates: [38.498116, 27.057128],
-    neighborhood: "KucukÇiğli Mahallesi",
-    district: "Çiğli",
-    image: "/projects/valorya6/cover.webp",
-    href: "/projeler",
-  },
-  {
-    id: 9,
-    name: "Valorya 7",
-    coordinates: [38.497562, 27.057069],
-    neighborhood: "KucukÇiğli Mahallesi",
-    district: "Çiğli",
-    image: "/projects/valorya7/cover.webp",
-    href: "/projeler",
-  },
-];
 
 const mapCenter: LatLngExpression = [38.501, 27.048];
 const defaultZoom = 12;
@@ -175,15 +92,11 @@ function FlyToProject({ selectedProject, markerRefs }: FlyToProjectProps) {
   const map = useMap();
 
   useEffect(() => {
-    if (!selectedProject) {
-      return;
-    }
-
-    map.flyTo(selectedProject.coordinates, focusZoom, {
+    if (!selectedProject) return;
+    map.flyTo([selectedProject.lat, selectedProject.lng], focusZoom, {
       duration: 0.8,
       animate: true,
     });
-
     map.once("moveend", () => {
       const targetMarker = markerRefs.current[selectedProject.id];
       targetMarker?.openPopup();
@@ -197,12 +110,16 @@ export default function ProjectsMapSection({
   title,
   heightClassName = "md:h-[460px] lg:h-[520px]",
 }: ProjectsMapSectionProps) {
-  const [selectedProjectId, setSelectedProjectId] = useState<number | null>(
-    null,
-  );
+  const [pins, setPins] = useState<ProjectPin[]>([]);
+  const [selectedProjectId, setSelectedProjectId] = useState<number | null>(null);
   const markerRefs = useRef<Record<number, LeafletMarker | null>>({});
+
+  useEffect(() => {
+    api.get<ProjectPin[]>("/api/public/map-pins").then(setPins);
+  }, []);
+
   const selectedProject =
-    PROJECTS.find((project) => project.id === selectedProjectId) ?? null;
+    pins.find((p) => p.id === selectedProjectId) ?? null;
 
   return (
     <section
@@ -217,9 +134,8 @@ export default function ProjectsMapSection({
         </h3>
         <div className="max-h-48 overflow-y-auto pr-1 md:max-h-56">
           <ul className="space-y-1.5">
-            {PROJECTS.map((project) => {
+            {pins.map((project) => {
               const isActive = project.id === selectedProjectId;
-
               return (
                 <li key={project.id}>
                   <button
@@ -263,10 +179,10 @@ export default function ProjectsMapSection({
             subdomains={["a", "b", "c", "d"]}
           />
 
-          {PROJECTS.map((project) => (
+          {pins.map((project) => (
             <Marker
               key={project.id}
-              position={project.coordinates}
+              position={[project.lat, project.lng]}
               icon={
                 project.id === selectedProjectId
                   ? activePinIcon

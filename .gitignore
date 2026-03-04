@@ -45,6 +45,15 @@ coverage
 # TypeScript
 *.tsbuildinfo
 
+# Database
+data.db
+data.db-wal
+data.db-shm
+
+# Uploads
+uploads/*
+!uploads/.gitkeep
+
 # Misc
 .cache
 .temp

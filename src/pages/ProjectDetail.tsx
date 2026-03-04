@@ -21,8 +21,8 @@ import PageHero from "@/components/sections/PageHero";
 import {
   getProjectBySlug,
   projectStatusLabels,
-  type ProjectPhase,
 } from "@/data/projects";
+import type { Project, ProjectPhase } from "@/data/projects";
 import SEO from "@/components/SEO";
 
 interface ProjectTimelineProps {
@@ -209,12 +209,29 @@ function ProjectTimeline({ phases }: ProjectTimelineProps) {
 
 export default function ProjectDetail() {
   const { slug } = useParams<{ slug: string }>();
-  const project = slug ? getProjectBySlug(slug) : undefined;
+  const [project, setProject] = useState<Project | null>(null);
+  const [pageLoading, setPageLoading] = useState(true);
   const [galleryImages, setGalleryImages] = useState<string[]>([]);
   const [activeImageIndex, setActiveImageIndex] = useState(0);
   const [lightboxImageIndex, setLightboxImageIndex] = useState<number | null>(
     null,
   );
+
+  useEffect(() => {
+    if (!slug) return;
+    getProjectBySlug(slug).then((p) => {
+      setProject(p);
+      setPageLoading(false);
+    });
+  }, [slug]);
+
+  if (pageLoading) {
+    return (
+      <main className="min-h-screen pt-20 md:pt-24 lg:pt-28 flex items-center justify-center">
+        <div className="w-10 h-10 border-2 border-neli-600/20 border-t-neli-600 rounded-full animate-spin" />
+      </main>
+    );
+  }
 
   const projectImage = project?.image ?? "";
   const imageBasePath = projectImage.includes("/")

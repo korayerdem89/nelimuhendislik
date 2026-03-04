@@ -1,27 +1,48 @@
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Calendar, ChevronDown, ArrowRight } from "lucide-react";
 import PageHero from "@/components/sections/PageHero";
-import {
-  blogPosts,
-  blogCategories,
-  formatDate,
-  getFeaturedPosts,
-} from "@/data/blog";
+import { fetchBlogPosts, formatDate } from "@/data/blog";
+import type { BlogPost } from "@/data/blog";
 import SEO from "@/components/SEO";
 import OptimizedImage from "@/components/OptimizedImage";
 
 export default function Blog() {
   const [activeCategory, setActiveCategory] = useState("Tümü");
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const [blogPosts, setBlogPosts] = useState<BlogPost[]>([]);
+  const [loading, setLoading] = useState(true);
 
-  const featuredPosts = useMemo(() => getFeaturedPosts(), []);
+  useEffect(() => {
+    fetchBlogPosts().then((posts) => {
+      setBlogPosts(posts);
+      setLoading(false);
+    });
+  }, []);
+
+  const blogCategories = useMemo(() => {
+    const cats = new Set(blogPosts.map((p) => p.category));
+    return ["Tümü", ...cats];
+  }, [blogPosts]);
+
+  const featuredPosts = useMemo(
+    () => blogPosts.filter((p) => p.featured),
+    [blogPosts],
+  );
 
   const filteredPosts = useMemo(() => {
     if (activeCategory === "Tümü") return blogPosts;
     return blogPosts.filter((post) => post.category === activeCategory);
-  }, [activeCategory]);
+  }, [activeCategory, blogPosts]);
+
+  if (loading) {
+    return (
+      <main className="min-h-screen pt-20 md:pt-24 lg:pt-28 flex items-center justify-center">
+        <div className="w-10 h-10 border-2 border-neli-600/20 border-t-neli-600 rounded-full animate-spin" />
+      </main>
+    );
+  }
 
   return (
     <main className="min-h-screen pt-20 md:pt-24 lg:pt-28">
@@ -43,7 +64,6 @@ export default function Blog() {
         description="İnşaat, mimari, dekorasyon ve konut projeleri hakkında faydalı bilgiler ve sektörel gelişmeler."
       />
 
-      {/* Featured Posts */}
       {featuredPosts.length > 0 && (
         <section className=" bg-cream-100">
           <div className="container-padding">
@@ -61,7 +81,6 @@ export default function Blog() {
               </motion.div>
 
               <div className="grid lg:grid-cols-2 gap-6 md:gap-8">
-                {/* Main Featured Post */}
                 <motion.div
                   initial={{ opacity: 0, x: -30 }}
                   whileInView={{ opacity: 1, x: 0 }}
@@ -81,7 +100,6 @@ export default function Blog() {
                         aspectRatio="1/1"
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
-
                       <div className="absolute bottom-0 left-0 right-0 p-6 md:p-8">
                         <span className="inline-block px-3 py-1 bg-neli-600 text-white text-xs font-medium rounded-full mb-3">
                           {featuredPosts[0].category}
@@ -94,16 +112,13 @@ export default function Blog() {
                         </p>
                         <div className="flex items-center gap-2 text-white/70 text-sm">
                           <Calendar className="w-4 h-4" />
-                          <span>
-                            {formatDate(featuredPosts[0].publishedAt)}
-                          </span>
+                          <span>{formatDate(featuredPosts[0].publishedAt)}</span>
                         </div>
                       </div>
                     </div>
                   </Link>
                 </motion.div>
 
-                {/* Secondary Featured Posts */}
                 {featuredPosts.slice(1, 3).map((post, index) => (
                   <motion.div
                     key={post.id}
@@ -148,12 +163,10 @@ export default function Blog() {
         </section>
       )}
 
-      {/* Category Filter */}
       <section className="sticky top-16 md:top-20 lg:top-24 z-30 bg-white border-b border-cream-300 py-3 md:py-4">
         <div className="container-padding">
           <div className="max-w-7xl mx-auto">
             <div className="flex items-center justify-between gap-4">
-              {/* Desktop Categories */}
               <div className="hidden md:flex items-center gap-2">
                 {blogCategories.map((category) => (
                   <button
@@ -170,7 +183,6 @@ export default function Blog() {
                 ))}
               </div>
 
-              {/* Mobile Dropdown */}
               <div className="md:hidden relative">
                 <button
                   onClick={() => setIsDropdownOpen(!isDropdownOpen)}
@@ -178,9 +190,7 @@ export default function Blog() {
                 >
                   <span>{activeCategory}</span>
                   <ChevronDown
-                    className={`w-4 h-4 transition-transform duration-300 ${
-                      isDropdownOpen ? "rotate-180" : ""
-                    }`}
+                    className={`w-4 h-4 transition-transform duration-300 ${isDropdownOpen ? "rotate-180" : ""}`}
                   />
                 </button>
                 {isDropdownOpen && (
@@ -213,7 +223,6 @@ export default function Blog() {
         </div>
       </section>
 
-      {/* All Posts Grid */}
       <section className="section-padding bg-white">
         <div className="container-padding">
           <div className="max-w-7xl mx-auto">
@@ -241,20 +250,16 @@ export default function Blog() {
                         </span>
                       </div>
                     </div>
-
                     <div className="flex items-center gap-2 text-foreground/50 text-xs mb-2">
                       <Calendar className="w-3 h-3" />
                       <span>{formatDate(post.publishedAt)}</span>
                     </div>
-
                     <h3 className="text-lg md:text-xl font-serif font-medium text-foreground group-hover:text-neli-600 transition-colors mb-2 line-clamp-2">
                       {post.title}
                     </h3>
-
                     <p className="text-foreground/60 text-sm line-clamp-2 mb-4">
                       {post.excerpt}
                     </p>
-
                     <span className="inline-flex items-center gap-1 text-neli-600 text-sm font-medium group-hover:gap-2 transition-all">
                       Devamını Oku
                       <ArrowRight className="w-4 h-4" />
@@ -263,7 +268,6 @@ export default function Blog() {
                 </motion.article>
               ))}
             </div>
-
             {filteredPosts.length === 0 && (
               <div className="text-center py-12 md:py-16">
                 <p className="text-foreground/50 text-sm md:text-base">

@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState, useMemo } from 'react';
 import { motion, useInView } from 'framer-motion';
 import { MapPin, Phone, Mail, Clock, Send } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -9,38 +9,40 @@ import SocialLinks from '@/components/SocialLinks';
 import PageHero from '@/components/sections/PageHero';
 import ContactMapSection from '@/components/sections/ContactMapSection';
 import SEO from '@/components/SEO';
-
-const contactInfo = [
-  {
-    icon: MapPin,
-    title: 'Adres',
-    content: 'Dedebaşı Mah. 6131 Sok. No:39/A\nKarşıyaka, İzmir',
-    href: 'https://maps.google.com/?q=Karşıyaka,İzmir',
-  },
-  {
-    icon: Phone,
-    title: 'Telefon',
-    content: '+90 554 704 90 74\n+90 232 441 44 42',
-    href: 'tel:+905547049074',
-  },
-  {
-    icon: Mail,
-    title: 'E-posta',
-    content: 'info@nelimuhendislik.com',
-    href: 'mailto:info@nelimuhendislik.com',
-  },
-  {
-    icon: Clock,
-    title: 'Çalışma Saatleri',
-    content: 'Pazartesi - Cuma: 09:00 - 18:00\nCumartesi: 10:00 - 14:00',
-    href: null,
-  },
-];
-
-const contactMapEmbedUrl =
-  'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1562.7!2d27.1057313!3d38.4680346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14bbd9dd2adbb0b9%3A0x6988352d26352bc!2zRGVkZWJhxZ_EsSwgNjEzMS4gU2suIE5vOjM5L0EsIDM1NTYwIEthcsWfxLF5YWthL8Swem1pcg!5e0!3m2!1str!2str!4v1707000000000!5m2!1str!2str';
+import { useSiteSettings } from '@/hooks/use-site-settings';
 
 export default function Contact() {
+  const { settings } = useSiteSettings();
+
+  const contactInfo = useMemo(() => [
+    {
+      icon: MapPin,
+      title: 'Adres',
+      content: settings.address || 'Dedebaşı Mah. 6131 Sok. No:39/A\nKarşıyaka, İzmir',
+      href: 'https://maps.google.com/?q=Karşıyaka,İzmir',
+    },
+    {
+      icon: Phone,
+      title: 'Telefon',
+      content: [settings.phone, settings.phone2].filter(Boolean).join('\n') || '+90 554 704 90 74',
+      href: `tel:${(settings.phone || '+905547049074').replace(/\s/g, '')}`,
+    },
+    {
+      icon: Mail,
+      title: 'E-posta',
+      content: settings.email || 'info@nelimuhendislik.com',
+      href: `mailto:${settings.email || 'info@nelimuhendislik.com'}`,
+    },
+    {
+      icon: Clock,
+      title: 'Çalışma Saatleri',
+      content: settings.working_hours || 'Pazartesi - Cuma: 09:00 - 18:00\nCumartesi: 10:00 - 14:00',
+      href: null as string | null,
+    },
+  ], [settings]);
+
+  const contactMapEmbedUrl = settings.maps_embed_url ||
+    'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1562.7!2d27.1057313!3d38.4680346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14bbd9dd2adbb0b9%3A0x6988352d26352bc!2zRGVkZWJhxZ_EsSwgNjEzMS4gU2suIE5vOjM5L0EsIDM1NTYwIEthcsWfxLF5YWthL8Swem1pcg!5e0!3m2!1str!2str!4v1707000000000!5m2!1str!2str';
   const formRef = useRef<HTMLDivElement>(null);
   const isFormInView = useInView(formRef, { once: true, margin: '-100px' });
 

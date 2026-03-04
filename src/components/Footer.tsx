@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { MapPin, Phone, Mail } from "lucide-react";
 import SocialLinks from "./SocialLinks";
+import { useSiteSettings } from "@/hooks/use-site-settings";
 
 const footerLinks = [
   {
@@ -30,21 +31,26 @@ const footerLinks = [
 ];
 
 export default function Footer() {
+  const { settings } = useSiteSettings();
+
+  const address = settings.address || "Dedebaşı Mah. 6131 Sok. No:39/A\nKarşıyaka, İzmir";
+  const phone = settings.phone || "+90 554 704 90 74";
+  const email = settings.email || "info@nelimuhendislik.com";
+  const logo = settings.company_logo || "/site-logo.webp";
+
   return (
     <footer className="bg-cream-100">
-      {/* Main Footer */}
       <div className="container-padding py-12 md:py-16 lg:py-20">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 md:gap-10 lg:gap-8">
-            {/* Brand */}
             <div className="lg:col-span-2">
               <Link
                 to="/"
                 className="flex items-center gap-2 md:gap-3 mb-4 md:mb-6"
               >
                 <img
-                  src="/site-logo.webp"
-                  alt="Neli Mühendislik"
+                  src={logo}
+                  alt={settings.company_name || "Neli Mühendislik"}
                   className="w-14 h-14 md:w-16 md:h-16 lg:w-18 lg:h-18"
                 />
               </Link>
@@ -54,28 +60,22 @@ export default function Footer() {
                 alanları oluşturuyoruz.
               </p>
 
-              {/* Contact Info */}
               <div className="space-y-2 md:space-y-3">
                 <div className="flex items-start gap-2 md:gap-3 text-sm text-foreground/60">
                   <MapPin className="w-4 h-4 mt-0.5 text-neli-600 flex-shrink-0" />
-                  <span>
-                    Dedebaşı Mah. 6131 Sok. No:39/A
-                    <br />
-                    Karşıyaka, İzmir
-                  </span>
+                  <span style={{ whiteSpace: "pre-line" }}>{address}</span>
                 </div>
                 <div className="flex items-center gap-2 md:gap-3 text-sm text-foreground/60">
                   <Phone className="w-4 h-4 text-neli-600 flex-shrink-0" />
-                  <span>+90 554 704 90 74</span>
+                  <span>{phone}</span>
                 </div>
                 <div className="flex items-center gap-2 md:gap-3 text-sm text-foreground/60">
                   <Mail className="w-4 h-4 text-neli-600 flex-shrink-0" />
-                  <span>info@nelimuhendislik.com</span>
+                  <span>{email}</span>
                 </div>
               </div>
             </div>
 
-            {/* Links */}
             {footerLinks.map((group) => (
               <div key={group.title}>
                 <h4 className="text-foreground font-serif text-base md:text-lg mb-3 md:mb-5">
@@ -99,15 +99,12 @@ export default function Footer() {
         </div>
       </div>
 
-      {/* Bottom Bar */}
       <div className="border-t border-cream-300">
         <div className="container-padding py-4 md:py-6">
           <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-3 md:gap-4">
             <p className="text-foreground/50 text-xs md:text-sm text-center sm:text-left">
-              © 2026 Neli Mühendislik. Tüm hakları saklıdır.
+              © {new Date().getFullYear()} {settings.company_name || "Neli Mühendislik"}. Tüm hakları saklıdır.
             </p>
-
-            {/* Social Links */}
             <SocialLinks variant="footer" />
           </div>
         </div>

@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useRef, useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { motion, useInView } from "framer-motion";
 import { ArrowRight, Building2, HardHat, Award, Users } from "lucide-react";
@@ -6,7 +6,8 @@ import HeroSection from "../components/HeroSection";
 import TimelineMilestones from "@/components/sections/TimelineMilestones";
 import PrimaryCtaSection from "@/components/sections/PrimaryCtaSection";
 import ProjectsMapSection from "@/components/sections/ProjectsMapSection";
-import { projects } from "@/data/projects";
+import { fetchProjects } from "@/data/projects";
+import type { Project } from "@/data/projects";
 import SEO from "@/components/SEO";
 import OptimizedImage from "@/components/OptimizedImage";
 
@@ -57,6 +58,11 @@ export default function Home() {
   const aboutRef = useRef<HTMLDivElement>(null);
   const projectsRef = useRef<HTMLDivElement>(null);
   const mapRef = useRef<HTMLDivElement>(null);
+  const [projects, setProjects] = useState<Project[]>([]);
+
+  useEffect(() => {
+    fetchProjects().then(setProjects);
+  }, []);
 
   const isAboutInView = useInView(aboutRef, { once: true, margin: "-100px" });
   const isProjectsInView = useInView(projectsRef, {

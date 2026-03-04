@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { Instagram, Linkedin, Facebook } from 'lucide-react';
+import { useSiteSettings } from '@/hooks/use-site-settings';
 
-// X (Twitter) custom icon - lucide doesn't have the new X logo
 const XIcon = ({ className }: { className?: string }) => (
   <svg
     viewBox="0 0 24 24"
@@ -13,28 +13,11 @@ const XIcon = ({ className }: { className?: string }) => (
   </svg>
 );
 
-export const socialLinks = [
-  { 
-    icon: Instagram, 
-    href: 'https://www.instagram.com/neli_muhendislik/', 
-    label: 'Instagram' 
-  },
-  { 
-    icon: Linkedin, 
-    href: 'https://www.linkedin.com/company/neli-m%C3%BChendislik', 
-    label: 'LinkedIn' 
-  },
-  { 
-    icon: XIcon, 
-    href: 'https://x.com/nelimuhendislik', 
-    label: 'X (Twitter)',
-    isCustomIcon: true
-  },
-  { 
-    icon: Facebook, 
-    href: 'https://www.facebook.com/profile.php?id=100089633642677', 
-    label: 'Facebook' 
-  },
+const FALLBACK_LINKS = [
+  { icon: Instagram, key: 'social_instagram', href: 'https://www.instagram.com/neli_muhendislik/', label: 'Instagram' },
+  { icon: Linkedin, key: 'social_linkedin', href: 'https://www.linkedin.com/company/neli-m%C3%BChendislik', label: 'LinkedIn' },
+  { icon: XIcon, key: 'social_twitter', href: 'https://x.com/nelimuhendislik', label: 'X (Twitter)', isCustomIcon: true },
+  { icon: Facebook, key: 'social_facebook', href: 'https://www.facebook.com/profile.php?id=100089633642677', label: 'Facebook' },
 ];
 
 interface SocialLinksProps {
@@ -43,11 +26,18 @@ interface SocialLinksProps {
   showAnimation?: boolean;
 }
 
-export default function SocialLinks({ 
-  variant = 'default', 
+export default function SocialLinks({
+  variant = 'default',
   className = '',
-  showAnimation = true 
+  showAnimation = true,
 }: SocialLinksProps) {
+  const { settings } = useSiteSettings();
+
+  const socialLinks = FALLBACK_LINKS.map((link) => ({
+    ...link,
+    href: settings[link.key] || link.href,
+  })).filter((link) => link.href);
+
   const getContainerStyles = () => {
     switch (variant) {
       case 'navbar':
@@ -88,7 +78,7 @@ export default function SocialLinks({
     <div className={`${getContainerStyles()} ${className}`}>
       {socialLinks.map((social) => {
         const IconComponent = social.icon;
-        
+
         if (showAnimation) {
           return (
             <motion.a

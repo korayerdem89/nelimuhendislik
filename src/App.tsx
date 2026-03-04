@@ -8,20 +8,30 @@ import {
 import { Toaster } from "sonner";
 import Navigation from "./components/Navigation";
 import Footer from "./components/Footer";
+import AuthProvider from "./components/panel/AuthProvider";
+import ProtectedRoute from "./components/panel/ProtectedRoute";
 
-// Lazy load pages for better initial load performance
 const Home = lazy(() => import("./pages/Home"));
 const Projects = lazy(() => import("./pages/Projects"));
 const ProjectDetail = lazy(() => import("./pages/ProjectDetail"));
 const Blog = lazy(() => import("./pages/Blog"));
 const BlogDetail = lazy(() => import("./pages/BlogDetail"));
-// const Restoration = lazy(() => import("./pages/Restoration"));
 const Corporate = lazy(() => import("./pages/Corporate"));
 const Contact = lazy(() => import("./pages/Contact"));
 const Career = lazy(() => import("./pages/Career"));
 const Finance = lazy(() => import("./pages/Finance"));
 
-// Loading fallback component
+const PanelLayout = lazy(() => import("./pages/panel/PanelLayout"));
+const PanelLogin = lazy(() => import("./pages/panel/Login"));
+const Dashboard = lazy(() => import("./pages/panel/Dashboard"));
+const BlogList = lazy(() => import("./pages/panel/BlogList"));
+const BlogEditor = lazy(() => import("./pages/panel/BlogEditor"));
+const ProjectList = lazy(() => import("./pages/panel/ProjectList"));
+const ProjectEditor = lazy(() => import("./pages/panel/ProjectEditor"));
+const MapPins = lazy(() => import("./pages/panel/MapPins"));
+const MediaLibrary = lazy(() => import("./pages/panel/MediaLibrary"));
+const Settings = lazy(() => import("./pages/panel/Settings"));
+
 function PageLoader() {
   return (
     <div className="min-h-screen flex items-center justify-center bg-cream-50">
@@ -35,50 +45,87 @@ function PageLoader() {
 
 function ScrollToTop() {
   const { pathname } = useLocation();
-
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [pathname]);
-
   return null;
+}
+
+function PublicLayout() {
+  const location = useLocation();
+  const isPanel = location.pathname.startsWith("/panel");
+
+  if (isPanel) return null;
+
+  return (
+    <>
+      <Navigation />
+    </>
+  );
+}
+
+function PublicFooter() {
+  const location = useLocation();
+  if (location.pathname.startsWith("/panel")) return null;
+  return <Footer />;
 }
 
 function App() {
   return (
     <Router>
-      <div className="min-h-screen bg-cream-200/50">
-        <div className="mx-auto min-h-screen max-w-[1440px] bg-white shadow-[0_0_60px_-15px_rgba(0,0,0,0.1)]">
-          <ScrollToTop />
-          <Navigation />
-          <Suspense fallback={<PageLoader />}>
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/projeler" element={<Projects />} />
-              <Route path="/projeler/:slug" element={<ProjectDetail />} />
-              <Route path="/blog" element={<Blog />} />
-              <Route path="/blog/:slug" element={<BlogDetail />} />
-              {/* <Route path="/restorasyon" element={<Restoration />} /> */}
-              <Route path="/kurumsal" element={<Corporate />} />
-              <Route path="/kariyer" element={<Career />} />
-              <Route path="/finans" element={<Finance />} />
-              <Route path="/iletisim" element={<Contact />} />
-            </Routes>
-          </Suspense>
-          <Footer />
-          <Toaster
-            position="bottom-right"
-            theme="light"
-            richColors
-            className="sonner-neli"
-            toastOptions={{
-              style: {
-                background: "#ffffff",
-                border: "1px solid #ebe5dc",
-              },
-            }}
-          />
+      <AuthProvider>
+        <div className="min-h-screen bg-cream-200/50">
+          <div className="mx-auto min-h-screen max-w-[1440px] bg-white shadow-[0_0_60px_-15px_rgba(0,0,0,0.1)]">
+            <ScrollToTop />
+            <PublicLayout />
+            <Suspense fallback={<PageLoader />}>
+              <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/projeler" element={<Projects />} />
+                <Route path="/projeler/:slug" element={<ProjectDetail />} />
+                <Route path="/blog" element={<Blog />} />
+                <Route path="/blog/:slug" element={<BlogDetail />} />
+                <Route path="/kurumsal" element={<Corporate />} />
+                <Route path="/kariyer" element={<Career />} />
+                <Route path="/finans" element={<Finance />} />
+                <Route path="/iletisim" element={<Contact />} />
+
+                <Route path="/panel/login" element={<PanelLogin />} />
+                <Route
+                  path="/panel"
+                  element={
+                    <ProtectedRoute>
+                      <PanelLayout />
+                    </ProtectedRoute>
+                  }
+                >
+                  <Route index element={<Dashboard />} />
+                  <Route path="blog" element={<BlogList />} />
+                  <Route path="blog/:id" element={<BlogEditor />} />
+                  <Route path="projeler" element={<ProjectList />} />
+                  <Route path="projeler/:id" element={<ProjectEditor />} />
+                  <Route path="harita" element={<MapPins />} />
+                  <Route path="medya" element={<MediaLibrary />} />
+                  <Route path="ayarlar" element={<Settings />} />
+                </Route>
+              </Routes>
+            </Suspense>
+            <PublicFooter />
+            <Toaster
+              position="bottom-right"
+              theme="light"
+              richColors
+              className="sonner-neli"
+              toastOptions={{
+                style: {
+                  background: "#ffffff",
+                  border: "1px solid #ebe5dc",
+                },
+              }}
+            />
+          </div>
         </div>
-      </div>
+      </AuthProvider>
     </Router>
   );
 }
