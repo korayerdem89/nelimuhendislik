@@ -1,7 +1,7 @@
 import { Hono } from "hono";
-import { eq, desc } from "drizzle-orm";
+import { eq, desc, asc } from "drizzle-orm";
 import { db } from "../db/index.js";
-import { blogPosts, projects, mapPins, siteSettings } from "../db/schema.js";
+import { blogPosts, projects, mapPins, siteSettings, milestones } from "../db/schema.js";
 
 const publicRoutes = new Hono();
 
@@ -64,6 +64,15 @@ publicRoutes.get("/settings", (c) => {
     settings[row.key] = row.value;
   }
   return c.json(settings);
+});
+
+publicRoutes.get("/milestones", (c) => {
+  const rows = db
+    .select()
+    .from(milestones)
+    .orderBy(asc(milestones.sortOrder), asc(milestones.id))
+    .all();
+  return c.json(rows);
 });
 
 export default publicRoutes;

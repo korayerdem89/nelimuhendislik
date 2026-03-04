@@ -93,6 +93,20 @@ export const activityLog = sqliteTable("activity_log", {
   index("idx_activity_created").on(table.createdAt),
 ]);
 
+export const milestones = sqliteTable("milestones", {
+  id: integer("id").primaryKey({ autoIncrement: true }),
+  year: text("year").notNull(),
+  title: text("title").notNull(),
+  description: text("description").notNull().default(""),
+  sortOrder: integer("sort_order").notNull().default(0),
+  createdAt: text("created_at")
+    .notNull()
+    .$defaultFn(() => new Date().toISOString()),
+  updatedAt: text("updated_at")
+    .notNull()
+    .$defaultFn(() => new Date().toISOString()),
+});
+
 export const media = sqliteTable("media", {
   id: integer("id").primaryKey({ autoIncrement: true }),
   filename: text("filename").notNull(),

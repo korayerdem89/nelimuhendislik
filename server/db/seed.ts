@@ -6,6 +6,7 @@ import {
   projects,
   mapPins,
   siteSettings,
+  milestones,
 } from "./schema.js";
 
 const DB_PATH = resolve(process.cwd(), "data.db");
@@ -132,6 +133,15 @@ const MAP_PINS_DATA = [
   { name: "Valorya 7", lat: 38.497562, lng: 27.057069, neighborhood: "KucukÇiğli Mahallesi", district: "Çiğli", image: "/projects/valorya7/cover.webp", href: "/projeler" },
 ];
 
+const MILESTONE_DATA = [
+  { year: "1989", title: "İran'da Tara Engineering Adıyla Kurulduk", description: 'İran\'da "Ayrıcalıklı hissetmek herkesin hakkı" prensibiyle yola çıktık.', sortOrder: 0 },
+  { year: "2021", title: "Neli Mühendislik Adıyla İzmir'de Faaliyetlere Başladık", description: "Onlarca restorasyon projesiyle kusursuz hizmet sunmaya başladık.", sortOrder: 1 },
+  { year: "2022", title: "İlk İnşaat Projemiz", description: "Valorya 1 projesi için çalışmalar başladı.", sortOrder: 2 },
+  { year: "2023", title: "Serenita Projelerine Başladık", description: "Serenita Prestige ve Serenita Garden projelerine başladık.", sortOrder: 3 },
+  { year: "2024", title: "Yeni Projelerle Büyümeye Devam Ediyoruz", description: "Valorya 2 - 3 - 4 projelerinin temellerini attık.", sortOrder: 4 },
+  { year: "2025", title: "Ardı Ardına Temelleri Atılan Projeler", description: "Valorya 5 - 6 - 7 ve Serenita Park projelerine başladık.", sortOrder: 5 },
+];
+
 const SETTINGS_DATA: Record<string, string> = {
   company_name: "Neli Mühendislik",
   company_logo: "/site-logo.webp",
@@ -154,47 +164,62 @@ const SETTINGS_DATA: Record<string, string> = {
 
 async function seed() {
   console.log("Seeding database...");
+  let seeded = false;
 
-  const existingBlog = db.select().from(blogPosts).get();
-  if (existingBlog) {
-    console.log("Database already seeded, skipping.");
-    return;
+  if (!db.select().from(blogPosts).get()) {
+    for (const post of BLOG_DATA) {
+      db.insert(blogPosts).values(post).run();
+    }
+    console.log(`Seeded ${BLOG_DATA.length} blog posts`);
+    seeded = true;
   }
 
-  for (const post of BLOG_DATA) {
-    db.insert(blogPosts).values(post).run();
+  if (!db.select().from(projects).get()) {
+    for (const project of PROJECT_DATA) {
+      db.insert(projects)
+        .values({
+          slug: project.slug,
+          name: project.name,
+          location: project.location,
+          year: project.year,
+          type: project.type,
+          description: project.description,
+          image: project.image,
+          status: project.status,
+          detailsJson: JSON.stringify(project.details),
+          phasesJson: JSON.stringify(project.phases),
+        })
+        .run();
+    }
+    console.log(`Seeded ${PROJECT_DATA.length} projects`);
+    seeded = true;
   }
-  console.log(`Seeded ${BLOG_DATA.length} blog posts`);
 
-  for (const project of PROJECT_DATA) {
-    db.insert(projects)
-      .values({
-        slug: project.slug,
-        name: project.name,
-        location: project.location,
-        year: project.year,
-        type: project.type,
-        description: project.description,
-        image: project.image,
-        status: project.status,
-        detailsJson: JSON.stringify(project.details),
-        phasesJson: JSON.stringify(project.phases),
-      })
-      .run();
+  if (!db.select().from(mapPins).get()) {
+    for (const pin of MAP_PINS_DATA) {
+      db.insert(mapPins).values(pin).run();
+    }
+    console.log(`Seeded ${MAP_PINS_DATA.length} map pins`);
+    seeded = true;
   }
-  console.log(`Seeded ${PROJECT_DATA.length} projects`);
 
-  for (const pin of MAP_PINS_DATA) {
-    db.insert(mapPins).values(pin).run();
+  if (!db.select().from(siteSettings).get()) {
+    for (const [key, value] of Object.entries(SETTINGS_DATA)) {
+      db.insert(siteSettings).values({ key, value }).run();
+    }
+    console.log(`Seeded ${Object.keys(SETTINGS_DATA).length} settings`);
+    seeded = true;
   }
-  console.log(`Seeded ${MAP_PINS_DATA.length} map pins`);
 
-  for (const [key, value] of Object.entries(SETTINGS_DATA)) {
-    db.insert(siteSettings).values({ key, value }).run();
+  if (!db.select().from(milestones).get()) {
+    for (const m of MILESTONE_DATA) {
+      db.insert(milestones).values(m).run();
+    }
+    console.log(`Seeded ${MILESTONE_DATA.length} milestones`);
+    seeded = true;
   }
-  console.log(`Seeded ${Object.keys(SETTINGS_DATA).length} settings`);
 
-  console.log("Seed complete!");
+  console.log(seeded ? "Seed complete!" : "Database already seeded, nothing to do.");
 }
 
 seed().catch(console.error);

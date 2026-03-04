@@ -9,6 +9,7 @@ import {
   Image,
   Clock,
   BookOpen,
+  Milestone,
   LogOut,
   Menu,
   X,
@@ -23,6 +24,7 @@ const navItems = [
   { href: "/panel/harita", icon: MapPin, label: "Harita Pinleri" },
   { href: "/panel/medya", icon: Image, label: "Medya" },
   { href: "/panel/etkinlik", icon: Clock, label: "Etkinlik Logu" },
+  { href: "/panel/milestones", icon: Milestone, label: "Kilometre Taşları" },
   { href: "/panel/ayarlar", icon: Settings, label: "Ayarlar" },
   { href: "/panel/rehber", icon: BookOpen, label: "Rehber" },
 ];

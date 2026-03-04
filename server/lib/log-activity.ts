@@ -2,7 +2,7 @@ import { db } from "../db/index.js";
 import { activityLog } from "../db/schema.js";
 
 type Action = "create" | "update" | "delete" | "bulk_delete" | "bulk_update" | "upload" | "settings_update";
-type EntityType = "blog" | "project" | "map_pin" | "media" | "settings";
+type EntityType = "blog" | "project" | "map_pin" | "media" | "settings" | "milestone";
 
 export function logActivity(
   action: Action,

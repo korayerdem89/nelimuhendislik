@@ -18,39 +18,21 @@ const stats = [
   { icon: Users, value: "100+", label: "Mutlu Aile" },
 ];
 
-const milestones = [
-  {
-    year: "1989",
-    title: "İran'da Tara Engineering Adıyla Kurulduk",
-    description:
-      'İran\'da "Ayrıcalıklı hissetmek herkesin hakkı" prensibiyle yola çıktık.',
-  },
-  {
-    year: "2021",
-    title: "Neli Mühendislik Adıyla İzmir'de Faaliyetlere Başladık",
-    description:
-      "Onlarca restorasyon projesiyle kusursuz hizmet sunmaya başladık.",
-  },
-  {
-    year: "2022",
-    title: "İlk İnşaat Projemiz",
-    description: "Valorya 1 projesi için çalışmalar başladı.",
-  },
-  {
-    year: "2023",
-    title: "Serenita Projelerine Başladık",
-    description: "Serenita Prestige ve Serenita Garden projelerine başladık.",
-  },
-  {
-    year: "2024",
-    title: "Yeni Projelerle Büyümeye Devam Ediyoruz",
-    description: "Valorya 2 - 3 - 4 projelerinin temellerini attık.",
-  },
-  {
-    year: "2025",
-    title: "Ardı Ardına Temelleri Atılan Projeler",
-    description: "Valorya 5 - 6 - 7 ve Serenita Park projelerine başladık.",
-  },
+interface MilestoneItem {
+  id: number;
+  year: string;
+  title: string;
+  description: string;
+  sortOrder: number;
+}
+
+const FALLBACK_MILESTONES: MilestoneItem[] = [
+  { id: 0, sortOrder: 0, year: "1989", title: "İran'da Tara Engineering Adıyla Kurulduk", description: 'İran\'da "Ayrıcalıklı hissetmek herkesin hakkı" prensibiyle yola çıktık.' },
+  { id: 1, sortOrder: 1, year: "2021", title: "Neli Mühendislik Adıyla İzmir'de Faaliyetlere Başladık", description: "Onlarca restorasyon projesiyle kusursuz hizmet sunmaya başladık." },
+  { id: 2, sortOrder: 2, year: "2022", title: "İlk İnşaat Projemiz", description: "Valorya 1 projesi için çalışmalar başladı." },
+  { id: 3, sortOrder: 3, year: "2023", title: "Serenita Projelerine Başladık", description: "Serenita Prestige ve Serenita Garden projelerine başladık." },
+  { id: 4, sortOrder: 4, year: "2024", title: "Yeni Projelerle Büyümeye Devam Ediyoruz", description: "Valorya 2 - 3 - 4 projelerinin temellerini attık." },
+  { id: 5, sortOrder: 5, year: "2025", title: "Ardı Ardına Temelleri Atılan Projeler", description: "Valorya 5 - 6 - 7 ve Serenita Park projelerine başladık." },
 ];
 
 export default function Home() {
@@ -59,9 +41,16 @@ export default function Home() {
   const projectsRef = useRef<HTMLDivElement>(null);
   const mapRef = useRef<HTMLDivElement>(null);
   const [projects, setProjects] = useState<Project[]>([]);
+  const [milestones, setMilestones] = useState<MilestoneItem[]>([]);
 
   useEffect(() => {
     fetchProjects().then(setProjects);
+    fetch("/api/public/milestones")
+      .then((r) => r.json())
+      .then((data: MilestoneItem[]) =>
+        setMilestones(data.length > 0 ? data : FALLBACK_MILESTONES),
+      )
+      .catch(() => setMilestones(FALLBACK_MILESTONES));
   }, []);
 
   const isAboutInView = useInView(aboutRef, { once: true, margin: "-100px" });

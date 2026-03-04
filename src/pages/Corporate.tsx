@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useRef, useEffect, useState } from "react";
 import { motion, useInView } from "framer-motion";
 import {
   Lightbulb,
@@ -51,39 +51,21 @@ const values = [
   },
 ];
 
-const milestones = [
-  {
-    year: "1989",
-    title: "İran'da Tara Engineering Adıyla Kurulduk",
-    description:
-      'İran\'da "Ayrıcalıklı hissetmek herkesin hakkı" prensibiyle yola çıktık.',
-  },
-  {
-    year: "2021",
-    title: "Neli Mühendislik Adıyla İzmir'de Faaliyetlere Başladık",
-    description:
-      "Onlarca restorasyon projesiyle kusursuz hizmet sunmaya başladık.",
-  },
-  {
-    year: "2022",
-    title: "İlk İnşaat Projemiz",
-    description: "Valorya 1 projesi için çalışmalar başladı.",
-  },
-  {
-    year: "2023",
-    title: "Serenita Projelerine Başladık",
-    description: "Serenita Prestige ve Serenita Garden projelerine başladık.",
-  },
-  {
-    year: "2024",
-    title: "Yeni Projelerle Büyümeye Devam Ediyoruz",
-    description: "Valorya 2 - 3 - 4 projelerinin temellerini attık.",
-  },
-  {
-    year: "2025",
-    title: "Ardı Ardına Temelleri Atılan Projeler",
-    description: "Valorya 5 - 6 - 7 ve Serenita Park projelerine başladık.",
-  },
+interface MilestoneItem {
+  id: number;
+  year: string;
+  title: string;
+  description: string;
+  sortOrder: number;
+}
+
+const FALLBACK_MILESTONES: MilestoneItem[] = [
+  { id: 0, sortOrder: 0, year: "1989", title: "İran'da Tara Engineering Adıyla Kurulduk", description: 'İran\'da "Ayrıcalıklı hissetmek herkesin hakkı" prensibiyle yola çıktık.' },
+  { id: 1, sortOrder: 1, year: "2021", title: "Neli Mühendislik Adıyla İzmir'de Faaliyetlere Başladık", description: "Onlarca restorasyon projesiyle kusursuz hizmet sunmaya başladık." },
+  { id: 2, sortOrder: 2, year: "2022", title: "İlk İnşaat Projemiz", description: "Valorya 1 projesi için çalışmalar başladı." },
+  { id: 3, sortOrder: 3, year: "2023", title: "Serenita Projelerine Başladık", description: "Serenita Prestige ve Serenita Garden projelerine başladık." },
+  { id: 4, sortOrder: 4, year: "2024", title: "Yeni Projelerle Büyümeye Devam Ediyoruz", description: "Valorya 2 - 3 - 4 projelerinin temellerini attık." },
+  { id: 5, sortOrder: 5, year: "2025", title: "Ardı Ardına Temelleri Atılan Projeler", description: "Valorya 5 - 6 - 7 ve Serenita Park projelerine başladık." },
 ];
 
 const partners = [
@@ -100,9 +82,19 @@ const partners = [
 export default function Corporate() {
   const aboutRef = useRef<HTMLDivElement>(null);
   const valuesRef = useRef<HTMLDivElement>(null);
+  const [milestones, setMilestones] = useState<MilestoneItem[]>([]);
 
   const isAboutInView = useInView(aboutRef, { once: true, margin: "-100px" });
   const isValuesInView = useInView(valuesRef, { once: true, margin: "-100px" });
+
+  useEffect(() => {
+    fetch("/api/public/milestones")
+      .then((r) => r.json())
+      .then((data: MilestoneItem[]) => {
+        setMilestones(data.length > 0 ? data : FALLBACK_MILESTONES);
+      })
+      .catch(() => setMilestones(FALLBACK_MILESTONES));
+  }, []);
 
   return (
     <main className="min-h-screen pt-20 md:pt-24 lg:pt-28">
