@@ -14,7 +14,8 @@
     "db:push": "drizzle-kit push",
     "db:seed": "bun run server/db/seed.ts",
     "db:studio": "drizzle-kit studio",
-    "server": "bun run server/index.ts"
+    "server": "bun run server/index.ts",
+    "killserver": "node -e \"const { execSync } = require('node:child_process'); const ports = [3001, 5173]; try { if (process.platform === 'win32') { const out = execSync('netstat -ano -p tcp', { encoding: 'utf8' }); const pids = new Set(); for (const line of out.split(/\\r?\\n/)) { if (!line.includes('LISTENING')) continue; for (const port of ports) { if (line.includes(':' + port)) { const match = line.trim().match(/(\\d+)$/); if (match) pids.add(match[1]); } } } if (!pids.size) { console.log('Kapatilacak server prosesi bulunamadi.'); process.exit(0); } for (const pid of pids) { try { execSync('taskkill /F /PID ' + pid + ' /T', { stdio: 'ignore' }); } catch {} } console.log('Acik serverlar kapatildi. PID:', [...pids].join(', ')); } else { let killed = false; for (const port of ports) { try { execSync('lsof -ti tcp:' + port + ' | xargs -r kill -9', { stdio: 'ignore' }); killed = true; } catch {} } console.log(killed ? 'Acik serverlar kapatildi.' : 'Kapatilacak server prosesi bulunamadi.'); } } catch { console.log('Kapatilacak server prosesi bulunamadi.'); }\""
   },
   "dependencies": {
     "@hono/node-server": "^1.19.10",

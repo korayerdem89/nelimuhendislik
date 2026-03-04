@@ -39,5 +39,3 @@ const PORT = Number(process.env.PORT) || 3001;
 serve({ fetch: app.fetch, port: PORT }, () => {
   console.log(`Server running on http://localhost:${PORT}`);
 });
-
-export default app;
