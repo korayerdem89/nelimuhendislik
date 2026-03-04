@@ -121,6 +121,8 @@ export default function Corporate() {
           </>
         }
         description="2021 yılında kurulan şirketimiz, kalite, estetik ve konforu en üst düzeyde buluşturarak ayrıcalıklı yaşam alanları oluşturuyor."
+        bgImage="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1920&q=75"
+        bgPosition="center bottom"
       />
 
       {/* About */}

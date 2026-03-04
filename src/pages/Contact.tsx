@@ -135,6 +135,8 @@ export default function Contact() {
           </>
         }
         description="Projeleriniz için bizimle iletişime geçin. Size özel çözümler sunmak için bekliyoruz."
+        bgImage="https://images.unsplash.com/photo-1486325212027-8081e485255e?auto=format&fit=crop&w=1920&q=75"
+        bgPosition="center"
       />
 
       {/* Contact Content */}

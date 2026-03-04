@@ -165,6 +165,8 @@ export default function Finance() {
           </>
         }
         description="Hayalinizdeki eve ulaşmanız için farklı finansman alternatifleri sunuyoruz. Konut kredisi, katılım bankası veya Neli Finans ile ev sahibi olun."
+        bgImage="https://images.unsplash.com/photo-1560520653-9e0e4c89eb11?auto=format&fit=crop&w=1920&q=75"
+        bgPosition="center"
       />
 
       {/* Konut Kredisi Section */}

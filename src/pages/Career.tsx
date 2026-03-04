@@ -178,6 +178,8 @@ export default function Career() {
           </>
         }
         description="Açık pozisyonlarımız için başvurunuzu iletin. Teknik ve idari ekiplerimiz düzenli olarak yeni yetenekler arıyor."
+        bgImage="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1920&q=75"
+        bgPosition="center 40%"
       />
 
       <section ref={formRef} className="section-padding bg-white">

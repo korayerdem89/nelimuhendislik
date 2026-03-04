@@ -86,6 +86,8 @@ export default function Projects() {
           </>
         }
         description="Her projemizde kalite, konfor ve estetiği bir araya getirerek ayrıcalıklı yaşam alanları oluşturuyoruz."
+        bgImage="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=1920&q=75"
+        bgPosition="center"
       />
 
       <section className="sticky top-16 md:top-20 lg:top-24 z-30 bg-white border-b border-cream-300 py-3 md:py-4">

@@ -6,12 +6,18 @@ interface PageHeroProps {
   currentPage: string;
   title: ReactNode;
   description: ReactNode;
+  /** Arka plan görseli URL'si — tam kaplar, düşük opaklıkla gösterilir */
+  bgImage?: string;
+  /** CSS object-position değeri, varsayılan "center" */
+  bgPosition?: string;
 }
 
 export default function PageHero({
   currentPage,
   title,
   description,
+  bgImage,
+  bgPosition = "center",
 }: PageHeroProps) {
   const sectionRef = useRef<HTMLDivElement>(null);
   const isInView = useInView(sectionRef, { once: true });
@@ -19,9 +25,20 @@ export default function PageHero({
   return (
     <section
       ref={sectionRef}
-      className="relative py-12 md:py-16 lg:py-24 bg-cream-100"
+      className="relative py-12 md:py-16 lg:py-24 bg-cream-100 overflow-hidden"
     >
-      <div className="container-padding">
+      {bgImage && (
+        <img
+          src={bgImage}
+          alt=""
+          aria-hidden="true"
+          draggable={false}
+          className="absolute inset-0 w-full h-full object-cover pointer-events-none select-none opacity-[0.18]"
+          style={{ objectPosition: bgPosition }}
+        />
+      )}
+
+      <div className="container-padding relative z-10">
         <div className="max-w-7xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
