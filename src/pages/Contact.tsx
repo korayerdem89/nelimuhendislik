@@ -11,6 +11,9 @@ import ContactMapSection from '@/components/sections/ContactMapSection';
 import SEO from '@/components/SEO';
 import { useSiteSettings } from '@/hooks/use-site-settings';
 
+const WEB3FORMS_ENDPOINT = "https://api.web3forms.com/submit";
+const WEB3FORMS_ACCESS_KEY = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY?.trim() ?? "";
+
 export default function Contact() {
   const { settings } = useSiteSettings();
 
@@ -61,16 +64,59 @@ export default function Contact() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+
+    if (!WEB3FORMS_ACCESS_KEY) {
+      toast.error('Form yapılandırması eksik. Lütfen yönetici ile iletişime geçin.');
+      return;
+    }
+
     setIsSubmitting(true);
-    
-    await new Promise((resolve) => setTimeout(resolve, 1500));
-    
-    toast.success('Mesajınız Gönderildi', {
-      description: 'En kısa sürede size dönüş yapacağız.',
-    });
-    
-    setFormData({ name: '', email: '', phone: '', subject: '', message: '' });
-    setIsSubmitting(false);
+
+    const payload = {
+      access_key: WEB3FORMS_ACCESS_KEY,
+      subject: `İletişim Formu - ${formData.subject.trim() || 'Yeni Mesaj'}`,
+      from_name: 'Neli Mühendislik İletişim Formu',
+      replyto: formData.email.trim(),
+      botcheck: '',
+      name: formData.name.trim(),
+      email: formData.email.trim(),
+      phone: formData.phone.trim() || '-',
+      topic: formData.subject.trim() || '-',
+      message: formData.message.trim(),
+    };
+
+    try {
+      const response = await fetch(WEB3FORMS_ENDPOINT, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          Accept: 'application/json',
+        },
+        body: JSON.stringify(payload),
+      });
+
+      const result = (await response.json()) as {
+        success?: boolean;
+        message?: string;
+      };
+
+      if (!response.ok || !result.success) {
+        throw new Error(result.message || 'Mesaj gönderilemedi.');
+      }
+
+      toast.success('Mesajınız Gönderildi', {
+        description: 'En kısa sürede size dönüş yapacağız.',
+      });
+      setFormData({ name: '', email: '', phone: '', subject: '', message: '' });
+    } catch (error) {
+      const message =
+        error instanceof Error
+          ? error.message
+          : 'Beklenmeyen bir hata oluştu. Lütfen tekrar deneyin.';
+      toast.error('Mesaj gönderilemedi', { description: message });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
