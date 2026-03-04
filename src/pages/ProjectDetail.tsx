@@ -225,14 +225,6 @@ export default function ProjectDetail() {
     });
   }, [slug]);
 
-  if (pageLoading) {
-    return (
-      <main className="min-h-screen pt-20 md:pt-24 lg:pt-28 flex items-center justify-center">
-        <div className="w-10 h-10 border-2 border-neli-600/20 border-t-neli-600 rounded-full animate-spin" />
-      </main>
-    );
-  }
-
   const projectImage = project?.image ?? "";
   const imageBasePath = projectImage.includes("/")
     ? projectImage.slice(0, projectImage.lastIndexOf("/"))
@@ -268,8 +260,6 @@ export default function ProjectDetail() {
         const candidateSrc = `${imageBasePath}/${imageNumber}.webp`;
         const loadedImage = await preloadImage(candidateSrc);
 
-        // Numbered gallery is expected to be continuous: 1.webp, 2.webp, ...
-        // Stop scanning at the first missing file.
         if (!loadedImage) {
           break;
         }
@@ -322,6 +312,14 @@ export default function ProjectDetail() {
       window.removeEventListener("keydown", onKeyDown);
     };
   }, [galleryImages.length, lightboxImageIndex]);
+
+  if (pageLoading) {
+    return (
+      <main className="min-h-screen pt-20 md:pt-24 lg:pt-28 flex items-center justify-center">
+        <div className="w-10 h-10 border-2 border-neli-600/20 border-t-neli-600 rounded-full animate-spin" />
+      </main>
+    );
+  }
 
   const showPrevImage = () => {
     if (galleryImages.length <= 1) {
