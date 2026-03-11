@@ -1,11 +1,11 @@
-import * as xmlrpc from "xmlrpc";
+import xmlrpc from "xmlrpc";
 
 // 1. KENDİ BİLGİLERİNİ GİR
 const host = "localhost";
 const port = 8069;
-const db = "veritabani_adin"; // Örn: odoo_test
-const username = "senin_odoo_mailin@ornek.com";
-const password = "senin_odoo_sifren";
+const db = "testdb"; // Örn: odoo_test
+const username = "info@neli.tr";
+const password = "Neli5921";
 
 const commonClient = xmlrpc.createClient({
   host,
@@ -22,7 +22,7 @@ const modelsClient = xmlrpc.createClient({
 commonClient.methodCall(
   "authenticate",
   [db, username, password, {}],
-  (error: any, uid: number) => {
+  (error: object, uid: number) => {
     if (error || !uid) {
       return console.error("Giriş hatası! Bilgilerini kontrol et:", error);
     }
@@ -41,7 +41,7 @@ commonClient.methodCall(
     modelsClient.methodCall(
       "execute_kw",
       [db, uid, password, "crm.lead", "create", yeniMesaj],
-      (err: any, recordId: number) => {
+      (err: object, recordId: number) => {
         if (err) return console.error("Kayıt eklenemedi:", err);
 
         console.log("BAŞARILI! Odoo CRM'e kayıt düştü. Kayıt ID:", recordId);
