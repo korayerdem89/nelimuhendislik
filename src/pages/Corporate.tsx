@@ -102,7 +102,7 @@ export default function Corporate() {
         title="Kurumsal"
         description="Neli Mühendislik hakkında. 2021 yılında kurulan şirketimiz, kalite, estetik ve konforu en üst düzeyde buluşturarak İzmir'de ayrıcalıklı yaşam alanları oluşturuyor."
         keywords="neli mühendislik hakkında, kurumsal, izmir inşaat firması, konut projesi, misyon vizyon"
-        url="https://nelimuhendislik.com/kurumsal"
+        url="https://neli.tr/kurumsal"
       />
       <PageHero
         currentPage="Kurumsal"

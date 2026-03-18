@@ -15,8 +15,8 @@ const defaultMeta = {
     "Neli Mühendislik, İzmir'de modern ve kaliteli konut projeleri sunan güvenilir bir inşaat firmasıdır. Valorya ve Serenita projeleriyle hayalinizdeki eve kavuşun.",
   keywords:
     "neli mühendislik, izmir inşaat, konut projeleri, valorya, serenita, çiğli konut, karşıyaka daire",
-  image: "https://nelimuhendislik.com/og-image.jpg",
-  url: "https://nelimuhendislik.com",
+  image: "https://neli.tr/og-image.jpg",
+  url: "https://neli.tr",
 };
 
 export default function SEO({

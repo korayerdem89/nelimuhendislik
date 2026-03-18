@@ -5,6 +5,11 @@ import { blogPosts, projects, mapPins, siteSettings, milestones } from "../db/sc
 
 const publicRoutes = new Hono();
 
+publicRoutes.onError((err, c) => {
+  console.error(`[public ${c.req.method} ${c.req.path}]`, err);
+  return c.json({ error: "Server error", detail: err.message }, 500);
+});
+
 publicRoutes.get("/blog", (c) => {
   const posts = db
     .select()

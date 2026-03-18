@@ -70,7 +70,7 @@ export default function Home() {
       <SEO
         title="Ana Sayfa"
         description="Neli Mühendislik, İzmir'de modern ve kaliteli konut projeleri sunan güvenilir bir inşaat firmasıdır. Valorya ve Serenita projeleriyle hayalinizdeki eve kavuşun."
-        url="https://nelimuhendislik.com"
+        url="https://neli.tr"
       />
 
       {/* Hero Section */}

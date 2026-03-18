@@ -50,7 +50,7 @@ export default function Blog() {
         title="Blog"
         description="Neli Mühendislik blog. İnşaat, mimari, dekorasyon ve konut projeleri hakkında güncel bilgiler ve uzman görüşleri."
         keywords="neli mühendislik blog, inşaat blogu, mimari yazıları, konut projeleri, izmir inşaat"
-        url="https://nelimuhendislik.com/blog"
+        url="https://neli.tr/blog"
       />
 
       <PageHero

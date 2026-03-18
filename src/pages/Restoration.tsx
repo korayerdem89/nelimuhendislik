@@ -124,7 +124,7 @@ export default function Restoration() {
         title="Restorasyon"
         description="Neli Mühendislik restorasyon hizmetleri. İzmir'de dış cephe yenileme, tesisat yenileme ve bina güçlendirme hizmetleri sunuyoruz."
         keywords="restorasyon izmir, dış cephe yenileme, bina restorasyonu, tesisat yenileme, bina güçlendirme, mantolama"
-        url="https://nelimuhendislik.com/restorasyon"
+        url="https://neli.tr/restorasyon"
       />
       <PageHero
         currentPage="Restorasyon"

@@ -62,7 +62,7 @@ export default function BlogDetail() {
         title={post.metaTitle || post.title}
         description={post.metaDescription || post.excerpt}
         keywords={post.metaKeywords || ""}
-        url={`https://nelimuhendislik.com/blog/${post.slug}`}
+        url={`https://neli.tr/blog/${post.slug}`}
         type="article"
       />
 

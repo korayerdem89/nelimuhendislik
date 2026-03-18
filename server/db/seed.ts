@@ -820,7 +820,7 @@ const SETTINGS_DATA: Record<string, string> = {
   address: "Dedebaşı Mah. 6131 Sok. No:39/A\nKarşıyaka, İzmir",
   phone: "+90 554 704 90 74",
   phone2: "+90 232 441 44 42",
-  email: "info@nelimuhendislik.com",
+  email: "info@neli.tr",
   working_hours: "Pazartesi - Cuma: 09:00 - 18:00\nCumartesi: 10:00 - 14:00",
   social_instagram: "https://www.instagram.com/neli_muhendislik/",
   social_linkedin: "https://www.linkedin.com/company/neli-m%C3%BChendislik",
@@ -831,7 +831,7 @@ const SETTINGS_DATA: Record<string, string> = {
     "Neli Mühendislik, İzmir'de modern ve kaliteli konut projeleri sunan güvenilir bir inşaat firmasıdır.",
   seo_default_keywords:
     "neli mühendislik, izmir inşaat, konut projeleri, valorya, serenita",
-  seo_og_image: "https://nelimuhendislik.com/og-image.jpg",
+  seo_og_image: "https://neli.tr/og-image.jpg",
   maps_embed_url:
     "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1562.7!2d27.1057313!3d38.4680346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14bbd9dd2adbb0b9%3A0x6988352d26352bc!2zRGVkZWJhxZ_EsSwgNjEzMS4gU2suIE5vOjM5L0EsIDM1NTYwIEthcsWfxLF5YWthL8Swem1pcg!5e0!3m2!1str!2str!4v1707000000000!5m2!1str!2str",
   blog_categories: JSON.stringify([

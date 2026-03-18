@@ -154,7 +154,7 @@ export default function Finance() {
         title="Finans"
         description="Neli Mühendislik konut finansman seçenekleri. Konut kredisi hesaplama, katılım bankası ortaklıkları ve Neli Finans taksit seçenekleri."
         keywords="konut kredisi, ev kredisi hesaplama, faizsiz ev, katılım bankası, neli finans, taksitli konut"
-        url="https://nelimuhendislik.com/finans"
+        url="https://neli.tr/finans"
       />
 
       <PageHero

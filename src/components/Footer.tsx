@@ -35,7 +35,7 @@ export default function Footer() {
 
   const address = settings.address || "Dedebaşı Mah. 6131 Sok. No:39/A\nKarşıyaka, İzmir";
   const phone = settings.phone || "+90 554 704 90 74";
-  const email = settings.email || "info@nelimuhendislik.com";
+  const email = settings.email || "info@neli.tr";
   const logo = settings.company_logo || "/site-logo.webp";
 
   return (

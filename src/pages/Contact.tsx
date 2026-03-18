@@ -33,8 +33,8 @@ export default function Contact() {
     {
       icon: Mail,
       title: 'E-posta',
-      content: settings.email || 'info@nelimuhendislik.com',
-      href: `mailto:${settings.email || 'info@nelimuhendislik.com'}`,
+      content: settings.email || 'info@neli.tr',
+      href: `mailto:${settings.email || 'info@neli.tr'}`,
     },
     {
       icon: Clock,
@@ -145,7 +145,7 @@ export default function Contact() {
         title="İletişim"
         description="Neli Mühendislik ile iletişime geçin. İzmir Karşıyaka'daki ofisimizi ziyaret edin veya bize ulaşın. Telefon: +90 554 704 90 74"
         keywords="neli mühendislik iletişim, izmir inşaat iletişim, konut projesi danışma, karşıyaka ofis"
-        url="https://nelimuhendislik.com/iletisim"
+        url="https://neli.tr/iletisim"
       />
       <PageHero
         currentPage="İletişim"

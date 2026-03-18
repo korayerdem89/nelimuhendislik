@@ -349,8 +349,8 @@ export default function ProjectDetail() {
         title={`${project.name} - ${project.details.district}, ${project.details.city}`}
         description={`${project.name} projesi - ${project.description} ${project.details.district}, ${project.details.city} konumunda.`}
         keywords={`${project.name}, ${project.details.district} konut, ${project.details.city} daire, neli mühendislik, ${project.type}`}
-        url={`https://nelimuhendislik.com/projeler/${project.slug}`}
-        image={`https://nelimuhendislik.com${project.image}`}
+        url={`https://neli.tr/projeler/${project.slug}`}
+        image={`https://neli.tr${project.image}`}
       />
       <PageHero
         currentPage="Projeler"

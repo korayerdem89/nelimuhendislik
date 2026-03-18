@@ -167,7 +167,7 @@ export default function Career() {
         title="Kariyer"
         description="Neli Mühendislik kariyer sayfası. Açık pozisyonlara başvurun, ekibimize katılın."
         keywords="neli mühendislik kariyer, inşaat kariyer, iş başvurusu, izmir iş ilanı"
-        url="https://nelimuhendislik.com/kariyer"
+        url="https://neli.tr/kariyer"
       />
 
       <PageHero
