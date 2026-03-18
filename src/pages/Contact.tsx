@@ -86,22 +86,42 @@ export default function Contact() {
     };
 
     try {
-      const response = await fetch(WEB3FORMS_ENDPOINT, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          Accept: 'application/json',
-        },
-        body: JSON.stringify(payload),
-      });
+      const [web3Response, odooResponse] = await Promise.allSettled([
+        fetch(WEB3FORMS_ENDPOINT, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+          body: JSON.stringify(payload),
+        }).then(async (res) => {
+          const result = (await res.json()) as { success?: boolean; message?: string };
+          if (!res.ok || !result.success) throw new Error(result.message || 'Web3Forms hatası');
+          return result;
+        }),
+        fetch('/api/odoo/contact', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            name: formData.name.trim(),
+            email: formData.email.trim(),
+            phone: formData.phone.trim(),
+            subject: formData.subject.trim(),
+            message: formData.message.trim(),
+          }),
+        }).then(async (res) => {
+          const result = (await res.json()) as { success?: boolean; error?: string };
+          if (!res.ok || !result.success) throw new Error(result.error || 'Odoo CRM hatası');
+          return result;
+        }),
+      ]);
 
-      const result = (await response.json()) as {
-        success?: boolean;
-        message?: string;
-      };
+      const web3Ok = web3Response.status === 'fulfilled';
+      const odooOk = odooResponse.status === 'fulfilled';
 
-      if (!response.ok || !result.success) {
-        throw new Error(result.message || 'Mesaj gönderilemedi.');
+      if (!web3Ok && !odooOk) {
+        throw new Error('Mesaj gönderilemedi. Lütfen tekrar deneyin.');
+      }
+
+      if (!odooOk) {
+        console.warn('[Odoo CRM]', (odooResponse as PromiseRejectedResult).reason);
       }
 
       toast.success('Mesajınız Gönderildi', {

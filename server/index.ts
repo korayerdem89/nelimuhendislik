@@ -12,11 +12,19 @@ import mediaRoutes from "./routes/media.js";
 import activityRoutes from "./routes/activity.js";
 import milestonesRoutes from "./routes/milestones.js";
 import publicRoutes from "./routes/public.js";
+import odooRoutes from "./routes/odoo.js";
 
 const app = new Hono();
 
+const allowedOrigins = (process.env.CORS_ORIGIN || "http://localhost:5173")
+  .split(",")
+  .map((o) => o.trim());
+
 app.use("*", cors({
-  origin: process.env.CORS_ORIGIN || "http://localhost:5173",
+  origin: (origin) => {
+    if (!origin) return allowedOrigins[0];
+    return allowedOrigins.includes(origin) ? origin : allowedOrigins[0];
+  },
   credentials: true,
 }));
 
@@ -24,6 +32,7 @@ app.use("/uploads/*", serveStatic({ root: "." }));
 
 app.route("/api/auth", authRoutes);
 app.route("/api/public", publicRoutes);
+app.route("/api/odoo", odooRoutes);
 
 app.use("/api/admin/*", authMiddleware);
 app.route("/api/admin/blog", blogRoutes);

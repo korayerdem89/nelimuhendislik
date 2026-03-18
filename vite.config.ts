@@ -1,11 +1,11 @@
-import path from "path"
-import react from "@vitejs/plugin-react"
-import { defineConfig } from "vite"
-import { inspectAttr } from 'kimi-plugin-inspect-react'
+import path from "path";
+import react from "@vitejs/plugin-react";
+import { defineConfig } from "vite";
+import { inspectAttr } from "kimi-plugin-inspect-react";
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: './',
+  base: "./",
   plugins: [inspectAttr(), react()],
   resolve: {
     alias: {
@@ -18,14 +18,18 @@ export default defineConfig({
       output: {
         manualChunks: {
           // Vendor chunks
-          'vendor-react': ['react', 'react-dom', 'react-router-dom'],
-          'vendor-motion': ['framer-motion'],
-          'vendor-ui': ['@radix-ui/react-dialog', '@radix-ui/react-dropdown-menu', '@radix-ui/react-tabs'],
-          'vendor-map': ['leaflet', 'react-leaflet'],
+          "vendor-react": ["react", "react-dom", "react-router-dom"],
+          "vendor-motion": ["framer-motion"],
+          "vendor-ui": [
+            "@radix-ui/react-dialog",
+            "@radix-ui/react-dropdown-menu",
+            "@radix-ui/react-tabs",
+          ],
+          "vendor-map": ["leaflet", "react-leaflet"],
         },
       },
     },
-    minify: 'esbuild',
+    minify: "esbuild",
     // Generate sourcemaps for production debugging
     sourcemap: false,
     // Chunk size warning limit
@@ -37,9 +41,10 @@ export default defineConfig({
   },
   // Optimize dependencies
   optimizeDeps: {
-    include: ['react', 'react-dom', 'react-router-dom', 'framer-motion'],
+    include: ["react", "react-dom", "react-router-dom", "framer-motion"],
   },
   server: {
+    allowedHosts: ["neli.tr", "www.neli.tr"],
     middlewareMode: false,
     proxy: {
       "/api": {

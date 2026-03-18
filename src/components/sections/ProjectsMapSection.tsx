@@ -115,7 +115,10 @@ export default function ProjectsMapSection({
   const markerRefs = useRef<Record<number, LeafletMarker | null>>({});
 
   useEffect(() => {
-    api.get<ProjectPin[]>("/api/public/map-pins").then(setPins);
+    api
+      .get<ProjectPin[]>("/api/public/map-pins")
+      .then(setPins)
+      .catch((err) => console.error("[map-pins]", err));
   }, []);
 
   const selectedProject =

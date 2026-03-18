@@ -68,11 +68,19 @@ export async function fetchProjects(): Promise<Project[]> {
   if (_cachedProjects) return _cachedProjects;
   if (_fetchPromise) return _fetchPromise;
 
-  _fetchPromise = api.get<Project[]>("/api/public/projects").then((data) => {
-    _cachedProjects = data;
-    _fetchPromise = null;
-    return data;
-  });
+  _fetchPromise = api
+    .get<Project[]>("/api/public/projects")
+    .then((data) => {
+      _cachedProjects = data;
+      return data;
+    })
+    .catch((err) => {
+      console.error("[fetchProjects]", err);
+      return [] as Project[];
+    })
+    .finally(() => {
+      _fetchPromise = null;
+    });
 
   return _fetchPromise;
 }

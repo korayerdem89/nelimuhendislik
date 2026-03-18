@@ -10,11 +10,19 @@ async function fetchSettings(): Promise<SiteSettings> {
   if (cachedSettings) return cachedSettings;
   if (fetchPromise) return fetchPromise;
 
-  fetchPromise = api.get<SiteSettings>("/api/public/settings").then((data) => {
-    cachedSettings = data;
-    fetchPromise = null;
-    return data;
-  });
+  fetchPromise = api
+    .get<SiteSettings>("/api/public/settings")
+    .then((data) => {
+      cachedSettings = data;
+      return data;
+    })
+    .catch((err) => {
+      console.error("[fetchSettings]", err);
+      return {} as SiteSettings;
+    })
+    .finally(() => {
+      fetchPromise = null;
+    });
 
   return fetchPromise;
 }
