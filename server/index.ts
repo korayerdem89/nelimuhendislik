@@ -13,6 +13,7 @@ import activityRoutes from "./routes/activity.js";
 import milestonesRoutes from "./routes/milestones.js";
 import publicRoutes from "./routes/public.js";
 import odooRoutes from "./routes/odoo.js";
+import sitemapRoutes from "./routes/sitemap.js";
 
 const app = new Hono();
 
@@ -30,6 +31,7 @@ app.use("*", cors({
 
 app.use("/uploads/*", serveStatic({ root: "." }));
 
+app.route("/", sitemapRoutes);
 app.route("/api/auth", authRoutes);
 app.route("/api/public", publicRoutes);
 app.route("/api/odoo", odooRoutes);
