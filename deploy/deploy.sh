@@ -2,7 +2,7 @@
 set -e
 
 APP_DIR="/var/www/nelimuhendislik"
-REPO_URL="https://github.com/YOUR_REPO/nelimuhendislik.git"
+REPO_URL="https://github.com/korayerdem89/nelimuhendislik.git"
 
 echo "=== Neli Muhendislik Deployment ==="
 

@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "dev:server": "bun run --watch server/index.ts",
-    "dev:all": "bun run dev & bun run dev:server",
+    "dev:all": "concurrently -n vite,server -c blue,green \"bun run dev\" \"bun run dev:server\"",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
@@ -15,6 +15,7 @@
     "db:seed": "bun run server/db/seed.ts",
     "db:studio": "drizzle-kit studio",
     "server": "bun run server/index.ts",
+    "kill": "bun run killserver",
     "killserver": "node -e \"const { execSync } = require('node:child_process'); const ports = [3001, 5173]; try { if (process.platform === 'win32') { const out = execSync('netstat -ano -p tcp', { encoding: 'utf8' }); const pids = new Set(); for (const line of out.split(/\\r?\\n/)) { if (!line.includes('LISTENING')) continue; for (const port of ports) { if (line.includes(':' + port)) { const match = line.trim().match(/(\\d+)$/); if (match) pids.add(match[1]); } } } if (!pids.size) { console.log('Kapatilacak server prosesi bulunamadi.'); process.exit(0); } for (const pid of pids) { try { execSync('taskkill /F /PID ' + pid + ' /T', { stdio: 'ignore' }); } catch {} } console.log('Acik serverlar kapatildi. PID:', [...pids].join(', ')); } else { let killed = false; for (const port of ports) { try { execSync('lsof -ti tcp:' + port + ' | xargs -r kill -9', { stdio: 'ignore' }); killed = true; } catch {} } console.log(killed ? 'Acik serverlar kapatildi.' : 'Kapatilacak server prosesi bulunamadi.'); } } catch { console.log('Kapatilacak server prosesi bulunamadi.'); }\""
   },
   "dependencies": {
@@ -87,6 +88,7 @@
     "autoprefixer": "^10.4.23",
     "better-sqlite3": "^12.6.2",
     "bun-types": "^1.3.10",
+    "concurrently": "^9.2.1",
     "drizzle-kit": "^0.31.9",
     "eslint": "^9.39.1",
     "eslint-plugin-react-hooks": "^7.0.1",
