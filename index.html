@@ -15,6 +15,8 @@
     
     <!-- Canonical URL -->
     <link rel="canonical" href="https://neli.tr" />
+    <link rel="alternate" hreflang="tr" href="https://neli.tr/" />
+    <link rel="alternate" hreflang="x-default" href="https://neli.tr/" />
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
@@ -24,6 +26,7 @@
     <meta property="og:image" content="https://neli.tr/og-image.jpg" />
     <meta property="og:locale" content="tr_TR" />
     <meta property="og:site_name" content="Neli Mühendislik" />
+    <meta property="og:image:alt" content="Neli Mühendislik — İzmir konut projeleri" />
     
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
@@ -31,16 +34,20 @@
     <meta property="twitter:title" content="Neli Mühendislik | İzmir'de Kaliteli Konut Projeleri" />
     <meta property="twitter:description" content="Neli Mühendislik, İzmir'de modern ve kaliteli konut projeleri sunan güvenilir bir inşaat firmasıdır." />
     <meta property="twitter:image" content="https://neli.tr/og-image.jpg" />
+    <meta name="twitter:image:alt" content="Neli Mühendislik — İzmir konut projeleri" />
     
-    <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <!-- Favicon & PWA (Google: crawlable icon, min ~48×48; logo 1920×1920 WebP) -->
+    <link rel="icon" href="/site-logo.webp" type="image/webp" sizes="1920x1920" />
+    <link rel="apple-touch-icon" href="/site-logo.webp" />
+    <link rel="manifest" href="/site.webmanifest" />
     
     <!-- Search Console: DNS doğrulaması için meta tag gerekmez. HTML tag yöntemi kullanırsan google-site-verification meta ekle. -->
     
     <!-- Theme Color -->
     <meta name="theme-color" content="#8B7355" />
     <meta name="msapplication-TileColor" content="#8B7355" />
+    <meta name="geo.region" content="TR-35" />
+    <meta name="geo.placename" content="İzmir" />
     
     <!-- Preconnect to external domains -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -61,29 +68,58 @@
       <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet" />
     </noscript>
     
-    <!-- Structured Data / JSON-LD -->
+    <!-- Structured Data: WebSite + HomeAndConstructionBusiness (zengin sonuç / bilgi paneli sinyalleri) -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "Neli Mühendislik",
-      "url": "https://neli.tr",
-      "logo": "https://neli.tr/logo.png",
-      "description": "İzmir'de modern ve kaliteli konut projeleri sunan güvenilir inşaat firması",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "İzmir",
-        "addressRegion": "İzmir",
-        "addressCountry": "TR"
-      },
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "contactType": "sales",
-        "availableLanguage": "Turkish"
-      },
-      "sameAs": [
-        "https://www.instagram.com/nelimuhendislik",
-        "https://www.facebook.com/nelimuhendislik"
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "@id": "https://neli.tr/#website",
+          "url": "https://neli.tr/",
+          "name": "Neli Mühendislik",
+          "alternateName": "Neli",
+          "description": "İzmir'de modern ve kaliteli konut projeleri sunan güvenilir inşaat firması. Valorya ve Serenita projeleri.",
+          "inLanguage": "tr-TR",
+          "publisher": { "@id": "https://neli.tr/#organization" }
+        },
+        {
+          "@type": "HomeAndConstructionBusiness",
+          "@id": "https://neli.tr/#organization",
+          "name": "Neli Mühendislik",
+          "url": "https://neli.tr",
+          "email": "info@neli.tr",
+          "telephone": "+905547049074",
+          "description": "İzmir'de modern ve kaliteli konut projeleri sunan güvenilir inşaat firması.",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://neli.tr/site-logo.webp",
+            "contentUrl": "https://neli.tr/site-logo.webp"
+          },
+          "image": "https://neli.tr/site-logo.webp",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Dedebaşı Mah. 6131 Sok. No:39/A",
+            "addressLocality": "Karşıyaka",
+            "addressRegion": "İzmir",
+            "addressCountry": "TR"
+          },
+          "areaServed": {
+            "@type": "AdministrativeArea",
+            "name": "İzmir"
+          },
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+905547049074",
+            "email": "info@neli.tr",
+            "contactType": "customer service",
+            "availableLanguage": ["Turkish", "tr"]
+          },
+          "sameAs": [
+            "https://www.instagram.com/nelimuhendislik",
+            "https://www.facebook.com/nelimuhendislik"
+          ]
+        }
       ]
     }
     </script>

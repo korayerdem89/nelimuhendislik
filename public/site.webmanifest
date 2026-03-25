@@ -1,0 +1,21 @@
+{
+  "name": "Neli Mühendislik",
+  "short_name": "Neli",
+  "description": "İzmir'de modern ve kaliteli konut projeleri sunan güvenilir inşaat firması. Valorya ve Serenita projeleri.",
+  "id": "https://neli.tr/",
+  "start_url": "/",
+  "scope": "/",
+  "display": "browser",
+  "background_color": "#faf8f5",
+  "theme_color": "#8B7355",
+  "lang": "tr",
+  "dir": "ltr",
+  "icons": [
+    {
+      "src": "/site-logo.webp",
+      "type": "image/webp",
+      "sizes": "1920x1920",
+      "purpose": "any"
+    }
+  ]
+}
