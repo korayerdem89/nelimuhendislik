@@ -11,6 +11,7 @@ const staticPages = [
   { path: "/blog", priority: "0.8", changefreq: "weekly" },
   { path: "/kurumsal", priority: "0.7", changefreq: "monthly" },
   { path: "/iletisim", priority: "0.7", changefreq: "monthly" },
+  { path: "/randevu", priority: "0.7", changefreq: "monthly" },
   { path: "/kariyer", priority: "0.5", changefreq: "monthly" },
   { path: "/finans", priority: "0.5", changefreq: "monthly" },
 ];

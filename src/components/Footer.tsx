@@ -25,6 +25,7 @@ const footerLinks = [
     links: [
       { name: "Blog", href: "/blog" },
       { name: "Kariyer", href: "/kariyer" },
+      { name: "Randevu", href: "/randevu" },
       { name: "İletişim", href: "/iletisim" },
     ],
   },

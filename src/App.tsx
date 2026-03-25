@@ -18,6 +18,7 @@ const Blog = lazy(() => import("./pages/Blog"));
 const BlogDetail = lazy(() => import("./pages/BlogDetail"));
 const Corporate = lazy(() => import("./pages/Corporate"));
 const Contact = lazy(() => import("./pages/Contact"));
+const Randevu = lazy(() => import("./pages/Randevu"));
 const Career = lazy(() => import("./pages/Career"));
 const Finance = lazy(() => import("./pages/Finance"));
 
@@ -92,6 +93,7 @@ function App() {
                 <Route path="/kariyer" element={<Career />} />
                 <Route path="/finans" element={<Finance />} />
                 <Route path="/iletisim" element={<Contact />} />
+                <Route path="/randevu" element={<Randevu />} />
 
                 <Route path="/panel/login" element={<PanelLogin />} />
                 <Route

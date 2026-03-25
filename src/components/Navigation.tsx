@@ -11,6 +11,7 @@ const navLinks = [
   { name: "Kurumsal", href: "/kurumsal" },
   { name: "Finans", href: "/finans", highlight: true },
   { name: "Kariyer", href: "/kariyer" },
+  { name: "Randevu", href: "/randevu" },
   { name: "İletişim", href: "/iletisim" },
   { name: "Blog", href: "/blog" },
 ];

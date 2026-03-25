@@ -1,51 +1,21 @@
-import { useEffect, useRef, useState, useMemo } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { motion, useInView } from 'framer-motion';
-import { MapPin, Phone, Mail, Clock, Send } from 'lucide-react';
+import { Send } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { toast } from 'sonner';
-import SocialLinks from '@/components/SocialLinks';
 import PageHero from '@/components/sections/PageHero';
 import ContactMapSection from '@/components/sections/ContactMapSection';
+import ContactInfoCards from '@/components/sections/ContactInfoCards';
 import SEO from '@/components/SEO';
-import { useSiteSettings } from '@/hooks/use-site-settings';
+import { useContactSectionData } from '@/hooks/use-contact-section-data';
 
 const WEB3FORMS_ENDPOINT = "https://api.web3forms.com/submit";
 const WEB3FORMS_ACCESS_KEY = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY?.trim() ?? "";
 
 export default function Contact() {
-  const { settings } = useSiteSettings();
-
-  const contactInfo = useMemo(() => [
-    {
-      icon: MapPin,
-      title: 'Adres',
-      content: settings.address || 'Dedebaşı Mah. 6131 Sok. No:39/A\nKarşıyaka, İzmir',
-      href: 'https://maps.google.com/?q=Karşıyaka,İzmir',
-    },
-    {
-      icon: Phone,
-      title: 'Telefon',
-      content: [settings.phone, settings.phone2].filter(Boolean).join('\n') || '+90 554 704 90 74',
-      href: `tel:${(settings.phone || '+905547049074').replace(/\s/g, '')}`,
-    },
-    {
-      icon: Mail,
-      title: 'E-posta',
-      content: settings.email || 'info@neli.tr',
-      href: `mailto:${settings.email || 'info@neli.tr'}`,
-    },
-    {
-      icon: Clock,
-      title: 'Çalışma Saatleri',
-      content: settings.working_hours || 'Pazartesi - Cuma: 09:00 - 18:00\nCumartesi: 10:00 - 14:00',
-      href: null as string | null,
-    },
-  ], [settings]);
-
-  const contactMapEmbedUrl = settings.maps_embed_url ||
-    'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1562.7!2d27.1057313!3d38.4680346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14bbd9dd2adbb0b9%3A0x6988352d26352bc!2zRGVkZWJhxZ_EsSwgNjEzMS4gU2suIE5vOjM5L0EsIDM1NTYwIEthcsWfxLF5YWthL8Swem1pcg!5e0!3m2!1str!2str!4v1707000000000!5m2!1str!2str';
+  const { contactInfo, contactMapEmbedUrl } = useContactSectionData();
   const formRef = useRef<HTMLDivElement>(null);
   const isFormInView = useInView(formRef, { once: true, margin: '-100px' });
 
@@ -269,54 +239,8 @@ export default function Contact() {
                 initial={{ opacity: 0, x: 30 }}
                 animate={isFormInView ? { opacity: 1, x: 0 } : {}}
                 transition={{ duration: 0.6, delay: 0.2 }}
-                className="space-y-4 md:space-y-6"
               >
-                {contactInfo.map((info, index) => (
-                  <motion.div
-                    key={info.title}
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={isFormInView ? { opacity: 1, y: 0 } : {}}
-                    transition={{ duration: 0.5, delay: 0.3 + index * 0.1 }}
-                  >
-                    {info.href ? (
-                      <a
-                        href={info.href}
-                        target={info.href.startsWith('http') ? '_blank' : undefined}
-                        rel={info.href.startsWith('http') ? 'noopener noreferrer' : undefined}
-                        className="group flex items-start gap-3 md:gap-4 p-4 md:p-5 rounded-xl bg-cream-100 hover:bg-neli-600/5 transition-colors duration-300"
-                      >
-                        <div className="w-10 h-10 md:w-12 md:h-12 rounded-lg bg-neli-600/10 flex items-center justify-center flex-shrink-0 group-hover:bg-neli-600 group-hover:scale-110 transition-all duration-300">
-                          <info.icon className="w-4 h-4 md:w-5 md:h-5 text-neli-600 group-hover:text-white transition-colors duration-300" />
-                        </div>
-                        <div>
-                          <h4 className="text-foreground font-medium mb-0.5 md:mb-1">{info.title}</h4>
-                          <p className="text-foreground/60 text-sm whitespace-pre-line">{info.content}</p>
-                        </div>
-                      </a>
-                    ) : (
-                      <div className="flex items-start gap-3 md:gap-4 p-4 md:p-5 rounded-xl bg-cream-100">
-                        <div className="w-10 h-10 md:w-12 md:h-12 rounded-lg bg-neli-600/10 flex items-center justify-center flex-shrink-0">
-                          <info.icon className="w-4 h-4 md:w-5 md:h-5 text-neli-600" />
-                        </div>
-                        <div>
-                          <h4 className="text-foreground font-medium mb-0.5 md:mb-1">{info.title}</h4>
-                          <p className="text-foreground/60 text-sm whitespace-pre-line">{info.content}</p>
-                        </div>
-                      </div>
-                    )}
-                  </motion.div>
-                ))}
-
-                {/* Social Links */}
-                <motion.div
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={isFormInView ? { opacity: 1, y: 0 } : {}}
-                  transition={{ duration: 0.5, delay: 0.7 }}
-                  className="pt-2 md:pt-4"
-                >
-                  <p className="text-foreground/60 text-sm mb-3 md:mb-4">Bizi Takip Edin</p>
-                  <SocialLinks variant="default" />
-                </motion.div>
+                <ContactInfoCards items={contactInfo} inView={isFormInView} />
               </motion.div>
             </div>
           </div>
