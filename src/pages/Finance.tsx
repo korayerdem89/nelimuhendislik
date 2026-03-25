@@ -59,7 +59,7 @@ const PARTICIPATION_BANKS = [
 ];
 
 const NELI_FINANCE_OPTIONS: NeliFinanceOption[] = [
-  { downPaymentPercent: 30, installmentMonths: 24, interestRate: 2.79 },
+  { downPaymentPercent: 30, installmentMonths: 24, interestRate: 2.49 },
   { downPaymentPercent: 50, installmentMonths: 24, interestRate: 1.99 },
   { downPaymentPercent: 70, installmentMonths: 24, interestRate: 0 },
 ];
