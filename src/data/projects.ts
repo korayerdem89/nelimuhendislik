@@ -1,5 +1,7 @@
 import { api } from "@/lib/api";
 
+const PUBLIC_API_BASE = import.meta.env.VITE_API_URL || "";
+
 export type ProjectStatus = "İnşaat" | "Satışta" | "Tamamlandı";
 export type PhaseStatus = "completed" | "active" | "pending";
 
@@ -63,6 +65,30 @@ export const projectStatusLabels: Record<ProjectStatus, string> = {
 
 let _cachedProjects: Project[] | null = null;
 let _fetchPromise: Promise<Project[]> | null = null;
+
+/**
+ * Ana sayfa vitrini — public istek; Authorization eklenmez (önbellek/proxy tutarsızlığı önlenir).
+ * `/home-featured-projects` slug çakışması yoktur; no-store ile taze veri alınır.
+ */
+export async function fetchHomeFeaturedProjects(): Promise<Project[]> {
+  const url = `${PUBLIC_API_BASE}/api/public/home-featured-projects?_=${Date.now()}`;
+  try {
+    const res = await fetch(url, {
+      method: "GET",
+      cache: "no-store",
+      headers: { Accept: "application/json" },
+    });
+    if (!res.ok) {
+      const t = await res.text().catch(() => "");
+      console.error("[fetchHomeFeaturedProjects]", res.status, t);
+      return [];
+    }
+    return res.json() as Promise<Project[]>;
+  } catch (err) {
+    console.error("[fetchHomeFeaturedProjects]", err);
+    return [];
+  }
+}
 
 export async function fetchProjects(): Promise<Project[]> {
   if (_cachedProjects) return _cachedProjects;

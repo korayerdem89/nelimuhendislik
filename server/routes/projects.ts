@@ -1,8 +1,48 @@
 import { Hono } from "hono";
 import { eq, desc, inArray } from "drizzle-orm";
 import { db } from "../db/index.js";
-import { projects } from "../db/schema.js";
+import { projects, siteSettings } from "../db/schema.js";
 import { logActivity } from "../lib/log-activity.js";
+
+const HOME_FEATURED_KEY = "home_featured_project_ids";
+
+function upsertHomeFeaturedSetting(ids: number[]) {
+  const value = JSON.stringify(ids);
+  const now = new Date().toISOString();
+  const existing = db
+    .select()
+    .from(siteSettings)
+    .where(eq(siteSettings.key, HOME_FEATURED_KEY))
+    .get();
+  if (existing) {
+    db.update(siteSettings)
+      .set({ value, updatedAt: now })
+      .where(eq(siteSettings.key, HOME_FEATURED_KEY))
+      .run();
+  } else {
+    db.insert(siteSettings).values({ key: HOME_FEATURED_KEY, value }).run();
+  }
+}
+
+function removeProjectIdsFromHomeFeatured(removeIds: Set<number>) {
+  const row = db
+    .select()
+    .from(siteSettings)
+    .where(eq(siteSettings.key, HOME_FEATURED_KEY))
+    .get();
+  if (!row?.value) return;
+  try {
+    const parsed = JSON.parse(row.value) as unknown;
+    if (!Array.isArray(parsed)) return;
+    const next = parsed
+      .map((x) => Number(x))
+      .filter((n) => Number.isInteger(n) && n > 0 && !removeIds.has(n))
+      .slice(0, 3);
+    upsertHomeFeaturedSetting(next);
+  } catch {
+    /* ignore */
+  }
+}
 
 const projectRoutes = new Hono();
 
@@ -14,6 +54,49 @@ projectRoutes.get("/", (c) => {
     phases: JSON.parse(p.phasesJson),
   }));
   return c.json(mapped);
+});
+
+/** Ana sayfa vitrin sırası (`/:id` ile karışmaması için bu rota önce tanımlı). */
+projectRoutes.get("/home-featured", (c) => {
+  const row = db
+    .select()
+    .from(siteSettings)
+    .where(eq(siteSettings.key, HOME_FEATURED_KEY))
+    .get();
+  let ids: number[] = [];
+  if (row?.value) {
+    try {
+      const parsed = JSON.parse(row.value) as unknown;
+      if (Array.isArray(parsed)) {
+        ids = parsed
+          .map((x) => Number(x))
+          .filter((n) => Number.isInteger(n) && n > 0)
+          .slice(0, 3);
+      }
+    } catch {
+      ids = [];
+    }
+  }
+  return c.json({ ids });
+});
+
+projectRoutes.put("/home-featured", async (c) => {
+  const body = (await c.req.json()) as { ids?: unknown };
+  const raw = body.ids;
+  const normalized = Array.isArray(raw)
+    ? raw
+        .map((x) => Number(x))
+        .filter((n) => Number.isInteger(n) && n > 0)
+        .slice(0, 3)
+    : [];
+  upsertHomeFeaturedSetting(normalized);
+  logActivity(
+    "settings_update",
+    "settings",
+    `Ana sayfa vitrini: ${normalized.length ? normalized.join(", ") : "(varsayılan)"}`,
+    "admin",
+  );
+  return c.json({ ids: normalized });
 });
 
 projectRoutes.get("/:id", (c) => {
@@ -90,6 +173,7 @@ projectRoutes.delete("/:id", (c) => {
   const id = Number(c.req.param("id"));
   const p = db.select().from(projects).where(eq(projects.id, id)).get();
   db.delete(projects).where(eq(projects.id, id)).run();
+  removeProjectIdsFromHomeFeatured(new Set([id]));
   if (p) logActivity("delete", "project", p.name, "admin", id);
   return c.json({ success: true });
 });
@@ -99,6 +183,7 @@ projectRoutes.post("/bulk-delete", async (c) => {
   if (!ids?.length) return c.json({ error: "No ids provided" }, 400);
   const items = db.select().from(projects).where(inArray(projects.id, ids)).all();
   db.delete(projects).where(inArray(projects.id, ids)).run();
+  removeProjectIdsFromHomeFeatured(new Set(ids));
   logActivity("bulk_delete", "project", `${items.length} proje silindi`, "admin", undefined, JSON.stringify(ids));
   return c.json({ success: true, count: items.length });
 });

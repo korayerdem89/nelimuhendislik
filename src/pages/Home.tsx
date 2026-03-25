@@ -6,7 +6,7 @@ import HeroSection from "../components/HeroSection";
 import TimelineMilestones from "@/components/sections/TimelineMilestones";
 import PrimaryCtaSection from "@/components/sections/PrimaryCtaSection";
 import ProjectsMapSection from "@/components/sections/ProjectsMapSection";
-import { fetchProjects } from "@/data/projects";
+import { fetchHomeFeaturedProjects } from "@/data/projects";
 import type { Project } from "@/data/projects";
 import SEO from "@/components/SEO";
 import OptimizedImage from "@/components/OptimizedImage";
@@ -44,13 +44,21 @@ export default function Home() {
   const [milestones, setMilestones] = useState<MilestoneItem[]>([]);
 
   useEffect(() => {
-    fetchProjects().then(setProjects);
+    const loadFeatured = () => fetchHomeFeaturedProjects().then(setProjects);
+    loadFeatured();
+
     fetch("/api/public/milestones")
       .then((r) => r.json())
       .then((data: MilestoneItem[]) =>
         setMilestones(data.length > 0 ? data : FALLBACK_MILESTONES),
       )
       .catch(() => setMilestones(FALLBACK_MILESTONES));
+
+    const onVisible = () => {
+      if (document.visibilityState === "visible") loadFeatured();
+    };
+    document.addEventListener("visibilitychange", onVisible);
+    return () => document.removeEventListener("visibilitychange", onVisible);
   }, []);
 
   const isAboutInView = useInView(aboutRef, { once: true, margin: "-100px" });
@@ -199,7 +207,7 @@ export default function Home() {
 
             {/* Projects Grid */}
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
-              {projects.slice(0, 3).map((project, index) => (
+              {projects.map((project, index) => (
                 <motion.div
                   key={project.id}
                   initial={{ opacity: 0, y: 30 }}

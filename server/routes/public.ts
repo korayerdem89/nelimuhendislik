@@ -1,9 +1,19 @@
 import { Hono } from "hono";
-import { eq, desc, asc } from "drizzle-orm";
+import { eq, desc, asc, inArray } from "drizzle-orm";
 import { db } from "../db/index.js";
 import { blogPosts, projects, mapPins, siteSettings, milestones } from "../db/schema.js";
 
 const publicRoutes = new Hono();
+
+const HOME_FEATURED_KEY = "home_featured_project_ids";
+
+function mapProjectRow(p: (typeof projects.$inferSelect)) {
+  return {
+    ...p,
+    details: JSON.parse(p.detailsJson),
+    phases: JSON.parse(p.phasesJson),
+  };
+}
 
 publicRoutes.onError((err, c) => {
   console.error(`[public ${c.req.method} ${c.req.path}]`, err);
@@ -37,13 +47,63 @@ publicRoutes.get("/blog/:slug", (c) => {
 
 publicRoutes.get("/projects", (c) => {
   const all = db.select().from(projects).orderBy(desc(projects.id)).all();
-  return c.json(
-    all.map((p) => ({
-      ...p,
-      details: JSON.parse(p.detailsJson),
-      phases: JSON.parse(p.phasesJson),
-    })),
-  );
+  return c.json(all.map(mapProjectRow));
+});
+
+function getHomeFeaturedProjectsPayload() {
+  const row = db
+    .select()
+    .from(siteSettings)
+    .where(eq(siteSettings.key, HOME_FEATURED_KEY))
+    .get();
+  let ids: number[] = [];
+  if (row?.value) {
+    try {
+      const parsed = JSON.parse(row.value) as unknown;
+      if (Array.isArray(parsed)) {
+        ids = parsed
+          .map((x) => Number(x))
+          .filter((n) => Number.isInteger(n) && n > 0)
+          .slice(0, 3);
+      }
+    } catch {
+      ids = [];
+    }
+  }
+
+  const all = db.select().from(projects).orderBy(desc(projects.id)).all();
+  if (ids.length === 0) {
+    return all.slice(0, 3).map(mapProjectRow);
+  }
+
+  const rows = db
+    .select()
+    .from(projects)
+    .where(inArray(projects.id, ids))
+    .all();
+  const byId = new Map(rows.map((p) => [p.id, p]));
+  const ordered = ids.map((id) => byId.get(id)).filter(Boolean) as typeof rows;
+  if (ordered.length === 0) {
+    return all.slice(0, 3).map(mapProjectRow);
+  }
+  return ordered.map(mapProjectRow);
+}
+
+function applyNoStore(c: { header: (k: string, v: string) => void }) {
+  c.header("Cache-Control", "no-store, no-cache, must-revalidate, max-age=0");
+  c.header("Pragma", "no-cache");
+}
+
+/** Ana sayfa vitrini — `/projects/:slug` ile çakışmayan adres (önbellek kapalı). */
+publicRoutes.get("/home-featured-projects", (c) => {
+  applyNoStore(c);
+  return c.json(getHomeFeaturedProjectsPayload());
+});
+
+/** Eski istemciler için aynı yanıt. */
+publicRoutes.get("/projects/home-featured", (c) => {
+  applyNoStore(c);
+  return c.json(getHomeFeaturedProjectsPayload());
 });
 
 publicRoutes.get("/projects/:slug", (c) => {
