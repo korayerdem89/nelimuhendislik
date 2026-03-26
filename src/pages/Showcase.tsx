@@ -50,18 +50,25 @@ const projects: ProjectData[] = [
     ],
     featureDetails: [
       {
-        text: "Modern ve minimalist tasarım",
-        image: "/projects/serenitaprestige/1.webp",
+        text: "Merkezi konum avantajı",
+        image: "/features/valorya1_location.webp",
       },
       {
-        text: "Merkezi konum avantajı",
-        image: "/projects/serenitaprestige/2.webp",
+        text: "Depreme karşı oldukça dayanıklı yapı",
+        image: "/features/earthquake.webp",
+      },
+      {
+        text: "Enerji verimliliği yüksek, güçlü yalıtım",
+        image: "/features/isolation.webp",
+      },
+      {
+        text: "Modern ve minimalist tasarım",
+        image: "/features/minimalist.webp",
       },
       {
         text: "Yüksek yatırım değeri",
-        image: "/projects/serenitaprestige/3.webp",
+        image: "/features/investment.webp",
       },
-      { text: "Sosyal yaşam alanları", image: "/blog/konut-projeleri.webp" },
     ],
     price: "2.700.000 TL'den Başlayan Fiyatlarla",
   },
@@ -70,24 +77,30 @@ const projects: ProjectData[] = [
     name: "Valorya 2",
     tab: "Valorya 2",
     location: "Karşıyaka, İzmir",
-    heroImage: "/projects/valorya2/1.webp",
+    heroImage: "/projects/valorya2/cover.webp",
     heroGradientFallback: "from-slate-800 via-slate-700 to-slate-600",
     flatTypes: [
       {
         label: "1+1",
-        images: ["/projects/valorya2/1.webp", "/projects/valorya2/2.webp"],
+        images: [
+          "/projects/valorya2/4.webp",
+          "/projects/valorya2/5.webp",
+          "/projects/valorya2/6.webp",
+          "/projects/valorya2/7.webp",
+          "/projects/valorya2/8.webp",
+          "/projects/valorya2/9.webp",
+          "/projects/valorya2/10.webp",
+          "/projects/valorya2/11.webp",
+          "/projects/valorya2/12.webp",
+        ],
       },
       {
         label: "2+1",
-        images: ["/projects/valorya2/2.webp", "/projects/valorya2/3.webp"],
+        images: ["/projects/valorya2/3.webp"],
       },
       {
         label: "3+1",
-        images: [
-          "/projects/valorya2/3.webp",
-          "/projects/valorya2/1.webp",
-          "/projects/valorya2/2.webp",
-        ],
+        images: ["/projects/valorya2/2.webp", "/projects/valorya2/1.webp"],
       },
     ],
     featureDetails: [
@@ -481,7 +494,7 @@ export default function Showcase() {
                     className="mt-4 flex w-full items-center justify-center gap-2.5 rounded-xl bg-[#25D366] py-4 text-[15px] font-semibold text-white shadow-lg shadow-[#25D366]/20 transition-all hover:bg-[#20BD5A] active:scale-[0.98]"
                   >
                     <MessageCircle className="h-5 w-5" />
-                    <span>Sohbete Geri Dön ve Detayları Öğren</span>
+                    <span>WhatsApp Üzerinden Detayları Öğren</span>
                     <ChevronRight className="h-4 w-4 opacity-70" />
                   </a>
 
@@ -615,18 +628,16 @@ export default function Showcase() {
             </div>
 
             {/* Map */}
-            <div className="mt-6 lg:mt-0">
-              <div className="overflow-hidden rounded-2xl border border-cream-200 shadow-soft ring-1 ring-black/5">
-                <div className="aspect-video w-full bg-cream-100 lg:aspect-auto lg:h-full lg:min-h-[320px]">
-                  <iframe
-                    title="Neli Mühendislik konumu"
-                    src={contactMapEmbedUrl}
-                    className="h-full w-full border-0"
-                    loading="lazy"
-                    referrerPolicy="no-referrer-when-downgrade"
-                    allowFullScreen
-                  />
-                </div>
+            <div className="mt-6 lg:mt-0 lg:flex lg:flex-col">
+              <div className="flex-1 overflow-hidden rounded-2xl border border-cream-200 shadow-soft ring-1 ring-black/5">
+                <iframe
+                  title="Neli Mühendislik konumu"
+                  src={contactMapEmbedUrl}
+                  className="aspect-square w-full border-0 lg:aspect-auto lg:h-full lg:min-h-[420px]"
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  allowFullScreen
+                />
               </div>
               <a
                 href={mapsOpenHref}
