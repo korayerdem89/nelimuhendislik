@@ -40,25 +40,30 @@ const projects: ProjectData[] = [
     name: "Valorya 1",
     tab: "Valorya 1",
     location: "Çiğli, İzmir",
-    heroImage: "/projects/serenitaprestige/1.webp",
+    heroImage: "/projects/valorya1/cover.webp",
     heroGradientFallback: "from-neli-700 via-neli-600 to-neli-500",
     flatTypes: [
       {
         label: "1+1",
-        images: [
-          "/projects/serenitaprestige/1.webp",
-          "/projects/serenitaprestige/2.webp",
-          "/projects/serenitaprestige/3.webp",
-        ],
+        images: ["/projects/valorya1/1.webp"],
       },
     ],
     featureDetails: [
-      { text: "Modern ve minimalist tasarım", image: "/projects/serenitaprestige/1.webp" },
-      { text: "Merkezi konum avantajı", image: "/projects/serenitaprestige/2.webp" },
-      { text: "Yüksek yatırım değeri", image: "/projects/serenitaprestige/3.webp" },
+      {
+        text: "Modern ve minimalist tasarım",
+        image: "/projects/serenitaprestige/1.webp",
+      },
+      {
+        text: "Merkezi konum avantajı",
+        image: "/projects/serenitaprestige/2.webp",
+      },
+      {
+        text: "Yüksek yatırım değeri",
+        image: "/projects/serenitaprestige/3.webp",
+      },
       { text: "Sosyal yaşam alanları", image: "/blog/konut-projeleri.webp" },
     ],
-    price: "3.500.000 TL'den Başlayan Fiyatlarla",
+    price: "2.700.000 TL'den Başlayan Fiyatlarla",
   },
   {
     id: "valorya-2",
@@ -68,15 +73,31 @@ const projects: ProjectData[] = [
     heroImage: "/projects/valorya2/1.webp",
     heroGradientFallback: "from-slate-800 via-slate-700 to-slate-600",
     flatTypes: [
-      { label: "1+1", images: ["/projects/valorya2/1.webp", "/projects/valorya2/2.webp"] },
-      { label: "2+1", images: ["/projects/valorya2/2.webp", "/projects/valorya2/3.webp"] },
-      { label: "3+1", images: ["/projects/valorya2/3.webp", "/projects/valorya2/1.webp", "/projects/valorya2/2.webp"] },
+      {
+        label: "1+1",
+        images: ["/projects/valorya2/1.webp", "/projects/valorya2/2.webp"],
+      },
+      {
+        label: "2+1",
+        images: ["/projects/valorya2/2.webp", "/projects/valorya2/3.webp"],
+      },
+      {
+        label: "3+1",
+        images: [
+          "/projects/valorya2/3.webp",
+          "/projects/valorya2/1.webp",
+          "/projects/valorya2/2.webp",
+        ],
+      },
     ],
     featureDetails: [
       { text: "Lüks iç mekan tasarımı", image: "/projects/valorya2/1.webp" },
       { text: "Deniz manzaralı daireler", image: "/projects/valorya2/2.webp" },
       { text: "Akıllı ev sistemleri", image: "/projects/valorya2/3.webp" },
-      { text: "Yeşil yaşam konsepti", image: "/projects/serenitaprestige/1.webp" },
+      {
+        text: "Yeşil yaşam konsepti",
+        image: "/projects/serenitaprestige/1.webp",
+      },
     ],
     price: "4.200.000 TL'den Başlayan Fiyatlarla",
   },
@@ -88,13 +109,38 @@ const projects: ProjectData[] = [
     heroImage: "/projects/serenitaprestige/2.webp",
     heroGradientFallback: "from-stone-800 via-stone-700 to-stone-600",
     flatTypes: [
-      { label: "1+1", images: ["/projects/serenitaprestige/1.webp", "/projects/valorya2/1.webp"] },
-      { label: "2+1", images: ["/projects/serenitaprestige/2.webp", "/projects/valorya2/2.webp"] },
-      { label: "3+1", images: ["/projects/serenitaprestige/3.webp", "/projects/valorya2/3.webp", "/projects/serenitaprestige/1.webp"] },
+      {
+        label: "1+1",
+        images: [
+          "/projects/serenitaprestige/1.webp",
+          "/projects/valorya2/1.webp",
+        ],
+      },
+      {
+        label: "2+1",
+        images: [
+          "/projects/serenitaprestige/2.webp",
+          "/projects/valorya2/2.webp",
+        ],
+      },
+      {
+        label: "3+1",
+        images: [
+          "/projects/serenitaprestige/3.webp",
+          "/projects/valorya2/3.webp",
+          "/projects/serenitaprestige/1.webp",
+        ],
+      },
     ],
     featureDetails: [
-      { text: "Geniş bahçe katı seçenekleri", image: "/projects/serenitaprestige/1.webp" },
-      { text: "Spor ve wellness alanları", image: "/projects/serenitaprestige/2.webp" },
+      {
+        text: "Geniş bahçe katı seçenekleri",
+        image: "/projects/serenitaprestige/1.webp",
+      },
+      {
+        text: "Spor ve wellness alanları",
+        image: "/projects/serenitaprestige/2.webp",
+      },
       { text: "24 saat güvenlik", image: "/projects/serenitaprestige/3.webp" },
       { text: "Metro hattına yakın konum", image: "/projects/valorya2/2.webp" },
     ],
@@ -119,7 +165,10 @@ function FlatImageCarousel({
   carouselKey: string;
   altPrefix: string;
 }) {
-  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: images.length > 1, align: "start" });
+  const [emblaRef, emblaApi] = useEmblaCarousel({
+    loop: images.length > 1,
+    align: "start",
+  });
   const [selected, setSelected] = useState(0);
 
   useEffect(() => {
@@ -148,10 +197,16 @@ function FlatImageCarousel({
 
   return (
     <div className="relative">
-      <div className="overflow-hidden rounded-2xl shadow-soft ring-1 ring-black/5" ref={emblaRef}>
+      <div
+        className="overflow-hidden rounded-2xl shadow-soft ring-1 ring-black/5"
+        ref={emblaRef}
+      >
         <div className="flex touch-pan-y">
           {images.map((src, i) => (
-            <div className="min-w-0 shrink-0 grow-0 basis-full" key={`${carouselKey}-${src}-${i}`}>
+            <div
+              className="min-w-0 shrink-0 grow-0 basis-full"
+              key={`${carouselKey}-${src}-${i}`}
+            >
               <div className="aspect-square">
                 <img
                   src={src}
@@ -237,7 +292,9 @@ export default function Showcase() {
   }, [flatTypeIndex, activeIndex]);
 
   const addressItem = contactInfo.find((c) => c.title === "Adres");
-  const mapsOpenHref = addressItem?.href || "https://maps.google.com/?q=Neli+Mühendislik+Karşıyaka+İzmir";
+  const mapsOpenHref =
+    addressItem?.href ||
+    "https://maps.google.com/?q=Neli+Mühendislik+Karşıyaka+İzmir";
 
   return (
     <div className="min-h-screen bg-cream-50/80">
@@ -272,7 +329,7 @@ export default function Showcase() {
               className="text-base font-bold tracking-tight text-foreground lg:text-lg"
               style={{ fontFamily: "'DM Sans', sans-serif" }}
             >
-              Neli Mühendislik
+              Daire Satışı Olan Güncel Projelerimiz
             </h1>
           </div>
           <div className="border-t border-cream-200/80">
@@ -318,7 +375,7 @@ export default function Showcase() {
               {/* LEFT column (3/5) — visuals */}
               <div className="lg:col-span-3">
                 {/* Hero — wide 16:9 */}
-                <div className="relative aspect-video w-full overflow-hidden rounded-2xl shadow-soft-lg ring-1 ring-black/5">
+                <div className="relative aspect-square w-full overflow-hidden rounded-2xl shadow-soft-lg ring-1 ring-black/5">
                   <img
                     src={active.heroImage}
                     alt={`${active.name} proje görseli`}
@@ -328,7 +385,8 @@ export default function Showcase() {
                     onError={(e) => {
                       const t = e.currentTarget;
                       t.style.display = "none";
-                      const fallback = t.nextElementSibling as HTMLElement | null;
+                      const fallback =
+                        t.nextElementSibling as HTMLElement | null;
                       if (fallback) fallback.classList.remove("hidden");
                     }}
                   />
@@ -397,7 +455,9 @@ export default function Showcase() {
                     </h2>
                     <div className="flex items-center gap-1.5 text-foreground/55">
                       <MapPin className="h-4 w-4 shrink-0 text-neli-600" />
-                      <span className="text-sm font-medium">{active.location}</span>
+                      <span className="text-sm font-medium">
+                        {active.location}
+                      </span>
                     </div>
                   </div>
 
@@ -444,7 +504,7 @@ export default function Showcase() {
             {/* ── Features — full width section below the 2-col grid ── */}
             <div className="mt-8 lg:mt-14">
               <p className="mb-4 text-xs font-semibold uppercase tracking-wider text-foreground/40 lg:mb-6 lg:text-sm">
-                Öne çıkanlar
+                Proje Özellikleri
               </p>
               <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:gap-5">
                 {active.featureDetails.map((item, i) => (
@@ -455,7 +515,7 @@ export default function Showcase() {
                     transition={{ delay: i * 0.05 }}
                     className="group overflow-hidden rounded-2xl border border-cream-200/90 bg-white shadow-xs transition-shadow hover:shadow-soft"
                   >
-                    <div className="relative aspect-[16/10] overflow-hidden bg-cream-100">
+                    <div className="relative aspect-square overflow-hidden bg-cream-100">
                       <img
                         src={item.image}
                         alt=""
@@ -479,7 +539,9 @@ export default function Showcase() {
                 <p className="mb-1.5 text-xs font-medium uppercase tracking-widest text-foreground/40">
                   Başlangıç Fiyatı
                 </p>
-                <p className="text-xl font-bold tracking-tight text-foreground">{active.price}</p>
+                <p className="text-xl font-bold tracking-tight text-foreground">
+                  {active.price}
+                </p>
               </div>
               <a
                 href={buildWhatsAppLink(active.name)}
