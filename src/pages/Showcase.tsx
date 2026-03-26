@@ -152,7 +152,7 @@ function FlatImageCarousel({
         <div className="flex touch-pan-y">
           {images.map((src, i) => (
             <div className="min-w-0 shrink-0 grow-0 basis-full" key={`${carouselKey}-${src}-${i}`}>
-              <div className="aspect-video">
+              <div className="aspect-square">
                 <img
                   src={src}
                   alt={`${altPrefix} — görsel ${i + 1}`}
