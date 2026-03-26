@@ -22,6 +22,8 @@ const Randevu = lazy(() => import("./pages/Randevu"));
 const Career = lazy(() => import("./pages/Career"));
 const Finance = lazy(() => import("./pages/Finance"));
 
+const Showcase = lazy(() => import("./pages/Showcase"));
+
 const PanelLayout = lazy(() => import("./pages/panel/PanelLayout"));
 const PanelLogin = lazy(() => import("./pages/panel/Login"));
 const Dashboard = lazy(() => import("./pages/panel/Dashboard"));
@@ -57,9 +59,11 @@ function ScrollToTop() {
 
 function PublicLayout() {
   const location = useLocation();
-  const isPanel = location.pathname.startsWith("/panel");
+  const hidden =
+    location.pathname.startsWith("/panel") ||
+    location.pathname.startsWith("/showcase");
 
-  if (isPanel) return null;
+  if (hidden) return null;
 
   return (
     <>
@@ -70,7 +74,11 @@ function PublicLayout() {
 
 function PublicFooter() {
   const location = useLocation();
-  if (location.pathname.startsWith("/panel")) return null;
+  const hidden =
+    location.pathname.startsWith("/panel") ||
+    location.pathname.startsWith("/showcase");
+
+  if (hidden) return null;
   return <Footer />;
 }
 
@@ -94,6 +102,7 @@ function App() {
                 <Route path="/finans" element={<Finance />} />
                 <Route path="/iletisim" element={<Contact />} />
                 <Route path="/randevu" element={<Randevu />} />
+                <Route path="/showcase" element={<Showcase />} />
 
                 <Route path="/panel/login" element={<PanelLogin />} />
                 <Route
