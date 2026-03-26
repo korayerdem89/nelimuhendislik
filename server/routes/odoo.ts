@@ -19,14 +19,80 @@ interface AppointmentBody {
   note?: string;
 }
 
+function stripHostProtocol(host: string): string {
+  let h = host.trim();
+  if (h.startsWith("https://")) h = h.slice(8);
+  else if (h.startsWith("http://")) h = h.slice(7);
+  const slash = h.indexOf("/");
+  return slash >= 0 ? h.slice(0, slash) : h;
+}
+
+/**
+ * Resolves XML-RPC endpoint. Hosted Odoo (odoo.com, reverse proxy) almost always needs HTTPS + port 443.
+ * Set ODOO_URL (e.g. https://yourcompany.odoo.com) or ODOO_USE_SSL=true with ODOO_HOST.
+ */
+function resolveOdooConnection(): { host: string; port: number; secure: boolean } {
+  const urlRaw = process.env.ODOO_URL?.trim();
+  if (urlRaw) {
+    const withProto = urlRaw.includes("://") ? urlRaw : `https://${urlRaw}`;
+    const u = new URL(withProto);
+    const port = u.port ? Number(u.port) : u.protocol === "https:" ? 443 : 80;
+    return {
+      host: u.hostname,
+      port,
+      secure: u.protocol === "https:",
+    };
+  }
+
+  const hostRaw = process.env.ODOO_HOST || "localhost";
+  const secureFromPrefix = hostRaw.trim().startsWith("https://");
+  const useSslFlag =
+    process.env.ODOO_USE_SSL === "1" ||
+    process.env.ODOO_USE_SSL === "true" ||
+    process.env.ODOO_USE_SSL === "yes";
+  const host = stripHostProtocol(hostRaw);
+  const secure = useSslFlag || secureFromPrefix;
+
+  const portRaw = process.env.ODOO_PORT;
+  const explicit =
+    portRaw !== undefined && String(portRaw).trim() !== ""
+      ? Number(portRaw)
+      : NaN;
+  const port =
+    Number.isFinite(explicit) && explicit > 0
+      ? explicit
+      : secure
+        ? 443
+        : 8069;
+
+  return { host, port, secure };
+}
+
 function getOdooConfig() {
-  const host = process.env.ODOO_HOST || "localhost";
-  const port = Number(process.env.ODOO_PORT) || 8069;
+  const { host, port, secure } = resolveOdooConnection();
   const db = process.env.ODOO_DB || "";
   const username = process.env.ODOO_USERNAME || "";
   const password = process.env.ODOO_PASSWORD || "";
 
-  return { host, port, db, username, password };
+  return { host, port, secure, db, username, password };
+}
+
+function formatXmlRpcCallbackError(error: unknown): string {
+  if (error instanceof Error) return error.message;
+  if (typeof error === "object" && error !== null && "faultString" in error) {
+    return String((error as { faultString: string }).faultString);
+  }
+  return String(error);
+}
+
+function createOdooXmlRpcClient(
+  config: ReturnType<typeof getOdooConfig>,
+  path: "/xmlrpc/2/common" | "/xmlrpc/2/object",
+) {
+  const options = { host: config.host, port: config.port, path };
+  return config.secure
+    ? xmlrpc.createSecureClient(options)
+    : xmlrpc.createClient(options);
 }
 
 function getAppointmentDurationHours(): number {
@@ -149,20 +215,26 @@ function isWithinBusinessHours(
 }
 
 function odooAuthenticate(config: ReturnType<typeof getOdooConfig>): Promise<number> {
-  const client = xmlrpc.createClient({
-    host: config.host,
-    port: config.port,
-    path: "/xmlrpc/2/common",
-  });
+  const client = createOdooXmlRpcClient(config, "/xmlrpc/2/common");
 
   return new Promise((resolve, reject) => {
     client.methodCall(
       "authenticate",
       [config.db, config.username, config.password, {}],
-      (error: object, uid: number) => {
-        if (error) return reject(new Error("Odoo authentication failed"));
-        if (!uid) return reject(new Error("Invalid Odoo credentials"));
-        resolve(uid);
+      (error: unknown, uid: unknown) => {
+        if (error) {
+          const detail = formatXmlRpcCallbackError(error);
+          return reject(
+            new Error(
+              detail ? `Odoo XML-RPC: ${detail}` : "Odoo authentication failed",
+            ),
+          );
+        }
+        const n = typeof uid === "number" ? uid : Number(uid);
+        if (!Number.isFinite(n) || n <= 0) {
+          return reject(new Error("Invalid Odoo credentials"));
+        }
+        resolve(n);
       },
     );
   });
@@ -176,11 +248,7 @@ function odooExecuteKw<T>(
   args: unknown[],
   kwargs: Record<string, unknown> = {},
 ): Promise<T> {
-  const client = xmlrpc.createClient({
-    host: config.host,
-    port: config.port,
-    path: "/xmlrpc/2/object",
-  });
+  const client = createOdooXmlRpcClient(config, "/xmlrpc/2/object");
 
   return new Promise((resolve, reject) => {
     client.methodCall(
@@ -217,15 +285,13 @@ function getOrganizerUserId(uid: number): number {
   return uid;
 }
 
+/** Implicit AND — Odoo 19 rejects an extra `&` in prefix form (3 leaves need 2 `&`, not 3). */
 function overlapDomain(
   organizerId: number,
   startStr: string,
   stopStr: string,
 ): unknown[] {
   return [
-    "&",
-    "&",
-    "&",
     ["user_id", "=", organizerId],
     ["start", "<", stopStr],
     ["stop", ">", startStr],
@@ -299,8 +365,6 @@ odooRoutes.get("/appointment/availability", async (c) => {
     const organizerId = getOrganizerUserId(uid);
 
     const domain: unknown[] = [
-      "&",
-      "&",
       ["user_id", "=", organizerId],
       ["start", "<", rangeEndStr],
       ["stop", ">", rangeStartStr],
@@ -381,8 +445,7 @@ odooRoutes.post("/appointment", async (c) => {
 
     const existing = await odooExecuteKw<number[]>(config, uid, "calendar.event", "search", [
       overlapDomain(organizerId, startStr, stopStr),
-      { limit: 1 },
-    ]);
+    ], { limit: 1 });
 
     if (existing.length > 0) {
       return c.json(
