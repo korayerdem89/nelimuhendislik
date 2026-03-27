@@ -286,7 +286,8 @@ function FeatureDetailTagPills({
     <div className={className}>
       {features.map((f, i) => {
         const Icon = FEATURE_TAG_ICONS[i % FEATURE_TAG_ICONS.length];
-        const pillClass = FEATURE_TAG_PILL_CLASSES[i % FEATURE_TAG_PILL_CLASSES.length];
+        const pillClass =
+          FEATURE_TAG_PILL_CLASSES[i % FEATURE_TAG_PILL_CLASSES.length];
         return (
           <span
             key={`${projectId}-feature-tag-${i}-${f.text}`}
@@ -717,7 +718,7 @@ export default function Showcase() {
                 className="mt-4 flex w-full items-center justify-center gap-2.5 rounded-xl bg-[#25D366] py-4 text-[15px] font-semibold text-white shadow-lg shadow-[#25D366]/20 transition-all hover:bg-[#20BD5A] active:scale-[0.98]"
               >
                 <MessageCircle className="h-5 w-5" />
-                <span>Sohbete Geri Dön ve Detayları Öğren</span>
+                <span>WhatsApp Üzerinden Detayları Öğren</span>
                 <ChevronRight className="h-4 w-4 opacity-70" />
               </a>
               <FeatureDetailTagPills
