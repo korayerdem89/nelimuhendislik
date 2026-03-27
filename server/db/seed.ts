@@ -1,6 +1,6 @@
 import { Database } from "bun:sqlite";
 import { drizzle } from "drizzle-orm/bun-sqlite";
-import { eq } from "drizzle-orm";
+import { eq, inArray } from "drizzle-orm";
 import { resolve } from "path";
 import { PROJECT_ROOT } from "../paths.js";
 import {
@@ -18,122 +18,15 @@ sqlite.exec("PRAGMA journal_mode = WAL;");
 sqlite.exec("PRAGMA foreign_keys = ON;");
 const db = drizzle(sqlite);
 
+/** Seed’de tutulan tek blog yazısı (Farsça); kapak görseli zorunlu. */
 const BLOG_DATA = [
-  {
-    slug: "izmir-konut-projelerinde-dikkat-edilmesi-gerekenler",
-    title: "İzmir Konut Projelerinde Dikkat Edilmesi Gerekenler",
-    excerpt:
-      "İzmir'de konut almak, zemin durumu, mühendislik kalitesi ve doğru finansman modelini bulma sürecidir.",
-    content: `<p>İzmir'de konut almak, sadece bir lokasyon seçimi değil; zemin durumu, mühendislik kalitesi ve doğru finansman modelini bulma sürecidir.</p><h2>Ev Alırken Sorgulamanız Gereken 3 Temel Kriter</h2><h3>1. Deprem Güvenliği ve Beton Kalitesi</h3><p>İzmir'in tektonik yapısı gereği, binanın sadece güncel yönetmeliklere "uygun" olması asgari bir şarttır.</p><h3>2. İmalat Teknolojisi ve İşçilik</h3><p>Kaliteli bir konut, lazer ölçümlerle milimetrik olarak inşa edilmiş olmalıdır.</p><h3>3. Finansman Güvenliği ve Banka Garantörlüğü</h3><p>Firmanın arkasında banka desteğinin olması, projenin finansal olarak denetlendiğini gösterir.</p>`,
-    coverImage: "/blog/konut-projeleri.webp",
-    category: "İnşaat",
-    tags: JSON.stringify(["konut", "izmir", "yatırım", "satın alma"]),
-    featured: true,
-    status: "published" as const,
-    metaTitle:
-      "İzmir Konut Projelerinde Dikkat Edilmesi Gerekenler | Neli Mühendislik",
-    metaDescription:
-      "İzmir'de konut alırken dikkat edilmesi gerekenler: deprem güvenliği, beton kalitesi, imalat teknolojisi ve banka garantörlüğü.",
-    metaKeywords:
-      "izmir konut, konut satın alma, inşaat projeleri, neli mühendislik",
-    publishedAt: "2026-02-15",
-  },
-  {
-    slug: "modern-mimari-trendleri-2026",
-    title: "Modern Mimari Trendleri 2026",
-    excerpt:
-      "2026 yılında öne çıkan mimari tasarım trendleri ve sürdürülebilir yapılaşma yaklaşımları.",
-    content: `<p>Mimari dünyası her geçen gün yeniliklerle şekilleniyor.</p><h2>Sürdürülebilir Malzemeler</h2><p>Çevre dostu malzemeler ve yenilenebilir kaynakların kullanımı artıyor.</p><h2>Akıllı Ev Sistemleri</h2><p>Teknoloji entegrasyonu artık lüks değil standart.</p>`,
-    coverImage: "/images/blog/mimari-trendler.webp",
-    category: "Mimari",
-    tags: JSON.stringify(["mimari", "trendler", "sürdürülebilirlik", "2026"]),
-    featured: false,
-    status: "published" as const,
-    metaTitle: "Modern Mimari Trendleri 2026 | Neli Mühendislik",
-    metaDescription: "2026 yılında öne çıkan mimari tasarım trendleri.",
-    metaKeywords:
-      "mimari trendleri 2026, modern tasarım, sürdürülebilir mimari",
-    publishedAt: "2026-01-28",
-  },
-  {
-    slug: "valorya-projeleri-ile-yeni-bir-yasam",
-    title: "Valorya Projeleri ile Yeni Bir Yaşam",
-    excerpt:
-      "Valorya serisi projelerimizle Çiğli ve Karşıyaka'da ayrıcalıklı yaşam alanları sunuyoruz.",
-    content: `<p>Valorya projelerimiz, modern yaşamın tüm ihtiyaçlarını karşılayan özel tasarımlarla öne çıkıyor.</p><h2>Valorya Farkı</h2><p>Her Valorya projesi titizlikle planlanıyor.</p>`,
-    coverImage: "/images/blog/valorya-projeleri.webp",
-    category: "Projeler",
-    tags: JSON.stringify(["valorya", "çiğli", "karşıyaka", "konut projesi"]),
-    featured: true,
-    status: "published" as const,
-    metaTitle: "Valorya Projeleri ile Yeni Bir Yaşam | Neli Mühendislik",
-    metaDescription:
-      "Valorya serisi projelerimizle Çiğli ve Karşıyaka'da ayrıcalıklı yaşam alanları.",
-    metaKeywords:
-      "valorya projesi, çiğli konut, karşıyaka daire, neli mühendislik",
-    publishedAt: "2026-01-10",
-  },
-  {
-    slug: "restorasyon-projelerinde-dikkat-edilmesi-gerekenler",
-    title: "Restorasyon Projelerinde Dikkat Edilmesi Gerekenler",
-    excerpt:
-      "Tarihi yapıların restorasyonunda uzmanlık gerektiren noktalar ve doğru yaklaşım yöntemleri.",
-    content: `<p>Restorasyon, modern inşaatın aksine özel bir uzmanlık ve hassasiyet gerektirir.</p><h2>Özgün Dokunun Korunması</h2><p>Tarihi yapıların ruhunu korumak için özgün malzemeler ve teknikler kullanılmalı.</p>`,
-    coverImage: "/images/blog/restorasyon.webp",
-    category: "Restorasyon",
-    tags: JSON.stringify(["restorasyon", "tarihi yapı", "renovasyon", "izmir"]),
-    featured: false,
-    status: "published" as const,
-    metaTitle:
-      "Restorasyon Projelerinde Dikkat Edilmesi Gerekenler | Neli Mühendislik",
-    metaDescription:
-      "Tarihi yapı restorasyonunda uzmanlık gerektiren noktalar.",
-    metaKeywords: "restorasyon, tarihi yapı restorasyonu, izmir restorasyon",
-    publishedAt: "2026-03-01",
-  },
-  {
-    slug: "evinizi-degerlendirecek-dekorasyon-onerileri",
-    title: "Evinizi Değerlendirecek Dekorasyon Önerileri",
-    excerpt:
-      "Küçük dokunuşlarla yaşam alanlarınızı daha fonksiyonel ve estetik hale getirme ipuçları.",
-    content: `<p>Dekorasyon, bir evi gerçekten ev yapan detaylardır.</p><h2>Aydınlatmanın Gücü</h2><p>Doğal ışığı maksimize eden perde seçimleri.</p>`,
-    coverImage: "/images/blog/dekorasyon.webp",
-    category: "Dekorasyon",
-    tags: JSON.stringify(["dekorasyon", "iç mimari", "ev tasarımı"]),
-    featured: false,
-    status: "published" as const,
-    metaTitle:
-      "Evinizi Değerlendirecek Dekorasyon Önerileri | Neli Mühendislik",
-    metaDescription:
-      "Küçük dokunuşlarla yaşam alanlarınızı daha fonksiyonel hale getirin.",
-    metaKeywords: "dekorasyon önerileri, iç mimari, ev dekorasyonu",
-    publishedAt: "2026-03-01",
-  },
-  {
-    slug: "serenita-prestige-ayricalikli-yasamin-adresi",
-    title: "Serenita Prestige: Ayrıcalıklı Yaşamın Adresi",
-    excerpt:
-      "Serenita Prestige projemizle Karşıyaka'da konfor ve lüksü bir araya getiriyoruz.",
-    content: `<p>Serenita Prestige, Neli Mühendislik'in en özel projelerinden biri.</p><h2>Prestijli Lokasyon</h2><p>Karşıyaka'nın en değerli bölgelerinden birinde yer alıyor.</p>`,
-    coverImage: "/images/blog/serenita-prestige.webp",
-    category: "Projeler",
-    tags: JSON.stringify(["serenita", "karşıyaka", "prestijli konut"]),
-    featured: true,
-    status: "published" as const,
-    metaTitle:
-      "Serenita Prestige: Ayrıcalıklı Yaşamın Adresi | Neli Mühendislik",
-    metaDescription:
-      "Serenita Prestige ile Karşıyaka'da konfor ve lüks bir arada.",
-    metaKeywords: "serenita prestige, karşıyaka konut, lüks konut izmir",
-    publishedAt: "2026-03-01",
-  },
   {
     slug: "rahnamaye-kharid-melk-der-turkiye-neli-mohandesi",
     title: "راهنمای خرید ملک در ترکیه | سرمایه‌گذاری با نلی مهندسی",
     excerpt:
       "قصد خرید خانه و سرمایه‌گذاری در ترکیه را دارید؟ با شرکت ساختمانی ایرانی نلی مهندسی (فعال از ۲۰۲۱) بهترین فرصت‌های بازار پنهان ترکیه (ازمیر) را بشناسید.",
     content: PERSIAN_PROPERTY_TURKEY_BLOG_HTML,
-    coverImage: "/blog/iran-yatırım.webp",
+    coverImage: "/images/blog/iran-yatırım.webp",
     coverImageAlt: "سرمایه‌گذاری و خرید ملک در ترکیه — نلی مهندسی، ازمیر",
     category: "فارسی",
     tags: JSON.stringify([
@@ -145,7 +38,7 @@ const BLOG_DATA = [
       "شرکت ساختمانی ایرانی در ترکیه",
       "خرید آپارتمان در ازمیر",
     ]),
-    featured: false,
+    featured: true,
     status: "published" as const,
     metaTitle: "راهنمای خرید ملک در ترکیه | سرمایه‌گذاری با نلی مهندسی",
     metaDescription:
@@ -154,6 +47,16 @@ const BLOG_DATA = [
       "خرید ملک در ترکیه، سرمایه‌گذاری در ترکیه، خرید خانه در ترکیه، اقامت ترکیه، قیمت خانه در ترکیه، شرکت ساختمانی ایرانی در ترکیه، خرید آپارتمان در ازمیر",
     publishedAt: "2026-03-27",
   },
+];
+
+/** Eski örnek yazılar — veritabanından silinir */
+const REMOVED_BLOG_SLUGS = [
+  "izmir-konut-projelerinde-dikkat-edilmesi-gerekenler",
+  "modern-mimari-trendleri-2026",
+  "valorya-projeleri-ile-yeni-bir-yasam",
+  "restorasyon-projelerinde-dikkat-edilmesi-gerekenler",
+  "evinizi-degerlendirecek-dekorasyon-onerileri",
+  "serenita-prestige-ayricalikli-yasamin-adresi",
 ];
 
 const PROJECT_DATA = [
@@ -879,23 +782,46 @@ async function seed() {
   console.log("Seeding database...");
   let seeded = false;
 
+  db.delete(blogPosts)
+    .where(inArray(blogPosts.slug, REMOVED_BLOG_SLUGS))
+    .run();
+
   for (const post of BLOG_DATA) {
     const existing = db
       .select()
       .from(blogPosts)
       .where(eq(blogPosts.slug, post.slug))
       .get();
+    const now = new Date().toISOString();
+    const payload = {
+      slug: post.slug,
+      title: post.title,
+      excerpt: post.excerpt,
+      content: post.content,
+      coverImage: post.coverImage,
+      coverImageAlt: (post as { coverImageAlt?: string }).coverImageAlt ?? "",
+      category: post.category,
+      tags: post.tags,
+      authorName: "Neli Mühendislik",
+      authorAvatar: "/site-logo.webp",
+      featured: post.featured,
+      status: post.status,
+      metaTitle: post.metaTitle,
+      metaDescription: post.metaDescription,
+      metaKeywords: post.metaKeywords,
+      publishedAt: post.publishedAt,
+      updatedAt: now,
+    };
     if (!existing) {
-      const now = new Date().toISOString();
-      db.insert(blogPosts)
-        .values({
-          ...post,
-          coverImageAlt:
-            (post as { coverImageAlt?: string }).coverImageAlt ?? "",
-          updatedAt: now,
-        })
-        .run();
+      db.insert(blogPosts).values(payload).run();
       console.log(`Seeded blog post: ${post.slug}`);
+      seeded = true;
+    } else {
+      db.update(blogPosts)
+        .set(payload)
+        .where(eq(blogPosts.slug, post.slug))
+        .run();
+      console.log(`Updated blog post: ${post.slug}`);
       seeded = true;
     }
   }

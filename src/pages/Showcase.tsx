@@ -16,7 +16,7 @@ import {
 } from "lucide-react";
 import { useContactSectionData } from "@/hooks/use-contact-section-data";
 
-const SHOWCASE_BRAND_IMAGE = "/blog/konut-projeleri.webp";
+const SHOWCASE_BRAND_IMAGE = "/images/blog/konut-projeleri.webp";
 
 /** Pastel arka planlar; metin koyu gri (stone-900) ile siyah kontrastı korunur */
 const FEATURE_TAG_ICONS: LucideIcon[] = [

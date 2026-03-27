@@ -1,5 +1,5 @@
 import { Hono } from "hono";
-import { eq, desc, asc, inArray } from "drizzle-orm";
+import { eq, desc, asc, inArray, and, ne } from "drizzle-orm";
 import { db } from "../db/index.js";
 import { blogPosts, projects, mapPins, siteSettings, milestones } from "../db/schema.js";
 
@@ -24,7 +24,9 @@ publicRoutes.get("/blog", (c) => {
   const posts = db
     .select()
     .from(blogPosts)
-    .where(eq(blogPosts.status, "published"))
+    .where(
+      and(eq(blogPosts.status, "published"), ne(blogPosts.coverImage, "")),
+    )
     .orderBy(desc(blogPosts.publishedAt))
     .all();
   return c.json(
@@ -39,7 +41,11 @@ publicRoutes.get("/blog/:slug", (c) => {
     .from(blogPosts)
     .where(eq(blogPosts.slug, slug))
     .get();
-  if (!post || post.status !== "published") {
+  if (
+    !post ||
+    post.status !== "published" ||
+    !post.coverImage?.trim()
+  ) {
     return c.json({ error: "Not found" }, 404);
   }
   return c.json({ ...post, tags: JSON.parse(post.tags) });
