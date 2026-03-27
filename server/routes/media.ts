@@ -6,10 +6,11 @@ import { logActivity } from "../lib/log-activity.js";
 import sharp from "sharp";
 import { mkdir, stat, unlink } from "fs/promises";
 import { resolve, extname } from "path";
+import { PROJECT_ROOT } from "../paths.js";
 import { existsSync } from "fs";
 
 const mediaRoutes = new Hono();
-const UPLOAD_DIR = resolve(process.cwd(), "uploads");
+const UPLOAD_DIR = resolve(PROJECT_ROOT, "uploads");
 const MAX_FILE_SIZE = 10 * 1024 * 1024; // 10 MB
 const ALLOWED_MIME_TYPES = new Set([
   "image/jpeg", "image/png", "image/webp", "image/gif", "image/avif",
@@ -149,10 +150,10 @@ mediaRoutes.delete("/:id", async (c) => {
   const item = db.select().from(media).where(eq(media.id, id)).get();
 
   if (item) {
-    const filePath = resolve(process.cwd(), item.path.slice(1));
+    const filePath = resolve(PROJECT_ROOT, item.path.slice(1));
     if (existsSync(filePath)) await unlink(filePath);
     if (item.thumbnailPath) {
-      const thumbPath = resolve(process.cwd(), item.thumbnailPath.slice(1));
+      const thumbPath = resolve(PROJECT_ROOT, item.thumbnailPath.slice(1));
       if (existsSync(thumbPath)) await unlink(thumbPath);
     }
     db.delete(media).where(eq(media.id, id)).run();

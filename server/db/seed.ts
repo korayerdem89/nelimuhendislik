@@ -1,6 +1,8 @@
 import { Database } from "bun:sqlite";
 import { drizzle } from "drizzle-orm/bun-sqlite";
+import { eq } from "drizzle-orm";
 import { resolve } from "path";
+import { PROJECT_ROOT } from "../paths.js";
 import {
   blogPosts,
   projects,
@@ -9,7 +11,7 @@ import {
   milestones,
 } from "./schema.js";
 
-const DB_PATH = resolve(process.cwd(), "data.db");
+const DB_PATH = resolve(PROJECT_ROOT, "data.db");
 const sqlite = new Database(DB_PATH);
 sqlite.exec("PRAGMA journal_mode = WAL;");
 sqlite.exec("PRAGMA foreign_keys = ON;");
@@ -148,7 +150,7 @@ const PROJECT_DATA = [
         "Enerji verimliliği yüksek yapı kabuğu",
         "1. kalite malzemelerle inşa edilmiş yapı",
       ],
-      unitTypes: [{ type: "1+1", count: 6, grossArea: "50", netArea: "43 m2" }],
+      unitTypes: [{ type: "1+1", count: 6, grossArea: "46", netArea: "38 m2" }],
       totalUnits: 6,
       totalBlocks: 1,
       landscapeRatio: "12%",
@@ -222,9 +224,9 @@ const PROJECT_DATA = [
         "4 katlı, toplam 16 daire",
       ],
       unitTypes: [
-        { type: "1+1", count: 1, grossArea: "152 m2", netArea: "122 m2" },
-        { type: "2+1", count: 11, grossArea: "176 m2", netArea: "143 m2" },
-        { type: "3+1", count: 4, grossArea: "214 m2", netArea: "176 m2" },
+        { type: "1+1", count: 1, grossArea: "60 m2", netArea: "50 m2" },
+        { type: "2+1", count: 11, grossArea: "77 m2", netArea: "65 m2" },
+        { type: "3+1", count: 4, grossArea: "120 m2", netArea: "105 m2" },
       ],
       totalUnits: 16,
       totalBlocks: 1,
@@ -298,8 +300,8 @@ const PROJECT_DATA = [
       ],
       unitTypes: [
         { type: "1+1", count: 22, grossArea: "50 m2", netArea: "45 m2" },
-        { type: "2+1", count: 6, grossArea: "90 m2", netArea: "80 m2" },
-        { type: "3+1", count: 1, grossArea: "100 m2", netArea: "92 m2" },
+        { type: "2+1", count: 6, grossArea: "105 m2", netArea: "90 m2" },
+        { type: "3+1", count: 1, grossArea: "110 m2", netArea: "95 m2" },
       ],
       totalUnits: 29,
       totalBlocks: 2,
@@ -856,25 +858,42 @@ async function seed() {
     seeded = true;
   }
 
-  if (!db.select().from(projects).get()) {
+  {
+    const now = new Date().toISOString();
+    let inserted = 0;
+    let updated = 0;
     for (const project of PROJECT_DATA) {
-      db.insert(projects)
-        .values({
-          slug: project.slug,
-          name: project.name,
-          location: project.location,
-          year: project.year,
-          type: project.type,
-          description: project.description,
-          image: project.image,
-          status: project.status,
-          detailsJson: JSON.stringify(project.details),
-          phasesJson: JSON.stringify(project.phases),
-        })
-        .run();
+      const row = db
+        .select()
+        .from(projects)
+        .where(eq(projects.slug, project.slug))
+        .get();
+      const payload = {
+        name: project.name,
+        location: project.location,
+        year: project.year,
+        type: project.type,
+        description: project.description,
+        image: project.image,
+        status: project.status,
+        detailsJson: JSON.stringify(project.details),
+        phasesJson: JSON.stringify(project.phases),
+        updatedAt: now,
+      };
+      if (row) {
+        db.update(projects).set(payload).where(eq(projects.slug, project.slug)).run();
+        updated++;
+      } else {
+        db.insert(projects).values({ slug: project.slug, ...payload }).run();
+        inserted++;
+      }
     }
-    console.log(`Seeded ${PROJECT_DATA.length} projects`);
-    seeded = true;
+    if (inserted || updated) {
+      console.log(
+        `Projects synced from seed: ${inserted} inserted, ${updated} updated`,
+      );
+      seeded = true;
+    }
   }
 
   if (!db.select().from(mapPins).get()) {

@@ -14,6 +14,7 @@ import milestonesRoutes from "./routes/milestones.js";
 import publicRoutes from "./routes/public.js";
 import odooRoutes from "./routes/odoo.js";
 import sitemapRoutes from "./routes/sitemap.js";
+import { PROJECT_ROOT } from "./paths.js";
 
 const app = new Hono();
 
@@ -29,7 +30,7 @@ app.use("*", cors({
   credentials: true,
 }));
 
-app.use("/uploads/*", serveStatic({ root: "." }));
+app.use("/uploads/*", serveStatic({ root: PROJECT_ROOT }));
 
 app.route("/", sitemapRoutes);
 app.route("/api/auth", authRoutes);
