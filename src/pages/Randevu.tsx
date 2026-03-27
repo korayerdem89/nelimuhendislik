@@ -160,7 +160,10 @@ export default function Randevu() {
         bgPosition="center"
       />
 
-      <section ref={sectionRef} className="section-padding bg-gradient-to-b from-white via-cream-50/80 to-white">
+      <section
+        ref={sectionRef}
+        className="section-padding bg-gradient-to-b from-white via-cream-50/80 to-white"
+      >
         <div className="container-padding">
           <div className="max-w-7xl mx-auto">
             <motion.div
@@ -170,7 +173,7 @@ export default function Randevu() {
               className="text-center max-w-2xl mx-auto mb-10 md:mb-14"
             >
               <p className="text-sm font-medium tracking-wide text-neli-600 uppercase mb-2">
-                Online randevu
+                ONLINE randevu
               </p>
               <h2 className="text-2xl md:text-3xl font-serif text-foreground">
                 Görüşme süresi varsayılan olarak{" "}
@@ -201,7 +204,8 @@ export default function Randevu() {
                           Tarih ve saat
                         </h3>
                         <p className="text-xs text-foreground/55">
-                          Önce günü seçin, ardından başlangıç saatini işaretleyin.
+                          Önce günü seçin, ardından başlangıç saatini
+                          işaretleyin.
                         </p>
                       </div>
                       {busyLoading ? (
@@ -238,8 +242,8 @@ export default function Randevu() {
                               <CalendarClock className="h-6 w-6" />
                             </div>
                             <p className="text-sm sm:text-base text-foreground/55 leading-relaxed">
-                              Müsait saatleri görmek için yukarıdaki takvimden bir
-                              gün seçin.
+                              Müsait saatleri görmek için yukarıdaki takvimden
+                              bir gün seçin.
                             </p>
                           </div>
                         ) : availableSlots.length === 0 ? (
@@ -273,7 +277,9 @@ export default function Randevu() {
                                     <span
                                       className={cn(
                                         "block text-[10px] mt-0.5 opacity-80",
-                                        active ? "text-white/90" : "text-foreground/45",
+                                        active
+                                          ? "text-white/90"
+                                          : "text-foreground/45",
                                       )}
                                     >
                                       2 saat
@@ -407,7 +413,10 @@ export default function Randevu() {
         </div>
       </section>
 
-      <section ref={contactRef} className="section-padding bg-white border-t border-cream-100">
+      <section
+        ref={contactRef}
+        className="section-padding bg-white border-t border-cream-100"
+      >
         <div className="container-padding">
           <div className="max-w-7xl mx-auto">
             <motion.div
