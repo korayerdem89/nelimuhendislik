@@ -1,7 +1,7 @@
 import { Hono } from "hono";
-import { eq, desc, and, ne } from "drizzle-orm";
 import { db } from "../db/index.js";
-import { blogPosts, projects } from "../db/schema.js";
+import { projects } from "../db/schema.js";
+import { selectPublicBlogPostsForSitemap } from "../lib/public-blog.js";
 
 const SITE_URL = "https://neli.tr";
 
@@ -37,14 +37,7 @@ const sitemapRoutes = new Hono();
 
 sitemapRoutes.get("/sitemap.xml", (c) => {
   const allProjects = db.select({ slug: projects.slug, updatedAt: projects.updatedAt }).from(projects).all();
-  const publishedPosts = db
-    .select({ slug: blogPosts.slug, updatedAt: blogPosts.updatedAt })
-    .from(blogPosts)
-    .where(
-      and(eq(blogPosts.status, "published"), ne(blogPosts.coverImage, "")),
-    )
-    .orderBy(desc(blogPosts.publishedAt))
-    .all();
+  const publishedPosts = selectPublicBlogPostsForSitemap();
 
   const today = new Date().toISOString().split("T")[0];
 

@@ -11,6 +11,7 @@ import {
   milestones,
 } from "./schema.js";
 import { PERSIAN_PROPERTY_TURKEY_BLOG_HTML } from "./blog-fa-html.js";
+import { EXCLUDED_PUBLIC_BLOG_SLUGS } from "../lib/public-blog.js";
 
 const DB_PATH = resolve(PROJECT_ROOT, "data.db");
 const sqlite = new Database(DB_PATH);
@@ -47,16 +48,6 @@ const BLOG_DATA = [
       "خرید ملک در ترکیه، سرمایه‌گذاری در ترکیه، خرید خانه در ترکیه، اقامت ترکیه، قیمت خانه در ترکیه، شرکت ساختمانی ایرانی در ترکیه، خرید آپارتمان در ازمیر",
     publishedAt: "2026-03-27",
   },
-];
-
-/** Eski örnek yazılar — veritabanından silinir */
-const REMOVED_BLOG_SLUGS = [
-  "izmir-konut-projelerinde-dikkat-edilmesi-gerekenler",
-  "modern-mimari-trendleri-2026",
-  "valorya-projeleri-ile-yeni-bir-yasam",
-  "restorasyon-projelerinde-dikkat-edilmesi-gerekenler",
-  "evinizi-degerlendirecek-dekorasyon-onerileri",
-  "serenita-prestige-ayricalikli-yasamin-adresi",
 ];
 
 const PROJECT_DATA = [
@@ -783,7 +774,7 @@ async function seed() {
   let seeded = false;
 
   db.delete(blogPosts)
-    .where(inArray(blogPosts.slug, REMOVED_BLOG_SLUGS))
+    .where(inArray(blogPosts.slug, [...EXCLUDED_PUBLIC_BLOG_SLUGS]))
     .run();
 
   for (const post of BLOG_DATA) {

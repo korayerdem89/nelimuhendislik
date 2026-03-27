@@ -1,7 +1,11 @@
 import { Hono } from "hono";
-import { eq, desc, asc, inArray, and, ne } from "drizzle-orm";
+import { eq, desc, asc, inArray } from "drizzle-orm";
 import { db } from "../db/index.js";
 import { blogPosts, projects, mapPins, siteSettings, milestones } from "../db/schema.js";
+import {
+  listPublicBlogPosts,
+  getPublicBlogDetailCondition,
+} from "../lib/public-blog.js";
 
 const publicRoutes = new Hono();
 
@@ -21,14 +25,7 @@ publicRoutes.onError((err, c) => {
 });
 
 publicRoutes.get("/blog", (c) => {
-  const posts = db
-    .select()
-    .from(blogPosts)
-    .where(
-      and(eq(blogPosts.status, "published"), ne(blogPosts.coverImage, "")),
-    )
-    .orderBy(desc(blogPosts.publishedAt))
-    .all();
+  const posts = listPublicBlogPosts();
   return c.json(
     posts.map((p) => ({ ...p, tags: JSON.parse(p.tags) })),
   );
@@ -39,13 +36,9 @@ publicRoutes.get("/blog/:slug", (c) => {
   const post = db
     .select()
     .from(blogPosts)
-    .where(eq(blogPosts.slug, slug))
+    .where(getPublicBlogDetailCondition(slug))
     .get();
-  if (
-    !post ||
-    post.status !== "published" ||
-    !post.coverImage?.trim()
-  ) {
+  if (!post) {
     return c.json({ error: "Not found" }, 404);
   }
   return c.json({ ...post, tags: JSON.parse(post.tags) });
