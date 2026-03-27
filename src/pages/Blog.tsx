@@ -112,7 +112,14 @@ export default function Blog() {
                         </p>
                         <div className="flex items-center gap-2 text-white/70 text-sm">
                           <Calendar className="w-4 h-4" />
-                          <span>{formatDate(featuredPosts[0].publishedAt)}</span>
+                          <span>
+                            {formatDate(
+                              featuredPosts[0].publishedAt || "",
+                              featuredPosts[0].category === "فارسی"
+                                ? "fa-IR"
+                                : "tr-TR",
+                            )}
+                          </span>
                         </div>
                       </div>
                     </div>
@@ -151,7 +158,12 @@ export default function Blog() {
                         </p>
                         <div className="flex items-center gap-2 text-foreground/50 text-xs">
                           <Calendar className="w-3 h-3" />
-                          <span>{formatDate(post.publishedAt)}</span>
+                          <span>
+                            {formatDate(
+                              post.publishedAt || "",
+                              post.category === "فارسی" ? "fa-IR" : "tr-TR",
+                            )}
+                          </span>
                         </div>
                       </div>
                     </Link>
@@ -252,7 +264,12 @@ export default function Blog() {
                     </div>
                     <div className="flex items-center gap-2 text-foreground/50 text-xs mb-2">
                       <Calendar className="w-3 h-3" />
-                      <span>{formatDate(post.publishedAt)}</span>
+                      <span>
+                        {formatDate(
+                          post.publishedAt || "",
+                          post.category === "فارسی" ? "fa-IR" : "tr-TR",
+                        )}
+                      </span>
                     </div>
                     <h3 className="text-lg md:text-xl font-serif font-medium text-foreground group-hover:text-neli-600 transition-colors mb-2 line-clamp-2">
                       {post.title}

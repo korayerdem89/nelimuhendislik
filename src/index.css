@@ -169,6 +169,19 @@
   margin-bottom: 0;
 }
 
+.blog-content.blog-content--rtl ul,
+.blog-content.blog-content--rtl ol {
+  margin-left: 0;
+  margin-right: 1.5rem;
+  padding-right: 0;
+}
+
+.blog-content.blog-content--rtl blockquote {
+  border-left: none;
+  border-right: 4px solid #a51422;
+  border-radius: 0.5rem 0 0 0.5rem;
+}
+
 @media (min-width: 768px) {
   .blog-content h2 {
     font-size: 2rem;

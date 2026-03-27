@@ -10,6 +10,7 @@ import {
   siteSettings,
   milestones,
 } from "./schema.js";
+import { PERSIAN_PROPERTY_TURKEY_BLOG_HTML } from "./blog-fa-html.js";
 
 const DB_PATH = resolve(PROJECT_ROOT, "data.db");
 const sqlite = new Database(DB_PATH);
@@ -125,6 +126,33 @@ const BLOG_DATA = [
       "Serenita Prestige ile Karşıyaka'da konfor ve lüks bir arada.",
     metaKeywords: "serenita prestige, karşıyaka konut, lüks konut izmir",
     publishedAt: "2026-03-01",
+  },
+  {
+    slug: "rahnamaye-kharid-melk-der-turkiye-neli-mohandesi",
+    title: "راهنمای خرید ملک در ترکیه | سرمایه‌گذاری با نلی مهندسی",
+    excerpt:
+      "قصد خرید خانه و سرمایه‌گذاری در ترکیه را دارید؟ با شرکت ساختمانی ایرانی نلی مهندسی (فعال از ۲۰۲۱) بهترین فرصت‌های بازار پنهان ترکیه (ازمیر) را بشناسید.",
+    content: PERSIAN_PROPERTY_TURKEY_BLOG_HTML,
+    coverImage: "/blog/iran-yatırım.webp",
+    coverImageAlt: "سرمایه‌گذاری و خرید ملک در ترکیه — نلی مهندسی، ازمیر",
+    category: "فارسی",
+    tags: JSON.stringify([
+      "خرید ملک در ترکیه",
+      "سرمایه‌گذاری در ترکیه",
+      "خرید خانه در ترکیه",
+      "اقامت ترکیه",
+      "قیمت خانه در ترکیه",
+      "شرکت ساختمانی ایرانی در ترکیه",
+      "خرید آپارتمان در ازمیر",
+    ]),
+    featured: false,
+    status: "published" as const,
+    metaTitle: "راهنمای خرید ملک در ترکیه | سرمایه‌گذاری با نلی مهندسی",
+    metaDescription:
+      "قصد خرید خانه و سرمایه‌گذاری در ترکیه را دارید؟ با شرکت ساختمانی ایرانی نلی مهندسی (فعال از ۲۰۲۱) بهترین فرصت‌های بازار پنهان ترکیه (ازمیر) را بشناسید.",
+    metaKeywords:
+      "خرید ملک در ترکیه، سرمایه‌گذاری در ترکیه، خرید خانه در ترکیه، اقامت ترکیه، قیمت خانه در ترکیه، شرکت ساختمانی ایرانی در ترکیه، خرید آپارتمان در ازمیر",
+    publishedAt: "2026-03-27",
   },
 ];
 
@@ -843,6 +871,7 @@ const SETTINGS_DATA: Record<string, string> = {
     "Projeler",
     "Restorasyon",
     "Dekorasyon",
+    "فارسی",
   ]),
 };
 
@@ -850,12 +879,25 @@ async function seed() {
   console.log("Seeding database...");
   let seeded = false;
 
-  if (!db.select().from(blogPosts).get()) {
-    for (const post of BLOG_DATA) {
-      db.insert(blogPosts).values(post).run();
+  for (const post of BLOG_DATA) {
+    const existing = db
+      .select()
+      .from(blogPosts)
+      .where(eq(blogPosts.slug, post.slug))
+      .get();
+    if (!existing) {
+      const now = new Date().toISOString();
+      db.insert(blogPosts)
+        .values({
+          ...post,
+          coverImageAlt:
+            (post as { coverImageAlt?: string }).coverImageAlt ?? "",
+          updatedAt: now,
+        })
+        .run();
+      console.log(`Seeded blog post: ${post.slug}`);
+      seeded = true;
     }
-    console.log(`Seeded ${BLOG_DATA.length} blog posts`);
-    seeded = true;
   }
 
   {
@@ -881,10 +923,15 @@ async function seed() {
         updatedAt: now,
       };
       if (row) {
-        db.update(projects).set(payload).where(eq(projects.slug, project.slug)).run();
+        db.update(projects)
+          .set(payload)
+          .where(eq(projects.slug, project.slug))
+          .run();
         updated++;
       } else {
-        db.insert(projects).values({ slug: project.slug, ...payload }).run();
+        db.insert(projects)
+          .values({ slug: project.slug, ...payload })
+          .run();
         inserted++;
       }
     }

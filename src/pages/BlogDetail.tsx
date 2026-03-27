@@ -56,6 +56,9 @@ export default function BlogDetail() {
       ? (() => { try { return JSON.parse(post.tags); } catch { return []; } })()
       : [];
 
+  const isPersian = post.category === "فارسی";
+  const dateLocale = isPersian ? "fa-IR" : "tr-TR";
+
   return (
     <main className="min-h-screen pt-20 md:pt-24 lg:pt-28">
       <SEO
@@ -93,7 +96,7 @@ export default function BlogDetail() {
                 transition={{ duration: 0.6, delay: 0.15 }}
                 className="order-1 lg:order-2"
               >
-                <div className="flex items-center gap-2 text-sm text-foreground/50 mb-6">
+                <div className="flex items-center gap-2 text-sm text-foreground/50 mb-6" dir="ltr">
                   <Link to="/" className="hover:text-neli-600 transition-colors">Anasayfa</Link>
                   <span>/</span>
                   <Link to="/blog" className="hover:text-neli-600 transition-colors">Blog</Link>
@@ -101,37 +104,44 @@ export default function BlogDetail() {
                   <span className="text-neli-600">{post.category}</span>
                 </div>
 
-                <Link
-                  to={`/blog?category=${post.category}`}
-                  className="inline-block px-4 py-1.5 bg-neli-600 text-white text-sm font-medium rounded-full mb-4"
+                <div
+                  dir={isPersian ? "rtl" : "ltr"}
+                  lang={isPersian ? "fa" : "tr"}
                 >
-                  {post.category}
-                </Link>
+                  <Link
+                    to={`/blog?category=${encodeURIComponent(post.category)}`}
+                    className="inline-block px-4 py-1.5 bg-neli-600 text-white text-sm font-medium rounded-full mb-4"
+                  >
+                    {post.category}
+                  </Link>
 
-                <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-medium text-foreground leading-tight mb-6">
-                  {post.title}
-                </h1>
+                  <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-medium text-foreground leading-tight mb-6">
+                    {post.title}
+                  </h1>
 
-                <p className="text-base md:text-lg text-foreground/70 leading-relaxed mb-6">
-                  {post.excerpt}
-                </p>
+                  <p className="text-base md:text-lg text-foreground/70 leading-relaxed mb-6">
+                    {post.excerpt}
+                  </p>
 
-                <div className="flex flex-wrap items-center gap-4 md:gap-6 text-sm text-foreground/60">
-                  <div className="flex items-center gap-2">
-                    <div className="w-10 h-10 rounded-full bg-cream-200 overflow-hidden">
-                      <img
-                        src={post.authorAvatar || "/site-logo.webp"}
-                        alt={post.authorName || "Neli Mühendislik"}
-                        className="w-full h-full object-contain"
-                      />
+                  <div className="flex flex-wrap items-center gap-4 md:gap-6 text-sm text-foreground/60">
+                    <div className="flex items-center gap-2">
+                      <div className="w-10 h-10 rounded-full bg-cream-200 overflow-hidden">
+                        <img
+                          src={post.authorAvatar || "/site-logo.webp"}
+                          alt={post.authorName || "Neli Mühendislik"}
+                          className="w-full h-full object-contain"
+                        />
+                      </div>
+                      <p className="font-medium text-foreground">
+                        {post.authorName || "Neli Mühendislik"}
+                      </p>
                     </div>
-                    <p className="font-medium text-foreground">
-                      {post.authorName || "Neli Mühendislik"}
-                    </p>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <Calendar className="w-4 h-4 text-neli-600" />
-                    <span>{formatDate(post.publishedAt)}</span>
+                    <div className="flex items-center gap-2">
+                      <Calendar className="w-4 h-4 shrink-0 text-neli-600" />
+                      <span>
+                        {formatDate(post.publishedAt || "", dateLocale)}
+                      </span>
+                    </div>
                   </div>
                 </div>
               </motion.div>
@@ -147,14 +157,22 @@ export default function BlogDetail() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="blog-content"
+              className={`blog-content${isPersian ? " blog-content--rtl" : ""}`}
+              dir={isPersian ? "rtl" : "ltr"}
+              lang={isPersian ? "fa" : "tr"}
               dangerouslySetInnerHTML={{ __html: post.content }}
             />
 
             {tags.length > 0 && (
-              <div className="mt-10 md:mt-12 pt-6 md:pt-8 border-t border-cream-300">
+              <div
+                className="mt-10 md:mt-12 pt-6 md:pt-8 border-t border-cream-300"
+                dir={isPersian ? "rtl" : "ltr"}
+                lang={isPersian ? "fa" : "tr"}
+              >
                 <div className="flex flex-wrap items-center gap-2">
-                  <span className="text-sm text-foreground/50 mr-2">Etiketler:</span>
+                  <span className="text-sm text-foreground/50 ms-2 me-2">
+                    {isPersian ? "برچسب‌ها:" : "Etiketler:"}
+                  </span>
                   {tags.map((tag: string) => (
                     <span key={tag} className="px-3 py-1 bg-cream-100 text-foreground/70 text-sm rounded-full">
                       #{tag}
@@ -216,7 +234,12 @@ export default function BlogDetail() {
                       </div>
                       <div className="flex items-center gap-2 text-foreground/50 text-xs mb-2">
                         <Calendar className="w-3 h-3" />
-                        <span>{formatDate(relatedPost.publishedAt)}</span>
+                        <span>
+                          {formatDate(
+                            relatedPost.publishedAt || "",
+                            relatedPost.category === "فارسی" ? "fa-IR" : "tr-TR",
+                          )}
+                        </span>
                       </div>
                       <h3 className="text-base md:text-lg font-serif font-medium text-foreground group-hover:text-neli-600 transition-colors line-clamp-2">{relatedPost.title}</h3>
                     </Link>

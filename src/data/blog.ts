@@ -49,9 +49,12 @@ export async function getBlogPostBySlug(slug: string): Promise<BlogPost | null> 
   }
 }
 
-export function formatDate(dateString: string): string {
+export function formatDate(
+  dateString: string,
+  locale: string = "tr-TR",
+): string {
   const date = new Date(dateString);
-  return date.toLocaleDateString("tr-TR", {
+  return date.toLocaleDateString(locale, {
     year: "numeric",
     month: "long",
     day: "numeric",
