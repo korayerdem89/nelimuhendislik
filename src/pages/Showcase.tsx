@@ -1,16 +1,41 @@
 import { useState, useRef, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import useEmblaCarousel from "embla-carousel-react";
+import type { LucideIcon } from "lucide-react";
 import {
   MapPin,
   MessageCircle,
   ChevronRight,
   ChevronLeft,
   ExternalLink,
+  ShieldCheck,
+  Leaf,
+  Sparkles,
+  TrendingUp,
+  Car,
 } from "lucide-react";
 import { useContactSectionData } from "@/hooks/use-contact-section-data";
 
 const SHOWCASE_BRAND_IMAGE = "/blog/konut-projeleri.webp";
+
+/** Pastel arka planlar; metin koyu gri (stone-900) ile siyah kontrastı korunur */
+const FEATURE_TAG_ICONS: LucideIcon[] = [
+  MapPin,
+  ShieldCheck,
+  Leaf,
+  Sparkles,
+  TrendingUp,
+  Car,
+];
+
+const FEATURE_TAG_PILL_CLASSES: string[] = [
+  "border-sky-200/90 bg-sky-100 text-stone-900 [&>svg]:text-sky-700",
+  "border-amber-200/90 bg-amber-100 text-stone-900 [&>svg]:text-amber-700",
+  "border-emerald-200/90 bg-emerald-100 text-stone-900 [&>svg]:text-emerald-700",
+  "border-violet-200/90 bg-violet-100 text-stone-900 [&>svg]:text-violet-700",
+  "border-rose-200/90 bg-rose-100 text-stone-900 [&>svg]:text-rose-700",
+  "border-teal-200/90 bg-teal-100 text-stone-900 [&>svg]:text-teal-700",
+];
 
 interface FeatureItem {
   text: string;
@@ -247,6 +272,34 @@ const projects: ProjectData[] = [
     price: "3.500.000 TL'den Başlayan Fiyatlarla",
   },
 ];
+
+function FeatureDetailTagPills({
+  features,
+  projectId,
+  className,
+}: {
+  features: FeatureItem[];
+  projectId: string;
+  className: string;
+}) {
+  return (
+    <div className={className}>
+      {features.map((f, i) => {
+        const Icon = FEATURE_TAG_ICONS[i % FEATURE_TAG_ICONS.length];
+        const pillClass = FEATURE_TAG_PILL_CLASSES[i % FEATURE_TAG_PILL_CLASSES.length];
+        return (
+          <span
+            key={`${projectId}-feature-tag-${i}-${f.text}`}
+            className={`inline-flex items-center gap-1.5 rounded-full border px-3 py-1.5 text-xs font-medium shadow-xs ${pillClass}`}
+          >
+            <Icon className="h-3.5 w-3.5 shrink-0" aria-hidden />
+            {f.text}
+          </span>
+        );
+      })}
+    </div>
+  );
+}
 
 function buildWhatsAppLink(projectName: string): string {
   const message = `Merhaba, ${projectName} hakkında detaylı bilgi ve fiyatları öğrenmek istiyorum.`;
@@ -606,17 +659,11 @@ export default function Showcase() {
                   </a>
 
                   {/* Quick feature pills — desktop only */}
-                  <div className="mt-5 hidden flex-wrap gap-2 lg:flex">
-                    {active.featureDetails.map((f) => (
-                      <span
-                        key={f.text}
-                        className="inline-flex items-center gap-1.5 rounded-full border border-cream-300 bg-white px-3 py-1.5 text-xs font-medium text-foreground/70"
-                      >
-                        <span className="h-1.5 w-1.5 rounded-full bg-emerald-500" />
-                        {f.text}
-                      </span>
-                    ))}
-                  </div>
+                  <FeatureDetailTagPills
+                    projectId={active.id}
+                    features={active.featureDetails}
+                    className="mt-5 hidden flex-wrap gap-2 lg:flex"
+                  />
                 </div>
               </div>
             </div>
@@ -673,6 +720,11 @@ export default function Showcase() {
                 <span>Sohbete Geri Dön ve Detayları Öğren</span>
                 <ChevronRight className="h-4 w-4 opacity-70" />
               </a>
+              <FeatureDetailTagPills
+                projectId={active.id}
+                features={active.featureDetails}
+                className="mt-4 flex flex-wrap gap-2 lg:hidden"
+              />
             </div>
           </motion.div>
         </AnimatePresence>
