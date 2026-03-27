@@ -128,7 +128,7 @@ const projects: ProjectData[] = [
         images: ["/projects/valorya2/2.webp", "/projects/valorya2/1.webp"],
         bullets: [
           "105 m² yaşam alanı; dubleks plan ile üst ve alt katlarda ayrışan, özel konut deneyimi.",
-          "Geniş manzaralı cepheler; şehir ve doğa hattını kucaklayan panoramik görüş imkânı.",
+          "Geniş manzaralı cepheler; panoramik görüş imkânı.",
           "Geniş teras alanları; açık havada yemek ve dinlenme için ferah dış yaşam.",
           "Kapalı mutfak düzeni; koku ve gürültüyü salondan ayıran, klasik ve düzenli mutfak kullanımı.",
           "Seramik, doğrama, mutfak ve banyo donanımı dahil her detayda birinci kalite malzeme ve seçkin markalar.",
@@ -138,7 +138,7 @@ const projects: ProjectData[] = [
     featureDetails: [
       {
         text: "Merkezi konum avantajı",
-        image: "/features/valorya1_location.webp",
+        image: "/features/valorya2_location.webp",
       },
       {
         text: "Depreme karşı oldukça dayanıklı yapı",
@@ -158,7 +158,7 @@ const projects: ProjectData[] = [
       },
       {
         text: "Asansör erişimli kapalı otopark",
-        image: "/projects/valorya2/cover.webp",
+        image: "/features/asansor.webp",
       },
     ],
     price: "3.500.000 TL'den Başlayan Fiyatlarla",
@@ -212,7 +212,7 @@ const projects: ProjectData[] = [
     featureDetails: [
       {
         text: "Merkezi konum avantajı",
-        image: "/features/valorya1_location.webp",
+        image: "/features/valorya2_location.webp",
       },
       {
         text: "Depreme karşı oldukça dayanıklı yapı",
@@ -232,7 +232,7 @@ const projects: ProjectData[] = [
       },
       {
         text: "Asansör erişimli kapalı otopark",
-        image: "/projects/serenitaprestige/2.webp",
+        image: "/features/asansor.webp",
       },
     ],
     price: "3.500.000 TL'den Başlayan Fiyatlarla",
