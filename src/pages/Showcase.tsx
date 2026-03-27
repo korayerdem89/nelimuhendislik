@@ -20,6 +20,8 @@ interface FeatureItem {
 interface FlatType {
   label: string;
   images: string[];
+  /** Seçili daire tipi görselinin altında madde madde gösterilir */
+  bullets: string[];
 }
 
 interface ProjectData {
@@ -46,6 +48,11 @@ const projects: ProjectData[] = [
       {
         label: "1+1",
         images: ["/projects/valorya1/1.webp"],
+        bullets: [
+          "Kompakt ve işlevsel plan; genç profesyoneller ve yatırımcılar için uygun",
+          "Salon ve yatak odası ayrımı net; günlük kullanımda ferah his",
+          "Merkezi konum sayesinde ulaşım ve sosyal olanaklara yakınlık",
+        ],
       },
     ],
     featureDetails: [
@@ -93,26 +100,68 @@ const projects: ProjectData[] = [
           "/projects/valorya2/11.webp",
           "/projects/valorya2/12.webp",
         ],
+        bullets: [
+          "Geniş bahçe alanı; Dört mevsim kullanılabilen, modern peyzajlı özel bir dış yaşam sunuyor.",
+          "50 m² yaşam alanı; standart 1+1’lere göre ferah plan ve günlük hareket özgürlüğü için bol iç mekan.",
+          "Açık mutfak düzeni; salon ve yemek alanıyla bütünleşen, davetli sohbetlere uygun modern bir yaşam akışı.",
+          "Seramikten armature, dolaplardan aydınlatmaya kadar her detayda birinci sınıf markalarla seçilmiş malzeme ve işçilik.",
+        ],
       },
       {
         label: "2+1",
-        images: ["/projects/valorya2/3.webp"],
+        images: [
+          "/projects/valorya2/13.webp",
+          "/projects/valorya2/14.webp",
+          "/projects/valorya2/15.webp",
+          "/projects/valorya2/16.webp",
+          "/projects/valorya2/17.webp",
+        ],
+        bullets: [
+          "60 m² yaşam alanı; iki yatak odası ve geniş ortak alan için dengeli, ferah bir plan.",
+          "Kapı, seramik, mutfak ve banyo donanımı dahil tüm yaşam alanlarında birinci kalite malzeme ve marka tercihi.",
+          "Açık mutfak düzeni; salon ve yemek alanıyla kesintisiz, ferah ve güncel bir yaşam akışı.",
+          "Zemin kat veya ara kat seçenekleri; bahçe kullanımı veya yükseklik tercihinize göre planlanmış daireler.",
+        ],
       },
       {
         label: "3+1",
         images: ["/projects/valorya2/2.webp", "/projects/valorya2/1.webp"],
+        bullets: [
+          "105 m² yaşam alanı; dubleks plan ile üst ve alt katlarda ayrışan, özel konut deneyimi.",
+          "Geniş manzaralı cepheler; şehir ve doğa hattını kucaklayan panoramik görüş imkânı.",
+          "Geniş teras alanları; açık havada yemek ve dinlenme için ferah dış yaşam.",
+          "Kapalı mutfak düzeni; koku ve gürültüyü salondan ayıran, klasik ve düzenli mutfak kullanımı.",
+          "Seramik, doğrama, mutfak ve banyo donanımı dahil her detayda birinci kalite malzeme ve seçkin markalar.",
+        ],
       },
     ],
     featureDetails: [
-      { text: "Lüks iç mekan tasarımı", image: "/projects/valorya2/1.webp" },
-      { text: "Deniz manzaralı daireler", image: "/projects/valorya2/2.webp" },
-      { text: "Akıllı ev sistemleri", image: "/projects/valorya2/3.webp" },
       {
-        text: "Yeşil yaşam konsepti",
-        image: "/projects/serenitaprestige/1.webp",
+        text: "Merkezi konum avantajı",
+        image: "/features/valorya1_location.webp",
+      },
+      {
+        text: "Depreme karşı oldukça dayanıklı yapı",
+        image: "/features/earthquake.webp",
+      },
+      {
+        text: "Enerji verimliliği yüksek, güçlü yalıtım",
+        image: "/features/isolation.webp",
+      },
+      {
+        text: "Modern ve minimalist tasarım",
+        image: "/features/minimalist.webp",
+      },
+      {
+        text: "Yüksek yatırım değeri",
+        image: "/features/investment.webp",
+      },
+      {
+        text: "Asansör erişimli kapalı otopark",
+        image: "/projects/valorya2/cover.webp",
       },
     ],
-    price: "4.200.000 TL'den Başlayan Fiyatlarla",
+    price: "3.500.000 TL'den Başlayan Fiyatlarla",
   },
   {
     id: "valorya-3",
@@ -128,12 +177,22 @@ const projects: ProjectData[] = [
           "/projects/serenitaprestige/1.webp",
           "/projects/valorya2/1.webp",
         ],
+        bullets: [
+          "Yeşil alanlara ve site sosyal tesislerine yakın konum",
+          "Enerji verimli cephe ve yalıtım ile düşük işletme gideri",
+          "Tek kişi veya çiftler için ideal metrekare dengesi",
+        ],
       },
       {
         label: "2+1",
         images: [
           "/projects/serenitaprestige/2.webp",
           "/projects/valorya2/2.webp",
+        ],
+        bullets: [
+          "Wellness ve spor alanlarına yürüme mesafesinde",
+          "Çocuklu aileler için güvenli site yaşamı ve 24 saat güvenlik",
+          "Geniş balkon ve bahçe katı seçenekleriyle uyumlu planlar",
         ],
       },
       {
@@ -143,21 +202,40 @@ const projects: ProjectData[] = [
           "/projects/valorya2/3.webp",
           "/projects/serenitaprestige/1.webp",
         ],
+        bullets: [
+          "Metro ve ana arterlere erişim açısından elverişli konum",
+          "Üç artı bir düzeni ile nesiller arası konut ihtiyacına cevap",
+          "Prestijli proje kimliği ve yüksek yeniden satış değeri potansiyeli",
+        ],
       },
     ],
     featureDetails: [
       {
-        text: "Geniş bahçe katı seçenekleri",
-        image: "/projects/serenitaprestige/1.webp",
+        text: "Merkezi konum avantajı",
+        image: "/features/valorya1_location.webp",
       },
       {
-        text: "Spor ve wellness alanları",
+        text: "Depreme karşı oldukça dayanıklı yapı",
+        image: "/features/earthquake.webp",
+      },
+      {
+        text: "Enerji verimliliği yüksek, güçlü yalıtım",
+        image: "/features/isolation.webp",
+      },
+      {
+        text: "Modern ve minimalist tasarım",
+        image: "/features/minimalist.webp",
+      },
+      {
+        text: "Yüksek yatırım değeri",
+        image: "/features/investment.webp",
+      },
+      {
+        text: "Asansör erişimli kapalı otopark",
         image: "/projects/serenitaprestige/2.webp",
       },
-      { text: "24 saat güvenlik", image: "/projects/serenitaprestige/3.webp" },
-      { text: "Metro hattına yakın konum", image: "/projects/valorya2/2.webp" },
     ],
-    price: "5.100.000 TL'den Başlayan Fiyatlarla",
+    price: "3.500.000 TL'den Başlayan Fiyatlarla",
   },
 ];
 
@@ -445,11 +523,31 @@ export default function Showcase() {
                     ))}
                   </div>
                   {activeFlat && (
-                    <FlatImageCarousel
-                      images={activeFlat.images}
-                      carouselKey={`${active.id}-${activeFlat.label}`}
-                      altPrefix={`${active.name} ${activeFlat.label}`}
-                    />
+                    <>
+                      <FlatImageCarousel
+                        images={activeFlat.images}
+                        carouselKey={`${active.id}-${activeFlat.label}`}
+                        altPrefix={`${active.name} ${activeFlat.label}`}
+                      />
+                      {activeFlat.bullets.length > 0 && (
+                        <div className="mt-4 border-t border-cream-200/90 pt-4">
+                          <h3 className="mb-2.5 text-sm font-semibold tracking-tight text-foreground lg:text-base">
+                            {activeFlat.label} daire özellikleri
+                          </h3>
+                          <ul className="space-y-2 text-sm leading-relaxed text-foreground/75">
+                            {activeFlat.bullets.map((line) => (
+                              <li key={line} className="flex gap-2.5 pl-0.5">
+                                <span
+                                  className="mt-2 h-1 w-1 shrink-0 rounded-full bg-neli-600"
+                                  aria-hidden
+                                />
+                                <span>{line}</span>
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+                      )}
+                    </>
                   )}
                 </div>
               </div>
