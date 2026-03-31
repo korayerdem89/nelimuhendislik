@@ -32,7 +32,11 @@ export function listPublicBlogPosts() {
 
 export function selectPublicBlogPostsForSitemap() {
   return db
-    .select({ slug: blogPosts.slug, updatedAt: blogPosts.updatedAt })
+    .select({
+      slug: blogPosts.slug,
+      updatedAt: blogPosts.updatedAt,
+      publishedAt: blogPosts.publishedAt,
+    })
     .from(blogPosts)
     .where(getPublicBlogListingCondition())
     .orderBy(desc(blogPosts.publishedAt))

@@ -21,6 +21,19 @@ function absoluteUrl(path: string): string {
   return `${SITE_URL}/${segments.map((s) => encodeURIComponent(s)).join("/")}`;
 }
 
+/** Sitemap lastmod için en geç tarih (YYYY-MM-DD); blogda güncelleme veya yayın tarihi */
+function latestModYmd(
+  ...isoStrings: (string | null | undefined)[]
+): string {
+  const times = isoStrings
+    .map((s) => (s ? new Date(s).getTime() : NaN))
+    .filter((t) => !Number.isNaN(t));
+  if (times.length === 0) {
+    return new Date().toISOString().split("T")[0];
+  }
+  return new Date(Math.max(...times)).toISOString().split("T")[0];
+}
+
 const staticPages = [
   { path: "/", priority: "1.0", changefreq: "weekly" },
   { path: "/projeler", priority: "0.9", changefreq: "weekly" },
@@ -36,7 +49,11 @@ const staticPages = [
 const sitemapRoutes = new Hono();
 
 sitemapRoutes.get("/sitemap.xml", (c) => {
-  const allProjects = db.select({ slug: projects.slug, updatedAt: projects.updatedAt }).from(projects).all();
+  const allProjects = db
+    .select({ slug: projects.slug, updatedAt: projects.updatedAt })
+    .from(projects)
+    .all();
+  /** API/blog listesiyle aynı filtre: yayımda, kapak dolu, hariç slug yok */
   const publishedPosts = selectPublicBlogPostsForSitemap();
 
   const today = new Date().toISOString().split("T")[0];
@@ -68,13 +85,13 @@ sitemapRoutes.get("/sitemap.xml", (c) => {
   }
 
   for (const post of publishedPosts) {
-    const lastmod = post.updatedAt?.split("T")[0] || today;
+    const lastmod = latestModYmd(post.updatedAt, post.publishedAt);
     const loc = escapeXml(absoluteUrl(`blog/${post.slug}`));
     xml += `  <url>\n`;
     xml += `    <loc>${loc}</loc>\n`;
     xml += `    <lastmod>${lastmod}</lastmod>\n`;
     xml += `    <changefreq>monthly</changefreq>\n`;
-    xml += `    <priority>0.7</priority>\n`;
+    xml += `    <priority>0.75</priority>\n`;
     xml += `  </url>\n`;
   }
 
