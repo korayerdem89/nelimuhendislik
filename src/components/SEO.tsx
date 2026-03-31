@@ -16,7 +16,7 @@ const defaultMeta = {
   keywords:
     "neli mühendislik, izmir inşaat, konut projeleri, valorya, serenita, çiğli konut, karşıyaka daire",
   image: "https://neli.tr/og-image.jpg",
-  url: "https://neli.tr",
+  url: "https://neli.tr/",
 };
 
 export default function SEO({

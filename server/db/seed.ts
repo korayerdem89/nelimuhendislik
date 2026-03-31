@@ -12,6 +12,7 @@ import {
 } from "./schema.js";
 import { PERSIAN_PROPERTY_TURKEY_BLOG_HTML } from "./blog-fa-html.js";
 import { ARABIC_GULF_REAL_ESTATE_TURKEY_BLOG_HTML } from "./blog-ar-html.js";
+import { TURKISH_IZMIR_KONUT_MUHENDISLIK_BLOG_HTML } from "./blog-tr-izmir-konut-html.js";
 import { EXCLUDED_PUBLIC_BLOG_SLUGS } from "../lib/public-blog.js";
 
 const DB_PATH = resolve(PROJECT_ROOT, "data.db");
@@ -20,7 +21,7 @@ sqlite.exec("PRAGMA journal_mode = WAL;");
 sqlite.exec("PRAGMA foreign_keys = ON;");
 const db = drizzle(sqlite);
 
-/** Seed’de tutulan blog yazıları (Farsça / Arapça); kapak görseli zorunlu. */
+/** Seed’de tutulan blog yazıları; kapak görseli zorunlu. */
 const BLOG_DATA = [
   {
     slug: "rahnamaye-kharid-melk-der-turkiye-neli-mohandesi",
@@ -76,6 +77,37 @@ const BLOG_DATA = [
     metaKeywords:
       "الاستثمار في تركيا، شراء عقار في إزمير، ملاذ آمن للاستثمار، عقارات للبيع في تركيا، الجنسية التركية بالاستثمار، نلي للهندسة، فلل في إزمير",
     publishedAt: "2026-03-31",
+  },
+  {
+    slug: "izmir-konut-projeleri-guvenli-yapilar-neli-muhendislik",
+    title: "İzmir Konut Piyasasında Mühendislik Odaklı Yaklaşım: Neli Mühendislik",
+    excerpt:
+      "İzmir Neli Mühendislik ile mühendislik odaklı, depreme dayanıklı konutları keşfedin. Valorya ve Serenità serisi Karşıyaka ve Çiğli'de yükseliyor. Hemen inceleyin!",
+    content: TURKISH_IZMIR_KONUT_MUHENDISLIK_BLOG_HTML,
+    coverImage: "/images/blog/konut-projeleri.webp",
+    coverImageAlt:
+      "İzmir konut projeleri ve depreme dayanıklı yapılar — Neli Mühendislik, Karşıyaka",
+    category: "İnşaat",
+    tags: JSON.stringify([
+      "İzmir konut projeleri",
+      "Neli Mühendislik İzmir",
+      "Karşıyaka satılık daire",
+      "Çiğli satılık ev",
+      "depreme dayanıklı konut İzmir",
+      "Valorya konutları",
+      "Serenità konutları",
+      "mühendislik odaklı inşaat",
+      "Gayrimenkul",
+      "Mühendislik",
+    ]),
+    featured: false,
+    status: "published" as const,
+    metaTitle: "İzmir Konut Projeleri & Güvenli Yapılar | Neli Mühendislik",
+    metaDescription:
+      "İzmir Neli Mühendislik ile mühendislik odaklı, depreme dayanıklı konutları keşfedin. Valorya ve Serenità serisi Karşıyaka ve Çiğli'de yükseliyor. Hemen inceleyin!",
+    metaKeywords:
+      "İzmir konut projeleri, Neli Mühendislik İzmir, Karşıyaka satılık daire, Çiğli satılık ev, depreme dayanıklı konut İzmir, Valorya konutları, Serenità konutları, mühendislik odaklı inşaat",
+    publishedAt: "2026-04-01",
   },
 ];
 
@@ -790,6 +822,8 @@ const SETTINGS_DATA: Record<string, string> = {
   blog_categories: JSON.stringify([
     "Tümü",
     "İnşaat",
+    "Gayrimenkul",
+    "Mühendislik",
     "Mimari",
     "Projeler",
     "Restorasyon",
