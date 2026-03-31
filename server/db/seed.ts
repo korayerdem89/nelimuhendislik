@@ -11,6 +11,7 @@ import {
   milestones,
 } from "./schema.js";
 import { PERSIAN_PROPERTY_TURKEY_BLOG_HTML } from "./blog-fa-html.js";
+import { ARABIC_GULF_REAL_ESTATE_TURKEY_BLOG_HTML } from "./blog-ar-html.js";
 import { EXCLUDED_PUBLIC_BLOG_SLUGS } from "../lib/public-blog.js";
 
 const DB_PATH = resolve(PROJECT_ROOT, "data.db");
@@ -19,7 +20,7 @@ sqlite.exec("PRAGMA journal_mode = WAL;");
 sqlite.exec("PRAGMA foreign_keys = ON;");
 const db = drizzle(sqlite);
 
-/** Seed’de tutulan tek blog yazısı (Farsça); kapak görseli zorunlu. */
+/** Seed’de tutulan blog yazıları (Farsça / Arapça); kapak görseli zorunlu. */
 const BLOG_DATA = [
   {
     slug: "rahnamaye-kharid-melk-der-turkiye-neli-mohandesi",
@@ -47,6 +48,34 @@ const BLOG_DATA = [
     metaKeywords:
       "خرید ملک در ترکیه، سرمایه‌گذاری در ترکیه، خرید خانه در ترکیه، اقامت ترکیه، قیمت خانه در ترکیه، شرکت ساختمانی ایرانی در ترکیه، خرید آپارتمان در ازمیر",
     publishedAt: "2026-03-27",
+  },
+  {
+    slug: "al-istithmar-al-aqari-al-amn-fi-turkiya-neili-izmir",
+    title:
+      "الاستثمار العقاري في تركيا: الملاذ الآمن والمستقر لرؤوس الأموال الخليجية",
+    excerpt:
+      "احمِ ثروتك من الأزمات الجيوسياسية. اكتشف فرص الاستثمار العقاري الآمن في إزمير، تركيا، مع مشاريع شركة نلي للهندسة. استثمار مباشر بدون وسطاء.",
+    content: ARABIC_GULF_REAL_ESTATE_TURKEY_BLOG_HTML,
+    coverImage: "/images/blog/arabistan-yatırım.webp",
+    coverImageAlt: "الاستثمار العقاري الآمن في تركيا — نلي للهندسة، إزمير",
+    category: "العربية",
+    tags: JSON.stringify([
+      "الاستثمار في تركيا",
+      "شراء عقار في إزمير",
+      "ملاذ آمن للاستثمار",
+      "عقارات للبيع في تركيا",
+      "الجنسية التركية بالاستثمار",
+      "نلي للهندسة",
+      "فلل في إزمير",
+    ]),
+    featured: false,
+    status: "published" as const,
+    metaTitle: "الاستثمار العقاري الآمن في تركيا | نلي للهندسة في إزمير",
+    metaDescription:
+      "احمِ ثروتك من الأزمات الجيوسياسية. اكتشف فرص الاستثمار العقاري الآمن في إزمير، تركيا، مع مشاريع شركة نلي للهندسة. استثمار مباشر بدون وسطاء.",
+    metaKeywords:
+      "الاستثمار في تركيا، شراء عقار في إزمير، ملاذ آمن للاستثمار، عقارات للبيع في تركيا، الجنسية التركية بالاستثمار، نلي للهندسة، فلل في إزمير",
+    publishedAt: "2026-03-31",
   },
 ];
 
@@ -766,6 +795,7 @@ const SETTINGS_DATA: Record<string, string> = {
     "Restorasyon",
     "Dekorasyon",
     "فارسی",
+    "العربية",
   ]),
 };
 

@@ -6,6 +6,10 @@ import {
   fetchBlogPosts,
   getBlogPostBySlug,
   formatDate,
+  blogDateLocaleForCategory,
+  blogContentLang,
+  blogIsRtlCategory,
+  blogTagsLabel,
 } from "@/data/blog";
 import type { BlogPost } from "@/data/blog";
 import SEO from "@/components/SEO";
@@ -56,8 +60,9 @@ export default function BlogDetail() {
       ? (() => { try { return JSON.parse(post.tags); } catch { return []; } })()
       : [];
 
-  const isPersian = post.category === "فارسی";
-  const dateLocale = isPersian ? "fa-IR" : "tr-TR";
+  const isRtl = blogIsRtlCategory(post.category);
+  const contentLang = blogContentLang(post.category);
+  const dateLocale = blogDateLocaleForCategory(post.category);
 
   return (
     <main className="min-h-screen pt-20 md:pt-24 lg:pt-28">
@@ -105,8 +110,8 @@ export default function BlogDetail() {
                 </div>
 
                 <div
-                  dir={isPersian ? "rtl" : "ltr"}
-                  lang={isPersian ? "fa" : "tr"}
+                  dir={isRtl ? "rtl" : "ltr"}
+                  lang={contentLang}
                 >
                   <Link
                     to={`/blog?category=${encodeURIComponent(post.category)}`}
@@ -157,21 +162,21 @@ export default function BlogDetail() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className={`blog-content${isPersian ? " blog-content--rtl" : ""}`}
-              dir={isPersian ? "rtl" : "ltr"}
-              lang={isPersian ? "fa" : "tr"}
+              className={`blog-content${isRtl ? " blog-content--rtl" : ""}`}
+              dir={isRtl ? "rtl" : "ltr"}
+              lang={contentLang}
               dangerouslySetInnerHTML={{ __html: post.content }}
             />
 
             {tags.length > 0 && (
               <div
                 className="mt-10 md:mt-12 pt-6 md:pt-8 border-t border-cream-300"
-                dir={isPersian ? "rtl" : "ltr"}
-                lang={isPersian ? "fa" : "tr"}
+                dir={isRtl ? "rtl" : "ltr"}
+                lang={contentLang}
               >
                 <div className="flex flex-wrap items-center gap-2">
                   <span className="text-sm text-foreground/50 ms-2 me-2">
-                    {isPersian ? "برچسب‌ها:" : "Etiketler:"}
+                    {blogTagsLabel(post.category)}
                   </span>
                   {tags.map((tag: string) => (
                     <span key={tag} className="px-3 py-1 bg-cream-100 text-foreground/70 text-sm rounded-full">
@@ -237,7 +242,7 @@ export default function BlogDetail() {
                         <span>
                           {formatDate(
                             relatedPost.publishedAt || "",
-                            relatedPost.category === "فارسی" ? "fa-IR" : "tr-TR",
+                            blogDateLocaleForCategory(relatedPost.category),
                           )}
                         </span>
                       </div>

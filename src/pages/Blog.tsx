@@ -3,7 +3,11 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Calendar, ChevronDown, ArrowRight } from "lucide-react";
 import PageHero from "@/components/sections/PageHero";
-import { fetchBlogPosts, formatDate } from "@/data/blog";
+import {
+  fetchBlogPosts,
+  formatDate,
+  blogDateLocaleForCategory,
+} from "@/data/blog";
 import type { BlogPost } from "@/data/blog";
 import SEO from "@/components/SEO";
 import OptimizedImage from "@/components/OptimizedImage";
@@ -115,9 +119,9 @@ export default function Blog() {
                           <span>
                             {formatDate(
                               featuredPosts[0].publishedAt || "",
-                              featuredPosts[0].category === "فارسی"
-                                ? "fa-IR"
-                                : "tr-TR",
+                              blogDateLocaleForCategory(
+                                featuredPosts[0].category,
+                              ),
                             )}
                           </span>
                         </div>
@@ -161,7 +165,7 @@ export default function Blog() {
                           <span>
                             {formatDate(
                               post.publishedAt || "",
-                              post.category === "فارسی" ? "fa-IR" : "tr-TR",
+                              blogDateLocaleForCategory(post.category),
                             )}
                           </span>
                         </div>
@@ -267,7 +271,7 @@ export default function Blog() {
                       <span>
                         {formatDate(
                           post.publishedAt || "",
-                          post.category === "فارسی" ? "fa-IR" : "tr-TR",
+                          blogDateLocaleForCategory(post.category),
                         )}
                       </span>
                     </div>

@@ -614,7 +614,6 @@ export default function Showcase() {
                   )}
                 </div>
               </div>
-
               {/* RIGHT column (2/5) — info sidebar (desktop) */}
               <div className="mt-6 lg:col-span-2 lg:mt-0">
                 {/* Desktop: sticky sidebar */}

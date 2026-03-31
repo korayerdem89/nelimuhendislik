@@ -60,3 +60,25 @@ export function formatDate(
     day: "numeric",
   });
 }
+
+export function blogDateLocaleForCategory(category: string): string {
+  if (category === "فارسی") return "fa-IR";
+  if (category === "العربية") return "ar-SA";
+  return "tr-TR";
+}
+
+export function blogContentLang(category: string): string {
+  if (category === "فارسی") return "fa";
+  if (category === "العربية") return "ar";
+  return "tr";
+}
+
+export function blogIsRtlCategory(category: string): boolean {
+  return category === "فارسی" || category === "العربية";
+}
+
+export function blogTagsLabel(category: string): string {
+  if (category === "فارسی") return "برچسب‌ها:";
+  if (category === "العربية") return "الوسوم:";
+  return "Etiketler:";
+}
