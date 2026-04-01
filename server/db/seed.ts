@@ -24,13 +24,13 @@ const db = drizzle(sqlite);
 /** Seed’de tutulan blog yazıları; kapak görseli zorunlu. */
 const BLOG_DATA = [
   {
-    slug: "rahnamaye-kharid-melk-der-turkiye-neli-mohandesi",
-    title: "راهنمای خرید ملک در ترکیه | سرمایه‌گذاری با نلی مهندسی",
+    slug: "rahnamaye-kharid-melk-turkiye-mohandesi-neli",
+    title: "راهنمای خرید ملک در ترکیه | سرمایه‌گذاری با مهندسی نلی",
     excerpt:
-      "قصد خرید خانه و سرمایه‌گذاری در ترکیه را دارید؟ با شرکت ساختمانی ایرانی نلی مهندسی (فعال از ۲۰۲۱) بهترین فرصت‌های بازار پنهان ترکیه (ازمیر) را بشناسید.",
+      "قصد خرید خانه و سرمایه‌گذاری در ترکیه را دارید؟ با شرکت ساختمانی «مهندسی نلی» (فعال از ۲۰۲۱)، بهترین فرصت‌های پنهان بازار مسکن در ازمیر را شناسایی کنید.",
     content: PERSIAN_PROPERTY_TURKEY_BLOG_HTML,
     coverImage: "/images/blog/iran-yatırım.webp",
-    coverImageAlt: "سرمایه‌گذاری و خرید ملک در ترکیه — نلی مهندسی، ازمیر",
+    coverImageAlt: "سرمایه‌گذاری و خرید ملک در ترکیه — مهندسی نلی، ازمیر",
     category: "فارسی",
     tags: JSON.stringify([
       "خرید ملک در ترکیه",
@@ -43,9 +43,9 @@ const BLOG_DATA = [
     ]),
     featured: true,
     status: "published" as const,
-    metaTitle: "راهنمای خرید ملک در ترکیه | سرمایه‌گذاری با نلی مهندسی",
+    metaTitle: "راهنمای خرید ملک در ترکیه | سرمایه‌گذاری با مهندسی نلی",
     metaDescription:
-      "قصد خرید خانه و سرمایه‌گذاری در ترکیه را دارید؟ با شرکت ساختمانی ایرانی نلی مهندسی (فعال از ۲۰۲۱) بهترین فرصت‌های بازار پنهان ترکیه (ازمیر) را بشناسید.",
+      "قصد خرید خانه و سرمایه‌گذاری در ترکیه را دارید؟ با شرکت ساختمانی «مهندسی نلی» (فعال از ۲۰۲۱)، بهترین فرصت‌های پنهان بازار مسکن در ازمیر را شناسایی کنید.",
     metaKeywords:
       "خرید ملک در ترکیه، سرمایه‌گذاری در ترکیه، خرید خانه در ترکیه، اقامت ترکیه، قیمت خانه در ترکیه، شرکت ساختمانی ایرانی در ترکیه، خرید آپارتمان در ازمیر",
     publishedAt: "2026-03-27",
@@ -80,7 +80,8 @@ const BLOG_DATA = [
   },
   {
     slug: "izmir-konut-projeleri-guvenli-yapilar-neli-muhendislik",
-    title: "İzmir Konut Piyasasında Mühendislik Odaklı Yaklaşım: Neli Mühendislik",
+    title:
+      "İzmir Konut Piyasasında Mühendislik Odaklı Yaklaşım: Neli Mühendislik",
     excerpt:
       "İzmir Neli Mühendislik ile mühendislik odaklı, depreme dayanıklı konutları keşfedin. Valorya ve Serenità serisi Karşıyaka ve Çiğli'de yükseliyor. Hemen inceleyin!",
     content: TURKISH_IZMIR_KONUT_MUHENDISLIK_BLOG_HTML,
