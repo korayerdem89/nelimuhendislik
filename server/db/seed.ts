@@ -29,7 +29,7 @@ const BLOG_DATA = [
     excerpt:
       "قصد خرید خانه و سرمایه‌گذاری در ترکیه را دارید؟ با شرکت ساختمانی «مهندسی نلی» (فعال از ۲۰۲۱)، بهترین فرصت‌های پنهان بازار مسکن در ازمیر را شناسایی کنید.",
     content: PERSIAN_PROPERTY_TURKEY_BLOG_HTML,
-    coverImage: "/images/blog/iran-yatırım.webp",
+    coverImage: "/images/blog/iran-yatirim.webp",
     coverImageAlt: "سرمایه‌گذاری و خرید ملک در ترکیه — مهندسی نلی، ازمیر",
     category: "فارسی",
     tags: JSON.stringify([
@@ -57,7 +57,7 @@ const BLOG_DATA = [
     excerpt:
       "احمِ ثروتك من الأزمات الجيوسياسية. اكتشف فرص الاستثمار العقاري الآمن في إزمير، تركيا، مع مشاريع شركة نلي للهندسة. استثمار مباشر بدون وسطاء.",
     content: ARABIC_GULF_REAL_ESTATE_TURKEY_BLOG_HTML,
-    coverImage: "/images/blog/arabistan-yatırım.webp",
+    coverImage: "/images/blog/arabistan-yatirim.webp",
     coverImageAlt: "الاستثمار العقاري الآمن في تركيا — نلي للهندسة، إزمير",
     category: "العربية",
     tags: JSON.stringify([
@@ -85,7 +85,7 @@ const BLOG_DATA = [
     excerpt:
       "İzmir Neli Mühendislik ile mühendislik odaklı, depreme dayanıklı konutları keşfedin. Valorya ve Serenità serisi Karşıyaka ve Çiğli'de yükseliyor. Hemen inceleyin!",
     content: TURKISH_IZMIR_KONUT_MUHENDISLIK_BLOG_HTML,
-    coverImage: "/images/blog/konut-projeleri.webp",
+    coverImage: "/images/blog/neli-tanitim.webp",
     coverImageAlt:
       "İzmir konut projeleri ve depreme dayanıklı yapılar — Neli Mühendislik, Karşıyaka",
     category: "İnşaat",
