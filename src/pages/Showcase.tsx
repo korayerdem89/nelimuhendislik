@@ -231,7 +231,7 @@ const projects: ProjectData[] = [
         label: "3+1",
         images: [
           "/projects/valorya3/7.webp",
-          "/projects/valorya3/10.webp",
+          "/projects/valorya3/9.webp",
           "/projects/valorya3/11.webp",
           "/projects/valorya3/12.webp",
         ],
