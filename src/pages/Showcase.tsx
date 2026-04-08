@@ -72,7 +72,15 @@ const projects: ProjectData[] = [
     flatTypes: [
       {
         label: "1+1",
-        images: ["/projects/valorya1/1.webp"],
+        images: [
+          "/projects/valorya1/1.webp",
+          "/projects/valorya1/2.webp",
+          "/projects/valorya1/3.webp",
+          "/projects/valorya1/4.webp",
+          "/projects/valorya1/5.webp",
+          "/projects/valorya1/6.webp",
+          "/projects/valorya1/7.webp",
+        ],
         bullets: [
           "Kompakt ve işlevsel plan; genç profesyoneller ve yatırımcılar için uygun",
           "Salon ve yatak odası ayrımı net; günlük kullanımda ferah his",
