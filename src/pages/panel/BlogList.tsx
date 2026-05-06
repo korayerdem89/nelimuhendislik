@@ -4,6 +4,7 @@ import { Plus, Edit, Trash2, Eye, EyeOff, CheckSquare, Square, X } from "lucide-
 import { api, getUploadUrl } from "@/lib/api";
 import { Button } from "@/components/ui/button";
 import { toast } from "sonner";
+import { invalidateBlogCache } from "@/data/blog";
 
 interface BlogPost {
   id: number;
@@ -35,6 +36,7 @@ export default function BlogList() {
     if (!confirm(`"${title}" yazısını silmek istediğinize emin misiniz?`)) return;
     await api.delete(`/api/admin/blog/${id}`);
     toast.success("Blog yazısı silindi");
+    invalidateBlogCache();
     fetchPosts();
   };
 
@@ -63,6 +65,7 @@ export default function BlogList() {
     await api.post("/api/admin/blog/bulk-delete", { ids: [...selectedIds] });
     toast.success(`${count} yazı silindi`);
     clearSelection();
+    invalidateBlogCache();
     fetchPosts();
   };
 
@@ -75,6 +78,7 @@ export default function BlogList() {
     });
     toast.success(`${count} yazı ${label} olarak güncellendi`);
     clearSelection();
+    invalidateBlogCache();
     fetchPosts();
   };
 

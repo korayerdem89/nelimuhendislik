@@ -25,6 +25,7 @@ publicRoutes.onError((err, c) => {
 });
 
 publicRoutes.get("/blog", (c) => {
+  applyNoStore(c);
   const posts = listPublicBlogPosts();
   return c.json(
     posts.map((p) => ({ ...p, tags: JSON.parse(p.tags) })),
@@ -32,6 +33,7 @@ publicRoutes.get("/blog", (c) => {
 });
 
 publicRoutes.get("/blog/:slug", (c) => {
+  applyNoStore(c);
   const slug = c.req.param("slug");
   const post = db
     .select()

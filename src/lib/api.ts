@@ -53,6 +53,7 @@ async function request<T>(
   }
 
   const res = await fetch(apiEndpoint(endpoint), {
+    cache: "no-store",
     ...options,
     headers,
   });

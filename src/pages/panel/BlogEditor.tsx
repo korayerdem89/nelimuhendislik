@@ -7,6 +7,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import ImageUploader from "@/components/panel/ImageUploader";
 import { toast } from "sonner";
+import { invalidateBlogCache } from "@/data/blog";
 
 interface BlogPost {
   id: number;
@@ -138,6 +139,7 @@ export default function BlogEditor() {
         await api.put(`/api/admin/blog/${id}`, payload);
         toast.success("Blog yazısı güncellendi!");
       }
+      invalidateBlogCache();
       navigate("/panel/blog");
     } catch (err) {
       toast.error(err instanceof Error ? err.message : "Kaydetme başarısız");

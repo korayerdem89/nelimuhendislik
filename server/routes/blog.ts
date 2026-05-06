@@ -12,16 +12,23 @@ function isBlogStatus(status: string): status is BlogStatus {
   return (BLOG_STATUSES as readonly string[]).includes(status);
 }
 
+function applyNoStore(c: { header: (key: string, value: string) => void }) {
+  c.header("Cache-Control", "no-store, no-cache, must-revalidate, max-age=0");
+  c.header("Pragma", "no-cache");
+}
+
 blog.get("/", (c) => {
+  applyNoStore(c);
   const posts = db
     .select()
     .from(blogPosts)
-    .orderBy(desc(blogPosts.publishedAt))
+    .orderBy(desc(blogPosts.publishedAt), desc(blogPosts.createdAt), desc(blogPosts.id))
     .all();
   return c.json(posts);
 });
 
 blog.get("/:id", (c) => {
+  applyNoStore(c);
   const id = Number(c.req.param("id"));
   const post = db.select().from(blogPosts).where(eq(blogPosts.id, id)).get();
   if (!post) return c.json({ error: "Not found" }, 404);

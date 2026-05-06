@@ -20,15 +20,12 @@ export interface BlogPost {
   metaKeywords: string;
 }
 
-let _cachedPosts: BlogPost[] | null = null;
 let _fetchPromise: Promise<BlogPost[]> | null = null;
 
 export async function fetchBlogPosts(): Promise<BlogPost[]> {
-  if (_cachedPosts) return _cachedPosts;
   if (_fetchPromise) return _fetchPromise;
 
   _fetchPromise = api.get<BlogPost[]>("/api/public/blog").then((posts) => {
-    _cachedPosts = posts;
     _fetchPromise = null;
     return posts;
   });
@@ -37,7 +34,6 @@ export async function fetchBlogPosts(): Promise<BlogPost[]> {
 }
 
 export function invalidateBlogCache() {
-  _cachedPosts = null;
   _fetchPromise = null;
 }
 
