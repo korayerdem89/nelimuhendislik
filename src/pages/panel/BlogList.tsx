@@ -1,7 +1,7 @@
 import { useState, useEffect, useCallback } from "react";
 import { Link } from "react-router-dom";
 import { Plus, Edit, Trash2, Eye, EyeOff, CheckSquare, Square, X } from "lucide-react";
-import { api, API_URL } from "@/lib/api";
+import { api, getUploadUrl } from "@/lib/api";
 import { Button } from "@/components/ui/button";
 import { toast } from "sonner";
 
@@ -36,12 +36,6 @@ export default function BlogList() {
     await api.delete(`/api/admin/blog/${id}`);
     toast.success("Blog yazısı silindi");
     fetchPosts();
-  };
-
-  const getImageUrl = (path: string) => {
-    if (!path) return "";
-    if (path.startsWith("/uploads")) return `${API_URL}${path}`;
-    return path;
   };
 
   const toggleSelect = useCallback((id: number) => {
@@ -203,7 +197,7 @@ export default function BlogList() {
                     <div className="flex items-center gap-3">
                       {post.coverImage && (
                         <img
-                          src={getImageUrl(post.coverImage)}
+                          src={getUploadUrl(post.coverImage)}
                           alt=""
                           className="w-10 h-10 rounded-lg object-cover flex-shrink-0"
                         />

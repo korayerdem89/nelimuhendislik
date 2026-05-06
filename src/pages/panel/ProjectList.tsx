@@ -13,7 +13,7 @@ import {
   Save,
   Info,
 } from "lucide-react";
-import { api, API_URL } from "@/lib/api";
+import { api, getUploadUrl } from "@/lib/api";
 import { Button } from "@/components/ui/button";
 import { toast } from "sonner";
 import { invalidateProjectsCache } from "@/data/projects";
@@ -70,12 +70,6 @@ export default function ProjectList() {
     await api.delete(`/api/admin/projects/${id}`);
     toast.success("Proje silindi");
     loadData();
-  };
-
-  const getImageUrl = (path: string) => {
-    if (!path) return "";
-    if (path.startsWith("/uploads")) return `${API_URL}${path}`;
-    return path;
   };
 
   const toggleSelect = useCallback((id: number) => {
@@ -256,7 +250,7 @@ export default function ProjectList() {
                     <div className="h-12 w-12 shrink-0 overflow-hidden rounded-lg bg-orange-100 ring-1 ring-orange-200/80">
                       {p?.image ? (
                         <img
-                          src={getImageUrl(p.image)}
+                          src={getUploadUrl(p.image)}
                           alt=""
                           className="h-full w-full object-cover"
                         />
@@ -384,7 +378,7 @@ export default function ProjectList() {
               {project.image && (
                 <div className="relative aspect-[4/3] overflow-hidden bg-orange-100/30">
                   <img
-                    src={getImageUrl(project.image)}
+                    src={getUploadUrl(project.image)}
                     alt={project.name}
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.02]"
                   />

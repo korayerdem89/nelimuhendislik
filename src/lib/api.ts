@@ -1,5 +1,36 @@
 const API_URL = import.meta.env.VITE_API_URL || "";
 
+function joinUrl(base: string, path: string): string {
+  if (!base) return path;
+  return `${base.replace(/\/$/, "")}/${path.replace(/^\//, "")}`;
+}
+
+function apiEndpoint(endpoint: string): string {
+  if (API_URL.replace(/\/$/, "").endsWith("/api") && endpoint.startsWith("/api/")) {
+    return joinUrl(API_URL, endpoint.replace(/^\/api\//, ""));
+  }
+  return joinUrl(API_URL, endpoint);
+}
+
+function uploadEndpoint(path: string): string {
+  const normalized = path.startsWith("/") ? path : `/${path}`;
+  if (normalized.startsWith("/api/uploads/")) return normalized;
+  if (normalized.startsWith("/uploads/")) return `/api${normalized}`;
+  return normalized;
+}
+
+function getUploadUrl(path: string): string {
+  if (!path) return "";
+  if (/^https?:\/\//i.test(path)) return path;
+
+  const normalized = path.startsWith("/") ? path : `/${path}`;
+  if (normalized.startsWith("/uploads/") || normalized.startsWith("/api/uploads/")) {
+    return apiEndpoint(uploadEndpoint(normalized));
+  }
+
+  return path;
+}
+
 function getToken(): string | null {
   return localStorage.getItem("admin_token");
 }
@@ -21,7 +52,7 @@ async function request<T>(
     headers["Content-Type"] = "application/json";
   }
 
-  const res = await fetch(`${API_URL}${endpoint}`, {
+  const res = await fetch(apiEndpoint(endpoint), {
     ...options,
     headers,
   });
@@ -63,4 +94,4 @@ export const api = {
     }),
 };
 
-export { API_URL };
+export { API_URL, getUploadUrl };

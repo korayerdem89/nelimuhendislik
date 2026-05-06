@@ -1,4 +1,5 @@
 import { useState, useRef, useEffect, memo } from "react";
+import { getUploadUrl } from "@/lib/api";
 
 interface OptimizedImageProps {
   src: string;
@@ -74,6 +75,7 @@ function OptimizedImageComponent({
     fill: "object-fill",
     none: "object-none",
   }[objectFit];
+  const imageSrc = getUploadUrl(src);
 
   return (
     <div
@@ -98,7 +100,7 @@ function OptimizedImageComponent({
       {/* Actual image */}
       {(isInView || priority) && !hasError && (
         <img
-          src={src}
+          src={imageSrc}
           alt={alt}
           width={width}
           height={height}

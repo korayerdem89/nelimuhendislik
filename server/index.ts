@@ -31,6 +31,10 @@ app.use("*", cors({
 }));
 
 app.use("/uploads/*", serveStatic({ root: PROJECT_ROOT }));
+app.use("/api/uploads/*", serveStatic({
+  root: PROJECT_ROOT,
+  rewriteRequestPath: (path) => path.replace(/^\/api/, ""),
+}));
 
 app.route("/", sitemapRoutes);
 app.route("/api/auth", authRoutes);

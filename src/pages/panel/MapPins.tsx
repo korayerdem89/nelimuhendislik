@@ -3,7 +3,7 @@ import { Plus, Trash2, Save } from "lucide-react";
 import { MapContainer, TileLayer, Marker, useMapEvents } from "react-leaflet";
 import { divIcon } from "leaflet";
 import type { Marker as LeafletMarker } from "leaflet";
-import { api, API_URL } from "@/lib/api";
+import { api } from "@/lib/api";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { toast } from "sonner";

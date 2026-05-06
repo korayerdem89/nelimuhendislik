@@ -1,6 +1,6 @@
 import { useState, useRef, useCallback, useMemo, useEffect } from "react";
 import { Upload, X, Image as ImageIcon, Info } from "lucide-react";
-import { api, API_URL } from "@/lib/api";
+import { api, getUploadUrl } from "@/lib/api";
 import { Button } from "@/components/ui/button";
 import { toast } from "sonner";
 import { showOptimizedToast } from "./OptimizedToast";
@@ -41,25 +41,6 @@ export default function ImageUploader({
   const [previewOverrideSrc, setPreviewOverrideSrc] = useState<string | null>(null);
   const [triedFallback, setTriedFallback] = useState(false);
   const inputRef = useRef<HTMLInputElement>(null);
-
-  const getImageUrl = (path: string) => {
-    if (!path) return "";
-    if (path.startsWith("http")) return path;
-
-    // API URL `/api` veya `.../api` ile bitiyorsa, statik dosya köküne dön.
-    const normalizedApiBase = API_URL.replace(/\/api\/?$/, "");
-
-    if (path.startsWith("/api/uploads/")) {
-      return `${normalizedApiBase}${path.replace(/^\/api/, "")}`;
-    }
-    if (path.startsWith("/uploads/")) {
-      return `${normalizedApiBase}${path}`;
-    }
-    if (path.startsWith("uploads/")) {
-      return `${normalizedApiBase}/${path}`;
-    }
-    return path;
-  };
 
   function validateFile(file: File): string | null {
     if (!ALLOWED_TYPES.includes(file.type)) {
@@ -138,7 +119,7 @@ export default function ImageUploader({
     if (value.startsWith("http")) return "";
     const normalized = value.startsWith("/") ? value : `/${value}`;
     if (normalized.startsWith("/uploads/")) {
-      return `/api${normalized}`;
+      return normalized;
     }
     if (normalized.startsWith("/api/uploads/")) {
       return normalized.replace(/^\/api/, "");
@@ -146,7 +127,7 @@ export default function ImageUploader({
     return "";
   }, [value]);
 
-  const primaryPreviewSrc = useMemo(() => getImageUrl(value), [value]);
+  const primaryPreviewSrc = useMemo(() => getUploadUrl(value), [value]);
   const previewSrc = previewOverrideSrc ?? primaryPreviewSrc;
 
   useEffect(() => {

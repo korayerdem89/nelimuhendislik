@@ -5,6 +5,12 @@ import { blogPosts } from "../db/schema.js";
 import { logActivity } from "../lib/log-activity.js";
 
 const blog = new Hono();
+const BLOG_STATUSES = ["draft", "published"] as const;
+type BlogStatus = (typeof BLOG_STATUSES)[number];
+
+function isBlogStatus(status: string): status is BlogStatus {
+  return (BLOG_STATUSES as readonly string[]).includes(status);
+}
 
 blog.get("/", (c) => {
   const posts = db
@@ -107,7 +113,7 @@ blog.post("/bulk-delete", async (c) => {
 
 blog.post("/bulk-status", async (c) => {
   const { ids, status } = (await c.req.json()) as { ids: number[]; status: string };
-  if (!ids?.length || !status) return c.json({ error: "ids and status required" }, 400);
+  if (!ids?.length || !isBlogStatus(status)) return c.json({ error: "ids and valid status required" }, 400);
   db.update(blogPosts)
     .set({ status, updatedAt: new Date().toISOString() })
     .where(inArray(blogPosts.id, ids))

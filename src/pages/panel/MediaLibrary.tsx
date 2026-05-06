@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef, useCallback } from "react";
 import { Upload, Trash2, Copy, Check, Type, Info } from "lucide-react";
-import { api, API_URL } from "@/lib/api";
+import { api, getUploadUrl } from "@/lib/api";
 import { Button } from "@/components/ui/button";
 import { toast } from "sonner";
 import { showOptimizedToast } from "@/components/panel/OptimizedToast";
@@ -169,7 +169,7 @@ export default function MediaLibrary() {
           >
             <div className="aspect-square overflow-hidden bg-gray-50">
               <img
-                src={`${API_URL}${item.thumbnailPath || item.path}`}
+                src={getUploadUrl(item.thumbnailPath || item.path)}
                 alt={item.altText || item.originalName}
                 className="w-full h-full object-cover"
               />
