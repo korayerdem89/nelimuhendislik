@@ -43,7 +43,19 @@ export default function ImageUploader({
   const getImageUrl = (path: string) => {
     if (!path) return "";
     if (path.startsWith("http")) return path;
-    if (path.startsWith("/uploads")) return `${API_URL}${path}`;
+
+    // API URL `/api` veya `.../api` ile bitiyorsa, statik dosya köküne dön.
+    const normalizedApiBase = API_URL.replace(/\/api\/?$/, "");
+
+    if (path.startsWith("/api/uploads/")) {
+      return `${normalizedApiBase}${path.replace(/^\/api/, "")}`;
+    }
+    if (path.startsWith("/uploads/")) {
+      return `${normalizedApiBase}${path}`;
+    }
+    if (path.startsWith("uploads/")) {
+      return `${normalizedApiBase}/${path}`;
+    }
     return path;
   };
 
