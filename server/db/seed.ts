@@ -110,6 +110,81 @@ const BLOG_DATA = [
       "İzmir konut projeleri, Neli Mühendislik İzmir, Karşıyaka satılık daire, Çiğli satılık ev, depreme dayanıklı konut İzmir, Valorya konutları, Serenità konutları, mühendislik odaklı inşaat",
     publishedAt: "2026-04-01",
   },
+  {
+    slug: "cigli-gayrimenkul-yatirimi-lokasyon-muhendislik-avantajlari",
+    title:
+      "Çiğli'de Doğru Gayrimenkul Yatırımı: Neli Mühendislik Lokasyon ve Mühendislik Standartları",
+    excerpt:
+      "İzmir Çiğli'de, üniversitelere, hastanelere ve sanayi bölgelerine entegre konumda, yüksek konfor ve mühendislik standartlarıyla inşa edilen Neli Mühendislik projelerinin yatırım avantajlarını inceleyin.",
+    content: `
+  <article>
+      <header>
+          <h1>Çiğli'de Doğru Gayrimenkul Yatırımı: Neli Mühendislik Lokasyon ve Mühendislik Standartları</h1>
+          <p><strong>Özet:</strong> İzmir, Çiğli bölgesinde ana arterlere, üniversitelere, hastanelere ve sanayi bölgelerine entegre, yüksek mühendislik standartlarıyla inşa edilen Neli Mühendislik projelerinin yatırım avantajları.</p>
+      </header>
+  
+      <section>
+          <h2>Neden Çiğli ve Neden Bu Lokasyonlar?</h2>
+          <p>Gayrimenkul yatırımında amortisman süresini ve kira getirisini belirleyen temel unsur lokasyondur. Neli Mühendislik olarak Çiğli'deki projelerimizi (özellikle Balatçık ve Küçükçiğli gibi gelişen akslarda) rastgele değil, stratejik verilere dayanarak konumlandırıyoruz.</p>
+          <ul>
+              <li><strong>Ulaşım Ağlarına Entegrasyon:</strong> Projelerimiz ana caddeye doğrudan bağlantılı veya yürüme mesafesindedir.</li>
+              <li><strong>Demografik Talep:</strong> Üniversite kampüslerine ve bölge hastanelerine olan yakınlık, nitelikli kiracı talebini sürekli ve yüksek tutar.</li>
+              <li><strong>Ticari Hareketlilik:</strong> Atatürk Organize Sanayi Bölgesi gibi istihdam merkezlerine komşu olmak, yatırımın değerini korumasını sağlar.</li>
+          </ul>
+      </section>
+  
+      <section>
+          <h2>Neli Mühendislik Farkı: Alan Değil, Fonksiyon ve Güvenlik</h2>
+          <p>Sektördeki standart "büyük ve geniş ev" söylemleri yerine, rasyonel mühendislik çözümlerine odaklanıyoruz. Bizim önceliğimiz yüksek konfor ve maksimize edilmiş ulaşım avantajıdır. Yapısal üretim standartlarımız şunları içerir:</p>
+          <ul>
+              <li><strong>Deprem Güvenliği:</strong> Tüm projelerimizde statik hesaplamalar tavizsiz uygulanır. Zemin mekaniğine uygun olarak <strong>radye temel sistemleri</strong> inşa edilir.</li>
+              <li><strong>Beton Sınıfı:</strong> Taşıyıcı sistemlerimizde konvansiyonel standartların üzerinde olan <strong>C45 yüksek dayanımlı beton</strong> kullanıyoruz.</li>
+              <li><strong>Teknolojik İşçilik:</strong> İmalat hatalarını sıfıra indirmek için sıva, seramik ve yüzey kaplama uygulamalarında <strong>lazer güdümlü sistemler</strong> ile çalışıyoruz.</li>
+          </ul>
+      </section>
+  
+      <section>
+          <h2>Güncel Projelerimizi İnceleyin</h2>
+          <p>Valorya serisi başta olmak üzere, Çiğli bölgesinde inşası devam eden ve teslime hazır hale gelen projelerimizin detaylı kat planlarına, teknik şartnamelerine ve konum verilerine resmi web sitemiz üzerinden ulaşabilirsiniz.</p>
+          <p>Satıştaki projelerimizi incelemek için: <strong><a href="https://neli.tr/projeler" target="_blank" rel="noopener">neli.tr/projeler</a></strong></p>
+      </section>
+  
+      <footer>
+          <h2>İletişim Bilgileri</h2>
+          <address>
+              <strong>Neli Mühendislik</strong><br>
+              Karşıyaka / İzmir<br>
+              <strong>Web:</strong> <a href="https://neli.tr">neli.tr</a><br>
+              <strong>Kurumsal İletişim:</strong> Odoo altyapılı resmi WhatsApp iş hattımız üzerinden projelerle ilgili teknik detay ve fiyatlandırma bilgisi talep edebilirsiniz.
+          </address>
+      </footer>
+  </article>
+    `,
+    coverImage: "/images/blog/cigli-yatirim.webp",
+    coverImageAlt:
+      "Çiğli gayrimenkul yatırımı ve mühendislik odaklı yapılar — Neli Mühendislik",
+    category: "İnşaat",
+    tags: JSON.stringify([
+      "Çiğli gayrimenkul yatırımı",
+      "Neli Mühendislik İzmir",
+      "Çiğli satılık daire",
+      "depreme dayanıklı konut İzmir",
+      "Valorya serisi",
+      "mühendislik odaklı inşaat",
+      "Gayrimenkul",
+      "Mühendislik",
+      "İzmir konut projeleri",
+    ]),
+    featured: false,
+    status: "published" as const,
+    metaTitle:
+      "Çiğli'de Gayrimenkul Yatırımı & Güvenli Yapılar | Neli Mühendislik",
+    metaDescription:
+      "İzmir Çiğli'de, üniversitelere, hastanelere ve sanayi bölgelerine entegre konumda, yüksek konfor ve mühendislik standartlarıyla inşa edilen Neli Mühendislik projelerini keşfedin.",
+    metaKeywords:
+      "Çiğli gayrimenkul yatırımı, Neli Mühendislik İzmir, Çiğli satılık daire, depreme dayanıklı konut İzmir, Valorya konutları, mühendislik odaklı inşaat, İzmir konut projeleri",
+    publishedAt: "2026-05-06",
+  },
 ];
 
 const PROJECT_DATA = [
