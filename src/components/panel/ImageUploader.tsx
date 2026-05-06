@@ -38,7 +38,7 @@ export default function ImageUploader({
   label = "Görsel",
 }: ImageUploaderProps) {
   const [uploading, setUploading] = useState(false);
-  const [previewSrc, setPreviewSrc] = useState("");
+  const [previewOverrideSrc, setPreviewOverrideSrc] = useState<string | null>(null);
   const [triedFallback, setTriedFallback] = useState(false);
   const inputRef = useRef<HTMLInputElement>(null);
 
@@ -146,8 +146,11 @@ export default function ImageUploader({
     return "";
   }, [value]);
 
+  const primaryPreviewSrc = useMemo(() => getImageUrl(value), [value]);
+  const previewSrc = previewOverrideSrc ?? primaryPreviewSrc;
+
   useEffect(() => {
-    setPreviewSrc(getImageUrl(value));
+    setPreviewOverrideSrc(null);
     setTriedFallback(false);
   }, [value]);
 
@@ -176,7 +179,7 @@ export default function ImageUploader({
               className="w-full h-full object-cover"
               onError={() => {
                 if (!triedFallback && fallbackPreviewSrc && fallbackPreviewSrc !== previewSrc) {
-                  setPreviewSrc(fallbackPreviewSrc);
+                  setPreviewOverrideSrc(fallbackPreviewSrc);
                   setTriedFallback(true);
                   return;
                 }
