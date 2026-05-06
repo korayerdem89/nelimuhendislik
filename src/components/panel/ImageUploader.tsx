@@ -1,4 +1,4 @@
-import { useState, useRef, useCallback } from "react";
+import { useState, useRef, useCallback, useMemo, useEffect } from "react";
 import { Upload, X, Image as ImageIcon, Info } from "lucide-react";
 import { api, API_URL } from "@/lib/api";
 import { Button } from "@/components/ui/button";
@@ -38,6 +38,8 @@ export default function ImageUploader({
   label = "Görsel",
 }: ImageUploaderProps) {
   const [uploading, setUploading] = useState(false);
+  const [previewSrc, setPreviewSrc] = useState("");
+  const [triedFallback, setTriedFallback] = useState(false);
   const inputRef = useRef<HTMLInputElement>(null);
 
   const getImageUrl = (path: string) => {
@@ -131,6 +133,24 @@ export default function ImageUploader({
     [handleUpload],
   );
 
+  const fallbackPreviewSrc = useMemo(() => {
+    if (!value) return "";
+    if (value.startsWith("http")) return "";
+    const normalized = value.startsWith("/") ? value : `/${value}`;
+    if (normalized.startsWith("/uploads/")) {
+      return `/api${normalized}`;
+    }
+    if (normalized.startsWith("/api/uploads/")) {
+      return normalized.replace(/^\/api/, "");
+    }
+    return "";
+  }, [value]);
+
+  useEffect(() => {
+    setPreviewSrc(getImageUrl(value));
+    setTriedFallback(false);
+  }, [value]);
+
   return (
     <div>
       <label className="text-sm font-medium text-gray-700 mb-2 block">
@@ -151,10 +171,17 @@ export default function ImageUploader({
         {value ? (
           <>
             <img
-              src={getImageUrl(value)}
+              src={previewSrc}
               alt="Preview"
               className="w-full h-full object-cover"
-              onError={() => toast.error("Görsel önizlemesi yüklenemedi. Dosya silinmiş veya yol hatalı olabilir.")}
+              onError={() => {
+                if (!triedFallback && fallbackPreviewSrc && fallbackPreviewSrc !== previewSrc) {
+                  setPreviewSrc(fallbackPreviewSrc);
+                  setTriedFallback(true);
+                  return;
+                }
+                toast.error("Görsel önizlemesi yüklenemedi. Dosya silinmiş veya yol hatalı olabilir.");
+              }}
             />
             <button
               type="button"
