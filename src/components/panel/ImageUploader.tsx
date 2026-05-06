@@ -40,7 +40,32 @@ export default function ImageUploader({
   const [uploading, setUploading] = useState(false);
   const [previewOverrideSrc, setPreviewOverrideSrc] = useState<string | null>(null);
   const [triedFallback, setTriedFallback] = useState(false);
+  // Yüklenen dosyanın yerel blob URL'si — sunucu URL'si yerine anında önizleme
+  // sağlar; ağ/proxy sorunlarından bağımsız olarak görseli gösterir.
+  const [localBlob, setLocalBlob] = useState<{ url: string; path: string | null } | null>(null);
+  const localBlobRef = useRef<{ url: string; path: string | null } | null>(null);
   const inputRef = useRef<HTMLInputElement>(null);
+
+  // Blob URL bellek sızıntısını engellemek için unmount sırasında revoke et.
+  useEffect(() => {
+    return () => {
+      if (localBlobRef.current?.url) {
+        URL.revokeObjectURL(localBlobRef.current.url);
+      }
+    };
+  }, []);
+
+  const replaceLocalBlob = useCallback(
+    (next: { url: string; path: string | null } | null) => {
+      const previous = localBlobRef.current;
+      if (previous && previous.url !== next?.url) {
+        URL.revokeObjectURL(previous.url);
+      }
+      localBlobRef.current = next;
+      setLocalBlob(next);
+    },
+    [],
+  );
 
   function validateFile(file: File): string | null {
     if (!ALLOWED_TYPES.includes(file.type)) {
@@ -61,6 +86,9 @@ export default function ImageUploader({
         return;
       }
 
+      const blobUrl = URL.createObjectURL(file);
+      replaceLocalBlob({ url: blobUrl, path: null });
+
       setUploading(true);
       try {
         const formData = new FormData();
@@ -69,6 +97,7 @@ export default function ImageUploader({
           "/api/admin/media/upload",
           formData,
         );
+        replaceLocalBlob({ url: blobUrl, path: result.path });
         onChange(result.path);
         showOptimizedToast({
           originalName: result.originalName,
@@ -79,6 +108,7 @@ export default function ImageUploader({
           height: result.height,
         });
       } catch (err) {
+        replaceLocalBlob(null);
         const message = err instanceof Error ? err.message : "";
 
         if (message === "Unauthorized") {
@@ -97,7 +127,7 @@ export default function ImageUploader({
         setUploading(false);
       }
     },
-    [onChange],
+    [onChange, replaceLocalBlob],
   );
 
   const handleDrop = useCallback(
@@ -127,13 +157,32 @@ export default function ImageUploader({
     return "";
   }, [value]);
 
-  const primaryPreviewSrc = useMemo(() => getUploadUrl(value), [value]);
+  // Yerel blob; bu yükleme oturumunda eklenen dosyaya aitse onu öncelikli kullan.
+  // Aksi halde mevcut value değeri için sunucu URL'sini hesapla.
+  const primaryPreviewSrc = useMemo(() => {
+    if (localBlob && (localBlob.path === null || localBlob.path === value)) {
+      return localBlob.url;
+    }
+    return getUploadUrl(value);
+  }, [value, localBlob]);
+
   const previewSrc = previewOverrideSrc ?? primaryPreviewSrc;
 
+  // value harici bir nedenle değişirse (örneğin form sıfırlandı) blob'u temizle.
   useEffect(() => {
     setPreviewOverrideSrc(null);
     setTriedFallback(false);
+    const current = localBlobRef.current;
+    if (current && current.path !== null && current.path !== value) {
+      URL.revokeObjectURL(current.url);
+      localBlobRef.current = null;
+      setLocalBlob(null);
+    }
   }, [value]);
+
+  // Önizleme için blob mevcutsa, value boş olsa bile (yükleme henüz tamamlanmadı)
+  // önizlemeyi göster.
+  const hasPreview = Boolean(value || localBlob);
 
   return (
     <div>
@@ -146,19 +195,22 @@ export default function ImageUploader({
         className={`relative border-2 border-dashed rounded-lg overflow-hidden transition-colors ${
           uploading
             ? "border-blue-400 bg-blue-50"
-            : value
+            : hasPreview
               ? "border-gray-200"
               : "border-gray-300 hover:border-gray-400"
         }`}
         style={{ aspectRatio: aspect }}
       >
-        {value ? (
+        {hasPreview ? (
           <>
             <img
               src={previewSrc}
               alt="Preview"
               className="w-full h-full object-cover"
               onError={() => {
+                // Blob URL üzerinden gösteriyorsak hata almamamız gerekir;
+                // sadece sunucu URL'si fallback senaryosunda devreye gir.
+                if (localBlob) return;
                 if (!triedFallback && fallbackPreviewSrc && fallbackPreviewSrc !== previewSrc) {
                   setPreviewOverrideSrc(fallbackPreviewSrc);
                   setTriedFallback(true);
@@ -167,13 +219,20 @@ export default function ImageUploader({
                 toast.error("Görsel önizlemesi yüklenemedi. Dosya silinmiş veya yol hatalı olabilir.");
               }}
             />
-            <button
-              type="button"
-              onClick={() => onChange("")}
-              className="absolute top-2 right-2 p-1 bg-red-500 text-white rounded-full hover:bg-red-600 transition-colors"
-            >
-              <X className="w-4 h-4" />
-            </button>
+            {uploading && (
+              <div className="absolute inset-0 bg-white/60 backdrop-blur-[1px] flex items-center justify-center pointer-events-none">
+                <div className="w-8 h-8 border-2 border-gray-300 border-t-blue-500 rounded-full animate-spin" />
+              </div>
+            )}
+            {value && !uploading && (
+              <button
+                type="button"
+                onClick={() => onChange("")}
+                className="absolute top-2 right-2 p-1 bg-red-500 text-white rounded-full hover:bg-red-600 transition-colors"
+              >
+                <X className="w-4 h-4" />
+              </button>
+            )}
           </>
         ) : (
           <button
