@@ -185,6 +185,75 @@ const BLOG_DATA = [
       "Çiğli gayrimenkul yatırımı, Neli Mühendislik İzmir, Çiğli satılık daire, depreme dayanıklı konut İzmir, Valorya konutları, mühendislik odaklı inşaat, İzmir konut projeleri",
     publishedAt: "2026-05-06",
   },
+  {
+    slug: "izmir-ciglide-sifir-daireler-kucuk-cigli-balatcik",
+    title:
+      "İzmir Çiğli'de Sıfır Daireler: Küçük Çiğli ve Balatçık'ta Yeni Yaşam Standartları",
+    excerpt:
+      "İzmir Çiğli'de sıfır daire arayanlar için Küçük Çiğli ve Balatçık bölgelerinde Neli Mühendislik kalitesiyle yükselen Valorya ve Serenità projelerinin yaşam ve yatırım avantajlarını inceleyin.",
+    content: `
+    <article>
+        <header>
+            <h1>İzmir Çiğli'de Sıfır Daireler: Küçük Çiğli ve Balatçık'ta Yeni Yaşam Standartları</h1>
+            <p><strong>Özet:</strong> İzmir'in dinamik ve hızla gelişen bölgelerinden biri olan Çiğli'de, Küçük Çiğli ve Balatçık mahallelerinde yükselen modern konut projelerinin yaşam ve yatırım avantajları.</p>
+        </header>
+  
+        <section>
+            <p>İzmir'in dinamik ve hızla gelişen bölgelerinden biri olan Çiğli, hem konforlu bir yaşam alanı kurmak isteyenlerin hem de güvenilir yatırım fırsatları arayanların öncelikli tercihi haline geldi. Özellikle <strong>İzmir Çiğli'de sıfır daireler</strong> söz konusu olduğunda, bölgenin parlayan yıldızları olan Küçük Çiğli ve Balatçık mahalleleri modern şehirleşmenin ve nitelikli konut projelerinin merkez üssü konumunda yer alıyor.</p>
+            <p>Şehrin gürültüsünden uzak ama ana arterlere ve günlük ihtiyaçlara bir o kadar yakın olan bu bölgeler, yüksek yaşam standartları vadediyor. Ancak doğru evi seçmek, sadece lokasyona karar vermekten çok daha fazlasını gerektiriyor. Yapı güvenliği, kullanılan malzemenin kalitesi ve kusursuz işçilik, uzun vadeli bir huzur için en az konum kadar kritik bir öneme sahip.</p>
+        </section>
+  
+        <section>
+            <h2>Neli Mühendislik Farkıyla Tanışın</h2>
+            <p>2021 yılından bu yana mühendislik disiplinini modern mimari ile harmanlayan <strong>Neli Mühendislik</strong> olarak, İzmir'in bu en değerli lokasyonlarında güveni ve estetiği bir araya getiriyoruz. Bir yapının sadece dışarıdan güzel görünmesi değil, aynı zamanda nesiller boyu güvenle ayakta kalması gerektiğine inanıyoruz.</p>
+            <p>Bu vizyonla, Küçük Çiğli ve Balatçık'ta inşa ettiğimiz projelerimizde yapısal bütünlüğü en üst düzeye çıkarmak için yüksek dayanımlı <strong>C45 beton</strong> kullanıyoruz. Estetiği ve kaliteyi detaylarda arayanlar için ise, fayans döşemesinden sıva uygulamalarına kadar tüm ince işçilik süreçlerinde lazer teknolojisiyle çalışarak kusursuz yaşam alanları yaratıyoruz.</p>
+        </section>
+  
+        <section>
+            <h2>Valorya ve Serenità: Bölgeye Değer Katan Projelerimiz</h2>
+            <p>Çiğli bölgesinin silüetini modernleştiren <strong>Valorya</strong> ve <strong>Serenità</strong> proje serilerimiz, deprem güvenliğini merkeze alan yapısı ve çağdaş tasarımıyla öne çıkıyor. Gerçekçi ve kullanışlı kat planları, modern iç mimari detayları ve ferah yaşam alanlarıyla bu projeler, kaliteyi standart bir beklenti olmaktan çıkarıp günlük yaşamınızın bir parçası haline getiriyor.</p>
+            <p>Amacımız, şeffaf ve profesyonel bir süreç yürüterek sizi en doğru yaşam alanıyla buluşturmak. Süslü kelimelerle değil, mühendislik kalitemizle ve somut projelerimizle konuşmayı tercih ediyoruz.</p>
+        </section>
+  
+        <section>
+            <h2>Hayalinizdeki Ev Bir Tık Uzağınızda</h2>
+            <p>Küçük Çiğli ve Balatçık bölgelerindeki en yeni yaşam alanlarımızı keşfetmek, kat planlarını incelemek ve size en uygun daireyi bulmak için güncel vitrinimizi ziyaret edebilirsiniz. Şu an satışta olan projelerimizin tüm teknik ve mimari detaylarına şeffaf bir şekilde ulaşmak için <strong><a href="https://neli.tr/showcase" target="_blank" rel="noopener">neli.tr/showcase</a></strong> adresini inceleyebilirsiniz.</p>
+        </section>
+  
+        <footer>
+            <h2>İletişim Bilgileri</h2>
+            <address>
+                <strong>Neli Mühendislik</strong><br>
+                Merkez Ofis: Karşıyaka, İzmir<br>
+                <strong>Web:</strong> <a href="https://www.neli.tr" target="_blank" rel="noopener">www.neli.tr</a>
+            </address>
+        </footer>
+    </article>
+      `,
+    coverImage: "/images/blog/cigli-sifir-daireler.webp",
+    coverImageAlt:
+      "İzmir Çiğli'de sıfır daireler ve Neli Mühendislik projeleri",
+    category: "İnşaat",
+    tags: JSON.stringify([
+      "İzmir Çiğli'de sıfır daireler",
+      "Küçük Çiğli satılık daire",
+      "Balatçık satılık daire",
+      "Neli Mühendislik",
+      "Valorya",
+      "Serenità",
+      "Çiğli konut projeleri",
+      "depreme dayanıklı konut",
+      "İzmir sıfır daire",
+    ]),
+    featured: false,
+    status: "published" as const,
+    metaTitle: "İzmir Çiğli'de Sıfır Daireler | Neli Mühendislik",
+    metaDescription:
+      "İzmir Çiğli'de sıfır daire arayanlar için Küçük Çiğli ve Balatçık'ta yükselen Neli Mühendislik Valorya ve Serenità projelerini keşfedin.",
+    metaKeywords:
+      "İzmir Çiğli'de sıfır daireler, Küçük Çiğli satılık daire, Balatçık satılık daire, Neli Mühendislik, Valorya, Serenità, Çiğli konut projeleri, depreme dayanıklı konut İzmir",
+    publishedAt: "2026-05-07",
+  },
 ];
 
 const PROJECT_DATA = [
