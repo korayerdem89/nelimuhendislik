@@ -254,6 +254,90 @@ const BLOG_DATA = [
       "İzmir Çiğli'de sıfır daireler, Küçük Çiğli satılık daire, Balatçık satılık daire, Neli Mühendislik, Valorya, Serenità, Çiğli konut projeleri, depreme dayanıklı konut İzmir",
     publishedAt: "2026-05-07",
   },
+  {
+    slug: "izmirde-depreme-dayanikli-satilik-daireler",
+    title:
+      "İzmir'de Depreme Dayanıklı Satılık Daireler: Neli Mühendislik Güvencesiyle Çiğli Projeleri",
+    excerpt:
+      "İzmir'de depreme dayanıklı satılık daire arayanlar için Neli Mühendislik'in Çiğli'de geliştirdiği 1+1, 2+1 ve 3+1 daire seçenekli projeleri; yüksek dayanımlı beton, mühendislik kalitesi ve güvenli yapı anlayışıyla öne çıkıyor.",
+    content: `
+    <article>
+        <header>
+            <h1>İzmir'de Depreme Dayanıklı Satılık Daireler: Neli Mühendislik Güvencesiyle Çiğli Projeleri</h1>
+            <p><strong>Özet:</strong> İzmir'de depreme dayanıklı satılık daire arayanlar için Çiğli bölgesinde yükselen Neli Mühendislik projeleri; güvenli taşıyıcı sistemleri, yüksek dayanımlı beton kullanımı ve 1+1, 2+1, 3+1 daire seçenekleriyle modern ve güvenilir yaşam alanları sunar.</p>
+        </header>
+  
+        <section>
+            <h2>İzmir'de Depreme Dayanıklı Konut Seçimi Neden Önemlidir?</h2>
+            <p>İzmir, yaşam kalitesi, ulaşım olanakları ve gelişen konut bölgeleriyle gayrimenkul yatırımı açısından Türkiye'nin en çok tercih edilen şehirlerinden biridir. Ancak İzmir'de satılık daire ararken yalnızca lokasyon, metrekare veya fiyat kriterlerine bakmak yeterli değildir. Özellikle deprem gerçeği dikkate alındığında, tercih edilen konutun mühendislik standartları, kullanılan beton sınıfı, statik proje disiplini ve uygulama kalitesi büyük önem taşır.</p>
+            <p>Bu nedenle <strong>İzmir'de depreme dayanıklı satılık daireler</strong> arayan kullanıcılar için doğru tercih; sadece estetik görünen değil, aynı zamanda güvenli, dayanıklı ve uzun ömürlü yapılar olmalıdır. Neli Mühendislik olarak biz, projelerimizde güvenliği satış vaadi olarak değil, yapının temel standardı olarak ele alıyoruz.</p>
+        </section>
+  
+        <section>
+            <h2>Neli Mühendislik Farkı: Yönetmeliğin Ötesinde Güven Anlayışı</h2>
+            <p>Neli Mühendislik projelerinde en önemli önceliklerden biri, deprem güvenliğini merkeze alan mühendislik yaklaşımıdır. Ekte yer alan görselde de vurguladığımız gibi, yapılarımızda yalnızca minimum gereklilikleri karşılamayı değil, daha yüksek güvenlik ve dayanım standartlarına ulaşmayı hedefliyoruz.</p>
+            <p>Projelerimizde taşıyıcı sistem güvenliği, zemin koşulları, statik hesaplar, beton kalitesi ve uygulama detayları bütüncül şekilde değerlendirilir. Bu kapsamda, yapısal bütünlüğü güçlendirmek amacıyla yüksek dayanımlı <strong>C45 beton</strong> kullanıyor, uygulama süreçlerinde mühendislik kontrolünü ön planda tutuyoruz.</p>
+            <p>Amacımız, sadece bugünün ihtiyaçlarına cevap veren daireler üretmek değil; ailelerin yıllarca güvenle yaşayabileceği, yatırımcıların ise değerini koruyan gayrimenkullere sahip olabileceği projeler geliştirmektir.</p>
+        </section>
+  
+        <section>
+            <h2>Çiğli'de 1+1, 2+1 ve 3+1 Daire Seçenekleri</h2>
+            <p>Neli Mühendislik olarak İzmir Çiğli bölgesinde farklı yaşam ihtiyaçlarına uygun konut seçenekleri sunuyoruz. Projelerimizde yalnız yaşayanlar, yeni evli çiftler, çekirdek aileler ve daha geniş yaşam alanı isteyen kullanıcılar için farklı daire tipleri yer almaktadır.</p>
+            <ul>
+                <li><strong>1+1 daireler:</strong> Yatırım amaçlı alım yapmak isteyenler, öğrenciler, çalışanlar ve kompakt yaşam alanı arayanlar için ideal seçenekler sunar.</li>
+                <li><strong>2+1 daireler:</strong> Aile yaşamına uygun planları, fonksiyonel kullanım alanları ve dengeli metrekare çözümleriyle öne çıkar.</li>
+                <li><strong>3+1 daireler:</strong> Daha geniş ve ferah yaşam alanı isteyen aileler için konforlu bir alternatif oluşturur.</li>
+            </ul>
+            <p>Çiğli'nin gelişen konumu, ulaşım bağlantıları ve günlük ihtiyaçlara yakınlığı sayesinde projelerimiz hem oturum hem de yatırım amacıyla değerlendirilebilecek güçlü seçenekler sunmaktadır.</p>
+        </section>
+  
+        <section>
+            <h2>Güvenli Yapı, Kaliteli İşçilik ve Modern Yaşam</h2>
+            <p>Depreme dayanıklı bir konut, yalnızca beton dayanımıyla değil; doğru proje yönetimi, kaliteli malzeme kullanımı, kontrollü uygulama ve detaylı işçilikle mümkün olur. Neli Mühendislik projelerinde kaba yapıdan ince işçiliğe kadar her aşama titizlikle takip edilir.</p>
+            <p>Modern mimari çizgiler, kullanışlı kat planları, ferah yaşam alanları ve kaliteli iç mekan detaylarıyla projelerimiz, güvenli yapı anlayışını konforlu yaşamla bir araya getirir. Böylece ev sahibi olmak isteyenler için yalnızca bir daire değil, güven veren bir yaşam alanı sunulur.</p>
+        </section>
+  
+        <section>
+            <h2>Satıştaki Projelerimizi İnceleyin</h2>
+            <p>İzmir'de depreme dayanıklı satılık daire arıyorsanız, Çiğli bölgesindeki güncel Neli Mühendislik projelerini inceleyebilirsiniz. 1+1, 2+1 ve 3+1 daire seçeneklerimiz, farklı ihtiyaçlara ve bütçelere uygun alternatifler sunmaktadır.</p>
+            <p>Satışta olan projelerimizin güncel bilgilerine, daire seçeneklerine, proje detaylarına ve görsellerine ulaşmak için <strong><a href="https://neli.tr/showcase" target="_blank" rel="noopener">neli.tr/showcase</a></strong> adresini ziyaret edebilirsiniz.</p>
+        </section>
+  
+        <footer>
+            <h2>İletişim Bilgileri</h2>
+            <address>
+                <strong>Neli Mühendislik</strong><br>
+                Merkez Ofis: Karşıyaka, İzmir<br>
+                <strong>Web:</strong> <a href="https://www.neli.tr" target="_blank" rel="noopener">www.neli.tr</a><br>
+                <strong>Projeler:</strong> <a href="https://neli.tr/showcase" target="_blank" rel="noopener">neli.tr/showcase</a>
+            </address>
+        </footer>
+    </article>
+      `,
+    coverImage: "/images/blog/deprem-guvenligi.webp",
+    coverImageAlt:
+      "İzmir'de depreme dayanıklı satılık daireler ve Neli Mühendislik Çiğli projeleri",
+    category: "İnşaat",
+    tags: JSON.stringify([
+      "İzmir'de depreme dayanıklı satılık daireler",
+      "İzmir satılık daire",
+      "Çiğli satılık daire",
+      "Çiğli 1+1 daire",
+      "Çiğli 2+1 daire",
+      "Çiğli 3+1 daire",
+      "Neli Mühendislik",
+      "depreme dayanıklı konut İzmir",
+      "İzmir konut projeleri",
+    ]),
+    featured: false,
+    status: "published" as const,
+    metaTitle: "İzmir'de Depreme Dayanıklı Satılık Daireler | Neli Mühendislik",
+    metaDescription:
+      "İzmir'de depreme dayanıklı satılık daire arayanlar için Neli Mühendislik'in Çiğli'deki 1+1, 2+1 ve 3+1 daire seçenekli güvenli konut projelerini keşfedin.",
+    metaKeywords:
+      "İzmir'de depreme dayanıklı satılık daireler, İzmir satılık daire, Çiğli satılık daire, Çiğli 1+1 daire, Çiğli 2+1 daire, Çiğli 3+1 daire, Neli Mühendislik, depreme dayanıklı konut İzmir, İzmir konut projeleri",
+    publishedAt: "2026-05-07",
+  },
 ];
 
 const PROJECT_DATA = [
