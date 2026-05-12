@@ -338,6 +338,118 @@ const BLOG_DATA = [
       "İzmir'de depreme dayanıklı satılık daireler, İzmir satılık daire, Çiğli satılık daire, Çiğli 1+1 daire, Çiğli 2+1 daire, Çiğli 3+1 daire, Neli Mühendislik, depreme dayanıklı konut İzmir, İzmir konut projeleri",
     publishedAt: "2026-05-07",
   },
+  {
+    slug: "izmirde-1-1-2-1-3-1-yeni-konut-projeleri",
+    title:
+      "İzmir’de 1+1 2+1 3+1 Yeni Konut Projeleri: Doğru Daire Tipini Nasıl Seçmelisiniz?",
+    excerpt:
+      "İzmir’de 1+1, 2+1 ve 3+1 yeni konut projeleri arayanlar için daire tiplerine göre yaşam, yatırım ve kullanım avantajlarını Neli Mühendislik projeleri üzerinden inceleyin.",
+    content: `
+    <article>
+        <header>
+            <h1>İzmir’de 1+1 2+1 3+1 Yeni Konut Projeleri: Doğru Daire Tipini Nasıl Seçmelisiniz?</h1>
+            <p><strong>Özet:</strong> İzmir’de yeni konut projesi arayanlar için 1+1, 2+1 ve 3+1 daire seçenekleri; yaşam tarzı, yatırım beklentisi, aile yapısı ve uzun vadeli kullanım ihtiyaçlarına göre farklı avantajlar sunar. Neli Mühendislik projelerinde farklı daire tiplerini inceleyerek size en uygun yaşam alanını seçebilirsiniz.</p>
+        </header>
+  
+        <section>
+            <h2>İzmir’de 1+1 2+1 3+1 Yeni Konut Projeleri Kimler İçin Uygundur?</h2>
+            <p><strong>İzmir’de 1+1 2+1 3+1 yeni konut projeleri</strong>, farklı ihtiyaçlara sahip alıcılar için geniş seçenekler sunar. Tek başına yaşayanlar, yeni evli çiftler, çocuklu aileler, yatırımcılar ve daha geniş yaşam alanı arayan kullanıcılar için doğru daire tipi değişebilir.</p>
+            <p>Bu nedenle konut seçimi yaparken yalnızca oda sayısına bakmak yeterli değildir. Dairenin planı, kullanım alanı, lokasyonu, yapı kalitesi, otopark ve ulaşım olanakları, sosyal çevre ve projenin uzun vadeli değer potansiyeli birlikte değerlendirilmelidir.</p>
+        </section>
+  
+        <section>
+            <h2>1+1 Daireler: Kompakt Yaşam ve Yatırım Avantajı</h2>
+            <p><strong>1+1 yeni konut projeleri</strong>, özellikle yatırım amaçlı daire almak isteyenler için dikkat çeken seçeneklerden biridir. Daha ulaşılabilir bütçelerle satın alınabilmesi, kiralama potansiyeli ve kolay yönetilebilir kullanım alanı sayesinde 1+1 daireler şehir yaşamında güçlü bir talep görür.</p>
+            <p>İzmir’de 1+1 daireler; öğrenciler, genç profesyoneller, bekar çalışanlar ve kısa sürede kiraya verilebilir gayrimenkul arayan yatırımcılar için uygun olabilir. Ayrıca daha küçük metrekareli yapısı sayesinde bakım ve kullanım maliyetleri de genellikle daha kontrollüdür.</p>
+        </section>
+  
+        <section>
+            <h2>2+1 Daireler: Aile Yaşamı İçin Dengeli Seçenek</h2>
+            <p><strong>2+1 yeni konut projeleri</strong>, hem oturum hem de yatırım amacıyla en çok tercih edilen daire tipleri arasında yer alır. Salon, yatak odası ve ek oda düzeni; küçük aileler, yeni evli çiftler veya evden çalışan kullanıcılar için fonksiyonel bir yaşam alanı oluşturur.</p>
+            <p>İzmir’de 2+1 daire seçerken odaların kullanışlılığı, mutfak düzeni, balkon alanı, depolama çözümleri ve ortak yaşam alanlarının ferahlığı önemlidir. Doğru planlanmış bir 2+1 daire, metrekareden bağımsız olarak yüksek yaşam konforu sağlayabilir.</p>
+        </section>
+  
+        <section>
+            <h2>3+1 Daireler: Geniş Aileler İçin Konforlu Yaşam Alanı</h2>
+            <p><strong>3+1 yeni konut projeleri</strong>, daha geniş ve bağımsız kullanım alanı isteyen aileler için öne çıkar. Çocuk odası, çalışma odası, misafir odası veya ek depolama ihtiyacı olan kullanıcılar için 3+1 daireler uzun vadeli konfor sunar.</p>
+            <p>İzmir’de 3+1 daire arayanlar için yalnızca oda sayısı değil, odaların dağılımı, ebeveyn kullanım alanı, salon büyüklüğü, balkon veya teras imkanı ve otopark gibi detaylar da önemlidir. Geniş aile yaşamında doğru proje seçimi, günlük konforu doğrudan etkiler.</p>
+        </section>
+  
+        <section>
+            <h2>Yeni Konut Projesi Seçerken Hangi Kriterlere Bakılmalı?</h2>
+            <p>İzmir’de yeni konut projesi satın alırken fiyat ve lokasyon kadar yapının teknik kalitesi de değerlendirilmelidir. Yeni bir daire, uzun yıllar kullanılacak bir yaşam alanı olduğu için mühendislik standartları, malzeme kalitesi ve uygulama disiplini büyük önem taşır.</p>
+            <ul>
+                <li><strong>Yapı güvenliği:</strong> Taşıyıcı sistem, zemin etüdü ve beton kalitesi dikkatle incelenmelidir.</li>
+                <li><strong>Daire planı:</strong> Oda sayısından çok, alanların işlevsel kullanımı önemlidir.</li>
+                <li><strong>Lokasyon:</strong> Ulaşım, okul, sağlık, alışveriş ve sosyal yaşam noktalarına yakınlık değerlendirilmelidir.</li>
+                <li><strong>Yatırım potansiyeli:</strong> Bölgenin gelişim hızı, kira talebi ve değer artışı dikkate alınmalıdır.</li>
+                <li><strong>Firma güvenilirliği:</strong> İnşaatı yapan firmanın mühendislik yaklaşımı ve tamamlanan projeleri incelenmelidir.</li>
+            </ul>
+        </section>
+  
+        <section>
+            <h2>Neli Mühendislik Projelerinde 1+1, 2+1 ve 3+1 Daire Seçenekleri</h2>
+            <p>Neli Mühendislik olarak İzmir’de farklı yaşam ihtiyaçlarına uygun yeni konut projeleri geliştiriyoruz. Projelerimizde 1+1, 2+1 ve 3+1 daire seçenekleriyle hem oturum hem de yatırım amacıyla değerlendirilebilecek alternatifler sunuyoruz.</p>
+            <p>Her projede temel yaklaşımımız; güvenli yapı, kaliteli malzeme, modern mimari, kullanışlı kat planı ve uzun vadeli değer üretmektir. Daire tipleri farklı olsa da tüm projelerimizde mühendislik disiplini ve şeffaf proje yönetimi ön planda tutulur.</p>
+        </section>
+  
+        <section>
+            <h2>Sık Sorulan Sorular</h2>
+  
+            <h3>İzmir’de yatırım için 1+1 mi 2+1 mi daha avantajlıdır?</h3>
+            <p>Yatırım hedefi kısa vadeli kira getirisi ise 1+1 daireler güçlü bir seçenek olabilir. Daha geniş kiracı kitlesi ve aile kullanımı hedefleniyorsa 2+1 daireler daha dengeli bir yatırım alternatifi sunabilir.</p>
+  
+            <h3>Aile yaşamı için 2+1 daire yeterli olur mu?</h3>
+            <p>Küçük aileler ve yeni evli çiftler için iyi planlanmış bir 2+1 daire yeterli ve konforlu olabilir. Ancak çocuk sayısı, çalışma odası ihtiyacı veya uzun vadeli kullanım beklentisi varsa 3+1 daireler daha uygun olabilir.</p>
+  
+            <h3>Yeni konut projesi alırken en önemli kriter nedir?</h3>
+            <p>En önemli kriterlerden biri yapı güvenliğidir. Bunun yanında lokasyon, daire planı, malzeme kalitesi, firma güvenilirliği ve projenin yatırım potansiyeli birlikte değerlendirilmelidir.</p>
+  
+            <h3>Neli Mühendislik’in satışta olan projelerini nereden inceleyebilirim?</h3>
+            <p>Neli Mühendislik’in satışta olan güncel projelerini, daire seçeneklerini ve proje detaylarını <strong><a href="https://neli.tr/showcase" target="_blank" rel="noopener">neli.tr/showcase</a></strong> adresinden inceleyebilirsiniz.</p>
+        </section>
+  
+        <section>
+            <h2>Satıştaki Projelerimizi İnceleyin</h2>
+            <p>İzmir’de 1+1, 2+1 veya 3+1 yeni konut projesi arıyorsanız, Neli Mühendislik’in güncel satış projelerini inceleyerek ihtiyaçlarınıza en uygun daire tipini değerlendirebilirsiniz.</p>
+            <p>Projelerimizin konum bilgileri, daire seçenekleri, mimari detayları ve güncel satış durumu için <strong><a href="https://neli.tr/showcase" target="_blank" rel="noopener">neli.tr/showcase</a></strong> adresini ziyaret edebilirsiniz.</p>
+        </section>
+  
+        <footer>
+            <h2>İletişim Bilgileri</h2>
+            <address>
+                <strong>Neli Mühendislik</strong><br>
+                Merkez Ofis: Karşıyaka, İzmir<br>
+                <strong>Web:</strong> <a href="https://www.neli.tr" target="_blank" rel="noopener">www.neli.tr</a><br>
+                <strong>Satıştaki Projeler:</strong> <a href="https://neli.tr/showcase" target="_blank" rel="noopener">neli.tr/showcase</a>
+            </address>
+        </footer>
+    </article>
+      `,
+    coverImage: "/images/blog/neli-daireler.webp",
+    coverImageAlt:
+      "İzmir’de 1+1 2+1 3+1 yeni konut projeleri ve Neli Mühendislik daire seçenekleri",
+    category: "İnşaat",
+    tags: JSON.stringify([
+      "İzmir’de 1+1 2+1 3+1 yeni konut projeleri",
+      "İzmir yeni konut projeleri",
+      "İzmir 1+1 yeni daire",
+      "İzmir 2+1 yeni daire",
+      "İzmir 3+1 yeni daire",
+      "İzmir satılık sıfır daire",
+      "Neli Mühendislik",
+      "İzmir konut yatırımı",
+      "İzmir satılık daire",
+    ]),
+    featured: false,
+    status: "published" as const,
+    metaTitle: "İzmir’de 1+1 2+1 3+1 Yeni Konut Projeleri | Neli Mühendislik",
+    metaDescription:
+      "İzmir’de 1+1, 2+1 ve 3+1 yeni konut projeleri arayanlar için Neli Mühendislik’in satıştaki daire seçeneklerini, yatırım ve yaşam avantajlarını inceleyin.",
+    metaKeywords:
+      "İzmir’de 1+1 2+1 3+1 yeni konut projeleri, İzmir yeni konut projeleri, İzmir 1+1 daire, İzmir 2+1 daire, İzmir 3+1 daire, İzmir satılık sıfır daire, Neli Mühendislik, İzmir konut yatırımı",
+    publishedAt: "2026-05-07",
+  },
 ];
 
 const PROJECT_DATA = [
