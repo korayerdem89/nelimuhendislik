@@ -571,7 +571,7 @@ const BLOG_DATA = [
   <p>Biz, inşaat sektöründeki trendleri yakından takip eden ve mühendislik disiplininden asla ödün vermeyen bir marka olarak, projelerimizde en üstün yalıtım teknolojilerini tercih ediyoruz. Detaylara verdiğimiz bu özen sayesinde, yapılarımızın çevre dostu ve bütçe koruyucu olduğunu tescilleyen <strong>A Enerji Sınıfı Sertifikası</strong> standartlarına sahibiz. Bu sertifika, evlerimizin geleneksel binalara kıyasla elektrik ve doğalgaz faturalarında %50'ye varan kalıcı tasarruf sağladığının en somut kanıtıdır.</p>
   <p>Hem çevreye duyarlı hem de cüzdan dostu bir geleceğe adım atmak, milimetrik işçilik ve üstün mühendislikle yükselen projelerimizi yakından incelemek için sizi web sitemize davet ediyoruz. İzmir'in en özel lokasyonlarında satışta olan güncel daire ve villa seçeneklerimizi <strong><a href='https://neli.tr/showcase' target='_blank' style='color: #b32128; font-weight: bold; text-decoration: underline;'>neli.tr/showcase</a></strong> adresinden hemen inceleyebilir, konforlu yaşamın kapılarını aralayabilirsiniz.</p>
 </article>`,
-    coverImage: "/images/blog/binalarda-yalitim-tipleri.webp",
+    coverImage: "/images/blog/yalitim-tipleri.webp",
     coverImageAlt:
       "Binalarda üstün yalıtım teknolojileri ve A enerji sınıfı evler — Neli Mühendislik",
     category: "Mühendislik ve Yapı Teknolojileri",
@@ -667,7 +667,7 @@ const BLOG_DATA = [
   <p>Biz, <strong>Neli Mühendislik</strong> olarak imza attığımız her konut serisinde mühendislik gücümüzü estetik mimariyle harmanlıyoruz. İzmir'in hızla değerlenen Çiğli ve Balatçık gibi lokasyonlarında geliştirdiğimiz projelerde, yeşil alan oranını maksimum seviyede tutmaya büyük özen gösteriyoruz. Projelerimizin mimari yönetim süreçlerinde, binaların zemin etütlerinden iç mekan lazer terazi işçiliklerine gösterdiğimiz hassasiyetin aynısını, bahçe çıkışları ve peyzaj alanları için de uyguluyoruz.</p>
   <p>Şehrin merkezinde, tüm ulaşım ağlarının ve ana caddelerin yanı başında ama karmaşadan tamamen uzak, yeşille iç içe lüks konseptler hayal ediyorsanız doğru yerdesiniz. Estetik peyzaj mimarisiyle ruhunuza, yüksek mühendislik standartlarıyla geleceğinize hitap eden satışta olan güncel projelerimizi <strong><a href='https://neli.tr/showcase' target='_blank' style='color: #b32128; font-weight: bold; text-decoration: underline;'>neli.tr/showcase</a></strong> adresinden hemen inceleyebilir, aileniz için en doğru yaşam alanını seçebilirsiniz.</p>
 </article>`,
-    coverImage: "/images/blog/konut-projelerinde-peyzaj-mimarisi.webp",
+    coverImage: "/images/blog/peyzaj-mimarisi.webp",
     coverImageAlt:
       "Konut projelerinde peyzaj mimarisi ve yeşil alan tasarımları — Neli Mühendislik",
     category: "Mimari ve Yaşam Tarzı",
