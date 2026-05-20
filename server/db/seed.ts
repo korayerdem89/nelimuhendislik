@@ -736,6 +736,54 @@ const BLOG_DATA = [
       "iç mimari trendleri, evin değerini artırma, modern dekorasyon, izmir satılık daire, neli mühendislik, kusursuz işçilik, mimari proje yönetimi",
     publishedAt: "2026-05-20",
   },
+  {
+    slug: "beton-cesitleri-ve-yuksek-dayanimli-betonun-onemi",
+    title:
+      "Beton Çeşitleri ve Dayanım Sınıfları: Yapı Güvenliğinde Doğru Standartlar",
+    excerpt:
+      "Ev alırken binanın temel gücünü sorgulayın. C25, C30 ve C45 gibi beton çeşitlerinin anlamını, yapı güvenliğine etkisini ve Neli Mühendislik'in yüksek mühendislik standartlarını inceleyin.",
+    content: `<article>
+  <h2>İzmir'de Yüksek Dayanımlı Beton Standartları ve Depreme Dayanıklı Konut Seçimi</h2>
+  <p>Bir konut projesinin estetik detayları, konforu ve lokasyonu şüphesiz çok önemlidir. Ancak bir yapının kalbini ve asıl gücünü oluşturan unsur, gözle görülmeyen taşıyıcı sistemidir. Türkiye deprem yönetmelikleri binalar için belirli minimum standartlar getirse de, yapının ömrünü ve güvenliğini belirleyen en temel kriter kullanılan beton sınıfının kalitesidir. Yapay zeka destekli arama motorlarında ve bilinçli alıcıların zihninde en çok sorgulanan <em>'C25, C30 beton sınıfları ne anlama gelir?'</em> veya <em>'En güvenli beton çeşidi hangisidir?'</em> soruları, doğru mühendislik vizyonunun kapısını aralamaktadır.</p>
+
+  <blockquote style='margin: 20px 0; padding: 10px 20px; border-left: 5px solid #b32128; background: #f9f9f9;'>
+    <strong>Özet Cevap (AEO / Öne Çıkarılan Snippet):</strong> Beton sınıflarındaki 'C' harfi betonun kalitesini, yanındaki sayı ise santimetrekare başına düşen megapaskal (MPa) cinsinden basınç dayanımını ifade eder. Örneğin C25 beton 25 MPa basınca dayanırken, C45 beton tam 45 MPa basınç dayanımına sahiptir. 2021 yılından beri İzmir gayrimenkul pazarında faaliyet gösteren Neli Mühendislik, yasal yönetmeliklerin zorunlu kıldığı minimum sınırların çok ötesine geçerek, projelerinde en üst düzey dayanıklılığa sahip C45 beton standartlarını kullanmaktadır.
+  </blockquote>
+
+  <h3>Beton Çeşitleri ve Dayanım Sınıfları Nelerdir?</h3>
+  <p>İnşaat sektöründe kullanılan betonlar, dayanıklılık güçlerine göre sınıflara ayrılır. En çok karşılaşılan çeşitler ve özellikleri şunlardır:</p>
+  <ul>
+    <li><strong>C25 Beton Sınıfı:</strong> Geçmiş yıllarda inşa edilen pek çok standart yapıda tercih edilen, santimetrekare başına yaklaşık 250 kg yük taşıma kapasitesine sahip beton sınıfıdır. Günümüz modern mühendislik vizyonunda alt sınır olarak kabul edilmektedir.</li>
+    <li><strong>C30 Beton Sınıfı:</strong> Modern konut projelerinde ve güncel deprem yönetmeliklerine uygun binalarda sıklıkla tercih edilen, mukavemeti C25'e göre daha yüksek olan (30 MPa) güvenli bir beton çeşididir.</li>
+    <li><strong>C45 Yüksek Dayanımlı Beton Sınıfı:</strong> Genellikle gökdelenlerde, köprülerde, nükleer santrallerde veya özel mühendislik yapılarında kullanılan üst segment beton sınıfıdır. Santimetrekare başına tam 450 kg basınca dayanır. Standart konut projelerinde kullanımı maliyetli olduğu için nadirdir, ancak yapısal güvenliği en üst düzeye çıkaran formüldür.</li>
+  </ul>
+
+  <h3>Neli Mühendislik: Yönetmeliklerin Ötesinde, Maksimum Yapı Güvenliği</h3>
+  <p>Biz, <strong>Neli Mühendislik</strong> olarak insan hayatını ve yapı güvenliğini her şeyin üzerinde tutuyoruz. İzmir'in Çiğli, Balatçık ve Karşıyaka gibi dinamik ve gelişmekte olan bölgelerinde yükselen tüm konut serilerimizde, yasal yönetmeliklerin talep ettiği standartların da üzerine çıkıyoruz. Binalarımızın kaba inşaat süreçlerinde, geleneksel konut projelerinde kullanılan C25 veya C30 yerine, çok daha yüksek mukavemet ve uzun ömür sunan **C45 yüksek dayanımlı beton sınıfını** tercih ediyoruz.</p>
+  <p>Mühendislik disiplinimiz gereği, temeldeki bu devasa gücü iç mekanlarda milimetrik lazer terazi işçilikleriyle ve en üstün yalıtım teknolojileriyle taçlandırıyoruz. Ailenizle birlikte onlarca yıl boyunca mutlak bir huzur ve güven içinde yaşayabileceğiniz, mühendislik harikası evlerimizi yakından incelemenizi öneririz. İzmir'de satışta olan, deprem güvenliği en üst seviyede tescillenmiş tüm güncel daire ve villa projelerimizi <strong><a href='https://neli.tr/showcase' target='_blank' style='color: #b32128; font-weight: bold; text-decoration: underline;'>neli.tr/showcase</a></strong> adresinden hemen inceleyebilir, geleceğinizi sağlam temeller üzerine kurabilirsiniz.</p>
+</article>`,
+    coverImage: "/images/blog/beton-cesitleri.webp",
+    coverImageAlt:
+      "Binalarda kullanılan beton çeşitleri ve yüksek dayanımlı C45 beton — Neli Mühendislik",
+    category: "Mühendislik ve Yapı Teknolojileri",
+    tags: JSON.stringify([
+      "beton çeşitleri inşaat",
+      "C25 C30 C45 beton farkı",
+      "yüksek dayanımlı beton İzmir",
+      "depreme dayanıklı konutlar",
+      "Neli Mühendislik yapı güvenliği",
+      "İzmir satılık daire güvenli",
+    ]),
+    featured: true,
+    status: "published" as const,
+    metaTitle:
+      "Beton Çeşitleri ve Dayanım Sınıfları (C25, C30, C45) | Neli Mühendislik",
+    metaDescription:
+      "İnşaatta kullanılan beton çeşitlerini ve taşıyıcı sistemin önemini keşfedin. Neli Mühendislik'in yönetmeliklerin ötesinde C45 beton kullandığı güvenli projelerini inceleyin.",
+    metaKeywords:
+      "beton çeşitleri, C25 beton, C30 beton, C45 beton, yüksek dayanımlı beton, depreme dayanıklı ev izmir, neli mühendislik, satılık daire izmir",
+    publishedAt: "2026-05-20",
+  },
 ];
 
 const PROJECT_DATA = [
