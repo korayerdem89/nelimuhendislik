@@ -784,6 +784,557 @@ const BLOG_DATA = [
       "beton çeşitleri, C25 beton, C30 beton, C45 beton, yüksek dayanımlı beton, depreme dayanıklı ev izmir, neli mühendislik, satılık daire izmir",
     publishedAt: "2026-05-20",
   },
+  {
+    slug: "yeni-konut-projesinden-daire-almanin-avantajlari",
+    title: "Yeni Konut Projesinden Daire Almanın Avantajları Nelerdir?",
+    excerpt:
+      "Yeni konut projesinden daire almak; modern mimari, güncel deprem yönetmeliklerine uygunluk, sıfır kullanım avantajı ve yatırım potansiyeli açısından önemli fırsatlar sunar.",
+    content: `<article>
+    <h2>Yeni Konut Projesinden Daire Almanın Avantajları Nelerdir?</h2>
+    <p>Ev sahibi olmak isteyen birçok kişi için en önemli sorulardan biri şudur: <strong>Yeni konut projesinden daire almak mı, yoksa ikinci el bir daire tercih etmek mi daha avantajlıdır?</strong> Özellikle İzmir gibi gelişen şehirlerde, yeni yapılan konut projeleri hem yaşam konforu hem de uzun vadeli yatırım değeri açısından dikkat çekmektedir.</p>
+  
+    <p>Yeni konut projeleri; modern mimari anlayışı, güncel yapı standartları, sıfır kullanım avantajı, enerji verimliliği ve sosyal yaşam beklentilerine uygun çözümleriyle öne çıkar. Bu nedenle konut arayışında olan kişiler için yalnızca bugünün ihtiyaçlarını değil, gelecekteki değer artışını da dikkate almak önemlidir.</p>
+  
+    <blockquote style='margin: 20px 0; padding: 10px 20px; border-left: 5px solid #b32128; background: #f9f9f9;'>
+      <strong>Özet Cevap (AEO / Öne Çıkarılan Snippet):</strong> Yeni konut projesinden daire almanın en önemli avantajları; dairenin hiç kullanılmamış olması, güncel deprem yönetmeliklerine uygun inşa edilmesi, modern mimari ve fonksiyonel plan sunması, bakım-onarım maliyetlerinin düşük olması, krediye uygunluk ihtimalinin yüksek olması ve uzun vadede yatırım değerinin artma potansiyelidir.
+    </blockquote>
+  
+    <h3>1. Sıfır Kullanım Avantajı Sunar</h3>
+    <p>Yeni konut projesinden alınan dairelerde daha önce kullanım olmadığı için tesisat, zemin kaplamaları, mutfak dolapları, banyo ürünleri, kapılar ve diğer iç mekan detayları tamamen yenidir. Bu durum, alıcıya hem hijyen hem de konfor açısından önemli bir avantaj sağlar.</p>
+  
+    <p>İkinci el dairelerde zamanla ortaya çıkan boya, tadilat, tesisat yenileme veya mutfak-banyo değişimi gibi ek masraflar, yeni projelerde genellikle minimum seviyededir. Bu da taşınma sürecini daha hızlı ve ekonomik hale getirir.</p>
+  
+    <h3>2. Güncel Deprem Yönetmeliklerine Uygunluk Önemlidir</h3>
+    <p>Türkiye gibi deprem kuşağında yer alan bir ülkede, konut satın alırken dikkat edilmesi gereken en önemli konuların başında yapı güvenliği gelir. Yeni konut projeleri, güncel deprem yönetmelikleri ve modern mühendislik hesapları dikkate alınarak inşa edilir.</p>
+  
+    <p>Bu nedenle yeni projeden daire alırken kullanılan beton sınıfı, taşıyıcı sistem tasarımı, zemin etüdü, temel sistemi ve yapı denetim süreçleri mutlaka sorgulanmalıdır. Bilinçli bir alıcı için evin yalnızca dış görünüşü değil, yapısal güvenliği de karar sürecinin merkezinde olmalıdır.</p>
+  
+    <h3>3. Modern Mimari ve Fonksiyonel Planlar Sunar</h3>
+    <p>Yeni konut projelerinde daire planları günümüz yaşam alışkanlıklarına göre tasarlanır. Açık mutfak seçenekleri, geniş salon kullanımı, ebeveyn banyosu, balkon, depolama alanları ve ferah oda yerleşimleri modern projelerde daha sık görülür.</p>
+  
+    <p>Özellikle 1+1, 2+1 ve 3+1 daire seçeneklerinin aynı proje içinde sunulması, farklı ihtiyaçlara sahip alıcılar için önemli bir esneklik sağlar. Tek yaşayanlar, yeni evli çiftler, çocuklu aileler veya yatırım amaçlı konut almak isteyenler kendi bütçe ve beklentilerine uygun daire tipini daha kolay seçebilir.</p>
+  
+    <h3>4. Bakım ve Onarım Maliyetleri Daha Düşüktür</h3>
+    <p>Yeni bir dairede elektrik tesisatı, su tesisatı, doğalgaz hattı, pencere sistemleri, yalıtım uygulamaları ve iç mekan ürünleri sıfır olduğu için kısa vadede bakım ve onarım ihtiyacı daha azdır. Bu durum, ev sahibine taşındıktan sonra ek masraf çıkma riskini azaltır.</p>
+  
+    <p>İkinci el konutlarda sık karşılaşılan eski tesisat, nem, yalıtım eksikliği, kapı-pencere deformasyonu veya ortak alan yenileme ihtiyacı gibi konular, yeni projelerde çok daha kontrollü şekilde yönetilir.</p>
+  
+    <h3>5. Enerji Verimliliği ve Yalıtım Avantajı Sağlar</h3>
+    <p>Yeni konut projelerinde ısı yalıtımı, ses yalıtımı, kaliteli doğrama sistemleri ve enerji verimliliği sağlayan yapı malzemeleri daha fazla önem kazanmıştır. Bu da hem yaşam konforunu artırır hem de uzun vadede enerji giderlerini azaltmaya yardımcı olur.</p>
+  
+    <p>İyi tasarlanmış bir yalıtım sistemi; yaz aylarında serin, kış aylarında ise daha sıcak bir iç mekan deneyimi sunar. Aynı zamanda komşu dairelerden veya dış ortamdan gelen seslerin azaltılması da günlük yaşam kalitesini doğrudan etkiler.</p>
+  
+    <h3>6. Krediye Uygunluk ve Tapu Süreci Daha Net Olabilir</h3>
+    <p>Yeni konut projelerinden daire alırken proje belgeleri, ruhsat durumu, yapı kullanma izin belgesi, tapu süreci ve banka kredisine uygunluk gibi konular daha planlı ilerleyebilir. Özellikle kurumsal firmalar tarafından geliştirilen projelerde alıcılar için süreç daha şeffaf ve takip edilebilir olur.</p>
+  
+    <p>Konut kredisi kullanmayı düşünen alıcılar için dairenin krediye uygun olması önemli bir avantajdır. Bu nedenle satın alma kararı vermeden önce tapu durumu, iskan süreci ve banka değerlendirmesi hakkında detaylı bilgi alınmalıdır.</p>
+  
+    <h3>7. Yatırım Değeri ve Prim Potansiyeli Yüksektir</h3>
+    <p>Yeni konut projeleri, özellikle gelişmekte olan bölgelerde uzun vadeli değer artışı potansiyeli taşıyabilir. Ulaşım bağlantıları, çevredeki sosyal donatılar, okul, hastane, alışveriş alanları ve bölgenin gelişim hızı konut değerini etkileyen önemli faktörlerdir.</p>
+  
+    <p>İzmir gibi sürekli gelişen bir şehirde, doğru lokasyonda yer alan yeni konut projeleri hem oturum hem de yatırım amacıyla değerlendirilebilir. Özellikle teslim aşamasında veya satış süreci devam eden projeler, erken karar veren alıcılar için avantajlı fırsatlar sunabilir.</p>
+  
+    <h3>8. Ortak Alanlar ve Güncel Yaşam Standartları</h3>
+    <p>Yeni konut projelerinde otopark, asansör, güvenli giriş, peyzaj alanı, modern bina girişi ve ortak kullanım alanları daha planlı şekilde tasarlanır. Bu detaylar, yalnızca estetik açıdan değil, günlük yaşam kolaylığı açısından da önemlidir.</p>
+  
+    <p>Özellikle aileler için güvenli bina girişi, düzenli otopark alanı ve bakımlı ortak alanlar konut tercihinde belirleyici olabilir. Yeni projelerde bu ihtiyaçlar proje tasarımının başından itibaren dikkate alınır.</p>
+  
+    <h3>Yeni Konut Projesinden Daire Alırken Nelere Dikkat Edilmeli?</h3>
+    <p>Yeni konut projesinden daire alırken yalnızca fiyat karşılaştırması yapmak yeterli değildir. Alıcıların şu başlıklara özellikle dikkat etmesi gerekir:</p>
+  
+    <ul>
+      <li><strong>Firma güvenilirliği:</strong> Projeyi yapan firmanın geçmiş işleri ve mühendislik yaklaşımı incelenmelidir.</li>
+      <li><strong>Lokasyon:</strong> Bölgenin ulaşım, sosyal yaşam ve yatırım potansiyeli değerlendirilmelidir.</li>
+      <li><strong>Yapı güvenliği:</strong> Beton sınıfı, zemin etüdü, taşıyıcı sistem ve yapı denetim süreci sorgulanmalıdır.</li>
+      <li><strong>Daire planı:</strong> Oda yerleşimi, metrekare kullanımı, cephe ve ışık alma durumu kontrol edilmelidir.</li>
+      <li><strong>Teslim durumu:</strong> Dairenin teslim tarihi, tapu süreci ve iskan durumu netleştirilmelidir.</li>
+      <li><strong>Satış sonrası destek:</strong> Firma ile iletişim, garanti ve olası teknik destek süreçleri öğrenilmelidir.</li>
+    </ul>
+  
+    <h3>Neli Mühendislik Satışta Olan Sıfır Daireleriyle Yanınızda</h3>
+    <p><strong>Neli Mühendislik</strong> olarak İzmir'de modern yaşam ihtiyaçlarına uygun, güvenli, fonksiyonel ve kaliteli sıfır daire projeleri geliştiriyoruz. Konut sahibi olmak isteyenler için 1+1, 2+1 ve 3+1 daire seçenekleriyle farklı ihtiyaçlara hitap eden projelerimizi satışa sunuyoruz.</p>
+  
+    <p>Yeni konut projesinden daire almanın avantajlarını değerlendirirken, yalnızca bugünkü ihtiyaçlarınızı değil, gelecekteki yaşam konforunuzu ve yatırım değerinizi de düşünmelisiniz. Neli Mühendislik olarak amacımız; sağlam mühendislik anlayışı, kaliteli malzeme kullanımı ve doğru lokasyon seçimiyle uzun yıllar güvenle yaşayabileceğiniz konutlar üretmektir.</p>
+  
+    <p>İzmir'de satışta olan sıfır dairelerimizi ve güncel konut projelerimizi incelemek için <strong><a href='https://neli.tr/showcase' target='_blank' style='color: #b32128; font-weight: bold; text-decoration: underline;'>neli.tr/showcase</a></strong> adresini ziyaret edebilirsiniz. Size uygun 1+1, 2+1 veya 3+1 daire seçeneklerini görüntüleyerek Neli Mühendislik projeleri hakkında detaylı bilgi alabilirsiniz.</p>
+  </article>`,
+    coverImage: "/images/blog/yeni-konut-projesi.webp",
+    coverImageAlt:
+      "Yeni konut projesinden daire almanın avantajları — Neli Mühendislik",
+    category: "Konut Satın Alma Rehberi",
+    tags: JSON.stringify([
+      "yeni konut projesinden daire almanın avantajları",
+      "sıfır daire almanın avantajları",
+      "İzmir yeni konut projeleri",
+      "İzmir sıfır daire",
+      "Çiğli satılık sıfır daire",
+      "1+1 2+1 3+1 sıfır daire",
+      "Neli Mühendislik projeleri",
+      "konut satın alma rehberi",
+    ]),
+    featured: true,
+    status: "published" as const,
+    metaTitle:
+      "Yeni Konut Projesinden Daire Almanın Avantajları | Neli Mühendislik",
+    metaDescription:
+      "Yeni konut projesinden daire almanın avantajlarını keşfedin. Sıfır kullanım, güncel deprem yönetmeliği, modern mimari, düşük bakım maliyeti ve yatırım potansiyeli hakkında bilgi alın.",
+    metaKeywords:
+      "yeni konut projesinden daire almanın avantajları, sıfır daire almanın avantajları, İzmir yeni konut projeleri, İzmir sıfır daire, Çiğli satılık daire, Neli Mühendislik",
+    publishedAt: "2026-06-01",
+  },
+  {
+    slug: "yeni-binalarda-cati-izolasyonu-nasil-olmali",
+    title: "Yeni Binalarda Çatı İzolasyonu Nasıl Olmalı?",
+    excerpt:
+      "Yeni binalarda çatı izolasyonu; su yalıtımı, ısı yalıtımı, buhar dengeleme ve doğru uygulama detaylarıyla birlikte düşünülmelidir. Sağlam bir çatı sistemi, binanın ömrünü ve yaşam konforunu doğrudan etkiler.",
+    content: `<article>
+    <h2>Yeni Binalarda Çatı İzolasyonu Nasıl Olmalı?</h2>
+    <p>Yeni bir bina satın alırken çoğu kişi dairenin konumuna, oda sayısına, mutfak ve banyo detaylarına odaklanır. Ancak binanın uzun ömürlü, konforlu ve güvenli olması için gözden kaçırılmaması gereken en önemli konulardan biri <strong>çatı izolasyonu</strong>dur. Çünkü çatı, binayı yağmur, kar, sıcaklık farkı, nem ve dış ortam koşullarına karşı koruyan en kritik yapı elemanlarından biridir.</p>
+  
+    <p>Özellikle yeni binalarda çatı izolasyonu yalnızca su sızıntısını önlemek için değil; ısı kaybını azaltmak, enerji verimliliğini artırmak, nem ve küf oluşumunu engellemek, üst katlarda yaşam konforunu yükseltmek ve binanın taşıyıcı sistemini korumak için de doğru şekilde yapılmalıdır.</p>
+  
+    <blockquote style='margin: 20px 0; padding: 10px 20px; border-left: 5px solid #b32128; background: #f9f9f9;'>
+      <strong>Özet Cevap (AEO / Öne Çıkarılan Snippet):</strong> Yeni binalarda çatı izolasyonu; su yalıtımı, ısı yalıtımı, buhar kontrolü, eğim betonu, drenaj detayları ve doğru malzeme uygulamasıyla birlikte planlanmalıdır. İyi yapılmış bir çatı izolasyonu; yağmur suyu sızıntılarını önler, enerji tasarrufu sağlar, nem ve küf oluşumunu engeller, üst katlarda konforu artırır ve binanın kullanım ömrünü uzatır.
+    </blockquote>
+  
+    <h3>Çatı İzolasyonu Neden Önemlidir?</h3>
+    <p>Çatı, binanın dış etkenlere en fazla maruz kalan bölümlerinden biridir. Yağmur, rüzgar, güneş, sıcaklık değişimleri ve nem zamanla çatı yüzeyinde deformasyona neden olabilir. Eğer çatı izolasyonu doğru yapılmazsa, kısa süre içinde su sızıntıları, rutubet, tavan lekeleri, küf oluşumu ve ısı kaybı gibi problemler ortaya çıkabilir.</p>
+  
+    <p>Yeni binalarda bu sorunların baştan önlenmesi, ileride oluşabilecek yüksek tadilat maliyetlerini azaltır. Bu nedenle çatı izolasyonu, inşaat sürecinin sonradan düşünülecek bir detayı değil, proje aşamasından itibaren planlanması gereken temel bir yapı güvenliği unsurudur.</p>
+  
+    <h3>Yeni Binalarda Çatı İzolasyonu Hangi Katmanlardan Oluşmalı?</h3>
+    <p>Doğru bir çatı izolasyonu tek bir malzeme uygulamasından ibaret değildir. Çatının eğimi, kullanım amacı, iklim koşulları ve proje detaylarına göre farklı katmanlar birlikte değerlendirilmelidir. Genel olarak yeni binalarda çatı izolasyonu şu başlıklardan oluşmalıdır:</p>
+  
+    <ul>
+      <li><strong>Eğim düzenlemesi:</strong> Yağmur suyunun çatıda birikmemesi için doğru eğim verilmelidir.</li>
+      <li><strong>Su yalıtımı:</strong> Yağmur ve kar sularının binaya sızmasını önleyen ana koruma katmanıdır.</li>
+      <li><strong>Isı yalıtımı:</strong> Yazın aşırı ısınmayı, kışın ise ısı kaybını azaltmaya yardımcı olur.</li>
+      <li><strong>Buhar kontrolü:</strong> İç mekandan gelen nemin yalıtım katmanlarına zarar vermesini engeller.</li>
+      <li><strong>Drenaj detayları:</strong> Suyun çatı yüzeyinden güvenli şekilde uzaklaştırılmasını sağlar.</li>
+      <li><strong>Koruyucu kaplama:</strong> Yalıtım malzemesinin dış etkenlere karşı daha uzun ömürlü olmasına katkı sağlar.</li>
+    </ul>
+  
+    <h3>1. Çatıda Su Yalıtımı Mutlaka Yapılmalıdır</h3>
+    <p>Çatı izolasyonunun en temel amacı, yağmur ve kar sularının bina içine sızmasını önlemektir. Su yalıtımı yapılmayan veya hatalı yapılan çatılarda zamanla tavanlarda lekelenme, sıva kabarması, boya dökülmesi, rutubet ve küf oluşumu görülebilir.</p>
+  
+    <p>Yeni binalarda su yalıtımı yapılırken yalnızca düz yüzeyler değil; baca dipleri, parapetler, gider ağızları, köşe birleşimleri ve teras çatı detayları da dikkatle çözülmelidir. Çünkü çatı sızıntıları çoğu zaman yüzeyden değil, birleşim ve detay noktalarından kaynaklanır.</p>
+  
+    <h3>2. Isı Yalıtımı Enerji Verimliliği Sağlar</h3>
+    <p>Çatıdan kaynaklanan ısı kayıpları, özellikle üst kat dairelerde enerji tüketimini doğrudan etkileyebilir. Kış aylarında ısınma giderlerinin artması, yaz aylarında ise dairenin fazla ısınması çoğu zaman yetersiz çatı ısı yalıtımından kaynaklanır.</p>
+  
+    <p>Doğru uygulanan çatı ısı yalıtımı, iç mekan sıcaklığının daha dengeli kalmasına yardımcı olur. Bu da hem yaşam konforunu artırır hem de doğalgaz ve klima kullanım maliyetlerini azaltabilir. Yeni binalarda enerji verimliliği açısından çatı yalıtımı, dış cephe yalıtımı kadar önemli bir konudur.</p>
+  
+    <h3>3. Çatıda Su Birikmesini Önleyen Eğim Detayı Olmalıdır</h3>
+    <p>Çatıda yalıtım malzemesi ne kadar kaliteli olursa olsun, suyun yüzeyde uzun süre birikmesi zamanla risk oluşturabilir. Bu nedenle yeni binalarda çatı eğimi doğru hesaplanmalı ve yağmur suyunun giderlere yönlendirilmesi sağlanmalıdır.</p>
+  
+    <p>Özellikle teras çatılarda eğim betonu, süzgeç yerleşimi ve gider detayları büyük önem taşır. Suyun çatıda göllenmesi, yalıtım katmanlarını zorlayabilir ve ilerleyen yıllarda sızıntı ihtimalini artırabilir.</p>
+  
+    <h3>4. Buhar ve Nem Kontrolü Göz Ardı Edilmemelidir</h3>
+    <p>Çatı izolasyonunda yalnızca dışarıdan gelen suya karşı önlem almak yeterli değildir. İç mekandan yükselen sıcak hava ve nem de çatı katmanlarında yoğuşmaya neden olabilir. Bu durum zamanla yalıtım malzemesinin performansını düşürebilir ve küf oluşumuna zemin hazırlayabilir.</p>
+  
+    <p>Bu nedenle yeni binalarda buhar dengeleyici katmanlar, havalandırma detayları ve doğru malzeme seçimi birlikte değerlendirilmelidir. Özellikle üst katlarda sağlıklı ve konforlu yaşam alanları oluşturmak için nem kontrolü önemlidir.</p>
+  
+    <h3>5. Çatı Yalıtımında Malzeme Kalitesi Kadar İşçilik de Önemlidir</h3>
+    <p>Çatı izolasyonunda kullanılan malzemenin kaliteli olması önemlidir; ancak doğru işçilik olmadan kaliteli malzeme tek başına yeterli değildir. Ek yerlerinin hatalı yapılması, köşe dönüşlerinin zayıf bırakılması, gider çevrelerinin iyi çözülmemesi veya yalıtım katmanının korunmaması ileride ciddi sorunlara yol açabilir.</p>
+  
+    <p>Bu nedenle yeni binalarda çatı izolasyonu profesyonel ekipler tarafından, proje detaylarına uygun şekilde uygulanmalıdır. Uygulama sonrası kontrol yapılmalı ve özellikle su tahliye noktalarının doğru çalıştığından emin olunmalıdır.</p>
+  
+    <h3>Yeni Bina Alırken Çatı İzolasyonu Nasıl Kontrol Edilir?</h3>
+    <p>Yeni bir daire satın almayı düşünen kullanıcılar, çatı izolasyonunu doğrudan göremeyebilir. Ancak doğru soruları sorarak binanın yalıtım kalitesi hakkında fikir sahibi olabilirler. Daire almadan önce şu konular mutlaka sorgulanmalıdır:</p>
+  
+    <ul>
+      <li>Çatıda su yalıtımı yapıldı mı?</li>
+      <li>Isı yalıtımı için hangi malzemeler kullanıldı?</li>
+      <li>Teras veya çatı eğimi su birikmesini önleyecek şekilde çözüldü mü?</li>
+      <li>Gider, süzgeç ve drenaj detayları doğru planlandı mı?</li>
+      <li>Çatı birleşim noktalarında ek yalıtım uygulandı mı?</li>
+      <li>Üst kat dairelerde ısı ve nem konforu için gerekli önlemler alındı mı?</li>
+    </ul>
+  
+    <h3>Neli Mühendislik Olarak Çatıda Gerekli Tüm Yalıtımları Yapıyoruz</h3>
+    <p><strong>Neli Mühendislik</strong> olarak geliştirdiğimiz konut projelerinde yalnızca daire içi estetiğe değil, binanın uzun ömürlü ve güvenli olmasını sağlayan teknik detaylara da büyük önem veriyoruz. Çatı izolasyonu da bu yaklaşımın en önemli parçalarından biridir.</p>
+  
+    <p>Projelerimizde çatıda gerekli su yalıtımı, ısı yalıtımı, eğim ve drenaj detayları titizlikle planlanır. Yağmur suyunun binaya zarar vermemesi, üst katlarda yaşam konforunun korunması, nem ve rutubet riskinin azaltılması için uygulama süreçleri dikkatle takip edilir.</p>
+  
+    <p>Bizim için kaliteli konut üretimi yalnızca güzel görünen yaşam alanları inşa etmek değildir. Aynı zamanda temelden çatıya kadar her detayın mühendislik disipliniyle çözülmesi, uzun yıllar güvenle kullanılabilecek yapılar ortaya çıkarılmasıdır.</p>
+  
+    <h3>İzmir’de Satışta Olan Sıfır Dairelerimizi İnceleyin</h3>
+    <p>Yeni bina alırken çatı izolasyonu, yapı güvenliği, malzeme kalitesi ve mühendislik detayları mutlaka değerlendirilmelidir. Neli Mühendislik olarak İzmir’de satışta olan sıfır daire projelerimizde bu teknik detaylara önem veriyor; konforlu, güvenli ve uzun ömürlü yaşam alanları sunmayı hedefliyoruz.</p>
+  
+    <p>Satışta olan güncel projelerimizi, 1+1, 2+1 ve 3+1 sıfır daire seçeneklerimizi incelemek için <strong><a href='https://neli.tr/showcase' target='_blank' style='color: #b32128; font-weight: bold; text-decoration: underline;'>neli.tr/showcase</a></strong> adresini ziyaret edebilirsiniz. Size uygun daire seçeneklerini görüntüleyerek Neli Mühendislik projeleri hakkında detaylı bilgi alabilirsiniz.</p>
+  </article>`,
+    coverImage: "/images/blog/cati-yalitimi.webp",
+    coverImageAlt:
+      "Yeni binalarda çatı izolasyonu ve yalıtım uygulamaları — Neli Mühendislik",
+    category: "Mühendislik ve Yapı Teknolojileri",
+    tags: JSON.stringify([
+      "yeni binalarda çatı izolasyonu nasıl olmalı",
+      "çatı izolasyonu nasıl yapılır",
+      "çatı su yalıtımı",
+      "çatı ısı yalıtımı",
+      "yeni bina çatı yalıtımı",
+      "çatıdan su sızıntısı nasıl önlenir",
+      "İzmir sıfır daire",
+      "Neli Mühendislik projeleri",
+    ]),
+    featured: true,
+    status: "published" as const,
+    metaTitle:
+      "Yeni Binalarda Çatı İzolasyonu Nasıl Olmalı? | Neli Mühendislik",
+    metaDescription:
+      "Yeni binalarda çatı izolasyonu nasıl olmalı? Su yalıtımı, ısı yalıtımı, eğim, drenaj ve nem kontrolü hakkında bilgi alın. Neli Mühendislik’in satışta olan sıfır daire projelerini inceleyin.",
+    metaKeywords:
+      "yeni binalarda çatı izolasyonu nasıl olmalı, çatı izolasyonu, çatı su yalıtımı, çatı ısı yalıtımı, yeni bina yalıtımı, İzmir sıfır daire, Neli Mühendislik",
+    publishedAt: "2026-06-01",
+  },
+  {
+    slug: "yeni-bina-alirken-yapi-denetim-raporu-neden-onemlidir",
+    title: "Yeni Bina Alırken Yapı Denetim Raporu Neden Önemlidir?",
+    excerpt:
+      "Yeni bina alırken yapı denetim raporu; binanın ruhsatlı, yönetmeliklere uygun, denetlenmiş ve güvenli şekilde inşa edilip edilmediğini anlamak için kontrol edilmesi gereken en önemli belgelerden biridir.",
+    content: `<article>
+    <h2>Yeni Bina Alırken Yapı Denetim Raporu Neden Önemlidir?</h2>
+    <p>Yeni bir daire satın alırken çoğu kişi öncelikle konuma, metrekareye, oda sayısına, cepheye ve fiyat avantajına odaklanır. Ancak bir konutun gerçekten güvenli ve uzun ömürlü olup olmadığını anlamak için yalnızca görünen detaylara bakmak yeterli değildir. Binanın ruhsatlı, projeye uygun ve teknik standartlara göre inşa edilip edilmediğini gösteren en önemli süreçlerden biri <strong>yapı denetim süreci</strong>dir.</p>
+  
+    <p>Özellikle sıfır daire almayı düşünen kullanıcılar için <strong>yapı denetim raporu</strong>, satın alınacak binanın mühendislik açısından kontrol edildiğini gösteren önemli bir güven unsurudur. Bu rapor ve yapı denetim süreci; temel, beton, demir donatı, taşıyıcı sistem, proje uygunluğu ve uygulama kalitesi gibi kritik konuların denetlendiğini ortaya koyar.</p>
+  
+    <blockquote style='margin: 20px 0; padding: 10px 20px; border-left: 5px solid #b32128; background: #f9f9f9;'>
+      <strong>Özet Cevap (AEO / Öne Çıkarılan Snippet):</strong> Yeni bina alırken yapı denetim raporu önemlidir çünkü binanın ruhsatlı projesine, güncel yönetmeliklere, zemin etüdüne, beton ve demir donatı standartlarına uygun şekilde inşa edilip edilmediğini anlamaya yardımcı olur. Yapı denetim süreci; alıcının yalnızca estetik değil, güvenlik ve teknik kalite açısından da doğru karar vermesini sağlar.
+    </blockquote>
+  
+    <h3>Yapı Denetim Raporu Nedir?</h3>
+    <p>Yapı denetim raporu, bir binanın inşaat sürecinde belirli teknik kontrollerden geçtiğini gösteren belge ve kayıtların genel ifadesidir. Bu süreçte yapı denetim firmaları; binanın onaylı mimari, statik, mekanik ve elektrik projelerine uygun yapılıp yapılmadığını kontrol eder.</p>
+  
+    <p>Yapı denetim yalnızca inşaat bittikten sonra yapılan bir kontrol değildir. Temel aşamasından kaba inşaata, beton dökümünden demir donatı kontrollerine, tesisat uygulamalarından yapı kullanma izni sürecine kadar birçok aşamada denetim yapılır. Bu nedenle yeni bina alırken yapı denetim sürecinin tamamlanmış olması, alıcı için önemli bir güven göstergesidir.</p>
+  
+    <h3>Yeni Bina Alırken Yapı Denetim Raporu Neden Kontrol Edilmeli?</h3>
+    <p>Yeni bir bina dışarıdan modern, estetik ve kaliteli görünebilir. Fakat binanın asıl güvenliği, görünmeyen taşıyıcı sisteminde ve uygulama kalitesinde saklıdır. Yapı denetim süreci, bu görünmeyen teknik detayların kontrol altında tutulmasını sağlar.</p>
+  
+    <p>Bu nedenle daire satın almadan önce binanın ruhsat durumu, yapı denetim süreci, iskan belgesi ve projeye uygunluğu hakkında bilgi almak gerekir. Özellikle deprem güvenliği açısından taşıyıcı sistemin doğru uygulanmış olması büyük önem taşır.</p>
+  
+    <h3>1. Binanın Ruhsatlı ve Projeye Uygun Yapıldığını Gösterir</h3>
+    <p>Yapı denetim süreci, binanın belediye tarafından onaylanmış projelerine uygun şekilde inşa edilip edilmediğini kontrol eder. Mimari proje, statik proje, elektrik ve mekanik projeler binanın teknik yol haritasıdır. İnşaatın bu projelere uygun ilerlemesi, güvenli ve yasal bir yapı için temel şarttır.</p>
+  
+    <p>Yeni bina alırken projeye uygunluk özellikle önemlidir. Çünkü projeye aykırı uygulamalar ileride iskan, tapu, kredi kullanımı veya tadilat süreçlerinde sorun oluşturabilir. Bu nedenle yapı denetim kayıtları, alıcının daha bilinçli karar vermesine yardımcı olur.</p>
+  
+    <h3>2. Beton ve Demir Donatı Kalitesi Denetlenir</h3>
+    <p>Bir binanın dayanıklılığını belirleyen en önemli unsurlardan biri taşıyıcı sistemdir. Kolon, kiriş, perde beton, temel sistemi, kullanılan demir donatı ve beton sınıfı yapı güvenliğinin ana bileşenleridir.</p>
+  
+    <p>Yapı denetim sürecinde beton dökümü, numune alımı, laboratuvar testleri, demir donatı yerleşimi ve statik projeye uygunluk gibi konular kontrol edilir. Bu kontroller, binanın yalnızca kağıt üzerinde değil, uygulamada da mühendislik standartlarına uygun yapılmasını amaçlar.</p>
+  
+    <h3>3. Deprem Güvenliği Açısından Kritik Bir Süreçtir</h3>
+    <p>Türkiye deprem riski yüksek bir ülkedir. Bu nedenle konut satın alırken binanın deprem yönetmeliklerine uygunluğu en önemli karar kriterlerinden biri olmalıdır. Yapı denetim süreci, binanın yürürlükteki yönetmeliklere göre projelendirilip uygulanmasını takip eder.</p>
+  
+    <p>Depreme dayanıklı bir yapı için yalnızca kaliteli beton kullanmak yeterli değildir. Zemin etüdü, temel sistemi, taşıyıcı elemanların doğru boyutlandırılması, demir donatı düzeni, beton kalitesi ve uygulama işçiliği bir bütün olarak değerlendirilmelidir. Yapı denetim raporu bu bütünün kontrol edildiğini gösteren önemli bir göstergedir.</p>
+  
+    <h3>4. Alıcı İçin Şeffaflık ve Güven Sağlar</h3>
+    <p>Yeni bina satın alırken alıcının tüm teknik detayları kendisinin incelemesi mümkün olmayabilir. Yapı denetim süreci, teknik uzmanlar tarafından yapılan kontroller sayesinde alıcıya daha şeffaf bir satın alma süreci sunar.</p>
+  
+    <p>Bir projede yapı denetim süreçlerinin düzenli yürütülmesi, firmanın kurumsal çalışma disiplinini ve teknik kaliteye verdiği önemi de gösterir. Bu nedenle yapı denetim bilgileri, yalnızca resmi bir belge değil, aynı zamanda güvenilirlik göstergesidir.</p>
+  
+    <h3>5. İskan ve Kredi Sürecini Etkileyebilir</h3>
+    <p>Yeni bina alırken dikkat edilmesi gereken konulardan biri de <strong>iskan belgesi</strong> yani yapı kullanma izin belgesidir. İskan süreci, binanın projeye ve ilgili mevzuata uygun şekilde tamamlandığını gösterir. Yapı denetim süreci de bu aşamanın önemli parçalarından biridir.</p>
+  
+    <p>İskanı olmayan veya proje uygunluğu konusunda sorun bulunan yapılarda banka kredisi, tapu işlemleri veya ileride yapılacak satış süreçleri daha zor ilerleyebilir. Bu nedenle yapı denetim durumu ve iskan süreci, konut alıcısı için yalnızca teknik değil, aynı zamanda finansal açıdan da önemlidir.</p>
+  
+    <h3>6. Satın Alma Sonrası Riskleri Azaltır</h3>
+    <p>Yapı denetim raporu ve denetim süreci, satın alma sonrası karşılaşılabilecek bazı risklerin azaltılmasına yardımcı olur. Projeye aykırı imalatlar, eksik uygulamalar, taşıyıcı sistem hataları veya teknik kusurlar ileride ciddi maliyetlere yol açabilir.</p>
+  
+    <p>Yeni bina alırken bu sürecin baştan sorgulanması, alıcının daha güvenli bir yatırım yapmasını sağlar. Özellikle uzun yıllar oturulacak veya yatırım amacıyla alınacak bir dairede, teknik güvenlik en az lokasyon ve fiyat kadar önemlidir.</p>
+  
+    <h3>Yeni Bina Alırken Yapı Denetimle İlgili Hangi Sorular Sorulmalı?</h3>
+    <p>Yeni bir daire satın almadan önce yapı denetim süreciyle ilgili bazı temel sorular sormak gerekir. Bu sorular, binanın teknik kalitesi hakkında daha net fikir verir:</p>
+  
+    <ul>
+      <li>Binanın yapı ruhsatı var mı?</li>
+      <li>Yapı denetim firması tarafından süreç takip edildi mi?</li>
+      <li>Beton numune testleri ve laboratuvar kontrolleri yapıldı mı?</li>
+      <li>Statik proje ve uygulama birbiriyle uyumlu mu?</li>
+      <li>Zemin etüdü yapıldı mı?</li>
+      <li>Binanın iskan belgesi alındı mı veya süreç hangi aşamada?</li>
+      <li>Kullanılan beton sınıfı ve taşıyıcı sistem detayları hakkında bilgi veriliyor mu?</li>
+      <li>Projede yapı güvenliğiyle ilgili ek mühendislik önlemleri var mı?</li>
+    </ul>
+  
+    <h3>Yapı Denetim Raporu Tek Başına Yeterli midir?</h3>
+    <p>Yapı denetim süreci çok önemli olsa da, bilinçli bir konut alıcısı yalnızca tek bir belgeye bakarak karar vermemelidir. Binanın lokasyonu, zemin yapısı, malzeme kalitesi, firma güvenilirliği, mimari planı, yalıtım detayları ve satış sonrası destek süreçleri birlikte değerlendirilmelidir.</p>
+  
+    <p>Bu nedenle yeni bina alırken hem resmi belgeleri hem de projeyi geliştiren firmanın mühendislik yaklaşımını incelemek gerekir. Güvenilir firmalar, konut alıcılarına yalnızca daire özelliklerini değil, yapının teknik altyapısını da açık şekilde anlatmalıdır.</p>
+  
+    <h3>Neli Mühendislik Olarak Yapı Güvenliğine Önem Veriyoruz</h3>
+    <p><strong>Neli Mühendislik</strong> olarak geliştirdiğimiz konut projelerinde yalnızca estetik ve fonksiyonel daireler üretmeyi değil, aynı zamanda güvenli ve uzun ömürlü yapılar inşa etmeyi hedefliyoruz. Bizim için kaliteli konut anlayışı; temelden çatıya kadar her aşamanın mühendislik disipliniyle planlanması ve uygulanmasıdır.</p>
+  
+    <p>Projelerimizde yapı güvenliği, malzeme kalitesi, doğru uygulama, yalıtım detayları ve teknik süreçler titizlikle ele alınır. Yeni bina alırken yapı denetim sürecinin ve teknik kalite detaylarının önemini bilen alıcılar için güven veren, modern ve yaşanabilir konutlar sunmayı amaçlıyoruz.</p>
+  
+    <p>Neli Mühendislik olarak satışta olan sıfır daire projelerimizde; modern yaşam ihtiyaçlarına uygun planlar, güvenli yapı anlayışı ve kaliteli mühendislik yaklaşımıyla hareket ediyoruz. 1+1, 2+1 ve 3+1 daire seçeneklerimizi inceleyerek size uygun yaşam alanını kolayca değerlendirebilirsiniz.</p>
+  
+    <h3>İzmir’de Satışta Olan Sıfır Dairelerimizi İnceleyin</h3>
+    <p>Yeni bina alırken yapı denetim raporu, yapı güvenliği, iskan süreci ve firma güvenilirliği mutlaka dikkate alınmalıdır. Neli Mühendislik olarak İzmir’de satışta olan sıfır daire projelerimizde teknik detaylara önem veriyor; güvenli, kaliteli ve uzun ömürlü yaşam alanları sunmayı hedefliyoruz.</p>
+  
+    <p>Güncel projelerimizi ve satışta olan 1+1, 2+1 ve 3+1 sıfır daire seçeneklerimizi incelemek için <strong><a href='https://neli.tr/showcase' target='_blank' style='color: #b32128; font-weight: bold; text-decoration: underline;'>neli.tr/showcase</a></strong> adresini ziyaret edebilirsiniz. Neli Mühendislik projelerini görüntüleyerek size en uygun daire hakkında detaylı bilgi alabilirsiniz.</p>
+  </article>`,
+    coverImage: "/images/blog/yapi-denetim.webp",
+    coverImageAlt:
+      "Yeni bina alırken yapı denetim raporu ve yapı güvenliği — Neli Mühendislik",
+    category: "Konut Satın Alma Rehberi",
+    tags: JSON.stringify([
+      "yeni bina alırken yapı denetim raporu neden önemlidir",
+      "yapı denetim raporu nedir",
+      "yeni bina alırken nelere dikkat edilmeli",
+      "sıfır daire alırken yapı güvenliği",
+      "depreme dayanıklı bina nasıl anlaşılır",
+      "iskan belgesi neden önemlidir",
+      "İzmir sıfır daire",
+      "Neli Mühendislik projeleri",
+    ]),
+    featured: true,
+    status: "published" as const,
+    metaTitle:
+      "Yeni Bina Alırken Yapı Denetim Raporu Neden Önemlidir? | Neli Mühendislik",
+    metaDescription:
+      "Yeni bina alırken yapı denetim raporu neden önemlidir? Ruhsat, iskan, beton kalitesi, deprem güvenliği ve teknik denetim süreci hakkında bilgi alın. Neli Mühendislik’in satışta olan sıfır daire projelerini inceleyin.",
+    metaKeywords:
+      "yeni bina alırken yapı denetim raporu neden önemlidir, yapı denetim raporu, yapı denetim nedir, sıfır daire alırken nelere dikkat edilmeli, deprem güvenliği, iskan belgesi, İzmir sıfır daire, Neli Mühendislik",
+    publishedAt: "2026-06-01",
+  },
+  {
+    slug: "konut-projelerinde-kullanilan-malzeme-kalitesi-nasil-anlasilir",
+    title: "Konut Projelerinde Kullanılan Malzeme Kalitesi Nasıl Anlaşılır?",
+    excerpt:
+      "Konut projelerinde kullanılan malzeme kalitesi; yapı güvenliği, yaşam konforu, enerji verimliliği ve uzun vadeli değer açısından büyük önem taşır. Daire alırken beton, demir, yalıtım, doğrama, tesisat ve iç mekan malzemeleri dikkatle değerlendirilmelidir.",
+    content: `<article>
+    <h2>Konut Projelerinde Kullanılan Malzeme Kalitesi Nasıl Anlaşılır?</h2>
+    <p>Yeni bir daire satın alırken çoğu kişi lokasyon, fiyat, oda sayısı, cephe ve metrekare gibi kriterlere odaklanır. Ancak bir konutun gerçek değerini belirleyen en önemli unsurlardan biri de <strong>kullanılan malzeme kalitesidir</strong>. Çünkü kaliteli malzeme; binanın güvenliğini, dayanıklılığını, konforunu ve uzun yıllar sorunsuz kullanılmasını doğrudan etkiler.</p>
+  
+    <p>Konut projelerinde malzeme kalitesi yalnızca gözle görünen seramik, kapı, mutfak dolabı veya parke gibi detaylarla sınırlı değildir. Binanın temelinden çatısına kadar kullanılan beton, demir, yalıtım malzemeleri, doğrama sistemleri, elektrik tesisatı, su tesisatı ve ortak alan uygulamaları da kalite değerlendirmesinin önemli parçalarıdır.</p>
+  
+    <blockquote style='margin: 20px 0; padding: 10px 20px; border-left: 5px solid #b32128; background: #f9f9f9;'>
+      <strong>Özet Cevap (AEO / Öne Çıkarılan Snippet):</strong> Konut projelerinde kullanılan malzeme kalitesi; beton sınıfı, demir donatı uygulaması, ısı ve su yalıtımı, pencere-doğrama sistemi, elektrik ve su tesisatı, zemin kaplamaları, mutfak-banyo ürünleri ve işçilik kalitesi incelenerek anlaşılır. Kaliteli malzeme kullanılan projeler daha güvenli, konforlu, enerji verimli ve uzun ömürlü olur.
+    </blockquote>
+  
+    <h3>Malzeme Kalitesi Konut Alırken Neden Önemlidir?</h3>
+    <p>Bir konut projesinde kullanılan malzemeler, binanın yalnızca bugünkü görünümünü değil, gelecekteki performansını da belirler. Kalitesiz veya standart altı malzeme kullanımı; kısa sürede tadilat ihtiyacı, ısı kaybı, su sızıntısı, ses problemi, tesisat arızası ve estetik deformasyon gibi sorunlara yol açabilir.</p>
+  
+    <p>Bu nedenle daire satın alırken yalnızca dairenin yeni olması yeterli değildir. Hangi malzemelerin kullanıldığı, bu malzemelerin hangi standartlara uygun olduğu ve uygulamanın nasıl yapıldığı da mutlaka sorgulanmalıdır.</p>
+  
+    <h3>1. Beton Sınıfı ve Taşıyıcı Sistem Kalitesi Sorgulanmalıdır</h3>
+    <p>Bir binanın güvenliği açısından en kritik konuların başında beton kalitesi ve taşıyıcı sistem uygulaması gelir. Kolon, kiriş, perde beton, temel sistemi ve döşeme gibi taşıyıcı elemanlar binanın ana iskeletini oluşturur.</p>
+  
+    <p>Konut alırken kullanılan beton sınıfı, beton numune testleri, zemin etüdü, statik proje uygunluğu ve yapı denetim süreci hakkında bilgi alınmalıdır. Güçlü bir taşıyıcı sistem, kaliteli konut anlayışının temelidir.</p>
+  
+    <h3>2. Demir Donatı Uygulaması Yapı Güvenliğini Etkiler</h3>
+    <p>Betonarme yapılarda yalnızca beton kalitesi değil, demir donatı uygulaması da büyük önem taşır. Donatı çapları, yerleşim aralıkları, etriye sıklaştırmaları, kolon-kiriş birleşimleri ve projeye uygunluk yapı güvenliği açısından kritik detaylardır.</p>
+  
+    <p>Bu detaylar doğrudan gözle görülmese de, yapı denetim süreci ve proje uygulama disiplini sayesinde kontrol edilir. Güvenilir firmalar, taşıyıcı sistemin yönetmeliklere uygun şekilde uygulanmasına büyük önem verir.</p>
+  
+    <h3>3. Isı Yalıtımı ve Mantolama Kalitesi İncelenmelidir</h3>
+    <p>Yeni konut projelerinde ısı yalıtımı, yaşam konforu ve enerji tasarrufu açısından önemli bir kriterdir. Kaliteli mantolama uygulaması, kışın ısı kaybını azaltırken yaz aylarında da iç mekanın daha dengeli sıcaklıkta kalmasına yardımcı olur.</p>
+  
+    <p>Daire alırken dış cephede hangi yalıtım malzemesinin kullanıldığı, uygulama kalınlığı, detay çözümleri ve işçilik kalitesi hakkında bilgi alınmalıdır. İyi yapılmış bir ısı yalıtımı, uzun vadede doğalgaz ve klima maliyetlerini azaltmaya katkı sağlar.</p>
+  
+    <h3>4. Su Yalıtımı ve Çatı İzolasyonu Göz Ardı Edilmemelidir</h3>
+    <p>Malzeme kalitesini anlamanın önemli yollarından biri de binanın su yalıtım detaylarını incelemektir. Temel, bodrum, teras, balkon, ıslak hacimler ve çatı bölgelerinde doğru su yalıtımı yapılması binanın uzun ömürlü olması için gereklidir.</p>
+  
+    <p>Eksik veya hatalı su yalıtımı; rutubet, küf, boya kabarması, tavan lekesi ve betonarme elemanlarda zarar gibi ciddi sorunlara neden olabilir. Bu yüzden yeni bina alırken çatı izolasyonu, temel yalıtımı ve banyo-balkon yalıtım detayları mutlaka sorgulanmalıdır.</p>
+  
+    <h3>5. Pencere ve Doğrama Sistemleri Konforu Belirler</h3>
+    <p>Pencere ve doğrama kalitesi, dairenin ısı, ses ve hava yalıtımı performansını doğrudan etkiler. Kaliteli doğrama sistemleri; dış ortamdan gelen sesi azaltır, ısı kaybını önler ve iç mekanda daha konforlu bir yaşam sunar.</p>
+  
+    <p>Daire alırken kullanılan cam tipi, doğrama markası, profil kalitesi, conta sistemi ve montaj işçiliği değerlendirilmelidir. Özellikle yoğun caddeye, rüzgara veya dış sese açık bölgelerde doğrama kalitesi daha da önemli hale gelir.</p>
+  
+    <h3>6. Elektrik ve Su Tesisatı Kaliteli Malzemelerle Yapılmalıdır</h3>
+    <p>Elektrik ve su tesisatı, daire içinde uzun yıllar sorunsuz kullanım için dikkat edilmesi gereken teknik detaylardır. Kalitesiz kablo, boru, sigorta, vana veya bağlantı elemanları ilerleyen dönemlerde arıza, kaçak veya güvenlik riski oluşturabilir.</p>
+  
+    <p>Yeni konut projelerinde elektrik panosu, priz yerleşimi, aydınlatma altyapısı, internet ve uydu tesisatı, temiz su ve pis su hatları doğru planlanmalıdır. Bu alanlarda kaliteli malzeme ve düzgün işçilik, satın alma sonrası konforu doğrudan etkiler.</p>
+  
+    <h3>7. İç Mekan Malzemeleri Uzun Ömürlü Olmalıdır</h3>
+    <p>Daire içinde kullanılan kapılar, parke, seramik, mutfak dolapları, banyo dolapları, vitrifiye ürünleri ve armatürler hem estetik hem de kullanım ömrü açısından önemlidir. Kaliteli iç mekan malzemeleri, dairenin değerini ve yaşam konforunu artırır.</p>
+  
+    <p>Özellikle mutfak ve banyo gibi yoğun kullanılan alanlarda neme dayanıklı, sağlam ve kolay temizlenebilir malzemeler tercih edilmelidir. Daire gezisi sırasında kapak menteşeleri, çekmece rayları, tezgah uygulaması, seramik işçiliği ve derz detayları dikkatle incelenmelidir.</p>
+  
+    <h3>8. İşçilik Kalitesi Malzeme Kadar Önemlidir</h3>
+    <p>Konut projelerinde kaliteli malzeme kullanılması tek başına yeterli değildir. Malzemenin doğru uygulanması da en az malzeme seçimi kadar önemlidir. Hatalı işçilik, en kaliteli ürünlerin bile kısa sürede problem çıkarmasına neden olabilir.</p>
+  
+    <p>Seramiklerde eğrilik, kapılarda boşluk, pencere kenarlarında hava sızıntısı, duvarlarda dalgalanma, süpürgeliklerde açıklık veya banyo giderlerinde eğim problemi gibi detaylar işçilik kalitesi hakkında fikir verir.</p>
+  
+    <h3>Konut Alırken Malzeme Kalitesi Nasıl Kontrol Edilir?</h3>
+    <p>Yeni bir daire satın almadan önce malzeme kalitesini değerlendirmek için şu sorular mutlaka sorulmalıdır:</p>
+  
+    <ul>
+      <li>Kullanılan beton sınıfı nedir?</li>
+      <li>Binanın yapı denetim süreci tamamlandı mı?</li>
+      <li>Dış cephede hangi ısı yalıtım malzemesi kullanıldı?</li>
+      <li>Çatı, temel, balkon ve ıslak hacimlerde su yalıtımı yapıldı mı?</li>
+      <li>Pencere ve doğrama sistemi hangi özelliklere sahip?</li>
+      <li>Elektrik ve su tesisatında hangi standartlar uygulandı?</li>
+      <li>Mutfak ve banyo dolaplarında hangi malzemeler kullanıldı?</li>
+      <li>Zemin kaplamaları, kapılar, seramikler ve armatürler hangi kalitede?</li>
+      <li>İşçilik detayları düzgün ve temiz mi?</li>
+      <li>Satış sonrası teknik destek sağlanıyor mu?</li>
+    </ul>
+  
+    <h3>Malzeme Kalitesi Yatırım Değerini Etkiler mi?</h3>
+    <p>Evet, konut projelerinde kullanılan malzeme kalitesi yatırım değerini doğrudan etkiler. Kaliteli malzeme ve doğru işçilikle inşa edilen projeler zaman içinde daha az bakım ihtiyacı doğurur, daha konforlu bir yaşam sunar ve ikinci el değerini daha iyi koruyabilir.</p>
+  
+    <p>Özellikle İzmir gibi konut talebinin yüksek olduğu şehirlerde, alıcılar artık yalnızca lokasyona değil, binanın teknik kalitesine de dikkat etmektedir. Bu nedenle malzeme kalitesi yüksek projeler hem oturum hem de yatırım amacıyla daha avantajlı hale gelebilir.</p>
+  
+    <h3>Neli Mühendislik Olarak Kaliteli Malzeme ve Güvenli Yapı Anlayışıyla Çalışıyoruz</h3>
+    <p><strong>Neli Mühendislik</strong> olarak geliştirdiğimiz konut projelerinde, yalnızca estetik görünüme değil, yapı güvenliğini ve uzun ömürlü kullanım konforunu sağlayan tüm teknik detaylara önem veriyoruz. Bizim için kaliteli konut üretimi; temelden çatıya kadar doğru malzeme, doğru mühendislik ve doğru işçilik anlayışıyla mümkündür.</p>
+  
+    <p>Projelerimizde taşıyıcı sistemden yalıtım detaylarına, iç mekan uygulamalarından ortak alan kalitesine kadar her aşamayı dikkatle planlıyoruz. Amacımız; konut alıcılarına güvenli, konforlu, modern ve uzun yıllar değerini koruyacak yaşam alanları sunmaktır.</p>
+  
+    <p>Konut projelerinde kullanılan malzeme kalitesini sorgulayan bilinçli alıcılar için Neli Mühendislik projeleri, güven veren mühendislik yaklaşımı ve detaylara verilen önemle öne çıkar.</p>
+  
+    <h3>İzmir’de Satışta Olan Sıfır Dairelerimizi İnceleyin</h3>
+    <p>Yeni bir daire satın alırken malzeme kalitesi, yapı güvenliği, yalıtım detayları, tesisat kalitesi ve işçilik mutlaka değerlendirilmelidir. Neli Mühendislik olarak İzmir’de satışta olan sıfır daire projelerimizde bu detaylara önem veriyor; farklı ihtiyaçlara uygun modern yaşam alanları sunuyoruz.</p>
+  
+    <p>Satışta olan güncel projelerimizi ve 1+1, 2+1, 3+1 sıfır daire seçeneklerimizi incelemek için <strong><a href='https://neli.tr/showcase' target='_blank' style='color: #b32128; font-weight: bold; text-decoration: underline;'>neli.tr/showcase</a></strong> adresini ziyaret edebilirsiniz. Size uygun daire seçeneklerini görüntüleyerek Neli Mühendislik projeleri hakkında detaylı bilgi alabilirsiniz.</p>
+  </article>`,
+    coverImage: "/images/blog/malzeme-kalitesi.webp",
+    coverImageAlt:
+      "Konut projelerinde kullanılan malzeme kalitesi ve yapı güvenliği — Neli Mühendislik",
+    category: "Konut Satın Alma Rehberi",
+    tags: JSON.stringify([
+      "konut projelerinde kullanılan malzeme kalitesi nasıl anlaşılır",
+      "konut alırken malzeme kalitesi",
+      "sıfır daire alırken nelere dikkat edilmeli",
+      "yeni bina malzeme kalitesi",
+      "inşaatta kaliteli malzeme kullanımı",
+      "daire alırken yapı kalitesi",
+      "İzmir sıfır daire",
+      "Neli Mühendislik projeleri",
+    ]),
+    featured: true,
+    status: "published" as const,
+    metaTitle:
+      "Konut Projelerinde Kullanılan Malzeme Kalitesi Nasıl Anlaşılır? | Neli Mühendislik",
+    metaDescription:
+      "Konut projelerinde kullanılan malzeme kalitesi nasıl anlaşılır? Beton, demir, yalıtım, doğrama, tesisat, iç mekan malzemeleri ve işçilik kalitesi hakkında bilgi alın. Neli Mühendislik’in satışta olan sıfır daire projelerini inceleyin.",
+    metaKeywords:
+      "konut projelerinde kullanılan malzeme kalitesi nasıl anlaşılır, konut alırken malzeme kalitesi, sıfır daire alırken nelere dikkat edilmeli, yeni bina malzeme kalitesi, inşaat malzeme kalitesi, İzmir sıfır daire, Neli Mühendislik",
+    publishedAt: "2026-06-01",
+  },
+  {
+    slug: "temel-yalitimi-yapilmayan-binalarda-ne-olur",
+    title: "Temel Yalıtımı Yapılmayan Binalarda Ne Olur?",
+    excerpt:
+      "Temel yalıtımı yapılmayan binalarda su, nem, rutubet, küf, kötü koku ve yapı elemanlarında zamanla hasar oluşabilir. Sağlıklı, güvenli ve uzun ömürlü bir bina için temel yalıtımı kritik öneme sahiptir.",
+    content: `<article>
+    <h2>Temel Yalıtımı Yapılmayan Binalarda Ne Olur?</h2>
+    <p>Bir binanın sağlamlığı yalnızca görünen cephe, daire içi malzemeler veya modern mimari detaylarla değerlendirilmez. Yapının uzun ömürlü ve güvenli olması için en kritik bölümlerden biri <strong>temel sistemi</strong>dir. Temel, binanın yükünü zemine aktaran ana yapı elemanıdır ve sürekli olarak toprak, yeraltı suyu, nem ve dış etkilere maruz kalır.</p>
+  
+    <p>Bu nedenle <strong>temel yalıtımı</strong>, yeni bina inşaatlarında ihmal edilmemesi gereken en önemli teknik uygulamalardan biridir. Temel yalıtımı yapılmayan veya hatalı yapılan binalarda zamanla su sızıntısı, rutubet, küf, kötü koku, bodrum kat problemleri ve betonarme yapı elemanlarında hasar gibi ciddi sorunlar ortaya çıkabilir.</p>
+  
+    <blockquote style='margin: 20px 0; padding: 10px 20px; border-left: 5px solid #b32128; background: #f9f9f9;'>
+      <strong>Özet Cevap (AEO / Öne Çıkarılan Snippet):</strong> Temel yalıtımı yapılmayan binalarda zemin suyu ve nem zamanla yapıya sızabilir. Bu durum bodrum katlarda rutubet, küf, kötü koku, boya ve sıva kabarması, ısı kaybı, donatı korozyonu ve betonarme elemanlarda dayanım kaybı gibi sorunlara yol açabilir. Doğru temel yalıtımı, binanın ömrünü uzatır ve yapı güvenliğini korur.
+    </blockquote>
+  
+    <h3>Temel Yalıtımı Nedir?</h3>
+    <p>Temel yalıtımı, binanın toprakla temas eden temel, perde duvar, bodrum ve zemin altı bölümlerinin suya ve neme karşı korunması için yapılan uygulamaların genel adıdır. Bu yalıtım sayesinde yeraltı suyu, yağmur suyu veya zeminden gelen nemin bina içine ve taşıyıcı sisteme zarar vermesi önlenir.</p>
+  
+    <p>Temel yalıtımı; su yalıtım membranları, sürme yalıtım malzemeleri, drenaj levhaları, bohçalama sistemi, drenaj boruları ve koruyucu katmanlar gibi farklı tekniklerle uygulanabilir. Hangi yöntemin kullanılacağı, zemin durumu, yeraltı su seviyesi, bina tipi ve proje detaylarına göre belirlenmelidir.</p>
+  
+    <h3>Temel Yalıtımı Neden Önemlidir?</h3>
+    <p>Temel ve bodrum katlar, binanın en fazla nem ve su etkisine maruz kalan bölümleridir. Bu alanlarda doğru yalıtım yapılmadığında su, zamanla betonarme yüzeylerden veya birleşim noktalarından içeri girebilir. Başlangıçta küçük nemlenme gibi görünen problemler, ilerleyen yıllarda daha büyük yapı sorunlarına dönüşebilir.</p>
+  
+    <p>Temel yalıtımı, yalnızca konfor için değil, aynı zamanda yapı güvenliği için de önemlidir. Çünkü su ve nem, betonarme sistemdeki demir donatıya zarar verebilir. Donatının paslanması ise zamanla taşıyıcı sistem performansını olumsuz etkileyebilir.</p>
+  
+    <h3>1. Bodrum Katlarda Rutubet ve Kötü Koku Oluşabilir</h3>
+    <p>Temel yalıtımı yapılmayan binalarda en sık görülen sorunlardan biri bodrum katlarda rutubet oluşmasıdır. Zeminden gelen nem, bodrum duvarlarında ve zemin döşemelerinde kendini gösterebilir. Bu durum zamanla kötü kokuya, hava kalitesinin düşmesine ve yaşam alanlarının sağlıksız hale gelmesine neden olabilir.</p>
+  
+    <p>Bodrum katların depo, otopark, teknik alan veya yaşam alanı olarak kullanıldığı yapılarda temel yalıtımı daha da büyük önem taşır. Yalıtımsız bodrumlarda eşyalar zarar görebilir, duvar yüzeylerinde kabarma oluşabilir ve ortam sürekli nemli kalabilir.</p>
+  
+    <h3>2. Küf ve Sağlıksız İç Mekan Problemleri Görülebilir</h3>
+    <p>Nemli ortamlar, küf ve mantar oluşumu için uygun zemin hazırlar. Temel yalıtımı eksik olan binalarda nem yalnızca bodrum katla sınırlı kalmayabilir; kapiler etkiyle üst katlara doğru da ilerleyebilir. Bu durum duvarlarda lekelenme, boya kabarması ve küf oluşumu şeklinde görülebilir.</p>
+  
+    <p>Küf oluşumu, özellikle çocuklar, yaşlılar ve hassas bünyeye sahip kişiler için rahatsız edici bir yaşam ortamı oluşturabilir. Bu nedenle temel yalıtımı, sağlıklı iç mekan kalitesi açısından da önemli bir yapı detayıdır.</p>
+  
+    <h3>3. Betonarme Elemanlarda Donatı Korozyonu Riski Artar</h3>
+    <p>Temel yalıtımı yapılmayan binalarda su ve nem, betonarme elemanların içine zamanla nüfuz edebilir. Betonun içinde bulunan çelik donatılar nemle temas ettiğinde paslanma, yani korozyon riski artar.</p>
+  
+    <p>Donatı korozyonu, betonarme yapıların uzun vadeli dayanıklılığını olumsuz etkileyebilir. Paslanan demir hacim olarak genişleyebilir, beton yüzeyinde çatlaklara ve dökülmelere neden olabilir. Bu nedenle temel yalıtımı, taşıyıcı sistemin korunması açısından hayati bir uygulamadır.</p>
+  
+    <h3>4. Boya, Sıva ve Kaplama Malzemelerinde Hasar Oluşabilir</h3>
+    <p>Zeminden veya temel çevresinden gelen nem, iç mekan kaplamalarında estetik ve teknik sorunlara yol açabilir. Duvarlarda boya kabarması, sıva dökülmesi, seramik arkasında boşluk oluşması, parke deformasyonu ve kaplama malzemelerinde lekelenme görülebilir.</p>
+  
+    <p>Bu tür sorunlar yalnızca görsel açıdan rahatsız edici değildir. Aynı zamanda sürekli bakım ve tadilat maliyeti oluşturur. Temel yalıtımı doğru yapılmış bir binada bu riskler önemli ölçüde azaltılabilir.</p>
+  
+    <h3>5. Isı Kaybı ve Enerji Verimsizliği Oluşabilir</h3>
+    <p>Temel ve bodrum katlarda nemin artması, iç mekan konforunu ve enerji performansını da etkileyebilir. Nemli yapı elemanları ısı yalıtım performansını düşürebilir. Bu durum özellikle zemin katlarda soğuk zemin hissi, ısı kaybı ve daha yüksek enerji tüketimi olarak hissedilebilir.</p>
+  
+    <p>Sağlıklı bir bina için su yalıtımı ve ısı yalıtımı birlikte değerlendirilmelidir. Temel bölgesinde doğru yalıtım detayları, yapının enerji verimliliğine ve yaşam konforuna katkı sağlar.</p>
+  
+    <h3>6. Bina Ömrü Kısalabilir</h3>
+    <p>Bir binanın uzun yıllar güvenli ve sorunsuz şekilde kullanılabilmesi için suya ve neme karşı korunması gerekir. Temel yalıtımı yapılmayan binalarda nemin taşıyıcı sisteme ve iç mekanlara sürekli etki etmesi, yapının kullanım ömrünü olumsuz etkileyebilir.</p>
+  
+    <p>Temel yalıtımı inşaat aşamasında doğru yapılmadığında, sonradan müdahale etmek hem daha zor hem de daha maliyetli olabilir. Bu nedenle temel yalıtımı, bina tamamlandıktan sonra değil, proje ve uygulama aşamasında planlanması gereken bir konudur.</p>
+  
+    <h3>Temel Yalıtımı Nasıl Yapılmalıdır?</h3>
+    <p>Temel yalıtımı, zemin koşullarına ve proje detaylarına göre profesyonel şekilde uygulanmalıdır. Standart bir uygulama yaklaşımında şu başlıklar dikkate alınır:</p>
+  
+    <ul>
+      <li><strong>Zemin etüdü:</strong> Zeminin su durumu, geçirgenliği ve yeraltı su seviyesi değerlendirilmelidir.</li>
+      <li><strong>Su yalıtım sistemi:</strong> Temel ve perde duvarlar uygun yalıtım malzemeleriyle korunmalıdır.</li>
+      <li><strong>Bohçalama detayı:</strong> Temel altı ve yan yüzeyler suya karşı bütüncül şekilde sarılmalıdır.</li>
+      <li><strong>Drenaj sistemi:</strong> Binanın çevresindeki suyun temelden uzaklaştırılması sağlanmalıdır.</li>
+      <li><strong>Koruyucu katman:</strong> Yalıtım malzemesi dolgu sırasında zarar görmeyecek şekilde korunmalıdır.</li>
+      <li><strong>Uygulama kontrolü:</strong> Ek yerleri, köşeler, perde-temel birleşimleri ve detay noktaları dikkatle kontrol edilmelidir.</li>
+    </ul>
+  
+    <h3>Yeni Bina Alırken Temel Yalıtımı Nasıl Sorgulanır?</h3>
+    <p>Yeni bir daire satın alırken temel yalıtımını doğrudan görmek çoğu zaman mümkün olmayabilir. Ancak doğru sorular sorularak binanın teknik kalitesi hakkında fikir edinilebilir. Daire almadan önce şu konular mutlaka sorulmalıdır:</p>
+  
+    <ul>
+      <li>Binada temel yalıtımı yapıldı mı?</li>
+      <li>Temel ve perde duvarlarda hangi su yalıtım sistemi kullanıldı?</li>
+      <li>Bodrum katlarda drenaj sistemi var mı?</li>
+      <li>Yeraltı su seviyesi ve zemin etüdü dikkate alındı mı?</li>
+      <li>Temel-perde birleşim noktalarında ek yalıtım önlemleri alındı mı?</li>
+      <li>Bodrum, otopark veya zemin katlarda rutubet belirtisi var mı?</li>
+      <li>Firma uygulama detayları hakkında şeffaf bilgi veriyor mu?</li>
+    </ul>
+  
+    <h3>Temel Yalıtımı Sonradan Yapılabilir mi?</h3>
+    <p>Temel yalıtımı bazı durumlarda sonradan güçlendirilebilir veya lokal müdahaleler yapılabilir. Ancak bu işlemler genellikle zor, maliyetli ve sınırlı etkiye sahip olabilir. Çünkü temel ve perde duvarların dış yüzeylerine ulaşmak çoğu zaman kazı, drenaj yenileme ve detaylı uygulama gerektirir.</p>
+  
+    <p>Bu nedenle en doğru yaklaşım, temel yalıtımının bina inşa edilirken eksiksiz şekilde yapılmasıdır. Yeni bina alırken inşaat sürecinde bu detayların planlanmış ve uygulanmış olması, alıcı için önemli bir avantajdır.</p>
+  
+    <h3>Neli Mühendislik Olarak Temel Yalıtımına Önem Veriyoruz</h3>
+    <p><strong>Neli Mühendislik</strong> olarak konut projelerimizde yalnızca daire içi estetik detaylara değil, binanın uzun ömürlü ve güvenli olmasını sağlayan teknik uygulamalara da büyük önem veriyoruz. Temel yalıtımı, bu anlayışın en önemli yapı taşlarından biridir.</p>
+  
+    <p>Projelerimizde temel, perde duvar, drenaj ve su yalıtımı detayları mühendislik disipliniyle ele alınır. Zeminden gelebilecek su ve nem risklerine karşı gerekli önlemler planlanır; yapının uzun yıllar güvenli, sağlıklı ve konforlu şekilde kullanılabilmesi hedeflenir.</p>
+  
+    <p>Bizim için kaliteli konut üretimi; görünmeyen ama yapının geleceğini belirleyen teknik detayları doğru çözmekle başlar. Temelden çatıya kadar her aşamada güvenli, dayanıklı ve uzun ömürlü yapılar üretmeye odaklanıyoruz.</p>
+  
+    <h3>İzmir’de Satışta Olan Sıfır Dairelerimizi İnceleyin</h3>
+    <p>Yeni bina alırken temel yalıtımı, yapı güvenliği, malzeme kalitesi, çatı izolasyonu ve firma güvenilirliği mutlaka değerlendirilmelidir. Neli Mühendislik olarak İzmir’de satışta olan sıfır daire projelerimizde bu teknik detaylara önem veriyor; güvenli, konforlu ve uzun ömürlü yaşam alanları sunmayı hedefliyoruz.</p>
+  
+    <p>Satışta olan güncel projelerimizi ve 1+1, 2+1, 3+1 sıfır daire seçeneklerimizi incelemek için <strong><a href='https://neli.tr/showcase' target='_blank' style='color: #b32128; font-weight: bold; text-decoration: underline;'>neli.tr/showcase</a></strong> adresini ziyaret edebilirsiniz. Neli Mühendislik projelerini görüntüleyerek size uygun daire hakkında detaylı bilgi alabilirsiniz.</p>
+  </article>`,
+    coverImage: "/images/blog/temel-yalitimi.webp",
+    coverImageAlt:
+      "Temel yalıtımı yapılmayan binalarda su, nem ve rutubet riskleri — Neli Mühendislik",
+    category: "Mühendislik ve Yapı Teknolojileri",
+    tags: JSON.stringify([
+      "temel yalıtımı yapılmayan binalarda ne olur",
+      "temel yalıtımı neden önemlidir",
+      "binalarda temel su yalıtımı",
+      "bodrum rutubeti nasıl önlenir",
+      "temelden su alan bina",
+      "yeni bina temel yalıtımı",
+      "İzmir sıfır daire",
+      "Neli Mühendislik projeleri",
+    ]),
+    featured: true,
+    status: "published" as const,
+    metaTitle:
+      "Temel Yalıtımı Yapılmayan Binalarda Ne Olur? | Neli Mühendislik",
+    metaDescription:
+      "Temel yalıtımı yapılmayan binalarda ne olur? Su sızıntısı, rutubet, küf, donatı korozyonu, yapı hasarı ve enerji kaybı risklerini öğrenin. Neli Mühendislik’in satışta olan sıfır daire projelerini inceleyin.",
+    metaKeywords:
+      "temel yalıtımı yapılmayan binalarda ne olur, temel yalıtımı, temel su yalıtımı, bodrum rutubeti, temelden su alan bina, yeni bina temel yalıtımı, İzmir sıfır daire, Neli Mühendislik",
+    publishedAt: "2026-06-01",
+  },
 ];
 
 const PROJECT_DATA = [
