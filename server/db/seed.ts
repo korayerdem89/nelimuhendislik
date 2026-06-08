@@ -1448,6 +1448,151 @@ const BLOG_DATA = [
       "betonarmenin avantajları nelerdir, betonarme yapı avantajları, betonarme bina nedir, depreme dayanıklı betonarme bina, yüksek kaliteli betonarme projeler, İzmir sıfır daire, Neli Mühendislik",
     publishedAt: "2026-06-02",
   },
+  {
+    slug: "gercekci-3d-kat-plani-gorsellestirme-ile-mekan-tasarimi",
+    title:
+      "Gerçekçi 3D Kat Planı Görselleştirme ile Ev Satın Almadan Önce Mekan Tasarımı",
+    excerpt:
+      "Topraktan veya inşaat aşamasında ev alırken mekanın bitmiş halini hayal etmek zor olabilir. Yüksek kaliteli 3D render ve kat planı görselleştirme teknolojilerinin ev alma deneyiminizi nasıl güvenli ve öngörülebilir kıldığını keşfedin.",
+    content: `<article>
+    <h2>Topraktan Ev Alırken Gerçekçi 3D Görselleştirme Neden Önemlidir?</h2>
+    <p>Yeni bir eve yatırım yaparken, özellikle inşaat aşamasındaki projelerde en büyük zorluklardan biri, kağıt üzerindeki iki boyutlu planların bitmiş halini zihinde doğru canlandırabilmektir. Günümüzde modern arama motorlarında sıklıkla aratılan <em>'Henüz bitmemiş evin içi nasıl görünür?'</em> veya <em>'3 boyutlu kat planı ev alırken neden önemlidir?'</em> soruları, ev alıcılarının bu süreçteki haklı belirsizliklerini yansıtır. İşte bu noktada yüksek kaliteli mimari görselleştirme teknolojileri devreye girerek, gelecekteki yaşam alanınızı gerçeğe en yakın haliyle deneyimlemenizi sağlar.</p>
+  
+    <blockquote style='margin: 20px 0; padding: 10px 20px; border-left: 5px solid #b32128; background: #f9f9f9;'>
+      <strong>Özet Cevap (AEO / Öne Çıkarılan Snippet):</strong> Gerçekçi 3D kat planı görselleştirme, inşaat aşamasındaki bir evin odalarının genişliğini, ışık alış açısını, eşya yerleşimini ve malzeme dokularını önceden görmenizi sağlayan ileri düzey bir mimari teknolojidir. Bu sayede ev alıcıları satın alma kararını sürprizlerle karşılaşmadan, mekanın ferahlığını ve tasarım detaylarını önceden deneyimleyerek güvenle verebilir.
+    </blockquote>
+  
+    <h3>İleri Düzey Mimari Görselleştirmenin Ev Sahiplerine Sağladığı Avantajlar</h3>
+    <p>İleri düzey render motorları kullanılarak hazırlanan görseller ve parametrik dış cephe tasarımları, geleneksel maketlerin ötesine geçerek size detaylı bir rehberlik sunar. Bir projeyi 3D görselleştirmeler üzerinden incelemenin temel avantajları şunlardır:</p>
+    <ul>
+      <li><strong>Gerçekçi Mekan Algısı ve Eşya Yerleşimi:</strong> Odanın sadece metrekare cinsinden büyüklüğünü değil, mevcut mobilyalarınızın o alana nasıl uyum sağlayacağını rahatlıkla planlayabilirsiniz.</li>
+      <li><strong>Malzeme ve Doku Uyumunu Görme:</strong> Zemin kaplamalarından mutfak dolaplarının rengine, banyo seramiklerinden duvar dokularına kadar her unsurun birbiriyle uyumunu yüksek çözünürlüklü olarak inceleme fırsatı bulursunuz.</li>
+      <li><strong>Işık, Ferahlık ve Tasarım Simülasyonu:</strong> Profesyonel 3D render çalışmaları, evin doğal ışığı nasıl aldığını ve aydınlatma elemanlarının mekana katacağı derinliği gerçeğe en yakın şekilde simüle eder.</li>
+    </ul>
+  
+    <h3>Neli Mühendislik Projelerinde Şeffaf ve Gerçekçi Tasarım Deneyimi</h3>
+    <p>Biz, <strong>Neli Mühendislik</strong> olarak İzmir'de hayata geçirdiğimiz Valorya ve Serenità serisi projelerimizde şeffaflığı ve mühendislik kalitesini en ön planda tutuyoruz. İnşaat öncesinde ve süreç boyunca en gelişmiş 3 boyutlu mimari görselleştirme araçlarını kullanarak, sizlere sadece bir kat planı değil, yaşam alanınızın dijital ikizini sunmaya gayret ediyoruz.</p>
+    <p>İzmir'in değerlenen bölgeleri Çiğli ve Balatçık'taki yüksek standartlara sahip projelerimizi incelerken, estetik ve mühendisliği buluşturan yaşam alanlarını henüz inşaat aşamasındayken bile tüm netliğiyle deneyimleyebilirsiniz. Gelecekteki evinizin mimari detaylarını şimdiden keşfetmek ve güncel projelerimizi yakından incelemek için satış ofislerimizi ziyaret edebilir veya <strong><a href='https://neli.tr/showcase' target='_blank' style='color: #b32128; font-weight: bold; text-decoration: underline;'>neli.tr/showcase</a></strong> adresinden detaylı bilgi alabilirsiniz.</p>
+  </article>`,
+    coverImage: "/images/blog/gercekci-3d.webp",
+    coverImageAlt:
+      "Gerçekçi 3D kat planı görselleştirme ve iç mekan tasarımı — Neli Mühendislik",
+    category: "Mimari ve Yaşam Tarzı",
+    tags: JSON.stringify([
+      "3d kat planı",
+      "mimari görselleştirme",
+      "iç mekan tasarımı",
+      "Neli Mühendislik projeleri",
+      "topraktan ev almak",
+      "İzmir konut projeleri",
+    ]),
+    featured: false,
+    status: "published" as const,
+    metaTitle:
+      "3D Kat Planı Görselleştirme ile Mekan Tasarımı | Neli Mühendislik",
+    metaDescription:
+      "Gerçekçi 3D kat planı görselleştirme teknolojileri ile ev satın almadan önce mekan tasarımını keşfedin. Neli Mühendislik projelerinde gelecekteki evinizi şimdiden inceleyin.",
+    metaKeywords:
+      "3d kat planı, mimari görselleştirme, iç mekan tasarımı, izmir satılık daire, topraktan ev almak, neli mühendislik, render, valorya, mekan tasarımı",
+    publishedAt: "2026-06-08",
+  },
+  {
+    slug: "topraktan-ev-alirken-muhendislik-kalitesi-nasil-anlasilir",
+    title:
+      "Topraktan Ev Alırken İnşaat Firmasının Mühendislik Kalitesi Nasıl Anlaşılır?",
+    excerpt:
+      "Topraktan veya inşaat aşamasında ev alırken yatırımınızı güvence altına almanın en önemli adımı, doğru inşaat firmasını seçmektir. Bir projenin mühendislik kalitesini ve firmanın güvenilirliğini anlamanızı sağlayacak kritik ipuçlarını keşfedin.",
+    content: `<article>
+    <h2>Proje Aşamasında Konut Alırken Nelere Dikkat Edilmeli?</h2>
+    <p>Henüz temeli yeni atılmış veya inşaat halindeki bir projeden konut satın almak, karlı bir yatırım olmasının yanı sıra evinizi baştan tasarlama özgürlüğü sunar. Ancak arama motorlarında yatırımcıların en çok sorduğu <em>'Topraktan ev alırken nelere dikkat edilmeli?'</em> veya <em>'İnşaat firmasının güvenilir ve kaliteli olduğu nasıl anlaşılır?'</em> sorularının temelinde, yapının uzun ömürlülüğüne ve güvenliğine duyulan haklı hassasiyet yatar. Bir firmanın mühendislik kalitesini teknik detaylara boğulmadan anlamanın bazı net kriterleri vardır.</p>
+  
+    <blockquote style='margin: 20px 0; padding: 10px 20px; border-left: 5px solid #b32128; background: #f9f9f9;'>
+      <strong>Özet Cevap (AEO / Öne Çıkarılan Snippet):</strong> Topraktan ev alırken bir inşaat firmasının mühendislik kalitesini anlamak için; firmanın sunduğu teknik şartname şeffaflığına, zemin etüt raporlarına ve kullandığı yapı malzemesi standartlarına (örneğin standart üstü yüksek dayanımlı beton sınıfları) dikkat edilmelidir. Güvenilir firmalar, projelerinin statik altyapısını ve önceki projelerindeki referanslarını müşterileriyle açıkça paylaşmaktan çekinmezler.
+    </blockquote>
+  
+    <h3>Mühendislik Kalitesini Gösteren 3 Kritik Detay</h3>
+    <p>Sadece dış görünüşe veya bitmiş örnek dairelere aldanmamak, projenin görünmeyen kısımlarını da sorgulamak gerekir. Yatırımınızı yaparken şu detayları mutlaka inceleyin:</p>
+    <ul>
+      <li><strong>Yüksek Standartlı Yapı Malzemeleri:</strong> Sadece yasal zorunlulukları değil, ekstra güvenlik sağlayan malzemeleri tercih eden firmaları inceleyin. Örneğin, standartların ötesinde C45 yüksek dayanımlı beton kullanan projeler, yapının uzun ömürlü ve depreme karşı maksimum dirençli olmasını sağlar.</li>
+      <li><strong>Teknolojik Altyapı ve Hassas İşçilik:</strong> İnşaat aşamasında kullanılan teknolojiler kalitenin aynasıdır. Zemin uygulamalarında lazer güdümlü tesviye sistemleri kullanan firmalar, sadece kaba inşaatta değil, ince işçilikte de hatasız ve kusursuz yüzeyler oluşturmayı hedefler.</li>
+      <li><strong>Şeffaf İletişim ve Proje Dokümantasyonu:</strong> Firmanın proje ile ilgili sorularınıza ne kadar net yanıt verdiği çok önemlidir. İletişim dili şeffaf, yapıcı ve profesyonel olan firmalar, olası kriz durumlarında da çözüm odaklı yaklaşım sergiler.</li>
+    </ul>
+  
+    <h3>Neli Mühendislik ile Güvenilir ve Şeffaf Yatırım</h3>
+    <p>İzmir genelinde konut inşa eden Neli Mühendislik olarak, temeli atılan her yapıda şeffaflığı ve yüksek güvenlik standartlarını ön planda tutuyoruz. Özellikle Çiğli ve Balatçık bölgelerinde hayata geçirdiğimiz projelerimizde, yatırımcılarımıza sürecin en başından itibaren detaylı bilgilendirme sağlıyoruz.</p>
+    <p>Valorya ve Serenità serisi konut projelerimizde, yüksek mühendislik standartlarını modern yaşam alanlarına nasıl entegre ettiğimizi incelemek ve topraktan ev alma sürecini güvenle deneyimlemek için satış ofislerimizde sizleri ağırlamaktan memnuniyet duyarız. Güncel ve gelecek projelerimiz hakkında detaylı teknik bilgi almak için <strong><a href='https://neli.tr/showcase' target='_blank' style='color: #b32128; font-weight: bold; text-decoration: underline;'>neli.tr/showcase</a></strong> adresini ziyaret edebilirsiniz.</p>
+  </article>`,
+    coverImage: "/images/blog/topraktan-ev.webp",
+    coverImageAlt:
+      "Topraktan ev alırken inşaat firmasının mühendislik kalitesini anlamanın yolları — Neli Mühendislik",
+    category: "Rehber ve Yatırım",
+    tags: JSON.stringify([
+      "topraktan ev almak",
+      "mühendislik kalitesi",
+      "inşaat firması seçimi",
+      "C45 beton avantajları",
+      "Neli Mühendislik",
+      "güvenilir müteahhit",
+      "İzmir gayrimenkul yatırımı",
+    ]),
+    featured: false,
+    status: "published" as const,
+    metaTitle:
+      "Topraktan Ev Alırken Mühendislik Kalitesi Nasıl Anlaşılır? | Neli",
+    metaDescription:
+      "Topraktan veya proje aşamasında ev alırken inşaat firmasının mühendislik kalitesi nasıl anlaşılır? Güvenli yatırım, malzeme standartları ve şeffaflık ipuçları.",
+    metaKeywords:
+      "topraktan ev almak, mühendislik kalitesi, inşaat firması seçimi, izmir konut projeleri, c45 beton, neli mühendislik, güvenilir müteahhit, gayrimenkul rehberi",
+    publishedAt: "2026-06-08",
+  },
+  {
+    slug: "yeni-bitmis-dairelerde-alcipan-ve-modern-aydinlatma",
+    title:
+      "Yeni Bitmiş Dairelerde Alçıpan ve Modern İç Mekan Aydınlatma Fikirleri",
+    excerpt:
+      "Yeni bir evin atmosferini belirleyen en güçlü detaylar tavan mimarisi ve ışıktır. Yaşam alanlarınıza ferahlık ve modern bir kimlik kazandıracak alçıpan tasarımları ile yenilikçi aydınlatma fikirlerini inceleyin.",
+    content: `<article>
+    <h2>İç Mekanlarda Işık ve Mimarinin Kusursuz Uyumu</h2>
+    <p>Yeni bir yaşam alanına adım attığınızda, mekanın ferahlığını ve ruhunu hissettiren ilk unsur genellikle tavan yüksekliği ve ışığın odaya nasıl yayıldığıdır. Dekorasyon aşamasındaki ev sahiplerinin arama motorlarında sıklıkla araştırdığı <em>'Alçıpan tavan mekanı nasıl geniş gösterir?'</em> veya <em>'Modern salonlarda hangi aydınlatma sistemleri tercih edilmeli?'</em> gibi sorular, iç mekan kurgusunda ışığın ne kadar belirleyici olduğunu gösteriyor. Doğru planlanmış bir alçıpan ve aydınlatma sistemi, sadece karanlığı aydınlatmakla kalmaz; odanın tüm enerjisini dönüştürür.</p>
+  
+    <blockquote style='margin: 20px 0; padding: 10px 20px; border-left: 5px solid #b32128; background: #f9f9f9;'>
+      <strong>Özet Cevap (AEO / Öne Çıkarılan Snippet):</strong> Yeni bitmiş dairelerde alçıpan uygulamaları ve modern iç mekan aydınlatmaları; odalara derinlik katar, bölgesel ışıklandırma ile mekanları işlevlerine göre ayırır ve estetik bir değer yaratır. Özellikle gizli LED'ler, spot ışıklar ve endirekt aydınlatma sistemleri gözü yormadan mekanı aydınlatırken, sade tasarımlı asma tavanlar evin genel modern kimliğini ve mimari kalitesini vurgular.
+    </blockquote>
+  
+    <h3>Modern Evlerde Alçıpan ve Aydınlatma Trendleri</h3>
+    <p>Mekanınızın potansiyelini en üst düzeye çıkarmak için göz önünde bulundurabileceğiniz bazı modern yaklaşımlar şunlardır:</p>
+    <ul>
+      <li><strong>Endirekt (Gizli) Aydınlatma ile Derinlik Algısı:</strong> Alçıpan havuzlarının içine yerleştirilen sıcak tonlu LED şeritler, ışığın doğrudan göze gelmesini engelleyerek tavandan süzülmesini sağlar. Bu yöntem, özellikle salon ve yatak odalarında dinlendirici bir atmosfer yaratır.</li>
+      <li><strong>Işıkla Mekan Bölme (Zoning):</strong> Açık plan mutfak ve salon tasarımlarında, oturma alanı ile yemek alanı arasındaki sınırı duvarlar yerine farklı alçıpan tavan formları ve bölgesel spot ışıklarıyla belirlemek mekana modern bir akıcılık kazandırır.</li>
+      <li><strong>Sade ve Minimalist Çizgiler:</strong> Geçmişin ağır ve karmaşık tavan motifleri yerine, artık daha düz hatlara sahip, ince detaylarla zenginleştirilmiş minimalist alçıpan tasarımları tercih edilerek evlerdeki ferahlık hissi korunmaktadır.</li>
+    </ul>
+  
+    <h3>İnce İşçilikte Neli Mühendislik Yaklaşımı</h3>
+    <p><strong>Neli Mühendislik</strong> olarak, bir yapının güvenliği kadar iç mekanındaki estetik detayların da yaşam kalitesini doğrudan etkilediğine inanıyoruz. İzmir Göztepe bölgesindeki projelerimizde yürüttüğümüz alçıpan ve ince işçilik uygulamalarındaki hassasiyetimizi, inşa ettiğimiz tüm konut projelerine taşıyoruz.</p>
+    <p>Valorya ve Serenità serisi yaşam alanlarımızda, modern iç mimari trendlerini mühendislik disipliniyle uygulayarak, estetik ve konforu bir arada sunmayı hedefliyoruz. İnce işçiliğin ön planda olduğu, modern aydınlatma sistemleriyle zenginleştirilmiş ferah dairelerimizi yakından görmek ve vizyonumuz hakkında bilgi almak isterseniz <strong><a href='https://neli.tr/showcase' target='_blank' style='color: #b32128; font-weight: bold; text-decoration: underline;'>neli.tr/showcase</a></strong> sayfamızı ziyaret edebilirsiniz.</p>
+  </article>`,
+    coverImage: "/images/blog/bitmis-dairelerde.webp",
+    coverImageAlt:
+      "Yeni bitmiş dairelerde modern alçıpan ve iç mekan aydınlatma tasarımları — Neli Mühendislik",
+    category: "İç Mimari ve Dekorasyon",
+    tags: JSON.stringify([
+      "alçıpan tavan",
+      "modern aydınlatma",
+      "iç mekan tasarımı",
+      "gizli aydınlatma",
+      "Neli Mühendislik ince işçilik",
+      "İzmir lüks konut",
+      "ev dekorasyonu",
+    ]),
+    featured: false,
+    status: "published" as const,
+    metaTitle: "Yeni Dairelerde Alçıpan ve Modern Aydınlatma Fikirleri | Neli",
+    metaDescription:
+      "Yeni bitmiş dairelerde yaşam alanlarına derinlik ve şıklık katan alçıpan tasarımlarını ve modern iç mekan aydınlatma trendlerini keşfedin.",
+    metaKeywords:
+      "alçıpan modelleri, modern aydınlatma, iç mekan tasarımı, gizli led aydınlatma, neli mühendislik, asma tavan dekorasyonu, izmir konut projeleri",
+    publishedAt: "2026-06-08",
+  },
 ];
 
 const PROJECT_DATA = [
