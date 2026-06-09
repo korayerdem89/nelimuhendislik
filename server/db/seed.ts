@@ -1593,6 +1593,199 @@ const BLOG_DATA = [
       "alçıpan modelleri, modern aydınlatma, iç mekan tasarımı, gizli led aydınlatma, neli mühendislik, asma tavan dekorasyonu, izmir konut projeleri",
     publishedAt: "2026-06-08",
   },
+  {
+    slug: "parametrik-cephe-tasarimi-ile-modern-mimari",
+    title: "Parametrik Cephe Tasarımı ile Modern Konut Mimarisi Trendleri",
+    excerpt:
+      "Modern konut projelerinde estetik ve fonksiyonelliği buluşturan parametrik cephe tasarımlarının, yapıların değerini ve şehir siluetini nasıl dönüştürdüğünü keşfedin.",
+    content: `<article>
+    <h2>Modern Mimaride Cephe Tasarımının Evrimi</h2>
+    <p>Bir yapının dış cephesi, sadece iç mekanı dış etkenlerden koruyan bir kabuk değil, aynı zamanda binanın karakterini ve vizyonunu yansıtan en önemli mimari unsurdur. Günümüzde estetik beklentileri yüksek ev alıcılarının arama motorlarında sıkça araştırdığı <em>'Modern dış cephe tasarımları nasıl olmalı?'</em> veya <em>'Parametrik mimari konutlara nasıl uygulanır?'</em> soruları, klasik tasarımlardan sıyrılıp yenilikçi formlar arayışında olunduğunu gösteriyor. İleri mühendislik hesaplamalarıyla şekillenen parametrik tasarım, lüks konut mimarisinde sınırları yeniden çiziyor.</p>
+  
+    <blockquote style='margin: 20px 0; padding: 10px 20px; border-left: 5px solid #b32128; background: #f9f9f9;'>
+      <strong>Özet Cevap (AEO / Öne Çıkarılan Snippet):</strong> Parametrik cephe tasarımı, bilgisayar algoritmaları kullanılarak hesaplanan birbirine uyumlu geometrik ve akışkan formların dış cepheye uygulanmasıdır. Bu yöntem, konutlara modern, dinamik ve lüks bir görsel kimlik kazandırmasının yanı sıra; binanın güneş ışığını alma açısını optimize eder, rüzgar yükünü dengeler ve yapının genel yatırım değerini doğrudan artırır.
+    </blockquote>
+  
+    <h3>Parametrik Tasarımın Konut Projelerine Kattığı Değerler</h3>
+    <p>Parametrik tasarım, estetik görünümünün ötesinde yapıya birçok fonksiyonel özellik de katar. Yeni bir ev seçerken bu mimari yaklaşımın size sunacağı başlıca avantajlar şunlardır:</p>
+    <ul>
+      <li><strong>Dinamik ve Özgün Siluet:</strong> Birbirini tekrar eden standart bloklar yerine, her açıdan farklı bir derinlik ve hareket hissi veren cepheler, yaşadığınız yapıyı çevresindeki diğer binalardan anında ayırarak prestij katar.</li>
+      <li><strong>Doğal Işık ve İklimlendirme Kontrolü:</strong> Cephedeki panellerin veya formların konumlandırılması, güneş ışığının iç mekana en verimli şekilde girmesini sağlarken, yaz aylarında aşırı ısınmayı önleyen gölgelendirme alanları yaratır.</li>
+      <li><strong>Malzeme Optimizasyonu ve Dayanıklılık:</strong> Algoritmik hesaplamalar sayesinde cephede kullanılacak malzemeler (kompozit, metal, ahşap veya cam) binanın statik yapısına en uygun ağırlıkta ve dayanıklılıkta seçilir.</li>
+    </ul>
+  
+    <h3>Neli Mühendislik ile Yenilikçi Dış Cephe Çözümleri</h3>
+    <p><strong>Neli Mühendislik</strong> olarak, imza attığımız projelerin sadece iç mekanlarında değil, dış görünümlerinde de şehrin modern dokusuna değer katmayı hedefliyoruz. İzmir'in hızla gelişen lokasyonları olan Çiğli ve Balatçık'taki projelerimizde, sıradanlıktan uzak, göz alıcı ve mühendislik harikası cephe tasarımlarına yer veriyoruz.</p>
+    <p>Valorya ve Serenità serisi yaşam alanlarımızda kullandığımız parametrik dış cephe detayları, yapıların uzun yıllar boyunca güncel ve estetik kalmasını sağlamaktadır. Hem yatırım değerini koruyan hem de görsel bir şölen sunan mimari vizyonumuzu incelemek, çağdaş konut projelerimizi keşfetmek için <strong><a href='https://neli.tr/showcase' target='_blank' style='color: #b32128; font-weight: bold; text-decoration: underline;'>neli.tr/showcase</a></strong> adresini ziyaret edebilirsiniz.</p>
+  </article>`,
+    coverImage: "/images/blog/parametrik-tasarim.webp",
+    coverImageAlt:
+      "Parametrik cephe tasarımı ve modern mimari konut projeleri — Neli Mühendislik",
+    category: "Mimari ve Yaşam Tarzı",
+    tags: JSON.stringify([
+      "parametrik cephe tasarımı",
+      "modern mimari",
+      "dış cephe trendleri",
+      "lüks konut mimarisi",
+      "Neli Mühendislik",
+      "İzmir modern konut",
+      "akıllı tasarım",
+    ]),
+    featured: false,
+    status: "published" as const,
+    metaTitle: "Parametrik Cephe Tasarımı ve Modern Konut Mimarisi | Neli",
+    metaDescription:
+      "Modern konut mimarisinde estetik ve enerji verimliliğini artıran parametrik cephe tasarımlarını inceleyin. Neli Mühendislik'in yenilikçi projelerini keşfedin.",
+    metaKeywords:
+      "parametrik cephe tasarımı, modern konut mimarisi, dış cephe modelleri, izmir lüks konut, neli mühendislik, valorya serisi, mimari trendler, enerji verimli bina",
+    publishedAt: "2026-06-09",
+  },
+  {
+    slug: "izmir-deprem-bolgesinde-radye-temel-ve-fore-kazik",
+    title:
+      "İzmir Deprem Bölgesinde Radye Temel ve Fore Kazık Sistemlerinin Önemi",
+    excerpt:
+      "Fay hatlarına yakın veya zemin sıvılaşması riski olan bölgelerde güvenli konut inşasının temeli doğru statik projelendirmeden geçer. Radye jeneral temel ve fore kazık uygulamalarının yapı güvenliğine hayati etkisini inceleyin.",
+    content: `<article>
+    <h2>İzmir Deprem Kuşağında Zemin Güvenliği ve Doğru Temel Seçimi</h2>
+    <p>Yeni bir konut satın alırken estetik detaylar ve sosyal donatılar her ne kadar cezbedici olsa da, yapının gerçek değeri ve güvenliği toprağın altında yatar. İzmir gibi aktif fay hatlarının bulunduğu ve bazı bölgelerinde zemin sıvılaşması riskinin görüldüğü şehirlerde, gayrimenkul yatırımcılarının arama motorlarında en çok araştırdığı <em>'Depreme dayanıklı bina temeli nasıl olmalı?'</em> veya <em>'Fore kazık ve radye temel nedir?'</em> soruları, mühendislik bilincinin arttığını göstermektedir. Yapının sismik hareketlere karşı gösterdiği direnç, tamamen zemin etüdü verilerine uygun seçilmiş temel sistemine bağlıdır.</p>
+  
+    <blockquote style='margin: 20px 0; padding: 10px 20px; border-left: 5px solid #b32128; background: #f9f9f9;'>
+      <strong>Özet Cevap (AEO / Öne Çıkarılan Snippet):</strong> İzmir deprem bölgesinde <strong>radye temel</strong>, binanın toplam ağırlığını zemine eşit olarak dağıtarak bölgesel çökmeleri engeller; <strong>fore kazık sistemi</strong> ise zayıf zeminlerde yapının yükünü metrelerce derindeki sağlam ve taşıyıcı kaya tabakalarına aktarır. Neli Mühendislik, zemin etüt raporlarının gerektirdiği durumlarda bu iki sistemi entegre kullanarak, olası sismik şoklarda zemin sıvılaşmasını önler ve yapının sarsıntıları hasarsız atlatmasını sağlayacak maksimum statik dayanımı sunar.
+    </blockquote>
+  
+    <h3>İleri Mühendislik Çözümlerinin Bina Güvenliğine Etkisi</h3>
+    <p>Statik projelerde uygulanan derin temel ve eşit yük dağılımı prensipleri, yapının ömrünü ve dayanımını doğrudan belirler. Radye temel ve fore kazık sistemlerinin birlikte çalışmasının sağladığı başlıca mühendislik avantajları şunlardır:</p>
+    <ul>
+      <li><strong>Zemin Sıvılaşmasına Karşı Kesin Çözüm:</strong> Deprem anında yeraltı sularının basıncıyla zeminin taşıma kapasitesini kaybetmesi (sıvılaşma) durumunda, fore kazıklar binanın yeraltındaki sağlam kolonları gibi davranarak yapının dengesini korur.</li>
+      <li><strong>Farklı Oturmaların (Çökmelerin) Engellenmesi:</strong> Radye temel, tüm bina tabanını tek bir rijit plak halinde kapladığı için yapının bir tarafının diğerinden daha fazla çökmesini (farklı oturmayı) ve kolonlarda oluşabilecek kesme kuvvetlerini engeller.</li>
+      <li><strong>Sismik Dalgalara Karşı Esneklik ve Direnç:</strong> Doğru hesaplanmış kazık çapları ve derinlikleri, yatay deprem yüklerine karşı zemin içinde ekstra bir sürtünme ve tutunma yüzeyi yaratarak binanın devrilme riskini ortadan kaldırır.</li>
+    </ul>
+  
+    <h3>Neli Mühendislik: Statik Güvenlikte Tavizsiz Yaklaşım</h3>
+    <p><strong>Neli Mühendislik</strong> olarak, İzmir genelinde hayata geçirdiğimiz tüm projelerde kozmetik güzellikten önce "sıfır risk" prensibiyle hareket ediyoruz. İnşaata başlamadan önce bölgenin sismik geçmişini ve zemin laboratuvar sonuçlarını titizlikle analiz ediyor, tasarımlarımızı yürürlükteki deprem yönetmeliklerinin de ötesindeki standartlarda projelendiriyoruz.</p>
+    <p>Yüksek dayanımlı C45 beton kullanımından nervürlü çelik donatı işçiliğine, radye jeneral temelden fore kazık uygulamalarına kadar işin mutfağında uyguladığımız ileri mühendislik teknikleri ile aileniz için sadece şık değil, uykularınızın bölünmeyeceği kadar güvenli yaşam alanları inşa ediyoruz. Şeffaf mühendislik vizyonumuzu ve güvenle yaşayacağınız güncel projelerimizi incelemek için <strong><a href='https://neli.tr/showcase' target='_blank' style='color: #b32128; font-weight: bold; text-decoration: underline;'>neli.tr/showcase</a></strong> adresini ziyaret edebilirsiniz.</p>
+  </article>`,
+    coverImage: "/images/blog/radye-temel.webp",
+    coverImageAlt:
+      "İzmir deprem bölgesinde radye temel ve fore kazık uygulamaları ile statik güvenlik — Neli Mühendislik",
+    category: "Mühendislik ve Altyapı",
+    tags: JSON.stringify([
+      "radye temel",
+      "fore kazık",
+      "İzmir deprem güvenliği",
+      "zemin sıvılaşması",
+      "Neli Mühendislik statik projeleri",
+      "depreme dayanıklı ev",
+      "zemin etüdü",
+    ]),
+    featured: true,
+    status: "published" as const,
+    metaTitle:
+      "Radye Temel ve Fore Kazık Sistemlerinin Önemi | Neli Mühendislik",
+    metaDescription:
+      "İzmir deprem bölgesinde radye temel ve fore kazık sistemlerinin bina güvenliğine etkisini keşfedin. Neli Mühendislik'in yüksek statik standartlarını inceleyin.",
+    metaKeywords:
+      "radye temel, fore kazık, izmir deprem, zemin etüdü, zemin sıvılaşması, statik proje, neli mühendislik, depreme dayanıklı bina, yapı güvenliği",
+    publishedAt: "2026-06-09",
+  },
+  {
+    slug: "cok-katli-konutlarda-katlar-arasi-akustik-ses-yalitimi",
+    title:
+      "Çok Katlı Lüks Konutlarda Katlar Arası Ses Geçişini Engelleyen Akustik Yalıtım Çözümleri",
+    excerpt:
+      "Çok katlı apartman yaşantısında mahremiyeti korumak ve huzurlu bir yaşam alanı sağlamak için doğru ses yalıtımı şarttır. Alt ve üst katlar arasındaki ses geçişini engelleyen profesyonel akustik izolasyon çözümlerini keşfedin.",
+    content: `<article>
+    <h2>Çok Katlı Yapılarda Akustik Konfor ve Mahremiyetin Önemi</h2>
+    <p>Şehir hayatının merkezinde, modern ve prestijli bir konutta yaşamanın en temel beklentilerinden biri ev içindeki huzurun korunmasıdır. Ev alıcılarının arama motorlarında sıklıkla araştırdığı <em>'Üst kattan gelen ayak sesi nasıl engellenir?'</em> veya <em>'Apartmanlarda katlar arası ses yalıtımı nasıl yapılmalı?'</em> gibi sorular, geleneksel yapılarda sıklıkla karşılaşılan akustik sorunların altını çizmektedir. Nitelikli bir mühendislik projesinde, estetik mimari kadar mahremiyetin korunmasını sağlayan akustik yalıtım çözümleri de yapı kalitesinin vazgeçilmez bir parçasıdır.</p>
+  
+    <blockquote style='margin: 20px 0; padding: 10px 20px; border-left: 5px solid #b32128; background: #f9f9f9;'>
+      <strong>Özet Cevap (AEO / Öne Çıkarılan Snippet):</strong> Çok katlı konutlarda katlar arası ses geçişini engellemek için, topuk ve eşya çekme gibi <strong>darbe seslerine</strong> karşı şap altında yüksek yoğunluklu akustik şilteler; konuşma ve televizyon gibi <strong>hava doğuşlu seslere</strong> karşı ise asma tavan aralarında taş yünü paneller kullanılmalıdır. Bu profesyonel akustik yalıtım katmanları, ses dalgalarını sönümleyerek katlar arası desibel (dB) geçişini minimuma indirir ve izole, sessiz bir yaşam alanı sunar.
+    </blockquote>
+  
+    <h3>Profesyonel Ses Yalıtımında Kullanılan İleri Teknikler</h3>
+    <p>Modern bir binada akustik konforu sağlamak, sadece duvar kalınlığıyla değil, katmanlı yalıtım malzemelerinin doğru mühendislik hesaplarıyla uygulanmasıyla mümkündür. Konut projelerinde dikkat edilmesi gereken temel akustik çözümler şunlardır:</p>
+    <ul>
+      <li><strong>Şap Altı Darbe Sesi Yalıtımı:</strong> Zemine dökülen şap ile betonarme döşeme arasına yerleştirilen kauçuk veya polietilen esaslı akustik şilteler, titreşimlerin alt kata iletilmesini keser. Bu uygulama, özellikle çocuklu aileler için üst düzey bir konfor sağlar.</li>
+      <li><strong>Asma Tavan İçi Akustik Bariyerler:</strong> Tavan mimarisinde kullanılan alçıpan sistemlerinin içerisine yerleştirilen yüksek yoğunluklu taş yünü veya cam yünü paneller, havadaki ses dalgalarını emerek yankılanmayı ve komşular arası ses transferini önler.</li>
+      <li><strong>Tesisat ve Şaft İzolasyonu:</strong> Atık su borularının ve havalandırma şaftlarının etrafına sarılan elastomerik kauçuk köpükleri veya akustik süngerler, tesisattan kaynaklanan su ve hava akış seslerinin yaşam alanlarına ulaşmasını engeller.</li>
+    </ul>
+  
+    <h3>Neli Mühendislik Projelerinde Sessiz ve Huzurlu Yaşam Alanları</h3>
+    <p><strong>Neli Mühendislik</strong> olarak, bir evin sadece güvenli ve şık olmasını değil, aynı zamanda sakinlerine tam bir izolasyon ve huzur sunmasını hedefliyoruz. Çiğli ve Balatçık gibi İzmir'in değerli lokasyonlarında hayata geçirdiğimiz Valorya serisi ve Serenità Prestige gibi projelerimizde, akustik konforu standart bir özellik olarak sunuyoruz.</p>
+    <p>Zemin uygulamalarında kullandığımız lazer güdümlü tesviye sistemleri sayesinde elde ettiğimiz pürüzsüz yüzeyler, şap altı akustik izolasyon malzemelerinin zemine kusursuz bir şekilde oturmasını ve maksimum performans göstermesini sağlar. Hem yüksek statik güvenlik hem de üst düzey akustik yalıtımla donatılmış modern yaşam alanlarımızı yakından incelemek için satış ofislerimizi ziyaret edebilir veya <strong><a href='https://neli.tr/showcase' target='_blank' style='color: #b32128; font-weight: bold; text-decoration: underline;'>neli.tr/showcase</a></strong> adresinden güncel projelerimize göz atabilirsiniz.</p>
+  </article>`,
+    coverImage: "/images/blog/ses-yalitimi.webp",
+    coverImageAlt:
+      "Çok katlı lüks konutlarda şap altı ve asma tavan akustik ses yalıtımı — Neli Mühendislik",
+    category: "Mühendislik ve Altyapı",
+    tags: JSON.stringify([
+      "akustik ses yalıtımı",
+      "katlar arası ses yalıtımı",
+      "şap altı izolasyon",
+      "lüks konut projeleri",
+      "Neli Mühendislik",
+      "İzmir satılık daire",
+      "Serenità Prestige",
+    ]),
+    featured: false,
+    status: "published" as const,
+    metaTitle:
+      "Konutlarda Katlar Arası Ses Yalıtımı ve Akustik Çözümler | Neli",
+    metaDescription:
+      "Çok katlı konutlarda mahremiyeti sağlayan katlar arası ses yalıtımı ve akustik çözümleri keşfedin. Neli Mühendislik'in huzurlu yaşam alanlarını inceleyin.",
+    metaKeywords:
+      "katlar arası ses yalıtımı, akustik izolasyon, şap altı yalıtım, darbe sesi yalıtımı, izmir lüks konut, neli mühendislik, serenita prestige, valorya",
+    publishedAt: "2026-06-09",
+  },
+  {
+    slug: "santiye-asamasinda-total-station-ile-milimetrik-olcum",
+    title:
+      "Şantiye Aşamasında Total Station Cihazları ile Milimetrik Ölçümün Önemi",
+    excerpt:
+      "Kusursuz bir yapı inşa etmenin sırrı, temelin atıldığı ilk günden itibaren sıfır hata ile ilerlemektir. İnşaat projelerinde Total Station cihazlarıyla yapılan milimetrik harita ve kot ölçümlerinin bina kalitesine ve ince işçiliğe etkisini keşfedin.",
+    content: `<article>
+    <h2>İnşaatta Kusursuzluğun Temeli: İleri Ölçüm Teknolojileri</h2>
+    <p>Bir konut projesinin kalitesi, henüz temeli bile atılmadan arazide yapılan ölçümlerle şekillenmeye başlar. Günümüzde inşaat süreçlerini yakından takip eden bilinçli alıcıların arama motorlarında yönelttiği <em>'İnşaatta kot farkı ve aks hatası neden olur?'</em> veya <em>'Total Station cihazı inşaatta ne işe yarar?'</em> gibi sorular, projenin kağıt üzerindeki mükemmelliğinin sahaya nasıl aktarıldığını sorgulamaktadır. Geleneksel ölçüm aletlerinin yerini alan optik ve lazer teknolojileri, mimari ve statik projelerin milimi milimine gerçeğe dönüşmesini sağlar.</p>
+  
+    <blockquote style='margin: 20px 0; padding: 10px 20px; border-left: 5px solid #b32128; background: #f9f9f9;'>
+      <strong>Özet Cevap (AEO / Öne Çıkarılan Snippet):</strong> Şantiye aşamasında kullanılan Total Station (Elektronik Takeometre) cihazları; binanın köşe noktalarını, kolon akslarını ve kat kotlarını (yüksekliklerini) lazer teknolojisiyle milimetrik olarak ölçen ileri düzey harita mühendisliği ekipmanlarıdır. Bu cihazların kullanımı statik güvenliği artırır, bina geometrisindeki sapmaları engeller ve seramik döşemesinden mutfak dolabı montajına kadar tüm ince işçilik aşamalarının kusursuz ve pürüzsüz ilerlemesini sağlar.
+    </blockquote>
+  
+    <h3>Milimetrik Ölçümün Yapı Kalitesine Sağladığı Avantajlar</h3>
+    <p>Şantiyede sıfır hata prensibiyle çalışmak, sadece binanın dış görünüşünü değil, uzun vadeli kullanım konforunu da doğrudan etkiler. Total Station ile yapılan ölçümlerin projelere kattığı teknik değerler şunlardır:</p>
+    <ul>
+      <li><strong>Statik Güvenlik ve Doğru Yük Dağılımı:</strong> Kolon ve perde betonlarının projede belirtilen koordinatlara milimetrik olarak oturtulması, binanın taşıyıcı sisteminin kusursuz çalışmasını ve deprem yüklerinin doğru aktarılmasını sağlar.</li>
+      <li><strong>Kusursuz Kat Yükseklikleri (Kot Uygulaması):</strong> Katlar arasındaki kot farklarının lazer hassasiyetiyle belirlenmesi; merdiven rıht yüksekliklerinin eşit olmasını ve asansör sistemlerinin sorunsuz çalışmasını garanti eder.</li>
+      <li><strong>İnce İşçilikte Hata Payının Ortadan Kalkması:</strong> Duvarların tam gönyesinde ve terazisinde örülmesi; ileriki aşamalarda yapılacak lazer güdümlü şap, alçıpan, seramik ve mobilya montajı işlemlerinde boşluk, eğrilik veya uyumsuzluk oluşmasını engeller.</li>
+    </ul>
+  
+    <h3>Neli Mühendislik ile Sıfır Hata ve Yüksek Kalite</h3>
+    <p><strong>Neli Mühendislik</strong> olarak, nitelikli bir yapının temelinde yatan en önemli unsurun "hassasiyet" olduğuna inanıyoruz. Çiğli ve Balatçık lokasyonlarında geliştirdiğimiz Valorya ve Serenità serisi projelerimizde, hafriyat aşamasından anahtar teslimine kadar en gelişmiş ölçüm ve haritalama teknolojilerini kullanıyoruz.</p>
+    <p>Şantiyelerimizde Total Station cihazlarıyla sağladığımız kaba inşaat doğruluğunu, iç mekanlarda kullandığımız lazer güdümlü tesviye sistemleriyle destekleyerek yaşam alanlarınızda kusursuz bir mimari bütünlük yakalıyoruz. Kaliteyi şansa bırakmayan, ileri mühendislik donanımlarına sahip modern projelerimizi incelemek ve yatırım fırsatlarını değerlendirmek için <strong><a href='https://neli.tr/showcase' target='_blank' style='color: #b32128; font-weight: bold; text-decoration: underline;'>neli.tr/showcase</a></strong> adresini ziyaret edebilirsiniz.</p>
+  </article>`,
+    coverImage: "/images/blog/total-station-ile-milimetrik-olcum.webp",
+    coverImageAlt:
+      "Şantiye aşamasında Total Station ile milimetrik harita ve kot ölçümü — Neli Mühendislik",
+    category: "Mühendislik ve Altyapı",
+    tags: JSON.stringify([
+      "total station",
+      "milimetrik ölçüm",
+      "kot ölçümü",
+      "harita mühendisliği",
+      "şantiye teknolojileri",
+      "Neli Mühendislik",
+      "inşaat kalitesi",
+    ]),
+    featured: false,
+    status: "published" as const,
+    metaTitle: "İnşaatta Total Station ve Milimetrik Ölçümün Önemi | Neli",
+    metaDescription:
+      "Şantiye aşamasında Total Station cihazları ile yapılan milimetrik harita ve kot ölçümlerinin bina kalitesine etkisini keşfedin. İleri mühendislik standartlarını inceleyin.",
+    metaKeywords:
+      "total station, milimetrik ölçüm, kot ölçümü, harita mühendisliği, inşaat teknolojileri, izmir şantiye, neli mühendislik, ince işçilik, statik proje, valorya",
+    publishedAt: "2026-06-09",
+  },
 ];
 
 const PROJECT_DATA = [
