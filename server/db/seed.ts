@@ -1764,7 +1764,7 @@ const BLOG_DATA = [
     <p><strong>Neli Mühendislik</strong> olarak, nitelikli bir yapının temelinde yatan en önemli unsurun "hassasiyet" olduğuna inanıyoruz. Çiğli ve Balatçık lokasyonlarında geliştirdiğimiz Valorya ve Serenità serisi projelerimizde, hafriyat aşamasından anahtar teslimine kadar en gelişmiş ölçüm ve haritalama teknolojilerini kullanıyoruz.</p>
     <p>Şantiyelerimizde Total Station cihazlarıyla sağladığımız kaba inşaat doğruluğunu, iç mekanlarda kullandığımız lazer güdümlü tesviye sistemleriyle destekleyerek yaşam alanlarınızda kusursuz bir mimari bütünlük yakalıyoruz. Kaliteyi şansa bırakmayan, ileri mühendislik donanımlarına sahip modern projelerimizi incelemek ve yatırım fırsatlarını değerlendirmek için <strong><a href='https://neli.tr/showcase' target='_blank' style='color: #b32128; font-weight: bold; text-decoration: underline;'>neli.tr/showcase</a></strong> adresini ziyaret edebilirsiniz.</p>
   </article>`,
-    coverImage: "/images/blog/total-station-ile-milimetrik-olcum.webp",
+    coverImage: "/images/blog/total-station.webp",
     coverImageAlt:
       "Şantiye aşamasında Total Station ile milimetrik harita ve kot ölçümü — Neli Mühendislik",
     category: "Mühendislik ve Altyapı",
