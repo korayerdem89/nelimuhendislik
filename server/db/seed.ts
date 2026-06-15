@@ -2338,7 +2338,7 @@ const BLOG_DATA = [
     <p><strong>Neli Mühendislik</strong> olarak, İzmir Çiğli ve Balatçık çevresindeki projelerimizde, mühendislik kalitesini sadece yapının sağlamlığıyla değil, yaşam konforuyla da bütünleştiriyoruz. Biliyoruz ki, bir evin yönü ve cephesi, sadece güneş açısı değil, sizin huzurunuzdur.</p>
     <p>Projelerimizi tasarlarken; güneş analizi yaparak dairelerin ışık alma sürelerini optimize ediyor, rüzgar yönlerini dikkate alarak doğal havalandırmayı önemsiyoruz. Neli Mühendislik projelerinde, her detayıyla konforunuzun düşünüldüğü, iklime duyarlı ve enerji verimli konutlar bulabilirsiniz. İzmir'deki güncel projelerimizi incelemek ve cephe seçeneklerini değerlendirmek için <strong><a href='https://neli.tr/showcase' target='_blank' style='color: #b32128; font-weight: bold; text-decoration: underline;'>neli.tr/showcase</a></strong> adresini ziyaret edebilirsiniz.</p>
   </article>`,
-    coverImage: "/images/blog/daire-yonu-konfor-etkisi.webp",
+    coverImage: "/images/blog/daire-yonu.webp",
     coverImageAlt:
       "Daire yönü ve cephe seçiminin konfor üzerindeki etkisini gösteren güneş yolları ve insan konfor ikonları — Neli Mühendislik",
     category: "Konut Satın Alma Rehberi",
