@@ -1786,6 +1786,582 @@ const BLOG_DATA = [
       "total station, milimetrik ölçüm, kot ölçümü, harita mühendisliği, inşaat teknolojileri, izmir şantiye, neli mühendislik, ince işçilik, statik proje, valorya",
     publishedAt: "2026-06-09",
   },
+  {
+    slug: "daire-tesliminde-eksik-is-kontrolu-nasil-yapilir",
+    title: "Daire Tesliminde Eksik İş Kontrolü Nasıl Yapılır?",
+    excerpt:
+      "Yeni bir daire teslim alırken yalnızca anahtarı almak yeterli değildir. Kapı, pencere, seramik, tesisat, elektrik, mutfak, banyo ve ortak alan kontrolleriyle eksik işlerin nasıl tespit edileceğini öğrenin.",
+    content: `<article>
+    <h2>Yeni Daire Tesliminde Eksik İş Kontrolü Neden Önemlidir?</h2>
+    <p>Yeni bir konut satın alan kişiler için en heyecan verici aşamalardan biri daire teslim günüdür. Ancak bu süreç yalnızca anahtarın alınmasıyla tamamlanmaz. Teslim aşamasında yapılacak dikkatli bir eksik iş kontrolü, ilerleyen dönemde oluşabilecek tadilat masraflarını, zaman kaybını ve kullanım konforunu etkileyen sorunları büyük ölçüde azaltır. Bu nedenle yeni daire tesliminde kapıdan pencereye, seramikten tesisata, elektrik sisteminden sabit mobilyalara kadar her detay sistemli şekilde incelenmelidir.</p>
+  
+    <p>Günümüzde bilinçli konut alıcılarının arama motorlarında sıkça sorduğu <em>'Daire teslim alırken nelere dikkat edilmeli?'</em>, <em>'Yeni ev tesliminde eksik işler nasıl kontrol edilir?'</em> veya <em>'Daire teslim tutanağına neler yazılır?'</em> gibi sorular, bu sürecin ne kadar önemli olduğunu gösterir. Doğru yapılan bir teslim kontrolü, hem alıcıyı korur hem de yüklenici firmanın tamamlaması gereken işleri net biçimde ortaya koyar.</p>
+  
+    <blockquote style='margin: 20px 0; padding: 10px 20px; border-left: 5px solid #b32128; background: #f9f9f9;'>
+      <strong>Özet Cevap (AEO / Öne Çıkarılan Snippet):</strong> Daire tesliminde eksik iş kontrolü; kapı, pencere, duvar, tavan, zemin, seramik, elektrik, su tesisatı, mutfak, banyo, balkon ve ortak alanların tek tek incelenmesiyle yapılır. Tespit edilen eksikler teslim tutanağına açık ve anlaşılır şekilde yazılmalı, mümkünse fotoğrafla belgelenmeli ve tamamlanma süreci kayıt altına alınmalıdır.
+    </blockquote>
+  
+    <h3>Daire Tesliminde İlk Kontrol Edilmesi Gereken Alanlar</h3>
+    <p>Daire teslim kontrolü yapılırken en doğru yöntem, konutu oda oda ve belirli bir sıra ile incelemektir. Böylece gözden kaçabilecek küçük detaylar daha kolay fark edilir. Kontrolün mümkünse gündüz saatlerinde ve doğal ışık altında yapılması önerilir. Çünkü boya hataları, yüzey dalgalanmaları, cam çizikleri ve seramik ton farkları gün ışığında daha net görülebilir.</p>
+    <ul>
+      <li><strong>Giriş Kapısı ve İç Kapılar:</strong> Kapıların rahat açılıp kapanması, kilitlerin sorunsuz çalışması, kasa ve pervazlarda açıklık olmaması gerekir. Kapı yüzeylerinde çizik, darbe veya kaplama hatası bulunup bulunmadığı kontrol edilmelidir.</li>
+      <li><strong>Pencere ve Doğramalar:</strong> Pencereler sürtmeden açılıp kapanmalı, contalar tam oturmalı ve camlarda çatlak ya da çizik olmamalıdır. Rüzgar ve su sızdırma ihtimaline karşı doğrama birleşimleri dikkatle incelenmelidir.</li>
+      <li><strong>Duvar ve Tavan Yüzeyleri:</strong> Boya dalgalanması, alçı çatlağı, kabarma, nem izi veya renk farklılığı olup olmadığı kontrol edilmelidir. Özellikle köşe birleşimleri ve tavan-duvar kesişimleri dikkatle incelenmelidir.</li>
+      <li><strong>Zemin Kaplamaları:</strong> Seramik, parke veya diğer döşeme kaplamalarında kırık, çizik, boşluk sesi, kot farkı ve derz hatası olup olmadığına bakılmalıdır.</li>
+    </ul>
+  
+    <h3>Elektrik ve Tesisat Kontrolü Nasıl Yapılmalı?</h3>
+    <p>Yeni daire tesliminde elektrik ve mekanik tesisat kontrolleri yalnızca kullanım konforu için değil, güvenlik açısından da önemlidir. Bu nedenle prizlerin, anahtarların, aydınlatma çıkışlarının, su giderlerinin ve armatür bağlantılarının çalışır durumda olup olmadığı mutlaka test edilmelidir.</p>
+    <ul>
+      <li><strong>Priz ve Anahtarlar:</strong> Tüm prizlerin, anahtarların ve aydınlatma noktalarının çalışıp çalışmadığı kontrol edilmelidir. Gevşek monte edilmiş prizler teslim tutanağına yazılmalıdır.</li>
+      <li><strong>Sigorta Panosu:</strong> Sigorta panosunun düzenli, ulaşılabilir ve güvenli şekilde monte edilmiş olması gerekir. Şalterlerin doğru çalışıp çalışmadığı gözlemlenmelidir.</li>
+      <li><strong>Su Tesisatı:</strong> Mutfak, banyo, lavabo ve çamaşır makinesi alanlarında su akışı ve gider tahliyesi kontrol edilmelidir. Musluk bağlantılarında sızıntı olup olmadığına bakılmalıdır.</li>
+      <li><strong>Banyo ve Balkon Giderleri:</strong> Duş alanı, süzgeçler ve balkon giderlerinde suyun doğru eğimle tahliye olup olmadığı test edilmelidir. Su birikmesi varsa bu durum eksik iş olarak belirtilmelidir.</li>
+    </ul>
+  
+    <h3>Mutfak, Banyo ve Sabit Mobilyalarda Nelere Bakılır?</h3>
+    <p>Mutfak dolapları, banyo dolapları, vestiyerler ve diğer sabit mobilyalar teslim sırasında mutlaka açılıp kapatılarak kontrol edilmelidir. Dolap kapaklarının ayarı, menteşelerin sağlamlığı, çekmecelerin ray sistemi ve kulpların montaj kalitesi kullanım konforunu doğrudan etkiler.</p>
+    <p>Özellikle mutfak ve banyo gibi yoğun kullanılan alanlarda küçük görünen montaj hataları zaman içinde daha büyük sorunlara dönüşebilir. Dolap kapaklarında sürtme, tezgah birleşimlerinde açıklık, lavabo altında sızıntı, aynalarda çizik veya silikon uygulamalarında boşluk varsa bunlar teslim tutanağına açık şekilde yazılmalıdır.</p>
+  
+    <h3>Eksik İşler Teslim Tutanağına Nasıl Yazılmalı?</h3>
+    <p>Daire tesliminde tespit edilen her eksik, mümkün olduğunca net ve anlaşılır ifadelerle kayıt altına alınmalıdır. Örneğin sadece <em>'banyoda sorun var'</em> yazmak yerine, <em>'ebeveyn banyosu duş giderinde su tahliyesi yavaş'</em> gibi daha açık bir ifade kullanılmalıdır. Bu yöntem, eksik işin daha hızlı ve doğru şekilde tamamlanmasını sağlar.</p>
+    <ul>
+      <li><strong>Alan Belirtin:</strong> Eksik işin hangi oda, banyo, balkon veya ortak alanda olduğu açıkça yazılmalıdır.</li>
+      <li><strong>Sorunu Net Tarif Edin:</strong> Çizik, kırık, sızıntı, boşluk, eğim hatası veya çalışmayan ekipman gibi sorunlar ayrıntılı belirtilmelidir.</li>
+      <li><strong>Fotoğrafla Belgeleyin:</strong> Mümkünse her eksik iş fotoğraf veya video ile kayıt altına alınmalıdır.</li>
+      <li><strong>Tutanak Nüshasını Saklayın:</strong> İmzalanan teslim tutanağının bir nüshası alıcıda kalmalıdır.</li>
+    </ul>
+  
+    <h3>Daire Teslim Kontrol Listesi Nasıl Hazırlanır?</h3>
+    <p>Daire tesliminde kontrol listesi hazırlamak, sürecin daha düzenli ilerlemesini sağlar. Liste oda oda hazırlanmalı ve her alan ayrı başlık altında incelenmelidir. Salon, mutfak, yatak odaları, banyo, antre, balkon ve varsa teras alanı ayrı ayrı değerlendirilmelidir.</p>
+    <ul>
+      <li>Kapılar, kilitler, menteşeler ve pervazlar</li>
+      <li>Pencereler, camlar, doğramalar ve contalar</li>
+      <li>Duvar, tavan, boya ve alçı yüzeyleri</li>
+      <li>Seramik, parke, süpürgelik ve derz uygulamaları</li>
+      <li>Elektrik prizleri, anahtarlar ve sigorta panosu</li>
+      <li>Su tesisatı, giderler, bataryalar ve vitrifiye ürünleri</li>
+      <li>Mutfak dolapları, tezgah, çekmece ve menteşe sistemleri</li>
+      <li>Banyo dolapları, aynalar, duş alanı ve silikon detayları</li>
+      <li>Balkon, teras, korkuluk ve gider eğimleri</li>
+      <li>Ortak alanlar, bina girişi, otopark ve asansör kullanımı</li>
+    </ul>
+  
+    <h3>Neli Mühendislik ile Kontrollü ve Güvenilir Teslim Süreci</h3>
+    <p><strong>Neli Mühendislik</strong> olarak, bir konutun değerinin yalnızca lokasyon, mimari veya metrekare ile sınırlı olmadığını biliyoruz. Teslim kalitesi, ince işçilik, tesisat düzeni, sabit mobilya uygulamaları ve ortak alan detayları uzun vadeli yaşam konforunun temel parçalarıdır. Bu nedenle İzmir Çiğli, Küçük Çiğli ve Balatçık çevresinde geliştirdiğimiz projelerde inşaat sürecinden teslim aşamasına kadar kalite kontrol odaklı ilerliyoruz.</p>
+    <p>Yeni bir daire satın alırken yalnızca bugünkü görünümü değil, uzun yıllar boyunca sağlayacağı konforu da değerlendirmek gerekir. Neli Mühendislik projelerinde modern mimari, dikkatli uygulama ve teslim süreci bütüncül bir kalite anlayışıyla ele alınır. Güncel konut seçeneklerimizi incelemek ve yaşamınıza uygun projeleri görmek için <strong><a href='https://neli.tr/showcase' target='_blank' style='color: #b32128; font-weight: bold; text-decoration: underline;'>neli.tr/showcase</a></strong> adresini ziyaret edebilirsiniz.</p>
+  </article>`,
+    coverImage: "/images/blog/teslim-kontrol.webp",
+    coverImageAlt:
+      "Daire tesliminde eksik iş kontrolü yapan yeni konut alıcısı — Neli Mühendislik",
+    category: "Konut Satın Alma Rehberi",
+    tags: JSON.stringify([
+      "daire teslimi",
+      "eksik iş kontrolü",
+      "konut teslim tutanağı",
+      "yeni daire kontrolü",
+      "ev alırken dikkat edilmesi gerekenler",
+      "Neli Mühendislik",
+      "İzmir Çiğli konut projeleri",
+    ]),
+    featured: false,
+    status: "published" as const,
+    metaTitle: "Daire Tesliminde Eksik İş Kontrolü Nasıl Yapılır? | Neli",
+    metaDescription:
+      "Yeni daire tesliminde kapı, pencere, tesisat, elektrik, seramik, mutfak ve banyo kontrolleri nasıl yapılır? Eksik iş kontrol listesi ve teslim tutanağı önerilerini inceleyin.",
+    metaKeywords:
+      "daire tesliminde eksik iş kontrolü nasıl yapılır, daire teslimi, eksik iş kontrolü, konut teslim tutanağı, yeni daire kontrol listesi, ev tesliminde nelere dikkat edilmeli, izmir yeni konut, neli mühendislik",
+    publishedAt: "2026-06-15",
+  },
+  {
+    slug: "yeni-daire-alirken-iskan-belgesi-neden-onemlidir",
+    title: "Yeni Daire Alırken İskan Belgesi Neden Önemlidir?",
+    excerpt:
+      "Yeni bir daire satın alırken konum, fiyat ve metrekare kadar iskan belgesi de dikkatle incelenmelidir. Yapı kullanma izin belgesinin ne anlama geldiğini, konut alıcısı için neden önemli olduğunu ve iskan kontrolünün nasıl yapılması gerektiğini öğrenin.",
+    content: `<article>
+    <h2>Yeni Daire Alırken İskan Belgesi Neden Kontrol Edilmelidir?</h2>
+    <p>Yeni bir daire satın alırken çoğu kişi öncelikle konuma, metrekareye, oda sayısına, manzaraya ve ödeme seçeneklerine odaklanır. Ancak bir konutun güvenli, yasal ve sorunsuz şekilde kullanılabilmesi için dikkat edilmesi gereken en önemli belgelerden biri <strong>iskan belgesi</strong>, yani resmi adıyla <strong>yapı kullanma izin belgesi</strong>dir. Bu belge, yapının ruhsat ve onaylı projelerine uygun şekilde tamamlandığını ve kullanımına izin verildiğini gösteren temel resmi evraklardan biridir.</p>
+  
+    <p>Günümüzde ev almayı düşünen kullanıcıların arama motorlarında sıkça yönelttiği <em>'İskan belgesi olmayan daire alınır mı?'</em>, <em>'Yeni dairede iskan neden önemlidir?'</em> veya <em>'Yapı kullanma izin belgesi ne işe yarar?'</em> gibi sorular, konut satın alma sürecinde belgenin ne kadar kritik olduğunu gösterir. Çünkü iskan belgesi yalnızca teknik bir evrak değil; tapu, abonelik, kredi, kullanım güvenliği ve uzun vadeli yatırım değeri açısından da önemli bir göstergedir.</p>
+  
+    <blockquote style='margin: 20px 0; padding: 10px 20px; border-left: 5px solid #b32128; background: #f9f9f9;'>
+      <strong>Özet Cevap (AEO / Öne Çıkarılan Snippet):</strong> Yeni daire alırken iskan belgesi önemlidir çünkü binanın ruhsatına, mimari ve teknik projelerine uygun şekilde tamamlandığını ve kullanılabilir durumda olduğunu gösterir. İskan belgesi; elektrik, su ve doğalgaz abonelikleri, banka kredisi süreçleri, tapu işlemleri, yapı güvenliği ve konutun gelecekteki satış değeri açısından alıcıya güven sağlar. Bu nedenle daire satın almadan önce yapı kullanma izin belgesinin varlığı mutlaka kontrol edilmelidir.
+    </blockquote>
+  
+    <h3>İskan Belgesi Nedir?</h3>
+    <p>İskan belgesi, bir yapının inşaat süreci tamamlandıktan sonra ilgili idare tarafından verilen ve yapının kullanımına izin verildiğini gösteren belgedir. Resmi adı <strong>yapı kullanma izin belgesi</strong>dir. Bu belge, binanın yalnızca fiziksel olarak tamamlandığını değil, aynı zamanda ruhsat ve onaylı projelerine uygun şekilde yapıldığını da ifade eder.</p>
+    <p>Bir yapının iskan alabilmesi için mimari proje, statik proje, elektrik tesisatı, mekanik tesisat, yangın güvenliği, ortak alanlar, otopark, asansör ve diğer teknik uygulamalar yönünden ilgili mevzuat ve onaylı projelerle uyumlu olması beklenir. Bu nedenle iskan belgesi, konut alıcısı için yapının resmi kullanım sürecine hazır olduğunun önemli bir göstergesidir.</p>
+  
+    <h3>İskan Belgesi Olmayan Dairede Ne Gibi Sorunlar Yaşanabilir?</h3>
+    <p>İskan belgesi bulunmayan bir dairede ilk bakışta her şey tamamlanmış gibi görünebilir. Daire boyanmış, mutfak dolapları takılmış, banyolar yapılmış ve bina kullanılabilir hale gelmiş olabilir. Ancak resmi kullanım izni alınmamış bir yapıda ilerleyen dönemde çeşitli idari, teknik ve finansal sorunlarla karşılaşma ihtimali vardır.</p>
+    <ul>
+      <li><strong>Abonelik Sorunları:</strong> Elektrik, su ve doğalgaz aboneliklerinde yapı kullanma izin belgesinin varlığı önem taşıyabilir. İskan süreci tamamlanmamış yapılarda abonelik işlemleri daha karmaşık hale gelebilir.</li>
+      <li><strong>Kredi Kullanımında Zorluk:</strong> Bankalar, konut kredisi değerlendirmesinde dairenin tapu durumu, yapı ruhsatı ve iskan gibi belgelerini inceleyebilir. İskan eksikliği kredi sürecini olumsuz etkileyebilir.</li>
+      <li><strong>Tapu ve Kat Mülkiyeti Süreçleri:</strong> İskan belgesi, kat mülkiyetine geçiş sürecinde önemli belgelerden biridir. Bu nedenle dairenin hukuki durumunu değerlendirirken dikkate alınmalıdır.</li>
+      <li><strong>Satış Değeri Riski:</strong> İskan problemi olan konutlar, ileride yeniden satılmak istendiğinde alıcılar ve bankalar tarafından daha dikkatli incelenebilir. Bu durum satış süresini ve değer algısını etkileyebilir.</li>
+    </ul>
+  
+    <h3>Yeni Daire Alırken İskan Belgesi Nasıl Kontrol Edilir?</h3>
+    <p>Yeni bir daire satın almadan önce iskan belgesinin varlığı yalnızca sözlü beyanla geçiştirilmemelidir. Alıcı, yapı kullanma izin belgesini görmeli ve belgedeki bilgilerin satın alınacak bağımsız bölümle uyumlu olup olmadığını kontrol etmelidir. Özellikle proje adı, ada-parsel bilgisi, bağımsız bölüm durumu ve binanın resmi kayıtları dikkatle incelenmelidir.</p>
+    <ul>
+      <li><strong>Belgeyi Talep Edin:</strong> Satıcıdan veya yüklenici firmadan yapı kullanma izin belgesinin bir örneği istenmelidir.</li>
+      <li><strong>Tapu Bilgileriyle Karşılaştırın:</strong> Ada, parsel, bağımsız bölüm ve yapı bilgileri tapu kayıtlarıyla uyumlu olmalıdır.</li>
+      <li><strong>Belediye veya İlgili İdareden Kontrol Edin:</strong> Gerekirse yapının iskan durumu ilgili belediye veya yetkili idare üzerinden sorgulanmalıdır.</li>
+      <li><strong>Kat Mülkiyeti Durumuna Bakın:</strong> Kat irtifakı ve kat mülkiyeti ayrımı incelenmeli, tapu türünün ne ifade ettiği anlaşılmalıdır.</li>
+    </ul>
+  
+    <h3>İskan Belgesi Konutun Değerini Nasıl Etkiler?</h3>
+    <p>Bir konutun değeri yalnızca metrekaresi, oda sayısı veya lokasyonuyla belirlenmez. Belgelerinin eksiksiz olması, projenin güvenilirliği ve kullanım sürecinin sorunsuz ilerlemesi de yatırım değerini doğrudan etkiler. İskan belgesi olan bir daire, alıcı açısından daha şeffaf ve güvenli bir tercih olarak değerlendirilir.</p>
+    <p>Özellikle İzmir gibi konut talebinin yüksek olduğu bölgelerde, alıcılar artık yalnızca dairenin görünümüne değil; projenin teknik altyapısına, yapı denetim sürecine, tapu durumuna ve iskan belgesine de dikkat etmektedir. Bu nedenle iskan belgesi, hem oturum amaçlı alımlarda hem de yatırım amaçlı konut tercihlerinde önemli bir güven unsurudur.</p>
+  
+    <h3>İskan Belgesi ile Kat Mülkiyeti Arasında Nasıl Bir Bağlantı Vardır?</h3>
+    <p>Konut satın alma sürecinde sıkça karıştırılan konulardan biri de iskan belgesi ile kat mülkiyeti arasındaki ilişkidir. Kat irtifakı, inşaat süreci devam ederken veya yapı henüz tamamlanmadan kurulan bir mülkiyet türüdür. Kat mülkiyeti ise yapı tamamlandıktan ve gerekli resmi süreçler ilerledikten sonra bağımsız bölümlerin tamamlanmış yapı üzerinde tescil edilmesini ifade eder.</p>
+    <p>İskan belgesi, kat mülkiyetine geçiş sürecinde önemli bir aşamadır. Bu nedenle yeni daire alırken tapuda kat irtifakı mı yoksa kat mülkiyeti mi yazdığı incelenmeli, iskan durumuyla birlikte değerlendirilmelidir. Böylece alıcı, satın aldığı dairenin yalnızca fiziksel durumunu değil, hukuki ve resmi durumunu da daha sağlıklı analiz edebilir.</p>
+  
+    <h3>Yeni Konut Projesi Seçerken Belgeler Neden İncelenmelidir?</h3>
+    <p>Yeni konut projelerinde örnek daire, cephe tasarımı, sosyal alanlar ve ödeme koşulları alıcılar için güçlü karar kriterleri olabilir. Ancak güvenilir bir satın alma süreci için proje belgelerinin de dikkatle incelenmesi gerekir. Yapı ruhsatı, tapu bilgileri, yapı kullanma izin belgesi, kat mülkiyeti durumu ve proje uygunluğu, konutun uzun vadeli güvenilirliğini gösteren temel başlıklardır.</p>
+    <ul>
+      <li>Projenin ruhsatlı olup olmadığı kontrol edilmelidir.</li>
+      <li>Yapı kullanma izin belgesi talep edilmelidir.</li>
+      <li>Tapu türü ve bağımsız bölüm bilgileri incelenmelidir.</li>
+      <li>Ortak alanların projeye uygun tamamlanıp tamamlanmadığına bakılmalıdır.</li>
+      <li>Satış öncesi tüm belgeler mümkünse uzman desteğiyle değerlendirilmelidir.</li>
+    </ul>
+  
+    <h3>Neli Mühendislik ile Güvenilir ve Şeffaf Konut Süreci</h3>
+    <p><strong>Neli Mühendislik</strong> olarak, konut satın alma sürecinde güvenin yalnızca güzel bir daire sunmakla değil, şeffaf ve düzenli bir proje yönetimiyle sağlandığını biliyoruz. İzmir Çiğli, Küçük Çiğli ve Balatçık çevresinde geliştirdiğimiz projelerde; mimari planlama, mühendislik uygulamaları, yapı denetim süreçleri, ince işçilik ve teslim aşamalarını bütüncül bir kalite anlayışıyla ele alıyoruz.</p>
+    <p>Yeni bir daire satın alırken iskan belgesi, tapu durumu ve teslim kalitesi gibi detayların dikkatle değerlendirilmesi gerekir. Neli Mühendislik projelerinde amacımız, alıcıların yalnızca bugünkü ihtiyaçlarına değil, uzun vadeli yaşam konforuna ve yatırım güvenliğine de cevap veren konutlar üretmektir. Güncel projelerimizi incelemek ve size uygun konut seçeneklerini görmek için <strong><a href='https://neli.tr/showcase' target='_blank' style='color: #b32128; font-weight: bold; text-decoration: underline;'>neli.tr/showcase</a></strong> adresini ziyaret edebilirsiniz.</p>
+  </article>`,
+    coverImage: "/images/blog/iskan-belgesi.webp",
+    coverImageAlt:
+      "Yeni daire alırken iskan belgesi ve yapı kullanma izin belgesi kontrolü — Neli Mühendislik",
+    category: "Konut Satın Alma Rehberi",
+    tags: JSON.stringify([
+      "iskan belgesi",
+      "yapı kullanma izin belgesi",
+      "yeni daire alırken",
+      "konut satın alma",
+      "kat mülkiyeti",
+      "tapuda dikkat edilmesi gerekenler",
+      "Neli Mühendislik",
+    ]),
+    featured: false,
+    status: "published" as const,
+    metaTitle: "Yeni Daire Alırken İskan Belgesi Neden Önemlidir? | Neli",
+    metaDescription:
+      "Yeni daire alırken iskan belgesi neden önemlidir? Yapı kullanma izin belgesi, abonelik, tapu, kredi, kat mülkiyeti ve konut değeri açısından ne ifade eder öğrenin.",
+    metaKeywords:
+      "yeni daire alırken iskan belgesi neden önemlidir, iskan belgesi, yapı kullanma izin belgesi, iskan olmayan daire alınır mı, kat mülkiyeti, konut satın alma rehberi, izmir yeni daire, neli mühendislik",
+    publishedAt: "2026-06-15",
+  },
+  {
+    slug: "kat-irtifaki-ile-kat-mulkiyeti-arasindaki-fark-nedir",
+    title: "Kat İrtifakı ile Kat Mülkiyeti Arasındaki Fark Nedir?",
+    excerpt:
+      "Yeni bir daire satın alırken tapuda yazan kat irtifakı ve kat mülkiyeti ifadeleri büyük önem taşır. Bu iki kavram arasındaki farkları, konut alıcısı için ne anlama geldiğini ve tapu kontrolünde nelere dikkat edilmesi gerektiğini öğrenin.",
+    content: `<article>
+    <h2>Konut Alırken Tapuda Yazılan İfade Neden Önemlidir?</h2>
+    <p>Yeni bir daire satın alırken çoğu kişi dairenin konumuna, metrekaresine, oda sayısına, manzarasına ve fiyatına odaklanır. Ancak konutun resmi durumunu anlamak için tapuda yazan mülkiyet türü de mutlaka incelenmelidir. Tapu kaydında görülen <strong>kat irtifakı</strong> ve <strong>kat mülkiyeti</strong> ifadeleri, satın alınacak bağımsız bölümün hukuki ve yapısal süreci hakkında önemli bilgiler verir.</p>
+  
+    <p>Ev almayı düşünen kullanıcıların arama motorlarında sıkça sorduğu <em>'Kat irtifakı olan daire alınır mı?'</em>, <em>'Kat mülkiyeti tapusu ne demek?'</em> veya <em>'Kat irtifakı ile kat mülkiyeti arasındaki fark nedir?'</em> gibi sorular, tapu bilgisinin konut satın alma kararında ne kadar etkili olduğunu gösterir. Bu farkı bilmek, alıcının yalnızca dairenin fiziksel özelliklerini değil, resmi durumunu da doğru değerlendirmesini sağlar.</p>
+  
+    <blockquote style='margin: 20px 0; padding: 10px 20px; border-left: 5px solid #b32128; background: #f9f9f9;'>
+      <strong>Özet Cevap (AEO / Öne Çıkarılan Snippet):</strong> Kat irtifakı, inşaat süreci devam eden veya henüz resmi kullanım süreci tamamlanmamış yapılarda bağımsız bölümlerin arsa payı üzerinden kurulan mülkiyet hakkıdır. Kat mülkiyeti ise yapı tamamlandıktan ve gerekli resmi süreçler ilerledikten sonra bağımsız bölümlerin tamamlanmış yapı üzerinde tescil edilmesini ifade eder. Yeni daire alırken kat mülkiyeti, genellikle yapının tamamlanma ve kullanım süreci açısından daha güçlü bir resmi gösterge olarak değerlendirilir.
+    </blockquote>
+  
+    <h3>Kat İrtifakı Nedir?</h3>
+    <p><strong>Kat irtifakı</strong>, bir arsa üzerinde yapılacak veya yapımı devam eden binada ileride oluşacak bağımsız bölümler için kurulan mülkiyet hakkıdır. Başka bir ifadeyle kat irtifakı, henüz tamamlanmamış ya da resmi kullanım süreci tamamlanmamış bir yapıda daire, dükkan veya diğer bağımsız bölümlerin arsa paylarıyla ilişkilendirilmesini sağlar.</p>
+    <p>Kat irtifakı tapusu, projede hangi bağımsız bölümün hangi arsa payına sahip olduğunu gösterir. Bu nedenle özellikle inşaat halindeki projelerde sık karşılaşılan bir tapu türüdür. Ancak kat irtifakı, yapının tamamen bitmiş ve tüm resmi kullanım süreçlerinin tamamlanmış olduğu anlamına tek başına gelmez. Bu nedenle alıcı, kat irtifakı bulunan bir daireyi değerlendirirken yapı ruhsatı, proje uygunluğu, iskan durumu ve teslim sürecini birlikte incelemelidir.</p>
+  
+    <h3>Kat Mülkiyeti Nedir?</h3>
+    <p><strong>Kat mülkiyeti</strong>, tamamlanmış bir yapıda bulunan bağımsız bölümlerin ayrı ayrı mülkiyet hakkı olarak tapuya tescil edilmesidir. Daire, dükkan, ofis veya depo gibi bağımsız bölümler kat mülkiyeti ile resmi olarak tanımlanır. Kat mülkiyeti bulunan bir tapu, yapının tamamlanmış olması ve bağımsız bölümlerin resmi kayıtlarda daha net şekilde ayrılmış olması açısından konut alıcısına güven verir.</p>
+    <p>Yeni bir daire satın alırken tapuda kat mülkiyeti yazması, alıcı açısından önemli bir avantaj olarak görülür. Çünkü bu durum, yapının tamamlanma süreci, bağımsız bölüm ayrımı ve resmi kayıt düzeni açısından daha ileri bir aşamayı ifade eder. Ancak yine de tapu bilgileri, iskan belgesi, proje uygunluğu ve satış sözleşmesi birlikte değerlendirilmelidir.</p>
+  
+    <h3>Kat İrtifakı ile Kat Mülkiyeti Arasındaki Temel Farklar</h3>
+    <p>Kat irtifakı ve kat mülkiyeti arasındaki farkı anlamak, konut satın alma sürecinde daha bilinçli karar vermeyi sağlar. Bu iki kavram birbirine yakın görünse de, yapının tamamlanma aşaması ve resmi kayıt durumu açısından farklı anlamlar taşır.</p>
+    <ul>
+      <li><strong>Yapının Aşaması:</strong> Kat irtifakı genellikle inşaatı devam eden veya resmi tamamlanma süreci henüz bitmemiş yapılarla ilişkilidir. Kat mülkiyeti ise tamamlanmış yapıdaki bağımsız bölümleri ifade eder.</li>
+      <li><strong>Resmi Kullanım Süreci:</strong> Kat mülkiyeti, yapının tamamlanmış ve bağımsız bölümlerin resmi olarak ayrılmış olduğunu gösteren daha güçlü bir tapu aşamasıdır.</li>
+      <li><strong>Alıcı Güveni:</strong> Kat mülkiyeti bulunan daireler, tapu ve kullanım süreci açısından alıcıya daha net bir tablo sunar. Kat irtifakı bulunan dairelerde ise iskan ve proje uygunluğu ayrıca kontrol edilmelidir.</li>
+      <li><strong>Kredi ve Satış Süreci:</strong> Bankalar konut kredisi değerlendirmesinde tapu türünü, yapı durumunu ve resmi belgeleri dikkate alabilir. Bu nedenle tapu türü finansman sürecinde de önemlidir.</li>
+    </ul>
+  
+    <h3>Kat İrtifakı Olan Daire Alınır mı?</h3>
+    <p>Kat irtifakı olan bir daire, her durumda sorunlu anlamına gelmez. Özellikle inşaatı devam eden veya yeni tamamlanmak üzere olan projelerde kat irtifakı tapusuyla satış yapılması sık karşılaşılan bir durumdur. Ancak bu noktada alıcının dikkat etmesi gereken konu, yalnızca tapu türüne bakmak değil, projenin genel resmi durumunu birlikte değerlendirmektir.</p>
+    <p>Kat irtifakı olan bir daire alınmadan önce yapı ruhsatı, onaylı proje, iskan süreci, bağımsız bölüm bilgileri, arsa payı ve teslim şartları kontrol edilmelidir. Ayrıca satın alınacak dairenin projede belirtilen bağımsız bölümle uyumlu olup olmadığı mutlaka incelenmelidir. Bu kontroller, alıcının ileride tapu, kullanım veya satış aşamasında sorun yaşamaması açısından önemlidir.</p>
+  
+    <h3>Kat Mülkiyeti Tapusu Neden Avantajlıdır?</h3>
+    <p>Kat mülkiyeti tapusu, konut alıcısı için daha tamamlanmış ve daha net bir resmi durumu ifade eder. Bu nedenle oturum amaçlı daire alımlarında da yatırım amaçlı konut tercihlerinde de önemli bir güven unsurudur. Kat mülkiyeti olan bir daire, bağımsız bölümün yapı üzerinde resmi olarak tanımlandığını gösterir.</p>
+    <ul>
+      <li><strong>Daha Net Tapu Durumu:</strong> Bağımsız bölüm, tapu kayıtlarında daha açık şekilde yer alır.</li>
+      <li><strong>Satışta Güven Avantajı:</strong> Gelecekte daire satılırken alıcılar kat mülkiyeti tapusunu daha güven verici bulabilir.</li>
+      <li><strong>Kredi Sürecinde Kolaylık:</strong> Bankalar değerlendirme yaparken tapu türünü ve yapının resmi durumunu dikkate alabilir.</li>
+      <li><strong>Yatırım Değeri:</strong> Belgeleri daha net olan konutlar, uzun vadeli yatırım açısından daha güçlü bir algı oluşturabilir.</li>
+    </ul>
+  
+    <h3>Tapu Kontrolünde Nelere Dikkat Edilmeli?</h3>
+    <p>Yeni daire satın almadan önce tapu bilgileri dikkatle incelenmelidir. Tapuda yazan bağımsız bölüm numarası, arsa payı, ada-parsel bilgisi ve mülkiyet türü satışa konu olan daireyle uyumlu olmalıdır. Sadece dairenin gezilip beğenilmesi yeterli değildir; resmi belgelerin de satın alınacak konutla birebir örtüşmesi gerekir.</p>
+    <ul>
+      <li>Tapuda kat irtifakı mı kat mülkiyeti mi yazdığı kontrol edilmelidir.</li>
+      <li>Ada, parsel ve bağımsız bölüm numarası incelenmelidir.</li>
+      <li>Satın alınacak dairenin proje üzerindeki konumu ile tapu bilgileri karşılaştırılmalıdır.</li>
+      <li>İskan belgesi ve yapı kullanma izin süreci araştırılmalıdır.</li>
+      <li>Gerekirse tapu ve belediye kayıtları uzman desteğiyle değerlendirilmelidir.</li>
+    </ul>
+  
+    <h3>İzmir’de Yeni Daire Alırken Tapu ve Belge Kontrolünün Önemi</h3>
+    <p>İzmir, özellikle Çiğli, Küçük Çiğli ve Balatçık gibi gelişen bölgeleriyle yeni konut projelerine olan ilginin arttığı şehirlerden biridir. Bu bölgelerde daire satın alırken yalnızca projenin konumu ve mimari özellikleri değil, tapu türü, iskan durumu ve proje belgeleri de dikkatle değerlendirilmelidir. Çünkü doğru belgelerle desteklenen bir konut, hem güvenli yaşam hem de uzun vadeli yatırım açısından daha sağlam bir temel oluşturur.</p>
+    <p>Kat irtifakı ve kat mülkiyeti farkını bilen bir alıcı, satın alma sürecinde daha doğru sorular sorar. Böylece yalnızca bugünkü fiyat avantajına değil, dairenin gelecekteki kullanım, satış ve yatırım değerine de odaklanabilir.</p>
+  
+    <h3>Neli Mühendislik ile Şeffaf ve Güvenilir Konut Yaklaşımı</h3>
+    <p><strong>Neli Mühendislik</strong> olarak, konut satın alma sürecinde güvenin yalnızca modern mimariyle değil, doğru belge yönetimi ve şeffaf bilgilendirme ile sağlandığını biliyoruz. İzmir Çiğli, Küçük Çiğli ve Balatçık çevresinde geliştirdiğimiz projelerde; mühendislik kalitesi, yapı güvenliği, teslim süreci ve resmi süreçlerin düzenli ilerlemesi bizim için bütüncül kalite anlayışının parçalarıdır.</p>
+    <p>Yeni bir daire satın alırken kat irtifakı, kat mülkiyeti, iskan belgesi ve teslim kalitesi gibi konuların birlikte değerlendirilmesi gerekir. Neli Mühendislik projelerinde amacımız, alıcıların hem bugünkü yaşam ihtiyaçlarına hem de uzun vadeli yatırım beklentilerine cevap veren güvenilir konutlar üretmektir. Güncel projelerimizi incelemek ve size uygun konut seçeneklerini görmek için <strong><a href='https://neli.tr/showcase' target='_blank' style='color: #b32128; font-weight: bold; text-decoration: underline;'>neli.tr/showcase</a></strong> adresini ziyaret edebilirsiniz.</p>
+  </article>`,
+    coverImage: "/images/blog/tapu-farki.webp",
+    coverImageAlt:
+      "Kat irtifakı ile kat mülkiyeti arasındaki farkı gösteren tapu ve konut belgeleri — Neli Mühendislik",
+    category: "Konut Satın Alma Rehberi",
+    tags: JSON.stringify([
+      "kat irtifakı",
+      "kat mülkiyeti",
+      "tapu kontrolü",
+      "yeni daire alırken",
+      "iskan belgesi",
+      "konut satın alma",
+      "Neli Mühendislik",
+    ]),
+    featured: false,
+    status: "published" as const,
+    metaTitle: "Kat İrtifakı ile Kat Mülkiyeti Arasındaki Fark Nedir? | Neli",
+    metaDescription:
+      "Kat irtifakı ile kat mülkiyeti arasındaki fark nedir? Yeni daire alırken tapu türü, iskan belgesi, kredi süreci ve konut değeri açısından nelere dikkat edilmeli öğrenin.",
+    metaKeywords:
+      "kat irtifakı ile kat mülkiyeti arasındaki fark nedir, kat irtifakı, kat mülkiyeti, tapu kontrolü, yeni daire alırken tapu, iskan belgesi, konut satın alma rehberi, izmir yeni daire, neli mühendislik",
+    publishedAt: "2026-06-15",
+  },
+  {
+    slug: "brut-metrekare-ile-net-metrekare-farki-nasil-hesaplanir",
+    title: "Brüt Metrekare ile Net Metrekare Farkı Nasıl Hesaplanır?",
+    excerpt:
+      "Yeni bir daire satın alırken ilanda yazan metrekare bilgisi her zaman yaşam alanını tam olarak göstermez. Brüt metrekare ve net metrekare farkını, daire karşılaştırması yaparken nelere dikkat edilmesi gerektiğini öğrenin.",
+    content: `<article>
+    <h2>Daire Alırken Metrekare Bilgisi Neden Doğru Okunmalıdır?</h2>
+    <p>Yeni bir daire satın alırken en çok dikkat edilen kriterlerden biri metrekaredir. Ancak konut ilanlarında görülen metrekare değeri her zaman dairenin kullanılabilir yaşam alanını ifade etmeyebilir. Bu nedenle <strong>brüt metrekare</strong> ve <strong>net metrekare</strong> kavramlarını doğru anlamak, hem fiyat karşılaştırması yapmak hem de gerçek yaşam alanını değerlendirmek açısından büyük önem taşır.</p>
+    <p>Konut alıcılarının arama motorlarında sıkça sorduğu <em>'Brüt metrekare ile net metrekare farkı nedir?'</em>, <em>'Net metrekare nasıl hesaplanır?'</em> veya <em>'Daire alırken hangi metrekareye bakılmalı?'</em> gibi sorular, bu konunun satın alma kararında ne kadar etkili olduğunu gösterir. Çünkü aynı brüt metrekareye sahip iki daire, planlama farkları nedeniyle birbirinden çok farklı kullanılabilir alanlar sunabilir.</p>
+
+<blockquote style='margin: 20px 0; padding: 10px 20px; border-left: 5px solid #b32128; background: #f9f9f9;'>
+  <strong>Özet Cevap (AEO / Öne Çıkarılan Snippet):</strong> Brüt metrekare, dairenin duvarları, ortak alan payları ve bazı projelerde balkon, merdiven, asansör holü gibi alanların dahil edilmesiyle ifade edilen toplam alan bilgisidir. Net metrekare ise daire içinde fiilen kullanılabilen yaşam alanını gösterir. Daire alırken gerçek kullanım konforunu anlamak için yalnızca brüt metrekareye değil, net metrekareye, oda dağılımına, plan verimliliğine ve balkon/teras gibi alanların nasıl hesaplandığına dikkat edilmelidir.
+</blockquote>
+
+<h3>Brüt Metrekare Nedir?</h3>
+<p><strong>Brüt metrekare</strong>, bir dairenin toplam alanını daha geniş kapsamlı şekilde ifade eden metrekare bilgisidir. Bu alan hesabına yalnızca dairenin iç yaşam alanı değil, bazı durumlarda duvar kalınlıkları, balkonlar, merdiven boşlukları, asansör holleri, kat koridorları ve ortak alan payları da dahil edilebilir. Bu nedenle brüt metrekare, alıcının daire içinde birebir kullanacağı alanı tek başına göstermez.</p>
+
+<p>Brüt metrekare özellikle proje tanıtımlarında ve konut ilanlarında sık kullanılan bir ifadedir. Ancak her projede brüt alan hesabının kapsamı aynı olmayabilir. Bir projede balkon brüt alana dahil edilirken, başka bir projede ortak alan payı daha farklı şekilde hesaplanabilir. Bu nedenle daire alırken brüt metrekarenin hangi alanları kapsadığı mutlaka sorulmalıdır.</p>
+
+<h3>Net Metrekare Nedir?</h3>
+<p><strong>Net metrekare</strong>, daire içinde fiilen kullanılabilen alanı ifade eder. Salon, yatak odaları, mutfak, banyo, antre, koridor ve kullanım alanına dahil edilen iç bölümler net metrekare hesabında değerlendirilir. Net alan, alıcının günlük yaşamda gerçekten kullanacağı alanı gösterdiği için konut seçiminde çok daha açıklayıcı bir veridir.</p>
+
+<p>Net metrekare, özellikle aynı oda sayısına sahip daireleri karşılaştırırken önemlidir. Örneğin iki farklı 2+1 daire aynı brüt metrekareye sahip olabilir; ancak birinde koridor alanı fazla, diğerinde salon ve odalar daha verimli planlanmış olabilir. Bu durumda net alanı daha iyi kullanılan daire, günlük yaşamda daha geniş ve konforlu hissedilebilir.</p>
+
+<h3>Brüt ve Net Metrekare Arasındaki Fark Nasıl Hesaplanır?</h3>
+<p>Brüt ve net metrekare arasındaki fark, dairenin toplam gösterilen alanı ile fiilen kullanılabilen iç alanı arasındaki farktır. Basit şekilde ifade etmek gerekirse, brüt metrekareden ortak alan payları, duvar kalınlıkları, tesisat boşlukları ve kullanılmayan alanlar çıkarıldığında net metrekareye daha yakın bir değer elde edilir.</p>
+<ul>
+  <li><strong>Brüt Metrekare:</strong> Dairenin toplam proje alanını ve bazı ortak alan paylarını içerebilir.</li>
+  <li><strong>Net Metrekare:</strong> Daire içinde günlük yaşamda kullanılabilen gerçek alanı gösterir.</li>
+  <li><strong>Fark:</strong> Brüt alandan ortak alan, duvar, boşluk ve kullanım dışı alanların çıkarılmasıyla ortaya çıkar.</li>
+</ul>
+
+<p>Örneğin bir daire ilanda 100 m² brüt olarak belirtilmiş olabilir. Ancak dairenin net kullanılabilir alanı 75 m² ise, alıcı günlük yaşamda 75 m² üzerinden bir kullanım alanına sahip olacaktır. Bu nedenle fiyat değerlendirmesi yaparken yalnızca brüt metrekareye değil, net metrekare başına düşen maliyete de bakmak daha doğru bir analiz sağlar.</p>
+
+<h3>Daire Alırken Hangi Metrekareye Bakılmalı?</h3>
+<p>Daire alırken hem brüt hem net metrekare birlikte değerlendirilmelidir. Brüt metrekare, projenin genel alan büyüklüğü hakkında fikir verirken; net metrekare, dairenin gerçek yaşam konforunu anlamayı sağlar. Bu nedenle yalnızca ilanda yazan büyük metrekare değerine göre karar vermek doğru değildir.</p>
+<ul>
+  <li><strong>Yaşam Konforu İçin:</strong> Net metrekare ve oda dağılımı incelenmelidir.</li>
+  <li><strong>Fiyat Karşılaştırması İçin:</strong> Net metrekare başına düşen fiyat hesaplanmalıdır.</li>
+  <li><strong>Plan Verimliliği İçin:</strong> Koridor, antre ve kullanılmayan alanların oranına bakılmalıdır.</li>
+  <li><strong>Balkon ve Teras İçin:</strong> Bu alanların brüt ve net hesaba nasıl dahil edildiği sorulmalıdır.</li>
+</ul>
+
+<h3>Plan Verimliliği Metrekareden Daha Önemli Olabilir mi?</h3>
+<p>Bir dairenin konforunu yalnızca metrekare büyüklüğü belirlemez. Planın doğru çözülmüş olması, alanların verimli kullanılması ve odalar arasındaki dağılım günlük yaşam kalitesini doğrudan etkiler. Büyük görünen ancak uzun koridorlara, kullanışsız köşelere veya dar odalara sahip bir daire; daha küçük ama iyi planlanmış bir daireden daha az kullanışlı olabilir.</p>
+
+<p>Bu nedenle yeni daire alırken salon genişliği, mutfak düzeni, yatak odalarının ölçüsü, banyo konumu, depolama alanı, balkon kullanımı ve antre planı birlikte incelenmelidir. İyi planlanmış bir dairede her metrekare gerçek bir kullanım değerine dönüşür.</p>
+
+<h3>Brüt Metrekare Yanıltıcı Olabilir mi?</h3>
+<p>Brüt metrekare tek başına değerlendirildiğinde alıcıya olduğundan daha büyük bir yaşam alanı algısı verebilir. Özellikle ortak alan paylarının fazla olduğu projelerde brüt ve net alan arasındaki fark artabilir. Bu durum, daireleri karşılaştırırken yanlış sonuçlara yol açabilir.</p>
+
+<p>Bu nedenle bir konut projesini incelerken şu sorular mutlaka sorulmalıdır:</p>
+<ul>
+  <li>İlanda yazan metrekare brüt mü, net mi?</li>
+  <li>Net kullanım alanı kaç metrekaredir?</li>
+  <li>Balkon, teras veya bahçe alanı metrekareye dahil mi?</li>
+  <li>Ortak alan payı brüt hesaba nasıl yansıtılmıştır?</li>
+  <li>Dairenin mimari planında kullanılmayan alan oranı yüksek mi?</li>
+</ul>
+
+<h3>Metrekare Karşılaştırması Yaparken Nelere Dikkat Edilmeli?</h3>
+<p>Aynı bölgede iki farklı daireyi karşılaştırırken yalnızca toplam fiyat veya brüt metrekare üzerinden değerlendirme yapmak eksik bir analiz olabilir. Daha doğru bir karşılaştırma için net metrekare, oda dağılımı, cephe, kat konumu, balkon kullanımı, malzeme kalitesi ve bina ortak alanları birlikte düşünülmelidir.</p>
+
+<ul>
+  <li><strong>Net Metrekare Başına Fiyat:</strong> Gerçek kullanım alanı üzerinden maliyet analizi yapılmasını sağlar.</li>
+  <li><strong>Oda Kullanışlılığı:</strong> Odaların sadece sayısı değil, ölçüleri ve yerleşimi önemlidir.</li>
+  <li><strong>Balkon ve Teras Alanı:</strong> Açık alanların gerçekten kullanılabilir olup olmadığı değerlendirilmelidir.</li>
+  <li><strong>Ortak Alan Kalitesi:</strong> Asansör, otopark, bina girişi ve merdiven alanları yaşam kalitesini etkiler.</li>
+</ul>
+
+<h3>Neli Mühendislik ile Verimli Planlanan Yaşam Alanları</h3>
+<p><strong>Neli Mühendislik</strong> olarak, bir dairenin değerini yalnızca brüt metrekare büyüklüğüyle değil, yaşam alanlarının ne kadar verimli kullanıldığıyla değerlendiriyoruz. İzmir Çiğli, Küçük Çiğli ve Balatçık çevresinde geliştirdiğimiz konut projelerinde planlama sürecini; oda kullanışlılığı, doğal ışık, balkon ve teras kullanımı, mutfak düzeni ve günlük yaşam konforu gibi detaylarla birlikte ele alıyoruz.</p>
+<p>Yeni bir daire satın alırken metrekare bilgisini doğru okumak, uzun vadede daha bilinçli bir tercih yapmanızı sağlar. Neli Mühendislik projelerinde modern mimari, fonksiyonel planlama ve kaliteli uygulama anlayışıyla yaşam alanlarının her metrekaresine gerçek değer katmayı hedefliyoruz. Güncel projelerimizi incelemek ve size uygun konut seçeneklerini görmek için <strong><a href='https://neli.tr/showcase' target='_blank' style='color: #b32128; font-weight: bold; text-decoration: underline;'>neli.tr/showcase</a></strong> adresini ziyaret edebilirsiniz.</p>
+</article>`,
+    coverImage: "/images/blog/net-brut.webp",
+    coverImageAlt:
+      "Brüt metrekare ile net metrekare farkını gösteren modern daire planı — Neli Mühendislik",
+    category: "Konut Satın Alma Rehberi",
+    tags: JSON.stringify([
+      "brüt metrekare",
+      "net metrekare",
+      "daire metrekare hesabı",
+      "konut satın alma",
+      "yeni daire alırken",
+      "plan verimliliği",
+      "Neli Mühendislik",
+    ]),
+    featured: false,
+    status: "published" as const,
+    metaTitle:
+      "Brüt Metrekare ile Net Metrekare Farkı Nasıl Hesaplanır? | Neli",
+    metaDescription:
+      "Brüt metrekare ile net metrekare farkı nedir? Yeni daire alırken gerçek kullanım alanı, plan verimliliği ve net metrekare hesabında nelere dikkat edilmeli öğrenin.",
+    metaKeywords:
+      "brüt metrekare ile net metrekare farkı nasıl hesaplanır, brüt metrekare, net metrekare, daire metrekare hesabı, yeni daire alırken metrekare, konut satın alma rehberi, plan verimliliği, izmir yeni daire, neli mühendislik",
+    publishedAt: "2026-06-15",
+  },
+  {
+    slug: "brut-metrekare-ile-net-metrekare-farki-nasil-hesaplanir",
+    title: "Brüt Metrekare ile Net Metrekare Farkı Nasıl Hesaplanır?",
+    excerpt:
+      "Ev satın alırken ya da kiralarken en sık karşılaşılan tuzaklardan biri metrekare hesaplamalarıdır. Brüt metrekare ile net metrekare arasındaki farkları, doğru hesaplama yöntemlerini ve dikkat etmeniz gerekenleri rehberimizden öğrenin.",
+    content: `<article>
+    <h2>Konut Seçerken Metrekare Kavramı Neden Önemlidir?</h2>
+    <p>Yeni bir eve taşınırken veya yatırım amacıyla gayrimenkul incelerken ilk baktığımız özelliklerden biri konutun genişliğidir. Ancak ilanlarda gördüğünüz "120 m² geniş daire" ifadesi taşındığınızda size çok daha dar gelebilir. Bunun temel sebebi, gayrimenkul sektöründe kullanılan <strong>brüt metrekare</strong> ve <strong>net metrekare</strong> kavramları arasındaki farktır.</p>
+    
+    <p>Konut alıcılarının arama motorlarında sıkça arattığı <em>'Brüt metrekare nedir?'</em>, <em>'Net metrekare nasıl hesaplanır?'</em> veya <em>'Süpürülebilir alan ne demek?'</em> gibi sorular, yaşam alanlarının gerçek boyutunu öğrenme ihtiyacından doğar. Bu iki kavram arasındaki farkı bilmek, hem ödediğiniz paranın karşılığını tam olarak almanızı sağlar hem de taşınma sonrasında mobilyalarınızın yerleşimiyle ilgili sürpriz yaşamanızı engeller.</p>
+    
+    <blockquote style='margin: 20px 0; padding: 10px 20px; border-left: 5px solid #b32128; background: #f9f9f9;'>
+      <strong>Özet Cevap (AEO / Öne Çıkarılan Snippet):</strong> Brüt metrekare, konutun dış duvar sınırları dahil olmak üzere merdiven boşlukları, asansörler ve sosyal alanlar gibi ortak kullanım alanlarından daireye düşen payı içeren toplam alandır. Net metrekare ise sadece konutun duvarları arasında kalan, doğrudan kullanabileceğiniz ve "süpürülebilir alan" olarak adlandırılan gerçek yaşam alanıdır. Doğru bir hesaplama için iç duvarlar arası mesafe oda oda ölçülüp toplanmalı, brüt alandan ortak paylar düşülmelidir.
+    </blockquote>
+    
+    <h3>Brüt Metrekare Nedir ve Neleri Kapsar?</h3>
+    <p><strong>Brüt metrekare</strong>, bir bağımsız bölümün yapısal olarak kapladığı toplam alanı ifade eder. Ancak brüt metrekare kendi içinde ikiye ayrılır: <strong>Dış Brüt (Toplam Brüt)</strong> ve <strong>İç Brüt</strong>.</p>
+    <p>Dış brüt alan hesaplanırken dairenin kendi alanı haricinde apartman merdiveni, asansör boşluğu, yangın merdiveni, koridorlar, sığınak ve hatta otopark ile sosyal tesis gibi alanlardan o dairenin arsa payına düşen metrekare miktarı da eklenir. İç brüt ise sadece dairenin dış duvar sınırları içinde kalan, duvar kalınlıklarını ve varsa balkonları da içeren alanıdır. İlanlarda genellikle konutu daha büyük göstermek amacıyla toplam dış brüt metrekare tercih edilir.</p>
+    
+    <h3>Net Metrekare Nedir? (Süpürülebilir Alan)</h3>
+    <p><strong>Net metrekare</strong>, konutun içinde duvarların arasında kalan ve fiziksel olarak adım atıp mobilya yerleştirebileceğiniz net yaşam alanıdır. Sektörde bu alana <strong>"süpürülebilir alan"</strong> da denmektedir.</p>
+    <p>Net metrekare hesaplanırken iç duvar kalınlıkları, kolonlar, tesisat boşlukları ve şaftlar hesaba katılmaz. Salon, odalar, mutfak, banyo, antre ve hol gibi alanların taban yüzey ölçümlerinin toplamıdır. Balkonların net alana dahil edilip edilmeyeceği Çevre, Şehircilik ve İklim Değişikliği Bakanlığı yönetmeliklerine göre değişiklik gösterse de, açık balkonlar genellikle net süpürülebilir alanın dışında tutulmalıdır.</p>
+    
+    <h3>Brüt Metrekare ile Net Metrekare Farkı Nasıl Hesaplanır?</h3>
+    <p>Bir konutun net alanını ve uğrayabileceğiniz metrekare kaybını hesaplamak için izleyebileceğiniz en güvenilir yöntemler şunlardır:</p>
+    <ul>
+      <li><strong>Oda Oda Lazer Metre ile Ölçüm:</strong> Evin her odasının (salon, mutfak, yatak odaları, banyo vb.) boyunu ve enini lazer metre ile ölçüp birbiriyle çarpın. Çıkan tüm oda sonuçlarını topladığınızda evinizin gerçek <strong>net metrekaresini</strong> bulursunuz.</li>
+      <li><strong>Yönetmelik Standartlarını İnceleme:</strong> Planlı Alanlar Tip İmar Yönetmeliği'ne göre projelerde net ve brüt alanların açıkça belirtilmesi zorunludur. Satış ofislerinden onaylı mimari projeyi talep ederek tablodaki net/brüt değerlerini kontrol edebilirsiniz.</li>
+      <li><strong>Fark Oranına Dikkat Etme:</strong> Türkiye genelindeki konut projelerinde brüt ile net alan arasında ortalama %25 ila %35 arasında bir fark (kayıp oranı) bulunur. Örneğin; brüt alanı 120 m² olan bir dairenin net alanı projesine göre yaklaşık 85-90 m² civarındadır.</li>
+    </ul>
+    
+    <h3>Gayrimenkul Alırken Metrekare Tuzaklarına Düşmemek İçin Öneriler</h3>
+    <p>İlan sitelerinde ya da satış pazarlamalarında mağduriyet yaşamamak adına alıcıların şu adımlara dikkat etmesi kritik önem taşır:</p>
+    <ul>
+      <li>Sadece "Dairemiz 150 metrekaredir" ifadesiyle yetinmeyin; mutlaka <strong>"Net kullanım alanı kaç metrekare?"</strong> sorusunu yöneltin.</li>
+      <li>Mümkünse daireyi fiziki olarak ziyaret edin ve yanınızda bir şerit metre veya lazer metre bulundurarak kabaca ölçüm yapın.</li>
+      <li>Tapu senedinde yazan metrekare değerinin çoğunlukla "arsa payı" olduğunu, dairenin net metrekaresini göstermediğini unutmayın. Gerçek değerler için belediyedeki <strong>onaylı mimari projeyi</strong> inceleyin.</li>
+      <li>Balkon, teras veya depo gibi alanların net metrekareye dahil edilip edilmediğini netleştirin.</li>
+    </ul>
+    
+    <h3>İzmir’de Doğru Metrekare ve Güvenilir Proje Analizi</h3>
+    <p>İzmir, özellikle Çiğli, Küçük Çiğli ve Balatçık gibi yeni nesil yapılaşmanın yoğun olduğu bölgelerde hızlı bir gayrimenkul büyümesi yaşamaktadır. Bu bölgelerdeki modern sitelerde kapalı otoparklar, geniş havuzlar ve sosyal tesisler oldukça yaygındır. Ancak ortak alanlar genişledikçe, dairelerin brüt metrekaresi ile net metrekaresi arasındaki makas da açılabilmektedir.</p>
+    <p>İzmir'de yeni bir daire satın alırken, ilanlardaki yüksek metrekarelerin ne kadarının sosyal alan payı ne kadarının evin içi olduğunu bilmek bütçenizi doğru yönetmenizi sağlar. Doğru metrekare analizi, uzun vadede mülkünüzü satarken veya kiraya verirken de size değer kaybettirmeyecek doğru bir yatırım konumu sunar.</p>
+    
+    <h3>Neli Mühendislik ile Şeffaf Metrekare ve Mühendislik Güvencesi</h3>
+    <p><strong>Neli Mühendislik</strong> olarak, nitelikli yaşam alanları inşa ederken en büyük önceliğimizi şeffaflık ve güven üzerine kuruyoruz. İzmir Çiğli, Küçük Çiğli ve Balatçık bölgelerinde hayata geçirdiğimiz tüm projelerimizde, alıcılarımıza brüt ve net metrekare oranlarını tüm dürüstlüğüyle, mimari planlar üzerinden eksiksiz aktarıyoruz.</p>
+    <p>Projelendirmeden teslime kadar mühendislik disiplinlerinden ödün vermeden, her metrekaresi verimli şekilde tasarlanmış, kayıp alanı minimumda tutulmuş fonksiyonel konutlar üretiyoruz. Siz de metrekare aldatmacalarından uzak, her detayıyla şeffaf ve güvenilir konut projelerimizi yakından incelemek için <strong><a href='https://neli.tr/showcase' target='_blank' style='color: #b32128; font-weight: bold; text-decoration: underline;'>neli.tr/showcase</a></strong> adresini ziyaret edebilir, yaşam standardınıza en uygun daireyi güvenle seçebilirsiniz.</p>
+  </article>`,
+    coverImage: "/images/blog/brut-net.webp",
+    coverImageAlt:
+      "Brüt metrekare ve net metrekare hesaplama yöntemlerini gösteren mimari plan ve lazer metre ölçümü — Neli Mühendislik",
+    category: "Konut Satın Alma Rehberi",
+    tags: JSON.stringify([
+      "brüt metrekare",
+      "net metrekare",
+      "metrekare hesaplama",
+      "süpürülebilir alan",
+      "daire ölçümü",
+      "konut satın alma",
+      "Neli Mühendislik",
+      "izmir satılık daire",
+    ]),
+    featured: false,
+    status: "published" as const,
+    metaTitle:
+      "Brüt Metrekare ile Net Metrekare Farkı Nasıl Hesaplanır? | Neli",
+    metaDescription:
+      "Brüt metrekare ile net metrekare farkı nasıl hesaplanır? Ev alırken süpürülebilir alan (net m²) nasıl ölçülür, imar yönetmeliği metrekare standartları nelerdir öğrenin.",
+    metaKeywords:
+      "brüt metrekare ile net metrekare farkı nasıl hesaplanır, brüt metrekare nedir, net metrekare hesaplama, süpürülebilir alan nedir, daire metrekare hesaplama, ev alırken metrekare kontrolü, neli mühendislik, izmir çiğli konut projeleri",
+    publishedAt: "2026-06-15",
+  },
+  {
+    slug: "yeni-dairede-su-tesisati-ve-gider-kontrolu-nasil-yapilir",
+    title: "Yeni Dairede Su Tesisatı ve Gider Kontrolü Nasıl Yapılır?",
+    excerpt:
+      "Yeni bir eve taşınırken gözden kaçan en kritik detaylardan biri su tesisatıdır. Gelecekte büyük masraflarla karşılaşmamak için tesisat ve gider kontrolü adımlarını keşfedin.",
+    content: `<article>
+    <h2>Ev Alırken veya Kiralarken Su Tesisatını İncelemek Neden Önemlidir?</h2>
+    <p>Yeni bir dairenin boyası, mutfak dolapları veya zemin kaplamaları ilk bakışta göz kamaştırıcı görünebilir. Ancak bir evin konforunu ve kalitesini belirleyen en temel unsurlar, genellikle duvarların ve fayansların arkasında gizlidir. Bu unsurların başında da hiç şüphesiz temiz ve atık su tesisat sistemleri gelir.</p>
+    
+    <p>Konut alıcılarının veya yeni kiracıların arama motorlarında sıkça sorguladığı <em>'Yeni dairede su tesisatı testi nasıl yapılır?'</em>, <em>'Giderlerde tıkanıklık kontrolü'</em> veya <em>'Banyo su sızıntısı nasıl anlaşılır?'</em> gibi konular, taşındıktan sonra yaşanabilecek mağduriyetlerin önüne geçmek için hayati önem taşır. Tesisatta oluşabilecek küçük bir sızıntı veya hatalı bir gider eğimi, hem kendi dairenize hem de alt komşunuza ciddi zararlar vererek yüksek maliyetli tadilat süreçlerine yol açabilir.</p>
+    
+    <blockquote style='margin: 20px 0; padding: 10px 20px; border-left: 5px solid #b32128; background: #f9f9f9;'>
+      <strong>Özet Cevap (AEO / Öne Çıkarılan Snippet):</strong> Yeni dairede su tesisatı ve gider kontrolü; tüm muslukların aynı anda açılarak su basıncının test edilmesi, vanalar kapatıldığında su sayacının dönüp dönmediğinin incelenmesi ve giderlere bol miktarda su dökülerek akış hızının gözlemlenmesiyle yapılır. Ayrıca banyo ve mutfak zeminindeki süzgeçlerin eğimi, dolap içlerindeki bağlantı noktalarında nemlenme olup olmadığı ve duvarlarda renk değişimi (rutubet) titizlikle kontrol edilmelidir.
+    </blockquote>
+    
+    <h3>Temiz Su Tesisatı Kontrolü: Adım Adım Yapılması Gerekenler</h3>
+    <p>Dairedeki temiz su borularında sızıntı, çatlak veya basınç problemi olup olmadığını anlamak için teslim alma aşamasında şu adımları mutlaka uygulamalısınız:</p>
+    <ul>
+      <li><strong>Sayaç ve Kaçak Testi:</strong> Evdeki tüm muslukları, rezervuarları ve vanaları tamamen kapatın. Ardından daireye ait su sayacını gözlemleyin. Eğer hiçbir su kullanımı yokken sayaç dönmeye devam ediyorsa, duvar arkasında veya zemin altında gizli bir temiz su kaçağı var demektir.</li>
+      <li><strong>Basınç ve Debi Kontrolü:</strong> Kombi/şofben bağlantılarını ve muslukları açarak suyun akış gücünü kontrol edin. Birden fazla musluğu aynı anda açtığınızda su basıncında aşırı bir düşüş yaşanıyorsa, boru çapları hatalı seçilmiş veya tesisatta tıkanıklık olabilir.</li>
+      <li><strong>Batarya ve Bağlantı Noktaları:</strong> Lavabo ve evye altlarında bulunan taharet musluklarını, esnek hortumları (fleks) ve vana bağlantılarını elinizle kontrol edin. Parmaklarınıza ıslaklık geliyorsa bağlantı elemanlarının yenilenmesi gerekir.</li>
+    </ul>
+    
+    <h3>Atık Su Giderleri ve Süzgeç Kontrolü</h3>
+    <p>Kullanılan suyun sorunsuz bir şekilde binanın ana kanalizasyon hattına ulaşması gerekir. Atık su ve gider hatlarını test etmek için şu yöntemleri kullanabilirsiniz:</p>
+    <p>Mutfak evyesi, banyo lavabosu, duş teknesi ve klozet giderlerine bir kova dolusu suyu hızlıca dökün. Su saniyeler içinde göllenmeden akıp gidiyorsa gider eğimi ve boru çapı doğrudur. Eğer su yavaş gidiyor veya geri tepiyorsa, inşaat esnasında boruların içine harç, alçı gibi yabancı maddeler kaçmış olabilir.</p>
+    <p>Özellikle banyo zemininde yer alan süzgeçlerin çevresindeki derz dolgularını inceleyin. Zemine dökülen suyun banyo kapısına değil, doğrudan süzgece doğru akıp akmadığını (meyil kontrolü) gözlemleyin. Yanlış verilen zemin eğimleri banyoda sürekli su birikmesine neden olur.</p>
+    
+    <h3>Gizli Nem ve Rutubet Belirtilerine Dikkat Edin</h3>
+    <p>Yeni bitmiş projelerde veya yeni boyanmış dairelerde tesisat kaçakları kendisini hemen göstermeyebilir. Bu durumlarda ipuçlarını takip etmek gerekir: Banyoya komşu olan odaların duvar diplerini, süpürgelikleri ve mutfak tezgahının arkasında kalan duvarları dikkatlice inceleyin. Boyada kabarma, dökülme, sarı lekeler veya küf kokusu, o bölgenin yakınından geçen bir boruda sızıntı olduğuna işaret eder.</p>
+    
+    <h3>Yeni Konut Alırken Mühendislik Standartlarının Önemi</h3>
+    <p>Su tesisatında sonradan yaşanacak sorunların büyük kısmı, inşaat aşamasında kaliteli malzeme kullanılmamasından, boru kaynaklarının doğru ısıda yapılmamasından veya projeye uygun eğim verilmemesinden kaynaklanır. İzmir'in Çiğli, Küçük Çiğli ve Balatçık gibi yeni konut projeleriyle büyüyen bölgelerinde daire seçerken, yapının sadece görünen yüzeylerine değil; projenin arkasındaki mühendislik ve denetim kalitesine de odaklanmak gerekir.</p>
+    
+    <h3>Neli Mühendislik ile Altyapıda Sıfır Hata Yaklaşımı</h3>
+    <p><strong>Neli Mühendislik</strong> olarak, İzmir Çiğli ve Balatçık bölgelerinde hayata geçirdiğimiz projelerde sadece estetik mimariye değil, binalarımızın görünmeyen altyapı kalitesine de maksimum özen gösteriyoruz. Projelerimizde kullanılan tüm temiz ve atık su boruları, armatürler ve yalıtım malzemeleri dünya standartlarında olup, teslim aşamasından önce yüksek basınç testlerine (test pompalama işlemleri) tabi tutulmaktadır.</p>
+    
+    <p>Bizim için mühendislik, konut sakinlerinin taşındıktan sonra hiçbir altyapı sürpriziyle karşılaşmaması demektir. Tesisatından yalıtımına kadar her detayı titizlikle denetlenmiş, güvenli ve uzun ömürlü projelerimizi incelemek, güncel konut seçeneklerimize göz atmak için <strong><a href='https://neli.tr/showcase' target='_blank' style='color: #b32128; font-weight: bold; text-decoration: underline;'>neli.tr/showcase</a></strong> adresimizi ziyaret edebilirsiniz.</p>
+  </article>`,
+    coverImage: "/images/blog/su-tesisati.webp",
+    coverImageAlt:
+      "Yeni bir dairede banyo ve mutfak su tesisatı ile gider borularının kontrol edilmesi — Neli Mühendislik",
+    category: "Konut Satın Alma Rehberi",
+    tags: JSON.stringify([
+      "su tesisatı kontrolü",
+      "gider testi",
+      "yeni daire alırken",
+      "su kaçağı tespiti",
+      "altyapı kontrolü",
+      "konut muayenesi",
+      "Neli Mühendislik",
+      "izmir yeni konut",
+    ]),
+    featured: false,
+    status: "published" as const,
+    metaTitle:
+      "Yeni Dairede Su Tesisatı ve Gider Kontrolü Nasıl Yapılır? | Neli",
+    metaDescription:
+      "Yeni dairede su tesisatı ve gider kontrolü nasıl yapılır? Ev alırken gizli su kaçakları, gider tıkanıklıkları ve banyo eğim testleri hakkında bilmeniz gerekenler.",
+    metaKeywords:
+      "yeni dairede su tesisatı ve gider kontrolü nasıl yapılır, daire su tesisatı testi, ev alırken su kaçağı kontrolü, gider tıkanıklığı nasıl anlaşılır, banyo süzgeç eğimi, tesisat kontrol rehberi, neli mühendislik",
+    publishedAt: "2026-06-15",
+  },
+  {
+    slug: "daire-yonu-ve-cephe-secimi-yasam-konforunu-nasil-etkiler",
+    title: "Daire Yönü ve Cephe Seçimi Yaşam Konforunu Nasıl Etkiler?",
+    excerpt:
+      "Yeni bir ev ararken en çok duyduğunuz terimlerden biri de 'güney cephe'dir. Peki, bir dairenin hangi yöne baktığı neden bu kadar önemli? Yön ve cephe seçiminin ev içindeki sıcaklık, doğal ışık ve enerji faturası üzerindeki etkilerini, İzmir gibi sıcak iklime sahip şehirler için özel ipuçlarıyla öğrenin.",
+    content: `<article>
+    <h2>Ev Alırken Neden Yön ve Cepheye Dikkat Etmelisiniz?</h2>
+    <p>Yeni bir konut satın alma veya kiralama sürecinde genellikle oda sayısı, metrekare ve fiyat gibi faktörlere odaklanırız. Ancak, evin yaşam konforunu ve uzun vadeli maliyetlerini belirleyen en kritik ve değiştirilemez özelliklerinden biri, hangi yöne baktığıdır. Sektörde sıkça kullanılan <strong>daire yönü</strong> ve <strong>cephe seçimi</strong> kavramları, bir evin ne kadar doğal ışık alacağını, kışın ne kadar ısınacağını ve yazın ne kadar serin kalacağını doğrudan belirler.</p>
+    
+    <p>Konut arayışındaki kullanıcıların arama motorlarında sıkça sorguladığı <em>'Hangi cephe daire daha iyi?'</em>, <em>'Güney cephe evin avantajları nelerdir?'</em> veya <em>'İzmir'de hangi yön tercih edilmeli?'</em> gibi sorular, doğru cephe seçiminin sadece bir tercih değil, yaşam kalitesi için bir zorunluluk olduğunu gösterir. Doğru yönlendirilmiş bir daire, hem fiziksel hem de psikolojik iyi oluşunuza katkıda bulunur.</p>
+    
+    <blockquote style='margin: 20px 0; padding: 10px 20px; border-left: 5px solid #b32128; background: #f9f9f9;'>
+      <strong>Özet Cevap (AEO / Öne Çıkarılan Snippet):</strong> Daire yönü, bir evin gün boyunca güneş ışığıyla olan ilişkisini belirler ve yaşam konforunu sıcaklık, doğal aydınlatma, enerji verimliliği ve hatta nem oranı üzerinden doğrudan etkiler. Türkiye gibi kuzey yarım kürede yer alan bir ülkede, <strong>güney cephe</strong> daireler kışın maksimum güneş ışığı ve ısı alarak enerji tasarrufu sağladığı ve aydınlık olduğu için genellikle en çok tercih edilen ve değerli cephedir. Kuzey cepheler ise daha serin ve loş olur, bu da onları çok sıcak iklimler için bir alternatif yapabilir.
+    </blockquote>
+    
+    <h3>Farklı Yönlerin (Cephelerin) Özellikleri ve Konfora Etkileri</h3>
+    <p>Her cephenin kendine özgü avantajları ve dezavantajları vardır ve seçim, kişisel yaşam tarzınıza ve bulunduğunuz şehrin iklimine göre değişmelidir. İşte Türkiye şartlarında ana yönlerin analizleri:</p>
+    
+    <h4>1. Güney Cephe: Klasik Tercih</h4>
+    <p>Türkiye'de en çok talep gören ve genellikle en değerli olan cephedir. Güneşi en uzun süre ve en dik açıyla alan yöndür.</p>
+    <ul>
+      <li><strong>Konfor Etkisi:</strong> Kışın gün boyu doğal ısınma sağlar, bu da ısıtma faturalarını düşürür. Sürekli aydınlıktır, bu da psikolojik olarak daha huzurlu bir ortam yaratır.</li>
+      <li><strong>Kimler İçin Uygun:</strong> Isınma maliyetlerini düşürmek isteyenler, evde çok vakit geçirenler ve aydınlık sevenler için idealdir.</li>
+    </ul>
+    
+    <h4>2. Kuzey Cephe: Serin ve Stabil</h4>
+    <p>Güneş ışığını en az alan yöndür. Genellikle daha loş ve serin olur.</p>
+    <ul>
+      <li><strong>Konfor Etkisi:</strong> Yazın kavurucu sıcaklarda doğal bir serinlik sağlar, bu da klima kullanımını azaltabilir. Işık gün boyunca stabildir. Ancak kışın ısınmak zordur ve nem sorunu yaşanabilir.</li>
+      <li><strong>Kimler İçin Uygun:</strong> İzmir gibi çok sıcak bölgelerde yaşayanlar veya sabah erken evden çıkıp akşam dönenler için bir seçenek olabilir.</li>
+    </ul>
+    
+    <h4>3. Doğu Cephe: Sabahın Enerjisi</h4>
+    <p>Güneşin doğduğu yöndür. Sabahın erken saatlerinden öğleye kadar güneş alır.</p>
+    <ul>
+      <li><strong>Konfor Etkisi:</strong> Sabahları canlı ve aydınlık bir başlangıç sunar. Öğleden sonra ise serinlemeye başlar. Yazın sabah güneşiyle ısınmak keyifli olabilir, ancak kışın öğleden sonra soğuk olabilir.</li>
+      <li><strong>Kimler İçin Uygun:</strong> Sabah insanları ve yatak odalarının aydınlık olmasını sevenler için harikadır.</li>
+    </ul>
+    
+    <h4>4. Batı Cephe: Akşamın Sıcaklığı</h4>
+    <p>Güneşin battığı yöndür. Öğleden sonra ve akşamüstü en yoğun güneşi alır.</p>
+    <ul>
+      <li><strong>Konfor Etkisi:</strong> Yazın öğleden sonra evin aşırı ısınmasına neden olabilir, bu da klima maliyetini artırır. Ancak kışın akşamüstü güneşinin sıcaklığı hoş olabilir.</li>
+      <li><strong>Kimler İçin Uygun:</strong> Akşamları evde vakit geçirenler ve kışın daha fazla ısı arayanlar için bir seçenek olabilir.</li>
+    </ul>
+    
+    <h3>Cephe Seçiminde Diğer Önemli Faktörler</h3>
+    <p>Sadece yönlendirme değil, cephenin kalitesini etkileyen diğer unsurlar da vardır:</p>
+    <ul>
+      <li><strong>Manzara ve Açıklık:</strong> Bir cephe güney olsa bile, önünde başka bir bina varsa ışık alımı engellenir. Açık cephe, manzaralı cephe her zaman daha ferah bir his verir.</li>
+      <li><strong>Kat Yüksekliği:</strong> Üst katlar daha fazla güneş alır ve daha az gölgelenir. Giriş katları genellikle daha az ışık alır ve daha serindir.</li>
+      <li><strong>Bina Yalıtımı:</strong> İyi bir yalıtım, yanlış cephenin olumsuz etkilerini (Kuzeyin soğuğu veya Batının aşırı sıcaklığı) hafifletebilir.</li>
+    </ul>
+    
+    <h3>İzmir’de Yön ve Cephe Seçiminin Önemi</h3>
+    <p>İzmir, Akdeniz iklimine sahip, yazları sıcak ve kurak, kışları ılıman geçen bir şehirdir. Bu iklim yapısı, cephe seçimini diğer bölgelere göre daha kritik hale getirir. İzmir Çiğli, Küçük Çiğli ve Balatçık gibi gelişen bölgelerde yeni konut projelerini değerlendirirken, sadece güney cepheye odaklanmak her zaman doğru olmayabilir.</p>
+    <p>İzmir'de daire seçerken dikkat edilmesi gerekenler:</p>
+    <ul>
+      <li><strong>Yaz Sıcakları ile Mücadele:</strong> İzmir'de yazın aşırı ısınmayı önlemek için, batı cepheler veya tam güney cepheler yerine, sabah güneşi alan doğu cepheler veya serin kuzey cepheler daha konforlu olabilir.</li>
+      <li><strong>Rüzgar Faktörü:</strong> İzmir'de denizden esen serinletici imbat rüzgarı, yaz konforu için çok değerlidir. Bu rüzgarı alan cepheler (genellikle batı ve kuzeybatı) klima ihtiyacını azaltabilir.</li>
+      <li><strong>Proje Tasarımı:</strong> Neli Mühendislik gibi kaliteli inşaat firmaları, İzmir'in iklimini dikkate alarak projelerinde gölgeleme elemanları, balkon tasarımları ve yüksek yalıtım standartları kullanarak her cephede konforu maksimize etmeyi amaçlar.</li>
+    </ul>
+    
+    <h3>Neli Mühendislik ile Konfor Odaklı Mühendislik Yaklaşımı</h3>
+    <p><strong>Neli Mühendislik</strong> olarak, İzmir Çiğli ve Balatçık çevresindeki projelerimizde, mühendislik kalitesini sadece yapının sağlamlığıyla değil, yaşam konforuyla da bütünleştiriyoruz. Biliyoruz ki, bir evin yönü ve cephesi, sadece güneş açısı değil, sizin huzurunuzdur.</p>
+    <p>Projelerimizi tasarlarken; güneş analizi yaparak dairelerin ışık alma sürelerini optimize ediyor, rüzgar yönlerini dikkate alarak doğal havalandırmayı önemsiyoruz. Neli Mühendislik projelerinde, her detayıyla konforunuzun düşünüldüğü, iklime duyarlı ve enerji verimli konutlar bulabilirsiniz. İzmir'deki güncel projelerimizi incelemek ve cephe seçeneklerini değerlendirmek için <strong><a href='https://neli.tr/showcase' target='_blank' style='color: #b32128; font-weight: bold; text-decoration: underline;'>neli.tr/showcase</a></strong> adresini ziyaret edebilirsiniz.</p>
+  </article>`,
+    coverImage: "/images/blog/daire-yonu-konfor-etkisi.webp",
+    coverImageAlt:
+      "Daire yönü ve cephe seçiminin konfor üzerindeki etkisini gösteren güneş yolları ve insan konfor ikonları — Neli Mühendislik",
+    category: "Konut Satın Alma Rehberi",
+    tags: JSON.stringify([
+      "daire yönü",
+      "cephe seçimi",
+      "konut konforu",
+      "güney cephe",
+      "kuzey cephe",
+      "ev alırken cephe",
+      "Neli Mühendislik",
+      "izmir satılık daire",
+    ]),
+    featured: false,
+    status: "published" as const,
+    metaTitle:
+      "Daire Yönü ve Cephe Seçimi Yaşam Konforunu Nasıl Etkiler? | Neli",
+    metaDescription:
+      "Daire yönü ve cephe seçimi yaşam konforunu nasıl etkiler? Güney cephe avantajları, kuzey cephe dezavantajları, İzmir'de cephe seçimi ve enerji tasarrufu ipuçları.",
+    metaKeywords:
+      "daire yönü ve cephe seçimi yaşam konforunu nasıl etkiler, daire cephe seçimi, güney cephe avantajları, kuzey cephe konforu, batı cephe ısınma, doğu cephe sabah güneşi, daire yönü enerji tasarrufu, neli mühendislik",
+    publishedAt: "2026-06-15",
+  },
 ];
 
 const PROJECT_DATA = [
