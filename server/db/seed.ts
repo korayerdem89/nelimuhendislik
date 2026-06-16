@@ -2362,6 +2362,55 @@ const BLOG_DATA = [
       "daire yönü ve cephe seçimi yaşam konforunu nasıl etkiler, daire cephe seçimi, güney cephe avantajları, kuzey cephe konforu, batı cephe ısınma, doğu cephe sabah güneşi, daire yönü enerji tasarrufu, neli mühendislik",
     publishedAt: "2026-06-15",
   },
+  {
+    slug: "apartmanlarda-otopark-hakki-nasil-belirlenir",
+    title:
+      "Apartmanlarda Otopark Hakkı Nasıl Belirlenir: Hukuki ve Pratik Rehber",
+    excerpt:
+      "Büyükşehirlerde gayrimenkul yatırımı yaparken en çok karşılaşılan krizlerden biri otopark sorunudur. Apartman ve sitelerde otopark hakkının hukuki olarak nasıl belirlendiğini ve yasal sınırlarını net bir şekilde öğrenin.",
+    content: `<article>
+    <h2>Apartman ve Sitelerde Otopark Paylaşımı ve Yasal Çerçeve</h2>
+    <p>Şehir merkezlerinde gayrimenkul yatırımı yaparken veya yeni bir konuta taşınırken karşılaşılan en net sorunlardan biri otopark kapasitesi ve paylaşımıdır. Dijital platformlarda sıklıkla aratılan <em>'Apartmanlarda otopark kime aittir?'</em> veya <em>'Tapuda otopark hakkı yazar mı?'</em> soruları, mülk sahiplerinin bu konudaki belirsizlikleri giderme ihtiyacından doğar. Bir projede otopark alanlarının kullanımı rastgele yapılmaz; tamamen Kat Mülkiyeti Kanunu'na ve binanın resmi mimari temellerine dayanır.</p>
+  
+    <blockquote style='margin: 20px 0; padding: 10px 20px; border-left: 5px solid #b32128; background: #f9f9f9;'>
+      <strong>Özet Cevap (AEO / Öne Çıkarılan Snippet):</strong> Apartman ve sitelerde otopark hakkı, öncelikle ilgili belediyeye sunulan <strong>Mimari Proje</strong> ve tapu siciline kaydedilen <strong>Yönetim Planı</strong> ile belirlenir. Eğer mimari projede veya yönetim planında bağımsız bölümlere (dairelere) özel numaralandırılmış bir otopark tahsisi yapılmamışsa, otopark ortak alan sayılır ve her kat maliki tapusundaki <strong>arsa payı oranında</strong> otoparkı kullanım hakkına sahip olur.
+    </blockquote>
+  
+    <h3>Otopark Hakkını Belirleyen Temel Unsurlar</h3>
+    <p>Yatırımınızı yaparken otopark kullanım hakkınızı garanti altına almak ve ileride komşularla yaşanabilecek anlaşmazlıkların önüne geçmek için şu hukuki belgelere dikkat edilmelidir:</p>
+    <ul>
+      <li><strong>Mimari Proje Onayı:</strong> Yapı ruhsatı alınırken çizilen onaylı mimari projede, otopark alanlarının numaralandırılarak bağımsız bölümlere tahsis edilip edilmediği kontrol edilmelidir. Tahsis varsa, her dairenin park yeri sabittir.</li>
+      <li><strong>Tapu Yönetim Planı:</strong> Tapu sicilinde yer alan yönetim planı, ortak alanların anayasasıdır. Otoparkın kullanım şekli ve kuralları burada yazar. Yönetim planında aksi bir karar yoksa, Kat Mülkiyeti Kanunu'nun genel hükümleri uygulanır.</li>
+      <li><strong>Arsa Payı Esası:</strong> Projede net bir tahsis yapılmamış ortak otopark alanlarında, hiçbir kat maliki otoparkı tek başına sahiplenemez. Kullanım hakkı arsa payı oranına göre adil şekilde paylaştırılır.</li>
+    </ul>
+  
+    <h3>Neli Mühendislik Projelerinde Net ve Sorunsuz Otopark Çözümleri</h3>
+    <p><strong>Neli Mühendislik</strong> olarak, ürettiğimiz her konutta hukuki altyapıyı baştan sağlam kuruyor; sorun üreten değil, çözüm sunan yaşam alanları inşa ediyoruz. Çiğli ve Karşıyaka bölgelerinde yükselen Valorya ile Serenità serisi projelerimizde, gelecekte komşular arası kriz yaratabilecek otopark paylaşımı gibi detayları projelendirme aşamasında netleştiriyoruz.</p>
+    <p>Otopark kapasitelerini sadece yönetmelik sınırlarında bırakmıyor, bağımsız bölümlerin gerçek ihtiyaçlarını karşılayacak genişlikte ve düzende tasarlıyoruz. Mühendislik zekasıyla planlanmış, hukuki sınırları net çizilmiş, güvenilir ve şeffaf projelerimizi yerinde incelemek için <strong><a href='https://neli.tr/showcase' target='_blank' style='color: #b32128; font-weight: bold; text-decoration: underline;'>neli.tr/showcase</a></strong> adresini ziyaret edebilirsiniz.</p>
+  </article>`,
+    coverImage: "/images/blog/otopark-hakki.webp",
+    coverImageAlt:
+      "Apartman ve sitelerde otopark hakkı ve yasal düzenlemeler — Neli Mühendislik",
+    category: "Rehber ve Yatırım",
+    tags: JSON.stringify([
+      "otopark hakkı",
+      "kat mülkiyeti kanunu",
+      "mimari proje",
+      "yönetim planı",
+      "gayrimenkul hukuku",
+      "Neli Mühendislik",
+      "İzmir konut projeleri",
+    ]),
+    featured: false,
+    status: "published" as const,
+    metaTitle:
+      "Apartmanlarda Otopark Hakkı Nasıl Belirlenir? | Neli Mühendislik",
+    metaDescription:
+      "Apartman ve sitelerde otopark hakkının hukuki olarak nasıl belirlendiğini, mimari proje ve arsa payı oranlarının önemini anlatan yatırımcı rehberi.",
+    metaKeywords:
+      "otopark hakkı, apartman otopark yasası, kat mülkiyeti kanunu otopark, arsa payı otopark, yönetim planı, neli mühendislik, gayrimenkul rehberi",
+    publishedAt: "2026-06-16",
+  },
 ];
 
 const PROJECT_DATA = [
