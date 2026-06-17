@@ -2655,8 +2655,9 @@ const PROJECT_DATA = [
         "4 katlı, toplam 16 daire",
       ],
       unitTypes: [
-        { type: "1+1", count: 3, grossArea: "82 m2", netArea: "63 m2" },
-        { type: "2+1", count: 3, grossArea: "112 m2", netArea: "87 m2" },
+        { type: "1+1", count: 3, grossArea: "50 m2", netArea: "41 m2" },
+        { type: "2+1", count: 2, grossArea: "70 m2", netArea: "65 m2" },
+        { type: "3+1", count: 1, grossArea: "120 m2", netArea: "115 m2" },
       ],
       totalUnits: 12,
       totalBlocks: 1,
