@@ -1,3 +1,7 @@
+import { loadProjectEnv } from "./lib/load-env.js";
+
+loadProjectEnv();
+
 import { Hono } from "hono";
 import { cors } from "hono/cors";
 import { serveStatic } from "@hono/node-server/serve-static";
@@ -15,7 +19,10 @@ import publicRoutes from "./routes/public.js";
 import odooRoutes from "./routes/odoo.js";
 import sitemapRoutes from "./routes/sitemap.js";
 import { PROJECT_ROOT } from "./paths.js";
+import { DB_PATH } from "./db/index.js";
 import { ensureAdminUser } from "./lib/ensure-admin.js";
+
+export const AUTH_VERSION = 3;
 
 try {
   await ensureAdminUser();
@@ -60,10 +67,17 @@ app.route("/api/admin/media", mediaRoutes);
 app.route("/api/admin/activity", activityRoutes);
 app.route("/api/admin/milestones", milestonesRoutes);
 
-app.get("/api/health", (c) => c.json({ status: "ok" }));
+app.get("/api/health", (c) =>
+  c.json({
+    status: "ok",
+    authVersion: AUTH_VERSION,
+    dbPath: DB_PATH,
+  }),
+);
 
 const PORT = Number(process.env.PORT) || 3001;
 
 serve({ fetch: app.fetch, port: PORT }, () => {
   console.log(`Server running on http://localhost:${PORT}`);
+  console.log(`[auth] version=${AUTH_VERSION} db=${DB_PATH}`);
 });

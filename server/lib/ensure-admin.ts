@@ -8,9 +8,22 @@ import { resolve } from "path";
 const DB_PATH = resolve(PROJECT_ROOT, "data.db");
 
 export function getAdminCredentials(): { username: string; password: string } {
-  const username = (process.env.ADMIN_USERNAME || "admin").trim();
-  const password = (process.env.ADMIN_PASSWORD || "Neli5921").trim();
-  return { username, password };
+  const strip = (value: string | undefined, fallback: string) => {
+    if (!value?.trim()) return fallback;
+    let next = value.trim();
+    if (
+      (next.startsWith('"') && next.endsWith('"')) ||
+      (next.startsWith("'") && next.endsWith("'"))
+    ) {
+      next = next.slice(1, -1);
+    }
+    return next;
+  };
+
+  return {
+    username: strip(process.env.ADMIN_USERNAME, "admin"),
+    password: strip(process.env.ADMIN_PASSWORD, "Neli5921"),
+  };
 }
 
 export async function ensureAdminUser(options?: {
