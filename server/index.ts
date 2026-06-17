@@ -15,6 +15,16 @@ import publicRoutes from "./routes/public.js";
 import odooRoutes from "./routes/odoo.js";
 import sitemapRoutes from "./routes/sitemap.js";
 import { PROJECT_ROOT } from "./paths.js";
+import { ensureAdminUser } from "./lib/ensure-admin.js";
+
+try {
+  await ensureAdminUser();
+} catch (err) {
+  console.error(
+    "[auth] Admin senkronizasyonu başarısız:",
+    err instanceof Error ? err.message : err,
+  );
+}
 
 const app = new Hono();
 

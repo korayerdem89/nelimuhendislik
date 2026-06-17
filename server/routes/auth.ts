@@ -3,7 +3,7 @@ import { eq } from "drizzle-orm";
 import { db } from "../db/index.js";
 import { adminUsers } from "../db/schema.js";
 import { signToken } from "../middleware/auth.js";
-import { hashPassword } from "../lib/password.js";
+import { hashPassword, verifyPassword } from "../lib/password.js";
 
 const auth = new Hono();
 
@@ -25,8 +25,8 @@ auth.post("/login", async (c) => {
     return c.json({ error: "Geçersiz kullanıcı adı veya şifre" }, 401);
   }
 
-  const hashedInput = await hashPassword(password);
-  if (hashedInput !== user.passwordHash) {
+  const validPassword = await verifyPassword(password, user.passwordHash);
+  if (!validPassword) {
     return c.json({ error: "Geçersiz kullanıcı adı veya şifre" }, 401);
   }
 

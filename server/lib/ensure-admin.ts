@@ -1,0 +1,61 @@
+import { eq } from "drizzle-orm";
+import { db } from "../db/index.js";
+import { adminUsers } from "../db/schema.js";
+import { hashPassword, verifyPassword } from "./password.js";
+
+export function getAdminCredentials(): { username: string; password: string } {
+  const username = (process.env.ADMIN_USERNAME || "admin").trim();
+  const password = (process.env.ADMIN_PASSWORD || "Neli5921").trim();
+  return { username, password };
+}
+
+export async function ensureAdminUser(options?: {
+  force?: boolean;
+}): Promise<void> {
+  const { username, password } = getAdminCredentials();
+
+  if (!username) {
+    throw new Error("ADMIN_USERNAME boş olamaz.");
+  }
+
+  if (password.length < 6) {
+    throw new Error("ADMIN_PASSWORD en az 6 karakter olmalı.");
+  }
+
+  const existing = db
+    .select()
+    .from(adminUsers)
+    .where(eq(adminUsers.username, username))
+    .get();
+
+  if (!options?.force && existing) {
+    const valid = await verifyPassword(password, existing.passwordHash);
+    if (valid) {
+      return;
+    }
+  }
+
+  const passwordHash = await hashPassword(password);
+
+  if (options?.force) {
+    db.delete(adminUsers).run();
+  }
+
+  const current = db
+    .select()
+    .from(adminUsers)
+    .where(eq(adminUsers.username, username))
+    .get();
+
+  if (current) {
+    db.update(adminUsers)
+      .set({ passwordHash })
+      .where(eq(adminUsers.id, current.id))
+      .run();
+    console.log(`[auth] Admin şifresi güncellendi: ${username}`);
+    return;
+  }
+
+  db.insert(adminUsers).values({ username, passwordHash }).run();
+  console.log(`[auth] Admin kullanıcı oluşturuldu: ${username}`);
+}

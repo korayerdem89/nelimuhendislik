@@ -4,6 +4,7 @@ import {
   Routes,
   Route,
   useLocation,
+  Navigate,
 } from "react-router-dom";
 import { Toaster } from "sonner";
 import Navigation from "./components/Navigation";
@@ -104,6 +105,7 @@ function App() {
                 <Route path="/randevu" element={<Randevu />} />
                 <Route path="/showcase" element={<Showcase />} />
 
+                <Route path="/login" element={<Navigate to="/panel/login" replace />} />
                 <Route path="/panel/login" element={<PanelLogin />} />
                 <Route
                   path="/panel"

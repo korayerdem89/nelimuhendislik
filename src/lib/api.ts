@@ -35,6 +35,14 @@ function getToken(): string | null {
   return localStorage.getItem("admin_token");
 }
 
+function isPublicAuthEndpoint(endpoint: string): boolean {
+  return (
+    endpoint.includes("/api/auth/login") ||
+    endpoint.includes("/api/auth/setup") ||
+    endpoint.includes("/api/auth/check")
+  );
+}
+
 async function request<T>(
   endpoint: string,
   options: RequestInit = {},
@@ -52,23 +60,40 @@ async function request<T>(
     headers["Content-Type"] = "application/json";
   }
 
-  const res = await fetch(apiEndpoint(endpoint), {
-    cache: "no-store",
-    ...options,
-    headers,
-  });
-
-  if (res.status === 401) {
-    localStorage.removeItem("admin_token");
-    if (window.location.pathname.startsWith("/panel")) {
-      window.location.href = "/panel/login";
-    }
-    throw new Error("Unauthorized");
+  let res: Response;
+  try {
+    res = await fetch(apiEndpoint(endpoint), {
+      cache: "no-store",
+      ...options,
+      headers,
+    });
+  } catch {
+    throw new Error("Sunucuya bağlanılamadı. İnternet bağlantınızı kontrol edin.");
   }
 
   if (!res.ok) {
-    const error = await res.json().catch(() => ({ error: "Request failed" }));
-    throw new Error(error.error || "Request failed");
+    const error = await res.json().catch(() => ({
+      error: `İstek başarısız oldu (${res.status})`,
+    }));
+    const message =
+      typeof error.error === "string" && error.error
+        ? error.error
+        : `İstek başarısız oldu (${res.status})`;
+
+    if (res.status === 401 && !isPublicAuthEndpoint(endpoint)) {
+      localStorage.removeItem("admin_token");
+      localStorage.removeItem("admin_username");
+
+      const path = window.location.pathname;
+      const onLoginPage =
+        path === "/login" || path.startsWith("/panel/login");
+
+      if (path.startsWith("/panel") && !onLoginPage) {
+        window.location.href = "/panel/login";
+      }
+    }
+
+    throw new Error(message);
   }
 
   return res.json();

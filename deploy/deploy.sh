@@ -22,6 +22,10 @@ bunx drizzle-kit push
 # Seed if first run
 bun run db:seed
 
+# Admin giriş bilgilerini .env / varsayılanlarla senkronize et
+bun run db:reset-admin
+sudo chown www-data:www-data data.db 2>/dev/null || true
+
 # Restart backend
 sudo systemctl restart neli
 
