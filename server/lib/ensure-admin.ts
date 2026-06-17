@@ -2,6 +2,10 @@ import { eq } from "drizzle-orm";
 import { db } from "../db/index.js";
 import { adminUsers } from "../db/schema.js";
 import { hashPassword, verifyPassword } from "./password.js";
+import { PROJECT_ROOT } from "../paths.js";
+import { resolve } from "path";
+
+const DB_PATH = resolve(PROJECT_ROOT, "data.db");
 
 export function getAdminCredentials(): { username: string; password: string } {
   const username = (process.env.ADMIN_USERNAME || "admin").trim();
@@ -58,4 +62,27 @@ export async function ensureAdminUser(options?: {
 
   db.insert(adminUsers).values({ username, passwordHash }).run();
   console.log(`[auth] Admin kullanıcı oluşturuldu: ${username}`);
+}
+
+export function getAdminDiagnostics() {
+  const users = db.select().from(adminUsers).all();
+  const creds = getAdminCredentials();
+
+  return {
+    dbPath: DB_PATH,
+    adminCount: users.length,
+    admins: users.map((user) => ({
+      id: user.id,
+      username: user.username,
+      hashKind: user.passwordHash.startsWith("pbkdf2:")
+        ? "pbkdf2"
+        : user.passwordHash.startsWith("$2")
+          ? "bcrypt"
+          : "legacy-sha256",
+      createdAt: user.createdAt,
+    })),
+    envUsername: creds.username,
+    envPasswordLength: creds.password.length,
+    envPasswordConfigured: Boolean(process.env.ADMIN_PASSWORD?.trim()),
+  };
 }
