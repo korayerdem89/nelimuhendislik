@@ -3,17 +3,9 @@ import { eq } from "drizzle-orm";
 import { db } from "../db/index.js";
 import { adminUsers } from "../db/schema.js";
 import { signToken } from "../middleware/auth.js";
+import { hashPassword } from "../lib/password.js";
 
 const auth = new Hono();
-
-async function hashPassword(password: string): Promise<string> {
-  const encoder = new TextEncoder();
-  const data = encoder.encode(password + (process.env.JWT_SECRET || "neli-admin-secret-change-me"));
-  const hashBuffer = await crypto.subtle.digest("SHA-256", data);
-  return Array.from(new Uint8Array(hashBuffer))
-    .map((b) => b.toString(16).padStart(2, "0"))
-    .join("");
-}
 
 auth.post("/login", async (c) => {
   const body = await c.req.json();

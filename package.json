@@ -13,6 +13,7 @@
     "db:generate": "drizzle-kit generate",
     "db:push": "drizzle-kit push",
     "db:seed": "bun run server/db/seed.ts",
+    "db:reset-admin": "bun run server/db/reset-admin.ts",
     "db:studio": "drizzle-kit studio",
     "server": "bun run server/index.ts",
     "kill": "bun run killserver",

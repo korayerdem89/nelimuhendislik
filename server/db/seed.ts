@@ -2661,7 +2661,7 @@ const PROJECT_DATA = [
       ],
       totalUnits: 12,
       totalBlocks: 1,
-      landscapeRatio: "%40",
+      landscapeRatio: "%20",
       parking: "Kapali otopark + misafir park alani",
     },
     phases: [
