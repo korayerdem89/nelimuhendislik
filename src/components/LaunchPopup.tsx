@@ -3,7 +3,8 @@ import { createPortal } from "react-dom";
 import { useLocation } from "react-router-dom";
 import { X } from "lucide-react";
 
-const POPUP_IMAGE = "/popup/valorya4.webp";
+const POPUP_IMAGE_DESKTOP = "/popup/valorya4.webp";
+const POPUP_IMAGE_MOBILE = "/popup/valorya4mobile.webp";
 const STORAGE_KEY = "neli-launch-popup-dismissed";
 
 export default function LaunchPopup() {
@@ -71,13 +72,19 @@ export default function LaunchPopup() {
       aria-modal="true"
       aria-label="Duyuru"
     >
-      <img
-        src={POPUP_IMAGE}
-        alt="Valorya duyurusu"
-        className="block h-full w-full object-contain object-center"
-        fetchPriority="high"
-        draggable={false}
-      />
+      <picture>
+        <source
+          media="(max-width: 767px)"
+          srcSet={POPUP_IMAGE_MOBILE}
+        />
+        <img
+          src={POPUP_IMAGE_DESKTOP}
+          alt="Valorya duyurusu"
+          className="block h-full w-full object-contain object-center"
+          fetchPriority="high"
+          draggable={false}
+        />
+      </picture>
 
       <button
         type="button"
