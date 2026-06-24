@@ -2423,7 +2423,7 @@ const PROJECT_DATA = [
     description:
       "Kusursuz yalıtımlı, deprem güvenliği yüksek, 3 katlı modern apartman dairesi.",
     image: "/projects/valorya1/cover.webp",
-    status: "Satışta",
+    status: "Satışı Tamamlandı",
     details: {
       neighborhood: "Küçükçiğli Mahallesi",
       district: "Çiğli",
