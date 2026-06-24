@@ -63,56 +63,6 @@ interface ProjectData {
 
 const projects: ProjectData[] = [
   {
-    id: "valorya-1",
-    name: "Valorya 1",
-    tab: "Valorya 1",
-    location: "Balatçık Mahallesi, Çiğli, İzmir",
-    heroImage: "/projects/valorya1/cover.webp",
-    heroGradientFallback: "from-neli-700 via-neli-600 to-neli-500",
-    flatTypes: [
-      {
-        label: "1+1",
-        images: [
-          "/projects/valorya1/1.webp",
-          "/projects/valorya1/2.webp",
-          "/projects/valorya1/3.webp",
-          "/projects/valorya1/4.webp",
-          "/projects/valorya1/5.webp",
-          "/projects/valorya1/6.webp",
-          "/projects/valorya1/7.webp",
-        ],
-        bullets: [
-          "Kompakt ve işlevsel plan; genç profesyoneller ve yatırımcılar için uygun",
-          "Salon ve yatak odası ayrımı net; günlük kullanımda ferah his",
-          "Merkezi konum sayesinde ulaşım ve sosyal olanaklara yakınlık",
-        ],
-      },
-    ],
-    featureDetails: [
-      {
-        text: "Merkezi konum avantajı",
-        image: "/features/valorya1_location.webp",
-      },
-      {
-        text: "Depreme karşı oldukça dayanıklı yapı",
-        image: "/features/earthquake.webp",
-      },
-      {
-        text: "Enerji verimliliği yüksek, güçlü yalıtım",
-        image: "/features/isolation.webp",
-      },
-      {
-        text: "Modern ve minimalist tasarım",
-        image: "/features/minimalist.webp",
-      },
-      {
-        text: "Yüksek yatırım değeri",
-        image: "/features/investment.webp",
-      },
-    ],
-    price: "2.700.000 TL'den Başlayan Fiyatlarla",
-  },
-  {
     id: "valorya-2",
     name: "Valorya 2",
     tab: "Valorya 2",
