@@ -251,7 +251,7 @@ const projects: ProjectData[] = [
         image: "/features/isolation.webp",
       },
       {
-        text: "Modern ve fütürist tasarım",
+        text: "Modern ve fütüristik tasarım",
         image: "/features/futuristic.webp",
       },
       {
