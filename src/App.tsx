@@ -11,6 +11,7 @@ import Navigation from "./components/Navigation";
 import Footer from "./components/Footer";
 import AuthProvider from "./components/panel/AuthProvider";
 import ProtectedRoute from "./components/panel/ProtectedRoute";
+import LaunchPopup from "./components/LaunchPopup";
 
 const Home = lazy(() => import("./pages/Home"));
 const Projects = lazy(() => import("./pages/Projects"));
@@ -87,6 +88,7 @@ function App() {
   return (
     <Router>
       <AuthProvider>
+        <LaunchPopup />
         <div className="min-h-screen bg-cream-200/50">
           <div className="mx-auto min-h-screen max-w-[1440px] bg-white shadow-[0_0_60px_-15px_rgba(0,0,0,0.1)]">
             <ScrollToTop />
