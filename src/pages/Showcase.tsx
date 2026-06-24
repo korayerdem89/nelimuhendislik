@@ -279,6 +279,38 @@ const projects: ProjectData[] = [
     ],
     price: "3.500.000 TL'den Başlayan Fiyatlarla",
   },
+  {
+    id: "valorya-4",
+    name: "Valorya 4",
+    tab: "Valorya 4",
+    location: "Postacılar Mahallesi, Bayraklı, İzmir",
+    heroImage: "/projects/valorya4/cover.webp",
+    heroGradientFallback: "from-zinc-800 via-zinc-700 to-zinc-600",
+    flatTypes: [],
+    featureDetails: [
+      {
+        text: "Merkezi konum avantajı",
+        image: "/features/valorya1_location.webp",
+      },
+      {
+        text: "Depreme karşı oldukça dayanıklı yapı",
+        image: "/features/earthquake.webp",
+      },
+      {
+        text: "Enerji verimliliği yüksek, güçlü yalıtım",
+        image: "/features/isolation.webp",
+      },
+      {
+        text: "Modern ve fütürist tasarım",
+        image: "/features/futuristic.webp",
+      },
+      {
+        text: "Yüksek yatırım değeri",
+        image: "/features/investment.webp",
+      },
+    ],
+    price: "4.500.000 TL'den Başlayan Fiyatlarla",
+  },
 ];
 
 function FeatureDetailTagPills({
