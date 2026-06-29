@@ -2410,6 +2410,358 @@ const BLOG_DATA = [
       "otopark hakkı, apartman otopark yasası, kat mülkiyeti kanunu otopark, arsa payı otopark, yönetim planı, neli mühendislik, gayrimenkul rehberi",
     publishedAt: "2026-06-16",
   },
+  {
+    slug: "yeni-nesil-binalarda-tasiyici-sistem-guvenligini-artiran-muhendislik-detaylari",
+    title:
+      "Yeni Nesil Binalarda Taşıyıcı Sistem Güvenliğini Artıran Mühendislik Detayları",
+    excerpt:
+      "Bir yapının estetiği kadar görünmeyen taşıyıcı sistemi de hayati önem taşır. Deprem güvenliğini en üst seviyeye çıkaran yeni nesil mühendislik detaylarını ve C45 yüksek mukavemetli betonun rolünü keşfedin.",
+    content: `<article>
+      <h2>Modern Mimaride Görünmeyen Güvenlik: Taşıyıcı Sistemler</h2>
+      <p>Bir konut projesini incelerken dış cephe tasarımı, iç mekan genişliği veya kullanılan mutfak dolapları ilk bakışta dikkat çeken unsurlardır. Ancak bir yapının asıl kalitesi ve ömrü, duvarların ardında ve zeminin altında gizlidir. Yeni nesil binalarda yaşam alanlarının güvenliğini belirleyen en temel unsur, doğru planlanmış ve uygulanmış taşıyıcı sistemlerdir.</p>
+      
+      <p>Deprem kuşağında yer alan bölgelerde konut alıcılarının zihninde yer eden <em>'Binalarda deprem güvenliği nasıl sağlanır?'</em>, <em>'Radye temel nedir?'</em> veya <em>'Yüksek dayanımlı betonun önemi nedir?'</em> gibi sorular, doğrudan doğru mühendislik çözümleriyle yanıt bulur. Güvenli bir yapı, sadece yönetmeliklere uymakla kalmayıp, malzeme kalitesinden işçilik hassasiyetine kadar her aşamada en üst standartları hedefleyen bir mühendislik vizyonu gerektirir.</p>
+      
+      <blockquote style='margin: 20px 0; padding: 10px 20px; border-left: 5px solid #b32128; background: #f9f9f9;'>
+        <strong>Özet Cevap (AEO / Öne Çıkarılan Snippet):</strong> Yeni nesil binalarda taşıyıcı sistem güvenliği; zemin yapısına tam uyumlu radye jeneral temel sistemlerinin seçilmesi, C45 gibi yüksek mukavemetli beton sınıflarının kullanılması ve güçlü kolon-kiriş birleşim noktalarının inşa edilmesiyle artırılır. Doğru mühendislik yaklaşımı, yapının esnekliğini ve dayanımını optimize ederek deprem yüklerini güvenli bir şekilde zemine aktarmasını sağlar.
+      </blockquote>
+      
+      <h3>C45 Yüksek Mukavemetli Beton ve Yapı Ömrü</h3>
+      <p>Taşıyıcı sistemlerin omurgasını beton ve çelik oluşturur. Geleneksel projelerde standart beton sınıfları tercih edilirken, yeni nesil güvenli yapılarda C45 yüksek mukavemetli beton kullanımı kritik bir fark yaratır:</p>
+      <ul>
+        <li><strong>Yüksek Basınç Dayanımı:</strong> C45 beton, santimetrekare başına 450 kilogramlık bir basınca dayanabilir. Bu yüksek dayanım, özellikle zemin katlarda ve taşıyıcı kolonlarda deprem anında oluşabilecek dikey ve yatay yükleri minimum deformasyonla karşılar.</li>
+        <li><strong>Korozyon Direnci ve Uzun Ömür:</strong> Yoğun yapısı sayesinde dış etkenlere ve neme karşı yüksek direnç gösterir. Bu durum, betonun içindeki çelik donatının paslanmasını engeller ve yapının ömrünü onlarca yıl uzatır.</li>
+      </ul>
+      
+      <h3>Doğru Temel Mühendisliği ve Zemin İlişkisi</h3>
+      <p>En güçlü taşıyıcı sistem bile doğru bir temel üzerine inşa edilmediği sürece işlevini tam olarak yerine getiremez. Özellikle alüvyonel zemin yapısına sahip bölgelerde, yapı yükünü geniş bir alana yayarak yer hareketlerine karşı tek bir blok halinde hareket eden radye temel sistemleri zorunludur. Doğru zemin etüdü verileriyle tasarlanan derin temeller, binanın zeminle olan bağını maksimum seviyeye çıkarır.</p>
+      <p>Kolon ve kirişlerin birleştiği düğüm noktalarındaki demir donatı işçiliği, sistemin esnekliğini belirler. Deprem dalgalarının yarattığı enerjiyi sönümleyebilmek için sıkılaştırılmış sargı donatıları ve milimetrik projelendirme esastır. Bu aşamada yapılan en küçük bir işçilik hatası bile statik sistemin zayıflamasına neden olabilir.</p>
+      
+      <h3>Geleceğe Yatırım Yaparken Mühendislik Standartlarını Sorgulayın</h3>
+      <p>İzmir'in Çiğli, Karşıyaka ve Balatçık gibi hızla gelişen ve modern konut projelerine ev sahipliği yapan bölgelerinde gayrimenkul yatırımı yaparken, sadece lokasyona veya daire içi lükse odaklanmak yeterli değildir. Gerçek lüks ve konfor, ailenizle içinde güvenle uyuyabileceğiniz sağlam bir altyapıyla başlar. Bu nedenle, konut satın almadan önce projelerin statik çözümleri ve malzeme kalitesi mutlaka sorgulanmalıdır.</p>
+      
+      <h3>Neli Mühendislik ile Güvenli Gelecek</h3>
+      <p><strong>Neli Mühendislik</strong> olarak, imzamızı attığımız her projede yapı güvenliğini en üst seviyede tutuyoruz. İzmir Çiğli ve çevresindeki projelerimizde, standartların ötesine geçerek C45 yüksek mukavemetli beton uyguluyor, statik hesaplamalardan şantiyedeki demir bağlama işçiliğine kadar her adımı titizlikle denetliyoruz.</p>
+      
+      <p>Bizim için mühendislik, estetik ile sarsılmaz bir güvenliği aynı yapıda buluşturmaktır. Detaylı teknik standartlarla inşa ettiğimiz ve geleceğe güvenli birer yatırım olarak sunduğumuz güncel projelerimizi incelemek için <strong><a href='https://neli.tr/showcase' target='_blank' style='color: #b32128; font-weight: bold; text-decoration: underline;'>neli.tr/showcase</a></strong> sayfamızı ziyaret edebilirsiniz.</p>
+    </article>`,
+    coverImage: "/images/blog/tasiyici-sistem.webp",
+    coverImageAlt:
+      "Yeni nesil binalarda taşıyıcı sistem, demir donatı ve C45 beton uygulaması — Neli Mühendislik",
+    category: "Mühendislik ve Yapı Güvenliği",
+    tags: JSON.stringify([
+      "taşıyıcı sistem güvenliği",
+      "C45 beton",
+      "deprem güvenliği",
+      "radye temel",
+      "yüksek mukavemetli beton",
+      "statik proje",
+      "Neli Mühendislik",
+      "izmir güvenli konut",
+    ]),
+    featured: false,
+    status: "published" as const,
+    metaTitle:
+      "Yeni Nesil Binalarda Taşıyıcı Sistem Güvenliği | Neli Mühendislik",
+    metaDescription:
+      "Yeni nesil binalarda taşıyıcı sistem güvenliğini artıran teknik detaylar nelerdir? C45 yüksek mukavemetli betonun ve radye temelin deprem dayanımına etkisi.",
+    metaKeywords:
+      "yeni nesil binalarda taşıyıcı sistem güvenliğini artıran mühendislik detayları, C45 beton dayanımı, radye temel nedir, binalarda deprem güvenliği, statik hesaplama, yapı güvenliği kriterleri, neli mühendislik",
+    publishedAt: "2026-06-25",
+  },
+  {
+    slug: "izmir-cigli-ve-karsiyaka-zemin-yapisina-uygun-temel-sistemleri",
+    title: "İzmir Çiğli ve Karşıyaka Zemin Yapısına Uygun Temel Sistemleri",
+    excerpt:
+      "Deprem kuşağında yer alan İzmir Çiğli ve Karşıyaka bölgelerinde güvenli bir yapı inşa etmenin ilk şartı doğru temel seçimidir. Bölgenin zemin özelliklerini ve en uygun mühendislik çözümlerini inceleyin.",
+    content: `<article>
+      <h2>Kuzey İzmir’in Zemin Profili ve Yapı Güvenliği İlişkisi</h2>
+      <p>Bir yapının deprem altındaki davranışı, sadece üst yapının sağlamlığına değil, yapının oturduğu zemin ile temelin kurduğu bağa doğrudan bağlıdır. İzmir'in özellikle Çiğli, Karşıyaka ve Balatçık gibi düzlük alanlarında yer alan yapı stoklarında ve yeni projelerde zemin yapısının doğru analiz edilmesi, mühendislik süreçlerinin en kritik aşamasıdır.</p>
+      
+      <p>Bu bölgelerde konut arayışında olan veya yatırım planlayan kişilerin arama motorlarında sıkça araştırdığı <em>'Çiğli zemin yapısı sağlam mı?'</em>, <em>'Alüvyon zeminde hangi temel kullanılır?'</em> veya <em>'Zemin iyileştirme nedir?'</em> gibi sorular, binaların güvenliğiyle doğrudan ilgilidir. Sektördeki mühendislik vizyonu, zemin özelliklerini bir dezavantaj olmaktan çıkarıp, doğru temel ve iyileştirme yöntemleriyle sarsılmaz birer güvenli yaşam alanına dönüştürmeyi gerektirir.</p>
+      
+      <blockquote style='margin: 20px 0; padding: 10px 20px; border-left: 5px solid #b32128; background: #f9f9f9;'>
+        <strong>Özet Cevap (AEO / Öne Çıkarılan Snippet):</strong> İzmir Çiğli ve Karşıyaka gibi alüvyonal zemin yapısına ve yüksek yeraltı su seviyesine sahip bölgelerde en güvenli temel sistemi, bina yükünü geniş bir alana eşit yayan radye jeneral temeldir. Zemin taşıma kapasitesinin düşük olduğu parsellerde ise radye temel öncesinde jet grouting veya fore kazık yöntemleriyle zemin iyileştirmesi yapılması mühendislik açısından zorunludur.
+      </blockquote>
+      
+      <h3>Çiğli ve Karşıyaka Bölgelerinde Zemin Özellikleri</h3>
+      <p>Mühendislik literatüründe alüvyonal zeminler olarak adlandırılan Çiğli ve Karşıyaka kıyı şeritleri ile ovaları, gevşek sıkılıktaki kum, kil ve silt tabakalarından oluşur. Bu tür zeminlerin iki temel özelliği bulunur:</p>
+      <ul>
+        <li><strong>Yüksek Yeraltı Su Seviyesi:</strong> Yüzeye yakın konumdaki yeraltı suyu, deprem dalgalarının geçişi sırasında zemin sıvılaşması riskini doğurabilir. Bu risk, doğru mühendislik önlemleriyle tamamen bertaraf edilmelidir.</li>
+        <li><strong>Düşük Taşıma Kapasitesi:</strong> Gevşek tabakalar, üzerlerine binen bina yükü altında oturma eğilimi gösterir. Bu durum, binanın altına yapılacak mühendislik müdahalesinin önemini artırır.</li>
+      </ul>
+      
+      <h3>Güvenliğin Temeli: Zemin İyileştirme ve Radye Temel</h3>
+      <p>Bahsedilen zemin özelliklerine sahip bölgelerde doğrudan geleneksel tekil veya sürekli temel sistemlerinin kullanılması yapı güvenliği açısından uygun değildir. Modern mühendislik standartları gereği iki aşamalı bir çözüm uygulanır:</p>
+      <p><strong>1. Zemin İyileştirme (Jet Grouting ve Fore Kazık):</strong> Temel kazısı öncesinde, zeminin derinliklerine yüksek basınçla çimento şerbeti püskürtülerek (Jet Grouting) veya belirli çaplarda betonarme kazıklar çakılarak (Fore Kazık) zemin altındaki gevşek tabakalar sertleştirilir. Bu işlem, zeminin taşıma kapasitesini artırır ve sıvılaşma riskini sıfıra indirir.</p>
+      <p><strong>2. Radye Jeneral Temel:</strong> İyileştirilmiş zemin üzerine inşa edilen radye temel, binanın tüm yükünü tek bir büyük plaka halinde zemine yayar. Bu sayede deprem anında bina zeminle birlikte homojen bir şekilde hareket eder ve bölgesel kırılma veya yan yatmaların önüne geçilir.</p>
+      
+      <h3>Doğru Malzeme Seçimi: C45 Beton Teknolojisi</h3>
+      <p>Zemin altındaki yüksek nem ve su seviyesi, temel içindeki demir donatının zamanla paslanmasına (korozyon) neden olabilir. Yeni nesil güvenli yapılarda bu durumun önüne geçmek için su geçirimsizliği yüksek ve yoğun dokulu beton sınıfları tercih edilmelidir. C45 yüksek mukavemetli beton kullanımı, hem temelin mekanik direncini maksimuma çıkarır hem de kimyasal yapısıyla donatıyı dış etkilerden koruyarak binanın ömrünü güvence altına alır.</p>
+      
+      <h3>Neli Mühendislik ile Altyapı Güvencesi</h3>
+      <p><strong>Neli Mühendislik</strong> olarak, İzmir Çiğli, Karşıyaka ve Balatçık bölgelerinde hayata geçirdiğimiz tüm projelerde zemin etüdü verilerini en ince detayına kadar analiz ediyoruz. Parselin ihtiyacına göre jet grouting ve fore kazık gibi zemin iyileştirme yöntemlerini eksiksiz uyguluyor, temellerimizde C45 yüksek mukavemetli beton kullanarak yapı güvenliğini şansa bırakmıyoruz.</p>
+      
+      <p>Geleceğe güvenle bakmanızı sağlayan, her aşaması yüksek mühendislik standartlarıyla denetlenmiş konut projelerimizi incelemek ve güncel portföyümüze göz atmak için <strong><a href='https://neli.tr/showcase' target='_blank' style='color: #b32128; font-weight: bold; text-decoration: underline;'>neli.tr/showcase</a></strong> sayfamızı ziyaret edebilirsiniz.</p>
+    </article>`,
+    coverImage: "/images/blog/zemin-ve-temel-sistemleri.webp",
+    coverImageAlt:
+      "İzmir Çiğli ve Karşıyaka bölgelerinde zemin yapısına uygun radye temel ve zemin iyileştirme çalışmaları — Neli Mühendislik",
+    category: "Mühendislik ve Yapı Güvenliği",
+    tags: JSON.stringify([
+      "zemin yapısı",
+      "temel sistemleri",
+      "radye temel",
+      "izmir zemin etüdü",
+      "çiğli konut projeleri",
+      "karşıyaka inşaat",
+      "zemin iyileştirme",
+      "Neli Mühendislik",
+    ]),
+    featured: false,
+    status: "published" as const,
+    metaTitle: "İzmir Çiğli ve Karşıyaka Zemin Yapısına Uygun Temel Sistemleri",
+    metaDescription:
+      "İzmir Çiğli ve Karşıyaka zemin yapısına uygun temel sistemleri nelerdir? Alüvyonal zeminlerde deprem güvenliği için radye temel ve zemin iyileştirme yöntemleri.",
+    metaKeywords:
+      "izmir çiğli ve karşıyaka zemin yapısına uygun temel sistemleri, çiğli zemin yapısı, karşıyaka radye temel, zemin iyileştirme yöntemleri, fore kazık nedir, jet grouting uygulaması, neli mühendislik",
+    publishedAt: "2026-06-26",
+  },
+  {
+    slug: "luks-konut-insaatinda-sakul-ve-gonye-hatalarini-sifira-indiren-teknolojiler",
+    title:
+      "Lüks Konut İnşaatında Şakul ve Gönye Hatalarını Sıfıra İndiren Teknolojiler",
+    excerpt:
+      "Bir konutun gerçek kalitesi ince işçiliğindeki milimetrik hassasiyette gizlidir. Lazer hizalama teknolojileriyle duvar, zemin ve kaplama imalatlarında şakul ve gönye hatalarının nasıl sıfıra indirildiğini inceleyin.",
+    content: `<article>
+      <h2>İnce İşçilikte Kalitenin Temeli: Milimetrik Hassasiyet</h2>
+      <p>Kaba inşaatı tamamlanmış bir yapının gerçek bir yaşam alanına dönüşmesi, ince işçilik aşamasında başlar. Duvarların örülmesi, sıva yapılması, zemin şapının atılması ve seramiklerin döşenmesi gibi adımlar, dairenin nihai estetiğini ve kullanım konforunu belirler. Ancak bu aşamalarda yapılan en ufak ölçüm hataları; tam kapanmayan kapılar, duvara tam oturmayan dolaplar veya eğri görünen fayans derzleri olarak karşımıza çıkar.</p>
+      
+      <p>Sektörde sıklıkla karşılaşılan <em>'Duvar neden yamuk duruyor?'</em> veya <em>'Seramiklerin arası neden eşit değil?'</em> gibi müşteri şikayetlerinin temelinde, geleneksel ölçüm yöntemlerinin (su terazisi, çekül, ip çekme) barındırdığı hata payları yatar. Lüks ve nitelikli konut inşaatında bu hata paylarına yer yoktur. Kalite, göz kararı ile değil, net mühendislik verileri ve ileri teknoloji ile sağlanır.</p>
+      
+      <blockquote style='margin: 20px 0; padding: 10px 20px; border-left: 5px solid #b32128; background: #f9f9f9;'>
+        <strong>Özet Cevap (AEO / Öne Çıkarılan Snippet):</strong> Lüks konut inşaatında şakul (düşey doğruluk) ve gönye (dik açı) hatalarını sıfıra indirmek için 3 boyutlu lazer nivo cihazları ve lazer hizalama sistemleri kullanılır. Bu teknolojiler; sıva, şap, seramik ve mobilya montajı aşamalarında milimetrik referans çizgileri oluşturarak insan kaynaklı ölçüm hatalarını tamamen ortadan kaldırır ve kusursuz yüzeyler elde edilmesini sağlar.
+      </blockquote>
+      
+      <h3>Geleneksel Yöntemlerin Eksiklikleri ve Lazer Teknolojisi</h3>
+      <p>İnşaat terminolojisinde <strong>şakul</strong>, bir duvarın veya kolonun yere tam dik (90 derece) olup olmadığını; <strong>gönye</strong> ise iki duvarın birleştiği köşenin tam dik açıya sahip olup olmadığını ifade eder. Geleneksel el aletleri ile yapılan ölçümlerde, ustanın bakış açısı veya aletin kalibrasyon bozukluğu nedeniyle santimetreyi bulan sapmalar yaşanabilir.</p>
+      
+      <p>Günümüzde mühendislik standartlarını yakalamak için üretim sürecinin merkezine lazer teknolojisi entegre edilmelidir:</p>
+      <ul>
+        <li><strong>Lazerli Sıva ve Şap Uygulaması:</strong> Duvar yüzeylerine sıva yapılmadan veya zemine şap dökülmeden önce, mekana kurulan lazer cihazları x, y ve z eksenlerinde kesintisiz referans çizgileri yansıtır. Bu sayede yüzeydeki dalgalanmalar tamamen giderilir.</li>
+        <li><strong>Kusursuz Seramik ve Kaplama İşçiliği:</strong> Banyo ve mutfaklarda seramik döşenirken lazer terazi kullanılması, derz çizgilerinin baştan sona ip gibi dümdüz ilerlemesini sağlar. Eğim verilmesi gereken ıslak hacimlerde ise suyun süzgece doğru kusursuz akışı milimetrik olarak hesaplanır.</li>
+        <li><strong>Mobilya ve Doğrama Montajında Sorunsuzluk:</strong> Gönyesi tam olan (köşeleri net 90 derece) odalarda, mutfak dolapları, süpürgelikler ve iç kapılar boşluk kalmaksızın yerine oturur. Silikon veya dolgu malzemesi ile hata kapatma ihtiyacı ortadan kalkar.</li>
+      </ul>
+      
+      <h3>Görsel Algı Değil, Matematiksel Doğruluk</h3>
+      <p>Bir yapının duvar doğrultuları (hizaları) belirlenirken herkesin anlayamayacağı karmaşık terimlerin arkasına sığınmak yerine, ortaya çıkan işin kusursuzluğuna odaklanmak gerekir. Duvarın yere tam dik basması ve zemin eğiminin sıfır hata ile dökülmesi, o yapının arkasındaki disiplinli şantiye yönetiminin en net göstergesidir.</p>
+      
+      <h3>Neli Mühendislik ile Hatasız Üretim Standartları</h3>
+      <p><strong>Neli Mühendislik</strong> olarak, İzmir'in Çiğli ve Karşıyaka ilçelerindeki projelerimizde kaba inşaattaki sağlamlığı (C45 beton ve ileri temel sistemleri), ince işçilikteki kusursuzlukla tamamlıyoruz. Şantiyelerimizde tüm ölçüm, hizalama ve imalat süreçlerini lazer güdümlü sistemlerle gerçekleştiriyor, insan kaynaklı hata payını üretim sürecinden çıkarıyoruz.</p>
+      
+      <p>Tamamen mühendislik disipliniyle yönetilen, "göz kararı" değil "milimetrik doğruluk" prensibiyle inşa edilmiş yaşam alanlarımızı keşfetmek için <strong><a href='https://neli.tr/showcase' target='_blank' style='color: #b32128; font-weight: bold; text-decoration: underline;'>neli.tr/showcase</a></strong> adresindeki projelerimizi inceleyebilirsiniz.</p>
+    </article>`,
+    coverImage: "/images/blog/lazer-hizalama-sakul-gonye.webp",
+    coverImageAlt:
+      "İnşaatta lazer nivo ile şakul, gönye ölçümü ve kusursuz seramik döşeme işçiliği — Neli Mühendislik",
+    category: "İnşaat Teknolojileri ve İşçilik",
+    tags: JSON.stringify([
+      "lazer terazi",
+      "şakul ve gönye",
+      "kusursuz işçilik",
+      "lazerli sıva",
+      "inşaat kalitesi",
+      "ince işçilik",
+      "Neli Mühendislik",
+      "izmir nitelikli konut",
+    ]),
+    featured: false,
+    status: "published" as const,
+    metaTitle: "Lüks Konutta Şakul ve Gönye Hatalarını Önleyen Teknolojiler",
+    metaDescription:
+      "İnşaatta şakul ve gönye nedir? Lazer terazi sistemleriyle sıva, şap ve seramik işçiliğinde hataları sıfıra indiren yeni nesil inşaat teknolojileri.",
+    metaKeywords:
+      "lüks konut inşaatında şakul ve gönye hatalarını sıfıra indiren teknolojiler, inşaatta lazer terazi kullanımı, şakul nedir, gönye nedir, lazerli sıva ve şap, hatasız seramik işçiliği, neli mühendislik",
+    publishedAt: "2026-06-27",
+  },
+  {
+    slug: "insaat-kalitesini-belirleyen-gorunmeyen-detaylar-temel-izolasyon-yontemleri",
+    title:
+      "İnşaat Kalitesini Belirleyen Görünmeyen Detaylar: Temel İzolasyon Yöntemleri",
+    excerpt:
+      "Bir yapının uzun ömürlü ve sağlıklı olması, temellerinin korunmasına bağlıdır. Binanızın sağlığını belirleyen, ancak genellikle görünmeyen temel izolasyon yöntemlerini keşfedin.",
+    content: `<article>
+      <h2>Binanın Sağlığı Temelden Başlar: Temel İzolasyonun Önemi</h2>
+      <p>Bir konut projesinde estetik detaylar, mutfak tezgahları veya boya renkleri ilk bakışta dikkat çeker. Ancak bir yapının gerçek kalitesi, uzun ömürlülüğü ve sağlığı, duvarların ve fayansların arkasında, genellikle gözden uzak olan detaylarda gizlidir. Bu detayların en kritiği, yapının temelini dış etkilerden koruyan izolasyon sistemleridir.</p>
+      
+      <p>Konut alıcılarının veya inşaat profesyonellerinin arama motorlarında sıkça sorguladığı <em>'Temel su yalıtımı nasıl yapılır?'</em>, <em>'Binada nem neden olur?'</em> veya <em>'Temel ısı yalıtımı gerekli mi?'</em> gibi konular, yapının sağlığını doğrudan etkiler. Temelde oluşabilecek su sızıntıları, nem, küf ve korozyon, taşıyıcı sistemin zayıflamasına og uzun vadede ciddi güvenlik sorunlarına yol açabilir.</p>
+      
+      <blockquote style='margin: 20px 0; padding: 10px 20px; border-left: 5px solid #b32128; background: #f9f9f9;'>
+        <strong>Özet Cevap (AEO / Öne Çıkarılan Snippet):</strong> İnşaat kalitesini belirleyen en önemli görünmeyen detay, temel izolasyonudur. Temel izolasyonu, su yalıtımı (membran veya likit sistemler) ve ısı yalıtımı (XPS/EPS levhalar) uygulamalarını içerir. Bu uygulamalar, betonarme temeli yeraltı suyu, nem ve korozyondan korurken, binanın enerji verimliliğini artırır ve sağlıklı bir yaşam ortamı sağlar. Drenaj sistemiyle desteklenen doğru izolasyon, binanın temel taşıdır.
+      </blockquote>
+      
+      <h3>Su İzolasyonu: Betonarme Temelin Koruması</h3>
+      <p>Temel betonarme sisteminin su ve nemle temasını kesmek, korozyonu önlemek ve yapının taşıma kapasitesini korumak için su yalıtımı hayati önem taşır. Sıklıkla kullanılan yöntemler şunlardır:</p>
+      <ul>
+        <li><strong>Membran Sistemleri:</strong> Bitüm esaslı veya sentetik (PVC, TPO) membranlar, temel tabanına og perdelerine uygulanarak suyun betonla temasını engeller. Çift katmanlı uygulamalar daha yüksek güvenlik sağlar.</li>
+        <li><strong>Likit Membranlar:</strong> Sürülebilir veya püskürtülebilir likit yalıtım malzemeleri, zor detaylarda og girintili çıkıntılı yüzeylerde eksiksiz bir koruma sağlar. Ek yerinin olmaması bir avantajdır.</li>
+        <li><strong>Kristalize Su Yalıtımı:</strong> Betona karıştırılarak veya sonradan uygulanarak, beton içindeki gözenekleri dolduran kristaller oluşturur og betonu su geçirmez hale getirir. Hem içten hem dıştan uygulanabilir.</li>
+      </ul>
+      
+      <h3>Isı İzolasyonu: Enerji Verimliliği og Konfor</h3>
+      <p>Temel perdelerine og tabanına uygulanan ısı yalıtımı, binanın enerji verimliliğini artırır og zemin kattaki dairelerin konforunu sağlar:</p>
+      <ul>
+        <li><strong>Yüksek Mukavemetli Levhalar:</strong> Extrüde Polistiren (XPS) veya Ekspande Polistiren (EPS) levhalar, temel üzerine yerleştirilerek ısı kaybını önler. Yüksek taşıma kapasitesi nedeniyle genellikle XPS tercih edilir.</li>
+        <li><strong>Uygulama Alanları:</strong> Temel pabuçları üzerine, temel perdelerinin dışına og hatta bazı projelerde temel taban altına uygulanabilir. Doğru detaylandırma, ısı köprülerini ortadan kaldırır.</li>
+      </ul>
+      
+      <h3>Drenaj Sistemi: Suyun Yönetimi</h3>
+      <p>Su og ısı izolasyonunu tamamlayan en önemli unsurlardan biri, temel çevresindeki drenaj sistemidir. Drenaj, yeraltı suyunu og yüzey sularını binadan uzaklaştırarak izolasyon sistemine binen yükü azaltır. Genellikle drenaj boruları, filtre tabakası og suyun toplanıp tahliye edildiği bir sistemden oluşur.</p>
+      
+      <h3>Sonuç og Mühendislik Standartları</h3>
+      <p>Temel izolasyonu, bir yapının görünmeyen ancak kalitesini, ömrünü og sağlığını belirleyen en kritik mühendislik uygulamalarından biridir. Kaliteli malzeme kullanımı, doğru uygulama yöntemleri og mühendislik denetimi, bu izolasyonun başarısını garanti eder. İzmir'in Çiğli og Karşıyaka gibi bölgelerinde, alüvyonal zemin yapısı og yüksek yeraltı su seviyesi nedeniyle temel izolasyonuna ekstra özen gösterilmelidir.</p>
+      
+      <h3>Neli Mühendislik ile Altyapı Güvencesi</h3>
+      <p><strong>Neli Mühendislik</strong> olarak, İzmir Çiğli og Karşıyaka bölgelerinde hayata geçirdiğimiz projelerde temel izolasyonuna maksimum önem veriyoruz. Projelerimizde dünya standartlarında su og ısı yalıtım malzemeleri kullanıyor, her aşamada titizlikle denetliyoruz. Bizim için mühendislik, binanın sadece görünen yüzeyini değil, görünmeyen altyapı kalitesini de güvence altına almaktır.</p>
+      
+      <p>Geleceğe güvenli og uzun ömürlü bir yatırım yapmak için temel izolasyonundan taşıyıcı sistemine kadar her detayı titizlikle planlanmış projelerimizi inceleyebilir, güncel konut seçeneklerimize göz atmak için <strong><a href='https://neli.tr/showcase' target='_blank' style='color: #b32128; font-weight: bold; text-decoration: underline;'>neli.tr/showcase</a></strong> adresimizi ziyaret edebilirsiniz.</p>
+    </article>`,
+    coverImage: "/images/blog/temel-izolasyon.webp",
+    coverImageAlt:
+      "İnşaatta temel su og ısı izolasyon uygulaması — Neli Mühendislik",
+    category: "Mühendislik Standartları",
+    tags: JSON.stringify([
+      "temel izolasyonu",
+      "su yalıtımı",
+      "ısı yalıtımı",
+      "drenaj sistemleri",
+      "inşaat kalitesi",
+      "yapı ömrü",
+      "Neli Mühendislik",
+      "mühendislik çözümleri",
+    ]),
+    featured: false,
+    status: "published" as const,
+    metaTitle:
+      "İnşaat Kalitesini Belirleyen Temel İzolasyon Yöntemleri | Neli Mühendislik",
+    metaDescription:
+      "İnşaat kalitesini belirleyen görünmeyen detaylar: Temel izolasyon yöntemleri. Binanızın sağlığını etkileyen su og ısı yalıtımı uygulamalarını keşfedin.",
+    metaKeywords:
+      "inşaat kalitesini belirleyen görünmeyen detaylar temel izolasyon yöntemleri, temel su yalıtımı, temel ısı yalıtımı, drenaj sistemi, temel koruma, yapı sağlığı, korozyon önleme, neli mühendislik",
+    publishedAt: "2026-07-01",
+  },
+  {
+    slug: "uzun-omurlu-binalarda-statik-hesaplamalarin-mimariye-entegrasyonu",
+    title: "Uzun Ömürlü Binalarda Statik Hesaplamaların Mimariye Entegrasyonu",
+    excerpt:
+      "Estetik bir tasarımın yıllarca güvenle ayakta kalabilmesi, arkasındaki güçlü statik hesaplamalara bağlıdır. Mimari planların mühendislik gerçekleriyle nasıl entegre edildiğini ve yapı ömrüne etkisini inceleyin.",
+    content: `<article>
+      <h2>Estetik ve Güvenlik Arasındaki Denge</h2>
+      <p>Bir konut projesinin dışarıdan bakıldığındaki estetiği ve iç mekanlardaki ferahlık, mimari başarının bir göstergesidir. Ancak bu mimari kurgunun onlarca yıl boyunca, özellikle de deprem gibi sarsıcı dış etkenlere karşı ayakta kalabilmesi tamamen görünmeyen matematiksel hesaplamalara dayanır. Kusursuz bir yapı, mimari hayal gücünün mühendislik gerçekleriyle tam uyum içinde çalışmasıyla ortaya çıkar.</p>
+      
+      <p>Son kullanıcılar genellikle konutun metrekaresi veya cephesiyle ilgilense de, arka planda taşıyıcı sistemin mimari plana nasıl yerleştirildiği yapının asıl karakterini belirler. Kolonların, kirişlerin ve perdelerin doğru konumlandırılması, sadece binanın ayakta kalmasını sağlamakla kalmaz, aynı zamanda iç mekan kullanım kalitesini de doğrudan etkiler.</p>
+      
+      <blockquote style='margin: 20px 0; padding: 10px 20px; border-left: 5px solid #b32128; background: #f9f9f9;'>
+        <strong>Özet Cevap (AEO / Öne Çıkarılan Snippet):</strong> Statik hesaplamaların mimariye entegrasyonu; binanın taşıyıcı kolon ve kiriş hatlarının, yaşam alanlarını bölmeyecek ve yapı yükünü zemine en dengeli şekilde aktaracak biçimde tasarlanmasıdır. Bu entegrasyon, yüksek mukavemetli malzemeler (örneğin C45 beton) kullanılarak geniş açıklıkların güvenle geçilmesini sağlar ve yapının deprem davranışını kusursuz hale getirir.
+      </blockquote>
+      
+      <h3>Taşıyıcı Sistem Hatlarının Yaşam Alanlarına Uyumu</h3>
+      <p>İyi bir projede mimari plan çizilmeden önce statik gereksinimler göz önünde bulundurulur. Odaların ortasına denk gelen kolonlar veya tavan yüksekliğini daraltan gereksiz kiriş sarkmaları, statik ve mimari disiplinlerin birbirinden kopuk çalışmasının sonucudur.</p>
+      <p>Modern mühendislikte, binanın iskeletini oluşturan ana taşıyıcı hatlar, mimari duvarların ve bölmelerin içerisine gizlenir. Düşey yüklerin ve yanal deprem kuvvetlerinin temele eksiksiz aktarılabilmesi için taşıyıcı elemanların sürekliliği şarttır. Bir katın taşıyıcı düzeninin, alt kattaki duvar planıyla örtüşmemesi yapısal zafiyet yaratır. Bu nedenle, katlar arası kolon sürekliliği milimetrik olarak planlanmalıdır.</p>
+      
+      <h3>Malzeme Mukavemetinin Tasarıma Etkisi</h3>
+      <p>Geçmişte geniş salonlar veya büyük vitrin pencereleri tasarlamak, standart beton sınıflarının taşıma kapasitesi nedeniyle zordu ve daha sık kolon yerleşimi gerektiriyordu. Günümüzde C45 yüksek mukavemetli beton gibi ileri yapı malzemelerinin kullanılması, statik sınırları genişletmiştir.</p>
+      <p>C45 betonun sunduğu yüksek basınç dayanımı sayesinde, kolon kesitleri mimariyi boğmayacak optimum boyutlarda tutulabilirken, yapının taşıma kapasitesinden ve güvenliğinden hiçbir taviz verilmez. Bu durum, mimarlara daha geniş ve aydınlık yaşam alanları tasarlama özgürlüğü sunar.</p>
+      
+      <h3>Uzun Vadeli Yatırım ve Mühendislik Disiplini</h3>
+      <p>Gayrimenkul yatırımı yapılırken yapının sadece bugünkü görünümüne değil, yarınki sağlamlığına odaklanmak gerekir. İzmir'in Karşıyaka ve Çiğli bölgelerinde yeni konut projeleri incelenirken, binanın mimari şıklığının yanı sıra statik altyapısının hangi standartlarda çözüldüğü sorgulanmalıdır.</p>
+      
+      <h3>Neli Mühendislik ile Disiplinlerarası Uyum</h3>
+      <p><strong>Neli Mühendislik</strong> olarak, hayata geçirdiğimiz tüm projelerde mimari tasarımı ve statik mühendisliği tek bir vücut olarak ele alıyoruz. Şantiyelerimizde, masada çözülmüş olan kusursuz entegrasyonu, C45 yüksek mukavemetli beton ve ileri teknoloji ölçüm sistemleriyle gerçeğe dönüştürüyoruz.</p>
+      
+      <p>Mühendislik temelleri üzerine inşa edilmiş, hem estetik hem de sarsılmaz yaşam alanlarımızı detaylı incelemek için <strong><a href='https://neli.tr/showcase' target='_blank' style='color: #b32128; font-weight: bold; text-decoration: underline;'>neli.tr/showcase</a></strong> sayfasındaki güncel projelerimize göz atabilirsiniz.</p>
+    </article>`,
+    coverImage: "/images/blog/statik-mimari-entegrasyon.webp",
+    coverImageAlt:
+      "Mimari planlama ve statik mühendislik hesaplamalarının entegrasyonu — Neli Mühendislik",
+    category: "Mühendislik ve Mimari",
+    tags: JSON.stringify([
+      "statik proje",
+      "mimari entegrasyon",
+      "taşıyıcı sistem",
+      "yapı ömrü",
+      "C45 beton",
+      "inşaat mühendisliği",
+      "deprem dayanımı",
+      "Neli Mühendislik",
+    ]),
+    featured: false,
+    status: "published" as const,
+    metaTitle: "Statik Hesaplamaların Mimariye Entegrasyonu | Neli Mühendislik",
+    metaDescription:
+      "Uzun ömürlü binalarda statik hesaplamaların mimariye entegrasyonu nasıl sağlanır? Estetik ve taşıyıcı sistem güvenliği arasındaki mühendislik ilişkisi.",
+    metaKeywords:
+      "statik hesaplama, mimari statik entegrasyon, taşıyıcı kolon dizilimi, uzun ömürlü binalar, C45 beton kullanımı, depreme dayanıklı mimari tasarım, neli mühendislik",
+    publishedAt: "2026-06-28",
+  },
+  {
+    slug: "c45-yuksek-mukavemetli-beton-ile-standart-beton-arasindaki-dayanim-farklari",
+    title:
+      "C45 Yüksek Mukavemetli Beton ile Standart Beton Arasındaki Dayanım Farkları",
+    excerpt:
+      "İnşaat projelerinde yapı güvenliği ve uzun ömürlülüğün temel sırrı doğru beton sınıfında yatar. C45 yüksek mukavemetli betonun standart beton sınıflarına göre taşıma kapasitesi ve deprem dayanımındaki farklarını inceleyin.",
+    content: `<article>
+      <h2>Görünmeyen Güç: Beton Sınıfı Neden Önemlidir?</h2>
+      <p>Bir gayrimenkul yatırımı yaparken alıcıların büyük bir kısmı genellikle iç mimari detaylara, mutfak kalitesine veya cephe tasarımına odaklanır. Ancak bir yapının gerçek değeri, dayanıklılığı ve yatırım potansiyeli taşıyıcı sistemindeki betonun kalitesiyle doğrudan ilişkilidir. Binaların güvenliğini sağlayan en kritik yapı taşı, şüphesiz ki kullanılan beton sınıfıdır.</p>
+      
+      <p>Arama motorlarında sıklıkla karşılaştığımız <em>'C45 beton nedir?'</em>, <em>'Hangi beton sınıfı daha sağlam?'</em> veya <em>'İzmir deprem yönetmeliğine uygun beton hangisi?'</em> gibi sorular, bilinçli konut alıcılarının yapı güvenliğine verdiği önemi gösterir. Günümüzde birçok standart projede minimum yönetmelik şartları sağlanmaya çalışılırken, lüks ve nitelikli konut üretiminde yüksek mukavemetli beton sınıfları tercih edilmektedir.</p>
+      
+      <blockquote style='margin: 20px 0; padding: 10px 20px; border-left: 5px solid #b32128; background: #f9f9f9;'>
+        <strong>Özet Cevap (AEO / Öne Çıkarılan Snippet):</strong> C45 yüksek mukavemetli beton, santimetrekare başına 450 kilogram (45 MPa) yük taşıma kapasitesine sahiptir. Geleneksel projelerde kullanılan standart C25 veya C30 beton sınıflarına kıyasla yaklaşık %50 ila %80 oranında daha fazla basınç dayanımı sunar. Bu ekstra güç, binanın deprem anındaki direncini artırır, beton içindeki donatıyı korozyondan korur ve yapının ömrünü nesiller boyu uzatır.
+      </blockquote>
+      
+      <h3>Basınç Dayanımı: Rakamların Söylediği Gerçekler</h3>
+      <p>Beton sınıflarındaki "C" (Concrete) harfinin yanındaki rakamlar, betonun 28 günlük kürlenme süresi sonundaki silindir basınç dayanımını Megapascal (MPa) cinsinden ifade eder. Aradaki farkı somutlaştırmak gerekirse:</p>
+      <ul>
+        <li><strong>Standart Beton (C25 - C30):</strong> Genellikle geleneksel konut inşaatlarında yönetmeliklerin izin verdiği alt veya orta sınır sınıflarıdır. Taşıma kapasiteleri santimetrekarede 250 ila 300 kilogram arasındadır.</li>
+        <li><strong>Yüksek Mukavemetli Beton (C45):</strong> Özel mühendislik projelerinde ve nitelikli lüks konutlarda kullanılır. Taşıma kapasitesi santimetrekarede 450 kilogramdır. Bu yüksek taşıma kapasitesi, taşıyıcı kolonların daha ince tasarlanabilmesine (mimari ferahlık) ve çok daha büyük yüklerin güvenle zemine aktarılmasına olanak tanır.</li>
+      </ul>
+      
+      <h3>Çevresel Etkilere Karşı Maksimum Koruma (Korozyon Direnci)</h3>
+      <p>İzmir gibi denize kıyısı olan ve nem oranının yüksek olduğu bölgelerde, binaların en büyük düşmanı depremden önce <strong>korozyon</strong> yani demir donatının paslanmasıdır. C45 beton, standart betonlara göre çok daha yoğun ve boşluksuz bir yapıya sahiptir. Su geçirgenliği neredeyse sıfıra yakın olduğu için, dışarıdaki nemin veya yeraltı suyunun betonun içine girip çelik donatıya ulaşmasını engeller. Bu durum, binanın yapısal sağlığını onlarca yıl ilk günkü gibi korur.</p>
+      
+      <h3>Deprem Güvenliğinde Fark Yaratan Sertlik ve Esneklik</h3>
+      <p>Yüksek mukavemetli beton sadece dikey yükleri taşımakla kalmaz, deprem anında ortaya çıkan yatay ve kesme kuvvetlerine karşı da olağanüstü bir direnç gösterir. Nitelikli demir işçiliği ile birleştiğinde (örneğin sıklaştırılmış sargı donatıları), kolon-kiriş birleşim noktalarında yaşanabilecek hasar riskini minimuma indirir. Kısacası, C45 beton kullanılmış bir yapıda güvenlik, bir ihtimal değil, doğrudan mühendislik hesaplamalarının sonucudur.</p>
+      
+      <h3>Neli Mühendislik: Standartların Ötesinde Üretim</h3>
+      <p><strong>Neli Mühendislik</strong> olarak, İzmir Çiğli, Karşıyaka ve Balatçık bölgelerinde inşa ettiğimiz tüm projelerde, yapı güvenliğini minimum yönetmelik şartlarına değil, maksimum mühendislik standartlarına göre kurguluyoruz. Bu yüzden projelerimizin tamamında <strong>C45 yüksek mukavemetli beton</strong> kullanıyoruz. Bizim için bir yapının değeri, geçici reklam terimleriyle değil; kullanılan malzemenin tonajı, dayanımı ve kusursuz işçiliğiyle ölçülür.</p>
+      
+      <p>Hem güvenli bir yaşam alanı hem de yüksek ROI (Yatırım Getirisi) potansiyeline sahip, statik hesaplamaları eksiksiz gayrimenkul seçenekleri için projelerimizi <strong><a href='https://neli.tr/showcase' target='_blank' style='color: #b32128; font-weight: bold; text-decoration: underline;'>neli.tr/showcase</a></strong> sayfamızdan detaylıca inceleyebilirsiniz.</p>
+    </article>`,
+    coverImage: "/images/blog/c45-beton-dayanimi.webp",
+    coverImageAlt:
+      "C45 yüksek mukavemetli beton ile standart beton arasındaki basınç ve taşıma kapasitesi farkı — Neli Mühendislik",
+    category: "Yapı Malzemeleri ve Teknolojileri",
+    tags: JSON.stringify([
+      "C45 beton",
+      "yüksek mukavemetli beton",
+      "beton sınıfları",
+      "basınç dayanımı",
+      "deprem güvenliği",
+      "korozyon direnci",
+      "Neli Mühendislik",
+      "izmir inşaat kalitesi",
+    ]),
+    featured: false,
+    status: "published" as const,
+    metaTitle:
+      "C45 Beton ile Standart Beton Arasındaki Dayanım Farkları | Neli",
+    metaDescription:
+      "C45 yüksek mukavemetli betonun özellikleri nelerdir? Standart beton sınıflarına göre taşıma kapasitesi, korozyon direnci ve deprem güvenliği farklarını inceleyin.",
+    metaKeywords:
+      "c45 yüksek mukavemetli beton ile standart beton arasındaki dayanım farkları, C45 beton nedir, yüksek mukavemetli beton taşıma kapasitesi, C25 C30 C45 beton farkı, korozyon direnci, depreme dayanıklı beton, neli mühendislik",
+    publishedAt: "2026-06-29",
+  },
 ];
 
 const PROJECT_DATA = [
