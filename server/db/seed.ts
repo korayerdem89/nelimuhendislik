@@ -2379,7 +2379,6 @@ const BLOG_DATA = [
     <h3>Otopark Hakkını Belirleyen Temel Unsurlar</h3>
     <p>Yatırımınızı yaparken otopark kullanım hakkınızı garanti altına almak ve ileride komşularla yaşanabilecek anlaşmazlıkların önüne geçmek için şu hukuki belgelere dikkat edilmelidir:</p>
     <ul>
-      <li><strong>Mimari Proje Onayı:</strong> Yapı ruhsatı alınırken çizilen onaylı mimari projede, otopark alanlarının numaralandırılarak bağımsız bölümlere tahsis edilip edilmediği kontrol edilmelidir. Tahsis varsa, her dairenin park yeri sabittir.</li>
       <li><strong>Tapu Yönetim Planı:</strong> Tapu sicilinde yer alan yönetim planı, ortak alanların anayasasıdır. Otoparkın kullanım şekli ve kuralları burada yazar. Yönetim planında aksi bir karar yoksa, Kat Mülkiyeti Kanunu'nun genel hükümleri uygulanır.</li>
       <li><strong>Arsa Payı Esası:</strong> Projede net bir tahsis yapılmamış ortak otopark alanlarında, hiçbir kat maliki otoparkı tek başına sahiplenemez. Kullanım hakkı arsa payı oranına göre adil şekilde paylaştırılır.</li>
     </ul>
