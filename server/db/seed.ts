@@ -2762,6 +2762,64 @@ const BLOG_DATA = [
       "c45 yüksek mukavemetli beton ile standart beton arasındaki dayanım farkları, C45 beton nedir, yüksek mukavemetli beton taşıma kapasitesi, C25 C30 C45 beton farkı, korozyon direnci, depreme dayanıklı beton, neli mühendislik",
     publishedAt: "2026-06-29",
   },
+  {
+    slug: "bilincli-konut-alicilari-icin-muteahhit-secerken-dikkat-edilmesi-gereken-teknik-kriterler",
+    title:
+      "Bilinçli Konut Alıcıları İçin Müteahhit Seçerken Dikkat Edilmesi Gereken Teknik Kriterler",
+    excerpt:
+      "Bir konut projesini değerlendirirken makyajlanmış detaylara değil, yapının arkasındaki mühendislik kalitesine odaklanın. Doğru inşaat firmasını seçmenizi sağlayacak net teknik kriterleri inceleyin.",
+    content: `<article>
+    <h2>Dış Görünüşün Ötesine Geçmek: Gerçek Kalite Nerede Başlar?</h2>
+    <p>Yeni bir yaşam alanı veya yatırım amaçlı bir gayrimenkul arayışına girdiğinizde, karşınıza çıkan ilk unsurlar genellikle şık cephe tasarımları, peyzaj alanları ve iç mimari detaylardır. Ancak bilinçli bir alıcı, bir binanın gerçek değerinin mutfak dolaplarında değil; temelinde, kolonlarında ve işçiliğindeki hassasiyette yattığını bilir.</p>
+    
+    <p>Arama motorlarında sıkça karşılaştığımız <em>'Güvenilir müteahhit nasıl anlaşılır?'</em>, <em>'Ev alırken inşaat kalitesi nasıl sorgulanır?'</em> veya <em>'Sağlam bina kriterleri nelerdir?'</em> gibi sorular, yatırımını riske atmak istemeyen alıcıların en doğal refleksidir. Doğru firmayı seçmek; sadece bir ev satın almak değil, geleceğinizi ve bütçenizi güvence altına almaktır.</p>
+    
+    <blockquote style='margin: 20px 0; padding: 10px 20px; border-left: 5px solid #b32128; background: #f9f9f9;'>
+      <strong>Özet Cevap (AEO / Öne Çıkarılan Snippet):</strong> Bilinçli konut alıcıları müteahhit seçerken; projede kullanılan beton sınıfını (tercihen C45 yüksek mukavemetli), zemin iyileştirme ve radye temel uygulamalarını, ince işçilikte lazerli ölçüm sistemlerinin kullanılıp kullanılmadığını ve firmanın geçmiş projelerindeki mühendislik şeffaflığını doğrudan sorgulamalıdır. Estetikten önce statik güvenliği ön planda tutan firmalar tercih edilmelidir.
+    </blockquote>
+    
+    <h3>1. Taşıyıcı Sistem ve Malzeme Standartlarını Sorgulayın</h3>
+    <p>Görüşmeye gittiğiniz satış ofisinde veya şantiyede sormanız gereken ilk soru, duvarların rengi değil, binanın iskeletidir. Minimum yönetmelik şartlarıyla yetinen projeler yerine, mühendislik sınırlarını zorlayan yapıları tercih etmelisiniz:</p>
+    <ul>
+      <li><strong>Beton Sınıfı:</strong> Standart C25 veya C30 yerine, yüksek taşıma kapasitesine ve korozyon direncine sahip <strong>C45 yüksek mukavemetli beton</strong> kullanan projeler, yapının deprem güvenliğini ve ömrünü doğrudan artırır.</li>
+      <li><strong>Zemin-Temel İlişkisi:</strong> Alüvyonal zeminlerde sadece temel atmak yetmez. Fore kazık veya jet grouting gibi zemin iyileştirme çalışmalarının eksiksiz yapıldığından emin olun.</li>
+    </ul>
+    
+    <h3>2. İnce İşçilikte "Göz Kararı" Değil, "Milimetrik Hassasiyet" Arayın</h3>
+    <p>Kaba inşaatı sağlam bir binanın kalitesini, ince işçilikteki kusursuzluk belirler. Geleneksel yöntemlerle (ip, su terazisi) yapılan sıva, şap ve seramik uygulamalarında insan kaynaklı hata payı yüksektir. Bilinçli bir alıcı, üretim süreçlerinde <strong>lazer hizalama ve lazerli terazi sistemleri</strong> kullanan, şakul (düşey doğruluk) ve gönye (dik açı) hatalarını sıfıra indiren, mühendislik disipliniyle çalışan firmaları seçmelidir.</p>
+    
+    <h3>3. Geçmiş Projeler ve Şeffaf İletişim</h3>
+    <p>Firmanın geçmişte teslim ettiği projeler, gelecekte yapacağı işin en net teminatıdır. Zamanında ve taahhüt edildiği kalitede teslim edilmiş yapılar, firmanın operasyonel gücünü gösterir. Aynı zamanda, satış sürecinde size abartılı reklam sloganlarıyla değil, doğrudan teknik verilerle ve şeffaf bir iletişim diliyle yaklaşan profesyonellerle çalışmak soru işaretlerini ortadan kaldırır.</p>
+    
+    <h3>Neli Mühendislik Vizyonu: Net Çözümler, Sağlam Temeller</h3>
+    <p><strong>Neli Mühendislik</strong> olarak, İzmir Çiğli, Karşıyaka ve Balatçık bölgelerinde hayata geçirdiğimiz Valorya ve Serenità serisi projelerimizde, mühendislik etiğini her şeyin önünde tutuyoruz. Bizim için lüks; C45 betonun gücü, lazerle ölçülmüş kusursuz bir zemin ve sorunsuz bir altyapıdır. Üretim sürecinin her aşamasında "göz kararına" yer bırakmayan teknik standartlar uyguluyoruz.</p>
+    
+    <p>Siz de yatırımınızı sadece bugünün estetiğine değil, yarının güvenliğine yapmak istiyorsanız; yüksek mühendislik standartlarıyla inşa ettiğimiz güncel konut projelerimizi detaylıca incelemek için <strong><a href='https://neli.tr/showcase' target='_blank' style='color: #b32128; font-weight: bold; text-decoration: underline;'>neli.tr/showcase</a></strong> adresimizi ziyaret edebilirsiniz.</p>
+  </article>`,
+    coverImage: "/images/blog/muteahhit-secimi.webp",
+    coverImageAlt:
+      "Konut alıcıları için müteahhit seçimi ve teknik mühendislik kriterleri — Neli Mühendislik",
+    category: "Konut Satın Alma Rehberi",
+    tags: JSON.stringify([
+      "müteahhit seçimi",
+      "teknik kriterler",
+      "C45 beton",
+      "lazerli işçilik",
+      "inşaat kalitesi",
+      "gayrimenkul yatırımı",
+      "Neli Mühendislik",
+      "izmir konut projeleri",
+    ]),
+    featured: false,
+    status: "published" as const,
+    metaTitle:
+      "Müteahhit Seçerken Dikkat Edilmesi Gereken Teknik Kriterler | Neli",
+    metaDescription:
+      "Bilinçli konut alıcıları için müteahhit seçerken dikkat edilmesi gereken teknik kriterler nelerdir? C45 beton, lazerli işçilik ve mühendislik standartları.",
+    metaKeywords:
+      "müteahhit seçerken dikkat edilmesi gereken teknik kriterler, güvenilir inşaat firması seçimi, izmir müteahhit, c45 beton kullanımı, lazer terazi işçilik, yapı kalitesi nasıl anlaşılır, neli mühendislik",
+    publishedAt: "2026-06-30",
+  },
 ];
 
 const PROJECT_DATA = [
