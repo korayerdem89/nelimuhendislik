@@ -2504,7 +2504,7 @@ const BLOG_DATA = [
       
       <p>Geleceğe güvenle bakmanızı sağlayan, her aşaması yüksek mühendislik standartlarıyla denetlenmiş konut projelerimizi incelemek ve güncel portföyümüze göz atmak için <strong><a href='https://neli.tr/showcase' target='_blank' style='color: #b32128; font-weight: bold; text-decoration: underline;'>neli.tr/showcase</a></strong> sayfamızı ziyaret edebilirsiniz.</p>
     </article>`,
-    coverImage: "/images/blog/zemin-ve-temel-sistemleri.webp",
+    coverImage: "/images/blog/zemin-ve-temel.webp",
     coverImageAlt:
       "İzmir Çiğli ve Karşıyaka bölgelerinde zemin yapısına uygun radye temel ve zemin iyileştirme çalışmaları — Neli Mühendislik",
     category: "Mühendislik ve Yapı Güvenliği",
@@ -2561,7 +2561,7 @@ const BLOG_DATA = [
       
       <p>Tamamen mühendislik disipliniyle yönetilen, "göz kararı" değil "milimetrik doğruluk" prensibiyle inşa edilmiş yaşam alanlarımızı keşfetmek için <strong><a href='https://neli.tr/showcase' target='_blank' style='color: #b32128; font-weight: bold; text-decoration: underline;'>neli.tr/showcase</a></strong> adresindeki projelerimizi inceleyebilirsiniz.</p>
     </article>`,
-    coverImage: "/images/blog/lazer-hizalama-sakul-gonye.webp",
+    coverImage: "/images/blog/lazer-hizalama.webp",
     coverImageAlt:
       "İnşaatta lazer nivo ile şakul, gönye ölçümü ve kusursuz seramik döşeme işçiliği — Neli Mühendislik",
     category: "İnşaat Teknolojileri ve İşçilik",
@@ -2681,7 +2681,7 @@ const BLOG_DATA = [
       
       <p>Mühendislik temelleri üzerine inşa edilmiş, hem estetik hem de sarsılmaz yaşam alanlarımızı detaylı incelemek için <strong><a href='https://neli.tr/showcase' target='_blank' style='color: #b32128; font-weight: bold; text-decoration: underline;'>neli.tr/showcase</a></strong> sayfasındaki güncel projelerimize göz atabilirsiniz.</p>
     </article>`,
-    coverImage: "/images/blog/statik-mimari-entegrasyon.webp",
+    coverImage: "/images/blog/statik-mimari.webp",
     coverImageAlt:
       "Mimari planlama ve statik mühendislik hesaplamalarının entegrasyonu — Neli Mühendislik",
     category: "Mühendislik ve Mimari",
@@ -2738,7 +2738,7 @@ const BLOG_DATA = [
       
       <p>Hem güvenli bir yaşam alanı hem de yüksek ROI (Yatırım Getirisi) potansiyeline sahip, statik hesaplamaları eksiksiz gayrimenkul seçenekleri için projelerimizi <strong><a href='https://neli.tr/showcase' target='_blank' style='color: #b32128; font-weight: bold; text-decoration: underline;'>neli.tr/showcase</a></strong> sayfamızdan detaylıca inceleyebilirsiniz.</p>
     </article>`,
-    coverImage: "/images/blog/c45-beton-dayanimi.webp",
+    coverImage: "/images/blog/c45-beton.webp",
     coverImageAlt:
       "C45 yüksek mukavemetli beton ile standart beton arasındaki basınç ve taşıma kapasitesi farkı — Neli Mühendislik",
     category: "Yapı Malzemeleri ve Teknolojileri",
