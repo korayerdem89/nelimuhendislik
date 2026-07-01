@@ -7,6 +7,7 @@ import {
   fetchBlogPosts,
   formatDate,
   blogDateLocaleForCategory,
+  blogCategoryLabel,
 } from "@/data/blog";
 import type { BlogPost } from "@/data/blog";
 import SEO from "@/components/SEO";
@@ -187,7 +188,7 @@ export default function Blog() {
                 onClick={() => setIsDropdownOpen(!isDropdownOpen)}
                 className="flex max-w-full items-center gap-2 rounded-lg bg-cream-100 px-4 py-2 text-sm font-medium"
               >
-                <span className="truncate">{activeCategory}</span>
+                <span className="truncate">{blogCategoryLabel(activeCategory)}</span>
                 <ChevronDown
                   className={`h-4 w-4 flex-shrink-0 transition-transform duration-300 ${isDropdownOpen ? "rotate-180" : ""}`}
                 />
@@ -222,18 +223,20 @@ export default function Blog() {
 
         <div className="hidden md:flex md:items-center">
           <div className="min-w-0 flex-1 overflow-x-auto overscroll-x-contain">
-            <div className="flex w-max min-w-full items-stretch gap-2 px-4 sm:px-6 lg:px-8 xl:px-12">
+            <div className="flex w-max min-w-full items-center gap-2 px-4 sm:px-6 lg:px-8 xl:px-12">
               {blogCategories.map((category) => (
                 <button
                   key={category}
+                  type="button"
+                  title={category}
                   onClick={() => setActiveCategory(category)}
-                  className={`flex h-20 w-44 flex-shrink-0 items-center justify-center rounded-lg px-2 text-center text-sm font-medium leading-snug transition-all duration-300 ${
+                  className={`flex-shrink-0 whitespace-nowrap rounded-lg px-4 py-2 text-sm font-medium transition-all duration-300 ${
                     activeCategory === category
                       ? "bg-neli-600 text-white"
                       : "bg-cream-100 text-foreground/70 hover:bg-cream-200"
                   }`}
                 >
-                  {category}
+                  {blogCategoryLabel(category)}
                 </button>
               ))}
             </div>

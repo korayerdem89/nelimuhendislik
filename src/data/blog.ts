@@ -78,3 +78,31 @@ export function blogTagsLabel(category: string): string {
   if (category === "العربية") return "الوسوم:";
   return "Etiketler:";
 }
+
+const BLOG_CATEGORY_SHORT_LABELS: Record<string, string> = {
+  "Mühendislik Standartları": "Müh. Standartları",
+  "Konut Satın Alma Rehberi": "Konut Rehberi",
+  "Yapı Malzemeleri ve Teknolojileri": "Yapı Malzemeleri",
+  "Mühendislik ve Mimari": "Müh. & Mimari",
+  "İnşaat Teknolojileri ve İşçilik": "İnşaat Teknolojisi",
+  "Mühendislik ve Yapı Güvenliği": "Yapı Güvenliği",
+  "Rehber ve Yatırım": "Rehber & Yatırım",
+  "Mimari ve Yaşam Tarzı": "Mimari & Yaşam",
+  "Mühendislik ve Altyapı": "Müh. Altyapı",
+  "İç Mimari ve Dekorasyon": "İç Mimari",
+  "Mühendislik ve Yapı Teknolojileri": "Yapı Teknolojisi",
+  "Gayrimenkul Rehberi": "Gayrimenkul",
+};
+
+export function blogCategoryLabel(category: string): string {
+  if (category === "Tümü") return category;
+
+  const mapped = BLOG_CATEGORY_SHORT_LABELS[category];
+  if (mapped) return mapped;
+
+  return category
+    .replace(/^Mühendislik ve /, "Müh. ")
+    .replace(/ Rehberi$/, "")
+    .replace(/ ve Teknolojileri$/, "")
+    .replace(/ ve İşçilik$/, "");
+}
