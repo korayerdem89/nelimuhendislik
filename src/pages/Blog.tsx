@@ -222,7 +222,7 @@ export default function Blog() {
         </div>
 
         <div className="hidden md:flex md:items-center">
-          <div className="min-w-0 flex-1 overflow-x-auto overscroll-x-contain">
+          <div className="min-w-0 flex-1 overflow-x-auto overscroll-x-contain pb-2">
             <div className="flex w-max min-w-full items-center gap-2 px-4 sm:px-6 lg:px-8 xl:px-12">
               {blogCategories.map((category) => (
                 <button
