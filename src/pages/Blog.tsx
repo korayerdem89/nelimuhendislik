@@ -180,62 +180,68 @@ export default function Blog() {
       )}
 
       <section className="sticky top-16 md:top-20 lg:top-24 z-30 bg-white border-b border-cream-300 py-3 md:py-4">
-        <div className="container-padding">
-          <div className="max-w-7xl mx-auto">
-            <div className="flex items-center justify-between gap-4">
-              <div className="hidden md:flex items-center gap-2">
-                {blogCategories.map((category) => (
-                  <button
-                    key={category}
-                    onClick={() => setActiveCategory(category)}
-                    className={`px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300 ${
-                      activeCategory === category
-                        ? "bg-neli-600 text-white"
-                        : "bg-cream-100 text-foreground/70 hover:bg-cream-200"
-                    }`}
-                  >
-                    {category}
-                  </button>
-                ))}
-              </div>
+        <div className="container-padding md:hidden">
+          <div className="flex items-center justify-between gap-4">
+            <div className="relative min-w-0 flex-1">
+              <button
+                onClick={() => setIsDropdownOpen(!isDropdownOpen)}
+                className="flex max-w-full items-center gap-2 rounded-lg bg-cream-100 px-4 py-2 text-sm font-medium"
+              >
+                <span className="truncate">{activeCategory}</span>
+                <ChevronDown
+                  className={`h-4 w-4 flex-shrink-0 transition-transform duration-300 ${isDropdownOpen ? "rotate-180" : ""}`}
+                />
+              </button>
+              {isDropdownOpen && (
+                <div className="absolute top-full left-0 z-40 mt-2 max-h-64 w-full min-w-[12rem] overflow-y-auto rounded-lg border border-cream-300 bg-white shadow-soft-lg">
+                  {blogCategories.map((category) => (
+                    <button
+                      key={category}
+                      onClick={() => {
+                        setActiveCategory(category);
+                        setIsDropdownOpen(false);
+                      }}
+                      className={`w-full px-4 py-2 text-left text-sm transition-colors duration-300 hover:bg-cream-100 ${
+                        activeCategory === category
+                          ? "bg-neli-600/10 text-neli-600"
+                          : "text-foreground/70"
+                      }`}
+                    >
+                      {category}
+                    </button>
+                  ))}
+                </div>
+              )}
+            </div>
 
-              <div className="md:hidden relative">
+            <span className="flex-shrink-0 text-sm text-foreground/50">
+              {filteredPosts.length} yazı
+            </span>
+          </div>
+        </div>
+
+        <div className="hidden md:flex md:items-center">
+          <div className="min-w-0 flex-1 overflow-x-auto overscroll-x-contain">
+            <div className="flex w-max min-w-full items-stretch gap-2 px-4 sm:px-6 lg:px-8 xl:px-12">
+              {blogCategories.map((category) => (
                 <button
-                  onClick={() => setIsDropdownOpen(!isDropdownOpen)}
-                  className="flex items-center gap-2 px-4 py-2 bg-cream-100 rounded-lg text-sm font-medium"
+                  key={category}
+                  onClick={() => setActiveCategory(category)}
+                  className={`flex h-20 w-44 flex-shrink-0 items-center justify-center rounded-lg px-2 text-center text-sm font-medium leading-snug transition-all duration-300 ${
+                    activeCategory === category
+                      ? "bg-neli-600 text-white"
+                      : "bg-cream-100 text-foreground/70 hover:bg-cream-200"
+                  }`}
                 >
-                  <span>{activeCategory}</span>
-                  <ChevronDown
-                    className={`w-4 h-4 transition-transform duration-300 ${isDropdownOpen ? "rotate-180" : ""}`}
-                  />
+                  {category}
                 </button>
-                {isDropdownOpen && (
-                  <div className="absolute top-full left-0 mt-2 w-48 bg-white rounded-lg shadow-soft-lg border border-cream-300 overflow-hidden z-40">
-                    {blogCategories.map((category) => (
-                      <button
-                        key={category}
-                        onClick={() => {
-                          setActiveCategory(category);
-                          setIsDropdownOpen(false);
-                        }}
-                        className={`w-full px-4 py-2 text-left text-sm hover:bg-cream-100 transition-colors duration-300 ${
-                          activeCategory === category
-                            ? "bg-neli-600/10 text-neli-600"
-                            : "text-foreground/70"
-                        }`}
-                      >
-                        {category}
-                      </button>
-                    ))}
-                  </div>
-                )}
-              </div>
-
-              <span className="text-sm text-foreground/50">
-                {filteredPosts.length} yazı
-              </span>
+              ))}
             </div>
           </div>
+
+          <span className="flex-shrink-0 px-4 text-sm text-foreground/50 sm:px-6 lg:px-8 xl:px-12">
+            {filteredPosts.length} yazı
+          </span>
         </div>
       </section>
 
