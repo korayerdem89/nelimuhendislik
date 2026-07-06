@@ -2820,6 +2820,1540 @@ const BLOG_DATA = [
       "müteahhit seçerken dikkat edilmesi gereken teknik kriterler, güvenilir inşaat firması seçimi, izmir müteahhit, c45 beton kullanımı, lazer terazi işçilik, yapı kalitesi nasıl anlaşılır, neli mühendislik",
     publishedAt: "2026-06-30",
   },
+  {
+    slug: "izmir-yeni-binalarda-topraklama-kacak-akim-rolesi-kontrolu",
+    title:
+      "İzmir’de Yeni Binalarda Topraklama ve Kaçak Akım Rölesi Nasıl Kontrol Edilir?",
+    excerpt:
+      "Yeni bir daire teslim alırken elektrik panosunda kaçak akım rölesi bulunması tek başına yeterli değildir. Topraklama sisteminin, koruma iletkenlerinin ve kaçak akım rölesinin doğru çalışıp çalışmadığının nasıl kontrol edildiğini öğrenin.",
+    content: `<article>
+      <h2>Yeni Bir Binada Elektrik Güvenliği Nasıl Anlaşılır?</h2>
+      <p>Yeni bir konut satın alırken çoğu kişi dairenin mimarisini, kullanılan seramikleri, mutfak dolaplarını ve kapı sistemlerini ayrıntılı biçimde inceler. Ancak binanın en önemli güvenlik bileşenlerinden biri olan elektrik tesisatı çoğu zaman yalnızca prizlerin çalışıp çalışmadığı kontrol edilerek geçilir.</p>
+  
+      <p>Bir prizde elektrik bulunması, tesisatın güvenli olduğu anlamına gelmez. Elektrik güvenliği; doğru projelendirilmiş bir topraklama sistemi, kesintisiz koruma iletkenleri, uygun sigortalar, eş potansiyel bağlantılar ve doğru seçilmiş kaçak akım koruma cihazlarının birlikte çalışmasıyla sağlanır.</p>
+  
+      <p>Özellikle yeni bina veya sıfır daire teslimlerinde elektrik panosunda bir kaçak akım rölesinin bulunması olumlu bir işarettir. Bununla birlikte rölenin doğru bağlandığı, uygun hassasiyet değerine sahip olduğu ve gerektiğinde devreyi yeterli sürede açtığı ölçümle doğrulanmalıdır.</p>
+  
+      <blockquote style='margin: 20px 0; padding: 10px 20px; border-left: 5px solid #b32128; background: #f9f9f9;'>
+        <strong>Özet Cevap (AEO / Öne Çıkarılan Snippet):</strong> Yeni bir binada topraklama ve kaçak akım rölesi kontrolü yalnızca elektrik panosundaki test düğmesine basılarak yapılamaz. Kullanıcı, rölenin üzerindeki 30 mA değerini ve test düğmesine basıldığında elektriği kesip kesmediğini kontrol edebilir. Kesin güvenlik değerlendirmesi için ise yetkili bir elektrik uzmanı tarafından koruma iletkeni sürekliliği, topraklama veya çevrim empedansı, yalıtım direnci, nötr-toprak bağlantıları ile kaçak akım rölesinin açma akımı ve açma süresi ölçülmelidir.
+      </blockquote>
+  
+      <h3>Topraklama Sistemi Ne İşe Yarar?</h3>
+      <p>Topraklama sistemi, bir elektrikli cihazın metal gövdesinde veya tesisatın herhangi bir bölümünde oluşabilecek hata akımının güvenli bir yol üzerinden toprağa ve koruma sistemine aktarılmasını sağlar. Bu sayede cihaz gövdesine dokunan kişinin tehlikeli bir gerilime maruz kalma riski azaltılır ve koruma cihazlarının devreyi açması kolaylaştırılır.</p>
+  
+      <p>Binalarda prizlere kadar ulaşan sarı-yeşil renkli koruma iletkeni, elektrik panosundaki koruma barasına ve binanın ana topraklama sistemine kesintisiz olarak bağlanmalıdır. Bir prizde topraklama kontağının bulunması, koruma iletkeninin gerçekten bağlı ve işlevsel olduğunu tek başına kanıtlamaz.</p>
+  
+      <p>Bu nedenle yeni konut kontrolünde yalnızca priz görünümüne bakılması yeterli değildir. Koruma iletkeninin sürekliliği ve arıza durumunda koruma cihazlarını çalıştırabilecek elektriksel koşullar, uygun ölçüm cihazlarıyla kontrol edilmelidir.</p>
+  
+      <h3>Kaçak Akım Rölesi Ne İşe Yarar?</h3>
+      <p>Kaçak akım rölesi veya teknik adıyla artık akım koruma cihazı, faz iletkeninden çıkan akımla nötr iletkeninden geri dönen akımı karşılaştırır. Akımın bir bölümü insan vücudu, cihaz gövdesi, nemli bir yüzey veya başka bir hata yolu üzerinden devreden ayrılırsa röle bu farkı algılar ve elektrik beslemesini keser.</p>
+  
+      <p>Konutlardaki son kullanıcı devrelerinde insan hayatını koruma amacıyla genellikle 30 mA hassasiyet değerine sahip kaçak akım koruma cihazları kullanılır. Elektrik panosunda yalnızca daha yüksek eşik değerine sahip bir ana koruma cihazının bulunması, daire içindeki son devreler için gereken 30 mA seviyesindeki ek korumanın yerine geçmez.</p>
+  
+      <p>Kaçak akım rölesi ile otomatik sigorta aynı görevi yapmaz. Otomatik sigorta aşırı yük ve kısa devre akımlarına karşı koruma sağlarken kaçak akım rölesi, faz ve nötr arasındaki akım farkını takip eder. Güvenli bir tesisatta bu iki koruma işlevi birlikte sağlanmalıdır.</p>
+  
+      <h3>Ev Sahibi Kaçak Akım Rölesini Nasıl Kontrol Edebilir?</h3>
+      <p>Elektrik panosunda kaçak akım rölesinin üzerinde genellikle “T”, “Test” veya benzer biçimde işaretlenmiş bir test düğmesi bulunur. Kullanıcı tarafından yapılabilecek temel kontrol, üreticinin kullanım talimatlarına uygun biçimde bu düğmeye basılmasıdır.</p>
+  
+      <ol>
+        <li>Elektrik kesintisinden etkilenebilecek bilgisayar, modem, alarm sistemi ve benzeri cihazları güvenli biçimde kapatın.</li>
+        <li>Elektrik panosunda kaçak akım rölesi olduğu belirtilen cihazı tespit edin.</li>
+        <li>Cihazın üzerinde 30 mA veya “0.03 A” gibi hassasiyet bilgisinin bulunup bulunmadığını kontrol edin.</li>
+        <li>Test düğmesine basın ve rölenin açarak ilgili devrelerin elektriğini kesip kesmediğini gözlemleyin.</li>
+        <li>Röle açmıyorsa cihazı zorlamayın ve panoya müdahale etmeden yetkili bir elektrik uzmanına başvurun.</li>
+      </ol>
+  
+      <p>Test düğmesinin çalışması, rölenin iç mekanizmasının temel işlevini yerine getirebildiğini gösterir. Ancak bu test; prizlerdeki topraklama bağlantısını, koruma iletkenlerinin sürekliliğini, tesisatın yalıtım durumunu veya rölenin gerçek kaçak akımdaki açma süresini doğrulamaz.</p>
+  
+      <p><strong>Önemli güvenlik uyarısı:</strong> Elektrik panosunun kapağını sökmek, kablolara dokunmak, faz-nötr veya nötr-toprak arasında deneysel bağlantı yapmak son derece tehlikelidir. Pano içindeki kontroller yalnızca yetkili kişiler tarafından ve uygun ölçüm ekipmanları kullanılarak gerçekleştirilmelidir.</p>
+  
+      <h3>Profesyonel Topraklama Kontrolünde Hangi Ölçümler Yapılır?</h3>
+      <p>Topraklama sisteminin uygunluğu tek bir ölçüm değerine bakılarak belirlenmez. Binanın şebeke sistemi, koruma düzeni, sigorta özellikleri ve kaçak akım koruma cihazları birlikte değerlendirilmelidir. Profesyonel kontrolde aşağıdaki işlemler uygulanabilir:</p>
+  
+      <ul>
+        <li><strong>Koruma iletkeni süreklilik testi:</strong> Prizlerdeki ve metal gövdeli ekipmanlardaki koruma iletkenlerinin ana topraklama barasına kesintisiz bağlanıp bağlanmadığı kontrol edilir.</li>
+        <li><strong>Topraklama direnci ölçümü:</strong> Tesisat ve topraklama sisteminin türüne uygun yöntem kullanılarak topraklayıcının elektriksel performansı ölçülür.</li>
+        <li><strong>Çevrim empedansı ölçümü:</strong> Bir arıza meydana geldiğinde oluşacak akımın sigorta veya koruma cihazını yeterli sürede açtırıp açtıramayacağı değerlendirilir.</li>
+        <li><strong>Yalıtım direnci testi:</strong> Kablolardaki yalıtımın bozulup bozulmadığı ve istenmeyen kaçakların bulunup bulunmadığı kontrol edilir.</li>
+        <li><strong>Kaçak akım rölesi testi:</strong> Rölenin açma akımı ve açma süresi özel bir test cihazıyla ölçülür.</li>
+        <li><strong>Polarite kontrolü:</strong> Faz, nötr ve koruma iletkenlerinin priz ve diğer ekipmanlara doğru biçimde bağlandığı doğrulanır.</li>
+        <li><strong>Eş potansiyel bağlantı kontrolü:</strong> Binadaki erişilebilir metal bölümlerin ve gerekli tesisat elemanlarının uygun koruma bağlantılarına sahip olup olmadığı incelenir.</li>
+      </ul>
+  
+      <h3>Topraklama Direnci Kaç Ohm Olmalıdır?</h3>
+      <p>Topraklama konusunda en sık yapılan hatalardan biri, her bina için geçerli tek bir ohm değerinin bulunduğunu düşünmektir. “Topraklama mutlaka 1 ohm olmalıdır” veya “10 ohmun altındaysa güvenlidir” gibi genel ifadeler her tesis için teknik olarak doğru değildir.</p>
+  
+      <p>Kabul edilebilir değer; binadaki TT, TN-S veya TN-C-S gibi şebeke düzenine, kullanılan koruma cihazlarına, cihazların açma akımlarına ve arıza durumundaki dokunma gerilimine göre değerlendirilir. Bu nedenle ölçülen değer, elektrik projesi ve koruma sistemiyle birlikte uzman tarafından yorumlanmalıdır.</p>
+  
+      <p>Ölçüm raporunda yalnızca elde edilen direnç değerinin yazması yeterli değildir. Ölçüm yöntemi, ölçüm noktası, kullanılan cihaz, koruma elemanının özellikleri, sınır değer ve uygunluk sonucu da açık biçimde belirtilmelidir.</p>
+  
+      <h3>Yeni Bir Daire Teslim Alırken Panoda Nelere Bakılmalıdır?</h3>
+      <p>Daire tesliminden önce elektrik panosu üzerinde kullanıcı tarafından yapılabilecek güvenli görsel kontroller şunlardır:</p>
+  
+      <ul>
+        <li>Kaçak akım rölesinin bulunması ve üzerinde test düğmesi olması,</li>
+        <li>Rölenin hassasiyet değerinin okunabilir durumda olması,</li>
+        <li>Aydınlatma, priz, mutfak cihazları ve klima gibi devrelerin etiketlenmiş olması,</li>
+        <li>Panoda açıkta kablo, kırık parça, yanık izi veya yoğun ısınma belirtisi bulunmaması,</li>
+        <li>Pano kapağının güvenli biçimde kapanması,</li>
+        <li>Sigortaların dairedeki devrelere uygun biçimde ayrılması,</li>
+        <li>Elektrik projesi ile mevcut uygulamanın birbiriyle uyumlu olması.</li>
+      </ul>
+  
+      <p>Ancak panonun dışarıdan düzenli görünmesi elektriksel ölçümlerin yerine geçmez. Özellikle daire satın alma, kiralama veya yapı teslimi öncesinde ölçüm sonuçlarının yazılı raporla sunulması önemli bir güvenlik göstergesidir.</p>
+  
+      <h3>Topraklama Ölçüm Raporunda Hangi Bilgiler Bulunmalıdır?</h3>
+      <p>Profesyonel bir elektrik tesisatı ve topraklama kontrol raporunda aşağıdaki bilgilerin bulunması beklenir:</p>
+  
+      <ul>
+        <li>Binanın ve ölçüm yapılan bağımsız bölümün açık bilgileri,</li>
+        <li>Kontrol tarihi ve ölçüm noktalarının tanımları,</li>
+        <li>Kullanılan ölçüm cihazının marka, model ve seri numarası,</li>
+        <li>Cihazın geçerli kalibrasyon bilgisi,</li>
+        <li>Koruma iletkeni, topraklama ve çevrim empedansı ölçümleri,</li>
+        <li>Kaçak akım rölesinin tipi, anma akımı ve kaçak akım hassasiyeti,</li>
+        <li>Rölenin ölçülen açma akımı ve açma süresi,</li>
+        <li>Tespit edilen kusurlar ve önerilen düzeltmeler,</li>
+        <li>Sonuç bölümünde uygunluk değerlendirmesi,</li>
+        <li>Kontrolü gerçekleştiren yetkili kişinin bilgileri ve onayı.</li>
+      </ul>
+  
+      <h3>Kaçak Akım Rölesi Sürekli Atıyorsa Ne Yapılmalıdır?</h3>
+      <p>Kaçak akım rölesinin sık sık açması her zaman rölenin arızalı olduğu anlamına gelmez. Nem alan bir cihaz, bozulmuş kablo yalıtımı, hatalı nötr bağlantısı, farklı devrelerde ortak nötr kullanılması, arızalı beyaz eşya veya tesisat içerisindeki bir kaçak buna neden olabilir.</p>
+  
+      <p>Röle sürekli açıyorsa cihazı devre dışı bırakmak, köprülemek veya daha yüksek kaçak akım değerine sahip bir cihazla rastgele değiştirmek güvenli bir çözüm değildir. Hatanın kaynağı ölçüm cihazlarıyla tespit edilmeli ve gerekli onarım yapıldıktan sonra sistem yeniden test edilmelidir.</p>
+  
+      <h3>İzmir’de Yeni Binalarda Elektrik Tesisatı Kontrolü Neden Önemlidir?</h3>
+      <p>İzmir’de yeni konut projeleri değerlendirilirken deprem güvenliği, beton sınıfı ve temel sistemi kadar elektrik tesisatı güvenliği de sorgulanmalıdır. Topraklama tesisatı, yalnızca yapım aşamasında tamamlanan bir imalat değil, binanın kullanım ömrü boyunca işlevini koruması gereken bir güvenlik sistemidir.</p>
+  
+      <p>Özellikle nem, korozyon, tadilatlar, sonradan eklenen yüksek güçlü cihazlar ve hatalı kullanıcı müdahaleleri zaman içerisinde elektrik tesisatının performansını etkileyebilir. Bu nedenle teslim sırasında yapılan ilk doğrulama kadar, gerekli dönemlerde gerçekleştirilen profesyonel kontroller de önemlidir.</p>
+  
+      <h3>Sık Sorulan Sorular</h3>
+  
+      <h4>Kaçak akım rölesinin bulunması topraklamanın sağlam olduğunu gösterir mi?</h4>
+      <p>Hayır. Kaçak akım rölesi ve topraklama birbirini tamamlayan fakat farklı görevleri olan koruma sistemleridir. Rölenin bulunması, prizlerdeki koruma iletkeninin kesintisiz veya topraklama sisteminin uygun olduğunu tek başına kanıtlamaz.</p>
+  
+      <h4>Priz test cihazı topraklama kontrolü için yeterli midir?</h4>
+      <p>Basit priz test cihazları bazı bağlantı hatalarını gösterebilir ancak topraklama direncini, çevrim empedansını, koruma iletkeninin gerçek performansını ve kaçak akım rölesinin açma süresini kapsamlı biçimde ölçemez.</p>
+  
+      <h4>Test düğmesine basıldığında röle açmıyorsa ne yapılmalıdır?</h4>
+      <p>Röle açmıyorsa elektrik panosuna müdahale edilmemeli ve tesisat yetkili bir elektrik uzmanına kontrol ettirilmelidir. Rölenin mekanizması, bağlantısı veya besleme düzeni arızalı olabilir.</p>
+  
+      <h4>Yeni daire tesliminde elektrik ölçüm raporu istenebilir mi?</h4>
+      <p>Evet. Daire sahibi veya alıcı; elektrik tesisatı, topraklama sistemi ve kaçak akım koruma cihazlarına ilişkin test ve uygunluk belgelerini talep edebilir. Yazılı ölçüm raporu, tesisatın yalnızca görsel olarak değil teknik olarak da kontrol edildiğini gösterir.</p>
+  
+      <h3>Neli Mühendislik Projelerinde Elektrik Güvenliği</h3>
+      <p><strong>Neli Mühendislik</strong> olarak bir konutun güvenliğini yalnızca taşıyıcı sistem ve beton kalitesiyle sınırlı görmüyoruz. Elektrik tesisatından su yalıtımına, mimari detaylardan kullanılan malzemelere kadar yapının bütün bileşenlerini birbiriyle uyumlu bir mühendislik sistemi olarak ele alıyoruz.</p>
+  
+      <p>İzmir'de geliştirdiğimiz güncel konut projelerini, daire seçeneklerini ve uygulama detaylarını incelemek için <strong><a href='https://neli.tr/showcase' target='_blank' style='color: #b32128; font-weight: bold; text-decoration: underline;'>neli.tr/showcase</a></strong> sayfasını ziyaret edebilirsiniz.</p>
+    </article>`,
+    coverImage: "/images/blog/topraklama-kontrolu.webp",
+    coverImageAlt:
+      "Yeni bir konutun elektrik panosunda topraklama ve kaçak akım rölesi kontrolü — Neli Mühendislik",
+    category: "Elektrik Tesisatı ve Yapı Güvenliği",
+    tags: JSON.stringify([
+      "topraklama kontrolü",
+      "kaçak akım rölesi",
+      "elektrik tesisatı",
+      "30 mA kaçak akım",
+      "yeni bina kontrolü",
+      "elektrik güvenliği",
+      "İzmir konut projeleri",
+      "Neli Mühendislik",
+    ]),
+    featured: false,
+    status: "published" as const,
+    metaTitle: "Yeni Binalarda Topraklama ve Kaçak Akım Kontrolü | Neli",
+    metaDescription:
+      "İzmir’de yeni binalarda topraklama ve kaçak akım rölesi nasıl kontrol edilir? Daire tesliminde yapılması gereken elektrik güvenliği testleri.",
+    metaKeywords:
+      "İzmir yeni bina topraklama kontrolü, kaçak akım rölesi testi, 30 mA kaçak akım rölesi, daire elektrik tesisatı kontrolü, topraklama ölçüm raporu, yeni daire teslim kontrolü, elektrik panosu güvenliği, neli mühendislik",
+    publishedAt: "2026-07-06",
+  },
+  {
+    slug: "yeni-konut-projelerinde-elektrikli-arac-sarj-altyapisi",
+    title:
+      "Yeni Konut Projelerinde Elektrikli Araç Şarj Altyapısı Nasıl Hazırlanır?",
+    excerpt:
+      "Elektrikli araç şarj altyapısının sonradan eklenmesi yüksek maliyetlere, yetersiz elektrik kapasitesine ve ortak alan sorunlarına yol açabilir. Yeni konut projelerinde güç hesabından kablo güzergâhına, sayaç sisteminden dinamik yük yönetimine kadar doğru altyapının nasıl hazırlanması gerektiğini inceleyin.",
+    content: `<article>
+      <h2>Elektrikli Araç Şarj Altyapısı Neden Proje Aşamasında Planlanmalıdır?</h2>
+      <p>Elektrikli araç kullanımının yaygınlaşmasıyla birlikte konut projelerinin otoparkları yalnızca araçların bırakıldığı alanlar olmaktan çıkmaktadır. Yeni nesil otoparkların, araçların güvenli biçimde şarj edilebildiği enerji altyapılarına dönüşmesi gerekmektedir.</p>
+  
+      <p>Bir binaya elektrikli araç şarj ünitesi eklemek, otopark duvarına cihaz monte etmekten ibaret değildir. Binanın mevcut elektrik gücü, ana dağıtım panosu, kablo kesitleri, topraklama sistemi, sayaç düzeni, yangın güvenliği, otopark yerleşimi ve gelecekte kullanılması beklenen araç sayısı birlikte değerlendirilmelidir.</p>
+  
+      <p>Şarj altyapısının bina tamamlandıktan sonra kurulması; beton yüzeylerin kırılması, yeni kablo tavaları yapılması, ortak alanlarda tadilat gerçekleştirilmesi ve elektrik aboneliğinin güçlendirilmesi gibi ek maliyetler doğurabilir. Buna karşılık altyapının mimari ve elektrik projeleri hazırlanırken çözülmesi, gelecekte kurulacak cihazlar için güvenli ve ölçeklenebilir bir sistem oluşturur.</p>
+  
+      <blockquote style='margin: 20px 0; padding: 10px 20px; border-left: 5px solid #b32128; background: #f9f9f9;'>
+        <strong>Özet Cevap (AEO / Öne Çıkarılan Snippet):</strong> Yeni konut projelerinde elektrikli araç şarj altyapısı; binanın elektrik gücü ve eş zamanlı kullanım ihtiyacı hesaplanarak, ana panodan otoparka uygun kablo güzergâhları, rezerv borular, şarj panoları, koruma cihazları, topraklama, sayaç sistemi ve dinamik yük yönetimi hazırlanarak oluşturulur. Sistem yalnızca bugünkü araç sayısına göre değil, gelecekte otoparktaki daha fazla aracın şarj edilebileceği şekilde ölçeklenebilir olarak tasarlanmalıdır.
+      </blockquote>
+  
+      <h3>1. Otopark Kapasitesi ve Gelecekteki Şarj Talebi Belirlenmelidir</h3>
+      <p>Şarj altyapısı tasarımının ilk aşaması, projedeki toplam otopark sayısını ve bu otoparkların gelecekte ne kadarının elektrikli araçlar tarafından kullanılabileceğini belirlemektir. Yalnızca ilk teslim tarihinde kurulacak şarj ünitesi sayısına göre yapılan bir tasarım, birkaç yıl içinde yetersiz kalabilir.</p>
+  
+      <p>Örneğin ilk aşamada yalnızca birkaç araç için şarj ünitesi kurulacak olsa bile diğer park yerlerine ulaşabilecek rezerv kablo kanalları ve borular bırakılabilir. Böylece ilerleyen dönemlerde yeni bir şarj noktası eklenmesi gerektiğinde beton kırmaya veya ortak alanlarda kapsamlı tadilat yapmaya ihtiyaç duyulmaz.</p>
+  
+      <p>Altyapı planlanırken aşağıdaki sorulara cevap verilmelidir:</p>
+  
+      <ul>
+        <li>Binada toplam kaç araçlık otopark bulunmaktadır?</li>
+        <li>İlk teslim tarihinde kaç şarj ünitesi kurulacaktır?</li>
+        <li>Beş veya on yıl içerisinde kaç park yerinin şarj noktasına dönüşmesi beklenmektedir?</li>
+        <li>Park yerleri bağımsız bölümlere tahsisli mi, yoksa ortak kullanımlı mıdır?</li>
+        <li>Enerji tüketimi hangi sayaç veya kullanıcı üzerinden ücretlendirilecektir?</li>
+        <li>Şarj noktaları yalnızca bina sakinlerine mi, yoksa dış kullanıcılara da mı hizmet verecektir?</li>
+      </ul>
+  
+      <h3>2. Binanın Elektrik Güç Kapasitesi Hesaplanmalıdır</h3>
+      <p>Elektrikli araç şarj cihazları, uzun süre boyunca yüksek güç çekebilen elektrikli ekipmanlardır. Bu nedenle binanın mevcut kurulu gücüne yalnızca şarj cihazlarının etiket güçlerini eklemek doğru bir tasarım yöntemi değildir.</p>
+  
+      <p>Elektrik mühendisi tarafından binanın konut, asansör, hidrofor, otopark, aydınlatma, ısıtma, soğutma ve diğer ortak alan yükleri değerlendirilmelidir. Daha sonra elektrikli araçların hangi saatlerde ve kaç adet eş zamanlı olarak şarj edilebileceği hesaplanmalıdır.</p>
+  
+      <p>Bu hesaplama sonucunda aşağıdaki bileşenlerin yeterliliği kontrol edilir:</p>
+  
+      <ul>
+        <li>Binanın elektrik bağlantı ve sözleşme gücü,</li>
+        <li>Trafo veya şebeke besleme kapasitesi,</li>
+        <li>Ana dağıtım panosu ve bara kapasitesi,</li>
+        <li>Ana besleme kablolarının kesitleri,</li>
+        <li>Ortak alan sayacı ve enerji ölçüm sistemi,</li>
+        <li>Şarj panolarına ayrılabilecek rezerv güç.</li>
+      </ul>
+  
+      <p>Yeterli güç bulunmaması halinde dağıtım şirketinden güç artırımı talep edilmesi, yeni bir ortak alan aboneliği oluşturulması veya dinamik yük yönetimi uygulanması gerekebilir. Bu nedenle şarj altyapısının elektrik projesi hazırlanırken ilgili elektrik dağıtım kuruluşunun görüş ve bağlantı koşulları dikkate alınmalıdır.</p>
+  
+      <h3>3. AC ve DC Şarj Sistemi Arasındaki Fark Doğru Değerlendirilmelidir</h3>
+      <p>Elektrikli araçlar temel olarak alternatif akımla çalışan AC şarj cihazları veya doğru akımla çalışan DC hızlı şarj cihazları üzerinden şarj edilebilir. Konut projelerinde araçlar çoğunlukla gece boyunca uzun süre park edildiği için AC şarj sistemleri genellikle daha uygulanabilir bir çözüm sunar.</p>
+  
+      <p>DC hızlı şarj cihazları ise daha yüksek elektrik gücü, daha büyük ekipman alanı ve daha kapsamlı altyapı gerektirebilir. Bu nedenle konut projesinde cihaz türü yalnızca şarj hızına bakılarak değil, binanın elektrik kapasitesi ve kullanım senaryosu birlikte değerlendirilerek seçilmelidir.</p>
+  
+      <p>Şarj gücü belirlenirken aşağıdaki unsurlar göz önünde bulundurulmalıdır:</p>
+  
+      <ul>
+        <li>Araçların ortalama otoparkta kalma süresi,</li>
+        <li>Binanın kullanılabilir elektrik kapasitesi,</li>
+        <li>Aynı anda şarj edilmesi beklenen araç sayısı,</li>
+        <li>Araçların tek faz veya üç faz şarj desteği,</li>
+        <li>Kullanıcıların günlük ortalama enerji ihtiyacı,</li>
+        <li>Gelecekte sisteme eklenecek şarj noktaları.</li>
+      </ul>
+  
+      <h3>4. Dinamik Yük Yönetimi Kullanılmalıdır</h3>
+      <p>Bir otoparktaki bütün şarj cihazlarının aynı anda tam güçle çalışması, binanın elektrik kapasitesinin aşılmasına neden olabilir. Bu durum ana sigortaların açmasına, kabloların aşırı yüklenmesine veya yüksek bağlantı gücü yatırımı yapılmasına yol açabilir.</p>
+  
+      <p>Dinamik yük yönetimi sistemi, binanın anlık elektrik tüketimini takip ederek şarj cihazlarına aktarılabilecek kullanılabilir gücü otomatik biçimde belirler. Binanın diğer tüketimleri yükseldiğinde araçlara ayrılan şarj gücü azaltılır; tüketim düştüğünde ise araçlara daha fazla güç verilebilir.</p>
+  
+      <p>Birden fazla aracın şarj edildiği sistemlerde mevcut güç, kullanıcılar veya cihazlar arasında dengeli biçimde dağıtılabilir. Böylece yalnızca birkaç aracın bütün kapasiteyi kullanması önlenir ve binanın elektrik altyapısı aşırı yüklenmeden daha fazla şarj noktası işletilebilir.</p>
+  
+      <p>Dinamik yük yönetimi özellikle aşağıdaki avantajları sağlar:</p>
+  
+      <ul>
+        <li>Binanın ana elektrik gücünün aşılmasını önler.</li>
+        <li>Gereksiz güç artırımı ve trafo yatırımı ihtiyacını azaltabilir.</li>
+        <li>Birden fazla şarj cihazının koordineli çalışmasını sağlar.</li>
+        <li>Gelecekte sisteme yeni cihazların eklenmesini kolaylaştırır.</li>
+        <li>Enerji kullanımının kullanıcı bazında takip edilmesine yardımcı olur.</li>
+      </ul>
+  
+      <h3>5. Otoparkta Rezerv Boru ve Kablo Güzergâhları Bırakılmalıdır</h3>
+      <p>Yeni konut projelerinde yapılabilecek en değerli hazırlıklardan biri, henüz şarj cihazı kurulmayacak park yerlerine kadar rezerv elektrik boruları ve uygun kablo güzergâhları bırakmaktır.</p>
+  
+      <p>Kablo güzergâhları elektrik odasından veya şarj panosundan başlayarak otoparktaki park yerlerine güvenli biçimde ulaşmalıdır. Güzergâhların araç hareketleri, su tesisatı, yangın hatları, havalandırma kanalları ve diğer mekanik tesisatlarla çakışmaması gerekir.</p>
+  
+      <p>Projede aşağıdaki altyapı bileşenlerinin önceden hazırlanması önemlidir:</p>
+  
+      <ul>
+        <li>Ana elektrik odasından otoparka ulaşan rezerv kablo tavaları,</li>
+        <li>Her otopark bölgesine ayrılmış elektrik tesisat şaftları,</li>
+        <li>Gelecekte kullanılabilecek boş borular ve çekme telleri,</li>
+        <li>Kablo geçişlerinde uygun yangın durdurucu detaylar,</li>
+        <li>Şarj cihazlarının bağlanabileceği pano ve dağıtım noktaları,</li>
+        <li>Data kablosu veya kablosuz haberleşme için iletişim altyapısı.</li>
+      </ul>
+  
+      <p>Rezerv boruların çapı ve kablo tavalarının kapasitesi yalnızca ilk kurulacak cihazlar için değil, gelecekteki toplam şarj noktası hedefi dikkate alınarak belirlenmelidir.</p>
+  
+      <h3>6. Şarj Cihazları İçin Ayrı Elektrik Panosu Tasarlanmalıdır</h3>
+      <p>Çok sayıda şarj noktasının doğrudan mevcut ortak alan panosuna düzensiz biçimde bağlanması, işletme ve bakım sorunlarına neden olabilir. Bunun yerine elektrikli araç şarj sistemleri için ayrı bir dağıtım panosu veya panolar grubu tasarlanması daha kontrollü bir altyapı oluşturur.</p>
+  
+      <p>Şarj panosunda her şarj noktası için uygun koruma ve ayırma elemanları bulunmalıdır. Cihazların enerji hatları etiketlenmeli, hangi sigortanın hangi park yerine ait olduğu açıkça belirtilmelidir.</p>
+  
+      <p>Şarj panosunda proje gereksinimlerine göre şu bileşenler yer alabilir:</p>
+  
+      <ul>
+        <li>Ana kesici ve ayırıcılar,</li>
+        <li>Her şarj hattına ait aşırı akım ve kısa devre koruması,</li>
+        <li>Uygun kaçak akım ve doğru akım kaçağı koruması,</li>
+        <li>Darbe gerilimlerine karşı koruma elemanları,</li>
+        <li>Enerji analizörü ve sayaçlar,</li>
+        <li>Dinamik yük yönetimi kontrol ekipmanları,</li>
+        <li>Uzaktan izleme ve haberleşme bileşenleri,</li>
+        <li>Gelecekteki genişleme için yedek sigorta ve pano alanı.</li>
+      </ul>
+  
+      <h3>7. Her Şarj Noktası İçin Uygun Koruma Sistemi Kurulmalıdır</h3>
+      <p>Elektrikli araç şarj sistemlerinde yalnızca standart bir priz kullanılması, sürekli ve yüksek güçlü şarj işlemleri için uygun bir çözüm olmayabilir. Şarj cihazı, kendisine ayrılmış elektrik hattı ve gerekli koruma elemanlarıyla birlikte projelendirilmelidir.</p>
+  
+      <p>Her cihazın elektrik hattı; cihazın gücüne, kablo uzunluğuna, döşeme biçimine, ortam sıcaklığına ve gerilim düşümüne göre hesaplanmalıdır. Bir şarj hattına birden fazla cihazın kontrolsüz biçimde bağlanması önlenmelidir.</p>
+  
+      <p>Koruma sisteminin aşağıdaki risklere karşı çözüm sunması gerekir:</p>
+  
+      <ul>
+        <li>Aşırı akım ve kısa devre,</li>
+        <li>Alternatif veya doğru akım kaçakları,</li>
+        <li>Topraklama hataları,</li>
+        <li>Aşırı gerilim ve yıldırım kaynaklı darbeler,</li>
+        <li>Kablo ve bağlantı noktalarında aşırı ısınma,</li>
+        <li>Yetkisiz kullanım veya fiziksel müdahale.</li>
+      </ul>
+  
+      <p>Kullanılacak koruma cihazlarının türü ve teknik değerleri, şarj cihazı üreticisinin gereksinimleriyle birlikte elektrik mühendisi tarafından belirlenmelidir.</p>
+  
+      <h3>8. Topraklama ve Eş Potansiyel Bağlantılar Kontrol Edilmelidir</h3>
+      <p>Elektrikli araç şarj ünitesi, araç gövdesiyle doğrudan elektriksel etkileşim kuran bir sistemdir. Bu nedenle binanın topraklama altyapısı ve koruma iletkenlerinin sürekliliği büyük önem taşır.</p>
+  
+      <p>Şarj cihazlarının bağlanacağı koruma hattı, binanın ana topraklama sistemine kesintisiz biçimde bağlanmalıdır. Otoparktaki metal kablo tavaları, panolar ve ilgili metal ekipmanlar için gerekli eş potansiyel bağlantılar oluşturulmalıdır.</p>
+  
+      <p>Kurulum tamamlandıktan sonra yalnızca görsel kontrol yapılmamalı; yetkili uzmanlar tarafından uygun elektriksel ölçümler gerçekleştirilmelidir. Ölçüm sonuçları kayıt altına alınmalı ve sistem devreye alma raporuyla birlikte bina yönetimine teslim edilmelidir.</p>
+  
+      <h3>9. Kullanıcı Bazlı Sayaç ve Ücretlendirme Sistemi Kurulmalıdır</h3>
+      <p>Apartman ve sitelerde yaşanan en önemli sorunlardan biri, elektrikli araçların tükettiği enerjinin ortak elektrik giderine nasıl yansıtılacağıdır. Şarj altyapısı kurulurken enerji ölçüm ve ücretlendirme modeli baştan belirlenmelidir.</p>
+  
+      <p>Uygulanabilecek yöntemlerden bazıları şunlardır:</p>
+  
+      <ul>
+        <li>Her şarj noktası için ayrı enerji sayacı kullanılması,</li>
+        <li>Kullanıcıların kart veya mobil uygulamayla tanımlanması,</li>
+        <li>Tüketimin daire veya kullanıcı hesabına kaydedilmesi,</li>
+        <li>Ortak alan sayacı üzerinden tüketim bazlı tahsilat yapılması,</li>
+        <li>Şarj hizmetinin lisanslı bir şarj ağı işletmecisi üzerinden sunulması.</li>
+      </ul>
+  
+      <p>Her şarj cihazının doğrudan ilgili dairenin sayacına bağlanması bazı projelerde uygulanabilir olsa da uzun kablo güzergâhları, farklı kolon hatları ve ortak alan geçişleri nedeniyle her bina için uygun olmayabilir. Merkezi şarj panosu ve kullanıcı bazlı ölçüm sistemi, çok sayıda araç bulunan projelerde daha yönetilebilir bir çözüm sağlayabilir.</p>
+  
+      <h3>10. Ticari ve Özel Kullanım Modeli Birbirinden Ayrılmalıdır</h3>
+      <p>Bir konut projesinde yalnızca kat maliklerinin veya bina sakinlerinin kullanacağı şarj sistemiyle, dışarıdaki kullanıcılara ücret karşılığında hizmet verecek ticari şarj istasyonu aynı işletme modeline sahip değildir.</p>
+  
+      <p>Şarj noktalarının yalnızca bina sakinlerine hizmet vermesi planlanıyorsa ortak gider paylaşımı, kullanıcı tanımlama ve tüketim ölçümü gibi konular çözümlenmelidir. Şarj hizmeti dış kullanıcılara açılacak ve ticari olarak işletilecekse EPDK düzenlemeleri, şarj ağı işletmeciliği, belediye izinleri ve ilgili diğer yükümlülükler ayrıca değerlendirilmelidir.</p>
+  
+      <p>Bu nedenle projenin başlangıcında şu karar açık biçimde verilmelidir:</p>
+  
+      <ul>
+        <li>Şarj noktaları özel kullanım için mi kurulacaktır?</li>
+        <li>Yalnızca site sakinleri mi erişebilecektir?</li>
+        <li>Enerji bedeli kullanıcılar arasında nasıl paylaşılacaktır?</li>
+        <li>Hizmet lisanslı bir işletmeciye mi verilecektir?</li>
+        <li>Dışarıdan gelen araçlara ticari şarj hizmeti sunulacak mıdır?</li>
+      </ul>
+  
+      <h3>11. Otopark Yerleşimi ve Fiziksel Koruma Sağlanmalıdır</h3>
+      <p>Şarj cihazlarının konumu belirlenirken yalnızca en yakın elektrik bağlantı noktası dikkate alınmamalıdır. Araçların park biçimi, şarj soketlerinin araçlardaki farklı konumları, kablo uzunluğu ve yaya hareketleri birlikte değerlendirilmelidir.</p>
+  
+      <p>Cihazların araç çarpmasına açık noktalarda bulunması halinde koruyucu bariyer veya babalar kullanılabilir. Şarj kablolarının yürüyüş yollarında takılma riski oluşturması önlenmelidir.</p>
+  
+      <p>Yerleşim planında şu konular dikkate alınmalıdır:</p>
+  
+      <ul>
+        <li>Şarj kablosunun araca güvenli biçimde ulaşması,</li>
+        <li>Cihazın araç manevralarından korunması,</li>
+        <li>Yangın çıkışları ve kaçış yollarının kapatılmaması,</li>
+        <li>Havalandırma sistemlerinin engellenmemesi,</li>
+        <li>Su birikmesi ve mekanik hasar riskinin azaltılması,</li>
+        <li>Engelli otoparklarının kullanımının sınırlandırılmaması,</li>
+        <li>Bakım personelinin cihaza kolay ulaşabilmesi.</li>
+      </ul>
+  
+      <h3>12. Kapalı Otoparklarda Yangın Güvenliği Bir Bütün Olarak Ele Alınmalıdır</h3>
+      <p>Elektrikli araç şarj altyapısı kapalı otoparkın yangın güvenliği sistemlerinden bağımsız düşünülmemelidir. Yangın algılama, acil durum aydınlatması, havalandırma, kaçış yönlendirmeleri ve yangın söndürme altyapısı birlikte değerlendirilmelidir.</p>
+  
+      <p>Elektrik panolarının ve kablo güzergâhlarının yangına karşı uygun bölümlerde konumlandırılması, kablo geçişlerinde yangın durdurucu uygulamalar yapılması ve acil durumda şarj sisteminin enerjisinin güvenli biçimde kesilebilmesi önemlidir.</p>
+  
+      <p>Şarj cihazlarının yangın çıkışlarının önüne, kaçış merdivenlerine veya itfaiye müdahalesini zorlaştıracak noktalara yerleştirilmemesi gerekir. Uygulanacak tedbirler projenin kullanım şekline, otoparkın açık veya kapalı olmasına ve ilgili yangın mevzuatına göre yetkili uzmanlar tarafından belirlenmelidir.</p>
+  
+      <h3>13. Güneş Enerjisi ve Enerji Depolama Sistemleriyle Uyum Düşünülmelidir</h3>
+      <p>Yeni konut projelerinde elektrikli araç şarj altyapısı, çatı veya cephe üzerindeki güneş enerjisi sistemleriyle birlikte planlanabilir. Gündüz saatlerinde üretilen güneş enerjisinin ortak alanlarda veya araç şarjında değerlendirilmesi, binanın şebekeden çektiği enerjiyi azaltabilir.</p>
+  
+      <p>Ancak güneş enerjisi üretimi gün içerisinde değişken olduğu için üretim, bina tüketimi ve şarj talebi bir enerji yönetim sistemi üzerinden takip edilmelidir. Şarj cihazlarının yalnızca anlık güneş üretimine göre değil, binanın toplam elektrik sistemiyle uyumlu biçimde çalışması sağlanmalıdır.</p>
+  
+      <p>Gelecekte batarya depolama sistemi kurulması düşünülüyorsa elektrik odalarında, panolarda ve iletişim altyapısında gerekli rezervlerin proje aşamasında bırakılması uzun vadeli avantaj sağlar.</p>
+  
+      <h3>14. Şarj Cihazlarının Haberleşme Altyapısı Hazırlanmalıdır</h3>
+      <p>Akıllı şarj cihazları yalnızca elektrik enerjisi aktarmakla kalmaz; kullanıcı tanımlama, enerji ölçme, uzaktan kontrol, arıza bildirimi ve yük yönetimi gibi işlevler de sunabilir.</p>
+  
+      <p>Kapalı otoparklarda mobil iletişim sinyali zayıf olabileceği için cihazların haberleşme yöntemi önceden belirlenmelidir. Ethernet kablosu, kablosuz ağ, hücresel bağlantı veya merkezi kontrol sistemi için gerekli altyapı proje aşamasında hazırlanabilir.</p>
+  
+      <p>Şarj sistemi için güvenilir haberleşme altyapısı kurulması şu işlevleri kolaylaştırır:</p>
+  
+      <ul>
+        <li>Kullanıcıların kart veya uygulamayla tanımlanması,</li>
+        <li>Tüketim bilgilerinin kayıt altına alınması,</li>
+        <li>Uzaktan yazılım güncellemesi yapılması,</li>
+        <li>Arızaların bina yönetimine bildirilmesi,</li>
+        <li>Şarj gücünün merkezi olarak sınırlandırılması,</li>
+        <li>Enerji raporlarının oluşturulması.</li>
+      </ul>
+  
+      <h3>15. Devreye Alma Testleri ve Proje Teslim Belgeleri Hazırlanmalıdır</h3>
+      <p>Şarj cihazlarının montajının tamamlanması sistemin kullanıma hazır olduğu anlamına gelmez. Enerji verilmeden önce elektrik tesisatının koruma, topraklama, haberleşme ve yük yönetimi işlevleri test edilmelidir.</p>
+  
+      <p>Devreye alma aşamasında aşağıdaki kontroller gerçekleştirilebilir:</p>
+  
+      <ul>
+        <li>Koruma iletkeni sürekliliği,</li>
+        <li>Yalıtım direnci,</li>
+        <li>Topraklama ve çevrim empedansı,</li>
+        <li>Kaçak akım koruma düzeni,</li>
+        <li>Faz sırası ve gerilim değerleri,</li>
+        <li>Acil enerji kesme fonksiyonu,</li>
+        <li>Dinamik yük yönetimi senaryoları,</li>
+        <li>Sayaç ve kullanıcı tanımlama sistemi,</li>
+        <li>Uzaktan izleme ve haberleşme bağlantıları.</li>
+      </ul>
+  
+      <p>Bina yönetimine uygulama projeleri, tek hat şemaları, cihaz kılavuzları, test raporları, garanti belgeleri ve bakım talimatları teslim edilmelidir. Bu belgeler ileride yapılacak bakım ve kapasite artırımı çalışmalarını kolaylaştırır.</p>
+  
+      <h3>Otopark Yönetmeliğinde Elektrikli Araç Şarj Alanı Zorunluluğu</h3>
+      <p>Otopark Yönetmeliği kapsamında zorunlu otopark adedi 20 ve üzeri olan yeni yapılacak yapılarda, zorunlu otopark alanlarının bir adetten az olmamak üzere en az yüzde 5'inin ilgili standartlara göre şarj ünitesi dâhil elektrikli araçlara uygun biçimde düzenlenmesi şartı bulunmaktadır.</p>
+  
+      <p>Bu oran yalnızca mevzuatta belirtilen asgari gerekliliği ifade eder. Projede gelecekte oluşacak gerçek kullanım talebinin daha yüksek olacağı öngörülüyorsa ilave park yerleri için rezerv elektrik altyapısı hazırlanması gerekir.</p>
+  
+      <p>Mevzuatın istediği sayı kadar cihaz kurup geri kalan otoparklarda hiçbir altyapı bırakmamak, binanın uzun vadeli ihtiyacını karşılamayabilir. Doğru mühendislik yaklaşımı, asgari yasal şartlarla birlikte projenin gelecek yıllardaki elektrikli araç kullanımını da dikkate almaktır.</p>
+  
+      <h3>Yeni Konut Projesinde Uygulanabilecek Örnek Altyapı Planı</h3>
+      <p>Elektrikli araç şarj altyapısı aşağıdaki aşamalarla planlanabilir:</p>
+  
+      <ol>
+        <li>Toplam otopark sayısı ve gelecekteki şarj noktası hedefi belirlenir.</li>
+        <li>Binanın elektrik güç analizi ve eş zamanlı tüketim hesabı yapılır.</li>
+        <li>Elektrik dağıtım kuruluşundan gerekli bağlantı görüşü alınır.</li>
+        <li>Şarj sistemine ayrılacak ana pano ve rezerv güç belirlenir.</li>
+        <li>Otopark boyunca kablo tavaları ve rezerv borular projelendirilir.</li>
+        <li>Her şarj noktası için ayrı koruma ve enerji ölçümü planlanır.</li>
+        <li>Dinamik yük yönetimi ve kullanıcı tanımlama sistemi seçilir.</li>
+        <li>Topraklama, yangın güvenliği ve fiziksel koruma detayları çözülür.</li>
+        <li>İlk aşamada kurulacak cihazlar devreye alınır.</li>
+        <li>Gelecekteki cihazlar için pano, kablo ve iletişim rezervi bırakılır.</li>
+      </ol>
+  
+      <h3>Sık Sorulan Sorular</h3>
+  
+      <h4>Her otopark yerine hemen şarj cihazı kurulması gerekir mi?</h4>
+      <p>Her park yerine ilk günden cihaz kurulması zorunlu veya ekonomik olmayabilir. Ancak gelecekte cihaz eklenebilmesi için rezerv boru, kablo tavası, pano alanı ve elektrik kapasitesi hazırlanması önemli bir avantaj sağlar.</p>
+  
+      <h4>Elektrikli araç normal prizden şarj edilebilir mi?</h4>
+      <p>Araç üreticisinin izin verdiği taşınabilir şarj ekipmanları belirli koşullarda kullanılabilir. Ancak sürekli araç şarjı için standart prizlerin kapasitesi, kablo hattı ve koruma sistemi ayrıca değerlendirilmelidir. Yeni projelerde araca özel şarj cihazı ve ayrı elektrik hattı hazırlanması daha güvenli ve kontrol edilebilir bir çözümdür.</p>
+  
+      <h4>Şarj cihazı doğrudan dairenin sayacına bağlanabilir mi?</h4>
+      <p>Teknik olarak bazı projelerde mümkün olabilir. Bununla birlikte daire sayacıyla park yeri arasındaki mesafe, ortak alan geçişleri, kablo kesiti ve bina elektrik mimarisi incelenmelidir. Çok sayıda araç bulunan yapılarda merkezi pano ve kullanıcı bazlı sayaç sistemi daha uygulanabilir olabilir.</p>
+  
+      <h4>Binanın elektrik gücü bütün araçlara yetmezse ne olur?</h4>
+      <p>Dinamik yük yönetimiyle araçlara aktarılan güç sınırlandırılabilir ve mevcut kapasite araçlar arasında paylaştırılabilir. Yine de toplam talep yüksekse bağlantı gücünün artırılması veya elektrik altyapısının güçlendirilmesi gerekebilir.</p>
+  
+      <h4>Şarj cihazlarının tükettiği elektrik ortak gidere mi yazılır?</h4>
+      <p>Bu durum kurulan ölçüm ve işletme modeline bağlıdır. Kullanıcı bazlı sayaç, kart veya uygulama sistemi kullanılarak her aracın tüketimi ayrı kaydedilebilir ve ilgili kullanıcıdan tahsil edilebilir.</p>
+  
+      <h4>Şarj altyapısı için belediye veya elektrik dağıtım şirketi onayı gerekir mi?</h4>
+      <p>Projenin kullanım modeli, cihaz gücü, elektrik bağlantısı ve ticari işletme durumuna göre ilgili elektrik dağıtım kuruluşunun görüşü ile belediye veya diğer yetkili kurumların izinleri gerekebilir. Uygulama öncesinde güncel yerel şartlar ve mevzuat kontrol edilmelidir.</p>
+  
+      <h4>Elektrikli araç şarj altyapısı dairenin değerini etkiler mi?</h4>
+      <p>Şarj altyapısının hazır olması, elektrikli araç kullanan veya gelecekte kullanmayı planlayan alıcılar açısından önemli bir tercih nedeni olabilir. Kablo güzergâhları, ölçüm sistemi ve güç kapasitesi hazırlanmış bir bina, sonradan altyapı kurulması gereken yapılara göre daha kullanışlı ve geleceğe hazırdır.</p>
+  
+      <h3>Geleceğe Hazır Konut Projesi Nasıl Olmalıdır?</h3>
+      <p>Geleceğe hazır bir konut projesi yalnızca birkaç şarj cihazının monte edildiği bina değildir. Elektrik gücü, kablo altyapısı, sayaç sistemi, yük yönetimi, yangın güvenliği ve kullanıcı deneyimi birlikte planlanmış olmalıdır.</p>
+  
+      <p>Doğru hazırlanmış bir şarj altyapısı, binanın elektrik sistemini aşırı yüklemeden daha fazla aracın şarj edilmesini sağlar. Aynı zamanda bina sakinleri arasında enerji giderlerinin adil paylaşılmasına ve ileride yapılacak kapasite artışlarının daha düşük maliyetle gerçekleştirilmesine yardımcı olur.</p>
+  
+      <h3>Neli Mühendislik ile Geleceğe Hazır Yaşam Alanları</h3>
+      <p><strong>Neli Mühendislik</strong> olarak konut projelerini yalnızca bugünün ihtiyaçlarına göre değil, gelecekte değişecek ulaşım ve enerji alışkanlıklarını dikkate alarak değerlendiriyoruz. Elektrik altyapısından otopark yerleşimine, yapı güvenliğinden enerji verimliliğine kadar bütün sistemlerin birbiriyle uyumlu çalışmasını önemsiyoruz.</p>
+  
+      <p>İzmir'de geliştirdiğimiz güncel konut projelerini, daire seçeneklerini ve mühendislik yaklaşımımızı incelemek için <strong><a href='https://neli.tr/showcase' target='_blank' rel='noopener noreferrer' style='color: #b32128; font-weight: bold; text-decoration: underline;'>neli.tr/showcase</a></strong> sayfasını ziyaret edebilirsiniz.</p>
+    </article>`,
+    coverImage: "/images/blog/elektrikli-arac.webp",
+    coverImageAlt:
+      "Yeni konut projesinin kapalı otoparkında elektrikli araç şarj altyapısı — Neli Mühendislik",
+    category: "Elektrik Tesisatı ve Akıllı Binalar",
+    tags: JSON.stringify([
+      "elektrikli araç şarj altyapısı",
+      "konut şarj istasyonu",
+      "otopark elektrik tesisatı",
+      "dinamik yük yönetimi",
+      "elektrikli araç şarj ünitesi",
+      "akıllı bina sistemleri",
+      "İzmir konut projeleri",
+      "Neli Mühendislik",
+    ]),
+    featured: false,
+    status: "published" as const,
+    metaTitle: "Konutlarda Elektrikli Araç Şarj Altyapısı | Neli Mühendislik",
+    metaDescription:
+      "Yeni konut projelerinde elektrikli araç şarj altyapısı nasıl hazırlanır? Güç hesabı, kablolama, sayaç, yük yönetimi ve güvenlik detayları.",
+    metaKeywords:
+      "yeni konut projelerinde elektrikli araç şarj altyapısı, apartman elektrikli araç şarj istasyonu, otopark şarj ünitesi altyapısı, dinamik yük yönetimi, elektrikli araç şarj panosu, site otoparkı şarj cihazı, İzmir yeni konut projeleri, Neli Mühendislik",
+    publishedAt: "2026-07-06",
+  },
+  {
+    slug: "yeni-binalarda-isi-koprusu-kuf-olusumu-nasil-onlenir",
+    title:
+      "Yeni Binalarda Isı Köprüsü Nasıl Önlenir ve Küf Oluşumu Nasıl Engellenir?",
+    excerpt:
+      "Yeni bir binada duvar köşelerinde, kolon çevrelerinde veya pencere kenarlarında oluşan küf yalnızca boya problemi değildir. Isı köprülerinin nasıl oluştuğunu, yoğuşma riskini artıran uygulama hatalarını ve kesintisiz ısı yalıtımıyla küfün nasıl önlenebileceğini inceleyin.",
+    content: `<article>
+      <h2>Yeni Binalarda Isı Köprüsü ve Küf Neden Oluşur?</h2>
+      <p>Yeni bir binanın dış cephesinde ısı yalıtımı bulunması, yapının her noktasında aynı ısıl performansın sağlandığı anlamına gelmez. Kolon, kiriş, döşeme kenarı, balkon bağlantısı, pencere çevresi ve çatı-duvar birleşimi gibi detaylar doğru çözülmediğinde ısı yalıtım katmanı kesintiye uğrayabilir.</p>
+  
+      <p>Isının çevresindeki yapı elemanlarına göre daha kolay geçtiği bu bölgeler <strong>ısı köprüsü</strong> olarak adlandırılır. Kış aylarında iç ortam ısısı bu noktalardan daha hızlı dışarı aktarılır ve iç yüzey sıcaklığı duvarın diğer bölümlerine göre düşer. Soğuyan yüzey, iç ortam havasındaki nemin yoğunlaşmasına elverişli hale gelir.</p>
+  
+      <p>Yüzey sıcaklığının yeterince düşmesi ve iç ortam neminin yüksek olması halinde önce görünmeyen bir nemlenme, ardından lekelenme, boya kabarması, kötü koku ve küf oluşumu meydana gelebilir. Bu nedenle küf problemi yalnızca yüzeyin temizlenmesiyle değil, nemin ve düşük yüzey sıcaklığının kaynağı belirlenerek çözülmelidir.</p>
+  
+      <blockquote style='margin: 20px 0; padding: 10px 20px; border-left: 5px solid #b32128; background: #f9f9f9;'>
+        <strong>Özet Cevap (AEO / Öne Çıkarılan Snippet):</strong> Yeni binalarda ısı köprülerini ve küf oluşumunu önlemek için ısı yalıtımı bina kabuğu boyunca kesintisiz uygulanmalı; kolon, kiriş, döşeme kenarı, balkon, pencere çevresi, çatı ve temel birleşimleri projede ayrıntılı olarak çözülmelidir. Ayrıca yağmur ve tesisat sızıntıları engellenmeli, pencere montaj boşlukları hava ve su geçirmez biçimde kapatılmalı ve iç ortam nemi düzenli havalandırmayla kontrol altında tutulmalıdır.
+      </blockquote>
+  
+      <h3>Isı Köprüsü Nedir?</h3>
+      <p>Isı köprüsü, bina kabuğunun çevresindeki alanlara göre daha yüksek ısı iletimine sahip bölümüdür. Bu durum yapı elemanının geometrisinden, farklı malzemelerin birleşmesinden veya ısı yalıtımının kesintiye uğramasından kaynaklanabilir.</p>
+  
+      <p>Örneğin dış duvardaki dolgu malzemesinin ısıl performansı ile betonarme kolonun ısıl performansı aynı değildir. Kolonun dış yüzeyi yeterli yalıtım kalınlığıyla kaplanmazsa betonarme bölüm, dış duvar içerisinde ısı kaybının yoğunlaştığı bir hat oluşturabilir.</p>
+  
+      <p>Isı köprüleri genellikle iki ana grupta değerlendirilir:</p>
+  
+      <ul>
+        <li><strong>Malzeme kaynaklı ısı köprüleri:</strong> Isı iletkenlik değerleri farklı yapı malzemelerinin birleştiği bölgelerde oluşur. Betonarme kolon ile dolgu duvar birleşimi buna örnektir.</li>
+        <li><strong>Geometrik ısı köprüleri:</strong> Dış yüzey alanının iç yüzey alanından daha büyük olduğu bina köşeleri, çıkmalar ve birleşim detaylarında meydana gelir.</li>
+      </ul>
+  
+      <p>Bunun yanında yalıtım levhaları arasındaki boşluklar, hatalı dübel uygulamaları, eksik yalıtım, metal bağlantı parçaları ve yanlış pencere montajları da yerel ısı köprüleri oluşturabilir.</p>
+  
+      <h3>Isı Köprüsü Küf Oluşumuna Nasıl Neden Olur?</h3>
+      <p>İç ortam havası belirli miktarda su buharı içerir. Havanın taşıyabileceği nem miktarı sıcaklığa bağlıdır. Sıcak ve nemli iç ortam havası, sıcaklığı daha düşük bir yüzeyle karşılaştığında yüzeye yakın hava tabakası soğur.</p>
+  
+      <p>Yüzey sıcaklığı kritik seviyenin altına düştüğünde yüzey bağıl nemi yükselir. Şartların devam etmesi halinde önce küf gelişimine uygun nem koşulları, daha ileri durumda ise yüzey yoğuşması meydana gelebilir.</p>
+  
+      <p>Küf oluşması için duvar üzerinde gözle görülür su damlalarının bulunması şart değildir. Uzun süre yüksek kalan yüzey nemi de küf sporlarının gelişmesi için uygun ortam oluşturabilir. Bu nedenle duvarın kuru görünmesi, detayın güvenli olduğu anlamına gelmez.</p>
+  
+      <p>Isı köprüsü bulunan bölgelerde aşağıdaki süreç yaşanabilir:</p>
+  
+      <ol>
+        <li>İç ortam ısısı yapı elemanından daha hızlı dışarı aktarılır.</li>
+        <li>Duvarın veya tavanın iç yüzey sıcaklığı düşer.</li>
+        <li>Soğuk yüzeye yakın havanın bağıl nemi yükselir.</li>
+        <li>Yüzey uzun süre nemli kalır veya yoğuşma oluşur.</li>
+        <li>Boya, sıva ve duvar kaplaması üzerinde küf gelişmeye başlar.</li>
+      </ol>
+  
+      <h3>Isı Köprüsü ile Su Sızıntısı Nasıl Ayırt Edilir?</h3>
+      <p>Duvar üzerindeki her nem ve küf lekesi ısı köprüsünden kaynaklanmaz. Çatıdan veya cepheden alınan yağmur suyu, temiz su tesisatı kaçağı, atık su hattı sorunu, balkon süzgeci sızıntısı, temel nemi ve klima drenaj hattı gibi farklı nedenler benzer belirtiler gösterebilir.</p>
+  
+      <p>Isı köprüsüne bağlı küf çoğunlukla kış aylarında; dış duvar köşelerinde, kolon-kiriş hatlarında, pencere kenarlarında ve mobilya arkasında belirginleşir. Lekeler genellikle soğuk yüzey geometrisini takip eder.</p>
+  
+      <p>Su sızıntısında ise aşağıdaki belirtiler görülebilir:</p>
+  
+      <ul>
+        <li>Yağmur sonrasında büyüyen veya rengi koyulaşan lekeler,</li>
+        <li>Belirli bir tesisatın kullanımıyla artan nem,</li>
+        <li>Sıvada kabarma, tuzlanma veya yüzeyden malzeme dökülmesi,</li>
+        <li>Mevsimden bağımsız olarak devam eden yoğun ıslaklık,</li>
+        <li>Tavan veya duvar üzerinde düzensiz su izleri.</li>
+      </ul>
+  
+      <p>Doğru teşhis için nem ölçümü, termal kamera incelemesi, tesisat basınç testi ve cephe-su yalıtımı kontrolleri birlikte değerlendirilebilir. Yalnızca küfün görüntüsüne bakarak kesin neden belirlemek her zaman mümkün değildir.</p>
+  
+      <h3>Yeni Binalarda Isı Köprüsü En Çok Nerelerde Görülür?</h3>
+      <p>Isı köprüleri, bina kabuğunda farklı yapı elemanlarının birleştiği veya yalıtım katmanının devamlılığının zorlaştığı bölgelerde yoğunlaşır.</p>
+  
+      <p>Yeni konut projelerinde özellikle şu detaylar kontrol edilmelidir:</p>
+  
+      <ul>
+        <li>Betonarme kolon ile dolgu duvar birleşimleri,</li>
+        <li>Kirişlerin ve döşeme kenarlarının dış cepheye ulaştığı hatlar,</li>
+        <li>Balkon döşemelerinin iç döşemeyle birleştiği bölgeler,</li>
+        <li>Pencere ve dış kapı kasalarının çevresi,</li>
+        <li>Pencere denizlikleri ve lento bölgeleri,</li>
+        <li>Dış duvarların iç köşeleri,</li>
+        <li>Teras ve çatı parapetleri,</li>
+        <li>Çatı ile dış duvar birleşimleri,</li>
+        <li>Zemin kat döşemesi ile dış duvar birleşimi,</li>
+        <li>Bodrum tavanı ve ısıtılan hacim sınırları,</li>
+        <li>Konsol çıkmalar ve kapalı çıkmalar,</li>
+        <li>Cephedeki metal ankraj ve bağlantı elemanları,</li>
+        <li>Tesisat şaftları ve yalıtımın kesildiği geçişler.</li>
+      </ul>
+  
+      <h3>Kolon ve Kirişlerde Isı Köprüsü Nasıl Önlenir?</h3>
+      <p>Betonarme kolon ve kirişler, dolgu duvar malzemelerine göre farklı ısı iletim özelliklerine sahiptir. Bu elemanların dış yüzeylerinin yalıtımsız bırakılması veya yetersiz kalınlıkta yalıtılması durumunda cephede betonarme iskeleti takip eden soğuk bölgeler oluşabilir.</p>
+  
+      <p>En etkili yaklaşım, dış cephe ısı yalıtımının kolon, kiriş ve dolgu duvar yüzeyleri boyunca kesintisiz devam etmesidir. Yalıtım levhalarının betonarme yüzeylerde inceltilmesi, tamamen kesilmesi veya yalnızca dolgu duvar üzerine uygulanması ısı köprüsü riskini artırır.</p>
+  
+      <p>Uygulama sırasında şu ayrıntılara dikkat edilmelidir:</p>
+  
+      <ul>
+        <li>Yalıtım levhaları arasında açık derz bırakılmamalıdır.</li>
+        <li>Levha birleşimleri kolon ve duvar birleşim çizgileriyle mümkün olduğunca çakıştırılmamalıdır.</li>
+        <li>Yüzey bozuklukları yapıştırıcı kalınlığıyla rastgele kapatılmamalıdır.</li>
+        <li>Dübel sayısı, tipi ve yerleşimi sistem detayına uygun olmalıdır.</li>
+        <li>Köşelerde fileli köşe profilleri ve yeterli donatı filesi kullanılmalıdır.</li>
+        <li>Farklı malzemelerin birleştiği bölgelerde çatlak riskine karşı uygun sıva ve file detayları uygulanmalıdır.</li>
+      </ul>
+  
+      <h3>Döşeme Kenarlarında Kesintisiz Yalıtım Neden Önemlidir?</h3>
+      <p>Kat döşemelerinin dış cepheye ulaştığı döşeme alınları, binalarda uzun ve kesintisiz ısı köprüsü hatları oluşturabilir. Bu bölgelerin yalnızca duvar yüzeyiyle aynı hizada sıvanması, betonarme döşeme kenarının doğrudan dış ortamla temas etmesine neden olur.</p>
+  
+      <p>Dış cephe yalıtımı döşeme alınlarını da kaplayarak katlar boyunca devam etmelidir. Isı yalıtım levhalarının kat hizalarında kesilmesi veya dekoratif cephe detayları nedeniyle inceltilmesi, iç yüzeyde tavan-duvar birleşimlerinin soğumasına yol açabilir.</p>
+  
+      <p>Döşeme kenarlarındaki ısı köprüleri, daire içerisinde çoğunlukla dış duvarın tavanla birleştiği hatta yatay küf lekeleri olarak ortaya çıkar. Bu belirti yalnızca boya yenilenerek kalıcı biçimde giderilemez.</p>
+  
+      <h3>Balkon Döşemeleri Neden Kritik Bir Isı Köprüsüdür?</h3>
+      <p>İç mekândaki betonarme döşemenin kesintisiz biçimde dışarı uzanarak balkon oluşturması, iç ve dış ortam arasında güçlü bir ısı iletim yolu meydana getirebilir. Balkon döşemesinin yalnızca üst veya alt yüzeyine sınırlı yalıtım uygulanması, birleşim bölgesindeki ısı akışını tamamen ortadan kaldırmayabilir.</p>
+  
+      <p>Balkon detayları proje aşamasında değerlendirilerek aşağıdaki çözümlerden uygun olanı seçilebilir:</p>
+  
+      <ul>
+        <li>Taşıyıcı sisteme uygun ısı yalıtımlı balkon bağlantı elemanlarının kullanılması,</li>
+        <li>Balkonun ana bina taşıyıcı sisteminden bağımsız olarak tasarlanması,</li>
+        <li>Balkon döşemesinin üst, alt ve alın yüzeylerinde süreklilik sağlayan yalıtım detaylarının hazırlanması,</li>
+        <li>Kapı eşiği, su yalıtımı ve ısı yalıtımının birlikte çözülmesi.</li>
+      </ul>
+  
+      <p>Taşıyıcı sisteme ilişkin balkon çözümleri mutlaka statik proje müellifiyle birlikte değerlendirilmelidir. Isı köprüsünü azaltmak amacıyla betonarme taşıyıcı elemanlarda proje dışı kesme, delme veya değişiklik yapılmamalıdır.</p>
+  
+      <h3>Pencere Çevresindeki Isı Köprüleri Nasıl Önlenir?</h3>
+      <p>Pencereler, dış duvardaki ısı yalıtım sisteminin kesintiye uğradığı en hassas noktalardan biridir. Yüksek performanslı bir pencere doğraması kullanılsa bile kasa ile duvar birleşimi yanlış çözülürse hava sızıntısı, yüzey soğuması ve küf meydana gelebilir.</p>
+  
+      <p>Pencere montajında yalnızca kasa ile duvar arasındaki boşluğa köpük uygulanması, uzun vadeli hava ve nem kontrolü için tek başına yeterli bir detay değildir. Montaj birleşiminin iç, orta ve dış katmanları kullanım şartlarına uygun biçimde çözülmelidir.</p>
+  
+      <p>Pencere detayında şu konular önemlidir:</p>
+  
+      <ul>
+        <li>Doğramanın ısı yalıtım düzlemine uygun konumlandırılması,</li>
+        <li>Dış cephe yalıtımının pencere kasasına doğru devam ettirilmesi,</li>
+        <li>Pencere sövelerinin yeterli kalınlıkta yalıtılması,</li>
+        <li>Kasa-duvar birleşiminin hava ve su sızdırmazlığının sağlanması,</li>
+        <li>Dış tarafta yağmur suyunun tahliye edilebilmesi,</li>
+        <li>Denizlik altında yalıtım ve su yalıtımı sürekliliğinin korunması,</li>
+        <li>Isı iletkenliği yüksek metal parçaların kontrol edilmesi,</li>
+        <li>İç yüzeyde soğuk hava sızıntısı oluşturacak boşlukların kapatılması.</li>
+      </ul>
+  
+      <h3>Doğrama Seçimi Küf Riskini Etkiler mi?</h3>
+      <p>Doğramanın çerçeve sistemi, cam özellikleri, ara boşluk yapısı, sızdırmazlık contaları ve montaj kalitesi pencerenin iç yüzey sıcaklığını etkiler. Isıl performansı yetersiz bir pencere sisteminde cam kenarları ve çerçeveler soğuyabilir.</p>
+  
+      <p>Bununla birlikte yüksek performanslı ve hava sızdırmaz yeni doğramalar takıldığında binanın kontrolsüz doğal hava değişimi azalabilir. Kullanıcı havalandırma alışkanlıklarını değiştirmezse iç ortam nemi yükselerek duvar köşelerinde küf riskini artırabilir.</p>
+  
+      <p>Bu nedenle pencere seçimi ile havalandırma çözümü birlikte düşünülmelidir. Hava sızdırmazlık enerji verimliliği açısından önemlidir; ancak içeride oluşan su buharının kontrollü biçimde dışarı atılması da gerekir.</p>
+  
+      <h3>Çatı ve Parapet Birleşimlerinde Isı Köprüsü Nasıl Önlenir?</h3>
+      <p>Çatı döşemesi, teras, parapet ve dış duvar birleşimleri hem ısı hem de su yalıtımı açısından kritik detaylardır. Isı yalıtımının parapet dibinde veya çatı kenarında kesilmesi, üst kat dairelerin tavan köşelerinde yüzey sıcaklığının düşmesine neden olabilir.</p>
+  
+      <p>Parapet duvarlarının yalnızca dış yüzeyinin yalıtılması her durumda yeterli olmayabilir. Parapetin üstü, iç yüzeyi, dış yüzeyi ve çatı yalıtımı arasındaki süreklilik proje detayında birlikte değerlendirilmelidir.</p>
+  
+      <p>Çatı detaylarında şu konular kontrol edilmelidir:</p>
+  
+      <ul>
+        <li>Çatı ısı yalıtımının dış duvar yalıtımıyla kesintisiz birleşmesi,</li>
+        <li>Parapetlerde ısı yalıtımının sürekliliği,</li>
+        <li>Su yalıtımının parapete yeterli yükseklikte döndürülmesi,</li>
+        <li>Harpuşta ve kapak elemanlarında yağmur suyu tahliyesi,</li>
+        <li>Süzgeç ve iniş noktalarının doğru konumlandırılması,</li>
+        <li>Çatı kaplaması altındaki havalandırma gereksinimleri,</li>
+        <li>Yalıtımı delen metal bağlantıların etkisi.</li>
+      </ul>
+  
+      <h3>Zemin, Temel ve Bodrum Kat Birleşimleri Nasıl Çözülmelidir?</h3>
+      <p>Isıtılan yaşam alanlarının zeminle, açık otoparkla, bodrumla veya ısıtılmayan hacimlerle sınır oluşturduğu bölgelerde ısı yalıtımı sürekliliği korunmalıdır. Dış duvar yalıtımının zemin seviyesinde sonlandırılması, döşeme kenarında soğuk bir hat oluşturabilir.</p>
+  
+      <p>Subasman, temel ve bodrum duvarlarında kullanılacak ısı yalıtım malzemeleri; neme, zemin basıncına ve uygulama koşullarına uygun seçilmelidir. Isı yalıtımı ile su yalıtımı birbirine zarar vermeyecek ve süreklilik oluşturacak biçimde detaylandırılmalıdır.</p>
+  
+      <p>Zemin katlardaki küf problemi değerlendirilirken yalnızca ısı köprüsü değil, zeminden yükselen nem, drenaj eksikliği, temel su yalıtımı ve dış zemin kotları da kontrol edilmelidir.</p>
+  
+      <h3>Dıştan Isı Yalıtımı Isı Köprülerine Karşı Neden Etkilidir?</h3>
+      <p>Dıştan uygulanan kesintisiz ısı yalıtımı, betonarme taşıyıcı elemanlar ile dolgu duvarları dış ortamdan ortak bir yalıtım katmanıyla ayırır. Böylece yapı kabuğundaki sıcaklık farklılıkları ve ısı köprüsü etkileri azaltılabilir.</p>
+  
+      <p>Dıştan yalıtımın başlıca avantajları şunlardır:</p>
+  
+      <ul>
+        <li>Kolon, kiriş ve döşeme alınlarını birlikte kaplayabilmesi,</li>
+        <li>İç yüzey sıcaklıklarının daha dengeli kalmasına yardımcı olması,</li>
+        <li>Taşıyıcı sistemin sıcaklık değişimlerinden daha az etkilenmesi,</li>
+        <li>İç mekânda kullanım alanı kaybı oluşturmaması,</li>
+        <li>Doğru uygulandığında çok sayıdaki doğrusal ısı köprüsünü azaltması.</li>
+      </ul>
+  
+      <p>Ancak dıştan yalıtım yapılması bütün ısı köprülerinin otomatik olarak çözüldüğü anlamına gelmez. Balkonlar, pencere montajları, parapetler, metal bağlantılar, giriş saçakları ve tesisat geçişleri ayrıca detaylandırılmalıdır.</p>
+  
+      <h3>İçten Isı Yalıtımı Küf Sorununu Çözer mi?</h3>
+      <p>İçten ısı yalıtımı bazı mevcut bina uygulamalarında gerekli olabilir; ancak yoğuşma ve ısı köprüsü hesabı yapılmadan uygulanması halinde duvarın iç katmanlarında nem birikimi riski oluşturabilir.</p>
+  
+      <p>İçten yalıtım uygulandığında mevcut duvar daha soğuk kalabilir. Buhar kontrol katmanındaki süreksizlikler, priz boşlukları veya birleşim hatları üzerinden yapı elemanına ulaşan nem iç katmanlarda yoğuşabilir.</p>
+  
+      <p>Ayrıca içten yalıtımın döşeme, iç duvar ve kolon birleşimlerinde kesilmesi yeni ısı köprüleri oluşturabilir. Bu nedenle içten yalıtım, yalnızca malzeme levhasının duvara yapıştırılması olarak görülmemeli; uzmanlar tarafından higrotermal performans ve birleşim detayları değerlendirilmelidir.</p>
+  
+      <h3>Buhar Kesici Her Duvara Uygulanmalı mıdır?</h3>
+      <p>Buhar kesici veya buhar kontrol katmanı ihtiyacı; yapının iklim bölgesine, iç ortam kullanımına, duvar katmanlarına, yalıtımın konumuna ve malzemelerin su buharı geçirgenliğine göre belirlenir.</p>
+  
+      <p>Her duvar sistemine aynı katmanın eklenmesi doğru değildir. Yanlış konumlandırılan buhar geçirimsiz katman, yapı elemanı içerisinde nemin hapsolmasına neden olabilir.</p>
+  
+      <p>Duvar ve çatı katmanlarının tasarımında şu değerlendirmeler yapılmalıdır:</p>
+  
+      <ul>
+        <li>İç ve dış ortam sıcaklıkları,</li>
+        <li>İç ortam nem yükü,</li>
+        <li>Malzemelerin su buharı geçirgenliği,</li>
+        <li>Yalıtım katmanının konumu,</li>
+        <li>Katmanlar arası yoğuşma riski,</li>
+        <li>Yapı elemanının kuruma yönü ve kuruma kapasitesi.</li>
+      </ul>
+  
+      <h3>Havalandırma Küf Oluşumunu Nasıl Engeller?</h3>
+      <p>İnsanların solunumu, duş, yemek pişirme, çamaşır kurutma ve temizlik gibi günlük faaliyetler iç ortamda su buharı oluşturur. Bu nem düzenli olarak dışarı atılmazsa iç ortam bağıl nemi yükselir.</p>
+  
+      <p>Havalandırma duvar yüzeyindeki ısı köprüsünü ortadan kaldırmaz; ancak havadaki nemi azaltarak soğuk yüzeylerde küf ve yoğuşma oluşma riskini düşürür. Kalıcı çözüm için hem yapı kabuğu hem de iç ortam nemi birlikte kontrol edilmelidir.</p>
+  
+      <p>Konutlarda şu uygulamalar yararlı olabilir:</p>
+  
+      <ul>
+        <li>Gün içerisinde düzenli ve etkili doğal havalandırma yapılması,</li>
+        <li>Banyo ve mutfak aspiratörlerinin doğrudan dış ortama tahliye edilmesi,</li>
+        <li>Duş sonrasında banyo neminin kısa sürede uzaklaştırılması,</li>
+        <li>Çamaşırların mümkün olduğunca yaşam alanlarında kurutulmaması,</li>
+        <li>Mekanik havalandırma menfezlerinin kapatılmaması,</li>
+        <li>Gerekli projelerde ısı geri kazanımlı havalandırma sistemlerinin değerlendirilmesi,</li>
+        <li>İç ortam neminin bir nem ölçerle takip edilmesi.</li>
+      </ul>
+  
+      <p>Pencereleri bütün gün çok az açık bırakmak yerine, dış ortam koşulları uygunsa kısa süreli ve etkili çapraz havalandırma yapmak iç ortam havasının daha hızlı yenilenmesine yardımcı olabilir.</p>
+  
+      <h3>Mobilya Yerleşimi Küf Oluşumunu Etkiler mi?</h3>
+      <p>Büyük dolapların ve yatak başlıklarının soğuk dış duvarlara tamamen yaslanması, duvar yüzeyindeki hava dolaşımını azaltabilir. Yüzey yeterince ısınamaz ve duvar ile mobilya arasında nemli bir mikroklima oluşabilir.</p>
+  
+      <p>Özellikle dış duvar köşelerinde, kuzeye bakan cephelerde ve ısı köprüsü riski bulunan bölgelerde mobilya ile duvar arasında hava dolaşımına izin verecek boşluk bırakılması yararlı olabilir.</p>
+  
+      <p>Ancak mobilyayı duvardan uzaklaştırmak yapısal ısı köprüsünü çözmez. Bu uygulama yalnızca yüzeydeki hava hareketini iyileştirerek riski azaltabilir. Duvar sıcaklığı teknik olarak yetersizse yalıtım detayı ayrıca düzeltilmelidir.</p>
+  
+      <h3>Isıtma Şekli Küf Riskini Nasıl Etkiler?</h3>
+      <p>Konutun bazı odalarının sürekli soğuk bırakılması, kapıların kapalı tutulması veya ısıtmanın uzun süre tamamen durdurulması dış duvarların yüzey sıcaklığını düşürebilir. Nemli hava daha soğuk odalara taşındığında bu yüzeylerde küf oluşabilir.</p>
+  
+      <p>Dengeli ve kontrollü ısıtma, iç yüzey sıcaklıklarının aşırı düşmesini önlemeye yardımcı olur. Bununla birlikte yalnızca ortam sıcaklığını yükseltmek, su sızıntısı veya ciddi bir ısı köprüsü problemini ortadan kaldırmaz.</p>
+  
+      <p>Enerji verimli bir yapıda amaç; yüksek enerji tüketerek yüzeyleri sıcak tutmak yerine, iyi tasarlanmış bina kabuğu sayesinde düşük enerjiyle dengeli iç ortam şartları oluşturmaktır.</p>
+  
+      <h3>Termal Kamera ile Isı Köprüsü Tespit Edilebilir mi?</h3>
+      <p>Termal kamera, yapı yüzeylerindeki sıcaklık farklılıklarını görüntüleyerek ısı köprüleri, yalıtım boşlukları ve hava sızıntıları hakkında önemli bilgiler sağlayabilir. Ancak termal görüntü tek başına kesin teşhis olarak değerlendirilmemelidir.</p>
+  
+      <p>Doğru termal inceleme için iç ve dış ortam arasında yeterli sıcaklık farkı bulunması, güneş ışınımı, rüzgâr, yağmur ve ısıtma koşulları gibi etkenlerin dikkate alınması gerekir.</p>
+  
+      <p>Termal kamera incelemesi şu kontrollerle desteklenebilir:</p>
+  
+      <ul>
+        <li>İç ortam sıcaklığı ve bağıl nem ölçümü,</li>
+        <li>Temaslı yüzey sıcaklığı ölçümü,</li>
+        <li>Duvar ve sıva nemi ölçümü,</li>
+        <li>Hava sızdırmazlık incelemesi,</li>
+        <li>Elektrik ve mekanik tesisat kaçağı kontrolü,</li>
+        <li>Proje ve uygulama detaylarının karşılaştırılması.</li>
+      </ul>
+  
+      <h3>Yüzey Sıcaklığı ve Çiy Noktası Neden Birlikte Değerlendirilir?</h3>
+      <p>Çiy noktası, havadaki su buharının mevcut nem koşullarında yoğuşmaya başlayabileceği sıcaklıktır. İç yüzey sıcaklığı çiy noktası sıcaklığına yaklaştıkça yoğuşma riski yükselir.</p>
+  
+      <p>Ancak küf gelişimi gözle görülür yoğuşma başlamadan önce de mümkün olabilir. Bu nedenle değerlendirme yalnızca “duvarda su damlası var mı?” sorusuna indirgenmemelidir. İç yüzey sıcaklığının ve yüzey bağıl neminin küf gelişimine elverişli koşullarda ne kadar süre kaldığı da önemlidir.</p>
+  
+      <p>Profesyonel hesaplamalarda dış iklim verileri, iç ortam sıcaklığı, nem sınıfı, yapı elemanının ısıl direnci ve birleşim geometrisi birlikte değerlendirilir.</p>
+  
+      <h3>Isı Köprüsü Proje Aşamasında Nasıl Hesaplanır?</h3>
+      <p>Isı köprülerinin etkisi, yalnızca duvarın metrekare başına ısı geçirgenlik değeriyle belirlenemez. Duvar, döşeme, çatı ve pencere gibi yapı elemanlarının birleşimlerinde oluşan ilave ısı akışı ayrıca değerlendirilmelidir.</p>
+  
+      <p>Projede doğrusal ve noktasal ısı köprüleri hesaplanabilir. Karmaşık detaylarda iki veya üç boyutlu ısı akışı analizleri kullanılarak iç yüzey sıcaklıkları ve ısı kayıpları belirlenebilir.</p>
+  
+      <p>Hesaplamalarda özellikle şu sonuçlar incelenir:</p>
+  
+      <ul>
+        <li>Birleşim detayındaki ilave ısı kaybı,</li>
+        <li>En düşük iç yüzey sıcaklığı,</li>
+        <li>Yüzey yoğuşması ve küf oluşumu riski,</li>
+        <li>Yalıtım katmanının sürekliliği,</li>
+        <li>Malzeme ve bağlantı alternatiflerinin performansı.</li>
+      </ul>
+  
+      <h3>TS 825:2024 Kapsamında Isı Yalıtımı Neden Önemlidir?</h3>
+      <p>Türkiye’de yeni binaların ısı yalıtımı ve enerji performansı, yürürlükteki mevzuat ve güncel standartlar doğrultusunda projelendirilmelidir. TS 825:2024 Binalarda Isı Yalıtım Kuralları standardı, 1 Nisan 2025 itibarıyla zorunlu standart olarak uygulanmaya başlanmıştır.</p>
+  
+      <p>Güncel düzenlemelerle iklim bölgeleri ve enerji performansı hesaplama yaklaşımı yenilenmiştir. Ancak bir yapının yalnızca toplam enerji ihtiyacı sınırlarını karşılaması, her birleşim detayında küf riskinin ortadan kalktığı anlamına gelmez.</p>
+  
+      <p>Isı yalıtım raporundaki hesapların uygulama projeleriyle uyumlu olması, proje detaylarının şantiyede doğru uygulanması ve özellikle ısı köprülerinin saha kontrolleriyle doğrulanması gerekir.</p>
+  
+      <h3>Şantiyede Isı Yalıtımı Uygulanırken Nelere Dikkat Edilmelidir?</h3>
+      <p>İyi hazırlanmış bir ısı yalıtım projesi, uygulama sırasında yapılan hatalar nedeniyle performansını kaybedebilir. Bu nedenle malzeme seçimi kadar işçilik ve kalite kontrolü de önemlidir.</p>
+  
+      <p>Şantiye uygulamasında aşağıdaki kontroller yapılmalıdır:</p>
+  
+      <ul>
+        <li>Yalıtım malzemesinin projedeki tür, kalınlık ve teknik özelliklerle uyumlu olması,</li>
+        <li>Yüzeyin uygulamaya uygun, temiz ve taşıyıcı durumda bulunması,</li>
+        <li>Yalıtım levhalarının şaşırtmalı ve boşluksuz yerleştirilmesi,</li>
+        <li>Levhalar arasındaki büyük boşlukların sıva veya yapıştırıcıyla doldurulmaması,</li>
+        <li>Kolon, kiriş ve döşeme alınlarında yalıtımın devam etmesi,</li>
+        <li>Pencere söveleri ve denizlik altlarının yalıtılması,</li>
+        <li>Dübel ve yapıştırıcı uygulamasının sistem tarifine uygun olması,</li>
+        <li>Donatı filesinin yeterli bindirme payıyla uygulanması,</li>
+        <li>Kapı, pencere ve cephe birleşimlerinin su sızdırmazlığının sağlanması,</li>
+        <li>Teras, parapet ve temel birleşimlerinde ısı-su yalıtımı sürekliliğinin korunması.</li>
+      </ul>
+  
+      <h3>Yeni Daire Teslim Alırken Isı Köprüsü Nasıl Kontrol Edilir?</h3>
+      <p>Daire teslimi sırasında ısı köprülerinin tamamı gözle tespit edilemeyebilir. Özellikle yaz aylarında yapılan kontrollerde iç ve dış ortam sıcaklıkları birbirine yakın olduğundan soğuk yüzeyler belirgin olmayabilir.</p>
+  
+      <p>Bununla birlikte alıcılar aşağıdaki konuları kontrol edebilir:</p>
+  
+      <ul>
+        <li>Dış duvar köşelerinde renk değişimi veya nem kokusu bulunup bulunmadığı,</li>
+        <li>Pencere çevrelerinde çatlak, açıklık ve hava sızıntısı olup olmadığı,</li>
+        <li>Denizlik altlarında su izi veya boya kabarması bulunup bulunmadığı,</li>
+        <li>Tavan-duvar birleşimlerinde yatay lekeler görülüp görülmediği,</li>
+        <li>Banyo ve mutfak havalandırmasının çalışıp çalışmadığı,</li>
+        <li>Çatı, balkon ve teras süzgeçlerinin doğru çalışıp çalışmadığı,</li>
+        <li>Isı yalıtım projesi ve Enerji Kimlik Belgesi'nin bulunup bulunmadığı,</li>
+        <li>Uygulanan dış cephe sisteminin malzeme ve kalınlık bilgilerinin belgelenip belgelenmediği.</li>
+      </ul>
+  
+      <p>Daha kapsamlı bir inceleme için uygun hava koşullarında termal kamera kontrolü ve yüzey sıcaklığı ölçümü yapılabilir.</p>
+  
+      <h3>Küflenen Duvarın Üzerini Boyamak Yeterli midir?</h3>
+      <p>Küflü yüzeyin temizlenmesi ve yeniden boyanması, görünümü geçici olarak iyileştirebilir. Ancak ısı köprüsü, su sızıntısı veya yüksek iç ortam nemi devam ediyorsa küf kısa süre sonra yeniden oluşabilir.</p>
+  
+      <p>Kalıcı çözüm için aşağıdaki sıra izlenmelidir:</p>
+  
+      <ol>
+        <li>Nemin kaynağı belirlenmelidir.</li>
+        <li>Su sızıntısı varsa onarılmalıdır.</li>
+        <li>Isı köprüsü ve yalıtım süreksizliği düzeltilmelidir.</li>
+        <li>Havalandırma ve ısıtma koşulları iyileştirilmelidir.</li>
+        <li>Yüzey tamamen kuruduktan sonra uygun temizlik ve yenileme işlemi yapılmalıdır.</li>
+      </ol>
+  
+      <p>Küf temizliği sırasında sporların yaşam alanına yayılmaması ve kullanılan ürünlerin yüzey malzemesine zarar vermemesi gerekir. Geniş alanlara yayılan veya sürekli tekrarlayan küf problemlerinde uzman desteği alınmalıdır.</p>
+  
+      <h3>Isı Yalıtımı Kalınlığı Tek Başına Yeterli midir?</h3>
+      <p>Isı yalıtımının kalınlığı bina performansı açısından önemlidir; ancak tek başına yeterli değildir. Çok kalın bir yalıtım levhası kullanılması, yanlış balkon, pencere veya parapet detaylarını otomatik olarak düzeltmez.</p>
+  
+      <p>Başarılı bir bina kabuğu için şu dört unsur birlikte sağlanmalıdır:</p>
+  
+      <ul>
+        <li>İklim koşullarına uygun yalıtım kalınlığı,</li>
+        <li>Düşük ısı iletkenliğine sahip uygun malzeme,</li>
+        <li>Bina kabuğu boyunca kesintisiz uygulama,</li>
+        <li>Doğru hava, su ve buhar kontrolü.</li>
+      </ul>
+  
+      <p>Bu nedenle ürün etiketi kadar sistemin tamamı ve uygulama detayları değerlendirilmelidir.</p>
+  
+      <h3>Isı Köprüleri Enerji Tüketimini Nasıl Etkiler?</h3>
+      <p>Isı köprüleri yalnızca küf ve yüzey yoğuşması problemi oluşturmaz. Bina kabuğundaki ilave ısı kayıpları nedeniyle kışın ısıtma, yazın ise soğutma ihtiyacını artırabilir.</p>
+  
+      <p>Yüzey sıcaklıklarının dengesiz olması kullanıcıların konforunu da etkiler. Oda havası yeterli sıcaklıkta olsa bile soğuk duvar ve pencere yüzeyleri nedeniyle kullanıcı kendisini rahatsız hissedebilir ve ısıtma sistemini daha yüksek sıcaklıkta çalıştırabilir.</p>
+  
+      <p>Kesintisiz ve doğru tasarlanmış yalıtım sistemi; enerji tüketimini azaltmanın yanında iç yüzey sıcaklıklarını daha dengeli tutarak yaşam konforunu iyileştirir.</p>
+  
+      <h3>Sık Sorulan Sorular</h3>
+  
+      <h4>Yeni bir binada küf oluşması normal midir?</h4>
+      <p>Yeni yapılarda sıva, şap ve beton gibi malzemelerin içerdiği yapım nemi bir süre devam edebilir. Ancak tekrarlayan veya belirli yapı detaylarını takip eden küf normal kabul edilmemeli; havalandırma, su sızıntısı ve ısı köprüsü açısından incelenmelidir.</p>
+  
+      <h4>Dış cephede mantolama varsa küf oluşur mu?</h4>
+      <p>Evet. Yalıtımın kesintiye uğraması, pencere çevrelerinin hatalı uygulanması, balkon ısı köprüleri, su sızıntıları veya yetersiz havalandırma nedeniyle yalıtımlı binalarda da küf oluşabilir.</p>
+  
+      <h4>Küf yalnızca kuzey cephede mi oluşur?</h4>
+      <p>Kuzeye bakan ve daha az güneş alan yüzeylerde risk artabilir; ancak küf bütün cephelerde oluşabilir. Belirleyici olan yüzey sıcaklığı, nem, hava dolaşımı ve yapı detaylarıdır.</p>
+  
+      <h4>Pencere camındaki buğulanma ısı köprüsü olduğunu gösterir mi?</h4>
+      <p>Camın oda tarafındaki yüzeyinde oluşan buğulanma, iç ortam neminin yüksek veya cam yüzey sıcaklığının düşük olduğunu gösterebilir. Cam ünitesinin ara boşluğunda oluşan buğulanma ise yalıtım camı sızdırmazlığında sorun bulunduğuna işaret edebilir.</p>
+  
+      <h4>Termal kamera kontrolü hangi mevsimde yapılmalıdır?</h4>
+      <p>Isı köprülerinin belirgin biçimde görüntülenebilmesi için iç ve dış ortam arasında yeterli sıcaklık farkı bulunması gerekir. Bu nedenle inceleme koşulları uzman tarafından güneş, rüzgâr, yağış ve ısıtma durumu dikkate alınarak belirlenmelidir.</p>
+  
+      <h4>Nem alma cihazı küfü tamamen önler mi?</h4>
+      <p>Nem alma cihazı iç ortam nemini azaltarak riski düşürebilir; ancak su sızıntısını, eksik yalıtımı veya yapısal ısı köprüsünü ortadan kaldırmaz. Kalıcı çözüm için sorunun kaynağı giderilmelidir.</p>
+  
+      <h4>Isı köprüsü sonradan düzeltilebilir mi?</h4>
+      <p>Birçok ısı köprüsü uygun dış cephe yalıtımı, pencere birleşimlerinin yenilenmesi veya çatı ve balkon detaylarının düzeltilmesiyle azaltılabilir. Ancak müdahale yöntemi taşıyıcı sistem, cephe ve su yalıtımı birlikte incelenerek belirlenmelidir.</p>
+  
+      <h4>Kalın perde kullanmak küfü artırır mı?</h4>
+      <p>Kalın perdeler pencere ve dış duvar önündeki sıcak hava dolaşımını azaltabilir. Yüzey zaten soğuksa perde arkasında nem birikmesi kolaylaşabilir. Ancak asıl neden yine yüzey sıcaklığı ve iç ortam nem koşullarıdır.</p>
+  
+      <h3>Isı Köprüsüz Bir Bina İçin Bütüncül Yaklaşım</h3>
+      <p>Isı köprülerini önlemek, yalnızca cepheye yalıtım levhası yerleştirmekten ibaret değildir. Mimari proje, statik sistem, cephe tasarımı, pencere montajı, çatı, su yalıtımı ve mekanik havalandırma birbirleriyle koordineli biçimde hazırlanmalıdır.</p>
+  
+      <p>Projede doğru çözülen detayların şantiyede aynı kaliteyle uygulanması ve uygulamanın kapatılmadan önce kontrol edilmesi gerekir. Özellikle pencere çevreleri, döşeme kenarları, balkonlar ve parapetler tamamlandıktan sonra hatalara müdahale etmek daha maliyetli olabilir.</p>
+  
+      <p>Uzun ömürlü ve sağlıklı bir yaşam alanı için üç temel koşul birlikte sağlanmalıdır:</p>
+  
+      <ul>
+        <li><strong>Isıl süreklilik:</strong> Yalıtım bina kabuğu boyunca kesintisiz olmalıdır.</li>
+        <li><strong>Nem kontrolü:</strong> Yağmur, tesisat ve zemin kaynaklı su yapıya girmemelidir.</li>
+        <li><strong>Kontrollü havalandırma:</strong> İçeride oluşan su buharı düzenli biçimde dışarı atılmalıdır.</li>
+      </ul>
+  
+      <h3>Neli Mühendislik ile Sağlıklı ve Enerji Verimli Yapılar</h3>
+      <p><strong>Neli Mühendislik</strong> olarak konut projelerinde ısı yalıtımını yalnızca enerji tüketimini azaltan bir cephe uygulaması olarak değerlendirmiyoruz. Kolon, kiriş, döşeme, pencere, balkon, çatı ve temel birleşimlerini bir bütün olarak ele alarak yapı kabuğunun sürekliliğine önem veriyoruz.</p>
+  
+      <p>Doğru projelendirilmiş ve kontrollü biçimde uygulanmış yapı detayları; enerji kayıplarını azaltırken iç yüzey sıcaklıklarının dengelenmesine, yoğuşma riskinin düşürülmesine ve daha sağlıklı yaşam alanları oluşturulmasına yardımcı olur.</p>
+  
+      <p>İzmir'de geliştirdiğimiz güncel konut projelerini, daire seçeneklerini ve mühendislik yaklaşımımızı incelemek için <strong><a href='https://neli.tr/showcase' target='_blank' rel='noopener noreferrer' style='color: #b32128; font-weight: bold; text-decoration: underline;'>neli.tr/showcase</a></strong> sayfasını ziyaret edebilirsiniz.</p>
+    </article>`,
+    coverImage: "/images/blog/isi-koprusu.webp",
+    coverImageAlt:
+      "Yeni bir binada ısı köprüsü, yüzey yoğuşması ve küf oluşumunun önlenmesi — Neli Mühendislik",
+    category: "Isı Yalıtımı ve Yapı Fiziği",
+    tags: JSON.stringify([
+      "ısı köprüsü",
+      "küf oluşumu",
+      "yüzey yoğuşması",
+      "ısı yalıtımı",
+      "termal kamera",
+      "TS 825",
+      "İzmir konut projeleri",
+      "Neli Mühendislik",
+    ]),
+    featured: false,
+    status: "published" as const,
+    metaTitle: "Yeni Binalarda Isı Köprüsü ve Küf Önleme | Neli Mühendislik",
+    metaDescription:
+      "Yeni binalarda ısı köprüsü neden oluşur? Kolon, balkon ve pencere çevresindeki yoğuşma ve küfün doğru yalıtımla nasıl önleneceğini öğrenin.",
+    metaKeywords:
+      "yeni binalarda ısı köprüsü nasıl önlenir, küf oluşumu nasıl engellenir, duvar köşesinde küf, pencere çevresinde yoğuşma, kolon kiriş ısı köprüsü, balkon ısı köprüsü, kesintisiz ısı yalıtımı, TS 825 2024, İzmir yeni konut projeleri, Neli Mühendislik",
+    publishedAt: "2026-07-06",
+  },
+  {
+    slug: "bina-cevresinde-yagmur-suyu-drenaji-temel-cevresi-tahliyesi",
+    title:
+      "Bina Çevresinde Yağmur Suyu Drenajı ve Temel Çevresi Tahliyesi Nasıl Yapılır?",
+    excerpt:
+      "Yağmur suyunun bina temelinden güvenli biçimde uzaklaştırılmaması; bodrum katlarda nem, su sızıntısı, küf, yalıtım hasarı ve taşıyıcı elemanlarda korozyon riskine yol açabilir. Çatı suyundan çevresel drenaj borularına, yüzey eğiminden tahliye noktasına kadar doğru drenaj sisteminin nasıl kurulması gerektiğini inceleyin.",
+    content: `<article>
+      <h2>Yağmur Suyu Neden Bina Temelinden Uzaklaştırılmalıdır?</h2>
+      <p>Bir binanın uzun ömürlü olabilmesi için yalnızca taşıyıcı sisteminin güçlü olması yeterli değildir. Yağmur, yüzey akışı, sulama suyu ve zeminde biriken suların yapıdan kontrollü biçimde uzaklaştırılması gerekir. Parsel içerisindeki su doğru yönetilmediğinde temel ve bodrum perdeleri sürekli neme maruz kalabilir.</p>
+  
+      <p>Özellikle yoğun yağışlarda çatıdan, sert zeminlerden, araç yollarından ve çevredeki yüksek kotlardan gelen su bina çevresinde birikebilir. Toprağa sızan su, temel perdelerine doğru ilerleyerek su yalıtımı üzerinde basınç oluşturabilir. Yalıtımdaki küçük bir uygulama hatası veya korunmamış bir birleşim noktası zaman içerisinde bodrum katlarda nem ve su sızıntısı olarak ortaya çıkabilir.</p>
+  
+      <p>Doğru yağmur suyu yönetimi; suyun mümkün olduğunca bina temeline ulaşmadan yakalanması, kontrollü güzergâhlarda taşınması, gerekli durumlarda depolanması ve ilgili idarenin izin verdiği tahliye noktasına güvenli biçimde ulaştırılması esasına dayanır.</p>
+  
+      <blockquote style='margin: 20px 0; padding: 10px 20px; border-left: 5px solid #b32128; background: #f9f9f9;'>
+        <strong>Özet Cevap (AEO / Öne Çıkarılan Snippet):</strong> Bina çevresinde yağmur suyu drenajı; çatı inişlerinin kapalı borularla toplanması, parsel zeminine binadan uzaklaşacak yönde eğim verilmesi, yüzey sularının oluk ve süzgeçlerle yakalanması ve temel perdelerinin önünde filtreli çevresel drenaj sistemi kurulmasıyla yapılır. Drenaj boruları uygun eğimle kontrol bacalarına ve izin verilen tahliye noktasına bağlanmalı; temel ve bodrum perdelerinde ayrıca kesintisiz su yalıtımı uygulanmalıdır. Drenaj levhası veya drenaj borusu tek başına su yalıtımı yerine geçmez.
+      </blockquote>
+  
+      <h3>Yağmur Suyu Drenajı ile Su Yalıtımı Aynı Şey midir?</h3>
+      <p>Yağmur suyu drenajı ve su yalıtımı birbirini tamamlayan ancak farklı görevleri bulunan iki sistemdir. Drenaj, yapı çevresindeki suyu toplayarak uzaklaştırır. Su yalıtımı ise yapı elemanlarının su ve nemle temasını engelleyen koruyucu katmanı oluşturur.</p>
+  
+      <p>Drenaj sistemi suyun temel perdesi önünde birikmesini ve hidrostatik basınç oluşturmasını azaltabilir. Ancak borunun tıkanması, tahliye hattının geri tepmesi veya olağanüstü yağış oluşması halinde yapı yine suya maruz kalabilir. Bu nedenle temel ve bodrum perdeleri yalnızca drenaj sistemine güvenilerek yalıtımsız bırakılamaz.</p>
+  
+      <p>Aynı şekilde kaliteli bir su yalıtımı yapılmış olması da bina çevresinde su birikmesine izin verilebileceği anlamına gelmez. Sürekli su basıncı, birleşim noktalarını, tesisat geçişlerini ve uygulama kusurlarını daha fazla zorlar. Güvenli bir sistemde su yalıtımı, koruma katmanı ve drenaj birlikte çalışır.</p>
+  
+      <h3>Drenaj Levhası Tek Başına Su Yalıtımı Sağlar mı?</h3>
+      <p>Drenaj levhaları, temel veya bodrum perdesi üzerindeki su yalıtımını dolgu sırasında oluşabilecek mekanik hasarlardan korumak ve suyun düşey yönde drenaj hattına ulaşmasına yardımcı olmak amacıyla kullanılabilir.</p>
+  
+      <p>Ancak drenaj levhası tek başına su geçirimsiz bir temel sistemi oluşturmaz. Levhanın ek yerleri, sabitleme noktaları ve üst bitişleri su yalıtımı gibi değerlendirilmemelidir. Önce proje koşullarına uygun su yalıtımı uygulanmalı, ardından yalıtım koruma altına alınmalıdır.</p>
+  
+      <h3>Drenaj Projesinden Önce Hangi Veriler İncelenmelidir?</h3>
+      <p>Her bina için aynı drenaj detayı kullanılamaz. Sistem tasarlanmadan önce parselin topoğrafyası, zemin yapısı, yeraltı su seviyesi, yağış koşulları ve belediye altyapısı birlikte değerlendirilmelidir.</p>
+  
+      <p>Proje başlangıcında aşağıdaki bilgiler incelenmelidir:</p>
+  
+      <ul>
+        <li>Parselin doğal ve düzenlenmiş zemin kotları,</li>
+        <li>Komşu parsellerden gelebilecek yüzey suları,</li>
+        <li>Yol, kaldırım ve bina giriş kotları,</li>
+        <li>Zemin ve temel etüt raporundaki geçirgenlik bilgileri,</li>
+        <li>Mevsimsel en yüksek yeraltı su seviyesi,</li>
+        <li>Temel tipi ve bodrum kat derinliği,</li>
+        <li>Çatı ve sert zeminlerden toplanacak yağmur suyu miktarı,</li>
+        <li>Parselde yağmur suyu şebekesinin bulunup bulunmadığı,</li>
+        <li>Cazibeli tahliye için yeterli kot farkının olup olmadığı,</li>
+        <li>Taşkın veya geri tepme riski bulunan noktalar,</li>
+        <li>Yağmur suyu depolama ve yeniden kullanım gereksinimleri.</li>
+      </ul>
+  
+      <p>Bu değerlendirmeler yapılmadan yalnızca bina çevresine delikli boru döşenmesi, suyun hangi yönde hareket edeceği ve nereye tahliye edileceği çözülmediği için etkisiz kalabilir.</p>
+  
+      <h3>Parsel Zemini Binadan Hangi Yöne Eğimli Olmalıdır?</h3>
+      <p>Bina çevresindeki bitmiş zemin, yağmur suyunu temel ve dış duvarlardan uzaklaştıracak biçimde düzenlenmelidir. Su, bina cephesine doğru akmamalı veya temel çevresinde kapalı bir çanak içerisinde birikmemelidir.</p>
+  
+      <p>Bahçe, yaya yolu ve araç yolu eğimleri; suyu parsel içerisindeki süzgeçlere, açık kanallara, yağmur bahçelerine, depolama sistemine veya izin verilen tahliye hattına yönlendirmelidir. Eğim değerleri yüzey kaplamasına, kullanım amacına, erişilebilirlik şartlarına ve mimari projeye göre belirlenmelidir.</p>
+  
+      <p>Zemin düzenlemesinde şu hatalardan kaçınılmalıdır:</p>
+  
+      <ul>
+        <li>Peyzaj toprağının dış cephe kaplaması veya su yalıtımı bitiş kotunun üzerine yükseltilmesi,</li>
+        <li>Bahçe zemininin binaya doğru eğimli bırakılması,</li>
+        <li>Dış cephe dibinde su tutan çukurlar oluşturulması,</li>
+        <li>Yüzey süzgeçlerinin en yüksek noktaya yerleştirilmesi,</li>
+        <li>Kapı ve bodrum pencerelerinin yol seviyesinden düşük bırakılması,</li>
+        <li>Komşu parsel suyunun kontrolsüz şekilde bina yönüne çevrilmesi,</li>
+        <li>Geçirimsiz kaplamaların tahliye noktası olmadan uygulanması.</li>
+      </ul>
+  
+      <h3>Çatı Yağmur Suları Nasıl Toplanmalıdır?</h3>
+      <p>Çatı, bir binadaki en büyük yağmur suyu toplama yüzeylerinden biridir. Çatıdan gelen suyun doğrudan bina dibine bırakılması, kısa sürede temel çevresinde yoğun su birikmesine neden olabilir.</p>
+  
+      <p>Çatı eğimleri, oluklar, süzgeçler ve yağmur iniş boruları beklenen yağış debisine göre hesaplanmalıdır. İniş boruları bina cephesinde sonlandırılmamalı; kapalı bir sistemle yağmur suyu hattına, depolama tankına veya projede belirlenen güvenli tahliye noktasına bağlanmalıdır.</p>
+  
+      <p>Çatı drenajında şu detaylar önemlidir:</p>
+  
+      <ul>
+        <li>Çatı yüzeyine yeterli eğim verilmesi,</li>
+        <li>Süzgeçlerin suyun doğal akış yönündeki düşük noktalara yerleştirilmesi,</li>
+        <li>Yaprak ve katı maddelere karşı uygun tutucular kullanılması,</li>
+        <li>İniş borularında temizleme ve kontrol imkânı bulunması,</li>
+        <li>Taşma halinde suyun bina içerisine yönelmemesi,</li>
+        <li>Teras ve parapetlerde acil taşma ağızlarının değerlendirilmesi,</li>
+        <li>İniş borusu çıkışlarının temel çevresine serbestçe boşalmaması.</li>
+      </ul>
+  
+      <h3>Çatı İniş Boruları Temel Drenajına Bağlanabilir mi?</h3>
+      <p>Çatıdan kısa sürede yüksek debide su gelebilir. Bu suyun doğrudan temel çevresindeki delikli drenaj borusuna verilmesi, drenaj sisteminin kapasitesini aşabilir ve suyu uzaklaştırmak yerine temel çevresine dağıtabilir.</p>
+  
+      <p>Bu nedenle çatı yağmur suları genellikle sızdırmaz, kapalı ve ayrı borularla taşınmalıdır. Temel çevresindeki delikli drenaj hattı ise zeminde ve perde önünde biriken suları toplamak için kullanılmalıdır.</p>
+  
+      <p>Her iki sistemin ortak bir tahliye noktasına bağlanması planlanıyorsa bağlantı; hidrolik kapasite, geri tepme riski, bakım imkânı ve yerel altyapı şartları değerlendirilerek projelendirilmelidir.</p>
+  
+      <h3>Temel Çevresi Drenaj Sistemi Nedir?</h3>
+      <p>Temel çevresi veya çevresel drenaj sistemi, toprak altındaki düşey yapı elemanlarının önünde biriken suyun hidrostatik basınç oluşturmasını azaltmak amacıyla kurulan filtreli boru sistemidir.</p>
+  
+      <p>Sistem genel olarak şu bileşenlerden oluşur:</p>
+  
+      <ul>
+        <li>Delikli veya yarıklı drenaj borusu,</li>
+        <li>Yıkanmış ve uygun dane dağılımına sahip filtre agregası,</li>
+        <li>İnce zemin parçacıklarını sınırlayan geotekstil filtre katmanı,</li>
+        <li>Temel ve bodrum perdesi su yalıtımı,</li>
+        <li>Su yalıtımını koruyan levha veya koruma katmanı,</li>
+        <li>Düşey drenajı kolaylaştıran uygun sistem bileşenleri,</li>
+        <li>Köşe ve yön değişimlerinde kontrol bacaları,</li>
+        <li>Cazibeli çıkış hattı veya drenaj toplama çukuru,</li>
+        <li>Gerekli durumlarda pompa, alarm ve yedekleme sistemi.</li>
+      </ul>
+  
+      <h3>Drenaj Borusu Temele Göre Nereye Yerleştirilmelidir?</h3>
+      <p>Drenaj borusunun kotu ve temel elemanlarına uzaklığı, geoteknik ve statik proje esaslarına göre belirlenmelidir. Boru, suyu temel perdesi önünde basınç oluşturmadan yakalayabilecek bir seviyede olmalı; ancak temel altındaki taşıyıcı zemini gevşetecek veya temel davranışını olumsuz etkileyecek biçimde yerleştirilmemelidir.</p>
+  
+      <p>Mevcut bir binada temel seviyesinin altına kontrolsüz biçimde kazı yapılması tehlikelidir. Böyle bir müdahale temel altındaki zeminin boşalmasına, oturmalara ve taşıyıcı sistem hasarına yol açabilir. Sonradan drenaj yapılacak yapılarda kazı etapları ve destekleme yöntemi inşaat ve geoteknik mühendisleri tarafından belirlenmelidir.</p>
+  
+      <p>Boru güzergâhı boyunca suyun kontrol bacalarına ve tahliye noktasına doğru sürekli akabileceği bir eğim sağlanmalıdır. Ters eğim, çökme ve boru içinde su cebi oluşmasına izin verilmemelidir.</p>
+  
+      <h3>Drenaj Borusunun Delikleri Hangi Yönde Olmalıdır?</h3>
+      <p>Drenaj borularının delik veya yarık yönü, kullanılan boru sisteminin üretici detayına ve hidrolik tasarıma göre belirlenmelidir. Her ürün için geçerli tek bir yerleştirme kuralı kabul edilmemelidir.</p>
+  
+      <p>Borunun tipi, delik geometrisi, filtre malzemesi ve döşeme detayı birlikte değerlendirilmelidir. Üreticinin teknik dokümanına aykırı uygulama yapılması, borunun su toplama kapasitesini azaltabilir veya tortuyla daha hızlı tıkanmasına neden olabilir.</p>
+  
+      <h3>Filtre Agregası Neden Kullanılır?</h3>
+      <p>Drenaj borusunun çevresindeki filtre agregası, suyun boruya kolayca ulaşmasını sağlarken ince zemin parçacıklarının boru çevresinde birikmesini azaltır. Toprak veya kazı malzemesinin doğrudan delikli borunun üzerine doldurulması, sistemin kısa sürede tıkanmasına neden olabilir.</p>
+  
+      <p>Kullanılacak agreganın temiz, yıkanmış ve projede belirtilen dane özelliklerine sahip olması gerekir. Kil, ince toprak veya yüksek oranda kırıntı içeren dolgu malzemeleri drenaj boşluklarını kapatabilir.</p>
+  
+      <p>Filtre agregasının kalınlığı ve boru çevresindeki yerleşimi; zemin özelliklerine, boru çapına ve su miktarına göre projelendirilmelidir.</p>
+  
+      <h3>Geotekstil Filtre Katmanı Ne İşe Yarar?</h3>
+      <p>Geotekstil, ince zemin parçacıklarının filtre agregası ve drenaj borusu içerisine taşınmasını sınırlandırmak amacıyla kullanılabilir. Böylece drenaj sisteminin uzun süre geçirgen kalmasına yardımcı olur.</p>
+  
+      <p>Ancak her geotekstil her zemin için uygun değildir. Çok sıkı bir ürün su geçişini azaltabilir; çok geniş açıklıklı bir ürün ise ince zeminin filtre katmanına taşınmasına izin verebilir. Geotekstil seçimi zeminin tane dağılımı ve geçirgenlik özellikleri dikkate alınarak yapılmalıdır.</p>
+  
+      <p>Geotekstilin yırtılması, ek yerlerinin açık bırakılması veya dolgu sırasında yerinden kayması filtre sisteminin işlevini bozabilir. Uygulama, dolgu kapatılmadan önce kontrol edilmelidir.</p>
+  
+      <h3>Temel ve Bodrum Perdesi Su Yalıtımı Nasıl Korunmalıdır?</h3>
+      <p>Temel perde duvarına uygulanan su yalıtımı, geri dolgu sırasında taş, moloz ve iş makinelerinin etkisiyle zarar görebilir. Yalıtımın üzeri uygun koruma levhası, ısı yalıtımı veya projede tanımlanan koruma sistemiyle kapatılmalıdır.</p>
+  
+      <p>Koruma katmanı uygulanırken su yalıtımını delen gereksiz mekanik bağlantılardan kaçınılmalıdır. Sabitleme yapılması gerekiyorsa detay, yalıtım sisteminin izin verdiği bölgelerde ve üretici talimatlarına uygun çözülmelidir.</p>
+  
+      <p>Özellikle aşağıdaki noktalar dolgu öncesinde kontrol edilmelidir:</p>
+  
+      <ul>
+        <li>Temel ile perde duvarı birleşimleri,</li>
+        <li>Dilatasyon ve soğuk derzler,</li>
+        <li>Boru ve tesisat geçişleri,</li>
+        <li>Tij delikleri ve kalıp bağlantı noktaları,</li>
+        <li>Su yalıtımı ek ve bindirmeleri,</li>
+        <li>Yalıtımın subasman seviyesindeki bitişi,</li>
+        <li>Köşe dönüşleri ve pah uygulamaları,</li>
+        <li>Drenaj levhasının üst bitiş profili.</li>
+      </ul>
+  
+      <h3>Su Yalıtımı Hangi Taraftan Uygulanmalıdır?</h3>
+      <p>Yeni yapılarda su yalıtımının temel yaklaşımı, suyun yapı elemanına ulaştığı dış taraftan uygulanmasıdır. Böylece betonarme perde ve temel elemanları suyun etkisinden korunur.</p>
+  
+      <p>Bodrum tamamlandıktan sonra yalnızca iç yüzeyden yapılan müdahaleler, suyun betonarme eleman içerisine girmesini her zaman engellemez. İçten yapılan uygulamalar belirli onarım koşullarında kullanılabilse de yeni yapıdaki dıştan su yalıtımının doğrudan alternatifi olarak görülmemelidir.</p>
+  
+      <h3>Yeraltı Suyu ile Yağmur Suyu Aynı Sistemle Yönetilebilir mi?</h3>
+      <p>Yağmur suyu, yüzeyden veya çatıdan kısa sürede gelen akışı ifade eder. Yeraltı suyu ise zemin boşluklarında bulunan ve temel ile bodrum elemanlarında sürekli veya mevsimsel basınç oluşturabilen sudur.</p>
+  
+      <p>Temel veya bodrum perdeleri mevsimsel en yüksek yeraltı su seviyesinin altında kalıyorsa yalnızca çevresel drenaj borusuna güvenilmemelidir. Elektrik kesintisi, pompa arızası veya drenaj hattının tıkanması durumunda su seviyesi yeniden yükselebilir.</p>
+  
+      <p>Basınçlı su etkisi bulunan yapılarda su yalıtımı ve taşıyıcı sistem detayları bu basınca göre projelendirilmelidir. Drenaj, su basıncını azaltan ek bir önlem olabilir ancak güvenliğin tek bileşeni olmamalıdır.</p>
+  
+      <h3>Alansal Drenaj Ne Zaman Kullanılır?</h3>
+      <p>Alansal drenaj sistemi, zemine oturan döşemelerin altında biriken suyun hidrostatik basınç oluşturmasını sınırlamak amacıyla kullanılabilir. Bu sistem yalnızca bina çevresindeki borudan farklı olarak döşeme altındaki daha geniş bir alanı kapsar.</p>
+  
+      <p>Alansal drenaj gereksinimi; zemin geçirgenliği, temel tipi, yeraltı su seviyesi ve döşeme altındaki su hareketi dikkate alınarak belirlenmelidir. Yanlış uygulanmış bir sistem, ince zemin taşınmasına ve temel altındaki zemin koşullarının değişmesine neden olabilir.</p>
+  
+      <p>Bu nedenle temel altı drenaj uygulamaları geoteknik ve statik tasarımla birlikte çözülmeli, şantiyede proje dışı drenaj kanalları açılmamalıdır.</p>
+  
+      <h3>Cazibeli Tahliye Mümkün Değilse Ne Yapılır?</h3>
+      <p>Drenaj hattı belediye yağmur suyu şebekesine veya güvenli bir açık çıkış noktasına doğal eğimle bağlanamıyorsa su bir toplama çukurunda biriktirilerek pompayla tahliye edilebilir.</p>
+  
+      <p>Drenaj toplama çukuru ve pompa sistemi tasarlanırken şu bileşenler değerlendirilmelidir:</p>
+  
+      <ul>
+        <li>Beklenen su debisine uygun çukur hacmi,</li>
+        <li>Çalışma ve yedek pompa düzeni,</li>
+        <li>Seviye şalterleri ve otomatik kontrol,</li>
+        <li>Yüksek su seviyesi alarmı,</li>
+        <li>Elektrik kesintisine karşı yedek enerji çözümü,</li>
+        <li>Pompa geri dönüşünü engelleyen çekvalf,</li>
+        <li>Bakım ve pompa değişimi için güvenli erişim,</li>
+        <li>Tahliye borusunun donma ve hasara karşı korunması.</li>
+      </ul>
+  
+      <p>Tek pompalı ve alarmı bulunmayan sistemlerde pompa arızası fark edilene kadar bodrum çevresinde su seviyesi yükselebilir. Su etkisinin kritik olduğu yapılarda yedekleme senaryosu hazırlanmalıdır.</p>
+  
+      <h3>Geri Tepme Riski Nasıl Önlenir?</h3>
+      <p>Şiddetli yağışlarda belediye yağmur suyu hattının dolması halinde parsel bağlantısından binaya doğru geri akış meydana gelebilir. Özellikle yol kotunun altında bulunan bodrumlar, otopark rampaları ve düşük seviyedeki süzgeçler bu riske açıktır.</p>
+  
+      <p>Geri tepme riskine karşı bağlantı kotları, şebeke taşkın seviyesi ve pompa gereksinimi projede değerlendirilmelidir. Uygun yerlerde geri akışı sınırlayan ekipman kullanılabilir; ancak bu ekipmanların bakım gerektirdiği unutulmamalıdır.</p>
+  
+      <p>Bir çekvalfin bulunması tek başına mutlak güvenlik sağlamaz. Mekanik parçalar tortu, yaprak veya katı maddeler nedeniyle çalışmayabilir. Kritik alanlarda taşma güzergâhı, alarm ve pompalı tahliye birlikte planlanmalıdır.</p>
+  
+      <h3>Bodrum Otopark Rampalarında Yağmur Suyu Nasıl Durdurulur?</h3>
+      <p>Açık otopark rampaları, yağmur suyunu doğrudan bodrum kata taşıyabilen geniş yüzeylerdir. Rampanın bütün yüzeyinden gelen su tek bir küçük süzgece bırakıldığında yoğun yağış sırasında taşma meydana gelebilir.</p>
+  
+      <p>Otopark rampalarında şu önlemler değerlendirilebilir:</p>
+  
+      <ul>
+        <li>Rampa üst kotunda yüzey suyunu kesen doğrusal kanal,</li>
+        <li>Rampa alt kotunda yeterli kapasiteli ikinci toplama kanalı,</li>
+        <li>Kanallarda temizlenebilir ızgara ve tortu tutucu,</li>
+        <li>Pompalı toplama çukuru ve yedek pompa,</li>
+        <li>Yüksek seviye alarmı,</li>
+        <li>Rampa yan duvarlarında kontrollü yüzey eğimleri,</li>
+        <li>Kapalı otopark içerisine geri akışı azaltacak eşik ve kot detayları.</li>
+      </ul>
+  
+      <p>Rampa drenajı, yalnızca ortalama yağışa göre değil projenin taşkın ve şiddetli yağış senaryoları dikkate alınarak hesaplanmalıdır.</p>
+  
+      <h3>Işıklık ve İngiliz Bahçelerinde Drenaj Nasıl Yapılır?</h3>
+      <p>Bodrum pencerelerinin önündeki ışıklıklar ve İngiliz bahçeleri, çevredeki zeminden daha düşük kotta bulunduğu için su biriktirmeye eğilimlidir. Bu alanların tabanına yalnızca küçük bir süzgeç yerleştirilmesi her koşulda yeterli olmayabilir.</p>
+  
+      <p>Işıklık çevresindeki zemin suyu açıklıktan uzaklaştırılmalı, üst bölümde su girişini azaltan detaylar oluşturulmalı ve tabandaki süzgecin tıkanmaya karşı erişilebilir olması sağlanmalıdır.</p>
+  
+      <p>Işıklık tahliyesi geri tepme riski bulunan bir hatta bağlanıyorsa pompalı çözüm gerekebilir. Pencere alt kotu ile olası su seviyesi arasında güvenli kot farkı bırakılmalıdır.</p>
+  
+      <h3>İstinat Duvarlarının Arkasında Drenaj Neden Gereklidir?</h3>
+      <p>İstinat duvarının arkasında biriken su, duvar üzerinde ilave basınç oluşturabilir. Yalnızca zemin yüküne göre tasarlanan bir duvarın arkasında su birikmesine izin verilmesi yapısal riskleri artırabilir.</p>
+  
+      <p>İstinat duvarı drenajında su yalıtımı, filtreli dolgu, drenaj borusu ve güvenli tahliye çıkışı birlikte çözülmelidir. Barbakan delikleri kullanılan projelerde suyun bina girişlerine, kaldırıma veya komşu parsele kontrolsüz biçimde akmasına izin verilmemelidir.</p>
+  
+      <p>İstinat duvarı drenajı ile bina temel drenajının bağlantısı, her iki sistemin debileri ve kotları hesaplanarak yapılmalıdır. İstinat duvarından gelen yüksek miktardaki su doğrudan bina temeline yönlendirilmemelidir.</p>
+  
+      <h3>Peyzaj Sulaması Temel Çevresini Nasıl Etkiler?</h3>
+      <p>Otomatik sulama sistemleri yanlış konumlandırıldığında dış duvar ve temel çevresi düzenli olarak ıslanabilir. Sulama başlıklarının cepheye doğru çalışması veya bitki yataklarının bina dibinde çanak oluşturması su yalıtımını gereksiz yere zorlar.</p>
+  
+      <p>Peyzaj tasarımında şu önlemler alınmalıdır:</p>
+  
+      <ul>
+        <li>Sulama başlıkları bina cephesinden uzağa yönlendirilmelidir.</li>
+        <li>Damla sulama debileri bitki ve zemin ihtiyacına göre ayarlanmalıdır.</li>
+        <li>Bina dibinde sürekli su isteyen bitkiler kullanılmamalıdır.</li>
+        <li>Bitki toprağı su yalıtımı bitiş kotunun üzerine çıkarılmamalıdır.</li>
+        <li>Peyzaj alanlarının taşma güzergâhları belirlenmelidir.</li>
+        <li>Ağaç köklerinin drenaj borularına ulaşma riski değerlendirilmelidir.</li>
+      </ul>
+  
+      <h3>Yağmur Suyu Atık Su Kanalına Bağlanabilir mi?</h3>
+      <p>Yağmur suyu ve evsel atık su sistemlerinin bağlantı esasları yerel idarenin altyapı düzenine göre belirlenir. Ayrık sistem bulunan bölgelerde yağmur suyu, evsel atık su kanalına kontrolsüz biçimde bağlanmamalıdır.</p>
+  
+      <p>Yanlış bağlantılar yoğun yağış sırasında atık su şebekesinin kapasitesini aşmasına, taşmalara ve arıtma tesislerine gereksiz temiz su taşınmasına neden olabilir. Aynı şekilde parsel drenajının nereye bağlanacağı, ilgili belediye veya su ve kanalizasyon idaresinin onayıyla belirlenmelidir.</p>
+  
+      <p>Yağmur suyu;</p>
+  
+      <ul>
+        <li>Varsa yağmur suyu şebekesine,</li>
+        <li>Uygun depolama ve yeniden kullanım sistemine,</li>
+        <li>İzin verilen kontrollü sızdırma sistemine,</li>
+        <li>Yetkili idarenin onayladığı güvenli tahliye noktasına</li>
+      </ul>
+  
+      <p>proje koşullarına göre yönlendirilebilir. Su, komşu parsele, kaldırıma, bina girişine veya temel çevresine serbestçe boşaltılmamalıdır.</p>
+  
+      <h3>Yağmur Suyu Depolanarak Yeniden Kullanılabilir mi?</h3>
+      <p>Çatı yüzeylerinden toplanan yağmur suyu, uygun filtreleme ve depolama sistemiyle içme suyu gerektirmeyen kullanım alanlarında değerlendirilebilir. Böylece hem şebeke suyu tüketimi hem de yoğun yağış sırasında parselden anlık tahliye edilen su miktarı azaltılabilir.</p>
+  
+      <p>Yağmur suyu toplama sisteminde genel olarak şu bileşenler bulunabilir:</p>
+  
+      <ul>
+        <li>Çatı olukları ve iniş boruları,</li>
+        <li>Yaprak ve kaba tortu tutucular,</li>
+        <li>İlk yağış veya ön filtreleme sistemi,</li>
+        <li>Uygun hacimli depolama tankı,</li>
+        <li>Taşma ve güvenli tahliye hattı,</li>
+        <li>Pompa ve kontrol sistemi,</li>
+        <li>İçme suyu tesisatından ayrılmış kullanım hattı,</li>
+        <li>Bakım ve temizlik erişimi.</li>
+      </ul>
+  
+      <p>Yağmur suyu tesisatı ile içme suyu tesisatı arasında sağlıksız çapraz bağlantı oluşturulmamalıdır. Kullanım noktaları ve borular, içilebilir olmayan su taşıdığını gösterecek biçimde tanımlanmalıdır.</p>
+  
+      <h3>2026 Yılında Yağmur Suyu Toplama Sistemi Hangi Yapılarda Zorunludur?</h3>
+      <p>Planlı Alanlar İmar Yönetmeliği'ndeki düzenlemeler kapsamında 1 Ocak 2026'dan sonra belirli büyüklükteki yeni yapılarda yağmur suyu toplama sistemi zorunlu hale gelmiştir.</p>
+  
+      <p>Depo hacmi ihtiyacının 7 m³'ün üzerinde olması şartıyla;</p>
+  
+      <ul>
+        <li>Parsel alanı 2.000 m²'den büyük alanlardaki yapılarda,</li>
+        <li>Parseldeki toplam çatı izdüşüm alanı 1.000 m²'den büyük yapılarda,</li>
+        <li>Depo hacmi ihtiyacı 7 m³'ü geçen kamu yapılarında</li>
+      </ul>
+  
+      <p>yağmur suyu toplama sistemi tesis edilmesi öngörülmektedir. Sistemlerin ruhsat eki mekanik tesisat projesinde gösterilmesi ve ilgili standartlara uygun tasarlanması gerekir.</p>
+  
+      <p>Yağmur suyu yalnızca zorunluluk kapsamındaki yapılarda değerlendirilen bir sistem olarak görülmemelidir. Daha küçük konut projelerinde de bahçe sulaması, ortak alan temizliği ve parsel içi taşkın kontrolü amacıyla uygulanabilir.</p>
+  
+      <h3>Yağmur Suyu Deposu Temel Drenajının Yerine Geçer mi?</h3>
+      <p>Hayır. Yağmur suyu deposu çatıdan gelen suyu toplar. Temel drenajı ise zemin içerisinde veya bodrum perdesi önünde biriken suyu uzaklaştırır. Bu iki sistemin kaynakları ve çalışma koşulları farklıdır.</p>
+  
+      <p>Depo dolduğunda fazla suyun güvenli biçimde uzaklaştırılması için taşma hattı bulunmalıdır. Taşma hattının bina temelinin yakınına boşaltılması, depolama sisteminin sağladığı faydayı ortadan kaldırabilir.</p>
+  
+      <p>Depo, çevresel drenaj borusundan gelen kirli ve tortulu zemin sularını toplamak için tasarlanmamışsa bu sular doğrudan depoya verilmemelidir.</p>
+  
+      <h3>Sızdırma Kuyusu Her Parselde Kullanılabilir mi?</h3>
+      <p>Yağmur suyunun zemine sızdırılması, uygun zemin ve yeraltı suyu koşullarında yüzey akışını azaltabilir. Ancak her parselde kontrolsüz sızdırma kuyusu yapılması güvenli değildir.</p>
+  
+      <p>Sızdırma sistemi değerlendirilirken şu koşullar incelenmelidir:</p>
+  
+      <ul>
+        <li>Zeminin su geçirgenliği,</li>
+        <li>Yeraltı su seviyesinin derinliği,</li>
+        <li>Temel ve bodrum perdelerine uzaklık,</li>
+        <li>Şev ve istinat yapılarının konumu,</li>
+        <li>Komşu yapıların temel kotları,</li>
+        <li>Zeminde oturma veya erime riski,</li>
+        <li>Toprak ve yeraltı suyu kirliliği riski,</li>
+        <li>Yerel idarenin izin ve bağlantı şartları.</li>
+      </ul>
+  
+      <p>Yanlış konumlandırılmış bir sızdırma kuyusu, uzaklaştırılmak istenen suyu yeniden bina temeline yönlendirebilir. Uygulama öncesinde geoteknik ve hidrolik değerlendirme yapılmalıdır.</p>
+  
+      <h3>Drenaj Sisteminde Kontrol Bacaları Neden Gereklidir?</h3>
+      <p>Drenaj boruları zaman içerisinde tortu, kök, ince zemin veya inşaat artıkları nedeniyle tıkanabilir. Sistem tamamen gömülmeden önce bakım ve temizlik imkânı sağlayacak kontrol bacaları oluşturulmalıdır.</p>
+  
+      <p>Kontrol bacaları özellikle şu noktalarda değerlendirilmelidir:</p>
+  
+      <ul>
+        <li>Boru yönünün değiştiği köşelerde,</li>
+        <li>Farklı drenaj hatlarının birleştiği noktalarda,</li>
+        <li>Uzun hatlarda gerekli ara mesafelerde,</li>
+        <li>Cazibeli çıkış veya pompa çukuru öncesinde,</li>
+        <li>Kot değişiminin bulunduğu bölgelerde.</li>
+      </ul>
+  
+      <p>Bacalar yüzeyden erişilebilir olmalı, peyzaj toprağı veya kaplama altında kaybolmamalıdır. Kapak kotları yağmur suyunun bacaya kontrolsüz girmesine izin vermeyecek biçimde düzenlenmelidir.</p>
+  
+      <h3>Drenaj Sistemi Nasıl Test Edilir?</h3>
+      <p>Drenaj sistemi üzeri kapatılmadan önce boru güzergâhı, eğimleri, bağlantılar ve tahliye noktası kontrol edilmelidir. Kamera incelemesi, kot ölçümü veya kontrollü su verme yöntemiyle akışın doğru yönde gerçekleştiği doğrulanabilir.</p>
+  
+      <p>Test sırasında şu noktalar incelenmelidir:</p>
+  
+      <ul>
+        <li>Borularda ters eğim veya çökme bulunup bulunmadığı,</li>
+        <li>Kontrol bacalarına suyun ulaşması,</li>
+        <li>Bağlantı noktalarında sızıntı veya ayrılma bulunmaması,</li>
+        <li>Tahliye hattının açık ve çalışır durumda olması,</li>
+        <li>Pompa ve seviye şalterlerinin devreye girmesi,</li>
+        <li>Yedek pompa ve alarm sisteminin çalışması,</li>
+        <li>Çatı inişlerinin doğru hatta bağlanması,</li>
+        <li>Su yalıtımının dolgu öncesinde hasarsız olması.</li>
+      </ul>
+  
+      <h3>Geri Dolgu Nasıl Yapılmalıdır?</h3>
+      <p>Temel ve bodrum çevresindeki geri dolgunun rastgele hafriyat malzemesiyle yapılması, drenaj ve su yalıtımı sistemine zarar verebilir. Büyük taşlar koruma katmanını kırabilir, ince ve geçirimsiz malzemeler ise suyun temel çevresinde kalmasına neden olabilir.</p>
+  
+      <p>Geri dolgu malzemesi ve sıkıştırma yöntemi geoteknik rapor ile proje şartlarına uygun seçilmelidir. Dolgu tabakalar halinde yapılmalı ve sıkıştırma ekipmanının temel perdesinde aşırı yük veya yalıtım üzerinde hasar oluşturmaması sağlanmalıdır.</p>
+  
+      <p>Dolgu sırasında drenaj borusunun kotu bozulmamalı, kontrol bacaları yerinden hareket etmemeli ve geotekstil filtre katmanı yırtılmamalıdır.</p>
+  
+      <h3>Drenaj Sisteminde En Sık Yapılan Hatalar Nelerdir?</h3>
+      <p>Temel çevresi drenajında sık karşılaşılan uygulama hataları şunlardır:</p>
+  
+      <ul>
+        <li>Drenaj levhasının su yalıtımı olarak kabul edilmesi,</li>
+        <li>Temel perdesinin dıştan yalıtımsız bırakılması,</li>
+        <li>Delikli borunun doğrudan toprak içine gömülmesi,</li>
+        <li>Filtre agregası yerine ince hafriyat kullanılması,</li>
+        <li>Geotekstil filtre katmanının hiç uygulanmaması,</li>
+        <li>Boruda ters eğim ve su cepleri oluşturulması,</li>
+        <li>Drenaj çıkışının nereye bağlandığının çözülmemesi,</li>
+        <li>Çatı inişlerinin doğrudan delikli drenaj borusuna verilmesi,</li>
+        <li>Kontrol ve temizleme bacası bırakılmaması,</li>
+        <li>Yalıtım korunmadan geri dolgu yapılması,</li>
+        <li>Peyzaj zemininin bina yönüne eğimli bırakılması,</li>
+        <li>Pompa sisteminde yedekleme ve alarm bulunmaması,</li>
+        <li>Yağmur suyu ile atık su tesisatlarının hatalı bağlanması.</li>
+      </ul>
+  
+      <h3>Temel Çevresinde Drenaj Problemi Olduğu Nasıl Anlaşılır?</h3>
+      <p>Yetersiz drenaj veya su yalıtımı problemleri farklı belirtilerle ortaya çıkabilir. Özellikle yoğun yağışlardan sonra artan nem ve sızıntılar dikkatle incelenmelidir.</p>
+  
+      <p>Yaygın belirtiler şunlardır:</p>
+  
+      <ul>
+        <li>Bodrum duvarlarında koyu renkli nem lekeleri,</li>
+        <li>Duvar ile döşeme birleşiminden su çıkması,</li>
+        <li>Boya kabarması ve sıva dökülmesi,</li>
+        <li>Beton yüzeylerde beyaz tuz izleri,</li>
+        <li>Bodrumda sürekli nem ve küf kokusu,</li>
+        <li>Yağış sırasında pompa çukurunun hızla dolması,</li>
+        <li>Bina çevresinde uzun süre kalan su birikintileri,</li>
+        <li>Yağmur iniş borularının cephe dibine boşalması,</li>
+        <li>İstinat duvarlarından yoğun su akışı,</li>
+        <li>Temel çevresindeki zeminde çökme veya boşalma.</li>
+      </ul>
+  
+      <p>Bu belirtilerin kaynağı yalnızca drenaj olmayabilir. Tesisat kaçağı, teras yalıtımı, cephe çatlağı ve yüksek yeraltı suyu gibi olasılıklar da kontrol edilmelidir.</p>
+  
+      <h3>Mevcut Bir Binaya Sonradan Drenaj Yapılabilir mi?</h3>
+      <p>Mevcut yapılarda dıştan drenaj ve su yalıtımı yapılabilir; ancak temel çevresindeki kazı işlemi taşıyıcı sistem açısından dikkatle planlanmalıdır. Bina çevresinin tamamı aynı anda ve kontrolsüz biçimde kazılmamalıdır.</p>
+  
+      <p>Uygulama öncesinde temel tipi, temel derinliği, zemin özellikleri, komşu yapılar ve kazı güvenliği belirlenmelidir. Gerekirse çalışmalar kısa etaplar halinde ve geçici destekleme kullanılarak yürütülmelidir.</p>
+  
+      <p>Sonradan yapılacak uygulamada genel sıra şu şekilde olabilir:</p>
+  
+      <ol>
+        <li>Nem ve su kaynağı teknik incelemeyle belirlenir.</li>
+        <li>Temel ve zemin koşulları tespit edilir.</li>
+        <li>Güvenli kazı ve destekleme yöntemi hazırlanır.</li>
+        <li>Perde yüzeyi temizlenir ve gerekli onarımlar yapılır.</li>
+        <li>Uygun dıştan su yalıtımı uygulanır.</li>
+        <li>Yalıtım koruma altına alınır.</li>
+        <li>Filtreli çevresel drenaj hattı kurulur.</li>
+        <li>Kontrol bacaları ve tahliye sistemi tamamlanır.</li>
+        <li>Uygun malzemeyle kontrollü geri dolgu yapılır.</li>
+        <li>Yüzey eğimleri binadan uzaklaşacak şekilde düzenlenir.</li>
+      </ol>
+  
+      <h3>Drenaj Sisteminin Bakımı Nasıl Yapılır?</h3>
+      <p>Drenaj sistemleri görünmeyen yapı elemanları olduğu için çoğu zaman bakım yapılmadan kullanılmaya devam edilir. Oysa çatı olukları, süzgeçler, kontrol bacaları ve pompalar düzenli olarak kontrol edilmelidir.</p>
+  
+      <p>Bakım programında şu işlemler bulunabilir:</p>
+  
+      <ul>
+        <li>Çatı olukları ve yaprak tutucuların temizlenmesi,</li>
+        <li>Yağmur iniş borularındaki tıkanıklıkların giderilmesi,</li>
+        <li>Bahçe ve otopark süzgeçlerinin temizlenmesi,</li>
+        <li>Kontrol bacalarında tortu birikiminin incelenmesi,</li>
+        <li>Drenaj hatlarının gerektiğinde kamera ile kontrol edilmesi,</li>
+        <li>Pompa, şamandıra ve alarm testlerinin yapılması,</li>
+        <li>Yedek pompanın çalıştırılması,</li>
+        <li>Yağmur suyu deposu filtrelerinin temizlenmesi,</li>
+        <li>Bahçe eğimleri ve zemin çökmelerinin kontrol edilmesi,</li>
+        <li>Yoğun yağış öncesinde taşma güzergâhlarının açık tutulması.</li>
+      </ul>
+  
+      <h3>Yeni Daire veya Bina Tesliminde Drenaj Sistemi Nasıl Kontrol Edilir?</h3>
+      <p>Bir konut satın alınırken temel drenaj boruları dolgu altında kaldığı için gözle görülemeyebilir. Bu nedenle proje, fotoğraf, test ve uygulama kayıtlarının incelenmesi önemlidir.</p>
+  
+      <p>Teslim sırasında şu belgeler ve detaylar talep edilebilir:</p>
+  
+      <ul>
+        <li>Zemin ve temel etüt raporu,</li>
+        <li>Temel ve bodrum su yalıtımı detayları,</li>
+        <li>Yağmur suyu ve drenaj tesisat projesi,</li>
+        <li>Kontrol bacalarının yerleşim planı,</li>
+        <li>Tahliye veya pompa sisteminin teknik bilgileri,</li>
+        <li>Dolgu öncesinde çekilmiş uygulama fotoğrafları,</li>
+        <li>Su yalıtımı ve drenaj test kayıtları,</li>
+        <li>Pompa ve alarm kullanım talimatları,</li>
+        <li>Bakım yapılacak noktaların erişim bilgileri.</li>
+      </ul>
+  
+      <p>Ayrıca yağmur iniş borularının bina dibine boşalmadığı, bahçe zeminlerinin cepheye doğru eğimli olmadığı ve kontrol bacalarının erişilebilir olduğu yerinde kontrol edilmelidir.</p>
+  
+      <h3>Sık Sorulan Sorular</h3>
+  
+      <h4>Temel çevresine drenaj borusu döşemek zorunlu mudur?</h4>
+      <p>Drenaj gereksinimi yapının temel tipi, zemin geçirgenliği, yeraltı su seviyesi ve maruz kalacağı su etkisine göre belirlenir. Her projeye aynı detay uygulanmaz; gerekli drenaj sistemi mimari, statik ve tesisat projelerinde gösterilmelidir.</p>
+  
+      <h4>Drenaj borusu kaç santimetre çapında olmalıdır?</h4>
+      <p>Boru çapı toplanacak su miktarı, hat uzunluğu, eğim, zemin koşulları ve tahliye kapasitesine göre hidrolik hesapla belirlenmelidir. Her bina için geçerli tek bir boru çapı bulunmaz.</p>
+  
+      <h4>Drenaj borusunun üzerine mıcır dökmek yeterli midir?</h4>
+      <p>Hayır. Agreganın temizliği ve dane özellikleri, borunun yerleşimi, geotekstil filtre katmanı, eğim, kontrol bacaları ve tahliye çıkışı birlikte çözülmelidir.</p>
+  
+      <h4>Drenaj suyu bahçeye bırakılabilir mi?</h4>
+      <p>Suyun yeniden temel çevresine dönmeyeceği, komşu parsele zarar vermeyeceği ve zeminin sızdırmaya uygun olduğu teknik olarak doğrulanmadan kontrolsüz boşaltma yapılmamalıdır. Tahliye yöntemi ilgili idarenin şartlarına uygun olmalıdır.</p>
+  
+      <h4>Temel drenajı çalışıyorsa su yalıtımı gerekli midir?</h4>
+      <p>Evet. Drenaj sistemi tıkanabilir, pompa arızalanabilir veya kapasitesi aşılabilir. Temel ve bodrum perdelerinde proje koşullarına uygun kesintisiz su yalıtımı ayrıca uygulanmalıdır.</p>
+  
+      <h4>Drenaj levhasının kabarcıklı yüzeyi hangi tarafa gelmelidir?</h4>
+      <p>Yerleştirme yönü kullanılan ürünün sistem detayına göre değişebilir. Üreticinin teknik uygulama talimatı ve proje detayı esas alınmalıdır.</p>
+  
+      <h4>Bodrumdaki nem yalnızca temel drenajından mı kaynaklanır?</h4>
+      <p>Hayır. Tesisat kaçağı, cephe ve pencere birleşimleri, teras su yalıtımı, yoğuşma, yüksek iç ortam nemi ve zemin kaynaklı kapiler nem de benzer belirtiler oluşturabilir.</p>
+  
+      <h4>Pompalı drenaj sistemi elektrik kesilince ne olur?</h4>
+      <p>Yedek enerji veya ikinci pompa bulunmuyorsa toplama çukurundaki su seviyesi yükselerek taşabilir. Kritik projelerde yedek pompa, alarm ve alternatif enerji senaryosu hazırlanmalıdır.</p>
+  
+      <h4>Yağmur suyu deposunun taşma hattı nereye bağlanmalıdır?</h4>
+      <p>Taşma hattı varsa yağmur suyu şebekesine veya ilgili idarenin onayladığı tahliye noktasına bağlanmalıdır. Taşan su temel çevresine, atık su hattına veya komşu parsele kontrolsüz biçimde bırakılmamalıdır.</p>
+  
+      <h3>Uzun Ömürlü Bir Yapıda Su Yönetimi Nasıl Olmalıdır?</h3>
+      <p>Yağmur suyu yönetimi yalnızca temel çevresine bir boru yerleştirilerek çözülemez. Çatıdan başlayarak parsel çıkışına kadar suyun izleyeceği bütün güzergâh projede tanımlanmalıdır.</p>
+  
+      <p>Başarılı bir sistemde beş temel aşama birlikte çalışır:</p>
+  
+      <ol>
+        <li><strong>Suyu yakalama:</strong> Çatı, teras, rampa ve sert zeminlerdeki su uygun süzgeç ve kanallarla toplanır.</li>
+        <li><strong>Binadan uzaklaştırma:</strong> Yüzey kotları ve kapalı borular suyu temel çevresinden uzaklaştırır.</li>
+        <li><strong>Yapıyı koruma:</strong> Temel ve bodrum perdelerinde kesintisiz su yalıtımı uygulanır.</li>
+        <li><strong>Basıncı azaltma:</strong> Gerekli projelerde filtreli çevresel ve alansal drenaj sistemleri kurulur.</li>
+        <li><strong>Güvenli tahliye:</strong> Su depolanır, yeniden kullanılır veya izin verilen altyapıya kontrollü biçimde iletilir.</li>
+      </ol>
+  
+      <p>Bu sistemlerden birinin eksik olması, diğer bileşenlerin daha fazla zorlanmasına ve binanın kullanım ömrü boyunca tekrarlayan nem sorunları yaşamasına neden olabilir.</p>
+  
+      <h3>Neli Mühendislik ile Temelden Başlayan Yapı Güvenliği</h3>
+      <p><strong>Neli Mühendislik</strong> olarak bir yapının güvenliğini yalnızca görünen mimari detaylarla değerlendirmiyoruz. Zemin ve temel çözümünden su yalıtımına, yağmur suyu tesisatından çevresel drenaja kadar binanın uzun ömürlü olmasını sağlayan bütün sistemleri birlikte ele alıyoruz.</p>
+  
+      <p>Özellikle temel, bodrum perdesi ve drenaj uygulamalarının geri dolgu yapılmadan önce kontrol edilmesi gerektiğini biliyor; sonradan erişilemeyecek yapı detaylarında proje ve uygulama kalitesine önem veriyoruz.</p>
+  
+      <p>İzmir'de geliştirdiğimiz güncel konut projelerini, daire seçeneklerini ve mühendislik yaklaşımımızı incelemek için <strong><a href='https://neli.tr/showcase' target='_blank' rel='noopener noreferrer' style='color: #b32128; font-weight: bold; text-decoration: underline;'>neli.tr/showcase</a></strong> sayfasını ziyaret edebilirsiniz.</p>
+    </article>`,
+    coverImage: "/images/blog/temel-drenaji.webp",
+    coverImageAlt:
+      "Bina çevresinde yağmur suyu drenajı, temel su yalıtımı ve çevresel drenaj borusu uygulaması — Neli Mühendislik",
+    category: "Su Yalıtımı ve Drenaj",
+    tags: JSON.stringify([
+      "temel drenajı",
+      "yağmur suyu drenajı",
+      "çevresel drenaj",
+      "temel su yalıtımı",
+      "bodrum su yalıtımı",
+      "yağmur suyu tahliyesi",
+      "İzmir konut projeleri",
+      "Neli Mühendislik",
+    ]),
+    featured: false,
+    status: "published" as const,
+    metaTitle: "Bina Çevresi Yağmur Suyu ve Temel Drenajı | Neli Mühendislik",
+    metaDescription:
+      "Bina çevresinde yağmur suyu ve temel drenajı nasıl yapılır? Drenaj borusu, filtre agregası, su yalıtımı ve güvenli tahliye detayları.",
+    metaKeywords:
+      "bina çevresinde yağmur suyu drenajı, temel çevresi drenajı nasıl yapılır, temel drenaj borusu, bodrum perde su yalıtımı, çevresel drenaj sistemi, yağmur suyu tahliye hattı, drenaj levhası su yalıtımı, yağmur suyu toplama sistemi, İzmir yeni konut projeleri, Neli Mühendislik",
+    publishedAt: "2026-07-06",
+  },
+  {
+    slug: "apartmanlarda-yangin-kapisi-ve-duman-tahliye-sistemi",
+    title: "Apartmanlarda Yangın Kapısı ve Duman Tahliye Sistemi Nasıl Olmalı?",
+    excerpt:
+      "Türkiye'deki yapı yönetmeliklerine göre apartmanlarda can güvenliğini sağlayan en önemli iki unsur yangın kapıları ve duman tahliye sistemleridir. Binaların Yangından Korunması Hakkında Yönetmelik kapsamında doğru yangın kapısı seçimi, merdiven basınçlandırma ve duman tahliyesi detaylarının nasıl tasarlanması gerektiğini inceleyin.",
+    content: `<article>
+        <h2>Binalarda Yangın Güvenliği Neden Proje Aşamasında Çözülmelidir?</h2>
+        <p>Yangın anında binalarda yaşanan can kayıplarının en büyük nedeni doğrudan alevler değil, zehirli gazlar ve duman zehirlenmeleridir. Bu nedenle apartmanlarda ve konut projelerinde dumanın yaşam alanlarından uzaklaştırılması ve insanların güvenle tahliye edilebilmesi hayati önem taşır.</p>
+    
+        <p>Türkiye'de uygulanan Binaların Yangından Korunması Hakkında Yönetmelik (BYKHY), binaların yüksekliğine, alanına ve kullanım amacına göre yangın kapısı ve duman tahliye sistemlerinin nasıl olması gerektiğini kesin kurallara bağlamıştır. Bu sistemlerin binaya sonradan entegre edilmesi hem çok maliyetli hem de mimari açıdan zorlayıcı olabilir. Doğru tasarımın henüz mimari ve mekanik projeler çizilirken yapılması şarttır.</p>
+    
+        <blockquote style='margin: 20px 0; padding: 10px 20px; border-left: 5px solid #b32128; background: #f9f9f9;'>
+          <strong>Özet Cevap (AEO / Öne Çıkarılan Snippet):</strong> Türkiye'deki yönetmeliklere göre apartmanlarda yangın kapıları; en az 60 ila 90 dakika yangına dayanıklı, duman sızdırmaz contalı, kendiliğinden kapanabilen ve kaçış yönüne açılan yapıda olmalıdır. Duman tahliye sistemi ise binanın yüksekliğine göre doğal havalandırma (pencereler) veya mekanik sistemler (çatı tipi fanlar, merdiven basınçlandırma sistemleri) ile sağlanarak dumanın kaçış yollarına dolması engellenmelidir.
+        </blockquote>
+    
+        <h3>1. Yönetmeliğe Uygun Yangın Kapısı Özellikleri Nelerdir?</h3>
+        <p>Yangın kapıları, yangın anında alevlerin ve dumanın merdiven yuvalarına veya diğer güvenli bölgelere geçişini engellemek için tasarlanmış özel kapılardır. Standart bir çelik kapı, yangın kapısı yerine geçemez.</p>
+    
+        <p>Bir yangın kapısında bulunması gereken temel özellikler şunlardır:</p>
+    
+        <ul>
+          <li><strong>Yangına Dayanım Süresi:</strong> Binanın yüksekliğine ve kullanım sınıfına göre kapıların en az 60, 90 veya 120 dakika (E, EW, EI sınıfları) bütünlüğünü ve yalıtımını koruması gerekir.</li>
+          <li><strong>Duman Sızdırmazlık:</strong> Kapı kasası ve kanadı arasında, ısıya maruz kaldığında şişerek boşlukları kapatan intümesan (intumescent) contalar bulunmalıdır.</li>
+          <li><strong>Kendiliğinden Kapanma (Kapı Kapatıcı):</strong> Kapıların açık unutulmasını engellemek için hidrolik kapatıcı (door closer) sistemine sahip olması zorunludur.</li>
+          <li><strong>Kaçış Yönüne Açılma:</strong> Kapılar panik anında insanların yığılmasını önlemek amacıyla daima kaçış yönüne (merdivene veya dışarıya doğru) açılmalıdır.</li>
+          <li><strong>Panik Bar Sistemi:</strong> Belirli bir kişi sayısını aşan alanlarda veya kaçış güzergahlarında, kapının kilitli dahi olsa içeriden itildiğinde kolayca açılmasını sağlayan panik bar donanımı bulunmalıdır.</li>
+        </ul>
+    
+        <h3>2. Duman Tahliye Sistemi Nasıl Çalışır?</h3>
+        <p>Duman tahliye sistemi, yangın sırasında oluşan sıcak dumanın ve zehirli gazların bina dışına atılmasını sağlayarak kaçış yollarını temiz tutar. İtfaiye ekiplerinin binaya güvenle girmesi ve müdahale edebilmesi için de bu sistemlerin doğru çalışması şarttır.</p>
+    
+        <p>Apartmanlarda duman tahliyesi iki ana yöntemle sağlanır:</p>
+    
+        <ul>
+          <li><strong>Doğal Duman Tahliyesi:</strong> Yönetmeliğin izin verdiği yükseklikteki binalarda, merdiven sahanlıklarında bulunan ve dışarıya açılan pencereler aracılığıyla yapılır. Pencerelerin erişilebilir olması veya otomatik açılma mekanizmalarına sahip olması gerekir.</li>
+          <li><strong>Mekanik Duman Tahliyesi:</strong> Doğal havalandırmanın yetersiz kaldığı durumlarda veya kapalı otopark gibi alanlarda, duman egzoz fanları ve duman damperleri kullanılarak dumanın kanallar vasıtasıyla cebri (mekanik) olarak dışarı atılması işlemidir.</li>
+        </ul>
+    
+        <h3>3. Merdiven Yuvalarının Basınçlandırılması</h3>
+        <p>Türkiye'deki yangın yönetmeliğine göre, yapı yüksekliği 51.50 metreyi geçen konut binalarında (yaklaşık 17 kat ve üzeri) yangın merdivenlerinin basınçlandırılması zorunludur. Ayrıca yüksekliği ne olursa olsun, bodrum kat sayısı dörtten fazla olan binalarda bodrum kata hizmet veren kaçış merdivenleri basınçlandırılmalıdır.</p>
+    
+        <p>Merdiven basınçlandırma sisteminin temel amacı şudur:</p>
+    
+        <p>Yangın anında merdiven yuvasına çatıdaki büyük fanlar aracılığıyla temiz hava basılır. Bu sayede merdiven boşluğunda, katlardaki basınca kıyasla daha yüksek bir hava basıncı (pozitif basınç) oluşturulur. Kat kapısı (yangın kapısı) açıldığında bile hava akımı merdivenden kata doğru olacağı için dumanın kaçış merdivenine girmesi fiziksel olarak engellenmiş olur.</p>
+    
+        <p>Basınçlandırma sistemi tasarlanırken dikkat edilmesi gerekenler:</p>
+    
+        <ul>
+          <li>Kapılar kapalıyken merdiven yuvası ile bina kullanım alanları arasındaki basınç farkı en az 50 Pa olmalıdır.</li>
+          <li>Kapılar açıkken hava akış hızı yönetmelikte belirtilen değerlerin altına düşmemelidir.</li>
+          <li>Aşırı basınç oluşumunu engellemek için basınç tahliye damperleri (relief damper) kullanılmalıdır. Aksi takdirde yüksek basınç nedeniyle yangın kapıları itilip açılamayabilir.</li>
+        </ul>
+    
+        <h3>4. Sistemin Otomasyonu ve Yangın Senaryosu</h3>
+        <p>Mekanik duman tahliye ve basınçlandırma sistemleri tek başına bağımsız çalışamaz. Binanın yangın algılama ve ihbar sistemi ile entegre olmalıdır.</p>
+    
+        <p>Binadaki bir duman dedektörü yangını algıladığında yangın senaryosu devreye girer:</p>
+    
+        <ul>
+          <li>Yangın alarm zilleri çalar ve asansörler belirlenen güvenli kata inerek kapılarını açık bırakır.</li>
+          <li>Basınçlandırma fanları otomatik olarak çalışmaya başlar.</li>
+          <li>Eğer varsa kapalı otopark veya sığınaklardaki duman egzoz fanları devreye girer.</li>
+          <li>Taze hava damperleri açılır, yangın zonuna (bölgesine) göre ilgili duman damperleri konum değiştirir.</li>
+          <li>Kapılarda bulunan elektromanyetik tutucular (eğer kapılar sürekli açık tutuluyorsa) serbest kalır ve kapılar hidrolik yaylarla otomatik olarak kapanır.</li>
+        </ul>
+    
+        <h3>Sık Sorulan Sorular</h3>
+    
+        <h4>Yangın kapısını havalandırma amacıyla açık tutmak yasal mıdır?</h4>
+        <p>Hayır. Yangın kapılarının takoz konularak veya iple bağlanarak açık tutulması çok tehlikeli ve mevzuata aykırıdır. Kapıların sürekli kapalı durması gerekir. Günlük kullanımda kapıların açık kalması isteniyorsa, yangın anında alarm sisteminden sinyal alarak kapıyı serbest bırakan elektromanyetik kapı tutucular kullanılmalıdır.</p>
+    
+        <h4>Apartmanımızda doğal havalandırma penceresi var, fan sistemine gerek var mı?</h4>
+        <p>Binanızın yüksekliği ve mimari yapısı yönetmelikteki "doğal havalandırma ile çözülebilir" sınırları (konutlar için genellikle 51.50 metre altı) içindeyse ve pencerelerin alan ölçüleri yeterliyse mekanik fana ihtiyaç duyulmayabilir. Ancak tam gereksinimler mekanik tesisat projenizde hesaplanmış olmalıdır.</p>
+    
+        <h4>Yangın kapısı camlı olabilir mi?</h4>
+        <p>Evet, olabilir. Ancak kullanılan camın standart bir cam veya telli cam olmaması gerekir. Camın da kapının kendisi gibi ilgili süre kadar (örneğin 90 dakika) yangına dayanım testlerinden geçmiş, yangın sertifikalı özel bir cam olması zorunludur.</p>
+    
+        <h4>Yangın kapılarının periyodik bakımı yapılmalı mıdır?</h4>
+        <p>Kesinlikle. Kapı hidroliklerinin sertliği, contaların sağlamlığı, kilit ve panik bar mekanizmalarının çalışıp çalışmadığı bina yönetimi tarafından düzenli olarak kontrol ettirilmeli, sorunlu parçalar orijinal yangın dayanımlı yedek parçalarla değiştirilmelidir.</p>
+    
+        <h3>Neli Mühendislik ile Geleceğe Hazır Yaşam Alanları</h3>
+        <p><strong>Neli Mühendislik</strong> olarak konut projelerini yalnızca bugünün ihtiyaçlarına göre değil, yönetmeliklere tam uyumlu ve can güvenliğini en üst düzeyde tutacak şekilde değerlendiriyoruz. Elektrik altyapısından yangın güvenliğine, mekanik havalandırmadan enerji verimliliğine kadar bütün sistemlerin birbiriyle uyumlu çalışmasını önemsiyoruz.</p>
+    
+        <p>İzmir'de geliştirdiğimiz güncel konut projelerini, daire seçeneklerini ve mühendislik yaklaşımımızı incelemek için <strong><a href='https://neli.tr/showcase' target='_blank' rel='noopener noreferrer' style='color: #b32128; font-weight: bold; text-decoration: underline;'>neli.tr/showcase</a></strong> sayfasını ziyaret edebilirsiniz.</p>
+      </article>`,
+    coverImage: "/images/blog/yangin-kapisi.webp",
+    coverImageAlt:
+      "Apartmanlarda yönetmeliğe uygun yangın kapısı ve duman tahliye sistemi — Neli Mühendislik",
+    category: "Yangın Güvenlik Sistemleri",
+    tags: JSON.stringify([
+      "yangın kapısı",
+      "duman tahliye sistemi",
+      "merdiven basınçlandırma",
+      "yangın yönetmeliği",
+      "apartman güvenliği",
+      "mekanik tesisat",
+      "İzmir konut projeleri",
+      "Neli Mühendislik",
+    ]),
+    featured: false,
+    status: "published" as const,
+    metaTitle:
+      "Apartmanlarda Yangın Kapısı ve Duman Tahliye Sistemi | Neli Mühendislik",
+    metaDescription:
+      "Apartmanlarda yangın kapısı özellikleri, duman tahliye ve merdiven basınçlandırma sistemlerinin Türkiye yangın yönetmeliğine göre nasıl olması gerektiğini inceleyin.",
+    metaKeywords:
+      "apartmanlarda yangın kapısı ve duman tahliye sistemi nasıl olmalı, merdiven basınçlandırma zorunluluğu, yangın kapısı özellikleri, mekanik havalandırma, yangın otomasyonu, İzmir yeni konut projeleri, Neli Mühendislik",
+    publishedAt: "2026-07-06",
+  },
 ];
 
 const PROJECT_DATA = [
