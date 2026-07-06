@@ -24,8 +24,9 @@ const footerLinks = [
     title: "Keşfet",
     links: [
       { name: "Blog", href: "/blog" },
-      { name: "Kariyer", href: "/kariyer" },
+      { name: "Finans", href: "/finans" },
       { name: "Randevu", href: "/randevu" },
+      { name: "Kariyer", href: "/kariyer" },
       { name: "İletişim", href: "/iletisim" },
     ],
   },

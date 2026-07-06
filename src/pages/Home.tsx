@@ -18,6 +18,16 @@ const stats = [
   { icon: Users, value: "100+", label: "Mutlu Aile" },
 ];
 
+const exploreLinks = [
+  { name: "Konut Projeleri", href: "/projeler", description: "Valorya ve Serenita" },
+  { name: "Kurumsal", href: "/kurumsal", description: "Hikayemiz ve değerlerimiz" },
+  { name: "Finans", href: "/finans", description: "Ödeme planları ve kampanyalar" },
+  { name: "Blog", href: "/blog", description: "İnşaat ve konut rehberi" },
+  { name: "Randevu", href: "/randevu", description: "Ofis ziyareti planlayın" },
+  { name: "İletişim", href: "/iletisim", description: "Bize ulaşın" },
+  { name: "Kariyer", href: "/kariyer", description: "Ekibimize katılın" },
+];
+
 interface MilestoneItem {
   id: number;
   year: string;
@@ -76,7 +86,7 @@ export default function Home() {
   return (
     <main className="min-h-screen">
       <SEO
-        title="Ana Sayfa"
+        isHome
         description="Neli Mühendislik, İzmir'de modern ve kaliteli konut projeleri sunan güvenilir bir inşaat firmasıdır. Valorya ve Serenita projeleriyle hayalinizdeki eve kavuşun."
         url="https://neli.tr/"
       />
@@ -109,6 +119,42 @@ export default function Home() {
                 </motion.div>
               ))}
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Site içi bağlantılar — SEO + kullanıcı keşfi */}
+      <section
+        aria-labelledby="explore-heading"
+        className="bg-cream-50 border-b border-cream-200"
+      >
+        <div className="container-padding py-8 md:py-10">
+          <div className="max-w-7xl mx-auto">
+            <h2
+              id="explore-heading"
+              className="text-lg md:text-xl font-serif font-medium text-foreground mb-4 md:mb-6"
+            >
+              Neli Mühendislik&apos;i Keşfedin
+            </h2>
+            <nav aria-label="Site bölümleri">
+              <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 md:gap-4">
+                {exploreLinks.map((link) => (
+                  <li key={link.href}>
+                    <Link
+                      to={link.href}
+                      className="group flex flex-col rounded-xl border border-cream-300 bg-white px-4 py-3 md:px-5 md:py-4 transition-colors duration-300 hover:border-neli-600/40 hover:bg-cream-100"
+                    >
+                      <span className="text-sm md:text-base font-medium text-foreground group-hover:text-neli-600 transition-colors">
+                        {link.name}
+                      </span>
+                      <span className="text-xs md:text-sm text-foreground/55 mt-0.5">
+                        {link.description}
+                      </span>
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </nav>
           </div>
         </div>
       </section>

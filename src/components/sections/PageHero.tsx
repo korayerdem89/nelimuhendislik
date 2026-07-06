@@ -1,5 +1,6 @@
 import { useRef } from "react";
 import type { ReactNode } from "react";
+import { Link } from "react-router-dom";
 import { motion, useInView } from "framer-motion";
 
 interface PageHeroProps {
@@ -46,7 +47,9 @@ export default function PageHero({
             transition={{ duration: 0.6 }}
           >
             <div className="flex items-center gap-2 text-sm text-foreground/50 mb-4 md:mb-6">
-              <span>Anasayfa</span>
+              <Link to="/" className="hover:text-neli-600 transition-colors">
+                Anasayfa
+              </Link>
               <span>/</span>
               <span className="text-neli-600">{currentPage}</span>
             </div>

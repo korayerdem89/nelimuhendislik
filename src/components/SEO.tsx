@@ -7,7 +7,12 @@ interface SEOProps {
   image?: string;
   url?: string;
   type?: "website" | "article";
+  /** Ana sayfa için tam başlık (suffix eklenmez) */
+  isHome?: boolean;
+  lang?: string;
 }
+
+const SITE_ORIGIN = "https://neli.tr";
 
 const defaultMeta = {
   title: "Neli Mühendislik",
@@ -19,6 +24,8 @@ const defaultMeta = {
   url: "https://neli.tr/",
 };
 
+const HOME_TITLE = "Neli Mühendislik | İzmir'de Kaliteli Konut Projeleri";
+
 export default function SEO({
   title,
   description = defaultMeta.description,
@@ -26,18 +33,23 @@ export default function SEO({
   image = defaultMeta.image,
   url = defaultMeta.url,
   type = "website",
+  isHome = false,
+  lang = "tr",
 }: SEOProps) {
-  const fullTitle = title
-    ? `${title} | Neli Mühendislik`
-    : "Neli Mühendislik | İzmir'de Kaliteli Konut Projeleri";
+  const fullTitle = isHome
+    ? HOME_TITLE
+    : title
+      ? `${title} | Neli Mühendislik`
+      : HOME_TITLE;
 
   return (
-    <Helmet>
+    <Helmet htmlAttributes={{ lang }}>
       {/* Primary Meta Tags */}
       <title>{fullTitle}</title>
       <meta name="title" content={fullTitle} />
       <meta name="description" content={description} />
       <meta name="keywords" content={keywords} />
+      <meta httpEquiv="content-language" content="tr-TR" />
 
       {/* Open Graph / Facebook */}
       <meta property="og:type" content={type} />
@@ -45,6 +57,8 @@ export default function SEO({
       <meta property="og:title" content={fullTitle} />
       <meta property="og:description" content={description} />
       <meta property="og:image" content={image} />
+      <meta property="og:locale" content="tr_TR" />
+      <meta property="og:site_name" content="Neli Mühendislik" />
 
       {/* Twitter */}
       <meta property="twitter:card" content="summary_large_image" />
@@ -53,8 +67,12 @@ export default function SEO({
       <meta property="twitter:description" content={description} />
       <meta property="twitter:image" content={image} />
 
-      {/* Canonical */}
+      {/* Canonical & hreflang */}
       <link rel="canonical" href={url} />
+      <link rel="alternate" hrefLang="tr" href={url} />
+      <link rel="alternate" hrefLang="x-default" href={url} />
     </Helmet>
   );
 }
+
+export { SITE_ORIGIN, HOME_TITLE };

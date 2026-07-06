@@ -223,12 +223,11 @@ export default function HeroSection() {
             className="absolute inset-0 flex flex-col items-center justify-center pointer-events-none"
             style={{ zIndex: 40 }}
           >
-            {/* "NeliMühendislik" on same line */}
-            <motion.div
+            <motion.h1
               initial={{ opacity: 0, y: 30 }}
               animate={ready ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 1, delay: 0.9 }}
-              className="flex items-baseline"
+              className="flex items-baseline m-0"
             >
               <span
                 style={{
@@ -252,7 +251,7 @@ export default function HeroSection() {
               >
                 Mühendislik
               </span>
-            </motion.div>
+            </motion.h1>
 
             {/* Tagline row */}
             <motion.div
@@ -294,8 +293,11 @@ export default function HeroSection() {
             style={{ x: textPX, y: textPY, zIndex: 40 }}
             className="absolute inset-0 pointer-events-none"
           >
+            <h1 className="sr-only">Neli Mühendislik — İzmir&apos;de Kaliteli Konut Projeleri</h1>
+
             {/* "Neli" */}
             <div
+              aria-hidden="true"
               style={{
                 position: 'absolute',
                 top: textPos.neli.top,
@@ -303,11 +305,12 @@ export default function HeroSection() {
                 perspective: 1200,
               }}
             >
-              <motion.h1
+              <motion.span
                 initial={{ rotateX: 90, opacity: 0 }}
                 animate={ready ? { rotateX: 0, opacity: 1 } : {}}
                 transition={{ duration: 1.5, delay: 0.9, ease: EASE_IN_OUT_BACK }}
                 style={{
+                  display: 'block',
                   fontFamily: 'Montserrat, sans-serif',
                   fontSize: textPos.neli.fontSize,
                   fontWeight: 'normal',
@@ -319,11 +322,12 @@ export default function HeroSection() {
                 }}
               >
                 Neli
-              </motion.h1>
+              </motion.span>
             </div>
 
             {/* "Mühendislik" */}
             <div
+              aria-hidden="true"
               style={{
                 position: 'absolute',
                 top: textPos.muhendislik.top,
@@ -331,11 +335,12 @@ export default function HeroSection() {
                 perspective: 1200,
               }}
             >
-              <motion.h1
+              <motion.span
                 initial={{ rotateY: 90, opacity: 0 }}
                 animate={ready ? { rotateY: 0, opacity: 1 } : {}}
                 transition={{ duration: 1.5, delay: 1.3, ease: EASE_IN_OUT_BACK }}
                 style={{
+                  display: 'block',
                   fontFamily: 'Montserrat, sans-serif',
                   fontSize: textPos.muhendislik.fontSize,
                   fontWeight: 'bold',
@@ -347,7 +352,7 @@ export default function HeroSection() {
                 }}
               >
                 Mühendislik
-              </motion.h1>
+              </motion.span>
             </div>
 
             {/* Tagline 1 */}
