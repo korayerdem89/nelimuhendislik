@@ -129,6 +129,114 @@ const BLOG_SLUGS: ReadonlyArray<{ slug: string; publishedAt: string }> = [
     slug: "temel-yalitimi-yapilmayan-binalarda-ne-olur",
     publishedAt: "2026-06-01",
   },
+  {
+    slug: "betonarmenin-avantajlari-nelerdir",
+    publishedAt: "2026-06-02",
+  },
+  {
+    slug: "gercekci-3d-kat-plani-gorsellestirme-ile-mekan-tasarimi",
+    publishedAt: "2026-06-08",
+  },
+  {
+    slug: "topraktan-ev-alirken-muhendislik-kalitesi-nasil-anlasilir",
+    publishedAt: "2026-06-08",
+  },
+  {
+    slug: "yeni-bitmis-dairelerde-alcipan-ve-modern-aydinlatma",
+    publishedAt: "2026-06-08",
+  },
+  {
+    slug: "parametrik-cephe-tasarimi-ile-modern-mimari",
+    publishedAt: "2026-06-09",
+  },
+  {
+    slug: "izmir-deprem-bolgesinde-radye-temel-ve-fore-kazik",
+    publishedAt: "2026-06-09",
+  },
+  {
+    slug: "cok-katli-konutlarda-katlar-arasi-akustik-ses-yalitimi",
+    publishedAt: "2026-06-09",
+  },
+  {
+    slug: "santiye-asamasinda-total-station-ile-milimetrik-olcum",
+    publishedAt: "2026-06-09",
+  },
+  {
+    slug: "daire-tesliminde-eksik-is-kontrolu-nasil-yapilir",
+    publishedAt: "2026-06-15",
+  },
+  {
+    slug: "yeni-daire-alirken-iskan-belgesi-neden-onemlidir",
+    publishedAt: "2026-06-15",
+  },
+  {
+    slug: "kat-irtifaki-ile-kat-mulkiyeti-arasindaki-fark-nedir",
+    publishedAt: "2026-06-15",
+  },
+  {
+    slug: "brut-metrekare-ile-net-metrekare-farki-nasil-hesaplanir",
+    publishedAt: "2026-06-15",
+  },
+  {
+    slug: "yeni-dairede-su-tesisati-ve-gider-kontrolu-nasil-yapilir",
+    publishedAt: "2026-06-15",
+  },
+  {
+    slug: "daire-yonu-ve-cephe-secimi-yasam-konforunu-nasil-etkiler",
+    publishedAt: "2026-06-15",
+  },
+  {
+    slug: "apartmanlarda-otopark-hakki-nasil-belirlenir",
+    publishedAt: "2026-06-16",
+  },
+  {
+    slug: "yeni-nesil-binalarda-tasiyici-sistem-guvenligini-artiran-muhendislik-detaylari",
+    publishedAt: "2026-06-25",
+  },
+  {
+    slug: "izmir-cigli-ve-karsiyaka-zemin-yapisina-uygun-temel-sistemleri",
+    publishedAt: "2026-06-26",
+  },
+  {
+    slug: "luks-konut-insaatinda-sakul-ve-gonye-hatalarini-sifira-indiren-teknolojiler",
+    publishedAt: "2026-06-27",
+  },
+  {
+    slug: "insaat-kalitesini-belirleyen-gorunmeyen-detaylar-temel-izolasyon-yontemleri",
+    publishedAt: "2026-07-01",
+  },
+  {
+    slug: "uzun-omurlu-binalarda-statik-hesaplamalarin-mimariye-entegrasyonu",
+    publishedAt: "2026-06-28",
+  },
+  {
+    slug: "c45-yuksek-mukavemetli-beton-ile-standart-beton-arasindaki-dayanim-farklari",
+    publishedAt: "2026-06-29",
+  },
+  {
+    slug: "bilincli-konut-alicilari-icin-muteahhit-secerken-dikkat-edilmesi-gereken-teknik-kriterler",
+    publishedAt: "2026-06-30",
+  },
+  {
+    slug: "izmir-yeni-binalarda-topraklama-kacak-akim-rolesi-kontrolu",
+    publishedAt: "2026-07-06",
+  },
+  {
+    slug: "yeni-konut-projelerinde-elektrikli-arac-sarj-altyapisi",
+    publishedAt: "2026-07-06",
+  },
+  {
+    slug: "yeni-binalarda-isi-koprusu-kuf-olusumu-nasil-onlenir",
+    publishedAt: "2026-07-06",
+  },
+  {
+    slug: "bina-cevresinde-yagmur-suyu-drenaji-temel-cevresi-tahliyesi",
+    publishedAt: "2026-07-06",
+  },
+  {
+    slug: "apartmanlarda-yangin-kapisi-ve-duman-tahliye-sistemi",
+    publishedAt: "2026-07-06",
+  },
 ];
 
 const sitemapRoutes = new Hono();
