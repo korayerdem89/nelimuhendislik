@@ -4354,6 +4354,591 @@ const BLOG_DATA = [
       "apartmanlarda yangın kapısı ve duman tahliye sistemi nasıl olmalı, merdiven basınçlandırma zorunluluğu, yangın kapısı özellikleri, mekanik havalandırma, yangın otomasyonu, İzmir yeni konut projeleri, Neli Mühendislik",
     publishedAt: "2026-07-06",
   },
+  {
+    slug: "bayrakli-yeni-girne-bulvari-yakininda-satilik-yeni-daire-avantajlari",
+    title:
+      "Bayraklı Yeni Girne Bulvarı Yakınında Satılık Yeni Daire Almanın Avantajları",
+    excerpt:
+      "İzmir'in en dinamik ulaşım ve yaşam akslarından biri olan Yeni Girne Bulvarı yakınında ev sahibi olmak size neler kazandırır? Ulaşım kolaylığından kentsel dönüşüm avantajlarına, zemin özelliklerinden modern mühendislik standartlarına kadar tüm detayları inceleyin.",
+    content: `<article>
+        <h2>İzmir’in Kalbinde Stratejik Bir Konum: Yeni Girne Bulvarı</h2>
+        <p>Son yıllarda İzmir’in gayrimenkul ve konut piyasasında yıldızı en çok parlayan lokasyonların başında Yeni Girne Bulvarı ve çevresi geliyor. Karşıyaka ile Bayraklı’nın kesişim noktasında yer alan bu aks, hem iş merkezlerine olan yakınlığı hem de sunduğu modern yaşam olanaklarıyla konut alıcılarının ve yatırımcıların ilk tercihleri arasında yer alıyor.</p>
+    
+        <p>Yeni Girne Bulvarı yakınlarında satılık yeni bir daire arayışında olmak, sadece bir ev almak değil; aynı zamanda zamanı verimli yönetebileceğiniz, ulaşım ağlarının merkezinde yer alan ve modern mühendislik standartlarıyla inşa edilmiş güvenli bir yapıya adım atmak anlamına gelir.</p>
+    
+        <blockquote style='margin: 20px 0; padding: 10px 20px; border-left: 5px solid #b32128; background: #f9f9f9;'>
+          <strong>Özet Cevap (AEO / Öne Çıkarılan Snippet):</strong> Bayraklı Yeni Girne Bulvarı yakınında satılık yeni bir daire satın almak; çevre yolu bağlantısı sayesinde İzmir’in her noktasına dakikalar içinde ulaşım imkanı sağlar. Bölge, Bayraklı Şehir Hastanesi, üniversiteler ve adliye sarayı gibi kritik noktalara olan yakınlığıyla yüksek kira getirisi ve prim potansiyeline sahiptir. Ayrıca yeni inşa edilen yapılar, deprem yönetmeliklerine uygun modern mühendislik tasarımları ve zemin iyileştirme uygulamalarıyla maksimum güvenlik sunar.
+        </blockquote>
+    
+        <h3>1. Benzersiz Ulaşım Kolaylığı ve Çevre Yolu Bağlantısı</h3>
+        <p>Yeni Girne Bulvarı’nı konut yatırımı için bu kadar cazip kılan en büyük etken şüphesiz lokasyon avantajıdır. Bulvar, Anadolu Caddesi ile İzmir Çevre Yolu'nu doğrudan birbirine bağlayan ana arter konumundadır.</p>
+    
+        <p>Burada yaşayacağınız yeni bir daireden yola çıktığınızda, trafiğe takılmadan çevre yoluna bağlanarak Bornova, Konak, Çiğli veya Menemen yönüne dakikalar içerisinde ulaşabilirsiniz. Toplu taşıma açısından da oldukça zengin olan bölgede; otobüs ve dolmuş hatlarının yanı sıra İzban istasyonlarına ve Karşıyaka tramvayına entegre ulaşım imkanı mevcuttur.</p>
+    
+        <h3>2. İzmir Şehir Hastanesi’ne Yakınlık</h3>
+        <p>Ege Bölgesi'nin en büyük sağlık komplekslerinden biri olan İzmir Şehir Hastanesi'nin Yeni Girne aksının hemen üst bölgesinde konumlanması, bölgedeki konut talebini doğrudan artıran yapısal bir etkendir. Hastanede çalışan binlerce doktor, hemşire, akademisyen ve sağlık personeli, konut tercihlerini bu aksa yakın yeni ve güvenli binalardan yana kullanmaktadır.</p>
+    
+        <p>Bu durum, Yeni Girne yakınlarında satın alacağınız bir dairenin boş kalma riskini sıfıra indirirken, İzmir ortalamasının üzerinde bir kira getirisi elde etmenizi kolaylaştırır.</p>
+    
+        <h3>3. Yeni Deprem Yönetmeliği ve Depreme Dayanıklı Yapılar</h3>
+        <p>Konut satın alırken dikkat edilmesi gereken en kritik konu yapı güvenliğidir. Yeni Girne Bulvarı yakınlarındaki yeni konut projeleri, güncel deprem yönetmeliklerine tam uyumlu olarak inşa edilmektedir. Eski yapı stoğunun aksine, bu bölgedeki yeni projelerde modern zemin etütleri, zemin iyileştirme teknikleri (jet-grouting, fore kazık sistemleri) ve yüksek dayanımlı hazır beton standartları uygulanmaktadır.</p>
+    
+        <p>Neli Mühendislik olarak projelerimizde her zaman vurguladığımız gibi; doğru tasarlanmış bir betonarme taşıyıcı sistem ve titizlikle uygulanan zemin projeleri, güvenli bir yaşamın temel anahtarıdır.</p>
+    
+        <h3>4. Yüksek Yatırım Değeri ve Hızlı Değer Artışı</h3>
+        <p>Bayraklı ve Karşıyaka bölgelerinin sınırında yer alan bu aks, İzmir'de gayrimenkulün en hızlı değer kazandığı bölgelerin başında gelmektedir. Arzın sınırlı, talebin ise sürekli yüksek olduğu Yeni Girne çevresinde satın alınacak yeni bir daire, orta ve uzun vadede sahibine yüksek reel getiri sağlar.</p>
+    
+        <p>Hem oturum amaçlı alanlar hem de birikimlerini enflasyona karşı korumak isteyen yatırımcılar için bölgedeki yeni konut projeleri güvenli bir liman niteliğindedir.</p>
+    
+        <h3>5. Sosyal Yaşam, Alışveriş ve Eğitim Olanakları</h3>
+        <p>Yeni Girne Bulvarı, çevresindeki geniş yürüyüş yolları, yeşil park alanları, yerel ve ulusal market zincirleri, kafe ve restoranlar ile kendi kendine yeten gelişmiş bir ekosisteme sahiptir. Ayrıca bölgeye çok yakın konumda bulunan prestijli kolejler, devlet okulları ve anaokulları, çocuklu ailelerin bu bölgeyi tercih etmesinde büyük rol oynamaktadır.</p>
+    
+        <h3>Yeni Girne Bölgesinde Ev Alırken Nelere Dikkat Edilmeli?</h3>
+        <p>Bölgeden daire satın alırken sadece konumuna değil, projenin arkasındaki mühendislik gücüne de bakılması gerekir. Satın alacağınız dairede şu kriterleri sorgulamanızı öneririz:</p>
+    
+        <ul>
+          <li>Zemin etüt raporunun ve uygulanan zemin iyileştirme yöntemlerinin detayları,</li>
+          <li>Kullanılan beton sınıfı ve demir donatısının projeye uygunluğu,</li>
+          <li>Isı, ses ve su yalıtım standartlarının (TS 825 standartlarına uygun olarak) doğru çözülüp çözülmediği,</li>
+          <li>Yüklenici firmanın geçmiş referansları ve mühendislik vizyonu.</li>
+        </ul>
+    
+        <h3>Neli Mühendislik ile Güvenli Geleceğe Yatırım Yapın</h3>
+        <p><strong>Neli Mühendislik</strong> olarak, İzmir'in en hızlı gelişen akslarında geliştirdiğimiz projelerde yalnızca modern mimari tasarımlar sunmakla kalmıyor, temelden çatıya kadar uluslararası mühendislik ve yapı fiziği standartlarını eksiksiz uyguluyoruz. Depreme dayanıklı, ısı ve ses yalıtımı mükemmel çözülmüş ve yüksek yaşam konforu sunan yapılarımızla geleceğinizi güvence altına alıyoruz.</p>
+    
+        <p>İzmir genelinde hayata geçirdiğimiz güncel konut projelerimizi, kat planlarımızı ve mühendislik çözümlerimizi daha yakından incelemek için <strong><a href='https://neli.tr/showcase' target='_blank' rel='noopener noreferrer' style='color: #b32128; font-weight: bold; text-decoration: underline;'>neli.tr/showcase</a></strong> adresimizi ziyaret edebilirsiniz.</p>
+      </article>`,
+    coverImage: "/images/blog/bayrakli-daire.webp",
+    coverImageAlt:
+      "Bayraklı Yeni Girne Bulvarı yakınında satılık yeni daire avantajları ve modern konut projeleri — Neli Mühendislik",
+    category: "Gayrimenkul Yatırımı ve Lokasyon Analizi",
+    tags: JSON.stringify([
+      "Yeni Girne satılık daire",
+      "Bayraklı yeni daire avantajları",
+      "İzmir Şehir Hastanesi yakınında konut",
+      "İzmir gayrimenkul yatırımı",
+      "depreme dayanıklı konut İzmir",
+      "Karşıyaka yeni konut projeleri",
+      "Neli Mühendislik",
+    ]),
+    featured: false,
+    status: "published" as const,
+    metaTitle: "Bayraklı Yeni Girne Yakınında Satılık Yeni Daire Avantajları",
+    metaDescription:
+      "Bayraklı Yeni Girne Bulvarı yakınlarında satılık yeni daire almanın avantajlarını keşfedin. Ulaşım kolaylığı, deprem güvenliği ve yüksek yatırım değerini inceleyin.",
+    metaKeywords:
+      "bayraklı yeni girne bulvarı yakınında satılık yeni daire avantajları, yeni girne satılık konut, izmir şehir hastanesine yakın satılık daire, depreme dayanıklı yeni binalar izmir, bayraklı yeni projeler, neli mühendislik",
+    publishedAt: "2026-07-17",
+  },
+  {
+    slug: "izmirde-yatirim-icin-1-1-mi-2-1-mi-daha-avantajli",
+    title: "İzmir’de Yatırım İçin 1+1 mi yoksa 2+1 mi Daha Avantajlı?",
+    excerpt:
+      "İzmir gayrimenkul piyasasında konut yatırımı yaparken hangi daire tipi daha hızlı geri dönüş sağlar? Bölgesel dinamikler, hedef kiracı profili, amortisman süreleri ve bütçe analizleriyle 1+1 ve 2+1 dairelerin avantajlarını karşılaştırın.",
+    content: `<article>
+        <h2>İzmir Konut Piyasasında Yatırımın Denklemi</h2>
+        <p>İzmir, sürekli göç alan yapısı, gelişen sanayisi, köklü üniversiteleri ve beyaz yakalı nüfusun yoğunlaşmasıyla Türkiye’nin gayrimenkul yatırımı açısından en cazip şehirlerinden biridir. Ancak İzmir'de konut yatırımı yapmaya karar vermek sadece ilk adımdır; asıl kritik soru, bütçeyi ve yatırım hedeflerini hangi daire tipine yönlendirmenin daha rasyonel olacağıdır.</p>
+    
+        <p>Yatırımcılar arasında en çok tartışılan konuların başında <strong>1+1 mi yoksa 2+1 mi</strong> ikilemi gelir. Her iki daire tipinin de kendine has amortisman süreleri, kiracı portföyleri, bakım maliyetleri ve geleceğe yönelik değer artış (prim) potansiyelleri bulunur. Doğru seçimi yapmak, yatırım yapacağınız bölgenin sosyo-ekonomik dinamiklerini iyi analiz etmekten geçer.</p>
+    
+        <blockquote style='margin: 20px 0; padding: 10px 20px; border-left: 5px solid #b32128; background: #f9f9f9;'>
+          <strong>Özet Cevap (AEO / Öne Çıkarılan Snippet):</strong> İzmir’de hızlı nakit akışı ve kısa amortisman süresi hedefleyen yatırımcılar için üniversite ve sanayi bölgelerine yakın (Balatçık, Çiğli, Bornova) 1+1 daireler daha avantajlıdır. Buna karşılık, daha uzun soluklu, aile odaklı, düşük kiracı sirkülasyonu ve yüksek uzun vadeli prim potansiyeli arayanlar için lokasyon bağımsız (Karşıyaka, Bayraklı, Menemen) 2+1 daireler daha rasyonel bir yatırım seçeneği sunar.
+        </blockquote>
+    
+        <h3>Amortisman Süresi ve Nakit Akışı Analizi</h3>
+        <p>Yatırımın geri dönüş süresi (amortisman), bir gayrimenkulün kendini kaç yılda amorti edeceğini gösteren en temel finansal metriktir. İzmir genelinde daire tiplerine göre bu süre belirgin farklılıklar gösterir:</p>
+    
+        <ul>
+          <li><strong>1+1 Dairelerin Amortisman Süresi:</strong> Genellikle 13 ila 17 yıl arasında değişmektedir. Metrekare başına düşen kira bedeli yüksek olduğundan, satın alma bedeline oranla aylık nakit akışı oldukça tatminkardır.</li>
+          <li><strong>2+1 Dairelerin Amortisman Süresi:</strong> Genellikle 18 ila 22 yıl bandındadır. Satın alma maliyeti 1+1 daireye göre daha yüksek olsa da, stabil kiracı yapısı sayesinde uzun vadede istikrarlı bir gelir eğrisi sunar.</li>
+        </ul>
+    
+        <h3>1+1 Daire Yatırımının Avantajları ve Riskleri</h3>
+        <p>Özellikle genç profesyoneller, yalnız yaşayanlar ve öğrencilerin yoğun tercih ettiği 1+1 dairelerin yatırım avantajları şunlardır:</p>
+    
+        <ul>
+          <li><strong>Düşük Giriş Bariyeri:</strong> Satın alma bedeli 2+1 veya daha büyük dairelere kıyasla daha düşüktür. Bu sayede yatırımcılar daha az sermaye veya daha düşük kredi miktarlarıyla gayrimenkul sektörüne adım atabilirler.</li>
+          <li><strong>Kolay Kiralanabilirlik:</strong> İzmir gibi öğrenci ve genç çalışan nüfusunun yoğun olduğu bir şehirde, doğru lokasyondaki 1+1 daireler ilana çıktığı anda çok kısa sürede kiracı bulur.</li>
+          <li><strong>Eşyalı Kiralama Formülü:</strong> Daireyi eşyalı olarak kiraya vermek, kira gelirini standart bir boş daireye kıyasla %30 ila %50 oranında artırarak amortisman süresini daha da aşağı çekebilir.</li>
+        </ul>
+    
+        <p>Ancak 1+1 dairelerin en büyük riski yüksek sirkülasyondur. Öğrenci veya geçici görevli kiracılar genellikle 1-2 yıl içinde daireyi boşaltır. Her kiracı değişiminde boya-badana, temizlik, emlakçı komisyonu ve olası boş kalma süreleri yatırımcının net kârlılığını törpüleyebilir.</p>
+    
+        <h3>2+1 Daire Yatırımının Avantajları ve Riskleri</h3>
+        <p>Genellikle yeni evli çiftler, küçük aileler ve stabil bir yaşam arayan beyaz yakalılar tarafından tercih edilen 2+1 daireler şu avantajları sunar:</p>
+    
+        <ul>
+          <li><strong>Uzun Soluklu ve Güvenilir Kiracılar:</strong> 2+1 daireyi kiralayan aileler veya çalışanlar, düzenli bir yaşam kurdukları için genellikle uzun yıllar (ortalama 3-5 yıl veya daha fazla) aynı evde kalırlar. Bu da sirkülasyon maliyetlerini ve yönetim eforunu minimuma indirir.</li>
+          <li><strong>Daha Yüksek Satış Kabiliyeti (Likidite):</strong> Ekonomik dalgalanmalarda veya acil nakit ihtiyaçlarında, hem oturum amaçlı geniş ailelere hem de küçük yatırımcılara hitap ettiği için 2+1 dairelerin ikinci el piyasasındaki alıcı kitlesi çok daha geniştir.</li>
+          <li><strong>Daha Az Deformasyon:</strong> Aile odaklı kiracılar, genellikle mülke geçici gözle bakan öğrencilere kıyasla daireyi daha temiz ve özenli kullanırlar. Bu durum, uzun vadede bakım ve yenileme masraflarını düşürür.</li>
+        </ul>
+    
+        <h3>İzmir’de Bölgesel Dinamikler Kararı Nasıl Etkiler?</h3>
+        <p>Yatırım yapacağınız bölgenin kimliği, hangi daire tipini seçmeniz gerektiğini doğrudan belirler. İzmir ölçeğinde bu durumu şu örneklerle açıklayabiliriz:</p>
+    
+        <p><strong>1+1 Yatırımı İçin Doğru Bölgeler:</strong> Katip Çelebi Üniversitesi'ne ev sahipliği yapan <strong>Balatçık</strong>, Yaşar Üniversitesi yakınındaki Bornova bölgeleri veya Çiğli Atatürk Organize Sanayi Bölgesi çevresi 1+1 yatırımı için biçilmiş kaftandır. Bu bölgelerde öğrenci ve sanayide çalışan genç mühendis/teknisyen nüfusu yoğun olduğundan 1+1 daireler her zaman yüksek talep görür.</p>
+    
+        <p><strong>2+1 Yatırımı İçin Doğru Bölgeler:</strong> Aile yaşamının, düzenli kentleşmenin ve sosyal olanakların ön planda olduğu Karşıyaka, Çiğli'nin merkezi mahalleleri, Yeni Girne aksı ve Bayraklı gibi bölgelerde 2+1 daireler hem kiralama hem de geleceğe yönelik değer artışı açısından çok daha yüksek performans gösterir.</p>
+    
+        <h3>Mühendislik Gözüyle Yapı Kalitesi ve Fizibilite</h3>
+        <p>Daire tipine karar verdikten sonra dikkat edilmesi gereken en önemli aşama, mülkün yapısal kalitesidir. Yatırım yapacağınız binanın malzeme kalitesi ve mühendislik çözümleri, gelecekteki bakım masraflarınızı doğrudan etkiler. Isı yalıtımı kötü, tesisat altyapısı zayıf veya deprem güvenliği şüpheli bir yapıdan alınacak 1+1 veya 2+1 daire, kısa sürede yüksek onarım giderleri çıkararak yatırım avantajını tamamen kaybettirebilir.</p>
+    
+        <p>Neli Mühendislik olarak projelerimizde; TS 825 standartlarına uygun kesintisiz ısı yalıtımı, nitelikli ses yalıtımı uygulamaları ve doğru projelendirilmiş taşıyıcı sistemler inşa ederek, yatırımcılarımıza uzun yıllar boyunca bakım masrafı çıkarmayacak, değerini her zaman koruyacak konutlar sunuyoruz.</p>
+    
+        <h3>Neli Mühendislik ile Akılcı ve Güvenli Yatırım</h3>
+        <p><strong>Neli Mühendislik</strong> olarak, İzmir'in Çiğli, Balatçık ve Karşıyaka gibi yüksek prim potansiyeline sahip lokasyonlarında, hem yatırım hem de konforlu bir yaşam odaklı projeler hayata geçiriyoruz. Mühendislik vizyonumuzla inşa ettiğimiz, deprem güvenliği maksimum düzeyde tutulmuş ve modern yapı fiziği kurallarıyla donatılmış daire seçeneklerimizle yatırımlarınızı güvence altına alıyoruz.</p>
+    
+        <p>Farklı lokasyonlardaki 1+1 ve 2+1 konut projelerimizi, kat planlarımızı ve yatırım fırsatlarını detaylıca incelemek için <strong><a href='https://neli.tr/showcase' target='_blank' rel='noopener noreferrer' style='color: #b32128; font-weight: bold; text-decoration: underline;'>neli.tr/showcase</a></strong> sayfamızı ziyaret edebilirsiniz.</p>
+      </article>`,
+    coverImage: "/images/blog/izmir-yatirim.webp",
+    coverImageAlt:
+      "İzmir'de gayrimenkul yatırımı için 1+1 ve 2+1 daire karşılaştırması — Neli Mühendislik",
+    category: "Gayrimenkul Yatırımı ve Lokasyon Analizi",
+    tags: JSON.stringify([
+      "İzmir gayrimenkul yatırımı",
+      "1+1 mi 2+1 mi",
+      "İzmir satılık daire",
+      "amortisman süresi İzmir",
+      "Balatçık satılık daire",
+      "Çiğli konut projeleri",
+      "Neli Mühendislik",
+    ]),
+    featured: false,
+    status: "published" as const,
+    metaTitle:
+      "İzmir'de Yatırım İçin 1+1 mi 2+1 mi Avantajlı? | Neli Mühendislik",
+    metaDescription:
+      "İzmir gayrimenkul piyasasında yatırım için 1+1 mi yoksa 2+1 mi almalı? Amortisman süreleri, kiralama dinamikleri ve bölgesel avantajları inceleyin.",
+    metaKeywords:
+      "izmirde yatirim icin 1+1 mi 2+1 mi daha avantajli, izmir gayrimenkul yatirimi, 1+1 amortisman suresi izmir, izmir satilik daire yatirimlik, balatcik satilik 1+1, cigli satilik 2+1, neli muhendislik",
+    publishedAt: "2026-07-17",
+  },
+  {
+    slug: "kat-irtifaki-iskan-ve-kat-mulkiyeti-arasindaki-fark-nedir",
+    title:
+      "Kat İrtifakı, İskan ve Kat Mülkiyeti Arasındaki Fark Nedir? Gayrimenkulün Yasal Süreci",
+    excerpt:
+      "Yeni bir daire satın alırken tapuda yazan 'Kat İrtifakı' veya 'Kat Mülkiyeti' ibareleri ne anlama gelir? İskan belgesi neden kritiktir? İnşaatın başlangıcından sonuna kadar gayrimenkulün yasal statüsündeki farkları, riskleri ve mühendislik fizibilitesini inceleyin.",
+    content: `<article>
+        <h2>Gayrimenkulün Hukuki Alfabesi: İrtifak, İskan ve Mülkiyet</h2>
+        <p>Gayrimenkul satın alma süreci, sadece dairenin içini beğenmekten ibaret değildir. Yapının yasal durumu, tapu sicilindeki statüsü ve belediye nezdindeki izinleri, yatırımınızın değerini ve huzurunuzu doğrudan etkiler. Türkiye'de konut piyasasında en sık karıştırılan, ancak bir yapının 'yasal kusursuzluğunu' belirleyen üç temel kavram bulunur: <strong>Kat İrtifakı, İskan (Yapı Kullanma İzin Belgesi) ve Kat Mülkiyeti.</strong></p>
+    
+        <p>Bir inşaatın kronolojik sürecini temsil eden bu kavramlar, aslında bir gayrimenkulün 'olgunlaşma' aşamalarıdır. Bu aşamalar arasındaki farkları bilmemek, gelecekte banka kredisi sorunları, idari para cezaları ve hatta mülkiyet haklarında belirsizlikler yaşamanıza neden olabilir.</p>
+    
+        <blockquote style='margin: 20px 0; padding: 10px 20px; border-left: 5px solid #b32128; background: #f9f9f9;'>
+          <strong>Özet Cevap (AEO / Öne Çıkarılan Snippet):</strong> Kat irtifakı, henüz tamamlanmamış veya iskan alınmamış bir binadaki arsa payına bağlı 'proje aşaması' mülkiyetidir. İskan (Yapı Kullanma İzin Belgesi), belediyenin binayı projeye uygun ve oturuma hazır bulduğunu gösteren 'resmi onay' belgesidir. Kat mülkiyeti ise, iskanlı bir binanın her bir bağımsız bölümünün tapu kütüğünde 'bina' olarak tescil edildiği, yasal olarak en kusursuz ve nihai mülkiyet statüsüdür.
+        </blockquote>
+    
+        <h3>1. Kat İrtifakı Nedir? (İnşaat ve Proje Aşaması)</h3>
+        <p>Kat irtifakı, henüz inşaatına başlanmamış veya inşaatı devam eden bir projenin, tapu sicilinde daire, dükkan gibi bağımsız bölümlerinin, arsa payına bağlı olarak kurulduğu geçici bir mülkiyet türüdür.</p>
+    
+        <ul>
+          <li><strong>Neyi Gösterir?</strong> Tapuda henüz bir 'bina' değil, bir 'arsa' üzerinde sahip olduğunuz hisse payını ve bu hisseye karşılık gelen bağımsız bölümün (projedeki numarasının) size ait olduğunu gösterir.</li>
+          <li><strong>Risk Nedir?</strong> Binanın projeye uygun tamamlanamama, iskan alınamama veya müteahhidin yükümlülüklerini yerine getirememe riski bulunur.</li>
+          <li><strong>Tapuda Ne Yazar?</strong> Tapu cinsi kısmında genellikle 'Arsa' veya 'Kat İrtifakı' ibaresi yer alır.</li>
+        </ul>
+    
+        <h3>2. İskan Nedir? (Belediye Onayı ve Yapı Kullanma İzni)</h3>
+        <p>İskan, teknik adıyla Yapı Kullanma İzin Belgesi; inşaatı tamamlanan bir yapının, ruhsat eklerine, onaylı mimari, statik ve tesisat projelerine, ilgili yönetmeliklere (TS 825 Isı Yalıtımı, Deprem Yönetmeliği vb.) uygun olarak inşa edildiğini gösteren resmi belgedir.</p>
+    
+        <ul>
+          <li><strong>Nereden Alınır?</strong> İnşaat bittikten sonra yüklenici firma tarafından yapının bağlı olduğu belediyeden alınır.</li>
+          <li><strong>Neden Kritiktir?</strong> İskan belgesi olmayan bir binada resmi olarak oturum izni yoktur. Su, elektrik ve doğalgaz abonelikleri 'şantiye' tarifesinden ödenir veya bireysel abonelik yapılamaz. Belediye tarafından idari para cezaları uygulanabilir.</li>
+        </ul>
+    
+        <h3>3. Kat Mülkiyeti Nedir? (Final ve Nihai Tescil)</h3>
+        <p>Kat mülkiyeti, iskan belgesi alınmış bir binanın tapu kütüğünde, arsa niteliğinin 'bina' olarak değiştirildiği ve her bir bağımsız bölümün (dairenin) tamamen müstakil bir taşınmaz mal olarak tescil edildiği en nihai mülkiyet statüsüdür.</p>
+    
+        <ul>
+          <li><strong>Nasıl Kurulur?</strong> İskan belgesi alındıktan sonra, tapu dairesinde 'cins tashihi' işlemi yapılarak kat irtifakı kat mülkiyetine çevrilir.</li>
+          <li><strong>Avantajları Nelerdir?</strong> Gayrimenkulün yasal olarak hiçbir kusuru kalmaz. Bankalar tarafından en kolay kredi verilen tapu türüdür. Bağımsız bölümün sınırları, şerefiye payı ve ortak alanlardaki haklar yasal güvence altındadır.</li>
+          <li><strong>Tapuda Ne Yazar?</strong> Tapu cinsi kısmında 'Bina' veya 'Kâgir Apartman' gibi nihai nitelik yazar.</li>
+        </ul>
+    
+        <h3>Tablo: Temel Karşılaştırma Analizi</h3>
+        <table style='width: 100%; border-collapse: collapse; margin: 20px 0; border: 1px solid #ddd;'>
+          <tr style='background: #f1f1f1;'>
+            <th style='padding: 10px; border: 1px solid #ddd;'>Özellik</th>
+            <th style='padding: 10px; border: 1px solid #ddd;'>Kat İrtifakı</th>
+            <th style='padding: 10px; border: 1px solid #ddd;'>İskan Belgesi</th>
+            <th style='padding: 10px; border: 1px solid #ddd;'>Kat Mülkiyeti</th>
+          </tr>
+          <tr>
+            <td style='padding: 10px; border: 1px solid #ddd;'><strong>Durum</strong></td>
+            <td style='padding: 10px; border: 1px solid #ddd;'>Proje/İnşaat Aşaması</td>
+            <td style='padding: 10px; border: 1px solid #ddd;'>Resmi Onay Aşaması</td>
+            <td style='padding: 10px; border: 1px solid #ddd;'>Final Tescil Aşaması</td>
+          </tr>
+          <tr>
+            <td style='padding: 10px; border: 1px solid #ddd;'><strong>Tapu Niteliği</strong></td>
+            <td style='padding: 10px; border: 1px solid #ddd;'>Arsa</td>
+            <td style='padding: 10px; border: 1px solid #ddd;'>Belge (Tapu Değildir)</td>
+            <td style='padding: 10px; border: 1px solid #ddd;'>Bina</td>
+          </tr>
+          <tr>
+            <td style='padding: 10px; border: 1px solid #ddd;'><strong>Oturum İzni</strong></td>
+            <td style='padding: 10px; border: 1px solid #ddd;'>Resmi Olarak Yok</td>
+            <td style='padding: 10px; border: 1px solid #ddd;'>Resmi İzin Alındı</td>
+            <td style='padding: 10px; border: 1px solid #ddd;'>Resmi İzin Var</td>
+          </tr>
+          <tr>
+            <td style='padding: 10px; border: 1px solid #ddd;'><strong>Abonelikler</strong></td>
+            <td style='padding: 10px; border: 1px solid #ddd;'>Şantiye Tarifesi</td>
+            <td style='padding: 10px; border: 1px solid #ddd;'>Bireysel Abonelik</td>
+            <td style='padding: 10px; border: 1px solid #ddd;'>Bireysel Abonelik</td>
+          </tr>
+        </table>
+    
+        <h3>Mühendislik Gözüyle İskan ve Yapı Fiziği Fizibilitesi</h3>
+        <p>Bir yapının iskan belgesi alabilmesi, sadece kâğıt üzerindeki bir onay değildir. Belediye ekipleri, yapıyı yerinde inceleyerek projenin mühendislik standartlarına uygunluğunu doğrular. Bu denetimler, yapı fiziği ve konfor açısından şu kritik konuları kapsar:</p>
+    
+        <ul>
+          <li><strong>TS 825 Isı Yalıtımı Standartları:</strong> Binanın cephe, çatı ve döşeme yalıtım detaylarının projeye uygun yapılıp yapılmadığı kontrol edilir. Hatalı yalıtım, iskan alınmasını engelleyebilir.</li>
+          <li><strong>Deprem Güvenliği:</strong> Taşıyıcı sistemin statik projeye uygunluğu, kullanılan beton ve demir kalitesi doğrulanır.</li>
+          <li><strong>Yangın Yönetmeliği:</strong> Yangın merdivenleri, söndürme sistemleri ve malzeme kaçış fizibilitesinin uygunluğu denetlenir.</li>
+          <li><strong>Mekanik ve Elektrik Tesisat:</strong> Atık su, temiz su ve elektrik tesisat altyapısının standartlara uygunluğu kontrol edilir.</li>
+        </ul>
+    
+        <p>Neli Mühendislik olarak projelerimizde; henüz ruhsat ve kat irtifakı aşamasındayken, nihai kat mülkiyeti tescilinde sorun oluşturmayacak, TS 825 ve güncel deprem yönetmeliklerine tam uyumlu, yasal kusursuzluğa sahip mühendislik detayları projelendiriyoruz.</p>
+    
+        <h3>Neli Mühendislik ile Güvenli Geleceğe Yatırım Yapın</h3>
+        <p><strong>Neli Mühendislik</strong> olarak, İzmir'in en hızlı gelişen Çiğli, Balatçık ve Karşıyaka gibi akslarında geliştirdiğimiz projelerde, yalnızca modern mimari tasarımlar sunmakla kalmıyor, temelden çatıya kadar uluslararası mühendislik ve yapı fiziği standartlarını eksiksiz uyguluyoruz. Depreme dayanıklı, ısı ve ses yalıtımı mükemmel çözülmüş ve yasal süreçleri (iskan, kat mülkiyeti) sorunsuz tamamlanmış güvenli yapılarla geleceğinizi güvence altına alıyoruz.</p>
+    
+        <p>İzmir genelinde hayata geçirdiğimiz, iskanlı ve kat mülkiyetli güncel konut projelerimizi, kat planlarımızı ve mühendislik çözümlerimizi daha yakından incelemek için <strong><a href='https://neli.tr/showcase' target='_blank' rel='noopener noreferrer' style='color: #b32128; font-weight: bold; text-decoration: underline;'>neli.tr/showcase</a></strong> adresimizi ziyaret edebilirsiniz.</p>
+      </article>`,
+    coverImage: "/images/blog/kat-irtifaki.webp",
+    coverImageAlt:
+      "Kat irtifakı, iskan ve kat mülkiyeti arasındaki fark nedir — Neli Mühendislik",
+    category: "Gayrimenkul Yatırımı ve Lokasyon Analizi",
+    tags: JSON.stringify([
+      "kat irtifakı nedir",
+      "kat mülkiyeti nedir",
+      "iskan belgesi neden önemlidir",
+      "yapı kullanma izin belgesi",
+      "tapu çeşitleri",
+      "İzmir konut projeleri",
+      "Neli Mühendislik",
+    ]),
+    featured: false,
+    status: "published" as const,
+    metaTitle:
+      "Kat İrtifakı, İskan ve Kat Mülkiyeti Arasındaki Fark Nedir? | Neli Mühendislik",
+    metaDescription:
+      "Kat irtifakı nedir? İskan belgesi (yapı kullanma izni) neden önemlidir? Kat mülkiyeti tapusu nasıl alınır? Gayrimenkul yasal süreçlerindeki farkları ve riskleri öğrenin.",
+    metaKeywords:
+      "kat irtifakı kat mülkiyeti ve iskan arasındaki fark nedir, kat irtifakı nedir riskleri nelerdir, iskan belgesi nedir neden önemlidir, yapı kullanma izin belgesi nasıl alınır, cins tashihi tapu, izmir yasal kusursuz tapu, neli mühendislik",
+    publishedAt: "2026-07-17",
+  },
+  {
+    slug: "enerji-kimlik-belgesi-sinifi-daire-degerini-ve-faturalari-nasil-etkiler",
+    title:
+      "Enerji Kimlik Belgesi Sınıfı Daire Değerini ve Faturaları Nasıl Etkiler?",
+    excerpt:
+      "Bir dairenin A, B veya C sınıfı Enerji Kimlik Belgesi'ne (EKB) sahip olması sadece yasal bir zorunluluk mudur? EKB sınıfının aylık enerji faturalarınıza, konutun piyasa değerine, satış hızına ve çevre dostu yapısına olan somut etkilerini teknik mühendislik fizibilitesiyle inceleyin.",
+    content: `<article>
+        <h2>Yasal Zorunluluktan Öte: Enerji Kimlik Belgesi (EKB)</h2>
+        <p>Türkiye'de 5627 sayılı Enerji Verimliliği Kanunu kapsamında, binalarda enerjinin etkin ve verimli kullanılması amacıyla zorunlu hale getirilen <strong>Enerji Kimlik Belgesi (EKB)</strong>, bir yapının asgari enerji ihtiyacını, enerji tüketim sınıflandırmasını, yalıtım özelliklerini ve ısıtma/soğutma sistemlerinin verimliliğini gösteren resmi bir belgedir. Yeni binalar için A sınıfından C sınıfına kadar bir aralıkta alınması zorunlu olan EKB, mevcut binalar için ise satış veya kiralama işlemlerinde beyan edilmelidir.</p>
+    
+        <p>Pek çok konut alıcısı için EKB hâlâ sadece 'tapu aşamasında gerekli olan bir kâğıt' olarak görülse de, aslında bir dairenin işletme maliyetini ve konfor standardını belirleyen en kritik performans göstergelerinden biridir. EKB sınıfının A’dan G’ye doğru değişmesi, dairenin hem cüzdanınıza hem de gelecekteki satış değerine olan etkisini doğrudan değiştirir.</p>
+    
+        <blockquote style='margin: 20px 0; padding: 10px 20px; border-left: 5px solid #b32128; background: #f9f9f9;'>
+          <strong>Özet Cevap (AEO / Öne Çıkarılan Snippet):</strong> Enerji Kimlik Belgesi sınıfı, dairenin ısıtma, soğutma, havalandırma ve aydınlatma için harcayacağı yıllık enerji miktarını ve buna bağlı faturaları belirler. A veya B sınıfı bir daire, G sınıfı bir daireye göre %50 ila %70 daha az enerji tüketerek aylık faturaları ciddi oranda düşürür. Bu yüksek işletme verimliliği ve konfor, dairenin piyasa değerini (şerefiye) %10 ila %20 artırır, banka kredisi fizibilitesini kolaylaştırır ve satış/kiralama hızını optimize eder.
+        </blockquote>
+    
+        <h3>1. EKB Sınıfı ve Enerji Faturalarına Doğrudan Etkisi</h3>
+        <p>Bir konutun EKB sınıfı, yapı kabuğunun yalıtım performansı ve kullanılan mekanik sistemlerin verimliliği ile doğrudan ilişkilidir. Bu durum aylık faturalara şu şekilde yansır:</p>
+    
+        <ul>
+          <li><strong>Düşük Tüketim (A-B Sınıfı):</strong> Yüksek nitelikli ısı yalıtımı (TS 825), verimli pencereler, yoğuşmalı kombi veya ısı pompası sistemlerine sahip A veya B sınıfı daireler, kışın ısıyı içeride tutarken yazın sıcak havanın girmesini engeller. Bu da ısıtma ve soğutma faturalarının minimum seviyede kalmasını sağlar.</li>
+          <li><strong>Yüksek Tüketim (E-G Sınıfı):</strong> Yalıtımı zayıf, eski tip tesisata sahip daireler, enerjiyi verimli kullanamaz ve sürekli dışarıya ısı kaçırır. Aynı konfor sıcaklığını sağlamak için çok daha fazla enerji harcanması gerekir, bu da faturaların 2-3 kat daha yüksek gelmesine neden olur.</li>
+        </ul>
+    
+        <h3>2. Dairenin Piyasa Değerine (Şerefiye) Etkisi</h3>
+        <p>Nitelikli konut alıcıları ve gayrimenkul değerleme uzmanları, bir mülkün değerini belirlerken işletme maliyetlerini de dikkate almaktadır. EKB sınıfının mülk değerine etkileri şunlardır:</p>
+    
+        <ul>
+          <li><strong>Yüksek Değer (Prime Value):</strong> A veya B sınıfı bir EKB, konutun 'modern, konforlu ve düşük maliyetli' olduğunu tesciller. Bu durum, dairenin piyasa değerine olumlu bir şerefiye payı ekleyerek satış bedelini artırır.</li>
+          <li><strong>Satış ve Kiralama Hızı:</strong> Düşük enerji faturaları vaat eden bir daire, benzer özelliklere sahip ancak enerji sınıfı düşük bir daireye kıyasla çok daha hızlı kiralanır veya satılır. Alıcılar, başlangıçta daha yüksek bir bedel ödeseler de, uzun vadede faturalardan tasarruf edeceklerini bilirler.</li>
+          <li><strong>Kredi Fizibilitesi:</strong> Yeşil tahvil ve çevre dostu kredi uygulamaları kapsamında, bankalar yüksek enerji verimliliğine sahip (A-B sınıfı) konutlar için daha uygun faiz oranları veya daha yüksek kredi miktarları sunabilmektedir.</li>
+        </ul>
+    
+        <h3>3. Yapı Fiziği, Konfor ve Sağlık Performansı</h3>
+        <p>EKB sınıfı sadece bir enerji metriği değil, aynı zamanda dairenin iç mekân kalitesinin de bir göstergesidir:</p>
+    
+        <ul>
+          <li><strong>Dengeli Sıcaklık:</strong> İyi yalıtılmış A/B sınıfı dairelerde, odalar arasındaki sıcaklık farkı minimumdur. Duvar yüzeyleri soğuk kalmaz, bu da konfor hissini artırır.</li>
+          <li><strong>Nem ve Küf Kontrolü:</strong> Doğru uygulanmış ısı yalıtımı, ısı köprülerini önleyerek iç yüzeylerde yoğuşma (terleme), nem ve küf oluşumu riskini sıfıra indirir.</li>
+          <li><strong>Ses Yalıtımı:</strong> Isı yalıtımı için kullanılan malzemeler, genellikle ses yalıtım performansını da iyileştirerek dışarıdan gelen gürültüyü azaltır.</li>
+        </ul>
+    
+        <h3>4. Çevresel Etki ve Karbon Ayak İzi</h3>
+        <p>Daha az enerji tüketmek, daha az fosil yakıt (doğalgaz vb.) harcanması ve dolayısıyla daha düşük karbon emisyonu anlamına gelir. A veya B sınıfı bir dairede yaşamak, çevresel sürdürülebilirliğe somut bir katkı sağlar ve karbon ayak izinizi azaltır.</p>
+    
+        <h3>Mühendislik Vizyonuyla Yüksek Verimli Binalar</h3>
+        <p>Neli Mühendislik olarak projelerimizde; Enerji Kimlik Belgesi sınıfını sadece yasal bir formalite olarak görmüyoruz. Yapı kabuğunu, güncel TS 825 Isı Yalıtım Kuralları ve modern yapı fiziği ilkelerine göre kesintisiz yalıtımla projelendiriyoruz. Yüksek verimli pencereler, yoğuşmalı kombi ve yenilikçi ısı pompası gibi mekanik çözümlerle birleştirdiğimiz tasarımlarımızla, alıcılarımıza her zaman A veya B sınıfı enerji performansına sahip, işletme maliyeti düşük ve piyasa değeri yüksek konutlar sunuyoruz.</p>
+    
+        <h3>Neli Mühendislik ile Akılcı ve Verimli Yatırım</h3>
+        <p><strong>Neli Mühendislik</strong> olarak, İzmir'in en hızlı gelişen Çiğli, Balatçık ve Karşıyaka gibi akslarında geliştirdiğimiz projelerde, yalnızca modern mimari tasarımlar sunmakla kalmıyor, temelden çatıya kadar uluslararası mühendislik ve enerji verimliliği standartlarını eksiksiz uyguluyoruz. Isı ve ses yalıtımı mükemmel çözülmüş, yasal Enerji Kimlik Belgesi süreçleri (A-B sınıfı) sorunsuz tamamlanmış güvenli yapılarla geleceğinizi ve bütçenizi güvence altına alıyoruz.</p>
+    
+        <p>İzmir genelinde hayata geçirdiğimiz, yüksek enerji verimliliğine sahip güncel konut projelerimizi, kat planlarımızı ve mühendislik çözümlerimizi daha yakından incelemek için <strong><a href='https://neli.tr/showcase' target='_blank' rel='noopener noreferrer' style='color: #b32128; font-weight: bold; text-decoration: underline;'>neli.tr/showcase</a></strong> adresimizi ziyaret edebilirsiniz.</p>
+      </article>`,
+    coverImage: "/images/blog/ekb-sinifi.webp",
+    coverImageAlt:
+      "Enerji Kimlik Belgesi sınıfının daire değerine ve faturalara etkisi — Neli Mühendislik",
+    category: "Isı Yalıtımı ve Yapı Fiziği",
+    tags: JSON.stringify([
+      "Enerji Kimlik Belgesi",
+      "EKB sınıfı nedir",
+      "enerji tasarrufu fatura",
+      "yeşil bina",
+      "ısı yalıtımı",
+      "daire değeri şerefiye",
+      "Neli Mühendislik",
+    ]),
+    featured: false,
+    status: "published" as const,
+    metaTitle:
+      "Enerji Kimlik Belgesi (EKB) Sınıfı Daire Değerini Nasıl Etkiler? | Neli Mühendislik",
+    metaDescription:
+      "Enerji Kimlik Belgesi (EKB) sınıfı daire değerini ve faturaları nasıl etkiler? A-B sınıfı dairelerin avantajlarını, enerji tasarrufunu ve piyasa değerine etkilerini teknik analizle öğrenin.",
+    metaKeywords:
+      "enerji kimlik belgesi sinifi daire degerini ve faturalari nasil etkiler, ekb siniflari nedir, ekb fatura tasarrufu, ekb a b sinifi avantajlari, ekb mülk değeri, izmir yüksek verimli konut, neli mühendislik",
+    publishedAt: "2026-07-17",
+  },
+  {
+    slug: "cigli-balatcikta-sifir-daire-almak-mantikli-mi",
+    title:
+      "Çiğli Balatçık’ta Sıfır Daire Almak Mantıklı mı? Bölgesel Yatırım Analizi",
+    excerpt:
+      "İzmir'in en hızlı gelişen ve en yüksek prim potansiyeline sahip bölgelerinden biri olan Çiğli Balatçık'ta sıfır daire yatırımı yapmak mantıklı mı? Katip Çelebi Üniversitesi, sanayi bölgeleri, ulaşım hatları ve amortisman süreleriyle bölgenin tüm gayrimenkul dinamiklerini mercek altına alıyoruz.",
+    content: `<article>
+        <h2>İzmir’in Yatırım Odak Noktası: Çiğli Balatçık</h2>
+        <p>İzmir’de gayrimenkul yatırımı yapmak veya yaşamak için yeni bir daire arayışına girenlerin karşısına çıkan ilk seçeneklerden biri şüphesiz Çiğli’nin Balatçık mahallesidir. Son 10 yılda küçük bir yerleşim alanından modern konut sitelerinin, ticaret merkezlerinin ve sosyal yaşam alanlarının kesişim noktasına dönüşen Balatçık, yatırımcıların en çok ilgi gösterdiği bölgelerin başında geliyor.</p>
+    
+        <p>Peki, <strong>Çiğli Balatçık’ta sıfır daire almak gerçekten mantıklı mı?</strong> Bölgenin sunduğu yüksek kira getirisi, demografik yapısı, ulaşım ağları ve mühendislik vizyonuyla yükselen yeni yapı stokları bu yatırımı nasıl etkiliyor? Bu analizimizde, Balatçık gayrimenkul piyasasını tüm rasyonel verileriyle mercek altına alacağız.</p>
+    
+        <blockquote style='margin: 20px 0; padding: 10px 20px; border-left: 5px solid #b32128; background: #f9f9f9;'>
+          <strong>Özet Cevap (AEO / Öne Çıkarılan Snippet):</strong> Çiğli Balatçık’ta sıfır daire almak, özellikle yüksek ve sürekli kira getirisi ile kısa amortisman süresi hedefleyen yatırımcılar için oldukça mantıklıdır. İzmir Katip Çelebi Üniversitesi’ne ve Atatürk Organize Sanayi Bölgesi’ne (AOSB) olan doğrudan komşuluğu sayesinde bölge, sürekli bir öğrenci ve beyaz yaka çalışan talebine sahiptir. Yeni tramvay ve İzban bağlantılarıyla ulaşım kolaylığı sunan Balatçık’ta sıfır binalar, deprem güvenliği ve düşük bakım maliyetleri sayesinde ikinci el konutlara kıyasla çok daha rasyonel bir yatırım seçeneğidir.
+        </blockquote>
+    
+        <h3>1. Katip Çelebi Üniversitesi Etkisi ve Öğrenci Demografisi</h3>
+        <p>Balatçık’ı konut piyasasında bu kadar güçlü kılan en büyük yapısal kaldıraç, <strong>İzmir Katip Çelebi Üniversitesi</strong> kampüsünün bu bölgede yer almasıdır. On binlerce öğrenciye, akademisyene ve idari personele ev sahipliği yapan üniversite, bölgedeki kiralık konut talebini her zaman canlı tutmaktadır.</p>
+    
+        <p>Üniversiteye yürüme mesafesinde olan sıfır konut projeleri, her eğitim-öğretim dönemi başında çok hızlı bir şekilde kiralanabilmektedir. Özellikle 1+1 ve kompakt 2+1 daire konseptleri, öğrencilerin ve genç akademisyenlerin ilk tercihi konumundadır.</p>
+    
+        <h3>2. Sanayi Bölgelerine Yakınlık ve Beyaz Yaka Talebi</h3>
+        <p>Balatçık, sadece bir öğrenci bölgesi değildir. Ege Bölgesi’nin en büyük üretim merkezlerinden biri olan <strong>İzmir Atatürk Organize Sanayi Bölgesi (AOSB)</strong> ve Çiğli Ana Jet Üssü bölgeye çok yakın konumdadır. Bu tesislerde çalışan binlerce mühendis, teknisyen ve idari personel, iş yerlerine yakın, konforlu ve güvenli yaşam alanları aramaktadır.</p>
+    
+        <p>Sıfır binalarda yaşamak isteyen bu beyaz yakalı profil, mülk sahipleri için düzenli ödeme yapan, uzun vadeli ve güvenilir bir kiracı portföyü oluşturur. Bu durum, yatırımdaki kira sürekliliğini garanti altına alır.</p>
+    
+        <h3>3. Ulaşım Ağlarının Merkezinde Yer Alması</h3>
+        <p>Ulaşım akslarına yakınlık, bir gayrimenkulün değer artış hızını belirleyen en önemli kriterdir. Balatçık bu konuda oldukça avantajlı bir konumdadır:</p>
+    
+        <ul>
+          <li><strong>Tramvay Hattı:</strong> Çiğli Tramvayı sayesinde bölge sakinleri Karşıyaka, Mavişehir ve Çiğli merkezine trafiksiz ve konforlu bir şekilde ulaşabilmektedir.</li>
+          <li><strong>İzban ve Otobüs:</strong> Egekent İzban istasyonuna yakınlığı, İzmir’in kuzey-güney aksındaki raylı sistem ağına doğrudan bağlantı sağlar.</li>
+          <li><strong>Anadolu Caddesi ve Çevre Yolu:</strong> Karayolu bağlantıları sayesinde Karşıyaka’ya 10 dakika, Bornova veya Konak’a ise çevre yolu üzerinden yaklaşık 20-25 dakikada ulaşım mümkündür.</li>
+        </ul>
+    
+        <h3>4. Amortisman Sürelerinde İzmir Ortalamasının Üstünde Performans</h3>
+        <p>İzmir genelinde konut yatırımlarının amortisman (geri dönüş) süreleri ortalama 18-22 yıl bandındayken, Balatçık’ta bu süre doğru projelerle <strong>13 ila 16 yıla</strong> kadar düşebilmektedir. Metrekare satın alma maliyetinin Karşıyaka veya Mavişehir gibi merkezlere kıyasla daha erişilebilir olması, buna karşın kira değerlerinin yüksek seyretmesi, yatırılan sermayenin çok daha hızlı dönmesini sağlar.</p>
+    
+        <h3>5. Yeni Binalarda Deprem Güvenliği ve Mühendislik Standartları</h3>
+        <p>Yatırımda finansal veriler kadar fiziksel güvenlik de ön plandadır. Eski binaların yalıtım yetersizlikleri, eski deprem yönetmeliklerine göre inşa edilmiş olmaları ve yıpranmış yapı elemanları uzun vadede ciddi masraflar çıkarabilir.</p>
+    
+        <p>Balatçık’taki yeni konut projeleri ise modern mühendislik vizyonu, güncel deprem yönetmelikleri ve yüksek yapı standartlarıyla üretilmektedir. Zemin iyileştirme sistemlerinden yüksek mukavemetli hazır beton kullanımına kadar her detay, güvenli bir geleceğin temelini oluşturur.</p>
+    
+        <h3>Mühendislik Gözüyle Balatçık’ta Doğru Projeyi Seçmek</h3>
+        <p>Balatçık’ta her sıfır daire aynı yatırım değerine sahip değildir. Bölgede doğru bir yatırım yapmak için şu teknik detaylara dikkat etmeniz gerekir:</p>
+    
+        <ul>
+          <li><strong>Isı ve Ses Yalıtımı:</strong> Yoğun yerleşimin olduğu bölgelerde, daireler arası ses geçişini önleyen nitelikli ses yalıtımı ve faturaları düşüren TS 825 standartlarında kesintisiz ısı yalıtımı bulunmalıdır.</li>
+          <li><strong>Malzeme ve İşçilik Kalitesi:</strong> Sık kiracı değişimi olabilecek bölgelerde, kapılardan zemin kaplamalarına, armatürlerden mutfak tezgahına kadar dayanıklı ve uzun ömürlü malzemeler seçilmiş olmalıdır.</li>
+          <li><strong>Yasal Süreçler:</strong> Satın alacağınız dairenin kat irtifakı kurulmuş olmalı, iskan (yapı kullanma izni) süreçleri sorunsuz ilerlemeli veya tamamlanmış olmalıdır.</li>
+        </ul>
+    
+        <p>Neli Mühendislik olarak projelerimizde; Balatçık bölgesinin tüm zemin ve mimari dinamiklerini titizlikle analiz ediyoruz. Uyguladığımız kusursuz mühendislik çözümleriyle, alıcılarımıza hem oturum için konforlu hem de yatırım için yüksek finansal geri dönüşe sahip, yasal süreçleri eksiksiz tamamlanmış yapılar sunuyoruz.</p>
+    
+        <h3>Neli Mühendislik ile Balatçık’ta Değerli Bir Gelecek</h3>
+        <p><strong>Neli Mühendislik</strong> olarak, İzmir'in en dinamik ve yatırım değeri yüksek lokasyonu olan Çiğli Balatçık’ta, modern yaşamın tüm gereksinimlerini karşılayan prestijli konut projeleri geliştiriyoruz. Mühendislik vizyonumuzla inşa ettiğimiz, deprem güvenliği maksimum düzeyde tutulmuş, enerji verimliliği (A-B sınıfı) yüksek ve modern yapı fiziği kurallarıyla donatılmış daire seçeneklerimizle yatırımlarınızı güvence altına alıyoruz.</p>
+    
+        <p>Balatçık ve İzmir genelinde hayata geçirdiğimiz güncel konut projelerimizi, daire seçeneklerimizi, kat planlarımızı ve mühendislik detaylarımızı daha yakından incelemek için <strong><a href='https://neli.tr/showcase' target='_blank' rel='noopener noreferrer' style='color: #b32128; font-weight: bold; text-decoration: underline;'>neli.tr/showcase</a></strong> sayfamızı ziyaret edebilirsiniz.</p>
+      </article>`,
+    coverImage: "/images/blog/cigli-balatcik.webp",
+    coverImageAlt:
+      "Çiğli Balatçık’ta sıfır daire almak mantıklı mı, bölgesel konut yatırımı avantajları — Neli Mühendislik",
+    category: "Gayrimenkul Yatırımı ve Lokasyon Analizi",
+    tags: JSON.stringify([
+      "Çiğli Balatçık satılık daire",
+      "Balatçık sıfır daire",
+      "İzmir gayrimenkul yatırımı",
+      "Katip Çelebi Üniversitesi konut",
+      "Çiğli yeni konut projeleri",
+      "amortisman süresi İzmir",
+      "Neli Mühendislik",
+    ]),
+    featured: false,
+    status: "published" as const,
+    metaTitle:
+      "Çiğli Balatçık’ta Sıfır Daire Almak Mantıklı mı? | Neli Mühendislik",
+    metaDescription:
+      "Çiğli Balatçık'ta sıfır daire yatırımı yapmak mantıklı mı? Bölgenin üniversite ve sanayi bağlantılarını, ulaşım avantajlarını, kira potansiyelini ve amortisman süresini inceleyin.",
+    metaKeywords:
+      "cigli balatcikta sifir daire almak mantikli mi, balatcik satilik sifir daire, cigli konut yatirimi, katip celebi universitesi kiralik daire, izmir amortisman suresi en kisa bolgeler, balatcik yeni konut projeleri, neli mühendislik",
+    publishedAt: "2026-07-17",
+  },
+  {
+    slug: "izmirde-sifir-daire-mi-ikinci-el-daire-mi-alinmali",
+    title: "İzmir’de Sıfır Daire mi yoksa İkinci El Daire mi Alınmalı?",
+    excerpt:
+      "İzmir gayrimenkul piyasasında konut arayışındayken yeni inşa edilmiş sıfır bir yapıya mı yoksa yaşlı bir ikinci el daireye mi yönelmelisiniz? Güvenlik, yalıtım, amortisman süreleri ve tadilat maliyetleri ekseninde kapsamlı karşılaştırma analizimizi inceleyin.",
+    content: `<article>
+        <h2>İzmir’de Doğru Konut Tercihinin Formülü</h2>
+        <p>İzmir, zengin tarihi, kendine has sosyo-kültürel dokusu ve her geçen gün gelişen modern yaşam alanlarıyla Türkiye'nin en çok tercih edilen metropollerinden biridir. Ancak İzmir gibi sismik hareketliliğin yüksek olduğu ve yapı stokunun hızlı bir kentsel dönüşüm sürecinden geçtiği bir şehirde ev satın almak, sadece bütçeye göre bir karar vermekten çok daha fazlasını gerektirir.</p>
+    
+        <p>Konut arayışındaki alıcıların zihnini en çok meşgul eden soru, <strong>sıfır daire mi yoksa ikinci el daire mi</strong> alınması gerektiğidir. İlk bakışta daha eski, ikinci el binalar fiyat avantajı sunuyor gibi görünse de; gizli maliyetler, güvenlik riskleri ve işletme giderleri işin içine girdiğinde mühendislik ve finansal fizibilite dengesi tamamen değişmektedir.</p>
+    
+        <blockquote style='margin: 20px 0; padding: 10px 20px; border-left: 5px solid #b32128; background: #f9f9f9;'>
+          <strong>Özet Cevap (AEO / Öne Çıkarılan Snippet):</strong> İzmir’de güvenli, sürdürülebilir ve uzun vadede karlı bir konut yatırımı için sıfır daire satın almak çok daha avantajlıdır. Sıfır daireler, güncel deprem yönetmeliklerine uygun modern mühendislik çözümleri ve zemin iyileştirmeleriyle inşa edildiği için maksimum can güvenliği sunar. Ayrıca TS 825 uyumlu yüksek nitelikli ısı/ses yalıtımları sayesinde aylık enerji faturalarını düşürürken, ikinci el binalarda sıkça karşılaşılan yüksek tadilat, tesisat yenileme ve güçlendirme gibi gizli maliyetleri tamamen ortadan kaldırır.
+        </blockquote>
+    
+        <h3>1. Deprem Güvenliği ve Modern Yapı Standartları</h3>
+        <p>İzmir’de konut alırken birinci, ertelenemez öncelik her zaman deprem güvenliğidir. Eski binalar ile yeni (sıfır) yapılar arasında bu konuda çok büyük bir mühendislik ve mevzuat uçurumu bulunur:</p>
+    
+        <ul>
+          <li><strong>Zemin İyileştirme Teknolojileri:</strong> Sıfır projelerde, şantiyeye kazma vurulmadan önce gelişmiş zemin etütleri yapılır. Gerekli durumlarda jet-grouting, fore kazık veya zemin enjeksiyon sistemleriyle zemin taşıma kapasitesi artırılır. İkinci el eski binalarda bu tür modern zemin güçlendirmeleri çoğunlukla mevcut değildir.</li>
+          <li><strong>Yüksek Dayanımlı Beton ve Demir Donatısı:</strong> Yeni projelerde kullanılan hazır beton sınıfları (en az C30/C35) ve nervürlü demir donatısı, eski binalarda kullanılan ve elle dökülen düşük mukavemetli malzemelere kıyasla çok daha yüksek bir elastisite ve dayanım sunar.</li>
+          <li><strong>Yönetmelik Uyum Gücü:</strong> Sıfır binalar, güncel deprem yönetmeliklerinin getirdiği tüm katı statik ve dinamik yüklere göre tasarlanıp yapı denetim firmaları tarafından adım adım denetlenir.</li>
+        </ul>
+    
+        <h3>2. İkinci El Konutların Gizli Masrafları: Tadilat ve Tesisat Riskleri</h3>
+        <p>İkinci el bir daireyi satın alırken fiyatının daha uygun olduğunu düşünebilirsiniz. Ancak satın alma sonrasında karşılaşacağınız gizli maliyetleri iyi hesaplamalısınız:</p>
+    
+        <ul>
+          <li><strong>Yıpranmış Altyapı:</strong> Eski binaların su ve elektrik tesisatları zamanla ömrünü yitirir. Borularda paslanma, sızıntılar veya elektrik panolarında yetersiz kapasite gibi sorunlar, tüm duvarların ve zeminlerin kırılıp yeniden yapılmasını gerektirebilir.</li>
+          <li><strong>Isı Köprüleri ve Küf Problemi:</strong> İkinci el binaların birçoğunda dış cephe yalıtımı ya hiç yoktur ya da yetersizdir. Bu durum, kış aylarında pencerelerin kenarlarında ve dış duvar köşelerinde küf, nemlenme ve yoğun ısı kayıplarına neden olur.</li>
+          <li><strong>Deformasyon Maliyeti:</strong> Parkelerden mutfak dolaplarına, banyo seramiklerinden kapılara kadar yapılacak kapsamlı bir tadilat, satın alma bütçenizin üzerine çok ciddi ek yükler getirecektir. Sıfır bir dairede ise bu tür yenileme masraflarıyla en az 15-20 yıl boyunca karşılaşmazsınız.</li>
+        </ul>
+    
+        <h3>3. Enerji Tasarrufu ve Isı Yalıtım Konforu (TS 825)</h3>
+        <p>Yeni inşa edilen sıfır binaların tamamında, yürürlükteki yasal düzenlemeler gereği <strong>Enerji Kimlik Belgesi (EKB)</strong> ve yüksek performanslı ısı yalıtımı bulunması zorunludur. Sıfır dairelerdeki bu yapısal avantaj size şunları kazandırır:</p>
+    
+        <ul>
+          <li><strong>Düşük Aylık Faturalar:</strong> TS 825 standartlarına uygun olarak tasarlanan dış cepheler ve yüksek verimli çift camlı pencereler sayesinde dairenizi kışın ısıtmak, yazın ise serinletmek için harcayacağınız enerji miktarı, yalıtımsız ikinci el bir daireye kıyasla %50 ila %70 daha düşüktür.</li>
+          <li><strong>Yüksek Konfor Standardı:</strong> Sıfır dairelerde odalar arası sıcaklık farkı minimumdur ve duvarlar soğuk kalmadığı için iç mekândaki hava kalitesi ve ısıl konfor her zaman dengelidir.</li>
+        </ul>
+    
+        <h3>4. Yasal Süreçlerde Kusursuzluk (İskan ve Kat Mülkiyeti)</h3>
+        <p>İkinci el binaların birçoğunda tapu türünün hâlâ 'Arsa/Kat İrtifakı' olarak kaldığı, iskan belgesinin alınamadığı veya projesine aykırı kaçak eklentilerin yapıldığı görülebilmektedir. Bu durum, ileride banka kredisi çekmek istediğinizde veya mülkü satmak istediğinizde büyük engeller oluşturur.</p>
+    
+        <p>Sıfır projelerde ise başından itibaren mühendislik ve yasal süreçler denetim altında yürütüldüğü için iskan (yapı kullanma izni) ve kat mülkiyeti süreçleri çok daha şeffaf ve güvenli bir şekilde tamamlanır. Yasal kusursuzluğa sahip bir sıfır tapu, yatırımınızın değerini her zaman korumasını sağlar.</p>
+    
+        <h3>5. Finansal Geri Dönüş ve Prim Potansiyeli</h3>
+        <p>Gayrimenkul bir yatırım aracı olarak değerlendirildiğinde, sıfır dairelerin değer artış (prim) grafiği ikinci el konutlara göre çok daha diktir. İzmir’in Çiğli, Balatçık, Karşıyaka gibi hızla değerlenen bölgelerinden alınacak sıfır bir daire, hem yüksek kira getirisi sunar hem de zaman içerisinde enflasyon karşısında değerini katlayarak korur. İkinci el binalar ise yaşlandıkça fiziksel yıpranma payından ötürü prim potansiyelinde sınırlı kalırlar.</p>
+    
+        <h3>Neli Mühendislik ile Sıfır, Güvenli ve Huzurlu Bir Yaşam</h3>
+        <p><strong>Neli Mühendislik</strong> olarak, İzmir genelinde geliştirdiğimiz konut projelerinde ikinci el yapıların sunduğu risklerin hiçbirine yer vermiyoruz. Yapılarımızı en güncel zemin etütleri, deprem yönetmelikleri ve maksimum beton mukavemetiyle inşa ederek canınızı; kesintisiz ısı yalıtımı, kaliteli mekanik altyapı ve kusursuz işçilikle de bütçenizi güvence altına alıyoruz. Sıfır bir daire sahibi olmanın sunduğu huzuru, modern estetiği ve ekonomik verimliliği projelerimizin her metrekaresine taşıyoruz.</p>
+    
+        <p>İzmir genelinde hayata geçirdiğimiz, iskanlı, yüksek deprem güvenliğine sahip ve enerji tasarruflu güncel sıfır konut projelerimizi incelemek için <strong><a href='https://neli.tr/showcase' target='_blank' rel='noopener noreferrer' style='color: #b32128; font-weight: bold; text-decoration: underline;'>neli.tr/showcase</a></strong> adresimizi ziyaret edebilirsiniz.</p>
+      </article>`,
+    coverImage: "/images/blog/sifir-daire.webp",
+    coverImageAlt:
+      "İzmir'de sıfır daire ve ikinci el daire karşılaştırması, sıfır konut almanın avantajları — Neli Mühendislik",
+    category: "Gayrimenkul Yatırımı ve Lokasyon Analizi",
+    tags: JSON.stringify([
+      "İzmir sıfır daire",
+      "sıfır dairenin avantajları",
+      "ikinci el daire tadilat masrafı",
+      "depreme dayanıklı konut İzmir",
+      "İzmir kentsel dönüşüm",
+      "TS 825 ısı yalıtımı",
+      "Neli Mühendislik",
+    ]),
+    featured: false,
+    status: "published" as const,
+    metaTitle:
+      "İzmir'de Sıfır Daire mi İkinci El Daire mi Alınmalı? | Neli Mühendislik",
+    metaDescription:
+      "İzmir'de ev alırken sıfır daire mi yoksa ikinci el mi tercih edilmeli? Deprem güvenliği, yalıtım, gizli tadilat masrafları ve prim potansiyeli yönünden sıfır dairelerin avantajlarını inceleyin.",
+    metaKeywords:
+      "izmirde sifir daire mi ikinci el daire mi alinmali, izmir satilik sifir daire, izmir yeni konut projeleri, depreme dayanikli sifir daire, ikinci el konut tadilat masraflari, izmir amortisman suresi, neli mühendislik",
+    publishedAt: "2026-07-17",
+  },
+  {
+    slug: "izmir-katip-celebi-universitesi-yakininda-yatirim-amacli-1-1-daire",
+    title:
+      "İzmir Katip Çelebi Üniversitesi Yakınında Yatırım Amaçlı 1+1 Daire Almak",
+    excerpt:
+      "İzmir'in en hızlı büyüyen devlet üniversitelerinden biri olan Katip Çelebi Üniversitesi çevresinde 1+1 daire yatırımı yapmak ne kadar kazançlı? Balatçık bölgesinin kiralama potansiyelini, amortisman sürelerini ve doğru konut yatırımının püf noktalarını inceleyin.",
+    content: `<article>
+        <h2>Yatırımın Güvenli Limanı: Üniversite Çevresi Gayrimenkulleri</h2>
+        <p>Gayrimenkul yatırımında riskleri minimize etmenin ve düzenli nakit akışı sağlamanın en temel yollarından biri, hedef kitle talebinin hiçbir zaman tükenmeyeceği lokasyonlara odaklanmaktır. Üniversite kampüsleri, bu lokasyonların başında gelir. İzmir’de son yıllarda akademik başarısı ve artan öğrenci sayısıyla adından sıkça söz ettiren <strong>İzmir Katip Çelebi Üniversitesi (İKÇÜ)</strong>, çevresindeki konut piyasasını da doğrudan şekillendirmektedir.</p>
+    
+        <p>İKÇÜ kampüsünün ana giriş kapısına ev sahipliği yapan Çiğli Balatçık bölgesi, özellikle <strong>1+1 daire yatırımı</strong> yapmak isteyenlerin İzmir'deki birinci öncelikli adresi haline gelmiştir. Peki, bu bölgede yatırım amaçlı bir 1+1 daire satın almak size uzun vadede neler kazandırır? Finansal geri dönüşü ve bölgenin dinamiklerini mühendislik fizibilitesiyle ele alıyoruz.</p>
+    
+        <blockquote style='margin: 20px 0; padding: 10px 20px; border-left: 5px solid #b32128; background: #f9f9f9;'>
+          <strong>Özet Cevap (AEO / Öne Çıkarılan Snippet):</strong> İzmir Katip Çelebi Üniversitesi yakınında yatırım amaçlı 1+1 daire satın almak, İzmir genelindeki en kısa amortisman sürelerinden birini (ortalama 13-16 yıl) sunar. Sürekli büyüyen öğrenci, akademisyen ve komşu sanayi bölgesi (AOSB) beyaz yaka nüfusu sayesinde kiralık daire talebi yıl boyunca kesintisizdir. Bu bölgedeki sıfır 1+1 projeler, eşyalı kiralama formülüyle nakit akışını maksimuma çıkarırken, modern deprem güvenliği ve yüksek enerji verimliliğiyle de risksiz ve prestijli bir yatırım alternatifi sağlar.
+        </blockquote>
+    
+        <h3>1. Bitmeyen Kiracı Talebi ve Yüksek Demografi Gücü</h3>
+        <p>İzmir Katip Çelebi Üniversitesi, tıp fakültesinden mühendisliğe kadar geniş bir akademik yelpazede on binlerce öğrenciye eğitim vermektedir. Bu dinamik yapı, Balatçık bölgesindeki kiralık daire talebini her dönem canlı tutar:</p>
+    
+        <ul>
+          <li><strong>Sürekli Sirkülasyon Güvencesi:</strong> Her yıl üniversiteyi yeni kazanan binlerce öğrenci, kampüse yürüme mesafesinde güvenli ve konforlu 1+1 daireler aramaktadır. Bu durum, dairenizin boş kalma riskini neredeyse sıfıra indirir.</li>
+          <li><strong>Akademik ve İdari Kadro:</strong> Üniversitede görev yapan genç akademisyenler, araştırma görevlileri ve idari personel de yaşam alanı olarak kampüse yakın, modern ve bakımı kolay sıfır 1+1 daireleri tercih etmektedir.</li>
+        </ul>
+    
+        <h3>2. AOSB ve Çiğli Bölge Hastanesi Entegrasyonu</h3>
+        <p>Balatçık’taki 1+1 dairelerin kiralama potansiyeli sadece öğrencilerle sınırlı değildir. Bölgenin hemen yanı başında yer alan <strong>İzmir Atatürk Organize Sanayi Bölgesi (AOSB)</strong> ve yakın konumdaki Çiğli Bölge Eğitim Hastanesi, ciddi bir çalışan nüfusunu barındırır.</p>
+    
+        <p>Sanayi bölgesinde çalışan genç mühendisler ve hastanedeki sağlık personelleri, iş yerlerine yakınlığı ve ulaşım kolaylığı nedeniyle Balatçık’taki modern 1+1 daireleri yoğun şekilde kiralamaktadır. Bu durum, yatırımcılara çok yönlü bir kiracı portföyü sunar.</p>
+    
+        <h3>3. Kısa Amortisman Süresi ve Eşyalı Kiralama Formülü</h3>
+        <p>Yatırımın geri dönüş hızı açısından Balatçık, İzmir genelinde lider konumdadır. Karşıyaka, Bornova veya Konak gibi merkezlerde amortisman süreleri 20 yılı aşabilirken, İKÇÜ yakınındaki 1+1 projelerde bu süre <strong>13 ila 16 yıla</strong> kadar düşmektedir.</p>
+    
+        <p>Ayrıca bu bölgedeki 1+1 daireleri **eşyalı olarak kiraya vermek** oldukça yaygın ve kazançlı bir yöntemdir. Daireyi modern ve dayanıklı eşyalarla donatmak, aylık kira getirisini %30 ila %50 oranında artırarak amortisman süresini daha da aşağı çekmenizi sağlar.</p>
+    
+        <h3>4. Çiğli Tramvayı ve Ulaşım Avantajları</h3>
+        <p>İKÇÜ kampüsünün hemen önünden geçen Çiğli Tramvayı ve yakınlardaki İzban istasyonu, bölgeyi İzmir'in diğer önemli merkezlerine doğrudan bağlamaktadır. Ulaşım altyapısının bu denli gelişmiş olması, Balatçık’taki gayrimenkullerin prim potansiyelini sürekli desteklemekte ve daire değerlerinin her geçen yıl İzmir ortalamasının üzerinde artmasını sağlamaktadır.</p>
+    
+        <h3>Mühendislik Gözüyle 1+1 Yatırımında Kalite Kriterleri</h3>
+        <p>Üniversite çevresinde 1+1 daire satın alırken, binanın yapısal kalitesi yatırımınızın uzun vadeli kârlılığını belirler. Yatırımcıların şu teknik detaylara dikkat etmesini öneriyoruz:</p>
+    
+        <ul>
+          <li><strong>Isı ve Ses Yalıtımı Standartları (TS 825):</strong> 1+1 dairelerin yan yana yoğun olarak konumlandığı projelerde, daireler arası ses geçişini engelleyen nitelikli ses yalıtımı ve ısınma/soğutma faturalarını düşüren kesintisiz dış cephe ısı yalıtımı mutlaka bulunmalıdır.</li>
+          <li><strong>Nitelikli Isıtma Altyapısı:</strong> Doğalgaz kombi veya merkezi pay ölçerli sistemlerin doğru çözülmüş olması, kullanıcı konforunu ve memnuniyetini artırır.</li>
+          <li><strong>Güvenilir Statik Yapı:</strong> İzmir'in sismik yapısı göz önüne alındığında, binanın güncel deprem yönetmeliklerine uygunluğu, zemin etüt kalitesi ve inşaat sürecindeki denetim raporları titizlikle incelenmelidir.</li>
+        </ul>
+    
+        <p>Neli Mühendislik olarak, İKÇÜ ve Balatçık bölgesindeki projelerimizi sadece estetik kaygılarla değil, en yüksek mühendislik ve yapı fiziği standartlarıyla inşa ediyoruz. Isı köprüleri önlenmiş, ses yalıtımı mükemmel yapılmış ve deprem güvenliği maksimum düzeyde tutulmuş 1+1 dairelerimizle yatırımcılarımıza sorunsuz, bakım masrafsız ve yüksek geri dönüşlü değerler kazandırıyoruz.</p>
+    
+        <h3>Neli Mühendislik ile İKÇÜ Yakınında Değerli Bir Yatırım</h3>
+        <p><strong>Neli Mühendislik</strong> olarak, İzmir Katip Çelebi Üniversitesi'ne çok yakın konumlarda, modern mimarisi ve yüksek inşaat kalitesiyle öne çıkan konut projeleri üretiyoruz. Mühendislik tecrübemizle hayata geçirdiğimiz, depreme dayanıklı, enerji verimliliği yüksek ve uzun yıllar boyunca değerini koruyacak olan 1+1 daire seçeneklerimizle birikimlerinizi en kazançlı şekilde değerlendirmenize yardımcı oluyoruz.</p>
+    
+        <p>İKÇÜ / Balatçık bölgesindeki yatırım fırsatlarını, kat planlarımızı ve güncel projelerimizi detaylıca incelemek için <strong><a href='https://neli.tr/showcase' target='_blank' rel='noopener noreferrer' style='color: #b32128; font-weight: bold; text-decoration: underline;'>neli.tr/showcase</a></strong> sayfamızı ziyaret edebilirsiniz.</p>
+      </article>`,
+    coverImage: "/images/blog/katip-celebi.webp",
+    coverImageAlt:
+      "İzmir Katip Çelebi Üniversitesi yakınında yatırım amaçlı satılık 1+1 daireler — Neli Mühendislik",
+    category: "Gayrimenkul Yatırımı ve Lokasyon Analizi",
+    tags: JSON.stringify([
+      "Katip Çelebi Üniversitesi satılık daire",
+      "Balatçık satılık 1+1",
+      "İzmir 1+1 daire yatırımı",
+      "Çiğli satılık daire",
+      "amortisman süresi İzmir",
+      "İKÇÜ kiralık daire",
+      "Neli Mühendislik",
+    ]),
+    featured: false,
+    status: "published" as const,
+    metaTitle: "İKÇÜ Yakınında Yatırım Amaçlı 1+1 Daire | Neli Mühendislik",
+    metaDescription:
+      "İzmir Katip Çelebi Üniversitesi (İKÇÜ) yakınında yatırım amaçlı 1+1 daire almanın avantajları. Balatçık bölgesi kiralama potansiyeli, amortisman süresi ve konut yatırımı analizi.",
+    metaKeywords:
+      "izmir katip celebi universitesi yakininda yatirim amacli 1+1 daire, katip celebi satilik 1+1, balatcik satilik daire, ikcü kiralik 1+1, izmir amortisman suresi en kisa bolge, cigli yeni konut projeleri, neli mühendislik",
+    publishedAt: "2026-07-17",
+  },
 ];
 
 const PROJECT_DATA = [
