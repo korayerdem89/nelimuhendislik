@@ -5121,6 +5121,75 @@ const BLOG_DATA = [
       "beton kalitesi, beton kalitesi nasıl anlaşılır, C45 beton nedir, beton sınıfları, beton basınç dayanımı, beton numunesi, beton kürleme, yüksek dayanımlı beton, depreme dayanıklı yapı, Neli Mühendislik İzmir",
     publishedAt: "2026-07-21",
   },
+  {
+    slug: "daireler-arasi-ses-yalitimi-nasil-yapilir-akustik-izolasyon-rehberi",
+    title: "Daireler Arası Ses Yalıtımı Nasıl Yapılır? Malzemeler ve Yöntemler",
+    excerpt:
+      "Komşu gürültüsüne son! Daireler arası ses yalıtımı teknikleri, tavan ve duvar izolasyonu malzemeleri ile mühendislik çözümlerini rehberimizde keşfedin.",
+    content: `
+      <h2>Daireler Arası Ses Yalıtımı Nedir ve Neden Önemlidir?</h2>
+      <p><strong>Daireler arası ses yalıtımı</strong>, bitişik duvarlar, tavanlar ve tabanlar aracılığıyla iletilen havadan yayılan (konuşma, TV sesi) ve darbe kaynaklı (ayak sesi, eşya sürükleme) gürültülerin engellenmesi işlemidir. Kaliteli bir akustik izolasyon, yaşam konforunu artırırken konutun gayrimenkul değerini de yükseltir.</p>
+  
+      <h2>Daireler Arası Ses Yalıtımı Nasıl Yapılır? (Adım Adım)</h2>
+      <p>Akustik yalıtım uygulamasında maksimum verim almak için şu adımlar izlenir:</p>
+  
+      <h3>1. Ses Kaynağının ve Tipinin Tespiti</h3>
+      <p>Gürültünün duvar, tavan veya zeminden mi geldiği ve sesin türü (darbe veya hava kaynaklı) belirlenir.</p>
+  
+      <h3>2. Doğru Yalıtım Malzemesinin Seçimi</h3>
+      <p>Yoğunluğu yüksek kauçuk bariyerler, taşyünü levhalar ve akustik süngerler projelendirilir.</p>
+  
+      <h3>3. Yüzey Hazırlığı ve Karkas Kurulumu</h3>
+      <p>Uygulama yapılacak duvara karkas profiller yerleştirilir. Titreşimi kesmek için profil altlarına akustik bantlar yapıştırılır.</p>
+  
+      <h3>4. Katmanlı Uygulama ve Kaplama</h3>
+      <p>Taşyünü ve ağır ses bariyeri yerleştirildikten sonra üzeri çift kat akustik alçıpan ile kapatılır ve derz dolguları yapılır.</p>
+  
+      <h2>En Etkili Ses Yalıtım Malzemeleri Nelerdir?</h2>
+      <ul>
+        <li><strong>Yüksek Yoğunluklu Taşyünü:</strong> Duvar ve tavan yalıtımında ses emici katman olarak kullanılır.</li>
+        <li><strong>Ağır Ses Bariyerleri (EPDM / Kauçuk):</strong> Düşük frekanslı sesleri engellemek için idealdir.</li>
+        <li><strong>Akustik Süngerler:</strong> Mekan içindeki çınlamayı ve yankıyı engeller.</li>
+        <li><strong>Şap Altı Akustik Şilteler:</strong> Zeminlerde ayak ve darbe sesini alt kata geçirmemek için uygulanır.</li>
+      </ul>
+  
+      <h2>Sıkça Sorulan Sorular (AEO)</h2>
+      
+      <h3>Daireler arası ses yalıtımı sonradan yapılabilir mi?</h3>
+      <p>Evet, bitişik duvarlara uygulanan giydirme duvar sistemleri veya asma tavan çözümleri ile mevcut binalarda da sonradan ses yalıtımı yapılabilir.</p>
+  
+      <h3>Sonradan yapılan ses izolasyonu kaç cm alan kaybettirir?</h3>
+      <p>Etkili bir duvar ses yalıtım sistemi ortalama <strong>5 cm ile 10 cm</strong> arasında bir alan kaybına neden olur.</p>
+  
+      <h3>Yüksek kaliteli konut projelerinde ses yalıtımı nasıl sağlanır?</h3>
+      <p>Neli Mühendislik gibi nitelikli inşaat projelerinde ses yalıtımı, henüz kaba inşaat aşamasındayken çift tuğla arası taşyünü, şap altı akustik kauçuk şilteler ve sessiz boru tesisat sistemleri kullanılarak çözülmektedir.</p>
+    `,
+    coverImage: "/images/blog/akustik-ses-yalitimi.webp",
+    coverImageAlt:
+      "Daireler arası ses yalıtımı uygulaması ve akustik izolasyon malzemeleri — Neli Mühendislik",
+    category: "Mühendislik",
+    tags: JSON.stringify([
+      "ses yalıtımı",
+      "daireler arası ses izolasyonu",
+      "akustik yalıtım malzemeleri",
+      "komşu sesini engelleme",
+      "duvar ses yalıtımı",
+      "tavan ses izolasyonu",
+      "taşyünü ses yalıtımı",
+      "konut konforu",
+      "Neli Mühendislik",
+      "İnşaat Teknolojileri",
+    ]),
+    featured: false,
+    status: "published" as const,
+    metaTitle:
+      "Daireler Arası Ses Yalıtımı Nasıl Yapılır? | Akustik İzolasyon Rehberi",
+    metaDescription:
+      "Komşu gürültüsünü engelleyen ses yalıtımı yöntemleri ve en etkili izolasyon malzemeleri nelerdir? Daireler arası akustik çözümleri hemen keşfedin!",
+    metaKeywords:
+      "daireler arası ses yalıtımı, ses izolasyonu nasıl yapılır, akustik duvar yalıtımı, taşyünü ses izolasyonu, gürültü kesici izolasyon, Neli Mühendislik",
+    publishedAt: "2026-07-21",
+  },
 ];
 
 const PROJECT_DATA = [
