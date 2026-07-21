@@ -4939,6 +4939,188 @@ const BLOG_DATA = [
       "izmir katip celebi universitesi yakininda yatirim amacli 1+1 daire, katip celebi satilik 1+1, balatcik satilik daire, ikcü kiralik 1+1, izmir amortisman suresi en kisa bolge, cigli yeni konut projeleri, neli mühendislik",
     publishedAt: "2026-07-17",
   },
+  {
+    slug: "beton-kalitesi-nedir-nasil-anlasilir",
+    title:
+      "Beton Kalitesi Nedir? Dayanıklı ve Güvenli Yapılar İçin Betonun Önemi",
+    excerpt:
+      "Beton kalitesi yalnızca beton sınıfından ibaret değildir. Su-çimento oranı, agrega seçimi, uygulama, vibrasyon, kürleme ve laboratuvar testlerinin yapı güvenliğini nasıl etkilediğini inceleyin.",
+    content: `
+  <article>
+      <header>
+          <h1>Beton Kalitesi Nedir? Dayanıklı ve Güvenli Yapılar İçin Betonun Önemi</h1>
+          <p><strong>Özet:</strong> Beton kalitesi; betonun basınç dayanımı, üretim standardı, malzeme bileşimi, şantiyedeki uygulama koşulları ve kürleme sürecinin birlikte değerlendirilmesiyle belirlenir. Yüksek beton sınıfı tek başına yeterli değildir; doğru projelendirme ve kontrollü işçilik de yapı güvenliğinin temel parçalarıdır.</p>
+      </header>
+  
+      <section>
+          <h2>Beton Kalitesi Nedir?</h2>
+          <p>Beton kalitesi, bir betonun projede öngörülen dayanım, dayanıklılık ve kullanım ömrü şartlarını ne ölçüde karşıladığını ifade eder. Beton; çimento, su, agrega ve gerektiğinde kimyasal veya mineral katkıların belirli oranlarda karıştırılmasıyla üretilir.</p>
+          <p>Kaliteli beton yalnızca yüksek basınç dayanımına sahip beton anlamına gelmez. Betonun çevresel etkilere karşı dayanıklı olması, donatıyla birlikte doğru çalışması, boşluksuz yerleştirilmesi ve yeterli süre boyunca korunarak kürlenmesi de beton kalitesinin önemli göstergeleridir.</p>
+      </section>
+  
+      <section>
+          <h2>Beton Kalitesi Neden Önemlidir?</h2>
+          <p>Betonarme yapılarda beton ve donatı çeliği birlikte çalışarak taşıyıcı sistemi oluşturur. Betonun gereken kaliteyi sağlamaması, yapının taşıma kapasitesini ve uzun vadeli dayanıklılığını olumsuz etkileyebilir.</p>
+          <ul>
+              <li><strong>Taşıma kapasitesini etkiler:</strong> Betonun basınç dayanımı, kolon, kiriş, perde ve temel gibi taşıyıcı elemanların performansında doğrudan rol oynar.</li>
+              <li><strong>Yapının kullanım ömrünü belirler:</strong> Geçirimsiz ve doğru üretilmiş beton, donatı korozyonu riskinin azaltılmasına yardımcı olur.</li>
+              <li><strong>Deprem performansına katkı sağlar:</strong> Projeye uygun beton, doğru donatı düzeni ve nitelikli işçilikle birlikte taşıyıcı sistemin bütünlüğünü destekler.</li>
+              <li><strong>Bakım maliyetlerini azaltır:</strong> Çatlama, yüzey bozulması, su alma ve donatı korozyonu gibi sorunların oluşma ihtimalini düşürür.</li>
+          </ul>
+      </section>
+  
+      <section>
+          <h2>Beton Kalitesini Belirleyen Temel Faktörler Nelerdir?</h2>
+  
+          <h3>1. Beton Sınıfı ve Basınç Dayanımı</h3>
+          <p>Beton sınıfları C30, C35, C40 ve C45 gibi ifadelerle belirtilir. “C” harfinden sonra gelen değerler betonun standart koşullarda ölçülen karakteristik basınç dayanımını tanımlar. Ancak beton sınıfının yüksek olması, uygulama hatalarının göz ardı edilebileceği anlamına gelmez.</p>
+  
+          <h3>2. Su-Çimento Oranı</h3>
+          <p>Beton karışımına gereğinden fazla su eklenmesi, uygulamayı geçici olarak kolaylaştırabilir ancak betonun dayanımını ve geçirimsizliğini olumsuz etkileyebilir. Bu nedenle şantiyede betonun kıvamını değiştirmek amacıyla kontrolsüz biçimde su eklenmemelidir.</p>
+  
+          <h3>3. Agrega Kalitesi</h3>
+          <p>Beton hacminin önemli bir bölümünü oluşturan agregaların temiz, dayanıklı ve uygun tane dağılımına sahip olması gerekir. Kirli, zayıf veya uygun olmayan agrega kullanımı betonun mekanik özelliklerini olumsuz etkileyebilir.</p>
+  
+          <h3>4. Betonun Taşınması ve Döküm Süresi</h3>
+          <p>Hazır betonun üretim tesisinden şantiyeye taşınması, pompa ile iletilmesi ve kalıba yerleştirilmesi kontrollü bir süreçtir. Bekleme süresinin uzaması veya betonun uygun olmayan koşullarda dökülmesi, betonun işlenebilirliğini ve nihai performansını etkileyebilir.</p>
+  
+          <h3>5. Vibrasyon Uygulaması</h3>
+          <p>Beton dökümü sırasında vibratör kullanılması, karışım içerisindeki hava boşluklarının azaltılmasını ve betonun donatıların çevresine düzgün biçimde yerleşmesini sağlar. Eksik vibrasyon boşluklara, aşırı vibrasyon ise karışımın ayrışmasına neden olabilir.</p>
+  
+          <h3>6. Kürleme Süreci</h3>
+          <p>Kürleme, betonun döküm sonrasında yeterli nem ve sıcaklık koşullarında korunmasıdır. Betonun erken yaşta hızlı biçimde su kaybetmesi yüzey çatlaklarına ve dayanım kaybına yol açabilir. Bu nedenle beton yüzeyi hava koşullarına uygun yöntemlerle korunmalıdır.</p>
+  
+          <h3>7. Hava Koşulları</h3>
+          <p>Aşırı sıcak, soğuk, rüzgârlı veya yağışlı havalarda beton dökümü için özel önlemler alınması gerekir. Ortam sıcaklığı, beton sıcaklığı, döküm planı ve kürleme yöntemi birlikte değerlendirilmelidir.</p>
+      </section>
+  
+      <section>
+          <h2>Beton Kalitesi Nasıl Kontrol Edilir?</h2>
+          <p>Beton kalitesinin yalnızca gözle değerlendirilmesi mümkün değildir. Üretim ve uygulama sürecinde teknik kontrollerin yapılması, numunelerin alınması ve sonuçların kayıt altına alınması gerekir.</p>
+          <ul>
+              <li><strong>İrsaliye kontrolü:</strong> Beton sınıfı, üretim zamanı, karışım bilgileri ve teslimat verileri incelenir.</li>
+              <li><strong>Çökme deneyi:</strong> Taze betonun kıvamı ve işlenebilirliği kontrol edilir.</li>
+              <li><strong>Beton sıcaklığı ölçümü:</strong> Döküm koşullarının uygunluğu değerlendirilir.</li>
+              <li><strong>Numune alınması:</strong> Beton dökümü sırasında standartlara uygun küp veya silindir numuneler hazırlanır.</li>
+              <li><strong>Basınç dayanımı testi:</strong> Numuneler belirlenen yaşlarda laboratuvarda kırılarak dayanım değerleri ölçülür.</li>
+              <li><strong>Yerinde incelemeler:</strong> Gerekli durumlarda karot, donatı tespiti ve tahribatsız test yöntemlerinden yararlanılabilir.</li>
+          </ul>
+      </section>
+  
+      <section>
+          <h2>C45 Beton Nedir?</h2>
+          <p>C45, yüksek basınç dayanımı hedeflenen beton sınıflarından biridir. Bu beton sınıfının projede kullanılması; taşıyıcı sistem tasarımı, yapı geometrisi, zemin özellikleri, çevresel etkiler ve mühendislik hesapları dikkate alınarak belirlenmelidir.</p>
+          <p>Neli Mühendislik olarak projelerimizde yalnızca mevzuatın asgari koşullarını karşılamayı değil, uzun ömürlü ve güvenilir yapılar üretmeyi hedefliyoruz. Bu doğrultuda taşıyıcı sistemlerimizde statik projeye uygun olarak <strong>C45 yüksek dayanımlı beton</strong> kullanıyor; beton üretiminden döküm ve kürleme aşamasına kadar süreci teknik kontrollerle takip ediyoruz.</p>
+      </section>
+  
+      <section>
+          <h2>Yüksek Beton Sınıfı Tek Başına Yeterli midir?</h2>
+          <p>Hayır. Beton sınıfı, yapı güvenliğinin yalnızca bir bölümüdür. Güvenli bir betonarme yapı için aşağıdaki unsurların birlikte doğru uygulanması gerekir:</p>
+          <ul>
+              <li>Zemin özelliklerine uygun temel ve taşıyıcı sistem tasarımı,</li>
+              <li>Doğru hazırlanmış statik proje ve mühendislik hesapları,</li>
+              <li>Projeye uygun çap, sınıf ve miktarda donatı kullanımı,</li>
+              <li>Donatı birleşimlerinin ve beton örtü kalınlıklarının doğru uygulanması,</li>
+              <li>Kaliteli beton üretimi ve kontrollü beton dökümü,</li>
+              <li>Doğru vibrasyon ve yeterli kürleme,</li>
+              <li>Şantiye denetimi ve laboratuvar testleri.</li>
+          </ul>
+          <p>Bu unsurlardan birinin eksik olması, yalnızca yüksek beton sınıfı kullanılarak giderilemez. Yapı güvenliği, proje ile uygulamanın bütün olarak yönetilmesini gerektirir.</p>
+      </section>
+  
+      <section>
+          <h2>Beton Kalitesinin Düşük Olduğu Nasıl Anlaşılır?</h2>
+          <p>Beton yüzeyindeki her kusur doğrudan düşük dayanım anlamına gelmese de bazı belirtiler teknik inceleme gerektirebilir:</p>
+          <ul>
+              <li>Kolon, kiriş veya perde yüzeylerinde yoğun boşluklar oluşması,</li>
+              <li>Agregaların açıkta kaldığı peteklenmiş bölgeler görülmesi,</li>
+              <li>Betonda ayrışma veya aşırı yüzey tozuması bulunması,</li>
+              <li>Soğuk derzlerin ve düzensiz döküm izlerinin oluşması,</li>
+              <li>Erken yaşta yaygın ve kontrolsüz çatlakların görülmesi,</li>
+              <li>Beton numunesi sonuçlarının projede öngörülen değerleri karşılamaması.</li>
+          </ul>
+          <p>Beton kalitesi hakkında kesin değerlendirme yapılabilmesi için yetkili mühendisler tarafından proje, uygulama kayıtları ve test sonuçları birlikte incelenmelidir.</p>
+      </section>
+  
+      <section>
+          <h2>Ev Alırken Beton Kalitesi Hakkında Neler Sorulmalıdır?</h2>
+          <p>Yeni bir konut satın alırken yalnızca dairenin mimari özelliklerine değil, yapının teknik üretim sürecine de dikkat edilmelidir. Proje yetkilisine şu sorular yöneltilebilir:</p>
+          <ul>
+              <li>Projede hangi beton sınıfı kullanıldı?</li>
+              <li>Beton numuneleri düzenli olarak alındı mı?</li>
+              <li>Laboratuvar basınç dayanımı sonuçları kayıt altında mı?</li>
+              <li>Taşıyıcı sistem hangi zemin verilerine göre tasarlandı?</li>
+              <li>Temel sistemi ve betonarme taşıyıcı sistem türü nedir?</li>
+              <li>Beton dökümü sırasında teknik kontrol gerçekleştirildi mi?</li>
+              <li>Kürleme işlemleri hangi yöntemlerle yapıldı?</li>
+          </ul>
+      </section>
+  
+      <section>
+          <h2>Beton Kalitesi Hakkında Sık Sorulan Sorular</h2>
+  
+          <h3>En kaliteli beton sınıfı hangisidir?</h3>
+          <p>Her yapı için geçerli tek bir “en iyi” beton sınıfı yoktur. Kullanılması gereken beton sınıfı; statik proje, zemin koşulları, yapı türü, çevresel etkiler ve mühendislik hesaplarına göre belirlenir.</p>
+  
+          <h3>Betona sonradan su eklemek zararlı mıdır?</h3>
+          <p>Kontrolsüz şekilde su eklenmesi betonun su-çimento oranını değiştirerek dayanımı ve geçirimsizliği azaltabilir. Betonun işlenebilirliği, üretici tarafından uygun katkılar ve kontrollü karışım tasarımıyla sağlanmalıdır.</p>
+  
+          <h3>Beton numunesi neden alınır?</h3>
+          <p>Beton numuneleri, şantiyeye teslim edilen betonun belirlenen yaşlarda hedeflenen basınç dayanımına ulaşıp ulaşmadığını laboratuvar ortamında kontrol etmek amacıyla alınır.</p>
+  
+          <h3>Beton kaç günde dayanım kazanır?</h3>
+          <p>Beton döküldüğü andan itibaren dayanım kazanmaya başlar. Dayanım gelişimi kullanılan çimentoya, karışım tasarımına, sıcaklığa ve kürleme koşullarına bağlıdır. Teknik değerlendirmelerde belirli yaşlarda yapılan test sonuçları esas alınır.</p>
+  
+          <h3>Yüksek dayanımlı beton deprem güvenliği sağlar mı?</h3>
+          <p>Yüksek dayanımlı beton yapı güvenliğine katkıda bulunur ancak tek başına yeterli değildir. Zemin etüdü, taşıyıcı sistem tasarımı, donatı detayları, uygulama kalitesi ve yapı denetimi birlikte değerlendirilmelidir.</p>
+      </section>
+  
+      <section>
+          <h2>Neli Mühendislik ile Mühendislik Odaklı Yapılar</h2>
+          <p>Neli Mühendislik olarak konut projelerimizde görünür tasarım detaylarının yanı sıra yapının taşıyıcı sistemine ve uygulama kalitesine de önem veriyoruz. Betonarme imalatları, statik projeye ve teknik gerekliliklere uygun biçimde planlıyor; beton dökümü, vibrasyon, numune alma ve kürleme süreçlerini kontrollü şekilde yürütüyoruz.</p>
+          <p>İzmir Çiğli ve Bayraklı bölgelerindeki güncel konut projelerimizin konumlarını, daire seçeneklerini ve proje detaylarını incelemek için <strong><a href="https://neli.tr/projeler" target="_blank" rel="noopener">neli.tr/projeler</a></strong> adresini ziyaret edebilirsiniz.</p>
+      </section>
+  
+      <footer>
+          <h2>İletişim Bilgileri</h2>
+          <address>
+              <strong>Neli Mühendislik</strong><br>
+              Dedebaşı Mahallesi, 6131 Sokak No:39/A<br>
+              Karşıyaka, İzmir<br><br>
+              <strong>Telefon:</strong> <a href="tel:+905011864635">0501 186 46 35</a><br>
+              <strong>Telefon:</strong> <a href="tel:+905547049074">0554 704 90 74</a><br>
+              <strong>Web:</strong> <a href="https://neli.tr" target="_blank" rel="noopener">neli.tr</a>
+          </address>
+      </footer>
+  </article>
+    `,
+    coverImage: "/images/blog/beton-kalitesi.webp",
+    coverImageAlt:
+      "Beton dökümü, beton numunesi ve yapı güvenliği uygulamaları — Neli Mühendislik",
+    category: "İnşaat",
+    tags: JSON.stringify([
+      "beton kalitesi",
+      "beton kalitesi nasıl anlaşılır",
+      "C45 beton",
+      "beton sınıfları",
+      "yüksek dayanımlı beton",
+      "beton numunesi",
+      "beton basınç dayanımı",
+      "beton kürleme",
+      "depreme dayanıklı yapı",
+      "Neli Mühendislik",
+      "İzmir konut projeleri",
+      "mühendislik odaklı inşaat",
+    ]),
+    featured: false,
+    status: "published" as const,
+    metaTitle: "Beton Kalitesi Nedir, Nasıl Anlaşılır? | Neli Mühendislik",
+    metaDescription:
+      "Beton kalitesi nasıl belirlenir? Beton sınıfı, su-çimento oranı, vibrasyon, kürleme, numune testleri ve C45 betonun yapı güvenliğindeki önemini inceleyin.",
+    metaKeywords:
+      "beton kalitesi, beton kalitesi nasıl anlaşılır, C45 beton nedir, beton sınıfları, beton basınç dayanımı, beton numunesi, beton kürleme, yüksek dayanımlı beton, depreme dayanıklı yapı, Neli Mühendislik İzmir",
+    publishedAt: "2026-07-21",
+  },
 ];
 
 const PROJECT_DATA = [
