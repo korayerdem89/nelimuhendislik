@@ -237,6 +237,34 @@ const BLOG_SLUGS: ReadonlyArray<{ slug: string; publishedAt: string }> = [
     slug: "apartmanlarda-yangin-kapisi-ve-duman-tahliye-sistemi",
     publishedAt: "2026-07-06",
   },
+  {
+    slug: "bayrakli-yeni-girne-bulvari-yakininda-satilik-yeni-daire-avantajlari",
+    publishedAt: "2026-07-17",
+  },
+  {
+    slug: "izmirde-yatirim-icin-1-1-mi-2-1-mi-daha-avantajli",
+    publishedAt: "2026-07-17",
+  },
+  {
+    slug: "kat-irtifaki-iskan-ve-kat-mulkiyeti-arasindaki-fark-nedir",
+    publishedAt: "2026-07-17",
+  },
+  {
+    slug: "enerji-kimlik-belgesi-sinifi-daire-degerini-ve-faturalari-nasil-etkiler",
+    publishedAt: "2026-07-17",
+  },
+  {
+    slug: "cigli-balatcikta-sifir-daire-almak-mantikli-mi",
+    publishedAt: "2026-07-17",
+  },
+  {
+    slug: "izmirde-sifir-daire-mi-ikinci-el-daire-mi-alinmali",
+    publishedAt: "2026-07-17",
+  },
+  {
+    slug: "izmir-katip-celebi-universitesi-yakininda-yatirim-amacli-1-1-daire",
+    publishedAt: "2026-07-17",
+  },
 ];
 
 const sitemapRoutes = new Hono();
